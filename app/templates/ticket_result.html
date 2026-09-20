@@ -1,0 +1,216 @@
+{% extends "base.html" %}
+{% block page_title %}{{ ticket.ticket_code }} · KnowGap AI{% endblock %}
+{% block header_title %}Ticket details{% endblock %}
+{% block content %}
+{% set confidence = (ticket.retrieval_confidence * 100) | round | int %}
+<div class="page-heading">
+  <div>
+    <a class="back-link" href="{% if user.role == 'CUSTOMER' %}/home{% else %}/support{% endif %}">
+      <i class="bi bi-arrow-left" aria-hidden="true"></i> Back to {% if user.role == 'CUSTOMER' %}service desk{% else %}support queue{% endif %}
+    </a>
+    <div class="heading-row">
+      <div>
+        <div class="ticket-heading-meta">
+          <span class="ticket-id">{{ ticket.ticket_code }}</span>
+          <span class="status-pill status-{{ ticket.status | lower | replace('_', '-') }}"><span></span>{{ ticket.status | replace('_', ' ') | title }}</span>
+        </div>
+        <h2>{{ ticket.title }}</h2>
+        <p>{{ ticket.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content-grid ticket-detail-grid">
+  <div class="ticket-main-column">
+    <section class="panel-card">
+      <div class="panel-heading panel-heading-inline">
+        <div>
+          <span class="section-eyebrow">Agent assessment</span>
+          <h3>AI analysis</h3>
+        </div>
+        <span class="panel-icon panel-icon-purple"><i class="bi bi-cpu" aria-hidden="true"></i></span>
+      </div>
+
+      <div class="analysis-grid">
+        <div class="analysis-item">
+          <span class="analysis-icon icon-blue"><i class="bi bi-tag" aria-hidden="true"></i></span>
+          <span><small>Category</small><strong>{{ ticket.category or 'Unknown' }}</strong></span>
+        </div>
+        <div class="analysis-item">
+          <span class="analysis-icon icon-purple"><i class="bi bi-bullseye" aria-hidden="true"></i></span>
+          <span><small>Canonical issue</small><strong>{{ ticket.canonical_issue or 'Under analysis' }}</strong></span>
+        </div>
+        <div class="analysis-item analysis-confidence">
+          <span class="analysis-icon icon-green"><i class="bi bi-shield-check" aria-hidden="true"></i></span>
+          <span class="confidence-content">
+            <span class="confidence-label"><small>Retrieval confidence</small><strong>{{ confidence }}%</strong></span>
+            <span class="progress-track"><span style="width: {{ confidence }}%"></span></span>
+          </span>
+        </div>
+        <div class="analysis-item">
+          <span class="analysis-icon icon-amber"><i class="bi bi-file-earmark-check" aria-hidden="true"></i></span>
+          <span><small>Evidence source</small><strong>{{ ticket.source_used or 'No reliable source' }}</strong></span>
+        </div>
+      </div>
+    </section>
+
+    {% if ticket.status == 'SOLUTION_PROPOSED' %}
+    <section class="resolution-card resolution-success">
+      <div class="resolution-header">
+        <span class="resolution-icon"><i class="bi bi-check2-circle" aria-hidden="true"></i></span>
+        <div>
+          <span class="section-eyebrow">Evidence-backed recommendation</span>
+          <h3>A reliable solution was found</h3>
+        </div>
+        <button class="copy-button" id="copySolution" type="button"><i class="bi bi-copy" aria-hidden="true"></i> Copy</button>
+      </div>
+      <div class="solution-text" id="solutionText">{{ ticket.recommended_solution }}</div>
+      <div class="explanation-box">
+        <strong>Why this solution was suggested</strong>
+        <p>{{ ticket.decision_explanation or 'This recommendation matched the highest-confidence approved evidence and was selected because it aligns with the issue category and supporting knowledge.' }}</p>
+      </div>
+      {% if ticket.suggested_reply %}
+      <div class="suggested-reply-box">
+        <strong>Suggested reply for support staff</strong>
+        <p>{{ ticket.suggested_reply }}</p>
+      </div>
+      {% endif %}
+      <div class="source-callout">
+        <i class="bi bi-journal-check" aria-hidden="true"></i>
+        <span><small>Verified source</small><strong>{{ ticket.source_used }}</strong></span>
+      </div>
+      {% if citations %}
+      <div class="citation-panel">
+        <div class="citation-heading"><span><i class="bi bi-link-45deg" aria-hidden="true"></i> Evidence supporting this answer</span><small>{{ citations | length }} source{% if citations | length != 1 %}s{% endif %}</small></div>
+        <div class="citation-list">
+          {% for citation in citations %}
+          <div class="citation-item">
+            <span class="citation-rank">{{ citation.rank }}</span>
+            <div><strong>{{ citation.source_id }} · {{ citation.title }}</strong><small>{{ citation.category }} · {{ citation.source_type | replace('_', ' ') | title }} · {{ (citation.relevance_score * 100) | round | int }}% relevance</small></div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+      <div class="feedback-panel">
+        <div><strong>Did this solve your issue?</strong><span>Your feedback helps improve future recommendations.</span></div>
+        <div class="feedback-actions">
+          <form method="post" action="/tickets/{{ ticket.id }}/solved">
+            <button class="btn-success-modern" type="submit"><i class="bi bi-hand-thumbs-up" aria-hidden="true"></i> Yes, solved</button>
+          </form>
+          <form method="post" action="/tickets/{{ ticket.id }}/not-solved">
+            <button class="btn-secondary-modern btn-danger-soft" type="submit"><i class="bi bi-headset" aria-hidden="true"></i> I still need help</button>
+          </form>
+        </div>
+      </div>
+      {% if user.role in ['IT_SUPPORT', 'ADMIN'] %}
+      <div class="approval-panel">
+        <div><strong>Human approval workflow</strong><span>Approved responses are marked as resolved for future learning.</span></div>
+        <div class="feedback-actions">
+          <form method="post" action="/tickets/{{ ticket.id }}/approve">
+            <button class="btn-success-modern" type="submit"><i class="bi bi-check2-circle" aria-hidden="true"></i> Approve AI response</button>
+          </form>
+          <form method="post" action="/tickets/{{ ticket.id }}/reject">
+            <button class="btn-secondary-modern btn-danger-soft" type="submit"><i class="bi bi-x-circle" aria-hidden="true"></i> Reject and escalate</button>
+          </form>
+        </div>
+      </div>
+      {% endif %}
+    </section>
+    {% elif ticket.status == 'ESCALATED' %}
+    <section class="resolution-card resolution-warning">
+      <div class="resolution-header">
+        <span class="resolution-icon"><i class="bi bi-person-workspace" aria-hidden="true"></i></span>
+        <div>
+          <span class="section-eyebrow">Human support required</span>
+          <h3>Your ticket has been escalated</h3>
+        </div>
+      </div>
+      <p>We did not find evidence reliable enough to recommend an automated fix. An IT support specialist will investigate instead of giving you an uncertain answer.</p>
+      <div class="escalation-steps">
+        <span class="done"><i class="bi bi-check-lg"></i> Request analyzed</span>
+        <span class="done"><i class="bi bi-check-lg"></i> Knowledge searched</span>
+        <span class="current"><i class="bi bi-hourglass-split"></i> Specialist review</span>
+      </div>
+    </section>
+    {% elif ticket.status == 'CLOSED' %}
+    <section class="resolution-card resolution-success compact-resolution">
+      <span class="resolution-icon"><i class="bi bi-check2-circle" aria-hidden="true"></i></span>
+      <div><span class="section-eyebrow">Completed</span><h3>Ticket closed successfully</h3><p>You confirmed that the recommended solution resolved the issue.</p></div>
+    </section>
+    {% elif ticket.status == 'RESOLVED' %}
+    <section class="resolution-card resolution-info">
+      <div class="resolution-header">
+        <span class="resolution-icon"><i class="bi bi-tools" aria-hidden="true"></i></span>
+        <div><span class="section-eyebrow">Resolved by IT support</span><h3>Specialist resolution</h3></div>
+      </div>
+      <div class="resolution-details">
+        <div><small>Root cause</small><p>{{ ticket.root_cause }}</p></div>
+        <div><small>Resolution</small><p>{{ ticket.resolution_notes }}</p></div>
+      </div>
+    </section>
+    {% endif %}
+
+    {% if feedback %}
+    <section class="feedback-recorded {% if feedback.rating == 'HELPFUL' %}feedback-recorded-positive{% else %}feedback-recorded-neutral{% endif %}">
+      <i class="bi {% if feedback.rating == 'HELPFUL' %}bi-hand-thumbs-up-fill{% else %}bi-headset{% endif %}" aria-hidden="true"></i>
+      <div><strong>Thanks for your feedback</strong><span>You marked this recommendation as {% if feedback.rating == 'HELPFUL' %}helpful{% else %}not helpful{% endif %}.{% if feedback.comment %} “{{ feedback.comment }}”{% endif %}</span></div>
+    </section>
+    {% endif %}
+  </div>
+
+  <aside class="panel-card trace-card">
+    <div class="panel-heading">
+      <div>
+        <span class="section-eyebrow">Explainable workflow</span>
+        <h3>Agent trace</h3>
+        <p>See how the agent team handled this request.</p>
+      </div>
+      <span class="panel-icon panel-icon-primary"><i class="bi bi-diagram-3" aria-hidden="true"></i></span>
+    </div>
+
+    {% if logs %}
+    <div class="agent-timeline">
+      {% for log in logs %}
+      <div class="timeline-item">
+        <span class="timeline-marker"><i class="bi bi-check-lg" aria-hidden="true"></i></span>
+        <div>
+          <span class="timeline-route">{{ log.sender }} <i class="bi bi-arrow-right" aria-hidden="true"></i> {{ log.receiver }}</span>
+          <strong>{{ log.task | replace('_', ' ') | title }}</strong>
+          <small><span class="mini-status">{{ log.status }}</span> Step {{ loop.index }} of {{ logs | length }}</small>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="empty-state empty-state-compact">
+      <span class="empty-state-icon"><i class="bi bi-diagram-3" aria-hidden="true"></i></span>
+      <h4>Trace stored securely</h4>
+      <p>Detailed workflow records are available in the agent log database.</p>
+    </div>
+    {% endif %}
+
+    <div class="responsible-ai-note">
+      <i class="bi bi-shield-check" aria-hidden="true"></i>
+      <div><strong>Responsible AI by design</strong><span>Low-confidence answers are escalated to a human specialist.</span></div>
+    </div>
+  </aside>
+</div>
+{% endblock %}
+
+{% block page_scripts %}
+<script>
+  (() => {
+    const button = document.getElementById('copySolution');
+    const solution = document.getElementById('solutionText');
+    if (!button || !solution || !navigator.clipboard) return;
+    button.addEventListener('click', async () => {
+      await navigator.clipboard.writeText(solution.innerText);
+      const original = button.innerHTML;
+      button.innerHTML = '<i class="bi bi-check2" aria-hidden="true"></i> Copied';
+      setTimeout(() => { button.innerHTML = original; }, 1600);
+    });
+  })();
+</script>
+{% endblock %}
