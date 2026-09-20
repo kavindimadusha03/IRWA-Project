@@ -1,6 +1,6 @@
 # KnowGap AI
 
-KnowGap AI is a zero-budget FastAPI MVP for IT support, hybrid Information Retrieval, multi-agent coordination, security, Responsible AI, and organizational knowledge learning.
+KnowGap AI is a FastAPI MVP for IT support, hybrid Information Retrieval, multi-agent coordination, security, Responsible AI, and organizational knowledge learning.
 
 ## Six logical agents
 
