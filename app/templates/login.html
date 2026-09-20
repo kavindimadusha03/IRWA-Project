@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+{% block page_title %}Sign in · KnowGap AI{% endblock %}
+{% block content %}
+<div class="login-layout">
+  <section class="login-showcase" aria-labelledby="login-showcase-title">
+    <div class="login-orb login-orb-one"></div>
+    <div class="login-orb login-orb-two"></div>
+
+    <a class="login-brand" href="/" aria-label="KnowGap AI">
+      <span class="brand-mark brand-mark-light" aria-hidden="true">
+        <svg viewBox="0 0 48 48" role="img">
+          <path d="M13 14.5 24 8l11 6.5v13L24 34l-11-6.5z" fill="none" stroke="currentColor" stroke-width="3"/>
+          <circle cx="24" cy="21" r="4" fill="currentColor"/>
+          <path d="M24 25v9M13 20l7 2M35 20l-7 2" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span><strong>KnowGap <em>AI</em></strong><small>Intelligent IT operations</small></span>
+    </a>
+
+    <div class="showcase-copy">
+      <span class="hero-kicker"><i class="bi bi-stars" aria-hidden="true"></i> Multi-agent service intelligence</span>
+      <h1 id="login-showcase-title">Turn every support request into <span>shared knowledge.</span></h1>
+      <p>Resolve known issues in seconds, escalate uncertainty responsibly, and continuously strengthen your organization’s knowledge base.</p>
+    </div>
+
+    <div class="agent-network" aria-label="Six AI agents coordinate support requests">
+      <div class="network-core">
+        <span><i class="bi bi-cpu-fill" aria-hidden="true"></i></span>
+        <strong>Coordinator</strong>
+        <small>Routes every request</small>
+      </div>
+      <div class="network-agents">
+        <span><i class="bi bi-shield-check"></i> Security</span>
+        <span><i class="bi bi-tags"></i> Triage</span>
+        <span><i class="bi bi-search"></i> Retrieval</span>
+        <span><i class="bi bi-lightbulb"></i> Solution</span>
+        <span><i class="bi bi-graph-up-arrow"></i> Intelligence</span>
+      </div>
+    </div>
+
+    <div class="showcase-trust">
+      <span><i class="bi bi-check2-circle" aria-hidden="true"></i> Evidence grounded</span>
+      <span><i class="bi bi-check2-circle" aria-hidden="true"></i> Human in the loop</span>
+      <span><i class="bi bi-check2-circle" aria-hidden="true"></i> Privacy aware</span>
+    </div>
+  </section>
+
+  <section class="login-panel">
+    <div class="login-card">
+      <div class="login-card-header">
+        <span class="login-icon"><i class="bi bi-person-lock" aria-hidden="true"></i></span>
+        <span class="demo-chip"><span></span> Demo environment</span>
+      </div>
+      <div class="login-heading">
+        <p class="section-eyebrow">Welcome back</p>
+        <h2>Sign in to your workspace</h2>
+        <p>Access the tools available for your assigned role.</p>
+      </div>
+
+      {% if request.query_params.get('registered') %}
+      <div class="alert-modern alert-success" role="status">
+        <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+        <div><strong>Account created</strong><span>You can now sign in with your new account.</span></div>
+      </div>
+      {% endif %}
+      {% if request.query_params.get('reset') %}
+      <div class="alert-modern alert-success" role="status">
+        <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+        <div><strong>Password updated</strong><span>Your password has been changed. Sign in to continue.</span></div>
+      </div>
+      {% endif %}
+
+      {% if request.query_params.get('error') %}
+      <div class="alert-modern alert-error" role="alert">
+        <i class="bi bi-exclamation-circle-fill" aria-hidden="true"></i>
+        <div><strong>Unable to sign in</strong><span>The username or password is incorrect. Please try again.</span></div>
+      </div>
+      {% endif %}
+
+      <form method="post" action="/login" class="login-form">
+        <div class="form-field">
+          <label for="username">Username</label>
+          <div class="input-shell">
+            <i class="bi bi-person" aria-hidden="true"></i>
+            <input id="username" name="username" type="text" placeholder="Enter your username" autocomplete="username" required autofocus>
+          </div>
+        </div>
+        <div class="form-field">
+          <div class="label-row">
+            <label for="password">Password</label>
+            <span>Secure access</span>
+          </div>
+          <div class="input-shell">
+            <i class="bi bi-lock" aria-hidden="true"></i>
+            <input id="password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" required>
+            <button class="password-toggle" id="passwordToggle" type="button" aria-label="Show password">
+              <i class="bi bi-eye" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+        <button class="btn-primary-modern btn-login" type="submit">
+          <span>Sign in securely</span><i class="bi bi-arrow-right" aria-hidden="true"></i>
+        </button>
+      </form>
+
+      <div class="auth-links"><a href="/forgot-password">Forgot password?</a><span>New here? <a href="/register">Create an account</a></span></div>
+
+      <details class="demo-access">
+        <summary><i class="bi bi-key" aria-hidden="true"></i> View demo accounts</summary>
+        <div class="demo-account-grid">
+          <button type="button" data-user="customer" data-password="Customer123!"><strong>Customer</strong><span>customer</span></button>
+          <button type="button" data-user="support" data-password="Support123!"><strong>IT Support</strong><span>support</span></button>
+          <button type="button" data-user="analyst" data-password="Analyst123!"><strong>Analyst</strong><span>analyst</span></button>
+          <button type="button" data-user="admin" data-password="Admin123!"><strong>Admin</strong><span>admin</span></button>
+        </div>
+      </details>
+
+      <div class="login-security-note">
+        <i class="bi bi-shield-lock-fill" aria-hidden="true"></i>
+        <span>Your session is protected with secure, HTTP-only authentication.</span>
+      </div>
+    </div>
+    <p class="login-footer">KnowGap AI · Built by Team IntelliX</p>
+  </section>
+</div>
+{% endblock %}
+
+{% block page_scripts %}
+<script>
+  (() => {
+    const password = document.getElementById('password');
+    const toggle = document.getElementById('passwordToggle');
+    if (password && toggle) {
+      toggle.addEventListener('click', () => {
+        const reveal = password.type === 'password';
+        password.type = reveal ? 'text' : 'password';
+        toggle.innerHTML = reveal ? '<i class="bi bi-eye-slash" aria-hidden="true"></i>' : '<i class="bi bi-eye" aria-hidden="true"></i>';
+        toggle.setAttribute('aria-label', reveal ? 'Hide password' : 'Show password');
+      });
+    }
+
+    document.querySelectorAll('[data-user]').forEach((button) => {
+      button.addEventListener('click', () => {
+        document.getElementById('username').value = button.dataset.user;
+        document.getElementById('password').value = button.dataset.password;
+        document.getElementById('username').focus();
+      });
+    });
+  })();
+</script>
+{% endblock %}

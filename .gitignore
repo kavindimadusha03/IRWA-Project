@@ -1,0 +1,10 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+knowgap.db
+.pytest_cache/
+.idea/
+.vscode/
+.DS_Store

@@ -1,0 +1,81 @@
+KnowGap_AI_Complete/
+├── README.md
+├── requirements.txt
+├── .env
+├── .env.example
+├── .gitignore
+├── knowgap.db
+├── app/
+│   ├── __init__.py
+│   ├── config.py
+│   ├── database.py
+│   ├── main.py
+│   ├── models.py
+│   ├── notifications.py
+│   ├── schemas.py
+│   ├── agents/
+│   │   ├── __init__.py
+│   │   ├── coordinator.py
+│   │   ├── knowledge_intelligence_agent.py
+│   │   ├── retrieval_agent.py
+│   │   ├── security_agent.py
+│   │   ├── solution_agent.py
+│   │   └── ticket_agent.py
+│   ├── routes/
+│   │   ├── __init__.py
+│   │   ├── admin.py
+│   │   ├── agents.py
+│   │   ├── auth.py
+│   │   ├── chat.py
+│   │   ├── knowledge.py
+│   │   ├── support.py
+│   │   └── tickets.py
+│   ├── services/
+│   │   ├── __init__.py
+│   │   ├── auth.py
+│   │   ├── bm25.py
+│   │   ├── embeddings.py
+│   │   ├── hybrid_search.py
+│   │   ├── llm.py
+│   │   └── pii.py
+│   ├── static/
+│   │   └── styles.css
+│   └── templates/
+│       ├── admin.html
+│       ├── base.html
+│       ├── customer.html
+│       ├── dashboard.html
+│       ├── forgot_password.html
+│       ├── knowledge.html
+│       ├── login.html
+│       ├── profile.html
+│       ├── register.html
+│       ├── reset_password.html
+│       ├── support.html
+│       ├── ticket_result.html
+│
+├── data/
+│   ├── knowledge_base.csv
+│   └── tickets.csv
+│
+├── evaluation/
+│   ├── evaluate_ir.py
+│   └── gold_queries.csv
+│
+├── scripts/
+│   ├── generate_dataset.py
+│   └── seed_db.py
+│
+├── tests/
+│   ├── test_ai_improvements.py
+│   └── test_knowledge_health_performance.py
+│
+└── .pytest_cache/
+
+Project summary:
+- FastAPI application for AI-powered IT support
+- Multi-agent system for security, ticket analysis, retrieval, and recommendation
+- Hybrid search using BM25 + embeddings
+- SQLite database for users, tickets, knowledge articles, and logs
+- Role-based access for customer, support, analyst, and admin
+- Evaluation scripts for IR performance metrics
