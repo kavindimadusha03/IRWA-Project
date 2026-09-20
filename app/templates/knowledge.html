@@ -1,0 +1,147 @@
+{% extends "base.html" %}
+{% block page_title %}Knowledge Base · KnowGap AI{% endblock %}
+{% block header_title %}Knowledge base{% endblock %}
+{% block content %}
+{% set counts = namespace(approved=0, draft=0) %}
+{% for item in articles %}
+  {% if item.status == 'approved' %}{% set counts.approved = counts.approved + 1 %}{% else %}{% set counts.draft = counts.draft + 1 %}{% endif %}
+{% endfor %}
+
+<div class="page-heading heading-with-actions">
+  <div>
+    <span class="section-eyebrow">Trusted organizational memory</span>
+    <h2>Knowledge Base</h2>
+    <p>Search approved solutions and review drafts captured from resolved support incidents.</p>
+  </div>
+  <div class="heading-actions">
+    <span class="trust-badge"><i class="bi bi-patch-check-fill" aria-hidden="true"></i> Evidence governed</span>
+  </div>
+</div>
+
+<div class="metric-grid metric-grid-three">
+  <article class="metric-card">
+    <span class="metric-icon icon-blue"><i class="bi bi-collection-fill" aria-hidden="true"></i></span>
+    <div><small>Total articles</small><strong>{{ articles | length }}</strong><span>Searchable resources</span></div>
+  </article>
+  <article class="metric-card">
+    <span class="metric-icon icon-green"><i class="bi bi-patch-check-fill" aria-hidden="true"></i></span>
+    <div><small>Approved</small><strong>{{ counts.approved }}</strong><span>Authoritative evidence</span></div>
+  </article>
+  <article class="metric-card">
+    <span class="metric-icon icon-amber"><i class="bi bi-hourglass-split" aria-hidden="true"></i></span>
+    <div><small>Awaiting review</small><strong>{{ counts.draft }}</strong><span>Draft articles</span></div>
+  </article>
+</div>
+
+<section class="knowledge-toolbar panel-card">
+  <form method="get" action="/knowledge" class="filter-form">
+    <div class="filter-form-heading"><span><i class="bi bi-funnel" aria-hidden="true"></i> Refine articles</span>{% if knowledge_filters.category or knowledge_filters.os or knowledge_filters.status or knowledge_filters.from_date or knowledge_filters.to_date %}<a href="/knowledge">Clear filters</a>{% endif %}</div>
+    <div class="filter-form-grid">
+      <label>Category<select name="category"><option value="">All categories</option>{% for category in all_articles | map(attribute='category') | unique | sort %}<option value="{{ category }}" {% if knowledge_filters.category == category %}selected{% endif %}>{{ category }}</option>{% endfor %}</select></label>
+      <label>Operating system<select name="os"><option value="">All operating systems</option>{% for os_name in ['Windows 10', 'Windows 11', 'macOS', 'Ubuntu', 'Any'] %}<option value="{{ os_name }}" {% if knowledge_filters.os == os_name %}selected{% endif %}>{{ os_name }}</option>{% endfor %}</select></label>
+      <label>Status<select name="status"><option value="">All statuses</option><option value="approved" {% if knowledge_filters.status == 'approved' %}selected{% endif %}>Approved</option><option value="draft" {% if knowledge_filters.status == 'draft' %}selected{% endif %}>Draft</option></select></label>
+      <label>From date<input type="date" name="from_date" value="{{ knowledge_filters.from_date or '' }}"></label>
+      <label>To date<input type="date" name="to_date" value="{{ knowledge_filters.to_date or '' }}"></label>
+      <button class="btn-primary-modern btn-compact" type="submit"><i class="bi bi-search" aria-hidden="true"></i> Apply filters</button>
+    </div>
+  </form>
+  <div class="knowledge-search">
+    <i class="bi bi-search" aria-hidden="true"></i>
+    <input id="knowledgeSearch" type="search" placeholder="Search by title, document ID, category, or content..." aria-label="Search knowledge articles">
+    <kbd>⌘ K</kbd>
+  </div>
+  <div class="filter-group" role="group" aria-label="Filter articles by status">
+    <button class="filter-button active" type="button" data-filter="all">All <span>{{ articles | length }}</span></button>
+    <button class="filter-button" type="button" data-filter="approved">Approved <span>{{ counts.approved }}</span></button>
+    <button class="filter-button" type="button" data-filter="draft">Drafts <span>{{ counts.draft }}</span></button>
+  </div>
+</section>
+
+<div class="knowledge-grid" id="knowledgeGrid">
+  {% for a in articles %}
+  <article class="panel-card knowledge-card" data-status="{{ a.status }}">
+    <div class="knowledge-card-top">
+      <span class="knowledge-doc-icon {% if a.status == 'approved' %}approved{% else %}draft{% endif %}">
+        <i class="bi {% if a.status == 'approved' %}bi-file-earmark-check-fill{% else %}bi-file-earmark-text-fill{% endif %}" aria-hidden="true"></i>
+      </span>
+      <div class="knowledge-card-title">
+        <span class="ticket-heading-meta">
+          <span class="ticket-id">{{ a.doc_id }}</span>
+          <span class="status-pill status-{{ a.status }}"><span></span>{{ a.status | title }}</span>
+        </span>
+        <h3>{{ a.title }}</h3>
+      </div>
+    </div>
+
+    <div class="article-metadata">
+      <span><i class="bi bi-tag" aria-hidden="true"></i> {{ a.category }}</span>
+      <span><i class="bi bi-database-check" aria-hidden="true"></i> {{ a.source_type | replace('_', ' ') | title }}</span>
+      <span><i class="bi bi-laptop" aria-hidden="true"></i> {{ a.supported_os }}</span>
+    </div>
+
+    <div class="knowledge-content">{{ a.content }}</div>
+
+    <div class="knowledge-card-footer">
+      <span class="authority-note">
+        {% if a.status == 'approved' %}
+        <i class="bi bi-shield-check" aria-hidden="true"></i> Approved for agent retrieval
+        {% else %}
+        <i class="bi bi-info-circle" aria-hidden="true"></i> Not used as authoritative evidence yet
+        {% endif %}
+      </span>
+      {% if a.status == 'draft' and user.role in ['KNOWLEDGE_ANALYST', 'ADMIN'] %}
+      <form method="post" action="/knowledge/{{ a.id }}/approve">
+        <button class="btn-primary-modern btn-compact" type="submit"><i class="bi bi-check2-circle" aria-hidden="true"></i> Approve article</button>
+      </form>
+      {% endif %}
+    </div>
+  </article>
+  {% endfor %}
+</div>
+
+<div class="panel-card empty-state empty-state-wide d-none" id="knowledgeEmpty">
+  <span class="empty-state-icon"><i class="bi bi-search" aria-hidden="true"></i></span>
+  <h4>No matching articles</h4>
+  <p>Try another search term or switch the status filter.</p>
+</div>
+{% endblock %}
+
+{% block page_scripts %}
+<script>
+  (() => {
+    const search = document.getElementById('knowledgeSearch');
+    const buttons = [...document.querySelectorAll('[data-filter]')];
+    const cards = [...document.querySelectorAll('.knowledge-card')];
+    const empty = document.getElementById('knowledgeEmpty');
+    let activeFilter = 'all';
+
+    const applyFilters = () => {
+      const query = search.value.trim().toLowerCase();
+      let visible = 0;
+      cards.forEach((card) => {
+        const matchesStatus = activeFilter === 'all' || card.dataset.status === activeFilter;
+        const matchesQuery = !query || card.textContent.toLowerCase().includes(query);
+        const show = matchesStatus && matchesQuery;
+        card.classList.toggle('d-none', !show);
+        if (show) visible += 1;
+      });
+      empty.classList.toggle('d-none', visible !== 0);
+    };
+
+    search.addEventListener('input', applyFilters);
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        activeFilter = button.dataset.filter;
+        buttons.forEach((item) => item.classList.toggle('active', item === button));
+        applyFilters();
+      });
+    });
+    document.addEventListener('keydown', (event) => {
+      if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'k') {
+        event.preventDefault();
+        search.focus();
+      }
+    });
+  })();
+</script>
+{% endblock %}
