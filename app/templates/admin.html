@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block page_title %}Administration · KnowGap AI{% endblock %}
+{% block header_title %}Administration{% endblock %}
+{% block content %}
+<div class="page-heading heading-with-actions">
+  <div><span class="section-eyebrow">System control</span><h2>Administration</h2><p>Manage users, roles, knowledge articles, and support categories.</p></div>
+  <div class="heading-actions"><span class="trust-badge"><i class="bi bi-shield-lock-fill" aria-hidden="true"></i> Admin only</span></div>
+</div>
+{% if message %}<div class="alert-modern alert-success" role="status"><i class="bi bi-check-circle-fill" aria-hidden="true"></i><div><strong>Change saved</strong><span>{{ message }}</span></div></div>{% endif %}
+{% if error %}<div class="alert-modern alert-error" role="alert"><i class="bi bi-exclamation-circle-fill" aria-hidden="true"></i><div><strong>Change not saved</strong><span>{{ error }}</span></div></div>{% endif %}
+
+<section class="admin-section" id="users">
+  <div class="section-heading-row"><div><span class="section-eyebrow">Identity and access</span><h3>Users and roles</h3></div><span class="count-badge">{{ users | length }} users</span></div>
+  <div class="admin-create-card surface-card">
+    <h4><i class="bi bi-person-plus" aria-hidden="true"></i> Create user</h4>
+    <form method="post" action="/admin/users/create" class="admin-form-grid">
+      <div class="form-field"><label for="new-username">Username</label><input id="new-username" name="username" required></div>
+      <div class="form-field"><label for="new-full-name">Full name</label><input id="new-full-name" name="full_name" required></div>
+      <div class="form-field"><label for="new-password">Temporary password</label><input id="new-password" name="password" type="password" minlength="8" required></div>
+      <div class="form-field"><label for="new-role">Role</label><select id="new-role" name="role" required>{% for role in roles %}<option value="{{ role }}">{{ role | replace('_', ' ') | title }}</option>{% endfor %}</select></div>
+      <button class="btn-primary-modern" type="submit"><i class="bi bi-plus-lg" aria-hidden="true"></i> Add user</button>
+    </form>
+  </div>
+  <div class="panel-card table-card admin-table-wrap"><div class="table-responsive"><table class="modern-table admin-table"><thead><tr><th>Account</th><th>Role</th><th>Status</th><th>Save</th><th>Delete</th></tr></thead><tbody>
+  {% for account in users %}<tr><td><form id="user-update-{{ account.id }}" method="post" action="/admin/users/{{ account.id }}"></form><input form="user-update-{{ account.id }}" name="full_name" value="{{ account.full_name }}" aria-label="Full name for {{ account.username }}"><small>@{{ account.username }}</small></td><td><select form="user-update-{{ account.id }}" name="role" aria-label="Role for {{ account.username }}">{% for role in roles %}<option value="{{ role }}" {% if account.role == role %}selected{% endif %}>{{ role | replace('_', ' ') | title }}</option>{% endfor %}</select></td><td><label class="check-label"><input form="user-update-{{ account.id }}" type="checkbox" name="is_active" {% if account.is_active %}checked{% endif %}> Active</label></td><td><button class="btn-secondary-modern btn-compact" form="user-update-{{ account.id }}" type="submit"><i class="bi bi-save" aria-hidden="true"></i> Save</button></td><td><form method="post" action="/admin/users/{{ account.id }}/delete"><button class="icon-button icon-button-danger" type="submit" title="Delete {{ account.username }}" aria-label="Delete {{ account.username }}"><i class="bi bi-trash3" aria-hidden="true"></i></button></form></td></tr>{% endfor %}
+  </tbody></table></div></div>
+</section>
+
+<section class="admin-section" id="articles">
+  <div class="section-heading-row"><div><span class="section-eyebrow">Governed content</span><h3>Knowledge articles</h3></div><span class="count-badge">{{ articles | length }} articles</span></div>
+  <div class="admin-create-card surface-card">
+    <h4><i class="bi bi-journal-plus" aria-hidden="true"></i> Create article</h4>
+    <form method="post" action="/admin/articles/create" class="admin-form-grid admin-form-wide">
+      <div class="form-field"><label for="new-doc-id">Document ID</label><input id="new-doc-id" name="doc_id" placeholder="KB-CUSTOM-001" required></div>
+      <div class="form-field"><label for="new-article-title">Title</label><input id="new-article-title" name="title" required></div>
+      <div class="form-field"><label for="new-category">Category</label><select id="new-category" name="category" required>{% for category in categories if category.is_active %}<option value="{{ category.name }}">{{ category.name }}</option>{% endfor %}</select></div>
+      <div class="form-field"><label for="new-os">Supported OS</label><input id="new-os" name="supported_os" value="Any"></div>
+      <div class="form-field"><label for="new-status">Status</label><select id="new-status" name="status"><option value="draft">Draft</option><option value="approved">Approved</option></select></div>
+      <div class="form-field form-field-full"><label for="new-content">Content</label><textarea id="new-content" name="content" rows="4" required></textarea></div>
+      <button class="btn-primary-modern" type="submit"><i class="bi bi-plus-lg" aria-hidden="true"></i> Add article</button>
+    </form>
+  </div>
+  <div class="admin-edit-stack">
+  {% for article in articles %}<article class="surface-card admin-edit-card"><form method="post" action="/admin/articles/{{ article.id }}"><div class="admin-edit-header"><div><span class="ticket-id">{{ article.doc_id }}</span><h4>{{ article.title }}</h4></div><button class="icon-button icon-button-danger" formaction="/admin/articles/{{ article.id }}/delete" formmethod="post" type="submit" title="Delete article" aria-label="Delete article"><i class="bi bi-trash3" aria-hidden="true"></i></button></div><div class="admin-form-grid admin-form-wide"><div class="form-field"><label>Document ID</label><input name="doc_id" value="{{ article.doc_id }}" required></div><div class="form-field"><label>Title</label><input name="title" value="{{ article.title }}" required></div><div class="form-field"><label>Category</label><select name="category" required>{% for category in categories %}<option value="{{ category.name }}" {% if article.category == category.name %}selected{% endif %}>{{ category.name }}</option>{% endfor %}</select></div><div class="form-field"><label>Supported OS</label><input name="supported_os" value="{{ article.supported_os }}"></div><div class="form-field"><label>Status</label><select name="status"><option value="draft" {% if article.status == 'draft' %}selected{% endif %}>Draft</option><option value="approved" {% if article.status == 'approved' %}selected{% endif %}>Approved</option></select></div><div class="form-field form-field-full"><label>Content</label><textarea name="content" rows="4" required>{{ article.content }}</textarea></div></div><button class="btn-secondary-modern" type="submit"><i class="bi bi-save" aria-hidden="true"></i> Save article</button></form></article>{% endfor %}
+  </div>
+</section>
+
+<section class="admin-section" id="categories">
+  <div class="section-heading-row"><div><span class="section-eyebrow">Classification</span><h3>Categories</h3></div><span class="count-badge">{{ categories | length }} categories</span></div>
+  <div class="admin-create-card surface-card"><h4><i class="bi bi-tags" aria-hidden="true"></i> Create category</h4><form method="post" action="/admin/categories/create" class="admin-form-grid"><div class="form-field"><label for="new-category-name">Name</label><input id="new-category-name" name="name" required></div><div class="form-field form-field-wide"><label for="new-category-description">Description</label><input id="new-category-description" name="description"></div><button class="btn-primary-modern" type="submit"><i class="bi bi-plus-lg" aria-hidden="true"></i> Add category</button></form></div>
+  <div class="admin-category-grid">{% for category in categories %}<form method="post" action="/admin/categories/{{ category.id }}" class="surface-card admin-category-card"><div class="admin-edit-header"><i class="bi bi-tag-fill" aria-hidden="true"></i><button class="icon-button icon-button-danger" formaction="/admin/categories/{{ category.id }}/delete" formmethod="post" type="submit" title="Delete category" aria-label="Delete category"><i class="bi bi-trash3" aria-hidden="true"></i></button></div><div class="form-field"><label>Name</label><input name="name" value="{{ category.name }}" required></div><div class="form-field"><label>Description</label><input name="description" value="{{ category.description }}"></div><label class="check-label"><input type="checkbox" name="is_active" {% if category.is_active %}checked{% endif %}> Active</label><button class="btn-secondary-modern btn-compact" type="submit"><i class="bi bi-save" aria-hidden="true"></i> Save</button></form>{% endfor %}</div>
+</section>
+{% endblock %}
