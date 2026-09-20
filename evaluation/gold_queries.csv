@@ -1,0 +1,18 @@
+query,relevant_doc_ids
+Wi-Fi connected but no internet,KB-001|KB-009|KB-017
+DNS is not working although wireless is connected,KB-001|KB-009|KB-017
+Need to renew IP address because internet does not load,KB-009|KB-017
+VPN disconnects every few minutes,KB-002|KB-010|KB-018
+VPN profile seems corrupted and reconnecting fails,KB-010|KB-018
+Outlook keeps asking for my password,KB-003|KB-011|KB-019
+MFA code is rejected,KB-003|KB-011|KB-019
+My user account is locked,KB-004|KB-012|KB-020
+Need to reset an expired password,KB-004|KB-012|KB-020
+Print jobs are stuck in queue,KB-005|KB-013|KB-021
+Windows cannot find the network printer,KB-005|KB-013|KB-021
+Windows update failed,KB-006|KB-014|KB-022
+Need to update device drivers after Windows problem,KB-006|KB-014|KB-022
+Software installer says administrator permission required,KB-007|KB-015|KB-023
+Installer fails because dependency is missing,KB-007|KB-015|KB-023
+Remote Desktop cannot connect,KB-008|KB-016|KB-024
+RDP credential error,KB-008|KB-016|KB-024
