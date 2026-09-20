@@ -1,0 +1,207 @@
+{% extends "base.html" %}
+{% block page_title %}Service Desk · KnowGap AI{% endblock %}
+{% block header_title %}Service desk{% endblock %}
+{% block content %}
+<section class="welcome-banner">
+  <div class="welcome-copy">
+    <span class="hero-kicker hero-kicker-blue"><i class="bi bi-stars" aria-hidden="true"></i> AI-assisted support</span>
+    <h2>How can we help, {{ user.full_name }}?</h2>
+    <p>Describe the issue in your own words. Our agent team will securely analyze it, search trusted evidence, and guide you to the next best action.</p>
+    <div class="welcome-points">
+      <span><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i> Fast triage</span>
+      <span><i class="bi bi-shield-check" aria-hidden="true"></i> Privacy aware</span>
+      <span><i class="bi bi-person-check" aria-hidden="true"></i> Human escalation</span>
+    </div>
+  </div>
+  <div class="welcome-visual" aria-hidden="true">
+    <span class="visual-ring ring-one"></span>
+    <span class="visual-ring ring-two"></span>
+    <div class="visual-core"><i class="bi bi-cpu-fill"></i></div>
+    <span class="visual-node node-one"><i class="bi bi-search"></i></span>
+    <span class="visual-node node-two"><i class="bi bi-shield-check"></i></span>
+    <span class="visual-node node-three"><i class="bi bi-lightbulb"></i></span>
+  </div>
+</section>
+
+<section class="panel-card support-chat-card" aria-labelledby="support-chat-title">
+  <div class="panel-heading panel-heading-inline">
+    <div>
+      <span class="section-eyebrow">Self-service assistant</span>
+      <h3 id="support-chat-title">Ask KnowGap AI</h3>
+      <p>Get answers grounded in approved knowledge articles before opening a ticket.</p>
+    </div>
+    <span class="panel-icon panel-icon-purple"><i class="bi bi-chat-dots-fill" aria-hidden="true"></i></span>
+  </div>
+  <div class="chat-messages" id="chatMessages" aria-live="polite">
+    <div class="chat-bubble chat-bubble-assistant"><span class="chat-avatar"><i class="bi bi-stars" aria-hidden="true"></i></span><div><strong>KnowGap AI</strong><p>What IT issue can I help you investigate?</p></div></div>
+  </div>
+  <form class="chat-compose" id="chatForm">
+    <label class="visually-hidden" for="chatMessage">Ask a support question</label>
+    <textarea id="chatMessage" rows="2" maxlength="2000" placeholder="Ask about Wi-Fi, VPN, Outlook, printers, or another IT issue..." required></textarea>
+    <button class="btn-primary-modern" type="submit" title="Send message" aria-label="Send message"><i class="bi bi-send-fill" aria-hidden="true"></i></button>
+  </form>
+  <div class="chat-status" id="chatStatus"><i class="bi bi-shield-check" aria-hidden="true"></i> Answers use approved knowledge articles only.</div>
+</section>
+
+<div class="content-grid customer-grid">
+  <section class="panel-card raise-ticket-card">
+    <div class="panel-heading">
+      <div>
+        <span class="section-eyebrow">New request</span>
+        <h3>Raise an IT support ticket</h3>
+        <p>Include what happened, when it started, and any error message you can see.</p>
+      </div>
+      <span class="panel-icon panel-icon-primary"><i class="bi bi-plus-lg" aria-hidden="true"></i></span>
+    </div>
+    <form method="post" action="/tickets/create" class="ticket-form">
+      <div class="form-field">
+        <label for="ticket-title">Short title</label>
+        <div class="input-shell input-shell-light">
+          <i class="bi bi-type" aria-hidden="true"></i>
+          <input id="ticket-title" name="title" type="text" minlength="3" maxlength="150" placeholder="e.g. Wi-Fi connected but no internet" required>
+        </div>
+        <small>Summarize the issue in one clear sentence.</small>
+      </div>
+      <div class="form-field">
+        <div class="label-row">
+          <label for="ticket-description">Describe the problem</label>
+          <span id="descriptionCount">0 / 3000</span>
+        </div>
+        <textarea id="ticket-description" name="description" class="modern-textarea" rows="7" minlength="10" maxlength="3000" placeholder="Tell us what you were doing, what you expected, and what actually happened..." required></textarea>
+        <small><i class="bi bi-info-circle" aria-hidden="true"></i> Personal information is masked before AI processing.</small>
+      </div>
+      <button class="btn-primary-modern" type="submit">
+        <span>Analyze and submit ticket</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+      </button>
+    </form>
+  </section>
+
+  <section class="panel-card tickets-card">
+    <div class="panel-heading panel-heading-inline">
+      <div>
+        <span class="section-eyebrow">Activity</span>
+        <h3>My support tickets</h3>
+      </div>
+      <span class="count-badge">{{ tickets | length }} total</span>
+    </div>
+
+    <form method="get" action="/home" class="ticket-filter-form">
+      <div class="filter-form-heading"><span><i class="bi bi-funnel" aria-hidden="true"></i> Filter tickets</span>{% if ticket_filters.category or ticket_filters.status or ticket_filters.min_confidence or ticket_filters.from_date or ticket_filters.to_date %}<a href="/home">Clear filters</a>{% endif %}</div>
+      <div class="filter-form-grid">
+        <label>Category<select name="category"><option value="">All categories</option>{% for category in ['Wi-Fi / DNS', 'VPN', 'Outlook / MFA', 'Accounts / Passwords', 'Printers', 'Windows / Updates', 'Software Installation', 'Remote Desktop', 'Unknown'] %}<option value="{{ category }}" {% if ticket_filters.category == category %}selected{% endif %}>{{ category }}</option>{% endfor %}</select></label>
+        <label>Status<select name="status"><option value="">All statuses</option>{% for status in ['OPEN', 'ESCALATED', 'SOLUTION_PROPOSED', 'RESOLVED', 'CLOSED'] %}<option value="{{ status }}" {% if ticket_filters.status == status %}selected{% endif %}>{{ status | replace('_', ' ') | title }}</option>{% endfor %}</select></label>
+        <label>Minimum confidence<select name="min_confidence"><option value="">Any confidence</option><option value="0.55" {% if ticket_filters.min_confidence == '0.55' %}selected{% endif %}>55%+</option><option value="0.68" {% if ticket_filters.min_confidence == '0.68' %}selected{% endif %}>68%+</option><option value="0.80" {% if ticket_filters.min_confidence == '0.80' %}selected{% endif %}>80%+</option></select></label>
+        <label>From date<input type="date" name="from_date" value="{{ ticket_filters.from_date or '' }}"></label>
+        <label>To date<input type="date" name="to_date" value="{{ ticket_filters.to_date or '' }}"></label>
+        <button class="btn-secondary-modern btn-compact" type="submit"><i class="bi bi-funnel" aria-hidden="true"></i> Apply</button>
+      </div>
+    </form>
+
+    {% if tickets %}
+    <div class="ticket-list">
+      {% for t in tickets %}
+      <a href="/tickets/{{ t.id }}" class="ticket-row">
+        <span class="ticket-row-icon"><i class="bi bi-ticket-detailed" aria-hidden="true"></i></span>
+        <span class="ticket-row-main">
+          <strong>{{ t.title }}</strong>
+          <small><span class="ticket-code">{{ t.ticket_code }}</span> · {{ t.category or 'Awaiting classification' }}</small>
+        </span>
+        <span class="status-pill status-{{ t.status | lower | replace('_', '-') }}">
+          <span></span>{{ t.status | replace('_', ' ') | title }}
+        </span>
+        <i class="bi bi-chevron-right ticket-chevron" aria-hidden="true"></i>
+      </a>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="empty-state">
+      <span class="empty-state-icon"><i class="bi bi-inbox" aria-hidden="true"></i></span>
+      <h4>No tickets yet</h4>
+      <p>Your submitted support requests and their progress will appear here.</p>
+    </div>
+    {% endif %}
+
+    <div class="process-strip">
+      <div><span>1</span><strong>Submit</strong><small>Describe your issue</small></div>
+      <i class="bi bi-chevron-right" aria-hidden="true"></i>
+      <div><span>2</span><strong>Analyze</strong><small>Agents find evidence</small></div>
+      <i class="bi bi-chevron-right" aria-hidden="true"></i>
+      <div><span>3</span><strong>Resolve</strong><small>Self-help or support</small></div>
+    </div>
+  </section>
+</div>
+{% endblock %}
+
+{% block page_scripts %}
+<script>
+  (() => {
+    const field = document.getElementById('ticket-description');
+    const count = document.getElementById('descriptionCount');
+    if (!field || !count) return;
+    const update = () => { count.textContent = `${field.value.length} / 3000`; };
+    field.addEventListener('input', update);
+    update();
+
+    const chatForm = document.getElementById('chatForm');
+    const chatInput = document.getElementById('chatMessage');
+    const chatMessages = document.getElementById('chatMessages');
+    const chatStatus = document.getElementById('chatStatus');
+    const history = [];
+    if (!chatForm || !chatInput || !chatMessages || !chatStatus) return;
+
+    const addBubble = (role, text, sources = []) => {
+      const bubble = document.createElement('div');
+      bubble.className = `chat-bubble chat-bubble-${role}`;
+      const avatar = document.createElement('span');
+      avatar.className = 'chat-avatar';
+      avatar.innerHTML = role === 'user' ? '<i class="bi bi-person-fill" aria-hidden="true"></i>' : '<i class="bi bi-stars" aria-hidden="true"></i>';
+      const body = document.createElement('div');
+      const label = document.createElement('strong');
+      label.textContent = role === 'user' ? 'You' : 'KnowGap AI';
+      const message = document.createElement('p');
+      message.textContent = text;
+      body.append(label, message);
+      if (sources.length) {
+        const sourceList = document.createElement('div');
+        sourceList.className = 'chat-sources';
+        sources.forEach((source) => {
+          const chip = document.createElement('span');
+          chip.textContent = `${source.source_id} · ${source.title}`;
+          sourceList.appendChild(chip);
+        });
+        body.appendChild(sourceList);
+      }
+      bubble.append(avatar, body);
+      chatMessages.appendChild(bubble);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    };
+
+    chatForm.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const message = chatInput.value.trim();
+      if (!message) return;
+      addBubble('user', message);
+      history.push({ role: 'user', content: message });
+      chatInput.value = '';
+      chatInput.disabled = true;
+      chatForm.querySelector('button').disabled = true;
+      chatStatus.innerHTML = '<i class="bi bi-arrow-repeat" aria-hidden="true"></i> Searching approved knowledge...';
+      try {
+        const response = await fetch('/chat/message', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ message, history: history.slice(-8) }) });
+        const data = await response.json();
+        if (!response.ok) throw new Error(data.detail || 'Unable to reach the assistant.');
+        addBubble('assistant', data.answer, data.sources || []);
+        history.push({ role: 'assistant', content: data.answer });
+        chatStatus.innerHTML = data.sources?.length ? '<i class="bi bi-patch-check-fill" aria-hidden="true"></i> Grounded in approved knowledge articles.' : '<i class="bi bi-info-circle" aria-hidden="true"></i> No approved article matched. Consider opening a ticket.';
+      } catch (error) {
+        addBubble('assistant', error.message);
+        chatStatus.innerHTML = '<i class="bi bi-exclamation-circle" aria-hidden="true"></i> The assistant is temporarily unavailable.';
+      } finally {
+        chatInput.disabled = false;
+        chatForm.querySelector('button').disabled = false;
+        chatInput.focus();
+      }
+    });
+  })();
+</script>
+{% endblock %}

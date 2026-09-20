@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+{% block page_title %}Support Queue · KnowGap AI{% endblock %}
+{% block header_title %}Support operations{% endblock %}
+{% block content %}
+<div class="page-heading heading-with-actions">
+  <div>
+    <span class="section-eyebrow">Human escalation desk</span>
+    <h2>IT Support Queue</h2>
+    <p>Investigate requests where the agent team could not find sufficiently reliable evidence.</p>
+  </div>
+  <div class="heading-actions">
+    <span class="queue-live"><span class="status-pulse"></span> Queue is live</span>
+  </div>
+</div>
+
+<div class="metric-grid metric-grid-three">
+  <article class="metric-card">
+    <span class="metric-icon icon-amber"><i class="bi bi-inboxes-fill" aria-hidden="true"></i></span>
+    <div><small>Awaiting review</small><strong>{{ queue | length }}</strong><span>Escalated tickets</span></div>
+  </article>
+  <article class="metric-card">
+    <span class="metric-icon icon-green"><i class="bi bi-check2-circle" aria-hidden="true"></i></span>
+    <div><small>Recently completed</small><strong>{{ resolved | length }}</strong><span>Resolved tickets</span></div>
+  </article>
+  <article class="metric-card">
+    <span class="metric-icon icon-blue"><i class="bi bi-journal-plus" aria-hidden="true"></i></span>
+    <div><small>Knowledge capture</small><strong>Auto</strong><span>Draft after resolution</span></div>
+  </article>
+</div>
+
+<section class="section-block">
+  <div class="section-heading-row">
+    <div>
+      <span class="section-eyebrow">Priority workload</span>
+      <h3>Tickets requiring specialist review</h3>
+    </div>
+    <span class="count-badge">{{ queue | length }} open</span>
+  </div>
+
+  <form method="get" action="/support" class="ticket-filter-form panel-card">
+    <div class="filter-form-heading"><span><i class="bi bi-funnel" aria-hidden="true"></i> Filter support work</span>{% if ticket_filters.category or ticket_filters.status or ticket_filters.min_confidence or ticket_filters.from_date or ticket_filters.to_date %}<a href="/support">Clear filters</a>{% endif %}</div>
+    <div class="filter-form-grid">
+      <label>Category<select name="category"><option value="">All categories</option>{% for category in ['Wi-Fi / DNS', 'VPN', 'Outlook / MFA', 'Accounts / Passwords', 'Printers', 'Windows / Updates', 'Software Installation', 'Remote Desktop', 'Unknown'] %}<option value="{{ category }}" {% if ticket_filters.category == category %}selected{% endif %}>{{ category }}</option>{% endfor %}</select></label>
+      <label>Status<select name="status"><option value="">Queue and resolved</option>{% for status in ['ESCALATED', 'RESOLVED', 'CLOSED'] %}<option value="{{ status }}" {% if ticket_filters.status == status %}selected{% endif %}>{{ status | replace('_', ' ') | title }}</option>{% endfor %}</select></label>
+      <label>Minimum confidence<select name="min_confidence"><option value="">Any confidence</option><option value="0.55" {% if ticket_filters.min_confidence == '0.55' %}selected{% endif %}>55%+</option><option value="0.68" {% if ticket_filters.min_confidence == '0.68' %}selected{% endif %}>68%+</option><option value="0.80" {% if ticket_filters.min_confidence == '0.80' %}selected{% endif %}>80%+</option></select></label>
+      <label>From date<input type="date" name="from_date" value="{{ ticket_filters.from_date or '' }}"></label>
+      <label>To date<input type="date" name="to_date" value="{{ ticket_filters.to_date or '' }}"></label>
+      <button class="btn-primary-modern btn-compact" type="submit"><i class="bi bi-funnel" aria-hidden="true"></i> Apply filters</button>
+    </div>
+  </form>
+
+  {% if queue %}
+  <div class="support-queue">
+    {% for t in queue %}
+    <article class="panel-card support-ticket">
+      <div class="support-ticket-header">
+        <div class="support-ticket-title">
+          <span class="ticket-row-icon"><i class="bi bi-ticket-detailed" aria-hidden="true"></i></span>
+          <div>
+            <span class="ticket-heading-meta">
+              <span class="ticket-id">{{ t.ticket_code }}</span>
+              <span class="status-pill status-escalated"><span></span>Escalated</span>
+            </span>
+            <h4>{{ t.canonical_issue or t.title }}</h4>
+          </div>
+        </div>
+        <div class="confidence-chip">
+          <small>Retrieval confidence</small>
+          <strong>{{ ((t.retrieval_confidence or 0) * 100) | round | int }}%</strong>
+        </div>
+      </div>
+
+      <div class="issue-description">
+        <i class="bi bi-chat-left-text" aria-hidden="true"></i>
+        <p>{{ t.description }}</p>
+      </div>
+
+      <div class="ticket-context-row">
+        <span><i class="bi bi-tag" aria-hidden="true"></i> {{ t.category or 'Unclassified' }}</span>
+        <span><i class="bi bi-clock-history" aria-hidden="true"></i> {{ t.priority or 'Medium' }} priority</span>
+        <span><i class="bi bi-clipboard-check" aria-hidden="true"></i> {{ t.approval_status or 'PENDING' }} approval</span>
+      </div>
+      {% if t.suggested_reply %}
+      <div class="suggested-reply-box compact-box">
+        <strong>Suggested reply</strong>
+        <p>{{ t.suggested_reply }}</p>
+      </div>
+      {% endif %}
+
+      <details class="resolution-form-wrap" {% if loop.first %}open{% endif %}>
+        <summary><span><i class="bi bi-tools" aria-hidden="true"></i> Record investigation and resolve</span><i class="bi bi-chevron-down chevron" aria-hidden="true"></i></summary>
+        <form method="post" action="/support/tickets/{{ t.id }}/resolve" class="resolution-form">
+          <div class="form-field">
+            <label for="root-cause-{{ t.id }}">Root cause</label>
+            <textarea id="root-cause-{{ t.id }}" class="modern-textarea" name="root_cause" rows="3" placeholder="What caused the issue?" required></textarea>
+            <small>State the verified technical cause clearly.</small>
+          </div>
+          <div class="form-field">
+            <label for="resolution-{{ t.id }}">Resolution</label>
+            <textarea id="resolution-{{ t.id }}" class="modern-textarea" name="resolution_notes" rows="4" placeholder="Describe the steps that resolved the issue..." required></textarea>
+            <small>These notes will become the basis of a reviewable knowledge article.</small>
+          </div>
+          <input type="hidden" name="create_kb_draft" value="yes">
+          <div class="resolution-form-footer">
+            <span><i class="bi bi-journal-plus" aria-hidden="true"></i> A knowledge-base draft will be created automatically.</span>
+            <button class="btn-success-modern" type="submit"><i class="bi bi-check2-circle" aria-hidden="true"></i> Resolve and create draft</button>
+          </div>
+        </form>
+      </details>
+    </article>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="panel-card empty-state empty-state-wide">
+    <span class="empty-state-icon success-empty"><i class="bi bi-check2-all" aria-hidden="true"></i></span>
+    <h4>The queue is clear</h4>
+    <p>No escalated tickets need specialist attention right now.</p>
+  </div>
+  {% endif %}
+</section>
+
+<section class="section-block">
+  <div class="section-heading-row">
+    <div>
+      <span class="section-eyebrow">Completed work</span>
+      <h3>Recently resolved</h3>
+    </div>
+  </div>
+  <div class="panel-card table-card">
+    {% if resolved %}
+    <div class="table-responsive">
+      <table class="modern-table">
+        <thead><tr><th>Ticket</th><th>Issue</th><th>Resolution</th><th>Status</th></tr></thead>
+        <tbody>
+          {% for t in resolved %}
+          <tr>
+            <td><span class="ticket-code">{{ t.ticket_code }}</span></td>
+            <td><strong>{{ t.canonical_issue or t.title }}</strong><small>{{ t.category }}</small></td>
+            <td><span class="table-clamp">{{ t.resolution_notes }}</span></td>
+            <td><span class="status-pill status-resolved"><span></span>Resolved</span></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% else %}
+    <div class="empty-inline"><i class="bi bi-clock-history" aria-hidden="true"></i><span>No resolved tickets to display yet.</span></div>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}
