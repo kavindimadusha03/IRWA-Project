@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block page_title %}Create account · KnowGap AI{% endblock %}
+{% block content %}
+<section class="login-panel">
+  <div class="login-card">
+    <div class="login-card-header"><span class="login-icon"><i class="bi bi-person-plus" aria-hidden="true"></i></span><span class="demo-chip"><span></span> Customer account</span></div>
+    <div class="login-heading"><p class="section-eyebrow">Get started</p><h2>Create your workspace account</h2><p>Register as a customer to submit and track support requests.</p></div>
+    {% if error %}<div class="alert-modern alert-error" role="alert"><i class="bi bi-exclamation-circle-fill" aria-hidden="true"></i><div><strong>Account not created</strong><span>{{ error }}</span></div></div>{% endif %}
+    <form method="post" action="/register" class="login-form">
+      <div class="form-field"><label for="full_name">Full name</label><div class="input-shell"><i class="bi bi-person" aria-hidden="true"></i><input id="full_name" name="full_name" value="{{ full_name or '' }}" autocomplete="name" required></div></div>
+      <div class="form-field"><label for="username">Username</label><div class="input-shell"><i class="bi bi-at" aria-hidden="true"></i><input id="username" name="username" value="{{ username or '' }}" autocomplete="username" required></div></div>
+      <div class="form-field"><label for="password">Password</label><div class="input-shell"><i class="bi bi-lock" aria-hidden="true"></i><input id="password" name="password" type="password" minlength="8" autocomplete="new-password" required></div></div>
+      <div class="form-field"><label for="confirm_password">Confirm password</label><div class="input-shell"><i class="bi bi-lock-fill" aria-hidden="true"></i><input id="confirm_password" name="confirm_password" type="password" minlength="8" autocomplete="new-password" required></div></div>
+      <button class="btn-primary-modern btn-login" type="submit"><span>Create account</span><i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+    </form>
+    <p class="auth-switch">Already have an account? <a href="/">Sign in</a></p>
+  </div>
+  <p class="login-footer">KnowGap AI · Built by Team IntelliX</p>
+</section>
+{% endblock %}
