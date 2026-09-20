@@ -1,0 +1,243 @@
+{% extends "base.html" %}
+{% block page_title %}Intelligence Dashboard · KnowGap AI{% endblock %}
+{% block header_title %}Knowledge intelligence{% endblock %}
+{% block content %}
+<div class="page-heading heading-with-actions">
+  <div>
+    <span class="section-eyebrow">Operational intelligence</span>
+    <h2>Knowledge Intelligence Dashboard</h2>
+    <p>Monitor evidence coverage, recurring issues, agent activity, and security signals.</p>
+  </div>
+  <div class="heading-actions">
+    <span class="queue-live"><span class="status-pulse"></span> Live analysis</span>
+  </div>
+</div>
+
+<div class="metric-grid metric-grid-four">
+  <article class="metric-card">
+    <span class="metric-icon icon-blue"><i class="bi bi-grid-fill" aria-hidden="true"></i></span>
+    <div><small>Categories monitored</small><strong>{{ health | length }}</strong><span>Knowledge domains</span></div>
+  </article>
+  <article class="metric-card">
+    <span class="metric-icon icon-purple"><i class="bi bi-bezier2" aria-hidden="true"></i></span>
+    <div><small>Recurring patterns</small><strong>{{ clusters | length }}</strong><span>Detected clusters</span></div>
+  </article>
+  <article class="metric-card">
+    <span class="metric-icon icon-green"><i class="bi bi-diagram-3-fill" aria-hidden="true"></i></span>
+    <div><small>Agent activity</small><strong>{{ logs | length }}</strong><span>Recent messages</span></div>
+  </article>
+  <article class="metric-card">
+    <span class="metric-icon {% if security_events %}icon-amber{% else %}icon-green{% endif %}"><i class="bi bi-shield-fill-check" aria-hidden="true"></i></span>
+    <div><small>Security signals</small><strong>{{ security_events | length }}</strong><span>Recent events</span></div>
+  </article>
+</div>
+
+<div class="dashboard-grid dashboard-top-grid">
+  <section class="panel-card coverage-card">
+    <div class="panel-heading panel-heading-inline">
+      <div>
+        <span class="section-eyebrow">Evidence readiness</span>
+        <h3>Knowledge health by category</h3>
+        <p>Higher scores indicate stronger trusted evidence coverage.</p>
+      </div>
+      <span class="chart-legend"><span></span> Coverage score</span>
+    </div>
+    {% if health %}
+    <div class="chart-wrap"><canvas id="coverageChart" aria-label="Knowledge coverage by category"></canvas></div>
+    {% else %}
+    <div class="empty-state empty-state-compact">
+      <span class="empty-state-icon"><i class="bi bi-bar-chart" aria-hidden="true"></i></span>
+      <h4>No health data yet</h4><p>Coverage appears after tickets have been analyzed.</p>
+    </div>
+    {% endif %}
+  </section>
+
+  <section class="panel-card patterns-card">
+    <div class="panel-heading panel-heading-inline">
+      <div>
+        <span class="section-eyebrow">KMeans analysis</span>
+        <h3>Recurring patterns</h3>
+        <p>Similar support issues grouped automatically.</p>
+      </div>
+      <span class="panel-icon panel-icon-purple"><i class="bi bi-bezier2" aria-hidden="true"></i></span>
+    </div>
+    {% if clusters %}
+    <div class="cluster-list">
+      {% for c in clusters %}
+      <article class="cluster-item">
+        <span class="cluster-number">{{ '%02d' | format(c.cluster_id) }}</span>
+        <div><strong>{{ c.label }}</strong><span>{{ c.count }} related tickets</span><small>{{ c.example }}</small></div>
+        <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="empty-state empty-state-compact">
+      <span class="empty-state-icon"><i class="bi bi-bezier2" aria-hidden="true"></i></span>
+      <h4>Building patterns</h4><p>At least eight tickets are needed for clustering.</p>
+    </div>
+    {% endif %}
+  </section>
+</div>
+
+<section class="panel-card">
+  <div class="panel-heading panel-heading-inline">
+    <div><span class="section-eyebrow">Retrieval evaluation</span><h3>Precision@K and Recall@K</h3></div>
+    <span class="count-badge">Hybrid search</span>
+  </div>
+  {% if evaluation_metrics %}
+  <div class="metric-grid metric-grid-three">
+    {% for method, stats in evaluation_metrics.items() %}
+    <article class="metric-card">
+      <span class="metric-icon icon-blue"><i class="bi bi-graph-up" aria-hidden="true"></i></span>
+      <div><small>{{ method }}</small><strong>{{ stats.precision_at_5 }}</strong><span>Precision@5</span></div>
+      <div class="secondary-stat"><strong>{{ stats.recall_at_5 }}</strong><span>Recall@5</span></div>
+    </article>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="empty-inline"><i class="bi bi-graph-up" aria-hidden="true"></i><span>Evaluation metrics unavailable.</span></div>
+  {% endif %}
+</section>
+
+<section class="panel-card table-card health-table-card">
+  <div class="panel-heading panel-heading-inline">
+    <div><span class="section-eyebrow">Coverage detail</span><h3>Category health</h3></div>
+    <span class="count-badge">{{ health | length }} categories</span>
+  </div>
+  {% if health %}
+  <div class="table-responsive">
+    <table class="modern-table">
+      <thead><tr><th>Category</th><th>Ticket volume</th><th>Evidence coverage</th><th>Assessment</th></tr></thead>
+      <tbody>
+      {% for r in health %}
+        {% set score = (r.coverage * 100) | round | int %}
+        <tr>
+          <td><strong>{{ r.category }}</strong></td>
+          <td><span class="volume-value">{{ r.tickets }}</span></td>
+          <td>
+            <div class="table-progress">
+              <span class="progress-track"><span style="width: {{ score }}%"></span></span>
+              <strong>{{ score }}%</strong>
+            </div>
+          </td>
+          <td><span class="gap-pill gap-{{ r.gap | lower }}">{{ r.gap }}</span></td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+  <div class="empty-inline"><i class="bi bi-database" aria-hidden="true"></i><span>No category health records available.</span></div>
+  {% endif %}
+</section>
+
+<div class="dashboard-grid dashboard-bottom-grid">
+  <section class="panel-card table-card">
+    <div class="panel-heading panel-heading-inline">
+      <div><span class="section-eyebrow">Multi-agent observability</span><h3>Latest agent messages</h3></div>
+      <span class="count-badge">{{ logs | length }} messages</span>
+    </div>
+    {% if logs %}
+    <div class="table-responsive log-table-wrap">
+      <table class="modern-table compact-table">
+        <thead><tr><th>Request</th><th>Route</th><th>Task</th><th>Status</th></tr></thead>
+        <tbody>
+        {% for l in logs %}
+          <tr>
+            <td><span class="request-id">{{ l.request_id }}</span></td>
+            <td><span class="agent-route"><span>{{ l.sender }}</span><i class="bi bi-arrow-right"></i><span>{{ l.receiver }}</span></span></td>
+            <td>{{ l.task | replace('_', ' ') | title }}</td>
+            <td><span class="mini-status">{{ l.status }}</span></td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% else %}
+    <div class="empty-inline"><i class="bi bi-diagram-3" aria-hidden="true"></i><span>No agent messages have been recorded yet.</span></div>
+    {% endif %}
+  </section>
+
+  <section class="panel-card security-card">
+    <div class="panel-heading panel-heading-inline">
+      <div><span class="section-eyebrow">Responsible AI</span><h3>Security events</h3></div>
+      <span class="panel-icon {% if security_events %}panel-icon-amber{% else %}panel-icon-green{% endif %}">
+        <i class="bi bi-shield-check" aria-hidden="true"></i>
+      </span>
+    </div>
+    {% if security_events %}
+    <div class="security-event-list">
+      {% for e in security_events %}
+      <article class="security-event">
+        <span class="security-event-icon"><i class="bi bi-exclamation-triangle-fill" aria-hidden="true"></i></span>
+        <div><span><strong>{{ e.event_type | replace('_', ' ') | title }}</strong><small>{{ e.severity | upper }}</small></span><p>{{ e.details }}</p></div>
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="security-clear">
+      <span><i class="bi bi-shield-check" aria-hidden="true"></i></span>
+      <strong>No security events</strong>
+      <p>Prompt-injection and sensitive-data monitors are active.</p>
+    </div>
+    {% endif %}
+  </section>
+</div>
+{% endblock %}
+
+{% block page_scripts %}
+{% if health %}
+<script>
+  (() => {
+    const canvas = document.getElementById('coverageChart');
+    if (!canvas || typeof Chart === 'undefined') return;
+    const labels = {{ health | map(attribute='category') | list | tojson }};
+    const data = {{ health | map(attribute='coverage') | list | tojson }};
+    const context = canvas.getContext('2d');
+    const gradient = context.createLinearGradient(0, 0, 0, 320);
+    gradient.addColorStop(0, '#635bff');
+    gradient.addColorStop(1, '#22c8e5');
+
+    new Chart(canvas, {
+      type: 'bar',
+      data: {
+        labels,
+        datasets: [{
+          label: 'Coverage score',
+          data,
+          backgroundColor: gradient,
+          borderRadius: 8,
+          borderSkipped: false,
+          maxBarThickness: 42
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        animation: { duration: 900, easing: 'easeOutQuart' },
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            backgroundColor: '#101b3d',
+            padding: 12,
+            cornerRadius: 8,
+            callbacks: { label: (item) => ` Coverage: ${Math.round(item.raw * 100)}%` }
+          }
+        },
+        scales: {
+          x: { grid: { display: false }, ticks: { color: '#64748b', font: { size: 11 } } },
+          y: {
+            beginAtZero: true,
+            max: 1,
+            grid: { color: '#e8edf5' },
+            border: { display: false },
+            ticks: { color: '#94a3b8', stepSize: .25, callback: (value) => `${Math.round(value * 100)}%` }
+          }
+        }
+      }
+    });
+  })();
+</script>
+{% endif %}
+{% endblock %}
