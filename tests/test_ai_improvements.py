@@ -109,6 +109,25 @@ def test_normalize_query_for_search_keeps_meaningful_terms_and_drops_filler_word
     assert "cannot" in normalized.lower()
 
 
+def test_normalize_query_for_search_handles_synonyms_abbreviations_and_typos():
+    normalized = normalize_query_for_search(
+        "wlan cant connect to the internt and mfa auth keeps failin",
+        [
+            "wifi connection internet access",
+            "vpn login authentication failed",
+            "mfa authentication issue",
+        ],
+    )
+    text = normalized.lower()
+    assert "wifi" in text
+    assert "cannot" in text
+    assert "connect" in text
+    assert "internet" in text
+    assert "mfa" in text
+    assert "authentication" in text or "auth" in text
+    assert "failed" in text
+
+
 def test_document_embeddings_are_cached_for_repeated_queries():
     clear_document_embedding_cache()
     corpus = [
