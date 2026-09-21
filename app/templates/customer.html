@@ -23,26 +23,6 @@
   </div>
 </section>
 
-<section class="panel-card support-chat-card" aria-labelledby="support-chat-title">
-  <div class="panel-heading panel-heading-inline">
-    <div>
-      <span class="section-eyebrow">Self-service assistant</span>
-      <h3 id="support-chat-title">Ask KnowGap AI</h3>
-      <p>Get answers grounded in approved knowledge articles before opening a ticket.</p>
-    </div>
-    <span class="panel-icon panel-icon-purple"><i class="bi bi-chat-dots-fill" aria-hidden="true"></i></span>
-  </div>
-  <div class="chat-messages" id="chatMessages" aria-live="polite">
-    <div class="chat-bubble chat-bubble-assistant"><span class="chat-avatar"><i class="bi bi-stars" aria-hidden="true"></i></span><div><strong>KnowGap AI</strong><p>What IT issue can I help you investigate?</p></div></div>
-  </div>
-  <form class="chat-compose" id="chatForm">
-    <label class="visually-hidden" for="chatMessage">Ask a support question</label>
-    <textarea id="chatMessage" rows="2" maxlength="2000" placeholder="Ask about Wi-Fi, VPN, Outlook, printers, or another IT issue..." required></textarea>
-    <button class="btn-primary-modern" type="submit" title="Send message" aria-label="Send message"><i class="bi bi-send-fill" aria-hidden="true"></i></button>
-  </form>
-  <div class="chat-status" id="chatStatus"><i class="bi bi-shield-check" aria-hidden="true"></i> Answers use approved knowledge articles only.</div>
-</section>
-
 <div class="content-grid customer-grid">
   <section class="panel-card raise-ticket-card">
     <div class="panel-heading">
@@ -141,67 +121,6 @@
     const update = () => { count.textContent = `${field.value.length} / 3000`; };
     field.addEventListener('input', update);
     update();
-
-    const chatForm = document.getElementById('chatForm');
-    const chatInput = document.getElementById('chatMessage');
-    const chatMessages = document.getElementById('chatMessages');
-    const chatStatus = document.getElementById('chatStatus');
-    const history = [];
-    if (!chatForm || !chatInput || !chatMessages || !chatStatus) return;
-
-    const addBubble = (role, text, sources = []) => {
-      const bubble = document.createElement('div');
-      bubble.className = `chat-bubble chat-bubble-${role}`;
-      const avatar = document.createElement('span');
-      avatar.className = 'chat-avatar';
-      avatar.innerHTML = role === 'user' ? '<i class="bi bi-person-fill" aria-hidden="true"></i>' : '<i class="bi bi-stars" aria-hidden="true"></i>';
-      const body = document.createElement('div');
-      const label = document.createElement('strong');
-      label.textContent = role === 'user' ? 'You' : 'KnowGap AI';
-      const message = document.createElement('p');
-      message.textContent = text;
-      body.append(label, message);
-      if (sources.length) {
-        const sourceList = document.createElement('div');
-        sourceList.className = 'chat-sources';
-        sources.forEach((source) => {
-          const chip = document.createElement('span');
-          chip.textContent = `${source.source_id} · ${source.title}`;
-          sourceList.appendChild(chip);
-        });
-        body.appendChild(sourceList);
-      }
-      bubble.append(avatar, body);
-      chatMessages.appendChild(bubble);
-      chatMessages.scrollTop = chatMessages.scrollHeight;
-    };
-
-    chatForm.addEventListener('submit', async (event) => {
-      event.preventDefault();
-      const message = chatInput.value.trim();
-      if (!message) return;
-      addBubble('user', message);
-      history.push({ role: 'user', content: message });
-      chatInput.value = '';
-      chatInput.disabled = true;
-      chatForm.querySelector('button').disabled = true;
-      chatStatus.innerHTML = '<i class="bi bi-arrow-repeat" aria-hidden="true"></i> Searching approved knowledge...';
-      try {
-        const response = await fetch('/chat/message', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ message, history: history.slice(-8) }) });
-        const data = await response.json();
-        if (!response.ok) throw new Error(data.detail || 'Unable to reach the assistant.');
-        addBubble('assistant', data.answer, data.sources || []);
-        history.push({ role: 'assistant', content: data.answer });
-        chatStatus.innerHTML = data.sources?.length ? '<i class="bi bi-patch-check-fill" aria-hidden="true"></i> Grounded in approved knowledge articles.' : '<i class="bi bi-info-circle" aria-hidden="true"></i> No approved article matched. Consider opening a ticket.';
-      } catch (error) {
-        addBubble('assistant', error.message);
-        chatStatus.innerHTML = '<i class="bi bi-exclamation-circle" aria-hidden="true"></i> The assistant is temporarily unavailable.';
-      } finally {
-        chatInput.disabled = false;
-        chatForm.querySelector('button').disabled = false;
-        chatInput.focus();
-      }
-    });
   })();
 </script>
 {% endblock %}
