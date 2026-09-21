@@ -3,7 +3,7 @@
 {% block header_title %}Administration{% endblock %}
 {% block content %}
 <div class="page-heading heading-with-actions">
-  <div><span class="section-eyebrow">System control</span><h2>Administration</h2><p>Manage users, roles, knowledge articles, and support categories.</p></div>
+  <div><span class="section-eyebrow">System control</span><h2>Administration</h2><p>Manage users, roles, and support categories.</p></div>
   <div class="heading-actions"><span class="trust-badge"><i class="bi bi-shield-lock-fill" aria-hidden="true"></i> Admin only</span></div>
 </div>
 {% if message %}<div class="alert-modern alert-success" role="status"><i class="bi bi-check-circle-fill" aria-hidden="true"></i><div><strong>Change saved</strong><span>{{ message }}</span></div></div>{% endif %}
@@ -27,21 +27,16 @@
 </section>
 
 <section class="admin-section" id="articles">
-  <div class="section-heading-row"><div><span class="section-eyebrow">Governed content</span><h3>Knowledge articles</h3></div><span class="count-badge">{{ articles | length }} articles</span></div>
+  <div class="section-heading-row"><div><span class="section-eyebrow">Knowledge intake</span><h3>Create knowledge article</h3></div><span class="trust-badge"><i class="bi bi-pencil-square" aria-hidden="true"></i> Analyst approval required</span></div>
   <div class="admin-create-card surface-card">
-    <h4><i class="bi bi-journal-plus" aria-hidden="true"></i> Create article</h4>
     <form method="post" action="/admin/articles/create" class="admin-form-grid admin-form-wide">
-      <div class="form-field"><label for="new-doc-id">Document ID</label><input id="new-doc-id" name="doc_id" placeholder="KB-CUSTOM-001" required></div>
+      <div class="form-field"><label for="new-doc-id">Document ID</label><input id="new-doc-id" value="{{ next_article_doc_id }}" readonly></div>
       <div class="form-field"><label for="new-article-title">Title</label><input id="new-article-title" name="title" required></div>
       <div class="form-field"><label for="new-category">Category</label><select id="new-category" name="category" required>{% for category in categories if category.is_active %}<option value="{{ category.name }}">{{ category.name }}</option>{% endfor %}</select></div>
       <div class="form-field"><label for="new-os">Supported OS</label><input id="new-os" name="supported_os" value="Any"></div>
-      <div class="form-field"><label for="new-status">Status</label><select id="new-status" name="status"><option value="draft">Draft</option><option value="approved">Approved</option></select></div>
       <div class="form-field form-field-full"><label for="new-content">Content</label><textarea id="new-content" name="content" rows="4" required></textarea></div>
-      <button class="btn-primary-modern" type="submit"><i class="bi bi-plus-lg" aria-hidden="true"></i> Add article</button>
+      <button class="btn-primary-modern" type="submit"><i class="bi bi-plus-lg" aria-hidden="true"></i> Add draft article</button>
     </form>
-  </div>
-  <div class="admin-edit-stack">
-  {% for article in articles %}<article class="surface-card admin-edit-card"><form method="post" action="/admin/articles/{{ article.id }}"><div class="admin-edit-header"><div><span class="ticket-id">{{ article.doc_id }}</span><h4>{{ article.title }}</h4></div><button class="icon-button icon-button-danger" formaction="/admin/articles/{{ article.id }}/delete" formmethod="post" type="submit" title="Delete article" aria-label="Delete article"><i class="bi bi-trash3" aria-hidden="true"></i></button></div><div class="admin-form-grid admin-form-wide"><div class="form-field"><label>Document ID</label><input name="doc_id" value="{{ article.doc_id }}" required></div><div class="form-field"><label>Title</label><input name="title" value="{{ article.title }}" required></div><div class="form-field"><label>Category</label><select name="category" required>{% for category in categories %}<option value="{{ category.name }}" {% if article.category == category.name %}selected{% endif %}>{{ category.name }}</option>{% endfor %}</select></div><div class="form-field"><label>Supported OS</label><input name="supported_os" value="{{ article.supported_os }}"></div><div class="form-field"><label>Status</label><select name="status"><option value="draft" {% if article.status == 'draft' %}selected{% endif %}>Draft</option><option value="approved" {% if article.status == 'approved' %}selected{% endif %}>Approved</option></select></div><div class="form-field form-field-full"><label>Content</label><textarea name="content" rows="4" required>{{ article.content }}</textarea></div></div><button class="btn-secondary-modern" type="submit"><i class="bi bi-save" aria-hidden="true"></i> Save article</button></form></article>{% endfor %}
   </div>
 </section>
 
