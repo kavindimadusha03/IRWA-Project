@@ -78,6 +78,9 @@ def recommend_solution(query: str, retrieval: Dict) -> Dict:
                 "category": item.get("category", "Unknown"),
                 "source_type": item.get("source_type", "internal_kb"),
                 "relevance_score": item.get("hybrid_score", 0.0),
+                "bm25_score": item.get("score_breakdown", {}).get("bm25_score", item.get("bm25_score", 0.0)),
+                "semantic_score": item.get("score_breakdown", {}).get("semantic_score", item.get("semantic_score", 0.0)),
+                "hybrid_score": item.get("score_breakdown", {}).get("hybrid_score", item.get("hybrid_score", 0.0)),
             }
             for item in evidence_items
         ],

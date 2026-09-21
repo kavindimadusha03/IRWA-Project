@@ -29,7 +29,9 @@ def load_gold():
     rows = []
     with GOLD_PATH.open(encoding="utf-8") as f:
         for row in csv.DictReader(f):
-            rows.append((row["query"], set(row["relevant_doc_ids"].split("|"))))
+            raw = (row.get("relevant_doc_ids") or "").strip()
+            relevant = {doc_id for doc_id in raw.split("|") if doc_id.strip()}
+            rows.append((row["query"], relevant))
     return rows
 
 
@@ -55,7 +57,8 @@ def metrics_for_query(ranked_ids, relevant, k=5):
         if doc_id in relevant:
             rr = 1.0 / rank
             break
-    return precision, recall, rr
+    precision_at_1 = 1.0 if ranked_ids[:1] and ranked_ids[0] in relevant else 0.0
+    return precision_at_1, precision, recall, rr
 
 
 def evaluate(method, records, gold):
@@ -70,12 +73,34 @@ def evaluate(method, records, gold):
     return arr.mean(axis=0)
 
 
+def per_query_detail(records, gold, query_text=None, limit=5):
+    texts = [r["text"] for r in records]
+    doc_ids = [r["doc_id"] for r in records]
+    target_queries = []
+    if query_text:
+        target_queries = [(query_text, next((relevant for q, relevant in gold if q.lower() == query_text.lower()), set()))]
+    else:
+        target_queries = gold[:3]
+
+    for query, relevant in target_queries:
+        print(f"\nQuery: {query}")
+        print(f"Relevant: {', '.join(sorted(relevant)) if relevant else 'No relevant KB answer'}")
+        for method in ["BM25", "Semantic", "Hybrid"]:
+            order = rank_indices(method, query, texts)
+            ranked_ids = [doc_ids[int(i)] for i in order[:limit]]
+            print(f"{method} top result: {ranked_ids[0] if ranked_ids else 'None'}")
+            print(f"{method} top {limit}: {', '.join(ranked_ids) if ranked_ids else 'None'}")
+
+
 if __name__ == "__main__":
     records = load_kb()
     gold = load_gold()
     print(f"Evaluating {len(gold)} queries against {len(records)} KB articles\n")
-    print(f"{'Method':<12} {'P@5':>8} {'Recall@5':>10} {'MRR':>8}")
-    print("-" * 42)
+    print(f"{'Method':<12} {'P@1':>8} {'P@5':>8} {'Recall@5':>10} {'MRR':>8}")
+    print("-" * 58)
     for method in ["BM25", "Semantic", "Hybrid"]:
-        p5, r5, mrr = evaluate(method, records, gold)
-        print(f"{method:<12} {p5:>8.3f} {r5:>10.3f} {mrr:>8.3f}")
+        p1, p5, r5, mrr = evaluate(method, records, gold)
+        print(f"{method:<12} {p1:>8.3f} {p5:>8.3f} {r5:>10.3f} {mrr:>8.3f}")
+
+    print("\nPer-query examples:\n")
+    per_query_detail(records, gold, query_text="VPN disconnects every few minutes")
