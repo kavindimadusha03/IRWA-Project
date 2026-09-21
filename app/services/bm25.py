@@ -1,13 +1,50 @@
 import re
 from typing import List
+
 import numpy as np
 from rank_bm25 import BM25Okapi
 
-TOKEN_RE = re.compile(r"[A-Za-z0-9_.:/\\-]+")
+TOKEN_RE = re.compile(
+    r"0x[0-9A-Fa-f]+|[A-Za-z0-9]+(?:[._:/-][A-Za-z0-9]+)*|[A-Za-z0-9]+(?:\.[A-Za-z0-9]+)+"
+)
+PRESERVED_COMMANDS = {
+    "arp",
+    "certutil",
+    "chkdsk",
+    "cmd",
+    "diskpart",
+    "driverquery",
+    "getmac",
+    "hostname",
+    "ipconfig",
+    "msinfo32",
+    "netstat",
+    "nslookup",
+    "ping",
+    "route",
+    "sc",
+    "sfc",
+    "svc",
+    "taskkill",
+    "tasklist",
+    "tracert",
+    "whoami",
+    "winver",
+}
 
 
 def tokenize(text: str) -> List[str]:
-    return [t.lower() for t in TOKEN_RE.findall(text)]
+    tokens: List[str] = []
+    for match in TOKEN_RE.findall(text):
+        value = match.lower()
+        if "/" in value:
+            tokens.extend(part.lower() for part in value.split("/") if part)
+            continue
+        if value in PRESERVED_COMMANDS or value.startswith("0x") or value.endswith(".exe"):
+            tokens.append(value)
+            continue
+        tokens.append(value)
+    return tokens
 
 
 class BM25Search:

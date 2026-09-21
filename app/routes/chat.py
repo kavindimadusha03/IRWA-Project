@@ -65,6 +65,9 @@ def chat_message(
             "category": item["category"],
             "source_type": item["source_type"],
             "relevance_score": item.get("hybrid_score", 0.0),
+            "bm25_score": item.get("score_breakdown", {}).get("bm25_score", item.get("bm25_score", 0.0)),
+            "semantic_score": item.get("score_breakdown", {}).get("semantic_score", item.get("semantic_score", 0.0)),
+            "hybrid_score": item.get("score_breakdown", {}).get("hybrid_score", item.get("hybrid_score", 0.0)),
         }
         for item in items
     ]
