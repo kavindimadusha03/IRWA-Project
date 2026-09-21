@@ -1,5 +1,6 @@
 from datetime import datetime
 from pathlib import Path
+import re
 from urllib.parse import quote_plus
 
 from fastapi import APIRouter, Depends, Form, Request
@@ -63,6 +64,15 @@ def _article_by_doc_id(session: Session, doc_id: str, exclude_id: int | None = N
     return None
 
 
+def _next_article_doc_id(session: Session):
+    numeric_ids = [
+        int(match.group(1))
+        for article in session.exec(select(KnowledgeArticle)).all()
+        if (match := re.fullmatch(r"KB-(\d+)", article.doc_id))
+    ]
+    return f"KB-{max(numeric_ids, default=0) + 1:03d}"
+
+
 @router.get("", response_class=HTMLResponse)
 def admin_page(request: Request, session: Session = Depends(get_session)):
     user = _admin_user(request, session)
@@ -77,6 +87,7 @@ def admin_page(request: Request, session: Session = Depends(get_session)):
             "users": session.exec(select(User).order_by(User.username)).all(),
             "articles": session.exec(select(KnowledgeArticle).order_by(KnowledgeArticle.updated_at.desc())).all(),
             "categories": session.exec(select(Category).order_by(Category.name)).all(),
+            "next_article_doc_id": _next_article_doc_id(session),
             "roles": ROLES,
             "message": request.query_params.get("message"),
             "error": request.query_params.get("error"),
@@ -157,7 +168,6 @@ def delete_user(user_id: int, request: Request, session: Session = Depends(get_s
 @router.post("/articles/create")
 def create_article(
     request: Request,
-    doc_id: str = Form(...),
     title: str = Form(...),
     content: str = Form(...),
     category: str = Form(...),
@@ -168,25 +178,22 @@ def create_article(
     admin = _admin_user(request, session)
     if not admin:
         return HTMLResponse("Admin access required", status_code=403)
-    doc_id, title, content, category = doc_id.strip(), title.strip(), content.strip(), category.strip()
-    if not doc_id or not title or not content or not category:
-        return _redirect(error="Document ID, title, content, and category are required.")
-    if status not in {"draft", "approved"}:
-        return _redirect(error="Select a valid article status.")
-    if _article_by_doc_id(session, doc_id):
-        return _redirect(error="That document ID already exists.")
+    title, content, category = title.strip(), content.strip(), category.strip()
+    if not title or not content or not category:
+        return _redirect(error="Title, content, and category are required.")
+    doc_id = _next_article_doc_id(session)
     session.add(KnowledgeArticle(
         doc_id=doc_id,
         title=title,
         content=content,
         category=category,
-        status=status,
-        authoritative=status == "approved",
+        status="draft",
+        authoritative=False,
         author=admin.username,
         supported_os=supported_os.strip() or "Any",
     ))
     session.commit()
-    return _redirect(message="Knowledge article created.")
+    return _redirect(message=f"Knowledge article {doc_id} created as a draft for analyst approval.")
 
 
 @router.post("/articles/{article_id}")
@@ -201,39 +208,12 @@ def update_article(
     supported_os: str = Form("Any"),
     session: Session = Depends(get_session),
 ):
-    admin = _admin_user(request, session)
-    if not admin:
-        return HTMLResponse("Admin access required", status_code=403)
-    article = session.get(KnowledgeArticle, article_id)
-    if not article:
-        return _redirect(error="Article not found.")
-    if status not in {"draft", "approved"} or not all(value.strip() for value in (doc_id, title, content, category)):
-        return _redirect(error="Article fields are incomplete or invalid.")
-    if _article_by_doc_id(session, doc_id.strip(), exclude_id=article.id):
-        return _redirect(error="That document ID already exists.")
-    article.doc_id = doc_id.strip()
-    article.title = title.strip()
-    article.content = content.strip()
-    article.category = category.strip()
-    article.status = status
-    article.authoritative = status == "approved"
-    article.supported_os = supported_os.strip() or "Any"
-    article.updated_at = datetime.utcnow()
-    session.add(article)
-    session.commit()
-    return _redirect(message="Knowledge article updated.")
+    return HTMLResponse("Knowledge article editing is restricted to Knowledge Analysts", status_code=403)
 
 
 @router.post("/articles/{article_id}/delete")
 def delete_article(article_id: int, request: Request, session: Session = Depends(get_session)):
-    if not _admin_user(request, session):
-        return HTMLResponse("Admin access required", status_code=403)
-    article = session.get(KnowledgeArticle, article_id)
-    if not article:
-        return _redirect(error="Article not found.")
-    session.delete(article)
-    session.commit()
-    return _redirect(message="Knowledge article deleted.")
+    return HTMLResponse("Knowledge article editing is restricted to Knowledge Analysts", status_code=403)
 
 
 @router.post("/categories/create")

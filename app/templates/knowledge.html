@@ -84,6 +84,20 @@
     <span class="knowledge-expand"><i class="bi bi-arrows-angle-expand" aria-hidden="true"></i> View full article</span>
     </summary>
 
+    {% if user.role == 'KNOWLEDGE_ANALYST' %}
+    <form method="post" action="/knowledge/articles/{{ a.id }}" class="knowledge-edit-form">
+      <div class="admin-form-grid admin-form-wide">
+        <div class="form-field"><label>Document ID</label><input name="doc_id" value="{{ a.doc_id }}" required></div>
+        <div class="form-field"><label>Title</label><input name="title" value="{{ a.title }}" required></div>
+        <div class="form-field"><label>Category</label><select name="category" required>{% for category in categories %}<option value="{{ category.name }}" {% if a.category == category.name %}selected{% endif %}>{{ category.name }}</option>{% endfor %}</select></div>
+        <div class="form-field"><label>Supported OS</label><input name="supported_os" value="{{ a.supported_os }}"></div>
+        <div class="form-field"><label>Status</label><select name="status"><option value="draft" {% if a.status == 'draft' %}selected{% endif %}>Draft</option><option value="approved" {% if a.status == 'approved' %}selected{% endif %}>Approved</option></select></div>
+        <div class="form-field form-field-full"><label>Content</label><textarea name="content" rows="5" required>{{ a.content }}</textarea></div>
+      </div>
+      <button class="btn-secondary-modern btn-compact" type="submit"><i class="bi bi-save" aria-hidden="true"></i> Save article</button>
+    </form>
+    {% endif %}
+
     <div class="knowledge-card-footer">
       <span class="authority-note">
         {% if a.status == 'approved' %}
@@ -92,7 +106,7 @@
         <i class="bi bi-info-circle" aria-hidden="true"></i> Not used as authoritative evidence yet
         {% endif %}
       </span>
-      {% if a.status == 'draft' and user.role in ['KNOWLEDGE_ANALYST', 'ADMIN'] %}
+      {% if a.status == 'draft' and user.role == 'KNOWLEDGE_ANALYST' %}
       <form method="post" action="/knowledge/{{ a.id }}/approve">
         <button class="btn-primary-modern btn-compact" type="submit"><i class="bi bi-check2-circle" aria-hidden="true"></i> Approve article</button>
       </form>

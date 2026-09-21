@@ -7,7 +7,7 @@ from fastapi.templating import Jinja2Templates
 from sqlmodel import Session, select
 from app.config import get_settings
 from app.database import create_db_and_tables, get_session
-from app.models import AgentLog, KnowledgeArticle, Notification, SecurityEvent, SolutionFeedback, Ticket, TicketCitation, User
+from app.models import AgentLog, Category, KnowledgeArticle, Notification, SecurityEvent, SolutionFeedback, Ticket, TicketCitation, User
 from app.notifications import get_user_notifications
 from app.routes import admin, auth, tickets, support, knowledge, agents, chat
 from app.routes.auth import current_user_from_request
@@ -144,9 +144,10 @@ def knowledge_page(request: Request, session: Session = Depends(get_session)):
         and (not filters["to_date"] or article.created_at.date() <= filters["to_date"])
     ]
     all_articles = session.exec(select(KnowledgeArticle).order_by(KnowledgeArticle.id.desc())).all()
+    categories = session.exec(select(Category).where(Category.is_active == True).order_by(Category.name)).all()
     return templates.TemplateResponse(
         "knowledge.html",
-        {"request": request, "user": user, "articles": articles, "all_articles": all_articles, "knowledge_filters": filters},
+        {"request": request, "user": user, "articles": articles, "all_articles": all_articles, "categories": categories, "knowledge_filters": filters},
     )
 
 
