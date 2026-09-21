@@ -27,6 +27,8 @@ def resolve_ticket(
     session: Session = Depends(get_session),
 ):
     user = _require_support(request, session)
+    if user.role != "IT_SUPPORT":
+        raise HTTPException(status_code=403, detail="Only IT Support users can resolve tickets")
     ticket = session.get(Ticket, ticket_id)
     if not ticket:
         raise HTTPException(status_code=404, detail="Ticket not found")
