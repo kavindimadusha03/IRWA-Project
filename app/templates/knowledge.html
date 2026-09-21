@@ -59,7 +59,8 @@
 
 <div class="knowledge-grid" id="knowledgeGrid">
   {% for a in articles %}
-  <article class="panel-card knowledge-card" data-status="{{ a.status }}">
+  <details class="panel-card knowledge-card" data-status="{{ a.status }}">
+    <summary class="knowledge-card-summary">
     <div class="knowledge-card-top">
       <span class="knowledge-doc-icon {% if a.status == 'approved' %}approved{% else %}draft{% endif %}">
         <i class="bi {% if a.status == 'approved' %}bi-file-earmark-check-fill{% else %}bi-file-earmark-text-fill{% endif %}" aria-hidden="true"></i>
@@ -80,6 +81,8 @@
     </div>
 
     <div class="knowledge-content">{{ a.content }}</div>
+    <span class="knowledge-expand"><i class="bi bi-arrows-angle-expand" aria-hidden="true"></i> View full article</span>
+    </summary>
 
     <div class="knowledge-card-footer">
       <span class="authority-note">
@@ -95,7 +98,7 @@
       </form>
       {% endif %}
     </div>
-  </article>
+  </details>
   {% endfor %}
 </div>
 

@@ -3262,6 +3262,21 @@ a {
   flex-direction: column;
 }
 
+.knowledge-card-summary {
+  display: block;
+  cursor: pointer;
+  list-style: none;
+}
+
+.knowledge-card-summary::-webkit-details-marker {
+  display: none;
+}
+
+.knowledge-card-summary:focus-visible {
+  outline: 2px solid var(--primary-500);
+  outline-offset: 5px;
+}
+
 .knowledge-card:nth-child(2n) {
   animation-delay: .05s;
 }
@@ -3342,6 +3357,29 @@ a {
   content: "";
   background: linear-gradient(transparent, #fff);
   inset: auto 0 0;
+}
+
+.knowledge-card[open] .knowledge-content {
+  max-height: none;
+  overflow: visible;
+  -webkit-line-clamp: unset;
+}
+
+.knowledge-card[open] .knowledge-content::after {
+  display: none;
+}
+
+.knowledge-expand {
+  display: inline-flex;
+  color: var(--primary-600);
+  font-size: 9px;
+  font-weight: 700;
+  align-items: center;
+  gap: 5px;
+}
+
+.knowledge-card[open] .knowledge-expand {
+  color: var(--slate-500);
 }
 
 .knowledge-card-footer {
