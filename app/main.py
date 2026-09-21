@@ -112,6 +112,8 @@ def support_page(request: Request, session: Session = Depends(get_session)):
         raise HTTPException(status_code=403, detail="IT Support role required")
     queue = session.exec(select(Ticket).where(Ticket.status == "ESCALATED").order_by(Ticket.id.desc())).all()
     resolved = session.exec(select(Ticket).where(Ticket.status == "RESOLVED").order_by(Ticket.id.desc())).all()
+    if user.role == "ADMIN":
+        queue = []
     queue = filter_tickets(queue, request)
     resolved = filter_tickets(resolved, request)
     notifications = get_user_notifications(session, user.id)
@@ -213,7 +215,7 @@ def build_evaluation_metrics():
 @app.get("/dashboard", response_class=HTMLResponse)
 def dashboard_page(request: Request, session: Session = Depends(get_session)):
     user = current_user_from_request(request, session)
-    if not user or user.role not in {"KNOWLEDGE_ANALYST", "ADMIN"}:
+    if not user or user.role != "KNOWLEDGE_ANALYST":
         raise HTTPException(status_code=403, detail="Knowledge Analyst role required")
     intelligence = analyze_knowledge_health(session)
     logs = session.exec(select(AgentLog).order_by(AgentLog.id.desc())).all()[:50]

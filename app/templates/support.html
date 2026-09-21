@@ -1,23 +1,25 @@
 {% extends "base.html" %}
-{% block page_title %}Support Queue · KnowGap AI{% endblock %}
-{% block header_title %}Support operations{% endblock %}
+{% block page_title %}{% if user.role == 'ADMIN' %}Resolved Tickets · KnowGap AI{% else %}Support Queue · KnowGap AI{% endif %}{% endblock %}
+{% block header_title %}{% if user.role == 'ADMIN' %}Resolved tickets{% else %}Support operations{% endif %}{% endblock %}
 {% block content %}
 <div class="page-heading heading-with-actions">
   <div>
-    <span class="section-eyebrow">Human escalation desk</span>
-    <h2>IT Support Queue</h2>
-    <p>Investigate requests where the agent team could not find sufficiently reliable evidence.</p>
+    <span class="section-eyebrow">{% if user.role == 'ADMIN' %}Resolution history{% else %}Human escalation desk{% endif %}</span>
+    <h2>{% if user.role == 'ADMIN' %}Resolved Tickets{% else %}IT Support Queue{% endif %}</h2>
+    <p>{% if user.role == 'ADMIN' %}Review tickets resolved by IT Support.{% else %}Investigate requests where the agent team could not find sufficiently reliable evidence.{% endif %}</p>
   </div>
   <div class="heading-actions">
-    <span class="queue-live"><span class="status-pulse"></span> Queue is live</span>
+    <span class="queue-live"><span class="status-pulse"></span>{% if user.role == 'ADMIN' %}Read only{% else %}Queue is live{% endif %}</span>
   </div>
 </div>
 
 <div class="metric-grid metric-grid-three">
+  {% if user.role != 'ADMIN' %}
   <article class="metric-card">
     <span class="metric-icon icon-amber"><i class="bi bi-inboxes-fill" aria-hidden="true"></i></span>
     <div><small>Awaiting review</small><strong>{{ queue | length }}</strong><span>Escalated tickets</span></div>
   </article>
+  {% endif %}
   <article class="metric-card">
     <span class="metric-icon icon-green"><i class="bi bi-check2-circle" aria-hidden="true"></i></span>
     <div><small>Recently completed</small><strong>{{ resolved | length }}</strong><span>Resolved tickets</span></div>
@@ -28,6 +30,7 @@
   </article>
 </div>
 
+{% if user.role != 'ADMIN' %}
 <section class="section-block">
   <div class="section-heading-row">
     <div>
@@ -118,12 +121,13 @@
   </div>
   {% endif %}
 </section>
+{% endif %}
 
 <section class="section-block">
   <div class="section-heading-row">
     <div>
       <span class="section-eyebrow">Completed work</span>
-      <h3>Recently resolved</h3>
+      <h3>{% if user.role == 'ADMIN' %}Resolved tickets{% else %}Recently resolved{% endif %}</h3>
     </div>
   </div>
   <div class="panel-card table-card">
