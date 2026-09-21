@@ -1,39 +1,39 @@
 /* KnowGap AI — professional application design system */
 :root {
-  --navy-950: #1b130f;
-  --navy-900: #2a1f1a;
-  --navy-850: #3b2a25;
-  --navy-800: #4d3830;
-  --primary-700: #b67d5d;
-  --primary-600: #d3946f;
-  --primary-500: #dca784;
-  --primary-100: #f7eee6;
-  --cyan-500: #d29a73;
-  --cyan-100: #f7efe8;
-  --green-600: #079669;
-  --green-500: #10b981;
-  --green-100: #ddf8ee;
+  --navy-950: #0b152b;
+  --navy-900: #10213d;
+  --navy-850: #183153;
+  --navy-800: #1d3d66;
+  --primary-700: #1d4ed8;
+  --primary-600: #2563eb;
+  --primary-500: #3b82f6;
+  --primary-100: #eaf2ff;
+  --cyan-500: #38bdf8;
+  --cyan-100: #e0f2fe;
+  --green-600: #0f9f6e;
+  --green-500: #22c55e;
+  --green-100: #dcfce7;
   --amber-600: #d97706;
   --amber-500: #f59e0b;
   --amber-100: #fff4d6;
   --red-600: #dc3f4f;
   --red-100: #ffeaec;
-  --blue-600: #a76948;
-  --blue-100: #f3e4dc;
-  --purple-600: #8d6658;
-  --purple-100: #f4ece6;
-  --slate-950: #121a2d;
-  --slate-800: #263248;
-  --slate-700: #3f4c63;
-  --slate-600: #5e6b81;
-  --slate-500: #7d899d;
-  --slate-400: #9ba7b9;
-  --slate-300: #cbd3df;
-  --slate-200: #e3e8f0;
-  --slate-150: #edf1f6;
-  --slate-100: #f5f7fa;
+  --blue-600: #1d4ed8;
+  --blue-100: #dbeafe;
+  --purple-600: #6d5efc;
+  --purple-100: #ede9fe;
+  --slate-950: #0f172a;
+  --slate-800: #1e293b;
+  --slate-700: #334155;
+  --slate-600: #475569;
+  --slate-500: #64748b;
+  --slate-400: #94a3b8;
+  --slate-300: #cbd5e1;
+  --slate-200: #e2e8f0;
+  --slate-150: #edf2f7;
+  --slate-100: #f8fafc;
   --surface: #ffffff;
-  --page: #f4f7fb;
+  --page: #f4f8ff;
   --sidebar-width: 272px;
   --topbar-height: 82px;
   --radius-xl: 22px;
@@ -58,7 +58,7 @@ body {
   min-height: 100vh;
   margin: 0;
   color: var(--slate-800);
-  background: linear-gradient(180deg, #f7f0ea 0%, #f3ece7 18%, #efe5df 100%);
+  background: linear-gradient(180deg, #edf6ff 0%, #eaf2ff 16%, #eff6ff 100%);
   font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 15px;
   line-height: 1.55;
@@ -68,8 +68,8 @@ body {
 
 .app-body {
   background:
-    radial-gradient(circle at top left, rgba(213, 162, 136, .20), transparent 28%),
-    linear-gradient(180deg, #f8f2ee 0%, #f4eee9 22%, #efe6e1 100%);
+    radial-gradient(circle at top left, rgba(59, 130, 246, .18), transparent 28%),
+    linear-gradient(180deg, #f5f9ff 0%, #edf4ff 22%, #eaf2ff 100%);
 }
 
 button,
@@ -95,7 +95,7 @@ a {
 }
 
 :focus-visible {
-  outline: 3px solid rgba(204, 134, 89, .4);
+  outline: 3px solid rgba(37, 99, 235, .35);
   outline-offset: 2px;
 }
 
@@ -114,11 +114,11 @@ a {
   overflow-y: auto;
   color: rgba(255, 255, 255, .82);
   background:
-    radial-gradient(circle at 10% 10%, rgba(213, 162, 136, .22), transparent 30%),
-    radial-gradient(circle at 85% 70%, rgba(156, 171, 164, .14), transparent 28%),
-    linear-gradient(165deg, #57443d, var(--navy-950));
+    radial-gradient(circle at 10% 10%, rgba(96, 165, 250, .22), transparent 30%),
+    radial-gradient(circle at 85% 70%, rgba(14, 165, 233, .12), transparent 28%),
+    linear-gradient(165deg, #0f2f5f, var(--navy-950));
   flex-direction: column;
-  box-shadow: 18px 0 55px rgba(63, 43, 38, .14);
+  box-shadow: 18px 0 55px rgba(15, 23, 42, .2);
 }
 
 .brand,
@@ -142,8 +142,8 @@ a {
   color: #fff;
   border: 1px solid rgba(255, 255, 255, .22);
   border-radius: 13px;
-  background: linear-gradient(135deg, #9b6b53, #d39b7d);
-  box-shadow: 0 8px 22px rgba(127, 86, 63, .35);
+  background: linear-gradient(135deg, #1d4ed8, #60a5fa);
+  box-shadow: 0 8px 22px rgba(37, 99, 235, .35);
   place-items: center;
 }
 
@@ -163,7 +163,7 @@ a {
 
 .brand strong em,
 .login-brand strong em {
-  color: #f5c4a1;
+  color: #93c5fd;
   font-style: normal;
 }
 
@@ -222,18 +222,18 @@ a {
 }
 
 .sidebar-link:hover i {
-  color: #f5c8a7;
+  color: #bfdbfe;
 }
 
 .sidebar-link.active {
   color: #fff;
   border-color: rgba(255, 255, 255, .09);
-  background: linear-gradient(105deg, rgba(130, 85, 63, .30), rgba(209, 154, 116, .12));
-  box-shadow: inset 3px 0 0 #dca07c;
+  background: linear-gradient(105deg, rgba(30, 64, 175, .30), rgba(96, 165, 250, .12));
+  box-shadow: inset 3px 0 0 #60a5fa;
 }
 
 .sidebar-link.active i {
-  color: #f6c8a6;
+  color: #bfdbfe;
 }
 
 .sidebar-insight {
@@ -253,9 +253,9 @@ a {
   display: grid;
   width: 34px;
   height: 34px;
-  color: #f3c9a6;
+  color: #bfdbfe;
   border-radius: 10px;
-  background: rgba(204, 134, 89, .14);
+  background: rgba(96, 165, 250, .14);
   place-items: center;
 }
 
@@ -613,13 +613,13 @@ a {
 .btn-primary-modern {
   color: #fff;
   border: 0;
-  background: linear-gradient(135deg, #d39d7f, #bb795d);
-  box-shadow: 0 10px 22px rgba(163, 108, 72, .22);
+  background: linear-gradient(135deg, #1d4ed8, #3b82f6);
+  box-shadow: 0 10px 22px rgba(37, 99, 235, .22);
 }
 
 .btn-primary-modern:hover {
   color: #fff;
-  box-shadow: 0 12px 26px rgba(147, 93, 67, .25);
+  box-shadow: 0 12px 26px rgba(37, 99, 235, .28);
   transform: translateY(-1px);
 }
 
@@ -869,8 +869,8 @@ a {
   overflow: hidden;
   color: #fff;
   background:
-    radial-gradient(circle at 15% 35%, rgba(212, 164, 126, .18), transparent 30%),
-    linear-gradient(135deg, #1f1a2d 0%, #2d2137 38%, #3a2a29 100%);
+    radial-gradient(circle at 15% 35%, rgba(96, 165, 250, .18), transparent 30%),
+    linear-gradient(135deg, #0f172a 0%, #1d4ed8 38%, #0f172a 100%);
   flex-direction: column;
   justify-content: space-between;
   border-right: 1px solid rgba(255, 255, 255, .08);
@@ -913,7 +913,7 @@ a {
 .login-orb-one {
   width: 300px;
   height: 300px;
-  background: rgba(190, 129, 90, .22);
+  background: rgba(96, 165, 250, .22);
   left: 6%;
   top: 32%;
   filter: blur(65px);
@@ -922,7 +922,7 @@ a {
 .login-orb-two {
   width: 260px;
   height: 260px;
-  background: rgba(217, 172, 139, .12);
+  background: rgba(56, 189, 248, .12);
   right: 6%;
   bottom: 12%;
   filter: blur(60px);
@@ -936,7 +936,7 @@ a {
 }
 
 .brand-mark-light {
-  background: linear-gradient(135deg, rgba(155, 107, 83, .95), rgba(211, 155, 125, .92));
+  background: linear-gradient(135deg, rgba(30, 64, 175, .95), rgba(96, 165, 250, .92));
   box-shadow: none;
   backdrop-filter: blur(10px);
 }
@@ -951,10 +951,10 @@ a {
 .hero-kicker {
   display: inline-flex;
   padding: 7px 11px;
-  color: #f0c4a2;
-  border: 1px solid rgba(240, 196, 162, .2);
+  color: #bfdbfe;
+  border: 1px solid rgba(191, 219, 254, .25);
   border-radius: 999px;
-  background: rgba(195, 123, 81, .10);
+  background: rgba(59, 130, 246, .12);
   font-size: 10px;
   font-weight: 750;
   letter-spacing: .08em;
@@ -965,8 +965,8 @@ a {
 
 .hero-kicker-blue {
   color: var(--primary-600);
-  border-color: #dedcff;
-  background: #f5f4ff;
+  border-color: #dbeafe;
+  background: #eff6ff;
 }
 
 .showcase-copy h1 {
@@ -981,7 +981,7 @@ a {
 
 .showcase-copy h1 span {
   color: transparent;
-  background: linear-gradient(90deg, #f2c7a6, #cf9a7d);
+  background: linear-gradient(90deg, #93c5fd, #60a5fa);
   -webkit-background-clip: text;
   background-clip: text;
 }
@@ -1012,9 +1012,9 @@ a {
 .network-core {
   display: grid;
   padding: 15px;
-  border: 1px solid rgba(209, 160, 126, .3);
+  border: 1px solid rgba(147, 197, 253, .32);
   border-radius: 14px;
-  background: rgba(160, 114, 84, .12);
+  background: rgba(59, 130, 246, .12);
   place-items: center;
   text-align: center;
 }
@@ -1024,9 +1024,9 @@ a {
   width: 38px;
   height: 38px;
   margin-bottom: 7px;
-  color: #f1c8a3;
+  color: #bfdbfe;
   border-radius: 12px;
-  background: rgba(216, 162, 117, .12);
+  background: rgba(96, 165, 250, .12);
   place-items: center;
 }
 
@@ -1064,7 +1064,7 @@ a {
 }
 
 .network-agents i {
-  color: #f0c6a2;
+  color: #93c5fd;
 }
 
 .showcase-trust {
@@ -1081,7 +1081,7 @@ a {
 
 .showcase-trust i {
   margin-right: 5px;
-  color: #dca07c;
+  color: #93c5fd;
 }
 
 .login-panel {
@@ -1089,8 +1089,8 @@ a {
   min-height: 100vh;
   padding: clamp(30px, 5vw, 76px);
   background:
-    radial-gradient(circle at 92% 5%, rgba(203, 173, 152, .12), transparent 30%),
-    #f4f0ed;
+    radial-gradient(circle at 92% 5%, rgba(96, 165, 250, .13), transparent 30%),
+    linear-gradient(180deg, #f4f9ff, #edf5ff);
   place-content: center;
 }
 
