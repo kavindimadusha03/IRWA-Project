@@ -20,29 +20,77 @@ COMMON_QUERY_REPLACEMENTS = {
     "internte": "internet",
     "intenet": "internet",
     "intenret": "internet",
+    "internt": "internet",
     "wireless": "wifi",
     "wfi": "wifi",
+    "wlan": "wifi",
     "wi-fi": "wifi",
     "wifi": "wifi",
     "bur": "but",
     "burt": "but",
     "cant": "cannot",
+    "can't": "cannot",
     "cannot": "cannot",
     "doesnt": "does not",
+    "doesn't": "does not",
     "dont": "do not",
+    "don't": "do not",
+    "failin": "failed",
+    "failng": "failed",
+    "failing": "failed",
+    "fialed": "failed",
+    "conn": "connect",
+    "connt": "connect",
+    "conx": "connect",
+    "conection": "connection",
+    "auth": "authentication",
+    "authn": "authentication",
+    "net": "internet",
+    "nw": "network",
+    "ntwk": "network",
+    "pc": "computer",
+    "comp": "computer",
+    "laptop": "laptop",
+    "lappy": "laptop",
+    "err": "error",
+    "errorr": "error",
+    "unavail": "unavailable",
+    "unavailable": "unavailable",
+    "login": "login",
 }
 
 LOW_VALUE_QUERY_WORDS = {
     "a", "an", "and", "at", "for", "from", "in", "into", "is", "it",
     "my", "of", "on", "or", "really", "suddenly", "the", "there", "this", "to",
-    "very", "when", "with", "just", "again", "still", "then", "so"
+    "very", "when", "with", "just", "again", "still", "then", "so", "up", "out",
+    "off", "keep", "keeps", "as", "be", "been", "have", "has", "had", "about"
 }
 
 PRESERVE_QUERY_TOKENS = {
     "wifi", "internet", "dns", "vpn", "rdp", "mfa", "laptop", "router", "network",
     "windows", "windows-11", "macbook", "surface", "printer", "phone", "pc", "computer",
     "connect", "connected", "connection", "cannot", "no", "not", "error", "failed",
-    "timeout", "issue", "issues", "problem", "access", "authentication", "login", "logout"
+    "timeout", "issue", "issues", "problem", "access", "authentication", "login", "logout",
+    "router", "switch", "password", "configuration", "driver", "bluetooth", "credential",
+    "proxy", "firewall", "permission", "permissions", "blue", "screen", "startup"
+}
+
+PHRASE_REPLACEMENTS = {
+    "unable to": "cannot",
+    "unable": "cannot",
+    "not working": "issue",
+    "no internet": "internet",
+    "no wifi": "wifi",
+    "no access": "access issue",
+    "internet access": "internet",
+    "wifi access": "wifi",
+    "internet connectivity": "internet",
+    "connection issue": "connectivity issue",
+    "keeps failing": "failed",
+    "kept failing": "failed",
+    "keep failing": "failed",
+    "can't connect": "cannot connect",
+    "cant connect": "cannot connect",
 }
 
 
@@ -51,6 +99,9 @@ def normalize_query_for_search(query: str, corpus_texts: List[str] | None = None
         return ""
 
     text = query.lower().replace("&", " and ")
+    for phrase, replacement in sorted(PHRASE_REPLACEMENTS.items(), key=lambda item: len(item[0]), reverse=True):
+        text = re.sub(rf"\b{re.escape(phrase)}\b", replacement, text)
+
     text = re.sub(r"[^a-z0-9\s.-]", " ", text)
     text = re.sub(r"\s+", " ", text).strip()
     tokens = text.split()
@@ -62,6 +113,7 @@ def normalize_query_for_search(query: str, corpus_texts: List[str] | None = None
 
     vocab |= set(COMMON_QUERY_REPLACEMENTS.values())
     vocab |= PRESERVE_QUERY_TOKENS
+    vocab |= {"wifi", "internet", "connection", "authentication", "failed", "cannot", "connect"}
 
     normalized_tokens: List[str] = []
     for token in tokens:
@@ -91,7 +143,14 @@ def normalize_query_for_search(query: str, corpus_texts: List[str] | None = None
         if canonical and canonical not in LOW_VALUE_QUERY_WORDS:
             normalized_tokens.append(canonical)
 
-    return " ".join(normalized_tokens)
+    # Ensure common technical tokens remain in the final query even when the original phrase is slightly malformed.
+    final_tokens = []
+    seen = set()
+    for token in normalized_tokens:
+        if token not in seen:
+            final_tokens.append(token)
+            seen.add(token)
+    return " ".join(final_tokens)
 
 
 def _extract_error_codes(text: str) -> set[str]:
