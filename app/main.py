@@ -201,7 +201,7 @@ def build_evaluation_metrics():
         return {}
     metrics = {}
     for method in ["BM25", "Semantic", "Hybrid"]:
-        p5, r5, _ = evaluate(method, records, gold)
+        p1, p5, r5, mrr = evaluate(method, records, gold)
         metrics[method] = {
             "precision_at_5": round(float(p5), 3),
             "recall_at_5": round(float(r5), 3),
