@@ -11,7 +11,11 @@ from app.models import AgentLog, Category, KnowledgeArticle, Notification, Secur
 from app.notifications import get_user_notifications
 from app.routes import admin, auth, tickets, support, knowledge, agents, chat
 from app.routes.auth import current_user_from_request
-from app.agents.knowledge_intelligence_agent import analyze_knowledge_health
+from app.agents.knowledge_intelligence_agent import (
+    MAX_CLUSTER_TICKETS,
+    MIN_CLUSTER_TICKETS,
+    analyze_knowledge_health,
+)
 from evaluation.evaluate_ir import evaluate, load_gold, load_kb
 
 settings = get_settings()
@@ -227,6 +231,8 @@ def dashboard_page(request: Request, session: Session = Depends(get_session)):
             "user": user,
             "health": intelligence["health"],
             "clusters": intelligence["clusters"],
+            "min_cluster_tickets": MIN_CLUSTER_TICKETS,
+            "max_cluster_sample": MAX_CLUSTER_TICKETS,
             "logs": logs,
             "security_events": security_events,
             "evaluation_metrics": build_evaluation_metrics(),

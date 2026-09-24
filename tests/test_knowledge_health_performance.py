@@ -4,7 +4,7 @@ from app.agents import knowledge_intelligence_agent as agent
 from app.models import Ticket
 
 
-def test_analyze_knowledge_health_skips_large_cluster_work(monkeypatch):
+def test_analyze_knowledge_health_caps_large_cluster_work(monkeypatch):
     engine = create_engine("sqlite://")
     SQLModel.metadata.create_all(engine)
 
@@ -24,19 +24,16 @@ def test_analyze_knowledge_health_skips_large_cluster_work(monkeypatch):
         session.add_all(tickets)
         session.commit()
 
-        monkeypatch.setattr(
-            agent,
-            "encode_texts",
-            lambda texts: (_ for _ in ()).throw(AssertionError("expensive cluster work should be skipped")),
-        )
+        monkeypatch.setattr(agent, "encode_texts", lambda texts: [[0.0] * 384 for _ in texts])
         monkeypatch.setattr(
             agent,
             "search_knowledge",
-            lambda session, query, top_k=3: {"best_score": 0.75},
+            lambda session, query, top_k=3, approved_only=False: {"best_score": 0.75},
         )
 
         with Session(engine) as session:
             result = agent.analyze_knowledge_health(session)
 
     assert result["health"]
-    assert result["clusters"] == []
+    assert result["clusters"]
+    assert all(cluster["sampled"] for cluster in result["clusters"])

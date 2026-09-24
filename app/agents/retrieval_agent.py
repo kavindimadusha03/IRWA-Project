@@ -53,7 +53,7 @@ def _trust_weight(record: Dict) -> float:
     return 0.7
 
 
-def _records_from_db(session: Session) -> List[Dict]:
+def _records_from_db(session: Session, approved_only: bool = False) -> List[Dict]:
     records: List[Dict] = []
 
     articles = session.exec(
@@ -69,6 +69,9 @@ def _records_from_db(session: Session) -> List[Dict]:
             "source_type": article.source_type,
             "status": article.status,
         })
+
+    if approved_only:
+        return records
 
     resolved_tickets = session.exec(
         select(Ticket).where(Ticket.status == "RESOLVED")
@@ -89,8 +92,13 @@ def _records_from_db(session: Session) -> List[Dict]:
     return records
 
 
-def search_knowledge(session: Session, query: str, top_k: int = 5) -> Dict:
-    records = _records_from_db(session)
+def search_knowledge(
+    session: Session,
+    query: str,
+    top_k: int = 5,
+    approved_only: bool = False,
+) -> Dict:
+    records = _records_from_db(session, approved_only=approved_only)
     items = hybrid_rank(query, records, top_k=top_k)
 
     boosted_items = []

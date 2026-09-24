@@ -57,7 +57,7 @@
       <div>
         <span class="section-eyebrow">KMeans analysis</span>
         <h3>Recurring patterns</h3>
-        <p>Similar support issues grouped automatically.</p>
+        <p>Similar support issues grouped from a representative ticket sample.</p>
       </div>
       <span class="panel-icon panel-icon-purple"><i class="bi bi-bezier2" aria-hidden="true"></i></span>
     </div>
@@ -66,7 +66,7 @@
       {% for c in clusters %}
       <article class="cluster-item">
         <span class="cluster-number">{{ '%02d' | format(c.cluster_id) }}</span>
-        <div><strong>{{ c.label }}</strong><span>{{ c.count }} related tickets</span><small>{{ c.example }}</small></div>
+        <div><strong>{{ c.label }}</strong><span>{{ c.count }} sampled tickets{% if c.sampled %} · representative sample{% endif %}</span><small>{{ c.example }}</small></div>
         <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
       </article>
       {% endfor %}
@@ -74,7 +74,7 @@
     {% else %}
     <div class="empty-state empty-state-compact">
       <span class="empty-state-icon"><i class="bi bi-bezier2" aria-hidden="true"></i></span>
-      <h4>Building patterns</h4><p>At least eight tickets are needed for clustering.</p>
+      <h4>Patterns unavailable</h4><p>Clustering starts when at least {{ min_cluster_tickets }} tickets are available and uses up to {{ max_cluster_sample }} representative tickets.</p>
     </div>
     {% endif %}
   </section>
