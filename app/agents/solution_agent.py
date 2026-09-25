@@ -153,10 +153,13 @@ def recommend_solution(query: str, retrieval: Dict) -> Dict:
     )
     source_id = best["source_id"]
     best_score = float(best.get("hybrid_score", retrieval.get("best_score", 0.0) or 0.0))
-    score_pct = max(0, min(100, round(best_score * 100)))
+    bm25_score = float(best.get("bm25_score", 0.0))
+    semantic_score = float(best.get("semantic_score", 0.0))
     explanation = (
-        f"This recommendation was selected because the issue matched {best.get('source_type', 'eligible evidence').replace('_', ' ')} "
-        f"{best.get('title', 'the top evidence source')} with {score_pct}% relevance. Relevance is a ranking signal, not a probability of correctness."
+        f"Selected-source relevance components before source and metadata adjustments: "
+        f"BM25 {bm25_score:.2f}, semantic {semantic_score:.2f}. "
+        f"The final adjusted retrieval ranking score is {best_score:.2f} after source trust and metadata adjustments. "
+        "Neither score is a probability that the solution is correct."
     )
 
     system = (

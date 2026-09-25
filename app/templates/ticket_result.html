@@ -2,8 +2,6 @@
 {% block page_title %}{{ ticket.ticket_code }} · KnowGap AI{% endblock %}
 {% block header_title %}Ticket details{% endblock %}
 {% block content %}
-{% set confidence = (ticket.retrieval_confidence * 100) | round | int %}
-
 <style>
 /* Self-contained clarification styles: intentionally scoped to this card.
    Put in this template so page-specific layout wins over the base stylesheet. */
@@ -163,10 +161,14 @@
         </div>
         <div class="analysis-item analysis-confidence">
           <span class="analysis-icon icon-green"><i class="bi bi-shield-check" aria-hidden="true"></i></span>
-          <span class="confidence-content">
-            <span class="confidence-label"><small>Retrieval ranking signal</small><strong>{{ confidence }}%</strong></span>
-            <span class="progress-track"><span style="width: {{ confidence }}%"></span></span>
-          </span>
+          <div class="ranking-score-content">
+            {% if ticket.status == 'CLARIFICATION_REQUIRED' %}
+            <div class="ranking-score-heading"><div><small>Retrieval ranking score</small><strong>Not evaluated</strong></div><span class="score-decision">Not evaluated</span></div>
+            {% else %}
+            <div class="ranking-score-heading"><div><small>Retrieval ranking score</small><strong>{{ '%.2f' | format(ticket.retrieval_confidence) }}</strong></div><span class="score-decision score-{{ retrieval_decision(ticket.retrieval_confidence, high_confidence_threshold, uncertain_threshold) | lower }}">{{ retrieval_decision(ticket.retrieval_confidence, high_confidence_threshold, uncertain_threshold) }}</span></div>
+            {% endif %}
+            <p>A ranking score measures how strongly a document matches your query after source and metadata adjustments. It is not a probability that the solution is correct.</p>
+          </div>
         </div>
         <div class="analysis-item">
           <span class="analysis-icon icon-amber"><i class="bi bi-file-earmark-check" aria-hidden="true"></i></span>
@@ -206,7 +208,7 @@
       <div class="solution-text" id="solutionText">{{ ticket.recommended_solution }}</div>
       <div class="explanation-box">
         <strong>Why this solution was suggested</strong>
-        <p>{{ ticket.decision_explanation or 'This recommendation matched the highest-confidence approved evidence and was selected because it aligns with the issue category and supporting knowledge.' }}</p>
+        <p>{{ display_decision_explanation or 'The ranking score reflects document matching after source and metadata adjustments; it is not a probability that the solution is correct.' }}</p>
       </div>
       {% if ticket.suggested_reply %}
       <div class="suggested-reply-box">
@@ -225,7 +227,7 @@
           {% for citation in citations %}
           <div class="citation-item">
             <span class="citation-rank">{{ citation.rank }}</span>
-            <div><strong>{{ citation.source_id }} · {{ citation.title }}</strong><small>{{ citation.category }} · {{ citation.source_type | replace('_', ' ') | title }} · {{ citation.status | title }} · {{ citation.supported_os }} · {{ (citation.relevance_score * 100) | round | int }}% relevance</small></div>
+            <div><strong>{{ citation.source_id }} · {{ citation.title }}</strong><small>{{ citation.category }} · {{ citation.source_type | replace('_', ' ') | title }} · {{ citation.status | title }} · {{ citation.supported_os }} · Selected-source adjusted ranking score: {{ '%.2f' | format(citation.relevance_score) }}</small></div>
           </div>
           {% endfor %}
         </div>
