@@ -1,0 +1,22 @@
+{
+  "recorded_at_utc": "2026-09-21T17:40:05.545871+00:00",
+  "exit_code": 1,
+  "elapsed_seconds": 18.299,
+  "command": "pytest -q -p no:cacheprovider tests (through audit helper)",
+  "database": "isolated temporary SQLite file; original knowgap.db not used",
+  "database_path": "C:\\Users\\PSB\\AppData\\Local\\Temp\\knowgap-audit-tests-_yn33od5\\knowgap.db",
+  "llm": {
+    "configured_enabled": false,
+    "attempts": 2,
+    "successes": 0,
+    "error_types": [
+      "RuntimeError",
+      "RuntimeError"
+    ]
+  },
+  "embedding_mode": "existing local cache; HF_HUB_OFFLINE=1 and TRANSFORMERS_OFFLINE=1",
+  "tests_modified": false,
+  "summary_lines": [
+    "5 failed, 9 passed, 405 warnings in 16.83s"
+  ]
+}

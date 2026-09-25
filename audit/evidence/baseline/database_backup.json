@@ -1,0 +1,10 @@
+{
+  "recorded_at_utc": "2026-09-21T17:39:32.977304+00:00",
+  "method": "sqlite3.Connection.backup from mode=ro source",
+  "path": "C:\\Users\\PSB\\AppData\\Local\\Temp\\knowgap-audit-backup-y2obavjy\\knowgap.db",
+  "outside_repository": true,
+  "integrity_check": "ok",
+  "backup_sha256": "6c157b086d727ae781e758c6b44867cbb2c106ec4122ea8ff90d31d55b9b002f",
+  "original_database_sha256": "0fd1e349020ca6cdad545ed4db58369232c7279c5f48eedd73b65eaeaa6d5b0a",
+  "note": "Private backup only. Do not commit or submit this database as evidence."
+}

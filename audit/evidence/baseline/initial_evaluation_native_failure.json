@@ -1,0 +1,11 @@
+{
+  "recorded_at_utc": "2026-09-21T17:58:19.020368+00:00",
+  "source": "Transcription of actual exec tool output, session 84409; child exited before Python evidence writer could finish",
+  "action": "initial IR evaluation, normal numerical thread settings",
+  "exit_code": 1,
+  "stderr": [
+    "OpenBLAS error: Memory allocation still failed after 10 retries, giving up.",
+    "OpenBLAS error: Memory allocation still failed after 10 retries, giving up."
+  ],
+  "metrics_produced": false
+}
