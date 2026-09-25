@@ -1,0 +1,17 @@
+{
+  "scope": "Pure original helper calls on declared fixture records; separate from actual ranking and not proof of exclusion",
+  "values": [
+    {
+      "source_id": "AUDIT-IR09-DRAFT-001",
+      "status": "draft",
+      "source_type": "internal_kb",
+      "trust_weight": 0.0
+    },
+    {
+      "source_id": "AUDIT-IR09-CONTROL-001",
+      "status": "approved",
+      "source_type": "internal_kb",
+      "trust_weight": 1.0
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "finished_at_utc": "2026-09-22T14:10:02.998220+00:00",
+  "subcase": "draft_probe",
+  "process_exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 24.335,
+  "source_files_unchanged": true,
+  "original_database_main_file_unchanged": true,
+  "evidence_directory": "audit/evidence/IR-09/run-20260922T140938591791Z/draft_probe",
+  "worker_status": "Executed; awaiting source/answer review",
+  "worker_stage": "execution completed",
+  "ticket_requests": 1
+}

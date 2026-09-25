@@ -1,0 +1,7 @@
+{
+  "reference_run": "audit/evidence/IR-01/run-20260921T194038486465Z",
+  "source_files_same_as_IR01": true,
+  "kb_csv_same_as_IR01": true,
+  "ticket_csv_same_as_IR01": true,
+  "IR01_outcome": "PASS"
+}

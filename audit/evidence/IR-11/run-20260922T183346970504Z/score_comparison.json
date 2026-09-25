@@ -1,0 +1,83 @@
+{
+  "kind": "Derived from actual unchanged runtime returns; no new request or ablation",
+  "rows": [
+    {
+      "rank": 1,
+      "source_id": "SYN-0005",
+      "native_bm25": 9.47459631085826,
+      "normalized_bm25": 1.0,
+      "semantic": 0.37425320784628235,
+      "pretrust_hybrid": 0.6558392643154554,
+      "trust": 0.85,
+      "metadata_bonus": 0.26,
+      "calculated_final": 0.817463374668137,
+      "observed_final": 0.817463374668137,
+      "residual": 0.0,
+      "cited": true,
+      "supports_battery_swelling_repair": false
+    },
+    {
+      "rank": 2,
+      "source_id": "SYN-0010",
+      "native_bm25": 6.901719079392127,
+      "normalized_bm25": 0.7284446590597728,
+      "semantic": 0.5056641656888294,
+      "pretrust_hybrid": 0.6059153877057539,
+      "trust": 0.85,
+      "metadata_bonus": 0.26,
+      "calculated_final": 0.7750280795498908,
+      "observed_final": 0.7750280795498908,
+      "residual": 0.0,
+      "cited": true,
+      "supports_battery_swelling_repair": false
+    },
+    {
+      "rank": 3,
+      "source_id": "SYN-0008",
+      "native_bm25": 6.214161209588583,
+      "normalized_bm25": 0.6558760928385845,
+      "semantic": 0.39810845412782486,
+      "pretrust_hybrid": 0.5141038915476668,
+      "trust": 0.85,
+      "metadata_bonus": 0.26,
+      "calculated_final": 0.6969883078155168,
+      "observed_final": 0.6969883078155168,
+      "residual": 0.0,
+      "cited": true,
+      "supports_battery_swelling_repair": false
+    },
+    {
+      "rank": 4,
+      "source_id": "SYN-0054",
+      "native_bm25": 4.759790784530536,
+      "normalized_bm25": 0.5023739933991308,
+      "semantic": 0.32125602304024736,
+      "pretrust_hybrid": 0.40275910970174494,
+      "trust": 0.85,
+      "metadata_bonus": 0.26,
+      "calculated_final": 0.6023452432464832,
+      "observed_final": 0.6023452432464832,
+      "residual": 0.0,
+      "cited": false,
+      "supports_battery_swelling_repair": false
+    },
+    {
+      "rank": 5,
+      "source_id": "SYN-0026",
+      "native_bm25": 3.0171389051367044,
+      "normalized_bm25": 0.31844511429779276,
+      "semantic": 0.3871624936831616,
+      "pretrust_hybrid": 0.3562396729597456,
+      "trust": 0.85,
+      "metadata_bonus": 0.26,
+      "calculated_final": 0.5628037220157838,
+      "observed_final": 0.5628037220157838,
+      "residual": 0.0,
+      "cited": false,
+      "supports_battery_swelling_repair": false
+    }
+  ],
+  "top_pretrust_below_HIGH": true,
+  "top_adjusted_above_HIGH": true,
+  "scope": "Threshold comparison explains this observed decision; no IR-12 boundary test or hypothetical-score execution"
+}

@@ -1,0 +1,16 @@
+{
+  "eligible_record_count": 427,
+  "matches_reviewed_CSV_records_in_all_retrieval_fields": true,
+  "issue_terms": [
+    "battery",
+    "batteries",
+    "swell",
+    "swollen",
+    "charging",
+    "charger",
+    "bulg",
+    "overheat"
+  ],
+  "issue_term_matches": [],
+  "capture": "Actual records passed unchanged to hybrid_rank; keyword screening supplements the independent corpus content review"
+}

@@ -1,0 +1,8 @@
+{
+  "eligible_records": 427,
+  "matches_original_CSV_in_all_retrieval_fields": true,
+  "approved_KB_rows": 80,
+  "resolved_histories": 347,
+  "source_files_unchanged": true,
+  "scope": "Original synthetic corpus; no working-database rows or inserted source fixture. Branch control exists only in injected in-memory ranker output."
+}

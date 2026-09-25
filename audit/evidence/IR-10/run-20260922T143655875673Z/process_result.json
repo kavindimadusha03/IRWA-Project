@@ -1,0 +1,25 @@
+{
+  "case": "IR-10",
+  "finished_at_utc": "2026-09-22T14:37:16.012180+00:00",
+  "outcome": "Unassessed; await reviewed comparison",
+  "subcases": [
+    {
+      "finished_at_utc": "2026-09-22T14:37:15.989690+00:00",
+      "subcase": "trust_pair",
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 20.082,
+      "source_files_unchanged": true,
+      "original_database_main_file_unchanged": true,
+      "evidence_directory": "audit/evidence/IR-10/run-20260922T143655875673Z/trust_pair",
+      "worker_status": "Executed; awaiting source/answer review",
+      "worker_stage": "execution completed",
+      "ticket_requests": 1
+    }
+  ],
+  "ticket_requests": 1,
+  "source_files_unchanged": true,
+  "original_database_main_file_unchanged": true,
+  "integrity_limit": "Original main-file checksum does not cover concurrent WAL writes by another process; helper never writes working database.",
+  "evidence_directory": "audit/evidence/IR-10/run-20260922T143655875673Z"
+}

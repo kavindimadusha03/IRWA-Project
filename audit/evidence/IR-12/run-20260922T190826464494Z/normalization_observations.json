@@ -1,0 +1,54 @@
+{
+  "scope": "Observed original function outputs; descriptive, not ablation or quantified cause",
+  "selected": [
+    {
+      "id": "N04",
+      "original": "My laptop hinge is broken.",
+      "normalized": "laptop change broken.",
+      "tokens": [
+        "laptop",
+        "change",
+        "broken"
+      ]
+    },
+    {
+      "id": "N07",
+      "original": "My laptop is hot after charging.",
+      "normalized": "laptop hot after charging.",
+      "tokens": [
+        "laptop",
+        "hot",
+        "after",
+        "charging"
+      ]
+    },
+    {
+      "id": "N05",
+      "original": "My laptop keyboard has a loose key.",
+      "normalized": "laptop keyboard loose key.",
+      "tokens": [
+        "laptop",
+        "keyboard",
+        "loose",
+        "key"
+      ]
+    },
+    {
+      "id": "N11",
+      "original": "The screen flickers when the laptop starts.",
+      "normalized": "screen flickers laptop restarts",
+      "tokens": [
+        "screen",
+        "flickers",
+        "laptop",
+        "restarts"
+      ]
+    }
+  ],
+  "observations": [
+    "N04 hinge became change while no recommendation was allowed",
+    "N11 starts became restarts; flickers retained; the top record concerns repeated restarts after updates",
+    "Original fuzzy matching permits close corpus terms; no proof that disabling it alone corrects N11"
+  ],
+  "N05_metadata_note": "Original query contains single-letter a; category-token substring condition matches Software Installation and adds .18 on top of resolved-status .08. Describes current code/output, not a tested metadata ablation."
+}

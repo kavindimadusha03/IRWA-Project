@@ -1,0 +1,352 @@
+{
+  "id": "N10",
+  "kind": "natural_original_retrieval",
+  "query": "After an update my laptop case is bulging.",
+  "started_at_utc": "2026-09-22T19:08:49.704119+00:00",
+  "deduplicated_source_ids": [
+    "KB-001",
+    "KB-002",
+    "KB-003",
+    "KB-004",
+    "KB-005",
+    "KB-006",
+    "KB-007",
+    "KB-008",
+    "KB-009",
+    "KB-017",
+    "SYN-0001",
+    "SYN-0003",
+    "SYN-0004",
+    "SYN-0005",
+    "SYN-0006",
+    "SYN-0008",
+    "SYN-0009",
+    "SYN-0010",
+    "SYN-0011",
+    "SYN-0012",
+    "SYN-0013",
+    "SYN-0014",
+    "SYN-0015",
+    "SYN-0018",
+    "SYN-0026",
+    "SYN-0027",
+    "SYN-0028",
+    "SYN-0030",
+    "SYN-0032",
+    "SYN-0033",
+    "SYN-0037",
+    "SYN-0038",
+    "SYN-0039",
+    "SYN-0044",
+    "SYN-0045",
+    "SYN-0048",
+    "SYN-0051",
+    "SYN-0052",
+    "SYN-0053",
+    "SYN-0054",
+    "SYN-0056",
+    "SYN-0059",
+    "SYN-0070",
+    "SYN-0072",
+    "SYN-0080",
+    "SYN-0092",
+    "SYN-0096",
+    "SYN-0101",
+    "SYN-0135",
+    "SYN-0138"
+  ],
+  "query_preprocessing": {
+    "original": "After an update my laptop case is bulging.",
+    "normalized": "after update laptop cause bulging.",
+    "tokens": [
+      "after",
+      "update",
+      "laptop",
+      "cause",
+      "bulging"
+    ]
+  },
+  "native_bm25": {
+    "tokens": [
+      "after",
+      "update",
+      "laptop",
+      "cause",
+      "bulging"
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      1.382149358423704,
+      0.0,
+      2.871793566493387,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.6521785600028494,
+      0.6264730023255888,
+      0.5951936646044145,
+      5.196495727778515,
+      4.969840592257996,
+      6.738691642820037,
+      2.2649040996137897,
+      7.42624951262358,
+      0.6348133724639432,
+      2.1131427011675608,
+      0.5878558615559504,
+      2.360755043975075,
+      0.6800838896597174,
+      0.6433788133085587,
+      3.547042654169644,
+      0.5951936646044145,
+      0.602716968699018,
+      2.916308621871014,
+      2.4118673801454964,
+      0.6104328981438293,
+      0.6521785600028494,
+      0.6800838896597174,
+      0.6612223599474205,
+      2.4382845311742116,
+      0.602716968699018,
+      2.1975408741972404,
+      0.71048398406191,
+      2.4118673801454964,
+      0.670520508817029,
+      4.115900767184982,
+      0.6264730023255888,
+      0.6612223599474205,
+      0.602716968699018,
+      0.6521785600028494,
+      0.6183489467927075,
+      0.6348133724639432,
+      0.602716968699018,
+      2.1131427011675608,
+      2.2576541469481457,
+      3.1645168758762416
+    ],
+    "order": "deduplicated_source_ids"
+  },
+  "hybrid_before_trust": [
+    {
+      "source_id": "SYN-0010",
+      "title": "Laptop is slow after Windows 11 update",
+      "content": "Problem: Laptop is slow after Windows 11 update on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 1.0,
+      "semantic_score": 0.45117181915595816,
+      "hybrid_score": 0.698144500535777,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0008",
+      "title": "Computer repeatedly restarts after Windows update",
+      "content": "Problem: Computer repeatedly restarts after Windows update on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.9074151940848754,
+      "semantic_score": 0.38835522283378743,
+      "hybrid_score": 0.621932209896777,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0005",
+      "title": "Blue screen appears after installing an update",
+      "content": "Problem: Blue screen appears after installing an update on Windows 10. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.6997469878900787,
+      "semantic_score": 0.3332183120315271,
+      "hybrid_score": 0.4981562161678753,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0026",
+      "title": "Windows update failed and rolled back",
+      "content": "Problem: Windows update failed and rolled back on Windows 11. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.47763580366377,
+      "semantic_score": 0.38532704697089626,
+      "hybrid_score": 0.42686598748268945,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0054",
+      "title": "Windows driver error after restart",
+      "content": "Problem: Windows driver error after restart on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.5542368001759878,
+      "semantic_score": 0.31039781802461325,
+      "hybrid_score": 0.4201253599927318,
+      "exact_error_match": false
+    }
+  ],
+  "metadata_calls": [
+    {
+      "source_id": "SYN-0010",
+      "query": "After an update my laptop case is bulging.",
+      "bonus": 0.26
+    },
+    {
+      "source_id": "SYN-0008",
+      "query": "After an update my laptop case is bulging.",
+      "bonus": 0.26
+    },
+    {
+      "source_id": "SYN-0005",
+      "query": "After an update my laptop case is bulging.",
+      "bonus": 0.26
+    },
+    {
+      "source_id": "SYN-0026",
+      "query": "After an update my laptop case is bulging.",
+      "bonus": 0.26
+    },
+    {
+      "source_id": "SYN-0054",
+      "query": "After an update my laptop case is bulging.",
+      "bonus": 0.26
+    }
+  ],
+  "trust_calls": [
+    {
+      "source_id": "SYN-0010",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0008",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0005",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0026",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0054",
+      "trust": 0.85
+    }
+  ],
+  "retrieval": {
+    "query": "After an update my laptop case is bulging.",
+    "items": [
+      {
+        "source_id": "SYN-0010",
+        "title": "Laptop is slow after Windows 11 update",
+        "content": "Problem: Laptop is slow after Windows 11 update on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+        "category": "Windows / Updates",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 1.0,
+        "semantic_score": 0.45117181915595816,
+        "hybrid_score": 0.8534228254554105,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 1.0,
+          "semantic_score": 0.45117181915595816,
+          "hybrid_score": 0.8534228254554105
+        },
+        "source": "SYN-0010"
+      },
+      {
+        "source_id": "SYN-0008",
+        "title": "Computer repeatedly restarts after Windows update",
+        "content": "Problem: Computer repeatedly restarts after Windows update on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+        "category": "Windows / Updates",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.9074151940848754,
+        "semantic_score": 0.38835522283378743,
+        "hybrid_score": 0.7886423784122605,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.9074151940848754,
+          "semantic_score": 0.38835522283378743,
+          "hybrid_score": 0.7886423784122605
+        },
+        "source": "SYN-0008"
+      },
+      {
+        "source_id": "SYN-0005",
+        "title": "Blue screen appears after installing an update",
+        "content": "Problem: Blue screen appears after installing an update on Windows 10. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+        "category": "Windows / Updates",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.6997469878900787,
+        "semantic_score": 0.3332183120315271,
+        "hybrid_score": 0.683432783742694,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.6997469878900787,
+          "semantic_score": 0.3332183120315271,
+          "hybrid_score": 0.683432783742694
+        },
+        "source": "SYN-0005"
+      },
+      {
+        "source_id": "SYN-0026",
+        "title": "Windows update failed and rolled back",
+        "content": "Problem: Windows update failed and rolled back on Windows 11. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+        "category": "Windows / Updates",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.47763580366377,
+        "semantic_score": 0.38532704697089626,
+        "hybrid_score": 0.622836089360286,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.47763580366377,
+          "semantic_score": 0.38532704697089626,
+          "hybrid_score": 0.622836089360286
+        },
+        "source": "SYN-0026"
+      },
+      {
+        "source_id": "SYN-0054",
+        "title": "Windows driver error after restart",
+        "content": "Problem: Windows driver error after restart on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+        "category": "Windows / Updates",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.5542368001759878,
+        "semantic_score": 0.31039781802461325,
+        "hybrid_score": 0.617106555993822,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.5542368001759878,
+          "semantic_score": 0.31039781802461325,
+          "hybrid_score": 0.617106555993822
+        },
+        "source": "SYN-0054"
+      }
+    ],
+    "best_score": 0.8534228254554105,
+    "decision": "HIGH"
+  },
+  "expected_decision": "HIGH",
+  "decision_matches": true,
+  "elapsed_seconds": 0.291
+}

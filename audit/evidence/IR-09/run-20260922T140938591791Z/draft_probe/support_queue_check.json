@@ -1,0 +1,14 @@
+{
+  "verification": "Read-only GET /support after normal synthetic IT_SUPPORT login; no resolve/approve/reject request",
+  "role": "IT_SUPPORT",
+  "ticket_id": 501,
+  "stored_status": "ESCALATED",
+  "assigned_to": null,
+  "login_status": 303,
+  "login_location": "/home",
+  "cookie_present": true,
+  "page_status": 200,
+  "ticket_resolve_form_present": true,
+  "ticket_code_present": true,
+  "exact_description_present": true
+}

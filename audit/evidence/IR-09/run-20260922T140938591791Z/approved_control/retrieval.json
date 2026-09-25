@@ -1,0 +1,102 @@
+{
+  "query": "cobaltlantern463",
+  "items": [
+    {
+      "source_id": "AUDIT-IR09-CONTROL-001",
+      "title": "Approved lookup cobaltlantern463",
+      "content": "Reviewed test reference for cobaltlantern463. Response-only witness: amberharborreceipt. This is harmless synthetic lookup text, not a device repair.",
+      "category": "Audit / Lookup",
+      "supported_os": "Any",
+      "source_type": "internal_kb",
+      "status": "approved",
+      "bm25_score": 1.0,
+      "semantic_score": 0.5878642945956885,
+      "hybrid_score": 0.8533253620276287,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 1.0,
+        "semantic_score": 0.5878642945956885,
+        "hybrid_score": 0.8533253620276287
+      },
+      "source": "AUDIT-IR09-CONTROL-001"
+    },
+    {
+      "source_id": "SYN-0001",
+      "title": "VPN disconnects every few minutes",
+      "content": "Problem: VPN disconnects every few minutes on Windows 11. I already restarted the device once.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+      "category": "VPN",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.0,
+      "semantic_score": 0.18329854781941862,
+      "hybrid_score": 0.1656920711055782,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.0,
+        "semantic_score": 0.18329854781941862,
+        "hybrid_score": 0.1656920711055782
+      },
+      "source": "SYN-0001"
+    },
+    {
+      "source_id": "KB-002",
+      "title": "Re-create VPN Profile - Guide 1",
+      "content": "Remove the damaged VPN connection profile and create a new profile using the approved organization settings.",
+      "category": "VPN",
+      "supported_os": "Any",
+      "source_type": "Internal KB",
+      "status": "approved",
+      "bm25_score": 0.0,
+      "semantic_score": 0.15563315190717844,
+      "hybrid_score": 0.16559823354894815,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.0,
+        "semantic_score": 0.15563315190717844,
+        "hybrid_score": 0.16559823354894815
+      },
+      "source": "KB-002"
+    },
+    {
+      "source_id": "KB-008",
+      "title": "RDP Credential Repair - Guide 1",
+      "content": "Remove saved Remote Desktop credentials and reconnect using the current organization account.",
+      "category": "Remote Desktop",
+      "supported_os": "Any",
+      "source_type": "Internal KB",
+      "status": "approved",
+      "bm25_score": 0.0,
+      "semantic_score": 0.15224881266770418,
+      "hybrid_score": 0.1637368469672373,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.0,
+        "semantic_score": 0.15224881266770418,
+        "hybrid_score": 0.1637368469672373
+      },
+      "source": "KB-008"
+    },
+    {
+      "source_id": "SYN-0048",
+      "title": "Company VPN connects then immediately disconnects",
+      "content": "Problem: Company VPN connects then immediately disconnects on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+      "category": "VPN",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.0,
+      "semantic_score": 0.1754588560324846,
+      "hybrid_score": 0.16202701519518653,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.0,
+        "semantic_score": 0.1754588560324846,
+        "hybrid_score": 0.16202701519518653
+      },
+      "source": "SYN-0048"
+    }
+  ],
+  "best_score": 0.8533253620276287,
+  "decision": "HIGH"
+}

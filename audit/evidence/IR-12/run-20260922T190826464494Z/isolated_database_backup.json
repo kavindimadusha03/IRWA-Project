@@ -1,0 +1,13 @@
+{
+  "recorded_before_calls_at_utc": "2026-09-22T19:08:44.268928+00:00",
+  "path": "C:\\Users\\PSB\\AppData\\Local\\Temp\\knowgap-ir12-48ve7_4z\\before_component_calls.sqlite",
+  "sha256": "56cdfed11204a335f89fea60e785e0ba367e7e40e71ad15c9f7b02b311785801",
+  "integrity_check": "ok",
+  "counts": {
+    "knowledgearticle": 80,
+    "ticket": 500,
+    "user": 4
+  },
+  "outside_repository": true,
+  "method": "SQLite backup API from mode=ro seeded source"
+}

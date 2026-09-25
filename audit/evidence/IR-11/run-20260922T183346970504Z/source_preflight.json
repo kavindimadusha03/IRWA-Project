@@ -1,0 +1,1525 @@
+{
+  "recorded_at_utc": "2026-09-22T18:33:47.000769+00:00",
+  "corpus": "Unmodified synthetic CSVs in isolated SQLite database",
+  "kb_rows": 80,
+  "ticket_rows": 500,
+  "approved_KB_count": 80,
+  "eligible_resolved_ticket_count": 347,
+  "issue_terms": [
+    "battery",
+    "batteries",
+    "swell",
+    "swollen",
+    "charging",
+    "charger",
+    "bulg",
+    "overheat"
+  ],
+  "approved_KB_term_matches": [],
+  "resolved_ticket_term_matches": [],
+  "all_KB_term_matches": [],
+  "all_ticket_term_matches": [],
+  "reviewed_distinct_approved_title_body_families": [
+    {
+      "title": "Approved Software Installation",
+      "body": "Download the installer only from the approved internal source and install it with authorized administrator permission."
+    },
+    {
+      "title": "Clear Print Queue",
+      "body": "Stop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again."
+    },
+    {
+      "title": "Clear Print Queue",
+      "body": "Stop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again. This is a near-duplicate article retained for evaluation of duplicate knowledge."
+    },
+    {
+      "title": "DNS Cache Recovery",
+      "body": "If Wi-Fi is connected but internet access is unavailable, open Command Prompt and run ipconfig /flushdns. Reconnect to Wi-Fi and test again."
+    },
+    {
+      "title": "Password Reset Process",
+      "body": "Use the approved password reset portal, create a compliant password, and sign in again after the reset completes."
+    },
+    {
+      "title": "RDP Credential Repair",
+      "body": "Remove saved Remote Desktop credentials and reconnect using the current organization account."
+    },
+    {
+      "title": "Re-create VPN Profile",
+      "body": "Remove the damaged VPN connection profile and create a new profile using the approved organization settings."
+    },
+    {
+      "title": "Re-create VPN Profile",
+      "body": "Remove the damaged VPN connection profile and create a new profile using the approved organization settings. This older article was written for Windows 10 and should be reviewed for newer systems."
+    },
+    {
+      "title": "Re-register MFA",
+      "body": "If MFA approvals or codes fail, remove the old authenticator registration and complete the organization's approved MFA registration process again."
+    },
+    {
+      "title": "Renew Windows IP Address",
+      "body": "For Wi-Fi connected with no internet, run ipconfig /release followed by ipconfig /renew, then reconnect to the wireless network."
+    },
+    {
+      "title": "Restart Network Adapter",
+      "body": "Disable and re-enable the Wi-Fi network adapter, then reconnect to the approved wireless network."
+    },
+    {
+      "title": "Update Device Drivers",
+      "body": "Install manufacturer-approved device drivers through the approved update channel and restart the computer."
+    }
+  ],
+  "reviewed_distinct_resolved_title_resolution_families": [
+    {
+      "title": "Account says credentials are invalid",
+      "resolution": "Unlocked the account and forced a secure password reset."
+    },
+    {
+      "title": "Application installation fails with permission error",
+      "resolution": "Used the approved installer with administrator permission."
+    },
+    {
+      "title": "Approved software cannot be installed on laptop",
+      "resolution": "Used the approved installer with administrator permission."
+    },
+    {
+      "title": "Authenticator code is rejected",
+      "resolution": "Re-registered MFA and cleared cached Outlook credentials."
+    },
+    {
+      "title": "Blue screen appears after installing an update",
+      "resolution": "Installed pending driver updates and repaired Windows update components."
+    },
+    {
+      "title": "Cannot sign in after password reset",
+      "resolution": "Unlocked the account and forced a secure password reset."
+    },
+    {
+      "title": "Company VPN connects then immediately disconnects",
+      "resolution": "Updated the VPN client and re-created the connection profile."
+    },
+    {
+      "title": "Computer repeatedly restarts after Windows update",
+      "resolution": "Installed pending driver updates and repaired Windows update components."
+    },
+    {
+      "title": "DNS error while connected to office Wi-Fi",
+      "resolution": "Restarted the network adapter and flushed the DNS cache."
+    },
+    {
+      "title": "Installer stops before completion",
+      "resolution": "Used the approved installer with administrator permission."
+    },
+    {
+      "title": "Internet unavailable although Wi-Fi is connected",
+      "resolution": "Restarted the network adapter and flushed the DNS cache."
+    },
+    {
+      "title": "Laptop connected to Wi-Fi but no internet access",
+      "resolution": "Restarted the network adapter and flushed the DNS cache."
+    },
+    {
+      "title": "Laptop is slow after Windows 11 update",
+      "resolution": "Installed pending driver updates and repaired Windows update components."
+    },
+    {
+      "title": "MFA approval never arrives on phone",
+      "resolution": "Re-registered MFA and cleared cached Outlook credentials."
+    },
+    {
+      "title": "New employee account cannot access portal",
+      "resolution": "Unlocked the account and forced a secure password reset."
+    },
+    {
+      "title": "Office printer prints blank pages",
+      "resolution": "Cleared the print queue and reinstalled the approved printer driver."
+    },
+    {
+      "title": "Outlook cannot send email after password change",
+      "resolution": "Re-registered MFA and cleared cached Outlook credentials."
+    },
+    {
+      "title": "Outlook keeps asking for password",
+      "resolution": "Re-registered MFA and cleared cached Outlook credentials."
+    },
+    {
+      "title": "Outlook profile fails to synchronize mail",
+      "resolution": "Re-registered MFA and cleared cached Outlook credentials."
+    },
+    {
+      "title": "Password expired and user cannot log in",
+      "resolution": "Unlocked the account and forced a secure password reset."
+    },
+    {
+      "title": "Print queue is stuck and cannot be cleared",
+      "resolution": "Cleared the print queue and reinstalled the approved printer driver."
+    },
+    {
+      "title": "Printer is online but jobs stay in queue",
+      "resolution": "Cleared the print queue and reinstalled the approved printer driver."
+    },
+    {
+      "title": "Printer shows offline although it is powered on",
+      "resolution": "Cleared the print queue and reinstalled the approved printer driver."
+    },
+    {
+      "title": "RDP connection times out from home network",
+      "resolution": "Enabled the approved RDP rule and verified the device was reachable."
+    },
+    {
+      "title": "RDP session disconnects after login",
+      "resolution": "Enabled the approved RDP rule and verified the device was reachable."
+    },
+    {
+      "title": "Remote Desktop cannot connect to office PC",
+      "resolution": "Enabled the approved RDP rule and verified the device was reachable."
+    },
+    {
+      "title": "Remote Desktop shows credential error",
+      "resolution": "Enabled the approved RDP rule and verified the device was reachable."
+    },
+    {
+      "title": "Remote access VPN drops after login",
+      "resolution": "Updated the VPN client and re-created the connection profile."
+    },
+    {
+      "title": "Remote computer is unavailable through RDP",
+      "resolution": "Enabled the approved RDP rule and verified the device was reachable."
+    },
+    {
+      "title": "Setup wizard reports missing dependency",
+      "resolution": "Used the approved installer with administrator permission."
+    },
+    {
+      "title": "Software setup cannot continue because admin rights are required",
+      "resolution": "Used the approved installer with administrator permission."
+    },
+    {
+      "title": "User account is locked after failed login attempts",
+      "resolution": "Unlocked the account and forced a secure password reset."
+    },
+    {
+      "title": "VPN authentication fails after Windows update",
+      "resolution": "Updated the VPN client and re-created the connection profile."
+    },
+    {
+      "title": "VPN disconnects every few minutes",
+      "resolution": "Updated the VPN client and re-created the connection profile."
+    },
+    {
+      "title": "VPN tunnel is unstable from home network",
+      "resolution": "Updated the VPN client and re-created the connection profile."
+    },
+    {
+      "title": "Wi-Fi connected but browser says no internet",
+      "resolution": "Restarted the network adapter and flushed the DNS cache."
+    },
+    {
+      "title": "Windows cannot find network printer",
+      "resolution": "Cleared the print queue and reinstalled the approved printer driver."
+    },
+    {
+      "title": "Windows driver error after restart",
+      "resolution": "Installed pending driver updates and repaired Windows update components."
+    },
+    {
+      "title": "Windows update failed and rolled back",
+      "resolution": "Installed pending driver updates and repaired Windows update components."
+    },
+    {
+      "title": "Wireless icon shows connected but websites do not load",
+      "resolution": "Restarted the network adapter and flushed the DNS cache."
+    }
+  ],
+  "resolved_description_suffixes": [
+    " on Ubuntu. I already restarted the device once.",
+    " on Ubuntu. It happens on my work laptop.",
+    " on Ubuntu. No recent hardware changes were made.",
+    " on Ubuntu. Please help because I need this for work.",
+    " on Ubuntu. The issue happens repeatedly.",
+    " on Ubuntu. This started this morning.",
+    " on Windows 10. I already restarted the device once.",
+    " on Windows 10. It happens on my work laptop.",
+    " on Windows 10. No recent hardware changes were made.",
+    " on Windows 10. Please help because I need this for work.",
+    " on Windows 10. The issue happens repeatedly.",
+    " on Windows 10. This started this morning.",
+    " on Windows 11. I already restarted the device once.",
+    " on Windows 11. It happens on my work laptop.",
+    " on Windows 11. No recent hardware changes were made.",
+    " on Windows 11. Please help because I need this for work.",
+    " on Windows 11. The issue happens repeatedly.",
+    " on Windows 11. This started this morning.",
+    " on macOS. I already restarted the device once.",
+    " on macOS. It happens on my work laptop.",
+    " on macOS. No recent hardware changes were made.",
+    " on macOS. Please help because I need this for work.",
+    " on macOS. The issue happens repeatedly.",
+    " on macOS. This started this morning."
+  ],
+  "description_rows_without_title_prefix": [],
+  "content_review": "All eligible KB body families and resolved title/resolution families are saved for content review: network, accounts, MFA/mail, printer, software and Windows update topics. No battery-swelling cause/repair support; update/driver procedures alone do not establish applicability. Keyword screening supplements content review.",
+  "partially_overlapping_records": [
+    {
+      "doc_id": "KB-006",
+      "title": "Update Device Drivers - Guide 1",
+      "body": "Install manufacturer-approved device drivers through the approved update channel and restart the computer.",
+      "source_type": "Internal KB",
+      "authoritative": "true",
+      "created_at": "2025-01-15",
+      "updated_at": "2026-08-01",
+      "status": "approved",
+      "supported_os": "Any",
+      "security_class": "internal",
+      "category": "Windows / Updates"
+    },
+    {
+      "doc_id": "KB-014",
+      "title": "Update Device Drivers - Guide 2",
+      "body": "Install manufacturer-approved device drivers through the approved update channel and restart the computer.",
+      "source_type": "Internal KB",
+      "authoritative": "true",
+      "created_at": "2025-01-15",
+      "updated_at": "2023-01-15",
+      "status": "approved",
+      "supported_os": "Any",
+      "security_class": "internal",
+      "category": "Windows / Updates"
+    },
+    {
+      "doc_id": "KB-022",
+      "title": "Update Device Drivers - Guide 3",
+      "body": "Install manufacturer-approved device drivers through the approved update channel and restart the computer.",
+      "source_type": "Internal KB",
+      "authoritative": "true",
+      "created_at": "2025-01-15",
+      "updated_at": "2026-08-01",
+      "status": "approved",
+      "supported_os": "Any",
+      "security_class": "internal",
+      "category": "Windows / Updates"
+    },
+    {
+      "doc_id": "KB-030",
+      "title": "Update Device Drivers - Guide 4",
+      "body": "Install manufacturer-approved device drivers through the approved update channel and restart the computer.",
+      "source_type": "Internal KB",
+      "authoritative": "true",
+      "created_at": "2025-01-15",
+      "updated_at": "2023-01-15",
+      "status": "approved",
+      "supported_os": "Any",
+      "security_class": "internal",
+      "category": "Windows / Updates"
+    },
+    {
+      "doc_id": "KB-038",
+      "title": "Update Device Drivers - Guide 5",
+      "body": "Install manufacturer-approved device drivers through the approved update channel and restart the computer.",
+      "source_type": "Internal KB",
+      "authoritative": "true",
+      "created_at": "2025-01-15",
+      "updated_at": "2026-08-01",
+      "status": "approved",
+      "supported_os": "Any",
+      "security_class": "internal",
+      "category": "Windows / Updates"
+    },
+    {
+      "doc_id": "KB-046",
+      "title": "Update Device Drivers - Guide 6",
+      "body": "Install manufacturer-approved device drivers through the approved update channel and restart the computer.",
+      "source_type": "Internal KB",
+      "authoritative": "true",
+      "created_at": "2025-01-15",
+      "updated_at": "2023-01-15",
+      "status": "approved",
+      "supported_os": "Any",
+      "security_class": "internal",
+      "category": "Windows / Updates"
+    },
+    {
+      "doc_id": "KB-054",
+      "title": "Update Device Drivers - Guide 7",
+      "body": "Install manufacturer-approved device drivers through the approved update channel and restart the computer.",
+      "source_type": "Internal KB",
+      "authoritative": "true",
+      "created_at": "2025-01-15",
+      "updated_at": "2026-08-01",
+      "status": "approved",
+      "supported_os": "Any",
+      "security_class": "internal",
+      "category": "Windows / Updates"
+    },
+    {
+      "doc_id": "KB-062",
+      "title": "Update Device Drivers - Guide 8",
+      "body": "Install manufacturer-approved device drivers through the approved update channel and restart the computer.",
+      "source_type": "Internal KB",
+      "authoritative": "true",
+      "created_at": "2025-01-15",
+      "updated_at": "2023-01-15",
+      "status": "approved",
+      "supported_os": "Any",
+      "security_class": "internal",
+      "category": "Windows / Updates"
+    },
+    {
+      "doc_id": "KB-070",
+      "title": "Update Device Drivers - Guide 9",
+      "body": "Install manufacturer-approved device drivers through the approved update channel and restart the computer.",
+      "source_type": "Internal KB",
+      "authoritative": "true",
+      "created_at": "2025-01-15",
+      "updated_at": "2026-08-01",
+      "status": "approved",
+      "supported_os": "Any",
+      "security_class": "internal",
+      "category": "Windows / Updates"
+    },
+    {
+      "doc_id": "KB-078",
+      "title": "Update Device Drivers - Guide 10",
+      "body": "Install manufacturer-approved device drivers through the approved update channel and restart the computer.",
+      "source_type": "Internal KB",
+      "authoritative": "true",
+      "created_at": "2025-01-15",
+      "updated_at": "2023-01-15",
+      "status": "approved",
+      "supported_os": "Any",
+      "security_class": "internal",
+      "category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0005",
+      "created_at": "2026-02-09",
+      "department": "IT",
+      "title": "Blue screen appears after installing an update",
+      "description": "Blue screen appears after installing an update on Windows 10. This started this morning.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "Medium",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0006",
+      "created_at": "2026-08-05",
+      "department": "Sales",
+      "title": "VPN authentication fails after Windows update",
+      "description": "VPN authentication fails after Windows update on macOS. This started this morning.",
+      "resolution_notes": "Updated the VPN client and re-created the connection profile.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "VPN"
+    },
+    {
+      "ticket_id": "SYN-0008",
+      "created_at": "2026-02-19",
+      "department": "Finance",
+      "title": "Computer repeatedly restarts after Windows update",
+      "description": "Computer repeatedly restarts after Windows update on Windows 11. It happens on my work laptop.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "Low",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0010",
+      "created_at": "2026-06-21",
+      "department": "Academic",
+      "title": "Laptop is slow after Windows 11 update",
+      "description": "Laptop is slow after Windows 11 update on Windows 10. The issue happens repeatedly.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0013",
+      "created_at": "2026-02-24",
+      "department": "HR",
+      "title": "Printer is online but jobs stay in queue",
+      "description": "Printer is online but jobs stay in queue on Ubuntu. Please help because I need this for work.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0020",
+      "created_at": "2026-08-04",
+      "department": "HR",
+      "title": "VPN authentication fails after Windows update",
+      "description": "VPN authentication fails after Windows update on macOS. I already restarted the device once.",
+      "resolution_notes": "Updated the VPN client and re-created the connection profile.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "VPN"
+    },
+    {
+      "ticket_id": "SYN-0026",
+      "created_at": "2026-05-31",
+      "department": "Sales",
+      "title": "Windows update failed and rolled back",
+      "description": "Windows update failed and rolled back on Windows 11. This started this morning.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "Low",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0028",
+      "created_at": "2026-02-24",
+      "department": "Academic",
+      "title": "Print queue is stuck and cannot be cleared",
+      "description": "Print queue is stuck and cannot be cleared on Ubuntu. I already restarted the device once.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "Medium",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0031",
+      "created_at": "2026-03-05",
+      "department": "HR",
+      "title": "Windows update failed and rolled back",
+      "description": "Windows update failed and rolled back on Ubuntu. I already restarted the device once.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "Medium",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0042",
+      "created_at": "2026-03-22",
+      "department": "Finance",
+      "title": "Print queue is stuck and cannot be cleared",
+      "description": "Print queue is stuck and cannot be cleared on Ubuntu. The issue happens repeatedly.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0045",
+      "created_at": "2026-07-26",
+      "department": "Academic",
+      "title": "Printer shows offline although it is powered on",
+      "description": "Printer shows offline although it is powered on on macOS. No recent hardware changes were made.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "Low",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0054",
+      "created_at": "2026-07-25",
+      "department": "IT",
+      "title": "Windows driver error after restart",
+      "description": "Windows driver error after restart on Windows 11. No recent hardware changes were made.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "Low",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0056",
+      "created_at": "2026-02-27",
+      "department": "Academic",
+      "title": "Office printer prints blank pages",
+      "description": "Office printer prints blank pages on Windows 11. Please help because I need this for work.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "Medium",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0057",
+      "created_at": "2026-07-17",
+      "department": "IT",
+      "title": "Printer is online but jobs stay in queue",
+      "description": "Printer is online but jobs stay in queue on Ubuntu. No recent hardware changes were made.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0058",
+      "created_at": "2026-01-30",
+      "department": "HR",
+      "title": "Windows update failed and rolled back",
+      "description": "Windows update failed and rolled back on macOS. This started this morning.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "Low",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0061",
+      "created_at": "2026-06-09",
+      "department": "Academic",
+      "title": "VPN authentication fails after Windows update",
+      "description": "VPN authentication fails after Windows update on Windows 10. No recent hardware changes were made.",
+      "resolution_notes": "Updated the VPN client and re-created the connection profile.",
+      "priority": "Medium",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "VPN"
+    },
+    {
+      "ticket_id": "SYN-0064",
+      "created_at": "2026-05-21",
+      "department": "IT",
+      "title": "Print queue is stuck and cannot be cleared",
+      "description": "Print queue is stuck and cannot be cleared on macOS. I already restarted the device once.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "Medium",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0074",
+      "created_at": "2026-08-17",
+      "department": "HR",
+      "title": "Blue screen appears after installing an update",
+      "description": "Blue screen appears after installing an update on Windows 11. I already restarted the device once.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "Medium",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0079",
+      "created_at": "2026-07-05",
+      "department": "Operations",
+      "title": "Windows driver error after restart",
+      "description": "Windows driver error after restart on Windows 11. The issue happens repeatedly.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0088",
+      "created_at": "2026-07-26",
+      "department": "Sales",
+      "title": "Printer shows offline although it is powered on",
+      "description": "Printer shows offline although it is powered on on Windows 10. It happens on my work laptop.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0092",
+      "created_at": "2026-08-07",
+      "department": "Finance",
+      "title": "Windows cannot find network printer",
+      "description": "Windows cannot find network printer on macOS. Please help because I need this for work.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "Low",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0095",
+      "created_at": "2026-01-03",
+      "department": "Finance",
+      "title": "Printer shows offline although it is powered on",
+      "description": "Printer shows offline although it is powered on on Windows 11. No recent hardware changes were made.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "Medium",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0102",
+      "created_at": "2026-03-19",
+      "department": "Academic",
+      "title": "Laptop is slow after Windows 11 update",
+      "description": "Laptop is slow after Windows 11 update on Windows 11. It happens on my work laptop.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "Low",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0108",
+      "created_at": "2026-04-20",
+      "department": "Sales",
+      "title": "Printer shows offline although it is powered on",
+      "description": "Printer shows offline although it is powered on on Windows 10. The issue happens repeatedly.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0114",
+      "created_at": "2026-07-11",
+      "department": "Operations",
+      "title": "Printer shows offline although it is powered on",
+      "description": "Printer shows offline although it is powered on on Windows 10. Please help because I need this for work.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0119",
+      "created_at": "2026-03-27",
+      "department": "Academic",
+      "title": "Windows driver error after restart",
+      "description": "Windows driver error after restart on Windows 10. I already restarted the device once.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "Medium",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0121",
+      "created_at": "2026-03-24",
+      "department": "Operations",
+      "title": "Blue screen appears after installing an update",
+      "description": "Blue screen appears after installing an update on Windows 10. No recent hardware changes were made.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0143",
+      "created_at": "2026-06-26",
+      "department": "Operations",
+      "title": "Print queue is stuck and cannot be cleared",
+      "description": "Print queue is stuck and cannot be cleared on macOS. I already restarted the device once.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "Medium",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0150",
+      "created_at": "2026-05-09",
+      "department": "HR",
+      "title": "Computer repeatedly restarts after Windows update",
+      "description": "Computer repeatedly restarts after Windows update on macOS. Please help because I need this for work.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "Medium",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0151",
+      "created_at": "2026-04-30",
+      "department": "HR",
+      "title": "Windows update failed and rolled back",
+      "description": "Windows update failed and rolled back on Windows 11. No recent hardware changes were made.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0160",
+      "created_at": "2026-08-19",
+      "department": "Finance",
+      "title": "Computer repeatedly restarts after Windows update",
+      "description": "Computer repeatedly restarts after Windows update on Ubuntu. It happens on my work laptop.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "Low",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0165",
+      "created_at": "2026-05-31",
+      "department": "Finance",
+      "title": "Laptop is slow after Windows 11 update",
+      "description": "Laptop is slow after Windows 11 update on Windows 11. It happens on my work laptop.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "Low",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0167",
+      "created_at": "2026-06-01",
+      "department": "Operations",
+      "title": "Computer repeatedly restarts after Windows update",
+      "description": "Computer repeatedly restarts after Windows update on Windows 11. The issue happens repeatedly.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "Low",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0168",
+      "created_at": "2026-06-14",
+      "department": "Finance",
+      "title": "Print queue is stuck and cannot be cleared",
+      "description": "Print queue is stuck and cannot be cleared on Ubuntu. Please help because I need this for work.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "Medium",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0175",
+      "created_at": "2026-05-23",
+      "department": "Sales",
+      "title": "Laptop is slow after Windows 11 update",
+      "description": "Laptop is slow after Windows 11 update on macOS. No recent hardware changes were made.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "Low",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0177",
+      "created_at": "2026-01-27",
+      "department": "HR",
+      "title": "Windows cannot find network printer",
+      "description": "Windows cannot find network printer on Ubuntu. I already restarted the device once.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "Low",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0178",
+      "created_at": "2026-04-05",
+      "department": "IT",
+      "title": "Computer repeatedly restarts after Windows update",
+      "description": "Computer repeatedly restarts after Windows update on Windows 11. Please help because I need this for work.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0180",
+      "created_at": "2026-03-31",
+      "department": "HR",
+      "title": "Windows cannot find network printer",
+      "description": "Windows cannot find network printer on Windows 11. The issue happens repeatedly.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0198",
+      "created_at": "2026-06-01",
+      "department": "IT",
+      "title": "Windows cannot find network printer",
+      "description": "Windows cannot find network printer on Windows 10. It happens on my work laptop.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "Medium",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0209",
+      "created_at": "2026-02-24",
+      "department": "Operations",
+      "title": "Office printer prints blank pages",
+      "description": "Office printer prints blank pages on Windows 11. I already restarted the device once.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "Low",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0213",
+      "created_at": "2026-03-01",
+      "department": "IT",
+      "title": "Print queue is stuck and cannot be cleared",
+      "description": "Print queue is stuck and cannot be cleared on Ubuntu. I already restarted the device once.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "Medium",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0216",
+      "created_at": "2026-01-22",
+      "department": "IT",
+      "title": "VPN authentication fails after Windows update",
+      "description": "VPN authentication fails after Windows update on Ubuntu. The issue happens repeatedly.",
+      "resolution_notes": "Updated the VPN client and re-created the connection profile.",
+      "priority": "Low",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "VPN"
+    },
+    {
+      "ticket_id": "SYN-0228",
+      "created_at": "2026-07-07",
+      "department": "Sales",
+      "title": "Laptop is slow after Windows 11 update",
+      "description": "Laptop is slow after Windows 11 update on macOS. I already restarted the device once.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "Low",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0229",
+      "created_at": "2026-03-28",
+      "department": "Academic",
+      "title": "Computer repeatedly restarts after Windows update",
+      "description": "Computer repeatedly restarts after Windows update on Ubuntu. No recent hardware changes were made.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "Medium",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0232",
+      "created_at": "2026-07-12",
+      "department": "IT",
+      "title": "Printer is online but jobs stay in queue",
+      "description": "Printer is online but jobs stay in queue on macOS. This started this morning.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0233",
+      "created_at": "2026-02-01",
+      "department": "Operations",
+      "title": "Blue screen appears after installing an update",
+      "description": "Blue screen appears after installing an update on Ubuntu. No recent hardware changes were made.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "Medium",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0236",
+      "created_at": "2026-01-27",
+      "department": "IT",
+      "title": "Windows cannot find network printer",
+      "description": "Windows cannot find network printer on macOS. It happens on my work laptop.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "Medium",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0238",
+      "created_at": "2026-04-22",
+      "department": "Academic",
+      "title": "Computer repeatedly restarts after Windows update",
+      "description": "Computer repeatedly restarts after Windows update on Windows 10. This started this morning.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0251",
+      "created_at": "2026-08-13",
+      "department": "HR",
+      "title": "Laptop is slow after Windows 11 update",
+      "description": "Laptop is slow after Windows 11 update on Ubuntu. The issue happens repeatedly.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "Low",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0254",
+      "created_at": "2026-06-10",
+      "department": "Sales",
+      "title": "Office printer prints blank pages",
+      "description": "Office printer prints blank pages on Windows 10. The issue happens repeatedly.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0260",
+      "created_at": "2026-04-13",
+      "department": "IT",
+      "title": "Blue screen appears after installing an update",
+      "description": "Blue screen appears after installing an update on Windows 10. It happens on my work laptop.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "Low",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0263",
+      "created_at": "2026-07-15",
+      "department": "Operations",
+      "title": "Laptop is slow after Windows 11 update",
+      "description": "Laptop is slow after Windows 11 update on Ubuntu. Please help because I need this for work.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "Medium",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0265",
+      "created_at": "2026-01-13",
+      "department": "Operations",
+      "title": "Windows update failed and rolled back",
+      "description": "Windows update failed and rolled back on Ubuntu. It happens on my work laptop.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0269",
+      "created_at": "2026-08-29",
+      "department": "HR",
+      "title": "Computer repeatedly restarts after Windows update",
+      "description": "Computer repeatedly restarts after Windows update on Windows 11. The issue happens repeatedly.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0272",
+      "created_at": "2026-04-11",
+      "department": "Sales",
+      "title": "Laptop is slow after Windows 11 update",
+      "description": "Laptop is slow after Windows 11 update on macOS. The issue happens repeatedly.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0275",
+      "created_at": "2026-05-28",
+      "department": "Academic",
+      "title": "Printer shows offline although it is powered on",
+      "description": "Printer shows offline although it is powered on on Windows 10. The issue happens repeatedly.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "Medium",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0289",
+      "created_at": "2026-08-21",
+      "department": "Academic",
+      "title": "Printer is online but jobs stay in queue",
+      "description": "Printer is online but jobs stay in queue on Windows 11. The issue happens repeatedly.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0291",
+      "created_at": "2026-01-03",
+      "department": "Sales",
+      "title": "Printer is online but jobs stay in queue",
+      "description": "Printer is online but jobs stay in queue on Windows 10. It happens on my work laptop.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "Medium",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0300",
+      "created_at": "2026-06-07",
+      "department": "HR",
+      "title": "Windows cannot find network printer",
+      "description": "Windows cannot find network printer on Windows 11. Please help because I need this for work.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "Low",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0303",
+      "created_at": "2026-08-23",
+      "department": "Finance",
+      "title": "Windows update failed and rolled back",
+      "description": "Windows update failed and rolled back on Windows 11. The issue happens repeatedly.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0317",
+      "created_at": "2026-07-28",
+      "department": "Sales",
+      "title": "Office printer prints blank pages",
+      "description": "Office printer prints blank pages on macOS. I already restarted the device once.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "Medium",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0323",
+      "created_at": "2026-03-26",
+      "department": "Operations",
+      "title": "Office printer prints blank pages",
+      "description": "Office printer prints blank pages on macOS. This started this morning.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0337",
+      "created_at": "2026-03-15",
+      "department": "Sales",
+      "title": "Printer shows offline although it is powered on",
+      "description": "Printer shows offline although it is powered on on Ubuntu. I already restarted the device once.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "Low",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0340",
+      "created_at": "2026-06-17",
+      "department": "Finance",
+      "title": "Printer is online but jobs stay in queue",
+      "description": "Printer is online but jobs stay in queue on Ubuntu. Please help because I need this for work.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "Medium",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0346",
+      "created_at": "2026-07-13",
+      "department": "Academic",
+      "title": "Windows driver error after restart",
+      "description": "Windows driver error after restart on Windows 10. The issue happens repeatedly.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0351",
+      "created_at": "2026-01-28",
+      "department": "Finance",
+      "title": "Blue screen appears after installing an update",
+      "description": "Blue screen appears after installing an update on macOS. Please help because I need this for work.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "Medium",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0352",
+      "created_at": "2026-02-03",
+      "department": "HR",
+      "title": "Printer is online but jobs stay in queue",
+      "description": "Printer is online but jobs stay in queue on Ubuntu. Please help because I need this for work.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0354",
+      "created_at": "2026-01-04",
+      "department": "Operations",
+      "title": "Windows driver error after restart",
+      "description": "Windows driver error after restart on Ubuntu. This started this morning.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0362",
+      "created_at": "2026-04-04",
+      "department": "Sales",
+      "title": "Print queue is stuck and cannot be cleared",
+      "description": "Print queue is stuck and cannot be cleared on Windows 11. The issue happens repeatedly.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0369",
+      "created_at": "2026-02-26",
+      "department": "Operations",
+      "title": "VPN authentication fails after Windows update",
+      "description": "VPN authentication fails after Windows update on macOS. Please help because I need this for work.",
+      "resolution_notes": "Updated the VPN client and re-created the connection profile.",
+      "priority": "Medium",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "VPN"
+    },
+    {
+      "ticket_id": "SYN-0373",
+      "created_at": "2026-07-27",
+      "department": "Finance",
+      "title": "Printer is online but jobs stay in queue",
+      "description": "Printer is online but jobs stay in queue on macOS. No recent hardware changes were made.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "Low",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0381",
+      "created_at": "2026-03-03",
+      "department": "Finance",
+      "title": "Windows update failed and rolled back",
+      "description": "Windows update failed and rolled back on Windows 11. It happens on my work laptop.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0389",
+      "created_at": "2026-07-30",
+      "department": "Sales",
+      "title": "Printer shows offline although it is powered on",
+      "description": "Printer shows offline although it is powered on on Windows 10. No recent hardware changes were made.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "Medium",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0391",
+      "created_at": "2026-04-23",
+      "department": "HR",
+      "title": "Windows update failed and rolled back",
+      "description": "Windows update failed and rolled back on Windows 11. No recent hardware changes were made.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0394",
+      "created_at": "2026-05-27",
+      "department": "Sales",
+      "title": "Windows cannot find network printer",
+      "description": "Windows cannot find network printer on Windows 10. I already restarted the device once.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "Medium",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0404",
+      "created_at": "2026-01-22",
+      "department": "Academic",
+      "title": "Blue screen appears after installing an update",
+      "description": "Blue screen appears after installing an update on Windows 11. This started this morning.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "Medium",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0405",
+      "created_at": "2026-04-20",
+      "department": "Academic",
+      "title": "Office printer prints blank pages",
+      "description": "Office printer prints blank pages on Windows 10. This started this morning.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "Low",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0414",
+      "created_at": "2026-05-13",
+      "department": "Academic",
+      "title": "Office printer prints blank pages",
+      "description": "Office printer prints blank pages on Ubuntu. It happens on my work laptop.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0421",
+      "created_at": "2026-05-31",
+      "department": "IT",
+      "title": "Windows driver error after restart",
+      "description": "Windows driver error after restart on Ubuntu. No recent hardware changes were made.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "Low",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0426",
+      "created_at": "2026-07-02",
+      "department": "Operations",
+      "title": "VPN authentication fails after Windows update",
+      "description": "VPN authentication fails after Windows update on Ubuntu. The issue happens repeatedly.",
+      "resolution_notes": "Updated the VPN client and re-created the connection profile.",
+      "priority": "Medium",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "VPN"
+    },
+    {
+      "ticket_id": "SYN-0431",
+      "created_at": "2026-05-09",
+      "department": "HR",
+      "title": "Windows update failed and rolled back",
+      "description": "Windows update failed and rolled back on Windows 11. The issue happens repeatedly.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "Low",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0441",
+      "created_at": "2026-01-20",
+      "department": "HR",
+      "title": "Office printer prints blank pages",
+      "description": "Office printer prints blank pages on Windows 10. I already restarted the device once.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "Low",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0444",
+      "created_at": "2026-01-11",
+      "department": "IT",
+      "title": "Printer shows offline although it is powered on",
+      "description": "Printer shows offline although it is powered on on Windows 11. This started this morning.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0452",
+      "created_at": "2026-04-25",
+      "department": "Finance",
+      "title": "Windows cannot find network printer",
+      "description": "Windows cannot find network printer on Windows 11. No recent hardware changes were made.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "Medium",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0457",
+      "created_at": "2026-03-01",
+      "department": "Finance",
+      "title": "Computer repeatedly restarts after Windows update",
+      "description": "Computer repeatedly restarts after Windows update on Windows 11. No recent hardware changes were made.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "Low",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0458",
+      "created_at": "2026-07-28",
+      "department": "HR",
+      "title": "Printer shows offline although it is powered on",
+      "description": "Printer shows offline although it is powered on on Ubuntu. It happens on my work laptop.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "Low",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0460",
+      "created_at": "2026-05-25",
+      "department": "Sales",
+      "title": "Computer repeatedly restarts after Windows update",
+      "description": "Computer repeatedly restarts after Windows update on Windows 11. Please help because I need this for work.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0461",
+      "created_at": "2026-05-06",
+      "department": "Finance",
+      "title": "Office printer prints blank pages",
+      "description": "Office printer prints blank pages on Windows 10. I already restarted the device once.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0470",
+      "created_at": "2026-06-12",
+      "department": "Academic",
+      "title": "Laptop is slow after Windows 11 update",
+      "description": "Laptop is slow after Windows 11 update on macOS. Please help because I need this for work.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "Low",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0471",
+      "created_at": "2026-03-05",
+      "department": "IT",
+      "title": "Office printer prints blank pages",
+      "description": "Office printer prints blank pages on macOS. This started this morning.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0475",
+      "created_at": "2026-01-19",
+      "department": "HR",
+      "title": "Printer is online but jobs stay in queue",
+      "description": "Printer is online but jobs stay in queue on Ubuntu. I already restarted the device once.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0484",
+      "created_at": "2026-01-16",
+      "department": "Academic",
+      "title": "Printer shows offline although it is powered on",
+      "description": "Printer shows offline although it is powered on on Windows 10. This started this morning.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    },
+    {
+      "ticket_id": "SYN-0485",
+      "created_at": "2026-04-16",
+      "department": "Sales",
+      "title": "Computer repeatedly restarts after Windows update",
+      "description": "Computer repeatedly restarts after Windows update on Windows 10. Please help because I need this for work.",
+      "resolution_notes": "Installed pending driver updates and repaired Windows update components.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Windows / Updates"
+    },
+    {
+      "ticket_id": "SYN-0497",
+      "created_at": "2026-07-18",
+      "department": "IT",
+      "title": "Print queue is stuck and cannot be cleared",
+      "description": "Print queue is stuck and cannot be cleared on Ubuntu. The issue happens repeatedly.",
+      "resolution_notes": "Cleared the print queue and reinstalled the approved printer driver.",
+      "priority": "High",
+      "status": "Resolved",
+      "pii_masked": "true",
+      "ground_truth_category": "Printers"
+    }
+  ],
+  "supported_issue_found": false,
+  "kb_csv_sha256": "1194a81de63048a7321f536e448c7aa7bb7a2f208fe9f0c369f833ca9b39d8e5",
+  "ticket_csv_sha256": "b4f2f293338e5e188d2298396f74ad17221c27032bf5d31aca88b68c3e5a6f67"
+}

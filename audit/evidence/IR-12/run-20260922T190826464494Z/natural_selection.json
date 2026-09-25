@@ -1,0 +1,47 @@
+{
+  "recorded_before_solution_calls_at_utc": "2026-09-22T19:08:51.827898+00:00",
+  "rule": "Closest observed score per side of each threshold; tie by fixed query ID; no adaptive query rewriting or additional searches",
+  "near_window": 0.025,
+  "selections": [
+    {
+      "threshold_name": "UNCERTAIN",
+      "threshold": 0.55,
+      "side": "below",
+      "id": "N04",
+      "query": "My laptop hinge is broken.",
+      "score": 0.5407814051029868,
+      "absolute_distance": 0.009218594897013266,
+      "within_predeclared_near_window_0_025": true
+    },
+    {
+      "threshold_name": "UNCERTAIN",
+      "threshold": 0.55,
+      "side": "at_or_above",
+      "id": "N07",
+      "query": "My laptop is hot after charging.",
+      "score": 0.5600731633811961,
+      "absolute_distance": 0.010073163381196015,
+      "within_predeclared_near_window_0_025": true
+    },
+    {
+      "threshold_name": "HIGH",
+      "threshold": 0.68,
+      "side": "below",
+      "id": "N05",
+      "query": "My laptop keyboard has a loose key.",
+      "score": 0.6674615510493547,
+      "absolute_distance": 0.012538448950645376,
+      "within_predeclared_near_window_0_025": true
+    },
+    {
+      "threshold_name": "HIGH",
+      "threshold": 0.68,
+      "side": "at_or_above",
+      "id": "N11",
+      "query": "The screen flickers when the laptop starts.",
+      "score": 0.692080707884829,
+      "absolute_distance": 0.012080707884828956,
+      "within_predeclared_near_window_0_025": true
+    }
+  ]
+}

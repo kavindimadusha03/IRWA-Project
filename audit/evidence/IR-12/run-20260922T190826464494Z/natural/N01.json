@@ -1,0 +1,352 @@
+{
+  "id": "N01",
+  "kind": "natural_original_retrieval",
+  "query": "My laptop battery is swelling after charging.",
+  "started_at_utc": "2026-09-22T19:08:44.300973+00:00",
+  "deduplicated_source_ids": [
+    "KB-001",
+    "KB-002",
+    "KB-003",
+    "KB-004",
+    "KB-005",
+    "KB-006",
+    "KB-007",
+    "KB-008",
+    "KB-009",
+    "KB-017",
+    "SYN-0001",
+    "SYN-0003",
+    "SYN-0004",
+    "SYN-0005",
+    "SYN-0006",
+    "SYN-0008",
+    "SYN-0009",
+    "SYN-0010",
+    "SYN-0011",
+    "SYN-0012",
+    "SYN-0013",
+    "SYN-0014",
+    "SYN-0015",
+    "SYN-0018",
+    "SYN-0026",
+    "SYN-0027",
+    "SYN-0028",
+    "SYN-0030",
+    "SYN-0032",
+    "SYN-0033",
+    "SYN-0037",
+    "SYN-0038",
+    "SYN-0039",
+    "SYN-0044",
+    "SYN-0045",
+    "SYN-0048",
+    "SYN-0051",
+    "SYN-0052",
+    "SYN-0053",
+    "SYN-0054",
+    "SYN-0056",
+    "SYN-0059",
+    "SYN-0070",
+    "SYN-0072",
+    "SYN-0080",
+    "SYN-0092",
+    "SYN-0096",
+    "SYN-0101",
+    "SYN-0135",
+    "SYN-0138"
+  ],
+  "query_preprocessing": {
+    "original": "My laptop battery is swelling after charging.",
+    "normalized": "laptop battery swelling after charging.",
+    "tokens": [
+      "laptop",
+      "battery",
+      "swelling",
+      "after",
+      "charging"
+    ]
+  },
+  "native_bm25": {
+    "tokens": [
+      "laptop",
+      "battery",
+      "swelling",
+      "after",
+      "charging"
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      1.382149358423704,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.7095488866870534,
+      1.7770621712267909,
+      3.2517448017285755,
+      1.6621871309147718,
+      3.939302671532119,
+      0.0,
+      1.5027098030237314,
+      0.0,
+      1.7259416715111318,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      2.272929808562455,
+      1.7596888201426473,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.7770621712267909,
+      0.0,
+      1.5627275017332973,
+      0.0,
+      1.7596888201426473,
+      0.0,
+      1.742651879393832,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.5027098030237314,
+      1.6054755869452961,
+      2.5617999071772237
+    ],
+    "order": "deduplicated_source_ids"
+  },
+  "hybrid_before_trust": [
+    {
+      "source_id": "SYN-0010",
+      "title": "Laptop is slow after Windows 11 update",
+      "content": "Problem: Laptop is slow after Windows 11 update on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 1.0,
+      "semantic_score": 0.301673731349585,
+      "hybrid_score": 0.6159205522422717,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0008",
+      "title": "Computer repeatedly restarts after Windows update",
+      "content": "Problem: Computer repeatedly restarts after Windows update on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.8254620355089063,
+      "semantic_score": 0.21642511300909245,
+      "hybrid_score": 0.4904917281340087,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0138",
+      "title": "Laptop connected to Wi-Fi but no internet access",
+      "content": "Problem: Laptop connected to Wi-Fi but no internet access on macOS. It happens on my work laptop.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+      "category": "Wi-Fi / DNS",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.6503181199277737,
+      "semantic_score": 0.18688591368730748,
+      "hybrid_score": 0.3954304064955173,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0030",
+      "title": "Approved software cannot be installed on laptop",
+      "content": "Problem: Approved software cannot be installed on laptop on Windows 10. This started this morning.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+      "category": "Software Installation",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.5769878575180518,
+      "semantic_score": 0.22946955699567834,
+      "hybrid_score": 0.3858527922307464,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0044",
+      "title": "Remote access VPN drops after login",
+      "content": "Problem: Remote access VPN drops after login on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+      "category": "VPN",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.45111084864561457,
+      "semantic_score": 0.15747192406660132,
+      "hybrid_score": 0.2896094401271573,
+      "exact_error_match": false
+    }
+  ],
+  "metadata_calls": [
+    {
+      "source_id": "SYN-0010",
+      "query": "My laptop battery is swelling after charging.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0008",
+      "query": "My laptop battery is swelling after charging.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0138",
+      "query": "My laptop battery is swelling after charging.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0030",
+      "query": "My laptop battery is swelling after charging.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0044",
+      "query": "My laptop battery is swelling after charging.",
+      "bonus": 0.08
+    }
+  ],
+  "trust_calls": [
+    {
+      "source_id": "SYN-0010",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0008",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0138",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0030",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0044",
+      "trust": 0.85
+    }
+  ],
+  "retrieval": {
+    "query": "My laptop battery is swelling after charging.",
+    "items": [
+      {
+        "source_id": "SYN-0010",
+        "title": "Laptop is slow after Windows 11 update",
+        "content": "Problem: Laptop is slow after Windows 11 update on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+        "category": "Windows / Updates",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 1.0,
+        "semantic_score": 0.301673731349585,
+        "hybrid_score": 0.6035324694059309,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 1.0,
+          "semantic_score": 0.301673731349585,
+          "hybrid_score": 0.6035324694059309
+        },
+        "source": "SYN-0010"
+      },
+      {
+        "source_id": "SYN-0008",
+        "title": "Computer repeatedly restarts after Windows update",
+        "content": "Problem: Computer repeatedly restarts after Windows update on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+        "category": "Windows / Updates",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.8254620355089063,
+        "semantic_score": 0.21642511300909245,
+        "hybrid_score": 0.4969179689139074,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.8254620355089063,
+          "semantic_score": 0.21642511300909245,
+          "hybrid_score": 0.4969179689139074
+        },
+        "source": "SYN-0008"
+      },
+      {
+        "source_id": "SYN-0138",
+        "title": "Laptop connected to Wi-Fi but no internet access",
+        "content": "Problem: Laptop connected to Wi-Fi but no internet access on macOS. It happens on my work laptop.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+        "category": "Wi-Fi / DNS",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.6503181199277737,
+        "semantic_score": 0.18688591368730748,
+        "hybrid_score": 0.41611584552118974,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.6503181199277737,
+          "semantic_score": 0.18688591368730748,
+          "hybrid_score": 0.41611584552118974
+        },
+        "source": "SYN-0138"
+      },
+      {
+        "source_id": "SYN-0030",
+        "title": "Approved software cannot be installed on laptop",
+        "content": "Problem: Approved software cannot be installed on laptop on Windows 10. This started this morning.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+        "category": "Software Installation",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.5769878575180518,
+        "semantic_score": 0.22946955699567834,
+        "hybrid_score": 0.4079748733961345,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.5769878575180518,
+          "semantic_score": 0.22946955699567834,
+          "hybrid_score": 0.4079748733961345
+        },
+        "source": "SYN-0030"
+      },
+      {
+        "source_id": "SYN-0044",
+        "title": "Remote access VPN drops after login",
+        "content": "Problem: Remote access VPN drops after login on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+        "category": "VPN",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.45111084864561457,
+        "semantic_score": 0.15747192406660132,
+        "hybrid_score": 0.3261680241080837,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.45111084864561457,
+          "semantic_score": 0.15747192406660132,
+          "hybrid_score": 0.3261680241080837
+        },
+        "source": "SYN-0044"
+      }
+    ],
+    "best_score": 0.6035324694059309,
+    "decision": "UNCERTAIN"
+  },
+  "expected_decision": "UNCERTAIN",
+  "decision_matches": true,
+  "elapsed_seconds": 2.949
+}

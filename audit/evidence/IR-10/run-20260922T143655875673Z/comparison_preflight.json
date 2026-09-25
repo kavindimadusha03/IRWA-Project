@@ -1,0 +1,7 @@
+{
+  "reference_run": "audit/evidence/IR-01/run-20260921T194038486465Z",
+  "source_files_same_as_IR01": true,
+  "kb_csv_same_as_IR01": true,
+  "ticket_csv_same_as_IR01": true,
+  "corpus_scope": "Fixture-only corpus; code/config preserved but scores not directly comparable with earlier full-CSV cases"
+}

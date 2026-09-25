@@ -1,0 +1,12 @@
+{
+  "recorded_before_request_at_utc": "2026-09-22T14:10:14.255331+00:00",
+  "method": "SQLite backup API from mode=ro source after fixture setup",
+  "path": "C:\\Users\\PSB\\AppData\\Local\\Temp\\knowgap-ir09-approved_control-op5tdwfk\\before_requests.sqlite",
+  "sha256": "3c88ed1e0f0ae35d843d8223da9c7d48d73f8fb8e5e7fd3ae160ebbd347d40ac",
+  "integrity_check": "ok",
+  "fixture_statuses": {
+    "AUDIT-IR09-CONTROL-001": "approved",
+    "AUDIT-IR09-DRAFT-001": "draft"
+  },
+  "outside_repository": true
+}

@@ -1,0 +1,42 @@
+{
+  "can_recommend": true,
+  "message": "Evidence source AUDIT-IR09-CONTROL-001 | Approved lookup cobaltlantern463\nReviewed test reference for cobaltlantern463. Response-only witness: amberharborreceipt. This is harmless synthetic lookup text, not a device repair.\n\nEvidence source SYN-0001 | VPN disconnects every few minutes\nProblem: VPN disconnects every few minutes on Windows 11. I already restarted the device once.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.\n\nEvidence source KB-002 | Re-create VPN Profile - Guide 1\nRemove the damaged VPN connection profile and create a new profile using the approved organization settings.",
+  "source_id": "AUDIT-IR09-CONTROL-001",
+  "confidence": "HIGH",
+  "explanation": "This recommendation was selected because the issue matched the approved guidance in Approved lookup cobaltlantern463 with 85% relevance, and it aligns with 3 supporting sources that were validated for this workflow.",
+  "confidence_explanation": "This recommendation was selected because the issue matched the approved guidance in Approved lookup cobaltlantern463 with 85% relevance, and it aligns with 3 supporting sources that were validated for this workflow.",
+  "why_this_solution_was_suggested": "This recommendation was selected because the issue matched the approved guidance in Approved lookup cobaltlantern463 with 85% relevance, and it aligns with 3 supporting sources that were validated for this workflow.",
+  "suggested_reply": "Thanks for reporting this issue. Based on the approved guidance in Approved lookup cobaltlantern463, the recommended next step is to follow the documented troubleshooting steps and confirm the issue is resolved.",
+  "citations": [
+    {
+      "source_id": "AUDIT-IR09-CONTROL-001",
+      "title": "Approved lookup cobaltlantern463",
+      "category": "Audit / Lookup",
+      "source_type": "internal_kb",
+      "relevance_score": 0.8533253620276287,
+      "bm25_score": 1.0,
+      "semantic_score": 0.5878642945956885,
+      "hybrid_score": 0.8533253620276287
+    },
+    {
+      "source_id": "SYN-0001",
+      "title": "VPN disconnects every few minutes",
+      "category": "VPN",
+      "source_type": "resolved_ticket",
+      "relevance_score": 0.1656920711055782,
+      "bm25_score": 0.0,
+      "semantic_score": 0.18329854781941862,
+      "hybrid_score": 0.1656920711055782
+    },
+    {
+      "source_id": "KB-002",
+      "title": "Re-create VPN Profile - Guide 1",
+      "category": "VPN",
+      "source_type": "Internal KB",
+      "relevance_score": 0.16559823354894815,
+      "bm25_score": 0.0,
+      "semantic_score": 0.15563315190717844,
+      "hybrid_score": 0.16559823354894815
+    }
+  ]
+}

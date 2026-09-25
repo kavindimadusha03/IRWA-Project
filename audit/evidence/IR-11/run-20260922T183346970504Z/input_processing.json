@@ -1,0 +1,10 @@
+{
+  "submitted_description": "After installing Windows updates, my laptop battery is swelling. What exact fix should I perform?",
+  "submitted_characters": 97,
+  "stored_description": "After installing Windows updates, my laptop battery is swelling. What exact fix should I perform?",
+  "masked_description": "After installing Windows updates, my laptop battery is swelling. What exact fix should I perform?",
+  "canonical_issue": "After installing Windows updates, my laptop battery is swelling. What exact fix should I perform?",
+  "retrieval_received_canonical": true,
+  "canonical_equals_submitted": true,
+  "normalized_query": "after installing windows updates laptop battery swelling. what exact fix should i perform"
+}

@@ -1,0 +1,350 @@
+{
+  "id": "N08",
+  "kind": "natural_original_retrieval",
+  "query": "The computer makes a rattling sound.",
+  "started_at_utc": "2026-09-22T19:08:49.132942+00:00",
+  "deduplicated_source_ids": [
+    "KB-001",
+    "KB-002",
+    "KB-003",
+    "KB-004",
+    "KB-005",
+    "KB-006",
+    "KB-007",
+    "KB-008",
+    "KB-009",
+    "KB-017",
+    "SYN-0001",
+    "SYN-0003",
+    "SYN-0004",
+    "SYN-0005",
+    "SYN-0006",
+    "SYN-0008",
+    "SYN-0009",
+    "SYN-0010",
+    "SYN-0011",
+    "SYN-0012",
+    "SYN-0013",
+    "SYN-0014",
+    "SYN-0015",
+    "SYN-0018",
+    "SYN-0026",
+    "SYN-0027",
+    "SYN-0028",
+    "SYN-0030",
+    "SYN-0032",
+    "SYN-0033",
+    "SYN-0037",
+    "SYN-0038",
+    "SYN-0039",
+    "SYN-0044",
+    "SYN-0045",
+    "SYN-0048",
+    "SYN-0051",
+    "SYN-0052",
+    "SYN-0053",
+    "SYN-0054",
+    "SYN-0056",
+    "SYN-0059",
+    "SYN-0070",
+    "SYN-0072",
+    "SYN-0080",
+    "SYN-0092",
+    "SYN-0096",
+    "SYN-0101",
+    "SYN-0135",
+    "SYN-0138"
+  ],
+  "query_preprocessing": {
+    "original": "The computer makes a rattling sound.",
+    "normalized": "computer makes rattling sound.",
+    "tokens": [
+      "computer",
+      "makes",
+      "rattling",
+      "sound"
+    ]
+  },
+  "native_bm25": {
+    "tokens": [
+      "computer",
+      "makes",
+      "rattling",
+      "sound"
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      3.16415173155648,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      3.6131395128784636,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      3.5457846471689294,
+      0.0,
+      0.0
+    ],
+    "order": "deduplicated_source_ids"
+  },
+  "hybrid_before_trust": [
+    {
+      "source_id": "SYN-0008",
+      "title": "Computer repeatedly restarts after Windows update",
+      "content": "Problem: Computer repeatedly restarts after Windows update on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 1.0,
+      "semantic_score": 0.27096012406993614,
+      "hybrid_score": 0.5990280682384649,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0101",
+      "title": "Remote computer is unavailable through RDP",
+      "content": "Problem: Remote computer is unavailable through RDP on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+      "category": "Remote Desktop",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.9813583545640963,
+      "semantic_score": 0.13731037285824532,
+      "hybrid_score": 0.5171319646258783,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "KB-006",
+      "title": "Update Device Drivers - Guide 1",
+      "content": "Install manufacturer-approved device drivers through the approved update channel and restart the computer.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "Internal KB",
+      "status": "approved",
+      "bm25_score": 0.8757347233004323,
+      "semantic_score": 0.16761319516912015,
+      "hybrid_score": 0.48626788282821065,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0135",
+      "title": "Application installation fails with permission error",
+      "content": "Problem: Application installation fails with permission error on Ubuntu. It happens on my work laptop.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+      "category": "Software Installation",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.0,
+      "semantic_score": 0.20420097364431616,
+      "hybrid_score": 0.11231053550437389,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0010",
+      "title": "Laptop is slow after Windows 11 update",
+      "content": "Problem: Laptop is slow after Windows 11 update on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.0,
+      "semantic_score": 0.20077484471364954,
+      "hybrid_score": 0.11042616459250726,
+      "exact_error_match": false
+    }
+  ],
+  "metadata_calls": [
+    {
+      "source_id": "SYN-0008",
+      "query": "The computer makes a rattling sound.",
+      "bonus": 0.26
+    },
+    {
+      "source_id": "SYN-0101",
+      "query": "The computer makes a rattling sound.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "KB-006",
+      "query": "The computer makes a rattling sound.",
+      "bonus": 0.26
+    },
+    {
+      "source_id": "SYN-0135",
+      "query": "The computer makes a rattling sound.",
+      "bonus": 0.26
+    },
+    {
+      "source_id": "SYN-0010",
+      "query": "The computer makes a rattling sound.",
+      "bonus": 0.26
+    }
+  ],
+  "trust_calls": [
+    {
+      "source_id": "SYN-0008",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0101",
+      "trust": 0.85
+    },
+    {
+      "source_id": "KB-006",
+      "trust": 1.0
+    },
+    {
+      "source_id": "SYN-0135",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0010",
+      "trust": 0.85
+    }
+  ],
+  "retrieval": {
+    "query": "The computer makes a rattling sound.",
+    "items": [
+      {
+        "source_id": "SYN-0008",
+        "title": "Computer repeatedly restarts after Windows update",
+        "content": "Problem: Computer repeatedly restarts after Windows update on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+        "category": "Windows / Updates",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 1.0,
+        "semantic_score": 0.27096012406993614,
+        "hybrid_score": 0.7691738580026951,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 1.0,
+          "semantic_score": 0.27096012406993614,
+          "hybrid_score": 0.7691738580026951
+        },
+        "source": "SYN-0008"
+      },
+      {
+        "source_id": "KB-006",
+        "title": "Update Device Drivers - Guide 1",
+        "content": "Install manufacturer-approved device drivers through the approved update channel and restart the computer.",
+        "category": "Windows / Updates",
+        "supported_os": "Any",
+        "source_type": "Internal KB",
+        "status": "approved",
+        "bm25_score": 0.8757347233004323,
+        "semantic_score": 0.16761319516912015,
+        "hybrid_score": 0.7462678828282107,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.8757347233004323,
+          "semantic_score": 0.16761319516912015,
+          "hybrid_score": 0.7462678828282107
+        },
+        "source": "KB-006"
+      },
+      {
+        "source_id": "SYN-0101",
+        "title": "Remote computer is unavailable through RDP",
+        "content": "Problem: Remote computer is unavailable through RDP on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+        "category": "Remote Desktop",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.9813583545640963,
+        "semantic_score": 0.13731037285824532,
+        "hybrid_score": 0.5195621699319966,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.9813583545640963,
+          "semantic_score": 0.13731037285824532,
+          "hybrid_score": 0.5195621699319966
+        },
+        "source": "SYN-0101"
+      },
+      {
+        "source_id": "SYN-0135",
+        "title": "Application installation fails with permission error",
+        "content": "Problem: Application installation fails with permission error on Ubuntu. It happens on my work laptop.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+        "category": "Software Installation",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.0,
+        "semantic_score": 0.20420097364431616,
+        "hybrid_score": 0.3554639551787178,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.0,
+          "semantic_score": 0.20420097364431616,
+          "hybrid_score": 0.3554639551787178
+        },
+        "source": "SYN-0135"
+      },
+      {
+        "source_id": "SYN-0010",
+        "title": "Laptop is slow after Windows 11 update",
+        "content": "Problem: Laptop is slow after Windows 11 update on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+        "category": "Windows / Updates",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.0,
+        "semantic_score": 0.20077484471364954,
+        "hybrid_score": 0.3538622399036312,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.0,
+          "semantic_score": 0.20077484471364954,
+          "hybrid_score": 0.3538622399036312
+        },
+        "source": "SYN-0010"
+      }
+    ],
+    "best_score": 0.7691738580026951,
+    "decision": "HIGH"
+  },
+  "expected_decision": "HIGH",
+  "decision_matches": true,
+  "elapsed_seconds": 0.288
+}

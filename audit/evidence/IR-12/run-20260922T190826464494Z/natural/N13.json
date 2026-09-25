@@ -1,0 +1,346 @@
+{
+  "id": "N13",
+  "kind": "natural_original_retrieval",
+  "query": "My laptop is slow.",
+  "started_at_utc": "2026-09-22T19:08:50.553895+00:00",
+  "deduplicated_source_ids": [
+    "KB-001",
+    "KB-002",
+    "KB-003",
+    "KB-004",
+    "KB-005",
+    "KB-006",
+    "KB-007",
+    "KB-008",
+    "KB-009",
+    "KB-017",
+    "SYN-0001",
+    "SYN-0003",
+    "SYN-0004",
+    "SYN-0005",
+    "SYN-0006",
+    "SYN-0008",
+    "SYN-0009",
+    "SYN-0010",
+    "SYN-0011",
+    "SYN-0012",
+    "SYN-0013",
+    "SYN-0014",
+    "SYN-0015",
+    "SYN-0018",
+    "SYN-0026",
+    "SYN-0027",
+    "SYN-0028",
+    "SYN-0030",
+    "SYN-0032",
+    "SYN-0033",
+    "SYN-0037",
+    "SYN-0038",
+    "SYN-0039",
+    "SYN-0044",
+    "SYN-0045",
+    "SYN-0048",
+    "SYN-0051",
+    "SYN-0052",
+    "SYN-0053",
+    "SYN-0054",
+    "SYN-0056",
+    "SYN-0059",
+    "SYN-0070",
+    "SYN-0072",
+    "SYN-0080",
+    "SYN-0092",
+    "SYN-0096",
+    "SYN-0101",
+    "SYN-0135",
+    "SYN-0138"
+  ],
+  "query_preprocessing": {
+    "original": "My laptop is slow.",
+    "normalized": "laptop slow",
+    "tokens": [
+      "laptop",
+      "slow"
+    ]
+  },
+  "native_bm25": {
+    "tokens": [
+      "laptop",
+      "slow"
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.5421959150415223,
+      0.0,
+      7.073899003922289,
+      0.0,
+      1.5027098030237314,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      2.272929808562455,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.5627275017332973,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.5027098030237314,
+      1.6054755869452961,
+      2.5617999071772237
+    ],
+    "order": "deduplicated_source_ids"
+  },
+  "hybrid_before_trust": [
+    {
+      "source_id": "SYN-0010",
+      "title": "Laptop is slow after Windows 11 update",
+      "content": "Problem: Laptop is slow after Windows 11 update on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 1.0,
+      "semantic_score": 0.5709951907239599,
+      "hybrid_score": 0.764047354898178,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0138",
+      "title": "Laptop connected to Wi-Fi but no internet access",
+      "content": "Problem: Laptop connected to Wi-Fi but no internet access on macOS. It happens on my work laptop.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+      "category": "Wi-Fi / DNS",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.3621482163877055,
+      "semantic_score": 0.2173969587744084,
+      "hybrid_score": 0.2825350247003921,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0030",
+      "title": "Approved software cannot be installed on laptop",
+      "content": "Problem: Approved software cannot be installed on laptop on Windows 10. This started this morning.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+      "category": "Software Installation",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.32131216565322407,
+      "semantic_score": 0.21756579801478368,
+      "hybrid_score": 0.26425166345208184,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0008",
+      "title": "Computer repeatedly restarts after Windows update",
+      "content": "Problem: Computer repeatedly restarts after Windows update on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.21801214778249106,
+      "semantic_score": 0.19508884899291498,
+      "hybrid_score": 0.20540433344822423,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0012",
+      "title": "Password expired and user cannot log in",
+      "content": "Problem: Password expired and user cannot log in on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+      "category": "Accounts / Passwords",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.2124302032288726,
+      "semantic_score": 0.15800426137704557,
+      "hybrid_score": 0.18249593521036775,
+      "exact_error_match": false
+    }
+  ],
+  "metadata_calls": [
+    {
+      "source_id": "SYN-0010",
+      "query": "My laptop is slow.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0138",
+      "query": "My laptop is slow.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0030",
+      "query": "My laptop is slow.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0008",
+      "query": "My laptop is slow.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0012",
+      "query": "My laptop is slow.",
+      "bonus": 0.08
+    }
+  ],
+  "trust_calls": [
+    {
+      "source_id": "SYN-0010",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0138",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0030",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0008",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0012",
+      "trust": 0.85
+    }
+  ],
+  "retrieval": {
+    "query": "My laptop is slow.",
+    "items": [
+      {
+        "source_id": "SYN-0010",
+        "title": "Laptop is slow after Windows 11 update",
+        "content": "Problem: Laptop is slow after Windows 11 update on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+        "category": "Windows / Updates",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 1.0,
+        "semantic_score": 0.5709951907239599,
+        "hybrid_score": 0.7294402516634513,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 1.0,
+          "semantic_score": 0.5709951907239599,
+          "hybrid_score": 0.7294402516634513
+        },
+        "source": "SYN-0010"
+      },
+      {
+        "source_id": "SYN-0138",
+        "title": "Laptop connected to Wi-Fi but no internet access",
+        "content": "Problem: Laptop connected to Wi-Fi but no internet access on macOS. It happens on my work laptop.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+        "category": "Wi-Fi / DNS",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.3621482163877055,
+        "semantic_score": 0.2173969587744084,
+        "hybrid_score": 0.3201547709953333,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.3621482163877055,
+          "semantic_score": 0.2173969587744084,
+          "hybrid_score": 0.3201547709953333
+        },
+        "source": "SYN-0138"
+      },
+      {
+        "source_id": "SYN-0030",
+        "title": "Approved software cannot be installed on laptop",
+        "content": "Problem: Approved software cannot be installed on laptop on Windows 10. This started this morning.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+        "category": "Software Installation",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.32131216565322407,
+        "semantic_score": 0.21756579801478368,
+        "hybrid_score": 0.30461391393426956,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.32131216565322407,
+          "semantic_score": 0.21756579801478368,
+          "hybrid_score": 0.30461391393426956
+        },
+        "source": "SYN-0030"
+      },
+      {
+        "source_id": "SYN-0008",
+        "title": "Computer repeatedly restarts after Windows update",
+        "content": "Problem: Computer repeatedly restarts after Windows update on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+        "category": "Windows / Updates",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.21801214778249106,
+        "semantic_score": 0.19508884899291498,
+        "hybrid_score": 0.2545936834309906,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.21801214778249106,
+          "semantic_score": 0.19508884899291498,
+          "hybrid_score": 0.2545936834309906
+        },
+        "source": "SYN-0008"
+      },
+      {
+        "source_id": "SYN-0012",
+        "title": "Password expired and user cannot log in",
+        "content": "Problem: Password expired and user cannot log in on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+        "category": "Accounts / Passwords",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.2124302032288726,
+        "semantic_score": 0.15800426137704557,
+        "hybrid_score": 0.2351215449288126,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.2124302032288726,
+          "semantic_score": 0.15800426137704557,
+          "hybrid_score": 0.2351215449288126
+        },
+        "source": "SYN-0012"
+      }
+    ],
+    "best_score": 0.7294402516634513,
+    "decision": "HIGH"
+  },
+  "expected_decision": "HIGH",
+  "decision_matches": true,
+  "elapsed_seconds": 0.266
+}

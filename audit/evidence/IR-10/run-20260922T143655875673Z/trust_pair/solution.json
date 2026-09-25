@@ -1,0 +1,32 @@
+{
+  "can_recommend": true,
+  "message": "Evidence source AUDIT-IR10-KB-001 | Printer queue review procedure\nFor a stuck printer queue, record the waiting print jobs and ask IT Support to review the queue before making changes. Synthetic approved reference for this audit.\n\nEvidence source AUDIT-IR10-RESOLVED-001 | Stalled print jobs reviewed by support\nProblem: Printer queue was stuck and print jobs would not clear.\nRoot cause: Synthetic support case; no verified device diagnosis.\nResolution: Recorded waiting jobs and referred the printer queue to IT Support for review. No device settings were changed.",
+  "source_id": "AUDIT-IR10-KB-001",
+  "confidence": "HIGH",
+  "explanation": "This recommendation was selected because the issue matched the approved guidance in Printer queue review procedure with 100% relevance, and it aligns with 2 supporting sources that were validated for this workflow.",
+  "confidence_explanation": "This recommendation was selected because the issue matched the approved guidance in Printer queue review procedure with 100% relevance, and it aligns with 2 supporting sources that were validated for this workflow.",
+  "why_this_solution_was_suggested": "This recommendation was selected because the issue matched the approved guidance in Printer queue review procedure with 100% relevance, and it aligns with 2 supporting sources that were validated for this workflow.",
+  "suggested_reply": "Thanks for reporting this issue. Based on the approved guidance in Printer queue review procedure, the recommended next step is to follow the documented troubleshooting steps and confirm the issue is resolved.",
+  "citations": [
+    {
+      "source_id": "AUDIT-IR10-KB-001",
+      "title": "Printer queue review procedure",
+      "category": "Printers",
+      "source_type": "internal_kb",
+      "relevance_score": 1.0802822996790926,
+      "bm25_score": 1.0,
+      "semantic_score": 0.6732405448710772,
+      "hybrid_score": 1.0802822996790926
+    },
+    {
+      "source_id": "AUDIT-IR10-RESOLVED-001",
+      "title": "Stalled print jobs reviewed by support",
+      "category": "Printers",
+      "source_type": "resolved_ticket",
+      "relevance_score": 0.6226172189869514,
+      "bm25_score": 0.0,
+      "semantic_score": 0.7756518053196821,
+      "hybrid_score": 0.6226172189869514
+    }
+  ]
+}

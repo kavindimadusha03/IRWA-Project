@@ -1,0 +1,67 @@
+[
+  {
+    "source_id": "AUDIT-IR09-CONTROL-001",
+    "title": "Approved lookup cobaltlantern463",
+    "content": "Reviewed test reference for cobaltlantern463. Response-only witness: amberharborreceipt. This is harmless synthetic lookup text, not a device repair.",
+    "category": "Audit / Lookup",
+    "supported_os": "Any",
+    "source_type": "internal_kb",
+    "status": "approved",
+    "bm25_score": 0.0,
+    "semantic_score": 0.3109565675500259,
+    "hybrid_score": 0.17102611215251423,
+    "exact_error_match": false
+  },
+  {
+    "source_id": "SYN-0003",
+    "title": "New employee account cannot access portal",
+    "content": "Problem: New employee account cannot access portal on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved",
+    "bm25_score": 0.0,
+    "semantic_score": 0.13117537828332365,
+    "hybrid_score": 0.07214645805582802,
+    "exact_error_match": false
+  },
+  {
+    "source_id": "SYN-0059",
+    "title": "Installer stops before completion",
+    "content": "Problem: Installer stops before completion on Windows 10. Please help because I need this for work.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved",
+    "bm25_score": 0.0,
+    "semantic_score": 0.11774440487349858,
+    "hybrid_score": 0.06475942268042423,
+    "exact_error_match": false
+  },
+  {
+    "source_id": "KB-007",
+    "title": "Approved Software Installation - Guide 1",
+    "content": "Download the installer only from the approved internal source and install it with authorized administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved",
+    "bm25_score": 0.0,
+    "semantic_score": 0.10975442331710272,
+    "hybrid_score": 0.060364932824406504,
+    "exact_error_match": false
+  },
+  {
+    "source_id": "SYN-0011",
+    "title": "Outlook profile fails to synchronize mail",
+    "content": "Problem: Outlook profile fails to synchronize mail on Ubuntu. Please help because I need this for work.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved",
+    "bm25_score": 0.0,
+    "semantic_score": 0.10832279818873723,
+    "hybrid_score": 0.05957753900380548,
+    "exact_error_match": false
+  }
+]

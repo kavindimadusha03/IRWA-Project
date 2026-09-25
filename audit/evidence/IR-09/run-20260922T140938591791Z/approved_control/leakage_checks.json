@@ -1,0 +1,14 @@
+{
+  "scope": "Source identity and response-only witness distinguish leakage from legitimate user-input echo",
+  "draft_id_in_raw_shortlist": false,
+  "draft_id_in_final_ranking": false,
+  "draft_id_in_solution_citations": false,
+  "draft_id_in_stored_citations": false,
+  "draft_witness_in_recommendation": false,
+  "draft_witness_in_customer_HTML": false,
+  "draft_source_id_in_customer_HTML": false,
+  "query_marker_in_customer_HTML": true,
+  "draft_marker_in_recommendation": false,
+  "approved_control_cited": true,
+  "approved_control_witness_in_recommendation": true
+}

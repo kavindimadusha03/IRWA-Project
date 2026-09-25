@@ -1,0 +1,42 @@
+{
+  "kind": "Derived from saved original runtime calls; no new search or substituted scores",
+  "formula": "final = (0.45 * normalized_BM25 + 0.55 * semantic) * trust + metadata; no exact-code boost in this case",
+  "rows": [
+    {
+      "source_id": "AUDIT-IR10-KB-001",
+      "source_type": "internal_kb",
+      "status": "approved",
+      "native_bm25": -0.8378408145263053,
+      "normalized_bm25": 1.0,
+      "semantic": 0.6732405448710772,
+      "pretrust_hybrid": 0.8202822996790925,
+      "trust_weight": 1.0,
+      "metadata_bonus": 0.26,
+      "calculated_final_score": 1.0802822996790926,
+      "observed_final_score": 1.0802822996790926,
+      "arithmetic_residual": 0.0,
+      "pretrust_rank": 1,
+      "final_rank": 1
+    },
+    {
+      "source_id": "AUDIT-IR10-RESOLVED-001",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "native_bm25": -0.8439670233841831,
+      "normalized_bm25": 0.0,
+      "semantic": 0.7756518053196821,
+      "pretrust_hybrid": 0.4266084929258252,
+      "trust_weight": 0.85,
+      "metadata_bonus": 0.26,
+      "calculated_final_score": 0.6226172189869514,
+      "observed_final_score": 0.6226172189869514,
+      "arithmetic_residual": 0.0,
+      "pretrust_rank": 2,
+      "final_rank": 2
+    }
+  ],
+  "pretrust_KB_minus_history": 0.3936738067532673,
+  "final_KB_minus_history": 0.4576650806921412,
+  "history_penalty_from_0_85_weight": 0.06399127393887377,
+  "rank_reversal_caused_by_trust": false
+}

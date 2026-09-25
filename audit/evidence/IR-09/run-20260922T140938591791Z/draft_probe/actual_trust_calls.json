@@ -1,0 +1,32 @@
+[
+  {
+    "source_id": "AUDIT-IR09-CONTROL-001",
+    "status": "approved",
+    "source_type": "internal_kb",
+    "trust_weight": 1.0
+  },
+  {
+    "source_id": "SYN-0003",
+    "status": "resolved",
+    "source_type": "resolved_ticket",
+    "trust_weight": 0.85
+  },
+  {
+    "source_id": "SYN-0059",
+    "status": "resolved",
+    "source_type": "resolved_ticket",
+    "trust_weight": 0.85
+  },
+  {
+    "source_id": "KB-007",
+    "status": "approved",
+    "source_type": "Internal KB",
+    "trust_weight": 1.0
+  },
+  {
+    "source_id": "SYN-0011",
+    "status": "resolved",
+    "source_type": "resolved_ticket",
+    "trust_weight": 0.85
+  }
+]

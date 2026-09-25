@@ -1,0 +1,13 @@
+{
+  "category": "Unknown",
+  "canonical_issue": "cobaltlantern463",
+  "priority": "Medium",
+  "entities": {
+    "error_code": null,
+    "os": null,
+    "application": null,
+    "device": null
+  },
+  "masked_text": "cobaltlantern463",
+  "history_summary": "Customer reported: cobaltlantern463. The case was classified as Unknown with priority Medium. The issue was reviewed against approved knowledge and a structured support recommendation was generated."
+}

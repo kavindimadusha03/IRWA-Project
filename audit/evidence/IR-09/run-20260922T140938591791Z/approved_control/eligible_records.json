@@ -1,0 +1,3854 @@
+[
+  {
+    "source_id": "KB-001",
+    "title": "DNS Cache Recovery - Guide 1",
+    "content": "If Wi-Fi is connected but internet access is unavailable, open Command Prompt and run ipconfig /flushdns. Reconnect to Wi-Fi and test again.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-002",
+    "title": "Re-create VPN Profile - Guide 1",
+    "content": "Remove the damaged VPN connection profile and create a new profile using the approved organization settings.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-003",
+    "title": "Re-register MFA - Guide 1",
+    "content": "If MFA approvals or codes fail, remove the old authenticator registration and complete the organization's approved MFA registration process again.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-004",
+    "title": "Password Reset Process - Guide 1",
+    "content": "Use the approved password reset portal, create a compliant password, and sign in again after the reset completes.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-005",
+    "title": "Clear Print Queue - Guide 1",
+    "content": "Stop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-006",
+    "title": "Update Device Drivers - Guide 1",
+    "content": "Install manufacturer-approved device drivers through the approved update channel and restart the computer.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-007",
+    "title": "Approved Software Installation - Guide 1",
+    "content": "Download the installer only from the approved internal source and install it with authorized administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-008",
+    "title": "RDP Credential Repair - Guide 1",
+    "content": "Remove saved Remote Desktop credentials and reconnect using the current organization account.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-009",
+    "title": "Restart Network Adapter - Guide 2",
+    "content": "Disable and re-enable the Wi-Fi network adapter, then reconnect to the approved wireless network.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-010",
+    "title": "Re-create VPN Profile - Guide 2",
+    "content": "Remove the damaged VPN connection profile and create a new profile using the approved organization settings. This older article was written for Windows 10 and should be reviewed for newer systems.",
+    "category": "VPN",
+    "supported_os": "Windows 10",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-011",
+    "title": "Re-register MFA - Guide 2",
+    "content": "If MFA approvals or codes fail, remove the old authenticator registration and complete the organization's approved MFA registration process again.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-012",
+    "title": "Password Reset Process - Guide 2",
+    "content": "Use the approved password reset portal, create a compliant password, and sign in again after the reset completes.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-013",
+    "title": "Clear Print Queue - Guide 2",
+    "content": "Stop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-014",
+    "title": "Update Device Drivers - Guide 2",
+    "content": "Install manufacturer-approved device drivers through the approved update channel and restart the computer.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-015",
+    "title": "Approved Software Installation - Guide 2",
+    "content": "Download the installer only from the approved internal source and install it with authorized administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-016",
+    "title": "RDP Credential Repair - Guide 2",
+    "content": "Remove saved Remote Desktop credentials and reconnect using the current organization account.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-017",
+    "title": "Renew Windows IP Address - Guide 3",
+    "content": "For Wi-Fi connected with no internet, run ipconfig /release followed by ipconfig /renew, then reconnect to the wireless network.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-018",
+    "title": "Re-create VPN Profile - Guide 3",
+    "content": "Remove the damaged VPN connection profile and create a new profile using the approved organization settings.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-019",
+    "title": "Re-register MFA - Guide 3",
+    "content": "If MFA approvals or codes fail, remove the old authenticator registration and complete the organization's approved MFA registration process again.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-020",
+    "title": "Password Reset Process - Guide 3",
+    "content": "Use the approved password reset portal, create a compliant password, and sign in again after the reset completes.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-021",
+    "title": "Clear Print Queue - Guide 3",
+    "content": "Stop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again. This is a near-duplicate article retained for evaluation of duplicate knowledge.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-022",
+    "title": "Update Device Drivers - Guide 3",
+    "content": "Install manufacturer-approved device drivers through the approved update channel and restart the computer.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-023",
+    "title": "Approved Software Installation - Guide 3",
+    "content": "Download the installer only from the approved internal source and install it with authorized administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-024",
+    "title": "RDP Credential Repair - Guide 3",
+    "content": "Remove saved Remote Desktop credentials and reconnect using the current organization account.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-025",
+    "title": "DNS Cache Recovery - Guide 4",
+    "content": "If Wi-Fi is connected but internet access is unavailable, open Command Prompt and run ipconfig /flushdns. Reconnect to Wi-Fi and test again.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-026",
+    "title": "Re-create VPN Profile - Guide 4",
+    "content": "Remove the damaged VPN connection profile and create a new profile using the approved organization settings.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-027",
+    "title": "Re-register MFA - Guide 4",
+    "content": "If MFA approvals or codes fail, remove the old authenticator registration and complete the organization's approved MFA registration process again.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-028",
+    "title": "Password Reset Process - Guide 4",
+    "content": "Use the approved password reset portal, create a compliant password, and sign in again after the reset completes.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-029",
+    "title": "Clear Print Queue - Guide 4",
+    "content": "Stop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-030",
+    "title": "Update Device Drivers - Guide 4",
+    "content": "Install manufacturer-approved device drivers through the approved update channel and restart the computer.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-031",
+    "title": "Approved Software Installation - Guide 4",
+    "content": "Download the installer only from the approved internal source and install it with authorized administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-032",
+    "title": "RDP Credential Repair - Guide 4",
+    "content": "Remove saved Remote Desktop credentials and reconnect using the current organization account.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-033",
+    "title": "Restart Network Adapter - Guide 5",
+    "content": "Disable and re-enable the Wi-Fi network adapter, then reconnect to the approved wireless network.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-034",
+    "title": "Re-create VPN Profile - Guide 5",
+    "content": "Remove the damaged VPN connection profile and create a new profile using the approved organization settings.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-035",
+    "title": "Re-register MFA - Guide 5",
+    "content": "If MFA approvals or codes fail, remove the old authenticator registration and complete the organization's approved MFA registration process again.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-036",
+    "title": "Password Reset Process - Guide 5",
+    "content": "Use the approved password reset portal, create a compliant password, and sign in again after the reset completes.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-037",
+    "title": "Clear Print Queue - Guide 5",
+    "content": "Stop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-038",
+    "title": "Update Device Drivers - Guide 5",
+    "content": "Install manufacturer-approved device drivers through the approved update channel and restart the computer.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-039",
+    "title": "Approved Software Installation - Guide 5",
+    "content": "Download the installer only from the approved internal source and install it with authorized administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-040",
+    "title": "RDP Credential Repair - Guide 5",
+    "content": "Remove saved Remote Desktop credentials and reconnect using the current organization account.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-041",
+    "title": "Renew Windows IP Address - Guide 6",
+    "content": "For Wi-Fi connected with no internet, run ipconfig /release followed by ipconfig /renew, then reconnect to the wireless network.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-042",
+    "title": "Re-create VPN Profile - Guide 6",
+    "content": "Remove the damaged VPN connection profile and create a new profile using the approved organization settings.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-043",
+    "title": "Re-register MFA - Guide 6",
+    "content": "If MFA approvals or codes fail, remove the old authenticator registration and complete the organization's approved MFA registration process again.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-044",
+    "title": "Password Reset Process - Guide 6",
+    "content": "Use the approved password reset portal, create a compliant password, and sign in again after the reset completes.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-045",
+    "title": "Clear Print Queue - Guide 6",
+    "content": "Stop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-046",
+    "title": "Update Device Drivers - Guide 6",
+    "content": "Install manufacturer-approved device drivers through the approved update channel and restart the computer.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-047",
+    "title": "Approved Software Installation - Guide 6",
+    "content": "Download the installer only from the approved internal source and install it with authorized administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-048",
+    "title": "RDP Credential Repair - Guide 6",
+    "content": "Remove saved Remote Desktop credentials and reconnect using the current organization account.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-049",
+    "title": "DNS Cache Recovery - Guide 7",
+    "content": "If Wi-Fi is connected but internet access is unavailable, open Command Prompt and run ipconfig /flushdns. Reconnect to Wi-Fi and test again.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-050",
+    "title": "Re-create VPN Profile - Guide 7",
+    "content": "Remove the damaged VPN connection profile and create a new profile using the approved organization settings.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-051",
+    "title": "Re-register MFA - Guide 7",
+    "content": "If MFA approvals or codes fail, remove the old authenticator registration and complete the organization's approved MFA registration process again.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-052",
+    "title": "Password Reset Process - Guide 7",
+    "content": "Use the approved password reset portal, create a compliant password, and sign in again after the reset completes.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-053",
+    "title": "Clear Print Queue - Guide 7",
+    "content": "Stop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-054",
+    "title": "Update Device Drivers - Guide 7",
+    "content": "Install manufacturer-approved device drivers through the approved update channel and restart the computer.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-055",
+    "title": "Approved Software Installation - Guide 7",
+    "content": "Download the installer only from the approved internal source and install it with authorized administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-056",
+    "title": "RDP Credential Repair - Guide 7",
+    "content": "Remove saved Remote Desktop credentials and reconnect using the current organization account.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-057",
+    "title": "Restart Network Adapter - Guide 8",
+    "content": "Disable and re-enable the Wi-Fi network adapter, then reconnect to the approved wireless network.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-058",
+    "title": "Re-create VPN Profile - Guide 8",
+    "content": "Remove the damaged VPN connection profile and create a new profile using the approved organization settings.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-059",
+    "title": "Re-register MFA - Guide 8",
+    "content": "If MFA approvals or codes fail, remove the old authenticator registration and complete the organization's approved MFA registration process again.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-060",
+    "title": "Password Reset Process - Guide 8",
+    "content": "Use the approved password reset portal, create a compliant password, and sign in again after the reset completes.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-061",
+    "title": "Clear Print Queue - Guide 8",
+    "content": "Stop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-062",
+    "title": "Update Device Drivers - Guide 8",
+    "content": "Install manufacturer-approved device drivers through the approved update channel and restart the computer.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-063",
+    "title": "Approved Software Installation - Guide 8",
+    "content": "Download the installer only from the approved internal source and install it with authorized administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-064",
+    "title": "RDP Credential Repair - Guide 8",
+    "content": "Remove saved Remote Desktop credentials and reconnect using the current organization account.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-065",
+    "title": "Renew Windows IP Address - Guide 9",
+    "content": "For Wi-Fi connected with no internet, run ipconfig /release followed by ipconfig /renew, then reconnect to the wireless network.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-066",
+    "title": "Re-create VPN Profile - Guide 9",
+    "content": "Remove the damaged VPN connection profile and create a new profile using the approved organization settings.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-067",
+    "title": "Re-register MFA - Guide 9",
+    "content": "If MFA approvals or codes fail, remove the old authenticator registration and complete the organization's approved MFA registration process again.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-068",
+    "title": "Password Reset Process - Guide 9",
+    "content": "Use the approved password reset portal, create a compliant password, and sign in again after the reset completes.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-069",
+    "title": "Clear Print Queue - Guide 9",
+    "content": "Stop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-070",
+    "title": "Update Device Drivers - Guide 9",
+    "content": "Install manufacturer-approved device drivers through the approved update channel and restart the computer.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-071",
+    "title": "Approved Software Installation - Guide 9",
+    "content": "Download the installer only from the approved internal source and install it with authorized administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-072",
+    "title": "RDP Credential Repair - Guide 9",
+    "content": "Remove saved Remote Desktop credentials and reconnect using the current organization account.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-073",
+    "title": "DNS Cache Recovery - Guide 10",
+    "content": "If Wi-Fi is connected but internet access is unavailable, open Command Prompt and run ipconfig /flushdns. Reconnect to Wi-Fi and test again.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-074",
+    "title": "Re-create VPN Profile - Guide 10",
+    "content": "Remove the damaged VPN connection profile and create a new profile using the approved organization settings.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-075",
+    "title": "Re-register MFA - Guide 10",
+    "content": "If MFA approvals or codes fail, remove the old authenticator registration and complete the organization's approved MFA registration process again.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-076",
+    "title": "Password Reset Process - Guide 10",
+    "content": "Use the approved password reset portal, create a compliant password, and sign in again after the reset completes.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-077",
+    "title": "Clear Print Queue - Guide 10",
+    "content": "Stop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-078",
+    "title": "Update Device Drivers - Guide 10",
+    "content": "Install manufacturer-approved device drivers through the approved update channel and restart the computer.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-079",
+    "title": "Approved Software Installation - Guide 10",
+    "content": "Download the installer only from the approved internal source and install it with authorized administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-080",
+    "title": "RDP Credential Repair - Guide 10",
+    "content": "Remove saved Remote Desktop credentials and reconnect using the current organization account.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "AUDIT-IR09-CONTROL-001",
+    "title": "Approved lookup cobaltlantern463",
+    "content": "Reviewed test reference for cobaltlantern463. Response-only witness: amberharborreceipt. This is harmless synthetic lookup text, not a device repair.",
+    "category": "Audit / Lookup",
+    "supported_os": "Any",
+    "source_type": "internal_kb",
+    "status": "approved"
+  },
+  {
+    "source_id": "SYN-0001",
+    "title": "VPN disconnects every few minutes",
+    "content": "Problem: VPN disconnects every few minutes on Windows 11. I already restarted the device once.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0003",
+    "title": "New employee account cannot access portal",
+    "content": "Problem: New employee account cannot access portal on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0004",
+    "title": "Software setup cannot continue because admin rights are required",
+    "content": "Problem: Software setup cannot continue because admin rights are required on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0005",
+    "title": "Blue screen appears after installing an update",
+    "content": "Problem: Blue screen appears after installing an update on Windows 10. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0006",
+    "title": "VPN authentication fails after Windows update",
+    "content": "Problem: VPN authentication fails after Windows update on macOS. This started this morning.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0008",
+    "title": "Computer repeatedly restarts after Windows update",
+    "content": "Problem: Computer repeatedly restarts after Windows update on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0009",
+    "title": "User account is locked after failed login attempts",
+    "content": "Problem: User account is locked after failed login attempts on macOS. I already restarted the device once.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0010",
+    "title": "Laptop is slow after Windows 11 update",
+    "content": "Problem: Laptop is slow after Windows 11 update on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0011",
+    "title": "Outlook profile fails to synchronize mail",
+    "content": "Problem: Outlook profile fails to synchronize mail on Ubuntu. Please help because I need this for work.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0012",
+    "title": "Password expired and user cannot log in",
+    "content": "Problem: Password expired and user cannot log in on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0013",
+    "title": "Printer is online but jobs stay in queue",
+    "content": "Problem: Printer is online but jobs stay in queue on Ubuntu. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0014",
+    "title": "RDP session disconnects after login",
+    "content": "Problem: RDP session disconnects after login on macOS. No recent hardware changes were made.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0015",
+    "title": "Setup wizard reports missing dependency",
+    "content": "Problem: Setup wizard reports missing dependency on Windows 11. The issue happens repeatedly.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0016",
+    "title": "VPN disconnects every few minutes",
+    "content": "Problem: VPN disconnects every few minutes on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0018",
+    "title": "VPN tunnel is unstable from home network",
+    "content": "Problem: VPN tunnel is unstable from home network on macOS. This started this morning.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0019",
+    "title": "Software setup cannot continue because admin rights are required",
+    "content": "Problem: Software setup cannot continue because admin rights are required on macOS. The issue happens repeatedly.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0020",
+    "title": "VPN authentication fails after Windows update",
+    "content": "Problem: VPN authentication fails after Windows update on macOS. I already restarted the device once.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0022",
+    "title": "User account is locked after failed login attempts",
+    "content": "Problem: User account is locked after failed login attempts on Ubuntu. This started this morning.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0024",
+    "title": "Software setup cannot continue because admin rights are required",
+    "content": "Problem: Software setup cannot continue because admin rights are required on macOS. Please help because I need this for work.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0026",
+    "title": "Windows update failed and rolled back",
+    "content": "Problem: Windows update failed and rolled back on Windows 11. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0027",
+    "title": "Wireless icon shows connected but websites do not load",
+    "content": "Problem: Wireless icon shows connected but websites do not load on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0028",
+    "title": "Print queue is stuck and cannot be cleared",
+    "content": "Problem: Print queue is stuck and cannot be cleared on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0029",
+    "title": "Software setup cannot continue because admin rights are required",
+    "content": "Problem: Software setup cannot continue because admin rights are required on Ubuntu. It happens on my work laptop.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0030",
+    "title": "Approved software cannot be installed on laptop",
+    "content": "Problem: Approved software cannot be installed on laptop on Windows 10. This started this morning.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0031",
+    "title": "Windows update failed and rolled back",
+    "content": "Problem: Windows update failed and rolled back on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0032",
+    "title": "Outlook cannot send email after password change",
+    "content": "Problem: Outlook cannot send email after password change on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0033",
+    "title": "Wi-Fi connected but browser says no internet",
+    "content": "Problem: Wi-Fi connected but browser says no internet on Windows 11. I already restarted the device once.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0036",
+    "title": "RDP session disconnects after login",
+    "content": "Problem: RDP session disconnects after login on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0037",
+    "title": "Internet unavailable although Wi-Fi is connected",
+    "content": "Problem: Internet unavailable although Wi-Fi is connected on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0038",
+    "title": "Outlook keeps asking for password",
+    "content": "Problem: Outlook keeps asking for password on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0039",
+    "title": "Account says credentials are invalid",
+    "content": "Problem: Account says credentials are invalid on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0040",
+    "title": "Setup wizard reports missing dependency",
+    "content": "Problem: Setup wizard reports missing dependency on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0042",
+    "title": "Print queue is stuck and cannot be cleared",
+    "content": "Problem: Print queue is stuck and cannot be cleared on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0043",
+    "title": "VPN disconnects every few minutes",
+    "content": "Problem: VPN disconnects every few minutes on macOS. I already restarted the device once.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0044",
+    "title": "Remote access VPN drops after login",
+    "content": "Problem: Remote access VPN drops after login on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0045",
+    "title": "Printer shows offline although it is powered on",
+    "content": "Problem: Printer shows offline although it is powered on on macOS. No recent hardware changes were made.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0046",
+    "title": "Outlook cannot send email after password change",
+    "content": "Problem: Outlook cannot send email after password change on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0047",
+    "title": "Password expired and user cannot log in",
+    "content": "Problem: Password expired and user cannot log in on Ubuntu. It happens on my work laptop.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0048",
+    "title": "Company VPN connects then immediately disconnects",
+    "content": "Problem: Company VPN connects then immediately disconnects on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0050",
+    "title": "VPN disconnects every few minutes",
+    "content": "Problem: VPN disconnects every few minutes on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0051",
+    "title": "Authenticator code is rejected",
+    "content": "Problem: Authenticator code is rejected on macOS. This started this morning.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0052",
+    "title": "Cannot sign in after password reset",
+    "content": "Problem: Cannot sign in after password reset on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0053",
+    "title": "MFA approval never arrives on phone",
+    "content": "Problem: MFA approval never arrives on phone on Ubuntu. This started this morning.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0054",
+    "title": "Windows driver error after restart",
+    "content": "Problem: Windows driver error after restart on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0056",
+    "title": "Office printer prints blank pages",
+    "content": "Problem: Office printer prints blank pages on Windows 11. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0057",
+    "title": "Printer is online but jobs stay in queue",
+    "content": "Problem: Printer is online but jobs stay in queue on Ubuntu. No recent hardware changes were made.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0058",
+    "title": "Windows update failed and rolled back",
+    "content": "Problem: Windows update failed and rolled back on macOS. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0059",
+    "title": "Installer stops before completion",
+    "content": "Problem: Installer stops before completion on Windows 10. Please help because I need this for work.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0061",
+    "title": "VPN authentication fails after Windows update",
+    "content": "Problem: VPN authentication fails after Windows update on Windows 10. No recent hardware changes were made.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0064",
+    "title": "Print queue is stuck and cannot be cleared",
+    "content": "Problem: Print queue is stuck and cannot be cleared on macOS. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0066",
+    "title": "Outlook keeps asking for password",
+    "content": "Problem: Outlook keeps asking for password on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0067",
+    "title": "Cannot sign in after password reset",
+    "content": "Problem: Cannot sign in after password reset on Windows 11. Please help because I need this for work.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0068",
+    "title": "Company VPN connects then immediately disconnects",
+    "content": "Problem: Company VPN connects then immediately disconnects on Ubuntu. Please help because I need this for work.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0069",
+    "title": "Cannot sign in after password reset",
+    "content": "Problem: Cannot sign in after password reset on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0070",
+    "title": "Remote Desktop cannot connect to office PC",
+    "content": "Problem: Remote Desktop cannot connect to office PC on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0072",
+    "title": "Remote Desktop shows credential error",
+    "content": "Problem: Remote Desktop shows credential error on macOS. The issue happens repeatedly.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0073",
+    "title": "Password expired and user cannot log in",
+    "content": "Problem: Password expired and user cannot log in on macOS. I already restarted the device once.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0074",
+    "title": "Blue screen appears after installing an update",
+    "content": "Problem: Blue screen appears after installing an update on Windows 11. I already restarted the device once.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0077",
+    "title": "Remote Desktop cannot connect to office PC",
+    "content": "Problem: Remote Desktop cannot connect to office PC on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0078",
+    "title": "Account says credentials are invalid",
+    "content": "Problem: Account says credentials are invalid on Ubuntu. This started this morning.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0079",
+    "title": "Windows driver error after restart",
+    "content": "Problem: Windows driver error after restart on Windows 11. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0080",
+    "title": "DNS error while connected to office Wi-Fi",
+    "content": "Problem: DNS error while connected to office Wi-Fi on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0083",
+    "title": "Wi-Fi connected but browser says no internet",
+    "content": "Problem: Wi-Fi connected but browser says no internet on Windows 10. No recent hardware changes were made.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0084",
+    "title": "Wireless icon shows connected but websites do not load",
+    "content": "Problem: Wireless icon shows connected but websites do not load on Windows 11. I already restarted the device once.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0085",
+    "title": "Remote Desktop cannot connect to office PC",
+    "content": "Problem: Remote Desktop cannot connect to office PC on macOS. It happens on my work laptop.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0086",
+    "title": "Remote access VPN drops after login",
+    "content": "Problem: Remote access VPN drops after login on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0087",
+    "title": "Approved software cannot be installed on laptop",
+    "content": "Problem: Approved software cannot be installed on laptop on Windows 11. This started this morning.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0088",
+    "title": "Printer shows offline although it is powered on",
+    "content": "Problem: Printer shows offline although it is powered on on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0089",
+    "title": "Installer stops before completion",
+    "content": "Problem: Installer stops before completion on Ubuntu. Please help because I need this for work.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0092",
+    "title": "Windows cannot find network printer",
+    "content": "Problem: Windows cannot find network printer on macOS. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0094",
+    "title": "Authenticator code is rejected",
+    "content": "Problem: Authenticator code is rejected on macOS. It happens on my work laptop.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0095",
+    "title": "Printer shows offline although it is powered on",
+    "content": "Problem: Printer shows offline although it is powered on on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0096",
+    "title": "RDP connection times out from home network",
+    "content": "Problem: RDP connection times out from home network on Ubuntu. No recent hardware changes were made.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0097",
+    "title": "Remote Desktop shows credential error",
+    "content": "Problem: Remote Desktop shows credential error on macOS. I already restarted the device once.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0098",
+    "title": "Password expired and user cannot log in",
+    "content": "Problem: Password expired and user cannot log in on macOS. Please help because I need this for work.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0100",
+    "title": "Remote access VPN drops after login",
+    "content": "Problem: Remote access VPN drops after login on Windows 11. I already restarted the device once.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0101",
+    "title": "Remote computer is unavailable through RDP",
+    "content": "Problem: Remote computer is unavailable through RDP on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0102",
+    "title": "Laptop is slow after Windows 11 update",
+    "content": "Problem: Laptop is slow after Windows 11 update on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0103",
+    "title": "Wi-Fi connected but browser says no internet",
+    "content": "Problem: Wi-Fi connected but browser says no internet on Ubuntu. This started this morning.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0105",
+    "title": "Remote Desktop cannot connect to office PC",
+    "content": "Problem: Remote Desktop cannot connect to office PC on Ubuntu. This started this morning.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0106",
+    "title": "Wireless icon shows connected but websites do not load",
+    "content": "Problem: Wireless icon shows connected but websites do not load on Windows 11. This started this morning.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0107",
+    "title": "Setup wizard reports missing dependency",
+    "content": "Problem: Setup wizard reports missing dependency on Ubuntu. Please help because I need this for work.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0108",
+    "title": "Printer shows offline although it is powered on",
+    "content": "Problem: Printer shows offline although it is powered on on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0109",
+    "title": "Remote access VPN drops after login",
+    "content": "Problem: Remote access VPN drops after login on Windows 10. I already restarted the device once.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0110",
+    "title": "Outlook profile fails to synchronize mail",
+    "content": "Problem: Outlook profile fails to synchronize mail on Ubuntu. Please help because I need this for work.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0111",
+    "title": "Remote computer is unavailable through RDP",
+    "content": "Problem: Remote computer is unavailable through RDP on macOS. No recent hardware changes were made.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0112",
+    "title": "Remote access VPN drops after login",
+    "content": "Problem: Remote access VPN drops after login on Windows 11. Please help because I need this for work.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0113",
+    "title": "Cannot sign in after password reset",
+    "content": "Problem: Cannot sign in after password reset on Windows 10. This started this morning.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0114",
+    "title": "Printer shows offline although it is powered on",
+    "content": "Problem: Printer shows offline although it is powered on on Windows 10. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0116",
+    "title": "Installer stops before completion",
+    "content": "Problem: Installer stops before completion on Windows 10. I already restarted the device once.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0117",
+    "title": "Internet unavailable although Wi-Fi is connected",
+    "content": "Problem: Internet unavailable although Wi-Fi is connected on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0119",
+    "title": "Windows driver error after restart",
+    "content": "Problem: Windows driver error after restart on Windows 10. I already restarted the device once.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0121",
+    "title": "Blue screen appears after installing an update",
+    "content": "Problem: Blue screen appears after installing an update on Windows 10. No recent hardware changes were made.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0122",
+    "title": "Remote Desktop shows credential error",
+    "content": "Problem: Remote Desktop shows credential error on macOS. The issue happens repeatedly.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0123",
+    "title": "Remote Desktop cannot connect to office PC",
+    "content": "Problem: Remote Desktop cannot connect to office PC on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0124",
+    "title": "Remote Desktop cannot connect to office PC",
+    "content": "Problem: Remote Desktop cannot connect to office PC on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0125",
+    "title": "Wi-Fi connected but browser says no internet",
+    "content": "Problem: Wi-Fi connected but browser says no internet on Windows 10. Please help because I need this for work.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0126",
+    "title": "Authenticator code is rejected",
+    "content": "Problem: Authenticator code is rejected on macOS. Please help because I need this for work.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0127",
+    "title": "RDP session disconnects after login",
+    "content": "Problem: RDP session disconnects after login on Windows 11. The issue happens repeatedly.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0131",
+    "title": "New employee account cannot access portal",
+    "content": "Problem: New employee account cannot access portal on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0132",
+    "title": "Remote Desktop shows credential error",
+    "content": "Problem: Remote Desktop shows credential error on Windows 10. I already restarted the device once.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0134",
+    "title": "Authenticator code is rejected",
+    "content": "Problem: Authenticator code is rejected on Ubuntu. It happens on my work laptop.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0135",
+    "title": "Application installation fails with permission error",
+    "content": "Problem: Application installation fails with permission error on Ubuntu. It happens on my work laptop.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0136",
+    "title": "RDP connection times out from home network",
+    "content": "Problem: RDP connection times out from home network on macOS. I already restarted the device once.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0137",
+    "title": "Company VPN connects then immediately disconnects",
+    "content": "Problem: Company VPN connects then immediately disconnects on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0138",
+    "title": "Laptop connected to Wi-Fi but no internet access",
+    "content": "Problem: Laptop connected to Wi-Fi but no internet access on macOS. It happens on my work laptop.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0141",
+    "title": "MFA approval never arrives on phone",
+    "content": "Problem: MFA approval never arrives on phone on macOS. No recent hardware changes were made.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0142",
+    "title": "Remote computer is unavailable through RDP",
+    "content": "Problem: Remote computer is unavailable through RDP on Ubuntu. It happens on my work laptop.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0143",
+    "title": "Print queue is stuck and cannot be cleared",
+    "content": "Problem: Print queue is stuck and cannot be cleared on macOS. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0147",
+    "title": "Cannot sign in after password reset",
+    "content": "Problem: Cannot sign in after password reset on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0150",
+    "title": "Computer repeatedly restarts after Windows update",
+    "content": "Problem: Computer repeatedly restarts after Windows update on macOS. Please help because I need this for work.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0151",
+    "title": "Windows update failed and rolled back",
+    "content": "Problem: Windows update failed and rolled back on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0152",
+    "title": "Setup wizard reports missing dependency",
+    "content": "Problem: Setup wizard reports missing dependency on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0153",
+    "title": "Company VPN connects then immediately disconnects",
+    "content": "Problem: Company VPN connects then immediately disconnects on Ubuntu. No recent hardware changes were made.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0154",
+    "title": "Remote access VPN drops after login",
+    "content": "Problem: Remote access VPN drops after login on macOS. The issue happens repeatedly.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0155",
+    "title": "Company VPN connects then immediately disconnects",
+    "content": "Problem: Company VPN connects then immediately disconnects on Ubuntu. This started this morning.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0157",
+    "title": "Authenticator code is rejected",
+    "content": "Problem: Authenticator code is rejected on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0158",
+    "title": "Authenticator code is rejected",
+    "content": "Problem: Authenticator code is rejected on Ubuntu. It happens on my work laptop.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0160",
+    "title": "Computer repeatedly restarts after Windows update",
+    "content": "Problem: Computer repeatedly restarts after Windows update on Ubuntu. It happens on my work laptop.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0161",
+    "title": "Company VPN connects then immediately disconnects",
+    "content": "Problem: Company VPN connects then immediately disconnects on Windows 10. This started this morning.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0162",
+    "title": "Cannot sign in after password reset",
+    "content": "Problem: Cannot sign in after password reset on Windows 11. The issue happens repeatedly.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0163",
+    "title": "Password expired and user cannot log in",
+    "content": "Problem: Password expired and user cannot log in on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0164",
+    "title": "Outlook profile fails to synchronize mail",
+    "content": "Problem: Outlook profile fails to synchronize mail on Windows 10. I already restarted the device once.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0165",
+    "title": "Laptop is slow after Windows 11 update",
+    "content": "Problem: Laptop is slow after Windows 11 update on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0166",
+    "title": "Authenticator code is rejected",
+    "content": "Problem: Authenticator code is rejected on Windows 10. Please help because I need this for work.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0167",
+    "title": "Computer repeatedly restarts after Windows update",
+    "content": "Problem: Computer repeatedly restarts after Windows update on Windows 11. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0168",
+    "title": "Print queue is stuck and cannot be cleared",
+    "content": "Problem: Print queue is stuck and cannot be cleared on Ubuntu. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0170",
+    "title": "Outlook keeps asking for password",
+    "content": "Problem: Outlook keeps asking for password on macOS. Please help because I need this for work.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0172",
+    "title": "Account says credentials are invalid",
+    "content": "Problem: Account says credentials are invalid on macOS. Please help because I need this for work.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0174",
+    "title": "Remote Desktop cannot connect to office PC",
+    "content": "Problem: Remote Desktop cannot connect to office PC on Ubuntu. This started this morning.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0175",
+    "title": "Laptop is slow after Windows 11 update",
+    "content": "Problem: Laptop is slow after Windows 11 update on macOS. No recent hardware changes were made.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0177",
+    "title": "Windows cannot find network printer",
+    "content": "Problem: Windows cannot find network printer on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0178",
+    "title": "Computer repeatedly restarts after Windows update",
+    "content": "Problem: Computer repeatedly restarts after Windows update on Windows 11. Please help because I need this for work.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0179",
+    "title": "Wi-Fi connected but browser says no internet",
+    "content": "Problem: Wi-Fi connected but browser says no internet on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0180",
+    "title": "Windows cannot find network printer",
+    "content": "Problem: Windows cannot find network printer on Windows 11. The issue happens repeatedly.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0181",
+    "title": "Application installation fails with permission error",
+    "content": "Problem: Application installation fails with permission error on Windows 11. Please help because I need this for work.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0182",
+    "title": "Remote computer is unavailable through RDP",
+    "content": "Problem: Remote computer is unavailable through RDP on macOS. The issue happens repeatedly.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0183",
+    "title": "VPN disconnects every few minutes",
+    "content": "Problem: VPN disconnects every few minutes on Windows 10. No recent hardware changes were made.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0185",
+    "title": "New employee account cannot access portal",
+    "content": "Problem: New employee account cannot access portal on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0186",
+    "title": "RDP connection times out from home network",
+    "content": "Problem: RDP connection times out from home network on Windows 11. Please help because I need this for work.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0187",
+    "title": "Laptop connected to Wi-Fi but no internet access",
+    "content": "Problem: Laptop connected to Wi-Fi but no internet access on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0189",
+    "title": "Setup wizard reports missing dependency",
+    "content": "Problem: Setup wizard reports missing dependency on macOS. This started this morning.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0191",
+    "title": "Approved software cannot be installed on laptop",
+    "content": "Problem: Approved software cannot be installed on laptop on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0194",
+    "title": "Outlook keeps asking for password",
+    "content": "Problem: Outlook keeps asking for password on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0195",
+    "title": "MFA approval never arrives on phone",
+    "content": "Problem: MFA approval never arrives on phone on Windows 11. I already restarted the device once.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0198",
+    "title": "Windows cannot find network printer",
+    "content": "Problem: Windows cannot find network printer on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0199",
+    "title": "Remote Desktop cannot connect to office PC",
+    "content": "Problem: Remote Desktop cannot connect to office PC on Windows 10. No recent hardware changes were made.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0200",
+    "title": "Approved software cannot be installed on laptop",
+    "content": "Problem: Approved software cannot be installed on laptop on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0201",
+    "title": "RDP connection times out from home network",
+    "content": "Problem: RDP connection times out from home network on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0202",
+    "title": "VPN tunnel is unstable from home network",
+    "content": "Problem: VPN tunnel is unstable from home network on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0203",
+    "title": "RDP connection times out from home network",
+    "content": "Problem: RDP connection times out from home network on macOS. It happens on my work laptop.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0204",
+    "title": "Installer stops before completion",
+    "content": "Problem: Installer stops before completion on macOS. This started this morning.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0206",
+    "title": "Outlook cannot send email after password change",
+    "content": "Problem: Outlook cannot send email after password change on macOS. No recent hardware changes were made.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0207",
+    "title": "Software setup cannot continue because admin rights are required",
+    "content": "Problem: Software setup cannot continue because admin rights are required on Ubuntu. No recent hardware changes were made.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0209",
+    "title": "Office printer prints blank pages",
+    "content": "Problem: Office printer prints blank pages on Windows 11. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0210",
+    "title": "Outlook keeps asking for password",
+    "content": "Problem: Outlook keeps asking for password on Windows 10. No recent hardware changes were made.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0211",
+    "title": "Outlook profile fails to synchronize mail",
+    "content": "Problem: Outlook profile fails to synchronize mail on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0213",
+    "title": "Print queue is stuck and cannot be cleared",
+    "content": "Problem: Print queue is stuck and cannot be cleared on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0214",
+    "title": "Remote Desktop shows credential error",
+    "content": "Problem: Remote Desktop shows credential error on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0216",
+    "title": "VPN authentication fails after Windows update",
+    "content": "Problem: VPN authentication fails after Windows update on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0217",
+    "title": "Application installation fails with permission error",
+    "content": "Problem: Application installation fails with permission error on macOS. This started this morning.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0218",
+    "title": "DNS error while connected to office Wi-Fi",
+    "content": "Problem: DNS error while connected to office Wi-Fi on Ubuntu. This started this morning.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0219",
+    "title": "User account is locked after failed login attempts",
+    "content": "Problem: User account is locked after failed login attempts on macOS. I already restarted the device once.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0221",
+    "title": "RDP connection times out from home network",
+    "content": "Problem: RDP connection times out from home network on macOS. I already restarted the device once.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0222",
+    "title": "Application installation fails with permission error",
+    "content": "Problem: Application installation fails with permission error on macOS. This started this morning.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0224",
+    "title": "Wi-Fi connected but browser says no internet",
+    "content": "Problem: Wi-Fi connected but browser says no internet on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0225",
+    "title": "Wi-Fi connected but browser says no internet",
+    "content": "Problem: Wi-Fi connected but browser says no internet on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0226",
+    "title": "VPN tunnel is unstable from home network",
+    "content": "Problem: VPN tunnel is unstable from home network on Windows 10. Please help because I need this for work.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0227",
+    "title": "DNS error while connected to office Wi-Fi",
+    "content": "Problem: DNS error while connected to office Wi-Fi on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0228",
+    "title": "Laptop is slow after Windows 11 update",
+    "content": "Problem: Laptop is slow after Windows 11 update on macOS. I already restarted the device once.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0229",
+    "title": "Computer repeatedly restarts after Windows update",
+    "content": "Problem: Computer repeatedly restarts after Windows update on Ubuntu. No recent hardware changes were made.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0231",
+    "title": "User account is locked after failed login attempts",
+    "content": "Problem: User account is locked after failed login attempts on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0232",
+    "title": "Printer is online but jobs stay in queue",
+    "content": "Problem: Printer is online but jobs stay in queue on macOS. This started this morning.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0233",
+    "title": "Blue screen appears after installing an update",
+    "content": "Problem: Blue screen appears after installing an update on Ubuntu. No recent hardware changes were made.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0236",
+    "title": "Windows cannot find network printer",
+    "content": "Problem: Windows cannot find network printer on macOS. It happens on my work laptop.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0238",
+    "title": "Computer repeatedly restarts after Windows update",
+    "content": "Problem: Computer repeatedly restarts after Windows update on Windows 10. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0239",
+    "title": "Installer stops before completion",
+    "content": "Problem: Installer stops before completion on Windows 11. The issue happens repeatedly.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0240",
+    "title": "Remote Desktop cannot connect to office PC",
+    "content": "Problem: Remote Desktop cannot connect to office PC on macOS. It happens on my work laptop.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0244",
+    "title": "RDP session disconnects after login",
+    "content": "Problem: RDP session disconnects after login on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0245",
+    "title": "Outlook keeps asking for password",
+    "content": "Problem: Outlook keeps asking for password on Ubuntu. This started this morning.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0247",
+    "title": "Outlook cannot send email after password change",
+    "content": "Problem: Outlook cannot send email after password change on Windows 11. I already restarted the device once.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0248",
+    "title": "Remote Desktop cannot connect to office PC",
+    "content": "Problem: Remote Desktop cannot connect to office PC on Windows 11. The issue happens repeatedly.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0250",
+    "title": "Remote access VPN drops after login",
+    "content": "Problem: Remote access VPN drops after login on Ubuntu. No recent hardware changes were made.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0251",
+    "title": "Laptop is slow after Windows 11 update",
+    "content": "Problem: Laptop is slow after Windows 11 update on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0252",
+    "title": "VPN tunnel is unstable from home network",
+    "content": "Problem: VPN tunnel is unstable from home network on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0253",
+    "title": "Password expired and user cannot log in",
+    "content": "Problem: Password expired and user cannot log in on macOS. I already restarted the device once.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0254",
+    "title": "Office printer prints blank pages",
+    "content": "Problem: Office printer prints blank pages on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0255",
+    "title": "Outlook profile fails to synchronize mail",
+    "content": "Problem: Outlook profile fails to synchronize mail on macOS. The issue happens repeatedly.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0256",
+    "title": "Laptop connected to Wi-Fi but no internet access",
+    "content": "Problem: Laptop connected to Wi-Fi but no internet access on Windows 11. The issue happens repeatedly.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0257",
+    "title": "DNS error while connected to office Wi-Fi",
+    "content": "Problem: DNS error while connected to office Wi-Fi on macOS. Please help because I need this for work.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0258",
+    "title": "Installer stops before completion",
+    "content": "Problem: Installer stops before completion on Windows 10. I already restarted the device once.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0259",
+    "title": "Approved software cannot be installed on laptop",
+    "content": "Problem: Approved software cannot be installed on laptop on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0260",
+    "title": "Blue screen appears after installing an update",
+    "content": "Problem: Blue screen appears after installing an update on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0263",
+    "title": "Laptop is slow after Windows 11 update",
+    "content": "Problem: Laptop is slow after Windows 11 update on Ubuntu. Please help because I need this for work.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0265",
+    "title": "Windows update failed and rolled back",
+    "content": "Problem: Windows update failed and rolled back on Ubuntu. It happens on my work laptop.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0266",
+    "title": "Laptop connected to Wi-Fi but no internet access",
+    "content": "Problem: Laptop connected to Wi-Fi but no internet access on macOS. Please help because I need this for work.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0267",
+    "title": "DNS error while connected to office Wi-Fi",
+    "content": "Problem: DNS error while connected to office Wi-Fi on macOS. This started this morning.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0268",
+    "title": "RDP connection times out from home network",
+    "content": "Problem: RDP connection times out from home network on Windows 10. Please help because I need this for work.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0269",
+    "title": "Computer repeatedly restarts after Windows update",
+    "content": "Problem: Computer repeatedly restarts after Windows update on Windows 11. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0270",
+    "title": "Setup wizard reports missing dependency",
+    "content": "Problem: Setup wizard reports missing dependency on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0271",
+    "title": "RDP connection times out from home network",
+    "content": "Problem: RDP connection times out from home network on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0272",
+    "title": "Laptop is slow after Windows 11 update",
+    "content": "Problem: Laptop is slow after Windows 11 update on macOS. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0274",
+    "title": "Company VPN connects then immediately disconnects",
+    "content": "Problem: Company VPN connects then immediately disconnects on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0275",
+    "title": "Printer shows offline although it is powered on",
+    "content": "Problem: Printer shows offline although it is powered on on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0280",
+    "title": "RDP connection times out from home network",
+    "content": "Problem: RDP connection times out from home network on macOS. The issue happens repeatedly.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0281",
+    "title": "Cannot sign in after password reset",
+    "content": "Problem: Cannot sign in after password reset on macOS. It happens on my work laptop.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0283",
+    "title": "Approved software cannot be installed on laptop",
+    "content": "Problem: Approved software cannot be installed on laptop on macOS. This started this morning.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0285",
+    "title": "Cannot sign in after password reset",
+    "content": "Problem: Cannot sign in after password reset on macOS. I already restarted the device once.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0286",
+    "title": "Cannot sign in after password reset",
+    "content": "Problem: Cannot sign in after password reset on Windows 11. This started this morning.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0289",
+    "title": "Printer is online but jobs stay in queue",
+    "content": "Problem: Printer is online but jobs stay in queue on Windows 11. The issue happens repeatedly.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0290",
+    "title": "Wireless icon shows connected but websites do not load",
+    "content": "Problem: Wireless icon shows connected but websites do not load on Ubuntu. Please help because I need this for work.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0291",
+    "title": "Printer is online but jobs stay in queue",
+    "content": "Problem: Printer is online but jobs stay in queue on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0294",
+    "title": "Internet unavailable although Wi-Fi is connected",
+    "content": "Problem: Internet unavailable although Wi-Fi is connected on Windows 11. I already restarted the device once.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0295",
+    "title": "Approved software cannot be installed on laptop",
+    "content": "Problem: Approved software cannot be installed on laptop on Ubuntu. No recent hardware changes were made.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0296",
+    "title": "MFA approval never arrives on phone",
+    "content": "Problem: MFA approval never arrives on phone on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0297",
+    "title": "Account says credentials are invalid",
+    "content": "Problem: Account says credentials are invalid on macOS. The issue happens repeatedly.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0298",
+    "title": "Internet unavailable although Wi-Fi is connected",
+    "content": "Problem: Internet unavailable although Wi-Fi is connected on Windows 11. This started this morning.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0299",
+    "title": "Company VPN connects then immediately disconnects",
+    "content": "Problem: Company VPN connects then immediately disconnects on macOS. No recent hardware changes were made.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0300",
+    "title": "Windows cannot find network printer",
+    "content": "Problem: Windows cannot find network printer on Windows 11. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0302",
+    "title": "Cannot sign in after password reset",
+    "content": "Problem: Cannot sign in after password reset on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0303",
+    "title": "Windows update failed and rolled back",
+    "content": "Problem: Windows update failed and rolled back on Windows 11. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0306",
+    "title": "Approved software cannot be installed on laptop",
+    "content": "Problem: Approved software cannot be installed on laptop on Ubuntu. No recent hardware changes were made.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0307",
+    "title": "DNS error while connected to office Wi-Fi",
+    "content": "Problem: DNS error while connected to office Wi-Fi on Windows 11. The issue happens repeatedly.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0308",
+    "title": "DNS error while connected to office Wi-Fi",
+    "content": "Problem: DNS error while connected to office Wi-Fi on Windows 10. This started this morning.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0309",
+    "title": "Internet unavailable although Wi-Fi is connected",
+    "content": "Problem: Internet unavailable although Wi-Fi is connected on Ubuntu. It happens on my work laptop.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0310",
+    "title": "Remote Desktop shows credential error",
+    "content": "Problem: Remote Desktop shows credential error on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0313",
+    "title": "Cannot sign in after password reset",
+    "content": "Problem: Cannot sign in after password reset on macOS. I already restarted the device once.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0315",
+    "title": "VPN disconnects every few minutes",
+    "content": "Problem: VPN disconnects every few minutes on Windows 10. I already restarted the device once.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0316",
+    "title": "DNS error while connected to office Wi-Fi",
+    "content": "Problem: DNS error while connected to office Wi-Fi on Windows 11. This started this morning.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0317",
+    "title": "Office printer prints blank pages",
+    "content": "Problem: Office printer prints blank pages on macOS. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0321",
+    "title": "Outlook profile fails to synchronize mail",
+    "content": "Problem: Outlook profile fails to synchronize mail on macOS. No recent hardware changes were made.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0323",
+    "title": "Office printer prints blank pages",
+    "content": "Problem: Office printer prints blank pages on macOS. This started this morning.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0325",
+    "title": "Account says credentials are invalid",
+    "content": "Problem: Account says credentials are invalid on Windows 10. I already restarted the device once.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0326",
+    "title": "Company VPN connects then immediately disconnects",
+    "content": "Problem: Company VPN connects then immediately disconnects on Windows 11. Please help because I need this for work.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0329",
+    "title": "Remote computer is unavailable through RDP",
+    "content": "Problem: Remote computer is unavailable through RDP on macOS. Please help because I need this for work.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0330",
+    "title": "Cannot sign in after password reset",
+    "content": "Problem: Cannot sign in after password reset on Ubuntu. It happens on my work laptop.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0334",
+    "title": "VPN disconnects every few minutes",
+    "content": "Problem: VPN disconnects every few minutes on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0335",
+    "title": "Remote access VPN drops after login",
+    "content": "Problem: Remote access VPN drops after login on Ubuntu. It happens on my work laptop.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0336",
+    "title": "Remote Desktop shows credential error",
+    "content": "Problem: Remote Desktop shows credential error on Ubuntu. This started this morning.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0337",
+    "title": "Printer shows offline although it is powered on",
+    "content": "Problem: Printer shows offline although it is powered on on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0338",
+    "title": "VPN tunnel is unstable from home network",
+    "content": "Problem: VPN tunnel is unstable from home network on macOS. It happens on my work laptop.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0340",
+    "title": "Printer is online but jobs stay in queue",
+    "content": "Problem: Printer is online but jobs stay in queue on Ubuntu. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0341",
+    "title": "Remote Desktop cannot connect to office PC",
+    "content": "Problem: Remote Desktop cannot connect to office PC on Windows 11. This started this morning.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0342",
+    "title": "Installer stops before completion",
+    "content": "Problem: Installer stops before completion on Windows 10. I already restarted the device once.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0343",
+    "title": "Remote computer is unavailable through RDP",
+    "content": "Problem: Remote computer is unavailable through RDP on macOS. The issue happens repeatedly.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0344",
+    "title": "Wireless icon shows connected but websites do not load",
+    "content": "Problem: Wireless icon shows connected but websites do not load on Windows 11. The issue happens repeatedly.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0345",
+    "title": "Application installation fails with permission error",
+    "content": "Problem: Application installation fails with permission error on Windows 11. The issue happens repeatedly.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0346",
+    "title": "Windows driver error after restart",
+    "content": "Problem: Windows driver error after restart on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0348",
+    "title": "Installer stops before completion",
+    "content": "Problem: Installer stops before completion on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0350",
+    "title": "VPN disconnects every few minutes",
+    "content": "Problem: VPN disconnects every few minutes on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0351",
+    "title": "Blue screen appears after installing an update",
+    "content": "Problem: Blue screen appears after installing an update on macOS. Please help because I need this for work.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0352",
+    "title": "Printer is online but jobs stay in queue",
+    "content": "Problem: Printer is online but jobs stay in queue on Ubuntu. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0353",
+    "title": "Application installation fails with permission error",
+    "content": "Problem: Application installation fails with permission error on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0354",
+    "title": "Windows driver error after restart",
+    "content": "Problem: Windows driver error after restart on Ubuntu. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0355",
+    "title": "New employee account cannot access portal",
+    "content": "Problem: New employee account cannot access portal on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0358",
+    "title": "RDP connection times out from home network",
+    "content": "Problem: RDP connection times out from home network on Windows 10. I already restarted the device once.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0360",
+    "title": "Outlook cannot send email after password change",
+    "content": "Problem: Outlook cannot send email after password change on macOS. I already restarted the device once.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0362",
+    "title": "Print queue is stuck and cannot be cleared",
+    "content": "Problem: Print queue is stuck and cannot be cleared on Windows 11. The issue happens repeatedly.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0367",
+    "title": "VPN disconnects every few minutes",
+    "content": "Problem: VPN disconnects every few minutes on macOS. I already restarted the device once.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0369",
+    "title": "VPN authentication fails after Windows update",
+    "content": "Problem: VPN authentication fails after Windows update on macOS. Please help because I need this for work.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0371",
+    "title": "Remote access VPN drops after login",
+    "content": "Problem: Remote access VPN drops after login on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0372",
+    "title": "Remote computer is unavailable through RDP",
+    "content": "Problem: Remote computer is unavailable through RDP on Ubuntu. It happens on my work laptop.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0373",
+    "title": "Printer is online but jobs stay in queue",
+    "content": "Problem: Printer is online but jobs stay in queue on macOS. No recent hardware changes were made.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0374",
+    "title": "MFA approval never arrives on phone",
+    "content": "Problem: MFA approval never arrives on phone on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0376",
+    "title": "Approved software cannot be installed on laptop",
+    "content": "Problem: Approved software cannot be installed on laptop on Ubuntu. Please help because I need this for work.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0377",
+    "title": "Cannot sign in after password reset",
+    "content": "Problem: Cannot sign in after password reset on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0380",
+    "title": "RDP connection times out from home network",
+    "content": "Problem: RDP connection times out from home network on Windows 10. No recent hardware changes were made.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0381",
+    "title": "Windows update failed and rolled back",
+    "content": "Problem: Windows update failed and rolled back on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0383",
+    "title": "Software setup cannot continue because admin rights are required",
+    "content": "Problem: Software setup cannot continue because admin rights are required on Windows 11. Please help because I need this for work.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0387",
+    "title": "Wireless icon shows connected but websites do not load",
+    "content": "Problem: Wireless icon shows connected but websites do not load on Windows 11. The issue happens repeatedly.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0389",
+    "title": "Printer shows offline although it is powered on",
+    "content": "Problem: Printer shows offline although it is powered on on Windows 10. No recent hardware changes were made.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0390",
+    "title": "Account says credentials are invalid",
+    "content": "Problem: Account says credentials are invalid on Windows 10. Please help because I need this for work.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0391",
+    "title": "Windows update failed and rolled back",
+    "content": "Problem: Windows update failed and rolled back on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0393",
+    "title": "Wi-Fi connected but browser says no internet",
+    "content": "Problem: Wi-Fi connected but browser says no internet on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0394",
+    "title": "Windows cannot find network printer",
+    "content": "Problem: Windows cannot find network printer on Windows 10. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0395",
+    "title": "Internet unavailable although Wi-Fi is connected",
+    "content": "Problem: Internet unavailable although Wi-Fi is connected on Windows 11. I already restarted the device once.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0399",
+    "title": "Remote computer is unavailable through RDP",
+    "content": "Problem: Remote computer is unavailable through RDP on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0400",
+    "title": "Account says credentials are invalid",
+    "content": "Problem: Account says credentials are invalid on macOS. The issue happens repeatedly.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0402",
+    "title": "Remote Desktop cannot connect to office PC",
+    "content": "Problem: Remote Desktop cannot connect to office PC on Ubuntu. This started this morning.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0403",
+    "title": "Cannot sign in after password reset",
+    "content": "Problem: Cannot sign in after password reset on macOS. This started this morning.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0404",
+    "title": "Blue screen appears after installing an update",
+    "content": "Problem: Blue screen appears after installing an update on Windows 11. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0405",
+    "title": "Office printer prints blank pages",
+    "content": "Problem: Office printer prints blank pages on Windows 10. This started this morning.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0406",
+    "title": "Remote Desktop cannot connect to office PC",
+    "content": "Problem: Remote Desktop cannot connect to office PC on Ubuntu. This started this morning.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0408",
+    "title": "Account says credentials are invalid",
+    "content": "Problem: Account says credentials are invalid on macOS. It happens on my work laptop.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0409",
+    "title": "Authenticator code is rejected",
+    "content": "Problem: Authenticator code is rejected on Windows 11. This started this morning.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0410",
+    "title": "Wi-Fi connected but browser says no internet",
+    "content": "Problem: Wi-Fi connected but browser says no internet on macOS. No recent hardware changes were made.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0413",
+    "title": "Password expired and user cannot log in",
+    "content": "Problem: Password expired and user cannot log in on macOS. No recent hardware changes were made.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0414",
+    "title": "Office printer prints blank pages",
+    "content": "Problem: Office printer prints blank pages on Ubuntu. It happens on my work laptop.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0416",
+    "title": "VPN tunnel is unstable from home network",
+    "content": "Problem: VPN tunnel is unstable from home network on macOS. I already restarted the device once.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0417",
+    "title": "Installer stops before completion",
+    "content": "Problem: Installer stops before completion on Windows 10. This started this morning.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0418",
+    "title": "VPN disconnects every few minutes",
+    "content": "Problem: VPN disconnects every few minutes on Windows 10. Please help because I need this for work.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0420",
+    "title": "Outlook cannot send email after password change",
+    "content": "Problem: Outlook cannot send email after password change on Windows 11. I already restarted the device once.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0421",
+    "title": "Windows driver error after restart",
+    "content": "Problem: Windows driver error after restart on Ubuntu. No recent hardware changes were made.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0423",
+    "title": "Internet unavailable although Wi-Fi is connected",
+    "content": "Problem: Internet unavailable although Wi-Fi is connected on Windows 10. No recent hardware changes were made.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0424",
+    "title": "Wireless icon shows connected but websites do not load",
+    "content": "Problem: Wireless icon shows connected but websites do not load on macOS. I already restarted the device once.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0425",
+    "title": "Outlook cannot send email after password change",
+    "content": "Problem: Outlook cannot send email after password change on macOS. Please help because I need this for work.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0426",
+    "title": "VPN authentication fails after Windows update",
+    "content": "Problem: VPN authentication fails after Windows update on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0427",
+    "title": "DNS error while connected to office Wi-Fi",
+    "content": "Problem: DNS error while connected to office Wi-Fi on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0428",
+    "title": "Remote access VPN drops after login",
+    "content": "Problem: Remote access VPN drops after login on Windows 10. I already restarted the device once.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0429",
+    "title": "Remote computer is unavailable through RDP",
+    "content": "Problem: Remote computer is unavailable through RDP on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0430",
+    "title": "Software setup cannot continue because admin rights are required",
+    "content": "Problem: Software setup cannot continue because admin rights are required on macOS. It happens on my work laptop.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0431",
+    "title": "Windows update failed and rolled back",
+    "content": "Problem: Windows update failed and rolled back on Windows 11. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0433",
+    "title": "Remote Desktop cannot connect to office PC",
+    "content": "Problem: Remote Desktop cannot connect to office PC on macOS. No recent hardware changes were made.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0435",
+    "title": "Application installation fails with permission error",
+    "content": "Problem: Application installation fails with permission error on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0436",
+    "title": "Installer stops before completion",
+    "content": "Problem: Installer stops before completion on Windows 11. Please help because I need this for work.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0437",
+    "title": "Wireless icon shows connected but websites do not load",
+    "content": "Problem: Wireless icon shows connected but websites do not load on Windows 10. I already restarted the device once.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0438",
+    "title": "Installer stops before completion",
+    "content": "Problem: Installer stops before completion on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0439",
+    "title": "Application installation fails with permission error",
+    "content": "Problem: Application installation fails with permission error on Windows 11. I already restarted the device once.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0441",
+    "title": "Office printer prints blank pages",
+    "content": "Problem: Office printer prints blank pages on Windows 10. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0442",
+    "title": "Authenticator code is rejected",
+    "content": "Problem: Authenticator code is rejected on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0444",
+    "title": "Printer shows offline although it is powered on",
+    "content": "Problem: Printer shows offline although it is powered on on Windows 11. This started this morning.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0445",
+    "title": "Password expired and user cannot log in",
+    "content": "Problem: Password expired and user cannot log in on macOS. It happens on my work laptop.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0447",
+    "title": "Remote access VPN drops after login",
+    "content": "Problem: Remote access VPN drops after login on Windows 11. I already restarted the device once.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0448",
+    "title": "Installer stops before completion",
+    "content": "Problem: Installer stops before completion on macOS. This started this morning.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0450",
+    "title": "DNS error while connected to office Wi-Fi",
+    "content": "Problem: DNS error while connected to office Wi-Fi on Ubuntu. No recent hardware changes were made.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0452",
+    "title": "Windows cannot find network printer",
+    "content": "Problem: Windows cannot find network printer on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0454",
+    "title": "Authenticator code is rejected",
+    "content": "Problem: Authenticator code is rejected on Windows 10. Please help because I need this for work.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0456",
+    "title": "Outlook keeps asking for password",
+    "content": "Problem: Outlook keeps asking for password on macOS. This started this morning.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0457",
+    "title": "Computer repeatedly restarts after Windows update",
+    "content": "Problem: Computer repeatedly restarts after Windows update on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0458",
+    "title": "Printer shows offline although it is powered on",
+    "content": "Problem: Printer shows offline although it is powered on on Ubuntu. It happens on my work laptop.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0459",
+    "title": "MFA approval never arrives on phone",
+    "content": "Problem: MFA approval never arrives on phone on macOS. The issue happens repeatedly.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0460",
+    "title": "Computer repeatedly restarts after Windows update",
+    "content": "Problem: Computer repeatedly restarts after Windows update on Windows 11. Please help because I need this for work.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0461",
+    "title": "Office printer prints blank pages",
+    "content": "Problem: Office printer prints blank pages on Windows 10. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0463",
+    "title": "Outlook cannot send email after password change",
+    "content": "Problem: Outlook cannot send email after password change on Windows 10. This started this morning.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0464",
+    "title": "Outlook keeps asking for password",
+    "content": "Problem: Outlook keeps asking for password on macOS. No recent hardware changes were made.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0465",
+    "title": "Setup wizard reports missing dependency",
+    "content": "Problem: Setup wizard reports missing dependency on macOS. I already restarted the device once.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0466",
+    "title": "Approved software cannot be installed on laptop",
+    "content": "Problem: Approved software cannot be installed on laptop on macOS. I already restarted the device once.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0467",
+    "title": "Authenticator code is rejected",
+    "content": "Problem: Authenticator code is rejected on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0468",
+    "title": "Setup wizard reports missing dependency",
+    "content": "Problem: Setup wizard reports missing dependency on macOS. The issue happens repeatedly.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0469",
+    "title": "Company VPN connects then immediately disconnects",
+    "content": "Problem: Company VPN connects then immediately disconnects on Windows 10. I already restarted the device once.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0470",
+    "title": "Laptop is slow after Windows 11 update",
+    "content": "Problem: Laptop is slow after Windows 11 update on macOS. Please help because I need this for work.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0471",
+    "title": "Office printer prints blank pages",
+    "content": "Problem: Office printer prints blank pages on macOS. This started this morning.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0474",
+    "title": "Cannot sign in after password reset",
+    "content": "Problem: Cannot sign in after password reset on macOS. This started this morning.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0475",
+    "title": "Printer is online but jobs stay in queue",
+    "content": "Problem: Printer is online but jobs stay in queue on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0476",
+    "title": "VPN tunnel is unstable from home network",
+    "content": "Problem: VPN tunnel is unstable from home network on Ubuntu. No recent hardware changes were made.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0478",
+    "title": "Cannot sign in after password reset",
+    "content": "Problem: Cannot sign in after password reset on macOS. It happens on my work laptop.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+    "category": "Accounts / Passwords",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0483",
+    "title": "Authenticator code is rejected",
+    "content": "Problem: Authenticator code is rejected on Ubuntu. It happens on my work laptop.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0484",
+    "title": "Printer shows offline although it is powered on",
+    "content": "Problem: Printer shows offline although it is powered on on Windows 10. This started this morning.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0485",
+    "title": "Computer repeatedly restarts after Windows update",
+    "content": "Problem: Computer repeatedly restarts after Windows update on Windows 10. Please help because I need this for work.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0487",
+    "title": "Company VPN connects then immediately disconnects",
+    "content": "Problem: Company VPN connects then immediately disconnects on Windows 11. This started this morning.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0488",
+    "title": "MFA approval never arrives on phone",
+    "content": "Problem: MFA approval never arrives on phone on Windows 10. Please help because I need this for work.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+    "category": "Outlook / MFA",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0489",
+    "title": "Software setup cannot continue because admin rights are required",
+    "content": "Problem: Software setup cannot continue because admin rights are required on macOS. It happens on my work laptop.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0492",
+    "title": "VPN disconnects every few minutes",
+    "content": "Problem: VPN disconnects every few minutes on macOS. Please help because I need this for work.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0497",
+    "title": "Print queue is stuck and cannot be cleared",
+    "content": "Problem: Print queue is stuck and cannot be cleared on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0498",
+    "title": "Remote access VPN drops after login",
+    "content": "Problem: Remote access VPN drops after login on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0499",
+    "title": "Wi-Fi connected but browser says no internet",
+    "content": "Problem: Wi-Fi connected but browser says no internet on macOS. No recent hardware changes were made.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "category": "Wi-Fi / DNS",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0500",
+    "title": "Software setup cannot continue because admin rights are required",
+    "content": "Problem: Software setup cannot continue because admin rights are required on Windows 11. I already restarted the device once.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  }
+]

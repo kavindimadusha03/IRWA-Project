@@ -1,0 +1,20 @@
+{
+  "id": 501,
+  "ticket_code": "TCK-00501",
+  "assigned_to": null,
+  "history_summary": "Customer reported: quartzmeadow729. The case was classified as Unknown with priority Medium. The issue was reviewed against approved knowledge and a structured support recommendation was generated.",
+  "title": "Audit reference lookup",
+  "description": "quartzmeadow729",
+  "masked_description": "quartzmeadow729",
+  "category": "Unknown",
+  "canonical_issue": "quartzmeadow729",
+  "priority": "Medium",
+  "status": "ESCALATED",
+  "approval_status": "PENDING",
+  "retrieval_confidence": 0.25102611215251425,
+  "source_used": "",
+  "recommended_solution": "No sufficiently reliable solution was found in the available knowledge base or previous resolved tickets. The ticket has been escalated to IT Support.",
+  "decision_explanation": "No approved knowledge article met the reliability threshold for this issue. The search score was too weak or the evidence was incomplete, so a human specialist should review it.",
+  "suggested_reply": "Thanks for reporting this. I have escalated the request to a specialist because the available evidence was not strong enough to provide a safe automated recommendation.",
+  "citations": []
+}

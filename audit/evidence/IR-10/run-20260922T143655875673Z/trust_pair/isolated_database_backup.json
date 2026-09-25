@@ -1,0 +1,14 @@
+{
+  "recorded_before_request_at_utc": "2026-09-22T14:37:11.024173+00:00",
+  "method": "SQLite backup API from mode=ro source after fixture setup",
+  "path": "C:\\Users\\PSB\\AppData\\Local\\Temp\\knowgap-ir10-trust_pair-kntiimp_\\before_requests.sqlite",
+  "sha256": "b277b2e519c6b4430d1b1fbedccb73502fd4a7a7b796e7a400ffd66fc205d330",
+  "integrity_check": "ok",
+  "fixture_statuses": {
+    "AUDIT-IR10-DRAFT-001": "draft",
+    "AUDIT-IR10-KB-001": "approved",
+    "AUDIT-IR10-OPEN-001": "OPEN",
+    "AUDIT-IR10-RESOLVED-001": "RESOLVED"
+  },
+  "outside_repository": true
+}

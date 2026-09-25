@@ -1,0 +1,18 @@
+{
+  "recorded_at_utc": "2026-09-22T14:36:55.899940+00:00",
+  "corpus": "Four fixture records only; two eligible expected",
+  "expected_article_count": 2,
+  "expected_historical_ticket_count": 2,
+  "expected_eligible_source_ids": [
+    "AUDIT-IR10-KB-001",
+    "AUDIT-IR10-RESOLVED-001"
+  ],
+  "negative_controls": [
+    "AUDIT-IR10-DRAFT-001",
+    "AUDIT-IR10-OPEN-001"
+  ],
+  "qualitative_relevance": "Both positives cover stuck print queue and recording waiting jobs for support review without device-setting changes.",
+  "kb_csv_sha256": "1194a81de63048a7321f536e448c7aa7bb7a2f208fe9f0c369f833ca9b39d8e5",
+  "ticket_csv_sha256": "b4f2f293338e5e188d2298396f74ad17221c27032bf5d31aca88b68c3e5a6f67",
+  "csv_note": "Hashes for preservation only; CSV corpora not loaded"
+}

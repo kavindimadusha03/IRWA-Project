@@ -1,0 +1,57 @@
+{
+  "recorded_before_request_at_utc": "2026-09-22T14:37:11.009613+00:00",
+  "fixtures": {
+    "articles": [
+      {
+        "category": "Printers",
+        "source_type": "internal_kb",
+        "author": "IR-10 synthetic audit fixture",
+        "authoritative": true,
+        "supported_os": "Any",
+        "security_class": "internal",
+        "doc_id": "AUDIT-IR10-KB-001",
+        "title": "Printer queue review procedure",
+        "content": "For a stuck printer queue, record the waiting print jobs and ask IT Support to review the queue before making changes. Synthetic approved reference for this audit.",
+        "status": "approved"
+      },
+      {
+        "category": "Printers",
+        "source_type": "internal_kb",
+        "author": "IR-10 synthetic audit fixture",
+        "authoritative": true,
+        "supported_os": "Any",
+        "security_class": "internal",
+        "doc_id": "AUDIT-IR10-DRAFT-001",
+        "title": "Unreviewed printer backlog proposal",
+        "content": "Draft-only witness draftmarble612. An unreviewed note about a printer queue; no validated procedure is supplied.",
+        "status": "draft"
+      }
+    ],
+    "tickets": [
+      {
+        "ticket_code": "AUDIT-IR10-RESOLVED-001",
+        "title": "Stalled print jobs reviewed by support",
+        "description": "Printer queue was stuck and print jobs would not clear.",
+        "category": "Printers",
+        "canonical_issue": "",
+        "status": "RESOLVED",
+        "approval_status": "APPROVED",
+        "root_cause": "Synthetic support case; no verified device diagnosis.",
+        "resolution_notes": "Recorded waiting jobs and referred the printer queue to IT Support for review. No device settings were changed."
+      },
+      {
+        "ticket_code": "AUDIT-IR10-OPEN-001",
+        "title": "Printer queue still waiting for investigation",
+        "description": "Printer queue is stuck and print jobs will not clear; case remains unresolved.",
+        "category": "Printers",
+        "canonical_issue": "",
+        "status": "OPEN",
+        "approval_status": "PENDING",
+        "root_cause": "",
+        "resolution_notes": "Provisional unverified note only. Open-ticket witness openwillow824; no completed resolution."
+      }
+    ]
+  },
+  "isolation_verified": true,
+  "statuses_are_synthetic_setup_not_approval_workflow": true
+}

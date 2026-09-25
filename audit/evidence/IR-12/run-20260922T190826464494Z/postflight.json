@@ -1,0 +1,14 @@
+{
+  "eligible_records_unchanged": true,
+  "row_counts_unchanged": true,
+  "counts": {
+    "knowledgearticle": 80,
+    "ticket": 500,
+    "user": 4
+  },
+  "seeded_database_main_file_unchanged": true,
+  "private_snapshot_unchanged": true,
+  "all_monkeypatches_restored": true,
+  "ticket_submissions": 0,
+  "HTTP_requests": 0
+}

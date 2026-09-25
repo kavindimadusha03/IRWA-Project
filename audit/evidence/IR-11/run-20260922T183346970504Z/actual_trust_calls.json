@@ -1,0 +1,22 @@
+[
+  {
+    "source_id": "SYN-0005",
+    "trust_weight": 0.85
+  },
+  {
+    "source_id": "SYN-0010",
+    "trust_weight": 0.85
+  },
+  {
+    "source_id": "SYN-0008",
+    "trust_weight": 0.85
+  },
+  {
+    "source_id": "SYN-0054",
+    "trust_weight": 0.85
+  },
+  {
+    "source_id": "SYN-0026",
+    "trust_weight": 0.85
+  }
+]

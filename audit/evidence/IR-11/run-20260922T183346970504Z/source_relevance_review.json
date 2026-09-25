@@ -1,0 +1,57 @@
+{
+  "method": "Read all distinct approved KB bodies and resolved title/resolution families, description variations and actual five retrieved records; keyword screening corroborates content review",
+  "eligible_records": 427,
+  "deduplicated_records": 50,
+  "approved_KB_rows": 80,
+  "eligible_resolved_tickets": 347,
+  "approved_KB_unique_bodies": 12,
+  "supported_battery_cause_or_repair_found": false,
+  "ranked_sources": [
+    {
+      "source_id": "SYN-0005",
+      "title": "Blue screen appears after installing an update",
+      "content": "Problem: Blue screen appears after installing an update on Windows 10. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "cited": true,
+      "relevance": "Partial update/laptop overlap; no battery-swelling cause or repair support"
+    },
+    {
+      "source_id": "SYN-0010",
+      "title": "Laptop is slow after Windows 11 update",
+      "content": "Problem: Laptop is slow after Windows 11 update on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "cited": true,
+      "relevance": "Partial update/laptop overlap; no battery-swelling cause or repair support"
+    },
+    {
+      "source_id": "SYN-0008",
+      "title": "Computer repeatedly restarts after Windows update",
+      "content": "Problem: Computer repeatedly restarts after Windows update on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "cited": true,
+      "relevance": "Partial update/laptop overlap; no battery-swelling cause or repair support"
+    },
+    {
+      "source_id": "SYN-0054",
+      "title": "Windows driver error after restart",
+      "content": "Problem: Windows driver error after restart on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "cited": false,
+      "relevance": "Partial update/laptop overlap; no battery-swelling cause or repair support"
+    },
+    {
+      "source_id": "SYN-0026",
+      "title": "Windows update failed and rolled back",
+      "content": "Problem: Windows update failed and rolled back on Windows 11. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "cited": false,
+      "relevance": "Partial update/laptop overlap; no battery-swelling cause or repair support"
+    }
+  ],
+  "historical_source_quality_note": "SYN-0010 title says Windows 11 while its body says Windows 10; retain as observed synthetic-data inconsistency, not evidence of battery applicability."
+}
