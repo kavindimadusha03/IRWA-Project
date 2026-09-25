@@ -1,0 +1,38 @@
+{
+  "recorded_before_requests_at_utc": "2026-09-22T13:27:54.076983+00:00",
+  "case": "IR-08",
+  "title": "Windows blue screen report",
+  "sentence_template": "Windows blue screen error {variant}",
+  "cases": [
+    {
+      "name": "lowercase",
+      "variant": "0x00000124",
+      "description": "Windows blue screen error 0x00000124",
+      "characters": 36
+    },
+    {
+      "name": "uppercase",
+      "variant": "0X00000124",
+      "description": "Windows blue screen error 0X00000124",
+      "characters": 36
+    },
+    {
+      "name": "prefix",
+      "variant": "error: 0x00000124",
+      "description": "Windows blue screen error error: 0x00000124",
+      "characters": 43
+    },
+    {
+      "name": "punctuation",
+      "variant": "0x00000124!!!",
+      "description": "Windows blue screen error 0x00000124!!!",
+      "characters": 39
+    },
+    {
+      "name": "quoted",
+      "variant": "\"0x00000124\"",
+      "description": "Windows blue screen error \"0x00000124\"",
+      "characters": 38
+    }
+  ]
+}

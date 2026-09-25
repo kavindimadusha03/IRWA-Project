@@ -1,0 +1,102 @@
+{
+  "query": "My laptop battery is swelling after charging.",
+  "items": [
+    {
+      "source_id": "SYN-0010",
+      "title": "Laptop is slow after Windows 11 update",
+      "content": "Problem: Laptop is slow after Windows 11 update on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 1.0,
+      "semantic_score": 0.301673731349585,
+      "hybrid_score": 0.6035324694059309,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 1.0,
+        "semantic_score": 0.301673731349585,
+        "hybrid_score": 0.6035324694059309
+      },
+      "source": "SYN-0010"
+    },
+    {
+      "source_id": "SYN-0008",
+      "title": "Computer repeatedly restarts after Windows update",
+      "content": "Problem: Computer repeatedly restarts after Windows update on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.8254620355089063,
+      "semantic_score": 0.21642511300909245,
+      "hybrid_score": 0.4969179689139074,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.8254620355089063,
+        "semantic_score": 0.21642511300909245,
+        "hybrid_score": 0.4969179689139074
+      },
+      "source": "SYN-0008"
+    },
+    {
+      "source_id": "SYN-0138",
+      "title": "Laptop connected to Wi-Fi but no internet access",
+      "content": "Problem: Laptop connected to Wi-Fi but no internet access on macOS. It happens on my work laptop.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+      "category": "Wi-Fi / DNS",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.6503181199277737,
+      "semantic_score": 0.18688591368730748,
+      "hybrid_score": 0.41611584552118974,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.6503181199277737,
+        "semantic_score": 0.18688591368730748,
+        "hybrid_score": 0.41611584552118974
+      },
+      "source": "SYN-0138"
+    },
+    {
+      "source_id": "SYN-0030",
+      "title": "Approved software cannot be installed on laptop",
+      "content": "Problem: Approved software cannot be installed on laptop on Windows 10. This started this morning.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+      "category": "Software Installation",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.5769878575180518,
+      "semantic_score": 0.22946955699567834,
+      "hybrid_score": 0.4079748733961345,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.5769878575180518,
+        "semantic_score": 0.22946955699567834,
+        "hybrid_score": 0.4079748733961345
+      },
+      "source": "SYN-0030"
+    },
+    {
+      "source_id": "SYN-0044",
+      "title": "Remote access VPN drops after login",
+      "content": "Problem: Remote access VPN drops after login on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+      "category": "VPN",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.45111084864561457,
+      "semantic_score": 0.15747192406660132,
+      "hybrid_score": 0.3261680241080837,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.45111084864561457,
+        "semantic_score": 0.15747192406660132,
+        "hybrid_score": 0.3261680241080837
+      },
+      "source": "SYN-0044"
+    }
+  ],
+  "best_score": 0.6035324694059309,
+  "decision": "UNCERTAIN"
+}

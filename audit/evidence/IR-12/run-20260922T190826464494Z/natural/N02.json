@@ -1,0 +1,348 @@
+{
+  "id": "N02",
+  "kind": "natural_original_retrieval",
+  "query": "The laptop casing is cracked.",
+  "started_at_utc": "2026-09-22T19:08:47.252470+00:00",
+  "deduplicated_source_ids": [
+    "KB-001",
+    "KB-002",
+    "KB-003",
+    "KB-004",
+    "KB-005",
+    "KB-006",
+    "KB-007",
+    "KB-008",
+    "KB-009",
+    "KB-017",
+    "SYN-0001",
+    "SYN-0003",
+    "SYN-0004",
+    "SYN-0005",
+    "SYN-0006",
+    "SYN-0008",
+    "SYN-0009",
+    "SYN-0010",
+    "SYN-0011",
+    "SYN-0012",
+    "SYN-0013",
+    "SYN-0014",
+    "SYN-0015",
+    "SYN-0018",
+    "SYN-0026",
+    "SYN-0027",
+    "SYN-0028",
+    "SYN-0030",
+    "SYN-0032",
+    "SYN-0033",
+    "SYN-0037",
+    "SYN-0038",
+    "SYN-0039",
+    "SYN-0044",
+    "SYN-0045",
+    "SYN-0048",
+    "SYN-0051",
+    "SYN-0052",
+    "SYN-0053",
+    "SYN-0054",
+    "SYN-0056",
+    "SYN-0059",
+    "SYN-0070",
+    "SYN-0072",
+    "SYN-0080",
+    "SYN-0092",
+    "SYN-0096",
+    "SYN-0101",
+    "SYN-0135",
+    "SYN-0138"
+  ],
+  "query_preprocessing": {
+    "original": "The laptop casing is cracked.",
+    "normalized": "laptop asking cracked.",
+    "tokens": [
+      "laptop",
+      "asking",
+      "cracked"
+    ]
+  },
+  "native_bm25": {
+    "tokens": [
+      "laptop",
+      "asking",
+      "cracked"
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.5421959150415223,
+      0.0,
+      2.2297537848450655,
+      0.0,
+      1.5027098030237314,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      2.272929808562455,
+      0.0,
+      0.0,
+      0.0,
+      5.136882122130303,
+      0.0,
+      0.0,
+      0.0,
+      1.5627275017332973,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.5027098030237314,
+      1.6054755869452961,
+      2.5617999071772237
+    ],
+    "order": "deduplicated_source_ids"
+  },
+  "hybrid_before_trust": [
+    {
+      "source_id": "SYN-0038",
+      "title": "Outlook keeps asking for password",
+      "content": "Problem: Outlook keeps asking for password on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+      "category": "Outlook / MFA",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 1.0,
+      "semantic_score": 0.1456388184644528,
+      "hybrid_score": 0.530101350155449,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0030",
+      "title": "Approved software cannot be installed on laptop",
+      "content": "Problem: Approved software cannot be installed on laptop on Windows 10. This started this morning.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+      "category": "Software Installation",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.44247264284504434,
+      "semantic_score": 0.27629121621975694,
+      "hybrid_score": 0.3510728582011363,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0138",
+      "title": "Laptop connected to Wi-Fi but no internet access",
+      "content": "Problem: Laptop connected to Wi-Fi but no internet access on macOS. It happens on my work laptop.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+      "category": "Wi-Fi / DNS",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.49870716249078073,
+      "semantic_score": 0.1673815395855638,
+      "hybrid_score": 0.31647806989291144,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0010",
+      "title": "Laptop is slow after Windows 11 update",
+      "content": "Problem: Laptop is slow after Windows 11 update on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.43406753977067514,
+      "semantic_score": 0.21390776913408488,
+      "hybrid_score": 0.3129796659205505,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0012",
+      "title": "Password expired and user cannot log in",
+      "content": "Problem: Password expired and user cannot log in on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+      "category": "Accounts / Passwords",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.2925334409660439,
+      "semantic_score": 0.2514663086456401,
+      "hybrid_score": 0.26994651818982185,
+      "exact_error_match": false
+    }
+  ],
+  "metadata_calls": [
+    {
+      "source_id": "SYN-0038",
+      "query": "The laptop casing is cracked.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0030",
+      "query": "The laptop casing is cracked.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0138",
+      "query": "The laptop casing is cracked.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0010",
+      "query": "The laptop casing is cracked.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0012",
+      "query": "The laptop casing is cracked.",
+      "bonus": 0.08
+    }
+  ],
+  "trust_calls": [
+    {
+      "source_id": "SYN-0038",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0030",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0138",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0010",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0012",
+      "trust": 0.85
+    }
+  ],
+  "retrieval": {
+    "query": "The laptop casing is cracked.",
+    "items": [
+      {
+        "source_id": "SYN-0038",
+        "title": "Outlook keeps asking for password",
+        "content": "Problem: Outlook keeps asking for password on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+        "category": "Outlook / MFA",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 1.0,
+        "semantic_score": 0.1456388184644528,
+        "hybrid_score": 0.5305861476321316,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 1.0,
+          "semantic_score": 0.1456388184644528,
+          "hybrid_score": 0.5305861476321316
+        },
+        "source": "SYN-0038"
+      },
+      {
+        "source_id": "SYN-0030",
+        "title": "Approved software cannot be installed on laptop",
+        "content": "Problem: Approved software cannot be installed on laptop on Windows 10. This started this morning.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+        "category": "Software Installation",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.44247264284504434,
+        "semantic_score": 0.27629121621975694,
+        "hybrid_score": 0.37841192947096586,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.44247264284504434,
+          "semantic_score": 0.27629121621975694,
+          "hybrid_score": 0.37841192947096586
+        },
+        "source": "SYN-0030"
+      },
+      {
+        "source_id": "SYN-0138",
+        "title": "Laptop connected to Wi-Fi but no internet access",
+        "content": "Problem: Laptop connected to Wi-Fi but no internet access on macOS. It happens on my work laptop.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+        "category": "Wi-Fi / DNS",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.49870716249078073,
+        "semantic_score": 0.1673815395855638,
+        "hybrid_score": 0.34900635940897473,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.49870716249078073,
+          "semantic_score": 0.1673815395855638,
+          "hybrid_score": 0.34900635940897473
+        },
+        "source": "SYN-0138"
+      },
+      {
+        "source_id": "SYN-0010",
+        "title": "Laptop is slow after Windows 11 update",
+        "content": "Problem: Laptop is slow after Windows 11 update on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+        "category": "Windows / Updates",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.43406753977067514,
+        "semantic_score": 0.21390776913408488,
+        "hybrid_score": 0.34603271603246794,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.43406753977067514,
+          "semantic_score": 0.21390776913408488,
+          "hybrid_score": 0.34603271603246794
+        },
+        "source": "SYN-0010"
+      },
+      {
+        "source_id": "SYN-0012",
+        "title": "Password expired and user cannot log in",
+        "content": "Problem: Password expired and user cannot log in on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+        "category": "Accounts / Passwords",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.2925334409660439,
+        "semantic_score": 0.2514663086456401,
+        "hybrid_score": 0.30945454046134857,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.2925334409660439,
+          "semantic_score": 0.2514663086456401,
+          "hybrid_score": 0.30945454046134857
+        },
+        "source": "SYN-0012"
+      }
+    ],
+    "best_score": 0.5305861476321316,
+    "decision": "LOW"
+  },
+  "expected_decision": "LOW",
+  "decision_matches": true,
+  "elapsed_seconds": 0.242
+}

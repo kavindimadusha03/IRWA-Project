@@ -1,0 +1,44 @@
+{
+  "tables": {
+    "agentlog": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "category": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "knowledgearticle": {
+      "row_count": 80,
+      "rows_sha256": "7164352de39d142623de1f2528c57b51509abf82b1103539db37e7f40286e00c"
+    },
+    "notification": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "passwordresettoken": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "securityevent": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "solutionfeedback": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "ticket": {
+      "row_count": 500,
+      "rows_sha256": "9e1be706eccf1fe8d01397215be75d876d8d3ce607045936ec15ce4ddd8c999b"
+    },
+    "ticketcitation": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "user": {
+      "row_count": 4,
+      "rows_sha256": "cd33723281b2c2dc863de8e575a3c9967a3e1f9c14c25976aa2ac14450805ea7"
+    }
+  }
+}

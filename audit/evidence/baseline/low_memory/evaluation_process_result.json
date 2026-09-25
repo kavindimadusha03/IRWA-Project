@@ -1,0 +1,17 @@
+{
+  "recorded_at_utc": "2026-09-21T17:51:32.133237+00:00",
+  "command": [
+    "C:\\Users\\PSB\\Desktop\\KnowGap\\IRWA-Project\\.venv\\Scripts\\python.exe",
+    "-B",
+    "C:\\Users\\PSB\\Desktop\\KnowGap\\IRWA-Project\\audit\\scripts\\collect_baseline.py",
+    "evaluation",
+    "--low-memory"
+  ],
+  "exit_code": 1,
+  "timed_out": false,
+  "elapsed_seconds": 11.346,
+  "thread_limit": 1,
+  "original_database_main_file_unchanged": true,
+  "production_sources_unchanged": true,
+  "integrity_limit": "Main-file hashes do not cover concurrent changes in a separate SQLite WAL. Helper never opens the original DB for writing."
+}

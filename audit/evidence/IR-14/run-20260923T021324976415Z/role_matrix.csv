@@ -1,0 +1,16 @@
+role,id,method,endpoint,expected_allowed,http_status,location,resolved_user_id,resolved_role,claimed_role,changed_tables,effect,outcome,evidence
+CUSTOMER,R01,POST,/knowledge/81/approve,False,403,,1,CUSTOMER,KNOWLEDGE_ANALYST,,No table or fixture changes,PASS,CUSTOMER/R01/response.json
+CUSTOMER,R02,GET,/admin,False,403,,1,CUSTOMER,ADMIN,,No table or fixture changes,PASS,CUSTOMER/R02/response.json
+CUSTOMER,R03,POST,/admin/categories/create,False,403,,1,CUSTOMER,ADMIN,,No table or fixture changes,PASS,CUSTOMER/R03/response.json
+IT_SUPPORT,R01,POST,/knowledge/81/approve,False,403,,2,IT_SUPPORT,KNOWLEDGE_ANALYST,,No table or fixture changes,PASS,IT_SUPPORT/R01/response.json
+IT_SUPPORT,R02,GET,/admin,False,403,,2,IT_SUPPORT,ADMIN,,No table or fixture changes,PASS,IT_SUPPORT/R02/response.json
+IT_SUPPORT,R03,POST,/admin/categories/create,False,403,,2,IT_SUPPORT,ADMIN,,No table or fixture changes,PASS,IT_SUPPORT/R03/response.json
+KNOWLEDGE_ANALYST,R01,POST,/knowledge/81/approve,True,303,/knowledge,3,KNOWLEDGE_ANALYST,,knowledgearticle,Only fixture approved; authoritative true; updated_at changed,PASS,KNOWLEDGE_ANALYST/R01/response.json
+KNOWLEDGE_ANALYST,R02,GET,/admin,False,403,,3,KNOWLEDGE_ANALYST,ADMIN,,No table or fixture changes,PASS,KNOWLEDGE_ANALYST/R02/response.json
+KNOWLEDGE_ANALYST,R03,POST,/admin/categories/create,False,403,,3,KNOWLEDGE_ANALYST,ADMIN,,No table or fixture changes,PASS,KNOWLEDGE_ANALYST/R03/response.json
+ADMIN,R01,POST,/knowledge/81/approve,False,403,,4,ADMIN,KNOWLEDGE_ANALYST,,No table or fixture changes,PASS,ADMIN/R01/response.json
+ADMIN,R02,GET,/admin,True,200,,4,ADMIN,,category,Admin HTML returned; eight missing default categories created,PASS,ADMIN/R02/response.json
+ADMIN,R03,POST,/admin/categories/create,True,303,/admin?message=Category+created.,4,ADMIN,,category,Exactly one requested active category added; previous eight unchanged,PASS,ADMIN/R03/response.json
+AUDIT_VIEWER,R01,POST,/knowledge/81/approve,False,403,,5,AUDIT_VIEWER,KNOWLEDGE_ANALYST,,No table or fixture changes,PASS,AUDIT_VIEWER/R01/response.json
+AUDIT_VIEWER,R02,GET,/admin,False,403,,5,AUDIT_VIEWER,ADMIN,,No table or fixture changes,PASS,AUDIT_VIEWER/R02/response.json
+AUDIT_VIEWER,R03,POST,/admin/categories/create,False,403,,5,AUDIT_VIEWER,ADMIN,,No table or fixture changes,PASS,AUDIT_VIEWER/R03/response.json

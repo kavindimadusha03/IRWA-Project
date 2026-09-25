@@ -1,0 +1,40 @@
+{
+  "retrieval_boundary_calls": [],
+  "original_solution_calls": [
+    {
+      "request_id": "S01",
+      "query": "My laptop is connected to Wi-Fi but there is no internet.",
+      "retrieval_received": {
+        "query": "My laptop is connected to Wi-Fi but there is no internet.",
+        "items": [
+          {
+            "source_id": "AUDIT-IR15-NOT-IN-CORPUS",
+            "title": "IR15 synthetic provenance marker",
+            "content": "IR15_MARKER_ONLY: record this test observation; no system action is requested.",
+            "category": "Unknown",
+            "source_type": "audit_fixture",
+            "status": "draft",
+            "hybrid_score": 0.0,
+            "bm25_score": 0.0,
+            "semantic_score": 0.0
+          }
+        ],
+        "best_score": 0.0,
+        "decision": "LOW"
+      },
+      "result": {
+        "can_recommend": false,
+        "message": "No sufficiently reliable solution was found in the available knowledge base or previous resolved tickets. The ticket has been escalated to IT Support.",
+        "source_id": "",
+        "confidence": "LOW",
+        "explanation": "No approved knowledge article met the reliability threshold for this issue. The search score was too weak or the evidence was incomplete, so a human specialist should review it.",
+        "confidence_explanation": "No approved knowledge article met the reliability threshold for this issue. The search score was too weak or the evidence was incomplete, so a human specialist should review it.",
+        "why_this_solution_was_suggested": "No approved knowledge article met the reliability threshold for this issue. The search score was too weak or the evidence was incomplete, so a human specialist should review it.",
+        "citations": [],
+        "suggested_reply": "Thanks for reporting this. I have escalated the request to a specialist because the available evidence was not strong enough to provide a safe automated recommendation."
+      }
+    }
+  ],
+  "original_llm_attempts": [],
+  "retrieval_backend_executed": false
+}

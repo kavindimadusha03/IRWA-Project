@@ -1,0 +1,42 @@
+{
+  "id": 501,
+  "title": "Wireless connected but websites will not load",
+  "description": "My wireless connection shows connected but websites will not load.",
+  "masked_description": "My wireless connection shows connected but websites will not load.",
+  "category": "Wi-Fi / DNS",
+  "canonical_issue": "My wireless connection shows connected but websites will not load.",
+  "priority": "Medium",
+  "status": "SOLUTION_PROPOSED",
+  "approval_status": "PENDING",
+  "retrieval_confidence": 0.8240901607668474,
+  "source_used": "SYN-0027",
+  "recommended_solution": "Evidence source SYN-0027 | Wireless icon shows connected but websites do not load\nProblem: Wireless icon shows connected but websites do not load on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.\n\nEvidence source KB-001 | DNS Cache Recovery - Guide 1\nIf Wi-Fi is connected but internet access is unavailable, open Command Prompt and run ipconfig /flushdns. Reconnect to Wi-Fi and test again.\n\nEvidence source SYN-0033 | Wi-Fi connected but browser says no internet\nProblem: Wi-Fi connected but browser says no internet on Windows 11. I already restarted the device once.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+  "decision_explanation": "This recommendation was selected because the issue matched the approved guidance in Wireless icon shows connected but websites do not load with 82% relevance, and it aligns with 3 supporting sources that were validated for this workflow.",
+  "suggested_reply": "Thanks for reporting this issue. Based on the approved guidance in Wireless icon shows connected but websites do not load, the recommended next step is to follow the documented troubleshooting steps and confirm the issue is resolved.",
+  "citations": [
+    {
+      "source_id": "SYN-0027",
+      "title": "Wireless icon shows connected but websites do not load",
+      "source_type": "resolved_ticket",
+      "category": "Wi-Fi / DNS",
+      "relevance_score": 0.8240901607668474,
+      "rank": 1
+    },
+    {
+      "source_id": "KB-001",
+      "title": "DNS Cache Recovery - Guide 1",
+      "source_type": "Internal KB",
+      "category": "Wi-Fi / DNS",
+      "relevance_score": 0.4725828118362016,
+      "rank": 2
+    },
+    {
+      "source_id": "SYN-0033",
+      "title": "Wi-Fi connected but browser says no internet",
+      "source_type": "resolved_ticket",
+      "category": "Wi-Fi / DNS",
+      "relevance_score": 0.4610259258463638,
+      "rank": 3
+    }
+  ]
+}

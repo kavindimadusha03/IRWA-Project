@@ -1,0 +1,99 @@
+IR-15 start owned loopback server
+IR-15 normal synthetic CUSTOMER login/profile control
+IR-15 R00 valid benign retrieval control
+IR-15 R01 empty issue
+IR-15 R02 missing required payload
+IR-15 R03 missing required envelope sender
+IR-15 R04 object issue
+IR-15 R05 list issue
+IR-15 R06 bounded 4000-character issue
+IR-15 R07 benign Unicode
+IR-15 R08 malformed JSON
+IR-15 R09 valid anonymous request
+IR-15 P01 claimed sender
+IR-15 P02 claimed receiver
+IR-15 P03 claimed task
+IR-15 S00 solution control using saved genuine IR13 retrieval
+IR-15 S01 synthetic provenance LOW control
+IR-15 S02 synthetic provenance HIGH attempt
+IR-15 S03 retrieval wrong container type
+IR-15 S04 missing retrieval object
+IR-15 S05 one malformed nested item
+{"case": "IR-15", "mode": "selected", "started_at_utc": "2026-09-23T02:38:44.433704+00:00", "status": "Executed; awaiting scoped validation and provenance review", "outcome": "Unassessed", "login_requests": 1, "profile_requests": 1, "documentation_requests": 2, "target_requests": 19, "retrieval_boundary_calls": 10, "real_retrieval_calls": 0, "solution_calls": 4, "redirect_followups": 0, "isolated_database": "C:\\Users\\PSB\\AppData\\Local\\Temp\\knowgap-ir15-i30oceqv\\knowgap.db", "llm": {"configured_enabled": false, "attempts": 2, "successful_returns": 0, "failures": 2}, "full_application_loaded": false, "stage": "S05 one malformed nested item", "base_url": "http://127.0.0.1:8001", "server_started": true, "server_stopped": true, "finished_at_utc": "2026-09-23T02:38:56.107535+00:00"}
+
+INFO:     Started server process [31912]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\.venv\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\.venv\Lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\.venv\Lib\site-packages\starlette\applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\.venv\Lib\site-packages\starlette\middleware\errors.py", line 187, in __call__
+    raise exc
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\.venv\Lib\site-packages\starlette\middleware\errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\.venv\Lib\site-packages\starlette\routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\.venv\Lib\site-packages\starlette\routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\.venv\Lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\.venv\Lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\.venv\Lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\.venv\Lib\site-packages\fastapi\routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\.venv\Lib\site-packages\starlette\concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\.venv\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2706, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 1100, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\routes\agents.py", line 35, in solution_recommend
+    return recommend_solution(query, retrieval)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\audit\scripts\run_ir15.py", line 107, in observed_solution
+    try: result=original_solution(query,retrieval); item['result']=result; return result
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\agents\solution_agent.py", line 31, in recommend_solution
+    evidence = "\n\n".join(
+               ^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\agents\solution_agent.py", line 32, in <genexpr>
+    f"Evidence source {item['source_id']} | {item['title']}\n{item['content']}"
+                       ~~~~^^^^^^^^^^^^^
+KeyError: 'source_id'
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [31912]
+

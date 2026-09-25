@@ -1,0 +1,19 @@
+{
+  "recorded_before_request_at_utc": "2026-09-22T13:28:52.447635+00:00",
+  "fixture": {
+    "doc_id": "AUDIT-IR08-EXACT-001",
+    "title": "Synthetic lookup: Windows blue screen 0x00000124",
+    "content": "Synthetic IR-08 lookup fixture for error 0x00000124. This fixture does not establish a diagnosis or a verified repair. Record the displayed code and symptoms and ask IT Support to review them before applying changes.",
+    "category": "Windows / Updates",
+    "status": "approved",
+    "source_type": "internal_kb",
+    "author": "IR-08 synthetic audit fixture",
+    "authoritative": false,
+    "supported_os": "Any",
+    "security_class": "internal"
+  },
+  "database_record_id": 81,
+  "approved_is_synthetic_test_metadata": true,
+  "no_independent_diagnosis_or_repair_validation": true,
+  "isolation_verified": true
+}

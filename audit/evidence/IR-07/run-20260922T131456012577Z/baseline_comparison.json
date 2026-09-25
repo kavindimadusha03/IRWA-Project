@@ -1,0 +1,43 @@
+{
+  "recorded_at_utc": "2026-09-22T13:21:38.845275+00:00",
+  "baseline_evidence": "audit/evidence/IR-05/run-20260922T035809651634Z/baseline",
+  "baseline_resubmitted": false,
+  "source_config_LLM_mode_and_eligible_corpus_match": true,
+  "baseline_input_characters": 58,
+  "noisy_submitted_characters": 1099,
+  "baseline_canonical_characters": 58,
+  "noisy_canonical_characters": 180,
+  "baseline_normalized_query": "printer s queue stuck print jobs will not clear",
+  "noisy_normalized_query": "printer s queue stuck print jobs will not clear notebook blue meeting tuesday. b",
+  "baseline_ranked_sources": [
+    "KB-005",
+    "SYN-0028",
+    "SYN-0013",
+    "SYN-0056",
+    "SYN-0092"
+  ],
+  "noisy_ranked_sources": [
+    "KB-005",
+    "SYN-0013",
+    "SYN-0028",
+    "SYN-0056",
+    "SYN-0045"
+  ],
+  "top_five_shared_sources": [
+    "KB-005",
+    "SYN-0013",
+    "SYN-0028",
+    "SYN-0056"
+  ],
+  "same_top_three_source_set": true,
+  "same_top_three_order": false,
+  "baseline_best_score": 1.1337826573877303,
+  "noisy_best_score": 1.107292534830274,
+  "best_score_delta": -0.026490122557456308,
+  "both_decisions": "HIGH",
+  "both_categories": "Printers",
+  "both_priorities": "Medium",
+  "both_stored_states": "SOLUTION_PROPOSED / PENDING",
+  "answer_review": "Same three directly queue-related source bodies, second and third swapped; no noise-derived or unrelated repair. Last two hits category-adjacent and not cited.",
+  "scope": "Single prefix-issue noisy ticket compared with previously saved baseline. Most noise is excluded by canonical truncation; not an isolated long-query ranker experiment or a general robustness metric."
+}

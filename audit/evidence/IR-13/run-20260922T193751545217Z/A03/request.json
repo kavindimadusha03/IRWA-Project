@@ -1,0 +1,27 @@
+{
+  "id": "A03",
+  "recorded_before_send_at_utc": "2026-09-22T19:38:13.605659+00:00",
+  "method": "POST",
+  "url": "http://127.0.0.1:8001/agents/retrieval/search",
+  "path": "/agents/retrieval/search",
+  "encoding": "json",
+  "declared_body": {
+    "message_id": "ir13-retrieval-001",
+    "request_id": "ir13-local-audit",
+    "sender": "audit_client",
+    "receiver": "retrieval_agent",
+    "task": "retrieve_knowledge",
+    "payload": {
+      "issue": "My laptop is connected to Wi-Fi but there is no internet."
+    }
+  },
+  "serialized_body": "{\"message_id\":\"ir13-retrieval-001\",\"request_id\":\"ir13-local-audit\",\"sender\":\"audit_client\",\"receiver\":\"retrieval_agent\",\"task\":\"retrieve_knowledge\",\"payload\":{\"issue\":\"My laptop is connected to Wi-Fi but there is no internet.\"}}",
+  "content_type": "application/json",
+  "cookie_header_present": false,
+  "authorization_header_present": false,
+  "proxy_authorization_header_present": false,
+  "client_cookie_count_before": 0,
+  "fresh_client": true,
+  "follow_redirects": false,
+  "trust_env": false
+}

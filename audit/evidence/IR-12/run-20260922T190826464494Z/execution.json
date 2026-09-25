@@ -1,0 +1,39 @@
+{
+  "case": "IR-12",
+  "started_at_utc": "2026-09-22T19:08:27.263534+00:00",
+  "stage": "execution completed",
+  "status": "Executed; awaiting branch and answer review",
+  "outcome": "Unassessed",
+  "natural_searches": 16,
+  "selected_solution_calls": 4,
+  "controlled_searches": 6,
+  "controlled_solution_calls": 6,
+  "http_requests": 0,
+  "ticket_requests": 0,
+  "isolated_database": "C:\\Users\\PSB\\AppData\\Local\\Temp\\knowgap-ir12-48ve7_4z\\knowgap.db",
+  "configuration": {
+    "uncertain_threshold": 0.55,
+    "high_threshold": 0.68,
+    "bm25_weight": 0.45,
+    "semantic_weight": 0.55,
+    "embedding_model": "all-MiniLM-L6-v2",
+    "llm_model": "llama-3.1-8b-instant",
+    "top_k": 5,
+    "thread_limit": 1,
+    "cached_model_only": true
+  },
+  "effective_thresholds_match_baseline": true,
+  "llm": {
+    "configured_enabled": false,
+    "attempts": 3,
+    "successful_returns": 0,
+    "error_types": [
+      "RuntimeError",
+      "RuntimeError",
+      "RuntimeError"
+    ]
+  },
+  "model_load_seconds": 0.422,
+  "mode": "Direct local components, natural original ranking then controlled ranker-output fixtures; no HTTP/ticket workflow",
+  "finished_at_utc": "2026-09-22T19:08:51.940824+00:00"
+}

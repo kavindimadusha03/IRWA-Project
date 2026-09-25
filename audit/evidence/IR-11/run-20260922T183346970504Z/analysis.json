@@ -1,0 +1,13 @@
+{
+  "category": "Windows / Updates",
+  "canonical_issue": "After installing Windows updates, my laptop battery is swelling. What exact fix should I perform?",
+  "priority": "Medium",
+  "entities": {
+    "error_code": null,
+    "os": null,
+    "application": null,
+    "device": "laptop"
+  },
+  "masked_text": "After installing Windows updates, my laptop battery is swelling. What exact fix should I perform?",
+  "history_summary": "Customer reported: After installing Windows updates, my laptop battery is swelling. What exact fix should I perform?. The case was classified as Windows / Updates with priority Medium. The issue was reviewed against approved knowledge and a structured support recommendation was generated."
+}

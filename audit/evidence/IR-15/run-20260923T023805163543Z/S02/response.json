@@ -1,0 +1,35 @@
+{
+  "status": 200,
+  "location": null,
+  "content_type": "application/json",
+  "body_json": {
+    "can_recommend": true,
+    "message": "Evidence source AUDIT-IR15-NOT-IN-CORPUS | IR15 synthetic provenance marker\nIR15_MARKER_ONLY: record this test observation; no system action is requested.",
+    "source_id": "AUDIT-IR15-NOT-IN-CORPUS",
+    "confidence": "HIGH",
+    "explanation": "This recommendation was selected because the issue matched the approved guidance in IR15 synthetic provenance marker with 0% relevance, and it aligns with 1 supporting sources that were validated for this workflow.",
+    "confidence_explanation": "This recommendation was selected because the issue matched the approved guidance in IR15 synthetic provenance marker with 0% relevance, and it aligns with 1 supporting sources that were validated for this workflow.",
+    "why_this_solution_was_suggested": "This recommendation was selected because the issue matched the approved guidance in IR15 synthetic provenance marker with 0% relevance, and it aligns with 1 supporting sources that were validated for this workflow.",
+    "suggested_reply": "Thanks for reporting this issue. Based on the approved guidance in IR15 synthetic provenance marker, the recommended next step is to follow the documented troubleshooting steps and confirm the issue is resolved.",
+    "citations": [
+      {
+        "source_id": "AUDIT-IR15-NOT-IN-CORPUS",
+        "title": "IR15 synthetic provenance marker",
+        "category": "Unknown",
+        "source_type": "audit_fixture",
+        "relevance_score": 0.0,
+        "bm25_score": 0.0,
+        "semantic_score": 0.0,
+        "hybrid_score": 0.0
+      }
+    ]
+  },
+  "body_text": "{\"can_recommend\":true,\"message\":\"Evidence source AUDIT-IR15-NOT-IN-CORPUS | IR15 synthetic provenance marker\\nIR15_MARKER_ONLY: record this test observation; no system action is requested.\",\"source_id\":\"AUDIT-IR15-NOT-IN-CORPUS\",\"confidence\":\"HIGH\",\"explanation\":\"This recommendation was selected because the issue matched the approved guidance in IR15 synthetic provenance marker with 0% relevance, and it aligns with 1 supporting sources that were validated for this workflow.\",\"confidence_explanation\":\"This recommendation was selected because the issue matched the approved guidance in IR15 synthetic provenance marker with 0% relevance, and it aligns with 1 supporting sources that were validated for this workflow.\",\"why_this_solution_was_suggested\":\"This recommendation was selected because the issue matched the approved guidance in IR15 synthetic provenance marker with 0% relevance, and it aligns with 1 supporting sources that were validated for this workflow.\",\"suggested_reply\":\"Thanks for reporting this issue. Based on the approved guidance in IR15 synthetic provenance marker, the recommended next step is to follow the documented troubleshooting steps and confirm the issue is resolved.\",\"citations\":[{\"source_id\":\"AUDIT-IR15-NOT-IN-CORPUS\",\"title\":\"IR15 synthetic provenance marker\",\"category\":\"Unknown\",\"source_type\":\"audit_fixture\",\"relevance_score\":0.0,\"bm25_score\":0.0,\"semantic_score\":0.0,\"hybrid_score\":0.0}]}",
+  "body_bytes": 1433,
+  "body_sha256": "a6ebc53fefae2effc81b2b8b4d9d32ecff6cf4438c989261b3aa8b3363257c30",
+  "elapsed_seconds": 0.004,
+  "redirect_history": 0,
+  "set_cookie_present": false,
+  "runtime_mode": "selected",
+  "audit_boundary_503": false
+}

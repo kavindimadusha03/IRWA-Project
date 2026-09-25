@@ -1,0 +1,12 @@
+{
+  "status": 200,
+  "identity": {
+    "path": "/profile",
+    "found": true,
+    "id": 1,
+    "stored_role": "CUSTOMER",
+    "active": true
+  },
+  "redirect_history": 0,
+  "profile_form_present": true
+}

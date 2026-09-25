@@ -1,0 +1,85 @@
+{
+  "recorded_before_execution_at_utc": "2026-09-22T19:08:26.896502+00:00",
+  "natural_queries": [
+    {
+      "id": "N01",
+      "query": "My laptop battery is swelling after charging."
+    },
+    {
+      "id": "N02",
+      "query": "The laptop casing is cracked."
+    },
+    {
+      "id": "N03",
+      "query": "My laptop screen has a dark patch."
+    },
+    {
+      "id": "N04",
+      "query": "My laptop hinge is broken."
+    },
+    {
+      "id": "N05",
+      "query": "My laptop keyboard has a loose key."
+    },
+    {
+      "id": "N06",
+      "query": "The laptop battery no longer holds charge."
+    },
+    {
+      "id": "N07",
+      "query": "My laptop is hot after charging."
+    },
+    {
+      "id": "N08",
+      "query": "The computer makes a rattling sound."
+    },
+    {
+      "id": "N09",
+      "query": "My laptop battery is swollen after an update."
+    },
+    {
+      "id": "N10",
+      "query": "After an update my laptop case is bulging."
+    },
+    {
+      "id": "N11",
+      "query": "The screen flickers when the laptop starts."
+    },
+    {
+      "id": "N12",
+      "query": "My computer restarts unexpectedly."
+    },
+    {
+      "id": "N13",
+      "query": "My laptop is slow."
+    },
+    {
+      "id": "N14",
+      "query": "My printer queue is stuck."
+    },
+    {
+      "id": "N15",
+      "query": "What colour is the notebook?"
+    },
+    {
+      "id": "N16",
+      "query": "The device makes a clicking noise."
+    }
+  ],
+  "natural_search_limit": 16,
+  "no_adaptive_variants": true,
+  "selection_rule": "Closest below and at/above each effective threshold, tie by query ID; selected unique queries get solution once using same saved actual retrieval",
+  "near_window": 0.025,
+  "controlled_rule": "nextafter(threshold,-inf), exact threshold, nextafter(threshold,+inf) for both thresholds; pretrust computed by inversion of original trust/metadata",
+  "controlled_record": {
+    "source_id": "AUDIT-IR12-CONTROL",
+    "title": "Boundary diagnostic note",
+    "content": "Synthetic boundary diagnostic reference. This record supplies no troubleshooting action.",
+    "category": "",
+    "supported_os": "Any",
+    "source_type": "internal_kb",
+    "status": "approved"
+  },
+  "controlled_query": "Boundary diagnostic note.",
+  "no_HTTP_or_ticket_requests": true
+}

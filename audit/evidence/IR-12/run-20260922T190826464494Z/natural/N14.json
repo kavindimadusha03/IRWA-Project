@@ -1,0 +1,348 @@
+{
+  "id": "N14",
+  "kind": "natural_original_retrieval",
+  "query": "My printer queue is stuck.",
+  "started_at_utc": "2026-09-22T19:08:50.821286+00:00",
+  "deduplicated_source_ids": [
+    "KB-001",
+    "KB-002",
+    "KB-003",
+    "KB-004",
+    "KB-005",
+    "KB-006",
+    "KB-007",
+    "KB-008",
+    "KB-009",
+    "KB-017",
+    "SYN-0001",
+    "SYN-0003",
+    "SYN-0004",
+    "SYN-0005",
+    "SYN-0006",
+    "SYN-0008",
+    "SYN-0009",
+    "SYN-0010",
+    "SYN-0011",
+    "SYN-0012",
+    "SYN-0013",
+    "SYN-0014",
+    "SYN-0015",
+    "SYN-0018",
+    "SYN-0026",
+    "SYN-0027",
+    "SYN-0028",
+    "SYN-0030",
+    "SYN-0032",
+    "SYN-0033",
+    "SYN-0037",
+    "SYN-0038",
+    "SYN-0039",
+    "SYN-0044",
+    "SYN-0045",
+    "SYN-0048",
+    "SYN-0051",
+    "SYN-0052",
+    "SYN-0053",
+    "SYN-0054",
+    "SYN-0056",
+    "SYN-0059",
+    "SYN-0070",
+    "SYN-0072",
+    "SYN-0080",
+    "SYN-0092",
+    "SYN-0096",
+    "SYN-0101",
+    "SYN-0135",
+    "SYN-0138"
+  ],
+  "query_preprocessing": {
+    "original": "My printer queue is stuck.",
+    "normalized": "printer queue stuck",
+    "tokens": [
+      "printer",
+      "queue",
+      "stuck"
+    ]
+  },
+  "native_bm25": {
+    "tokens": [
+      "printer",
+      "queue",
+      "stuck"
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      5.740605694648315,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      6.333137047342689,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      9.004256596269032,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      5.136697462320868,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      5.28163624900543,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      5.331939637935269,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "order": "deduplicated_source_ids"
+  },
+  "hybrid_before_trust": [
+    {
+      "source_id": "SYN-0028",
+      "title": "Print queue is stuck and cannot be cleared",
+      "content": "Problem: Print queue is stuck and cannot be cleared on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+      "category": "Printers",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 1.0,
+      "semantic_score": 0.7671127829086635,
+      "hybrid_score": 0.871912030599765,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0013",
+      "title": "Printer is online but jobs stay in queue",
+      "content": "Problem: Printer is online but jobs stay in queue on Ubuntu. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+      "category": "Printers",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.7033492415094947,
+      "semantic_score": 0.7732947967304349,
+      "hybrid_score": 0.7418192968810119,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "KB-005",
+      "title": "Clear Print Queue - Guide 1",
+      "content": "Stop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again.",
+      "category": "Printers",
+      "supported_os": "Any",
+      "source_type": "Internal KB",
+      "status": "approved",
+      "bm25_score": 0.637543547684655,
+      "semantic_score": 0.7177053821208172,
+      "hybrid_score": 0.6816325566245443,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0056",
+      "title": "Office printer prints blank pages",
+      "content": "Problem: Office printer prints blank pages on Windows 11. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+      "category": "Printers",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.5865710503179028,
+      "semantic_score": 0.4756250278003489,
+      "hybrid_score": 0.5255507379332482,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0092",
+      "title": "Windows cannot find network printer",
+      "content": "Problem: Windows cannot find network printer on macOS. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+      "category": "Printers",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.5921576735323814,
+      "semantic_score": 0.4684450641505353,
+      "hybrid_score": 0.524115738372366,
+      "exact_error_match": false
+    }
+  ],
+  "metadata_calls": [
+    {
+      "source_id": "SYN-0028",
+      "query": "My printer queue is stuck.",
+      "bonus": 0.26
+    },
+    {
+      "source_id": "SYN-0013",
+      "query": "My printer queue is stuck.",
+      "bonus": 0.26
+    },
+    {
+      "source_id": "KB-005",
+      "query": "My printer queue is stuck.",
+      "bonus": 0.26
+    },
+    {
+      "source_id": "SYN-0056",
+      "query": "My printer queue is stuck.",
+      "bonus": 0.26
+    },
+    {
+      "source_id": "SYN-0092",
+      "query": "My printer queue is stuck.",
+      "bonus": 0.26
+    }
+  ],
+  "trust_calls": [
+    {
+      "source_id": "SYN-0028",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0013",
+      "trust": 0.85
+    },
+    {
+      "source_id": "KB-005",
+      "trust": 1.0
+    },
+    {
+      "source_id": "SYN-0056",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0092",
+      "trust": 0.85
+    }
+  ],
+  "retrieval": {
+    "query": "My printer queue is stuck.",
+    "items": [
+      {
+        "source_id": "SYN-0028",
+        "title": "Print queue is stuck and cannot be cleared",
+        "content": "Problem: Print queue is stuck and cannot be cleared on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+        "category": "Printers",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 1.0,
+        "semantic_score": 0.7671127829086635,
+        "hybrid_score": 1.0011252260098003,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 1.0,
+          "semantic_score": 0.7671127829086635,
+          "hybrid_score": 1.0011252260098003
+        },
+        "source": "SYN-0028"
+      },
+      {
+        "source_id": "KB-005",
+        "title": "Clear Print Queue - Guide 1",
+        "content": "Stop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again.",
+        "category": "Printers",
+        "supported_os": "Any",
+        "source_type": "Internal KB",
+        "status": "approved",
+        "bm25_score": 0.637543547684655,
+        "semantic_score": 0.7177053821208172,
+        "hybrid_score": 0.9416325566245443,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.637543547684655,
+          "semantic_score": 0.7177053821208172,
+          "hybrid_score": 0.9416325566245443
+        },
+        "source": "KB-005"
+      },
+      {
+        "source_id": "SYN-0013",
+        "title": "Printer is online but jobs stay in queue",
+        "content": "Problem: Printer is online but jobs stay in queue on Ubuntu. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+        "category": "Printers",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.7033492415094947,
+        "semantic_score": 0.7732947967304349,
+        "hybrid_score": 0.8905464023488601,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.7033492415094947,
+          "semantic_score": 0.7732947967304349,
+          "hybrid_score": 0.8905464023488601
+        },
+        "source": "SYN-0013"
+      },
+      {
+        "source_id": "SYN-0056",
+        "title": "Office printer prints blank pages",
+        "content": "Problem: Office printer prints blank pages on Windows 11. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+        "category": "Printers",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.5865710503179028,
+        "semantic_score": 0.4756250278003489,
+        "hybrid_score": 0.706718127243261,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.5865710503179028,
+          "semantic_score": 0.4756250278003489,
+          "hybrid_score": 0.706718127243261
+        },
+        "source": "SYN-0056"
+      },
+      {
+        "source_id": "SYN-0092",
+        "title": "Windows cannot find network printer",
+        "content": "Problem: Windows cannot find network printer on macOS. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+        "category": "Printers",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.5921576735323814,
+        "semantic_score": 0.4684450641505353,
+        "hybrid_score": 0.7054983776165111,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.5921576735323814,
+          "semantic_score": 0.4684450641505353,
+          "hybrid_score": 0.7054983776165111
+        },
+        "source": "SYN-0092"
+      }
+    ],
+    "best_score": 1.0011252260098003,
+    "decision": "HIGH"
+  },
+  "expected_decision": "HIGH",
+  "decision_matches": true,
+  "elapsed_seconds": 0.361
+}

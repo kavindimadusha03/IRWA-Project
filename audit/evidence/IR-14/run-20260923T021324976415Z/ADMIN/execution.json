@@ -1,0 +1,46 @@
+{
+  "case": "IR-14",
+  "role": "ADMIN",
+  "started_at_utc": "2026-09-23T02:13:44.255483+00:00",
+  "stage": "execution completed",
+  "status": "Executed; awaiting role and mutation review",
+  "outcome": "Unassessed",
+  "login_requests": 1,
+  "profile_requests": 1,
+  "target_requests": 3,
+  "redirect_followups": 0,
+  "isolated_database": "C:\\Users\\PSB\\AppData\\Local\\Temp\\knowgap-ir14-admin-mni2eak3\\knowgap.db",
+  "configuration": {
+    "high_threshold": 0.68,
+    "uncertain_threshold": 0.55,
+    "bm25_weight": 0.45,
+    "semantic_weight": 0.55,
+    "llm_model": "llama-3.1-8b-instant",
+    "thread_limit": 1,
+    "cached_model_only": true
+  },
+  "test_identity": {
+    "database_user_id": 4,
+    "stored_role": "ADMIN",
+    "active": true,
+    "unsupported_fixture": false,
+    "origin": "Four original seed accounts; extra active unsupported-role account only in its own private DB; login secrets omitted"
+  },
+  "llm": {
+    "configured_enabled": false,
+    "calls": 0
+  },
+  "runtime_mode": "original auth/knowledge/admin routers in audit FastAPI HTTP harness",
+  "full_application_loaded": false,
+  "base_url": "http://127.0.0.1:8001",
+  "server_started": true,
+  "login": {
+    "status": 303,
+    "location": "/home",
+    "cookie_present": true,
+    "redirect_history_count": 0,
+    "credentials_recorded": false
+  },
+  "server_stopped": true,
+  "finished_at_utc": "2026-09-23T02:13:47.974270+00:00"
+}

@@ -1,0 +1,123 @@
+{
+  "tables": {
+    "agentlog": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "category": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "knowledgearticle": {
+      "row_count": 81,
+      "rows_sha256": "4211d7400867d12fc3d80cfa324249ce59fc2cf87f350b11abedf97214c352e3"
+    },
+    "notification": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "passwordresettoken": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "securityevent": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "solutionfeedback": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "ticket": {
+      "row_count": 500,
+      "rows_sha256": "9e1be706eccf1fe8d01397215be75d876d8d3ce607045936ec15ce4ddd8c999b"
+    },
+    "ticketcitation": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "user": {
+      "row_count": 4,
+      "rows_sha256": "dff236910306cc21afae17ec209fc57167ce825fc0e5dfd72e586081a835e520"
+    }
+  },
+  "fixtures": {
+    "article": {
+      "title": "IR14 role approval fixture",
+      "category": "Printers",
+      "doc_id": "AUDIT-IR14-DRAFT-001",
+      "source_type": "internal_kb",
+      "authoritative": false,
+      "updated_at": "2026-09-22T00:00:00",
+      "security_class": "internal",
+      "content": "Synthetic audit note for testing knowledge approval. No troubleshooting action is requested.",
+      "id": 81,
+      "status": "draft",
+      "author": "IR-14 synthetic fixture",
+      "created_at": "2026-09-22T00:00:00",
+      "supported_os": "Any"
+    },
+    "other_articles_sha256": "f7c64b9366567d5151587e17501451e26b9a05ac0f6c1e9fe516516e7da46add",
+    "categories": [],
+    "users": [
+      {
+        "id": 1,
+        "role": "CUSTOMER",
+        "active": true
+      },
+      {
+        "id": 2,
+        "role": "IT_SUPPORT",
+        "active": true
+      },
+      {
+        "id": 3,
+        "role": "KNOWLEDGE_ANALYST",
+        "active": true
+      },
+      {
+        "id": 4,
+        "role": "ADMIN",
+        "active": true
+      }
+    ]
+  },
+  "changed_tables_since_setup": [],
+  "private_snapshot_unchanged": true,
+  "original_user_rows_unchanged": true,
+  "ticket_rows_unchanged": true,
+  "all_observed_identities": [
+    {
+      "request_id": "PROFILE",
+      "path": "/profile",
+      "user_found": true,
+      "database_user_id": 2,
+      "stored_role": "IT_SUPPORT",
+      "active": true
+    },
+    {
+      "request_id": "R01",
+      "path": "/knowledge/81/approve",
+      "user_found": true,
+      "database_user_id": 2,
+      "stored_role": "IT_SUPPORT",
+      "active": true
+    },
+    {
+      "request_id": "R02",
+      "path": "/admin",
+      "user_found": true,
+      "database_user_id": 2,
+      "stored_role": "IT_SUPPORT",
+      "active": true
+    },
+    {
+      "request_id": "R03",
+      "path": "/admin/categories/create",
+      "user_found": true,
+      "database_user_id": 2,
+      "stored_role": "IT_SUPPORT",
+      "active": true
+    }
+  ]
+}

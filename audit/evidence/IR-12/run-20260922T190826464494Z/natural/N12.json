@@ -1,0 +1,348 @@
+{
+  "id": "N12",
+  "kind": "natural_original_retrieval",
+  "query": "My computer restarts unexpectedly.",
+  "started_at_utc": "2026-09-22T19:08:50.281261+00:00",
+  "deduplicated_source_ids": [
+    "KB-001",
+    "KB-002",
+    "KB-003",
+    "KB-004",
+    "KB-005",
+    "KB-006",
+    "KB-007",
+    "KB-008",
+    "KB-009",
+    "KB-017",
+    "SYN-0001",
+    "SYN-0003",
+    "SYN-0004",
+    "SYN-0005",
+    "SYN-0006",
+    "SYN-0008",
+    "SYN-0009",
+    "SYN-0010",
+    "SYN-0011",
+    "SYN-0012",
+    "SYN-0013",
+    "SYN-0014",
+    "SYN-0015",
+    "SYN-0018",
+    "SYN-0026",
+    "SYN-0027",
+    "SYN-0028",
+    "SYN-0030",
+    "SYN-0032",
+    "SYN-0033",
+    "SYN-0037",
+    "SYN-0038",
+    "SYN-0039",
+    "SYN-0044",
+    "SYN-0045",
+    "SYN-0048",
+    "SYN-0051",
+    "SYN-0052",
+    "SYN-0053",
+    "SYN-0054",
+    "SYN-0056",
+    "SYN-0059",
+    "SYN-0070",
+    "SYN-0072",
+    "SYN-0080",
+    "SYN-0092",
+    "SYN-0096",
+    "SYN-0101",
+    "SYN-0135",
+    "SYN-0138"
+  ],
+  "query_preprocessing": {
+    "original": "My computer restarts unexpectedly.",
+    "normalized": "computer restarts unexpectedly.",
+    "tokens": [
+      "computer",
+      "restarts",
+      "unexpectedly"
+    ]
+  },
+  "native_bm25": {
+    "tokens": [
+      "computer",
+      "restarts",
+      "unexpectedly"
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      3.16415173155648,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      8.457284731955689,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      3.5457846471689294,
+      0.0,
+      0.0
+    ],
+    "order": "deduplicated_source_ids"
+  },
+  "hybrid_before_trust": [
+    {
+      "source_id": "SYN-0008",
+      "title": "Computer repeatedly restarts after Windows update",
+      "content": "Problem: Computer repeatedly restarts after Windows update on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 1.0,
+      "semantic_score": 0.5555941742548427,
+      "hybrid_score": 0.7555767958401636,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0101",
+      "title": "Remote computer is unavailable through RDP",
+      "content": "Problem: Remote computer is unavailable through RDP on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+      "category": "Remote Desktop",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.4192580431602651,
+      "semantic_score": 0.1618178384166642,
+      "hybrid_score": 0.27766593055128463,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "KB-006",
+      "title": "Update Device Drivers - Guide 1",
+      "content": "Install manufacturer-approved device drivers through the approved update channel and restart the computer.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "Internal KB",
+      "status": "approved",
+      "bm25_score": 0.37413328649096955,
+      "semantic_score": 0.17426895148329152,
+      "hybrid_score": 0.2642079022367466,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0054",
+      "title": "Windows driver error after restart",
+      "content": "Problem: Windows driver error after restart on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.0,
+      "semantic_score": 0.3808673200571254,
+      "hybrid_score": 0.209477026031419,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0052",
+      "title": "Cannot sign in after password reset",
+      "content": "Problem: Cannot sign in after password reset on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+      "category": "Accounts / Passwords",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.0,
+      "semantic_score": 0.3613982916146964,
+      "hybrid_score": 0.19876906038808304,
+      "exact_error_match": false
+    }
+  ],
+  "metadata_calls": [
+    {
+      "source_id": "SYN-0008",
+      "query": "My computer restarts unexpectedly.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0101",
+      "query": "My computer restarts unexpectedly.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "KB-006",
+      "query": "My computer restarts unexpectedly.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0054",
+      "query": "My computer restarts unexpectedly.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0052",
+      "query": "My computer restarts unexpectedly.",
+      "bonus": 0.08
+    }
+  ],
+  "trust_calls": [
+    {
+      "source_id": "SYN-0008",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0101",
+      "trust": 0.85
+    },
+    {
+      "source_id": "KB-006",
+      "trust": 1.0
+    },
+    {
+      "source_id": "SYN-0054",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0052",
+      "trust": 0.85
+    }
+  ],
+  "retrieval": {
+    "query": "My computer restarts unexpectedly.",
+    "items": [
+      {
+        "source_id": "SYN-0008",
+        "title": "Computer repeatedly restarts after Windows update",
+        "content": "Problem: Computer repeatedly restarts after Windows update on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+        "category": "Windows / Updates",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 1.0,
+        "semantic_score": 0.5555941742548427,
+        "hybrid_score": 0.722240276464139,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 1.0,
+          "semantic_score": 0.5555941742548427,
+          "hybrid_score": 0.722240276464139
+        },
+        "source": "SYN-0008"
+      },
+      {
+        "source_id": "KB-006",
+        "title": "Update Device Drivers - Guide 1",
+        "content": "Install manufacturer-approved device drivers through the approved update channel and restart the computer.",
+        "category": "Windows / Updates",
+        "supported_os": "Any",
+        "source_type": "Internal KB",
+        "status": "approved",
+        "bm25_score": 0.37413328649096955,
+        "semantic_score": 0.17426895148329152,
+        "hybrid_score": 0.34420790223674663,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.37413328649096955,
+          "semantic_score": 0.17426895148329152,
+          "hybrid_score": 0.34420790223674663
+        },
+        "source": "KB-006"
+      },
+      {
+        "source_id": "SYN-0101",
+        "title": "Remote computer is unavailable through RDP",
+        "content": "Problem: Remote computer is unavailable through RDP on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+        "category": "Remote Desktop",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.4192580431602651,
+        "semantic_score": 0.1618178384166642,
+        "hybrid_score": 0.3160160409685919,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.4192580431602651,
+          "semantic_score": 0.1618178384166642,
+          "hybrid_score": 0.3160160409685919
+        },
+        "source": "SYN-0101"
+      },
+      {
+        "source_id": "SYN-0054",
+        "title": "Windows driver error after restart",
+        "content": "Problem: Windows driver error after restart on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+        "category": "Windows / Updates",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.0,
+        "semantic_score": 0.3808673200571254,
+        "hybrid_score": 0.25805547212670615,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.0,
+          "semantic_score": 0.3808673200571254,
+          "hybrid_score": 0.25805547212670615
+        },
+        "source": "SYN-0054"
+      },
+      {
+        "source_id": "SYN-0052",
+        "title": "Cannot sign in after password reset",
+        "content": "Problem: Cannot sign in after password reset on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+        "category": "Accounts / Passwords",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.0,
+        "semantic_score": 0.3613982916146964,
+        "hybrid_score": 0.2489537013298706,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.0,
+          "semantic_score": 0.3613982916146964,
+          "hybrid_score": 0.2489537013298706
+        },
+        "source": "SYN-0052"
+      }
+    ],
+    "best_score": 0.722240276464139,
+    "decision": "HIGH"
+  },
+  "expected_decision": "HIGH",
+  "decision_matches": true,
+  "elapsed_seconds": 0.271
+}

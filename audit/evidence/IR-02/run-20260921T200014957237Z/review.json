@@ -1,0 +1,20 @@
+{
+  "review_recorded_at_utc": "2026-09-21T20:07:55.091714+00:00",
+  "case": "IR-02",
+  "status": "Completed",
+  "outcome": "PASS",
+  "vulnerability_identified": "NO",
+  "scope": "One end-to-end paraphrased ticket on unchanged synthetic corpus/settings, with configured LLM disabled and fallback observed.",
+  "rationale": "Same five relevant eligible sources as IR-01, changed ordering; displayed fallback copies supported first-three evidence without novel steps.",
+  "observations": [
+    "OBS-IR02-01: metadata category bonus differs between equivalent query wordings",
+    "OBS-IR01-01 recurs: resolved historical ticket called approved guidance",
+    "Application triage priority changes from Critical to Medium; not an audit vulnerability severity"
+  ],
+  "limits": [
+    "No semantic-only causality claim; leading source closely matches query lexically",
+    "No live Groq generation",
+    "Operating system unspecified; platform-specific correctness not tested",
+    "No aggregate evaluation metrics recomputed"
+  ]
+}

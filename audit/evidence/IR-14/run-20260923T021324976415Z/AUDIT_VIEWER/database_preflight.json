@@ -1,0 +1,91 @@
+{
+  "tables": {
+    "agentlog": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "category": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "knowledgearticle": {
+      "row_count": 81,
+      "rows_sha256": "a33e8450c4d0704b388cfd18943c5c30191403bf509e305b7a0b397b652de256"
+    },
+    "notification": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "passwordresettoken": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "securityevent": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "solutionfeedback": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "ticket": {
+      "row_count": 500,
+      "rows_sha256": "9e1be706eccf1fe8d01397215be75d876d8d3ce607045936ec15ce4ddd8c999b"
+    },
+    "ticketcitation": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "user": {
+      "row_count": 5,
+      "rows_sha256": "7766135ab046a31aaa41963a293eab2d0c2b66c74f1056116ca76bc324eeb812"
+    }
+  },
+  "fixtures": {
+    "article": {
+      "title": "IR14 role approval fixture",
+      "category": "Printers",
+      "doc_id": "AUDIT-IR14-DRAFT-001",
+      "source_type": "internal_kb",
+      "authoritative": false,
+      "updated_at": "2026-09-22T00:00:00",
+      "security_class": "internal",
+      "id": 81,
+      "content": "Synthetic audit note for testing knowledge approval. No troubleshooting action is requested.",
+      "status": "draft",
+      "author": "IR-14 synthetic fixture",
+      "created_at": "2026-09-22T00:00:00",
+      "supported_os": "Any"
+    },
+    "other_articles_sha256": "b477728e5eeebe04f98a42b70522865fb35b84bba55933bacc9ba27188f9f591",
+    "categories": [],
+    "users": [
+      {
+        "id": 1,
+        "role": "CUSTOMER",
+        "active": true
+      },
+      {
+        "id": 2,
+        "role": "IT_SUPPORT",
+        "active": true
+      },
+      {
+        "id": 3,
+        "role": "KNOWLEDGE_ANALYST",
+        "active": true
+      },
+      {
+        "id": 4,
+        "role": "ADMIN",
+        "active": true
+      },
+      {
+        "id": 5,
+        "role": "AUDIT_VIEWER",
+        "active": true
+      }
+    ]
+  },
+  "note": "Raw account rows/password hashes not exported; user metadata limited to ID, role and active state"
+}

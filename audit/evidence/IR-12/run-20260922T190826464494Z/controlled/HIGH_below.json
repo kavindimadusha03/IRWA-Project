@@ -1,0 +1,109 @@
+{
+  "id": "HIGH_below",
+  "kind": "CONTROLLED_SCORE_BRANCH_ONLY",
+  "input": {
+    "id": "HIGH_below",
+    "kind": "CONTROLLED_SCORE_BRANCH_ONLY",
+    "query": "Boundary diagnostic note.",
+    "record": {
+      "source_id": "AUDIT-IR12-CONTROL",
+      "title": "Boundary diagnostic note",
+      "content": "Synthetic boundary diagnostic reference. This record supplies no troubleshooting action.",
+      "category": "",
+      "supported_os": "Any",
+      "source_type": "internal_kb",
+      "status": "approved"
+    },
+    "threshold_name": "HIGH",
+    "threshold": 0.68,
+    "position": "below",
+    "target_final": 0.6799999999999999,
+    "target_hex": "0x1.5c28f5c28f5c2p-1",
+    "injected_pretrust": 0.6,
+    "injected_pretrust_hex": "0x1.3333333333333p-1",
+    "expected_trust": 1.0,
+    "expected_metadata": 0.08,
+    "expected_decision": "UNCERTAIN",
+    "expected_can_recommend": false,
+    "BM25_and_semantic_provenance": "Synthetic placeholder fields equal to injected pretrust; no native BM25 or embeddings calculated for these records"
+  },
+  "stub_calls": 1,
+  "injected_hybrid_output": [
+    {
+      "source_id": "AUDIT-IR12-CONTROL",
+      "title": "Boundary diagnostic note",
+      "content": "Synthetic boundary diagnostic reference. This record supplies no troubleshooting action.",
+      "category": "",
+      "supported_os": "Any",
+      "source_type": "internal_kb",
+      "status": "approved",
+      "bm25_score": 0.6,
+      "semantic_score": 0.6,
+      "hybrid_score": 0.6,
+      "exact_error_match": false
+    }
+  ],
+  "original_SQL_record_count_before_stub": 427,
+  "metadata_calls": [
+    {
+      "source_id": "AUDIT-IR12-CONTROL",
+      "query": "Boundary diagnostic note.",
+      "bonus": 0.08
+    }
+  ],
+  "trust_calls": [
+    {
+      "source_id": "AUDIT-IR12-CONTROL",
+      "trust": 1.0
+    }
+  ],
+  "solution": {
+    "can_recommend": false,
+    "message": "No sufficiently reliable solution was found in the available knowledge base or previous resolved tickets. The ticket has been escalated to IT Support.",
+    "source_id": "",
+    "confidence": "UNCERTAIN",
+    "explanation": "No approved knowledge article met the reliability threshold for this issue. The search score was too weak or the evidence was incomplete, so a human specialist should review it.",
+    "confidence_explanation": "No approved knowledge article met the reliability threshold for this issue. The search score was too weak or the evidence was incomplete, so a human specialist should review it.",
+    "why_this_solution_was_suggested": "No approved knowledge article met the reliability threshold for this issue. The search score was too weak or the evidence was incomplete, so a human specialist should review it.",
+    "citations": [],
+    "suggested_reply": "Thanks for reporting this. I have escalated the request to a specialist because the available evidence was not strong enough to provide a safe automated recommendation."
+  },
+  "provider_output_adopted": false,
+  "message_equals_evidence_blocks": false,
+  "recommendation_gate_matches": true,
+  "routing_scope": "Direct component call only. Escalation wording is not persisted ticket state, queue visibility or human action.",
+  "retrieval": {
+    "query": "Boundary diagnostic note.",
+    "items": [
+      {
+        "source_id": "AUDIT-IR12-CONTROL",
+        "title": "Boundary diagnostic note",
+        "content": "Synthetic boundary diagnostic reference. This record supplies no troubleshooting action.",
+        "category": "",
+        "supported_os": "Any",
+        "source_type": "internal_kb",
+        "status": "approved",
+        "bm25_score": 0.6,
+        "semantic_score": 0.6,
+        "hybrid_score": 0.6799999999999999,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.6,
+          "semantic_score": 0.6,
+          "hybrid_score": 0.6799999999999999
+        },
+        "source": "AUDIT-IR12-CONTROL"
+      }
+    ],
+    "best_score": 0.6799999999999999,
+    "decision": "UNCERTAIN"
+  },
+  "actual_final_hex": "0x1.5c28f5c28f5c2p-1",
+  "actual_final_exactly_equals_target": true,
+  "decision_matches_expected": true,
+  "recommendation_matches_expected": true,
+  "synthetic_native_BM25": null,
+  "synthetic_embedding_similarity": null,
+  "citation_gate_matches": true,
+  "no_unexpected_LLM_call": true
+}

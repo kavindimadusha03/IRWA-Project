@@ -1,0 +1,14 @@
+[
+  {
+    "source_id": "AUDIT-IR10-KB-001",
+    "status": "approved",
+    "source_type": "internal_kb",
+    "trust_weight": 1.0
+  },
+  {
+    "source_id": "AUDIT-IR10-RESOLVED-001",
+    "status": "resolved",
+    "source_type": "resolved_ticket",
+    "trust_weight": 0.85
+  }
+]

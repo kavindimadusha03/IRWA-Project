@@ -1,0 +1,20 @@
+{
+  "recorded_before_send_at_utc": "2026-09-23T02:38:55.194483+00:00",
+  "id": "R08",
+  "label": "malformed JSON",
+  "path": "/agents/retrieval/search",
+  "method": "POST",
+  "body": null,
+  "raw_body": "{\"message_id\":",
+  "anonymous": false,
+  "comparison": "R00",
+  "changed_field": "JSON syntax (truncated envelope)",
+  "url": "http://127.0.0.1:8001/agents/retrieval/search",
+  "serialized_body": "{\"message_id\":",
+  "content_type": "application/json",
+  "cookie_present": true,
+  "cookie_value": "omitted",
+  "authorization_header_present": false,
+  "follow_redirects": false,
+  "runtime_mode": "selected"
+}

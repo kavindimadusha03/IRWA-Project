@@ -1,0 +1,42 @@
+{
+  "can_recommend": true,
+  "message": "Evidence source SYN-0070 | Remote Desktop cannot connect to office PC\nProblem: Remote Desktop cannot connect to office PC on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.\n\nEvidence source SYN-0044 | Remote access VPN drops after login\nProblem: Remote access VPN drops after login on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.\n\nEvidence source KB-008 | RDP Credential Repair - Guide 1\nRemove saved Remote Desktop credentials and reconnect using the current organization account.",
+  "source_id": "SYN-0070",
+  "confidence": "HIGH",
+  "explanation": "This recommendation was selected because the issue matched the approved guidance in Remote Desktop cannot connect to office PC with 86% relevance, and it aligns with 3 supporting sources that were validated for this workflow.",
+  "confidence_explanation": "This recommendation was selected because the issue matched the approved guidance in Remote Desktop cannot connect to office PC with 86% relevance, and it aligns with 3 supporting sources that were validated for this workflow.",
+  "why_this_solution_was_suggested": "This recommendation was selected because the issue matched the approved guidance in Remote Desktop cannot connect to office PC with 86% relevance, and it aligns with 3 supporting sources that were validated for this workflow.",
+  "suggested_reply": "Thanks for reporting this issue. Based on the approved guidance in Remote Desktop cannot connect to office PC, the recommended next step is to follow the documented troubleshooting steps and confirm the issue is resolved.",
+  "citations": [
+    {
+      "source_id": "SYN-0070",
+      "title": "Remote Desktop cannot connect to office PC",
+      "category": "Remote Desktop",
+      "source_type": "resolved_ticket",
+      "relevance_score": 0.8604451667111161,
+      "bm25_score": 1.0,
+      "semantic_score": 0.46619286997030207,
+      "hybrid_score": 0.8604451667111161
+    },
+    {
+      "source_id": "SYN-0044",
+      "title": "Remote access VPN drops after login",
+      "category": "VPN",
+      "source_type": "resolved_ticket",
+      "relevance_score": 0.6634968278108566,
+      "bm25_score": 0.4816105362929799,
+      "semantic_score": 0.4690498346070414,
+      "hybrid_score": 0.6634968278108566
+    },
+    {
+      "source_id": "KB-008",
+      "title": "RDP Credential Repair - Guide 1",
+      "category": "Remote Desktop",
+      "source_type": "Internal KB",
+      "relevance_score": 0.6631524054070972,
+      "bm25_score": 0.48443703911689207,
+      "semantic_score": 0.33664679600817393,
+      "hybrid_score": 0.6631524054070972
+    }
+  ]
+}

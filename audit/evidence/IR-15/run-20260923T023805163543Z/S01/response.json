@@ -1,0 +1,24 @@
+{
+  "status": 200,
+  "location": null,
+  "content_type": "application/json",
+  "body_json": {
+    "can_recommend": false,
+    "message": "No sufficiently reliable solution was found in the available knowledge base or previous resolved tickets. The ticket has been escalated to IT Support.",
+    "source_id": "",
+    "confidence": "LOW",
+    "explanation": "No approved knowledge article met the reliability threshold for this issue. The search score was too weak or the evidence was incomplete, so a human specialist should review it.",
+    "confidence_explanation": "No approved knowledge article met the reliability threshold for this issue. The search score was too weak or the evidence was incomplete, so a human specialist should review it.",
+    "why_this_solution_was_suggested": "No approved knowledge article met the reliability threshold for this issue. The search score was too weak or the evidence was incomplete, so a human specialist should review it.",
+    "citations": [],
+    "suggested_reply": "Thanks for reporting this. I have escalated the request to a specialist because the available evidence was not strong enough to provide a safe automated recommendation."
+  },
+  "body_text": "{\"can_recommend\":false,\"message\":\"No sufficiently reliable solution was found in the available knowledge base or previous resolved tickets. The ticket has been escalated to IT Support.\",\"source_id\":\"\",\"confidence\":\"LOW\",\"explanation\":\"No approved knowledge article met the reliability threshold for this issue. The search score was too weak or the evidence was incomplete, so a human specialist should review it.\",\"confidence_explanation\":\"No approved knowledge article met the reliability threshold for this issue. The search score was too weak or the evidence was incomplete, so a human specialist should review it.\",\"why_this_solution_was_suggested\":\"No approved knowledge article met the reliability threshold for this issue. The search score was too weak or the evidence was incomplete, so a human specialist should review it.\",\"citations\":[],\"suggested_reply\":\"Thanks for reporting this. I have escalated the request to a specialist because the available evidence was not strong enough to provide a safe automated recommendation.\"}",
+  "body_bytes": 1037,
+  "body_sha256": "11882fed8af4b0fb962a1068a1a05bdbee1746112516883f7f2bac63885b8cd8",
+  "elapsed_seconds": 0.004,
+  "redirect_history": 0,
+  "set_cookie_present": false,
+  "runtime_mode": "selected",
+  "audit_boundary_503": false
+}

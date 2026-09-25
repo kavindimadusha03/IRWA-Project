@@ -1,0 +1,44 @@
+{
+  "review_recorded_at_utc": "2026-09-22T03:06:07.499399+00:00",
+  "case": "IR-03",
+  "status": "Partially assessed; one ticket executed",
+  "outcome": "Inconclusive overall",
+  "vulnerability_identified": "NO demonstrated",
+  "subcases": [
+    {
+      "name": "Code preservation",
+      "outcome": "PASS",
+      "evidence": "Masked/canonical/normalized query retains code; tokenize and extraction retain one intact 0x00000124"
+    },
+    {
+      "name": "Approved exact-source matching",
+      "outcome": "Not ready",
+      "evidence": "No approved article or eligible resolved ticket contains the code; no fixture added"
+    },
+    {
+      "name": "Positive +0.35 exact-code boost",
+      "outcome": "Not exercised",
+      "evidence": "All five exact_error_match flags false; eligible corpus contains zero exact-code records"
+    },
+    {
+      "name": "No invented code-specific diagnosis or repair text",
+      "outcome": "PASS (narrow fallback scope)",
+      "evidence": "Displayed message exactly copies three source bodies without new diagnosis or repair text"
+    },
+    {
+      "name": "Applicability to this exact code",
+      "outcome": "Not established",
+      "evidence": "Only generic Windows/update evidence; user did not report an update; missing-code evidence gap is not explained"
+    }
+  ],
+  "observations": [
+    "OBS-IR03-01: HIGH recommendation without code-specific evidence; applicability confidence is overstated",
+    "OBS-IR01-01 recurs: resolved historical evidence described as approved guidance"
+  ],
+  "limits": [
+    "Full exact-source retrieval cannot receive PASS or FAIL with absent prerequisite",
+    "No live Groq generation; two failed attempts in configured disabled mode",
+    "One synthetic query; no actual troubleshooting or repair performed",
+    "No IR-04 scenario, IR-08 variants, injected fixture, aggregate IR evaluation or threshold-boundary experiment executed"
+  ]
+}

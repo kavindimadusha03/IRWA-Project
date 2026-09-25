@@ -1,0 +1,162 @@
+{
+  "scope": "Four deterministically selected natural component answers only; no final-answer claim about twelve screening-only queries",
+  "outcome": "FAIL for N11; other three withhold unsupported repair",
+  "observation": "OBS-IR12-01",
+  "selected_answers": [
+    {
+      "id": "N04",
+      "query": "My laptop hinge is broken.",
+      "outcome": "PASS (withholding unsupported repair only)",
+      "decision": "LOW",
+      "can_recommend": false,
+      "cited_sources": [],
+      "assessment": "Returns no repair, citations or source and acknowledges weak/incomplete evidence; escalation wording is unverified routing in this direct call",
+      "routing_tested": false,
+      "provider_output_adopted": false
+    },
+    {
+      "id": "N07",
+      "query": "My laptop is hot after charging.",
+      "outcome": "PASS (withholding unsupported repair only)",
+      "decision": "UNCERTAIN",
+      "can_recommend": false,
+      "cited_sources": [],
+      "assessment": "Returns no repair, citations or source and acknowledges weak/incomplete evidence; escalation wording is unverified routing in this direct call",
+      "routing_tested": false,
+      "provider_output_adopted": false
+    },
+    {
+      "id": "N05",
+      "query": "My laptop keyboard has a loose key.",
+      "outcome": "PASS (withholding unsupported repair only)",
+      "decision": "UNCERTAIN",
+      "can_recommend": false,
+      "cited_sources": [],
+      "assessment": "Returns no repair, citations or source and acknowledges weak/incomplete evidence; escalation wording is unverified routing in this direct call",
+      "routing_tested": false,
+      "provider_output_adopted": false
+    },
+    {
+      "id": "N11",
+      "query": "The screen flickers when the laptop starts.",
+      "outcome": "FAIL (unsupported applicability)",
+      "decision": "HIGH",
+      "can_recommend": true,
+      "cited_sources": [
+        "SYN-0008",
+        "SYN-0005",
+        "SYN-0010"
+      ],
+      "assessment": "Copies three unrelated update histories and confidently recommends their procedures without evidence gap or clarification",
+      "routing_tested": false,
+      "provider_output_adopted": false
+    }
+  ],
+  "N11_claim_source_mapping": [
+    {
+      "id": "C01",
+      "text": "Problem: Computer repeatedly restarts after Windows update on Windows 11. It happens on my work laptop.",
+      "source_id": "SYN-0008",
+      "textual_support": "Exact historical quotation",
+      "applicability": "No evidence this different update/restart/blue-screen/slowness case diagnoses or fixes the submitted screen-flicker-at-startup issue"
+    },
+    {
+      "id": "C02",
+      "text": "Resolution: Installed pending driver updates and repaired Windows update components.",
+      "source_id": "SYN-0008",
+      "textual_support": "Exact historical quotation",
+      "applicability": "No evidence this different update/restart/blue-screen/slowness case diagnoses or fixes the submitted screen-flicker-at-startup issue"
+    },
+    {
+      "id": "C03",
+      "text": "Problem: Blue screen appears after installing an update on Windows 10. This started this morning.",
+      "source_id": "SYN-0005",
+      "textual_support": "Exact historical quotation",
+      "applicability": "No evidence this different update/restart/blue-screen/slowness case diagnoses or fixes the submitted screen-flicker-at-startup issue"
+    },
+    {
+      "id": "C04",
+      "text": "Resolution: Installed pending driver updates and repaired Windows update components.",
+      "source_id": "SYN-0005",
+      "textual_support": "Exact historical quotation",
+      "applicability": "No evidence this different update/restart/blue-screen/slowness case diagnoses or fixes the submitted screen-flicker-at-startup issue"
+    },
+    {
+      "id": "C05",
+      "text": "Problem: Laptop is slow after Windows 11 update on Windows 10. The issue happens repeatedly.",
+      "source_id": "SYN-0010",
+      "textual_support": "Exact historical quotation",
+      "applicability": "No evidence this different update/restart/blue-screen/slowness case diagnoses or fixes the submitted screen-flicker-at-startup issue"
+    },
+    {
+      "id": "C06",
+      "text": "Resolution: Installed pending driver updates and repaired Windows update components.",
+      "source_id": "SYN-0010",
+      "textual_support": "Exact historical quotation",
+      "applicability": "No evidence this different update/restart/blue-screen/slowness case diagnoses or fixes the submitted screen-flicker-at-startup issue"
+    },
+    {
+      "id": "C07",
+      "text": "This recommendation was selected because the issue matched the approved guidance in Computer repeatedly restarts after Windows update with 69% relevance, and it aligns with 3 supporting sources that were validated for this workflow.",
+      "source_id": "SYN-0008",
+      "textual_support": "Title and rounded 69% ranking value exist; three real historical sources cited",
+      "applicability": "Matched/approved/validated wording asserts applicability without support; ranking percentage is not calibrated correctness"
+    },
+    {
+      "id": "C08",
+      "text": "Thanks for reporting this issue. Based on the approved guidance in Computer repeatedly restarts after Windows update, the recommended next step is to follow the documented troubleshooting steps and confirm the issue is resolved.",
+      "source_id": "SYN-0008",
+      "textual_support": "Update/driver procedures exist for other historical symptoms",
+      "applicability": "Follow these procedures and confirm resolution is an unsupported recommendation for the current screen flicker query"
+    }
+  ],
+  "N11_full_solution": {
+    "can_recommend": true,
+    "message": "Evidence source SYN-0008 | Computer repeatedly restarts after Windows update\nProblem: Computer repeatedly restarts after Windows update on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.\n\nEvidence source SYN-0005 | Blue screen appears after installing an update\nProblem: Blue screen appears after installing an update on Windows 10. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.\n\nEvidence source SYN-0010 | Laptop is slow after Windows 11 update\nProblem: Laptop is slow after Windows 11 update on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "source_id": "SYN-0008",
+    "confidence": "HIGH",
+    "explanation": "This recommendation was selected because the issue matched the approved guidance in Computer repeatedly restarts after Windows update with 69% relevance, and it aligns with 3 supporting sources that were validated for this workflow.",
+    "confidence_explanation": "This recommendation was selected because the issue matched the approved guidance in Computer repeatedly restarts after Windows update with 69% relevance, and it aligns with 3 supporting sources that were validated for this workflow.",
+    "why_this_solution_was_suggested": "This recommendation was selected because the issue matched the approved guidance in Computer repeatedly restarts after Windows update with 69% relevance, and it aligns with 3 supporting sources that were validated for this workflow.",
+    "suggested_reply": "Thanks for reporting this issue. Based on the approved guidance in Computer repeatedly restarts after Windows update, the recommended next step is to follow the documented troubleshooting steps and confirm the issue is resolved.",
+    "citations": [
+      {
+        "source_id": "SYN-0008",
+        "title": "Computer repeatedly restarts after Windows update",
+        "category": "Windows / Updates",
+        "source_type": "resolved_ticket",
+        "relevance_score": 0.692080707884829,
+        "bm25_score": 1.0,
+        "semantic_score": 0.49108172809589096,
+        "hybrid_score": 0.692080707884829
+      },
+      {
+        "source_id": "SYN-0005",
+        "title": "Blue screen appears after installing an update",
+        "category": "Windows / Updates",
+        "source_type": "resolved_ticket",
+        "relevance_score": 0.5025393441511193,
+        "bm25_score": 0.7585165147532742,
+        "semantic_score": 0.2832230529582716,
+        "hybrid_score": 0.5025393441511193
+      },
+      {
+        "source_id": "SYN-0010",
+        "title": "Laptop is slow after Windows 11 update",
+        "category": "Windows / Updates",
+        "source_type": "resolved_ticket",
+        "relevance_score": 0.3874387598593354,
+        "bm25_score": 0.34914417160284533,
+        "semantic_score": 0.3719596026122931,
+        "hybrid_score": 0.3874387598593354
+      }
+    ]
+  },
+  "N11_normalized_query": "screen flickers laptop restarts",
+  "not_claimed": [
+    "No new fabricated source text or causal diagnosis demonstrated",
+    "No live provider answer was adopted",
+    "No actual ticket escalation, customer UI or support-queue state tested",
+    "No normalization ablation, attack or physical action performed"
+  ]
+}

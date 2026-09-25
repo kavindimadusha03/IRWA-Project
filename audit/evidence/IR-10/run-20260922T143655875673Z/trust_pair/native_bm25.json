@@ -1,0 +1,18 @@
+{
+  "query_tokens": [
+    "printer",
+    "queue",
+    "stuck",
+    "print",
+    "jobs",
+    "will",
+    "not",
+    "clear"
+  ],
+  "native_scores": [
+    -0.8378408145263053,
+    -0.8439670233841831
+  ],
+  "document_order": "Same as deduplication_runtime.retained_source_ids",
+  "capture": "Original BM25Okapi.get_scores called once by BM25Search.scores before min-max normalization; return unchanged"
+}

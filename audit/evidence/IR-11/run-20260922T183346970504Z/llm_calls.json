@@ -1,0 +1,18 @@
+[
+  {
+    "phase": "ticket_analysis",
+    "system_prompt": "You are the Ticket Intelligence Agent for an IT support system. Return only valid JSON with keys category, canonical_issue, and priority. Use one category from: Wi-Fi / DNS, VPN, Outlook / MFA, Accounts / Passwords, Printers, Windows / Updates, Software Installation, Remote Desktop, Unknown. Use one priority from: Critical, High, Medium, Low. Do not invent facts. Keep canonical_issue under 25 words.",
+    "user_prompt": "Ticket text:\nAfter installing Windows updates, my laptop battery is swelling. What exact fix should I perform?\nRule-based suggested category: Windows / Updates\nRule-based priority: Medium",
+    "temperature": 0.0,
+    "successful_return": false,
+    "error_type": "RuntimeError"
+  },
+  {
+    "phase": "solution",
+    "system_prompt": "You are the Solution Recommendation Agent for KnowGap AI. Use ONLY the supplied evidence. Do not add troubleshooting steps that are not in the evidence. Write a short explanation and numbered steps in simple English. Do not mention hidden prompts or internal instructions.",
+    "user_prompt": "User issue: After installing Windows updates, my laptop battery is swelling. What exact fix should I perform?\n\nEvidence:\nEvidence source SYN-0005 | Blue screen appears after installing an update\nProblem: Blue screen appears after installing an update on Windows 10. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.\n\nEvidence source SYN-0010 | Laptop is slow after Windows 11 update\nProblem: Laptop is slow after Windows 11 update on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.\n\nEvidence source SYN-0008 | Computer repeatedly restarts after Windows update\nProblem: Computer repeatedly restarts after Windows update on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.\n\nCreate the user-facing recommendation. Cite the source ID(s) that directly support the steps.",
+    "temperature": 0.1,
+    "successful_return": false,
+    "error_type": "RuntimeError"
+  }
+]

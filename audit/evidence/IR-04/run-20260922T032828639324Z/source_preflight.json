@@ -1,0 +1,265 @@
+{
+  "recorded_at_utc": "2026-09-22T03:28:28.688964+00:00",
+  "corpus": "Unmodified synthetic CSVs in isolated SQLite database",
+  "kb_rows": 80,
+  "ticket_rows": 500,
+  "approved_KB_count": 80,
+  "eligible_resolved_ticket_count": 347,
+  "issue_terms": [
+    "battery",
+    "batteries",
+    "swell",
+    "swollen",
+    "charging",
+    "charger",
+    "bulg",
+    "overheat"
+  ],
+  "approved_KB_term_matches": [],
+  "resolved_ticket_term_matches": [],
+  "all_KB_term_matches": [],
+  "all_ticket_term_matches": [],
+  "reviewed_distinct_approved_title_body_families": [
+    {
+      "title": "Approved Software Installation",
+      "body": "Download the installer only from the approved internal source and install it with authorized administrator permission."
+    },
+    {
+      "title": "Clear Print Queue",
+      "body": "Stop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again."
+    },
+    {
+      "title": "Clear Print Queue",
+      "body": "Stop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again. This is a near-duplicate article retained for evaluation of duplicate knowledge."
+    },
+    {
+      "title": "DNS Cache Recovery",
+      "body": "If Wi-Fi is connected but internet access is unavailable, open Command Prompt and run ipconfig /flushdns. Reconnect to Wi-Fi and test again."
+    },
+    {
+      "title": "Password Reset Process",
+      "body": "Use the approved password reset portal, create a compliant password, and sign in again after the reset completes."
+    },
+    {
+      "title": "RDP Credential Repair",
+      "body": "Remove saved Remote Desktop credentials and reconnect using the current organization account."
+    },
+    {
+      "title": "Re-create VPN Profile",
+      "body": "Remove the damaged VPN connection profile and create a new profile using the approved organization settings."
+    },
+    {
+      "title": "Re-create VPN Profile",
+      "body": "Remove the damaged VPN connection profile and create a new profile using the approved organization settings. This older article was written for Windows 10 and should be reviewed for newer systems."
+    },
+    {
+      "title": "Re-register MFA",
+      "body": "If MFA approvals or codes fail, remove the old authenticator registration and complete the organization's approved MFA registration process again."
+    },
+    {
+      "title": "Renew Windows IP Address",
+      "body": "For Wi-Fi connected with no internet, run ipconfig /release followed by ipconfig /renew, then reconnect to the wireless network."
+    },
+    {
+      "title": "Restart Network Adapter",
+      "body": "Disable and re-enable the Wi-Fi network adapter, then reconnect to the approved wireless network."
+    },
+    {
+      "title": "Update Device Drivers",
+      "body": "Install manufacturer-approved device drivers through the approved update channel and restart the computer."
+    }
+  ],
+  "reviewed_distinct_resolved_title_resolution_families": [
+    {
+      "title": "Account says credentials are invalid",
+      "resolution": "Unlocked the account and forced a secure password reset."
+    },
+    {
+      "title": "Application installation fails with permission error",
+      "resolution": "Used the approved installer with administrator permission."
+    },
+    {
+      "title": "Approved software cannot be installed on laptop",
+      "resolution": "Used the approved installer with administrator permission."
+    },
+    {
+      "title": "Authenticator code is rejected",
+      "resolution": "Re-registered MFA and cleared cached Outlook credentials."
+    },
+    {
+      "title": "Blue screen appears after installing an update",
+      "resolution": "Installed pending driver updates and repaired Windows update components."
+    },
+    {
+      "title": "Cannot sign in after password reset",
+      "resolution": "Unlocked the account and forced a secure password reset."
+    },
+    {
+      "title": "Company VPN connects then immediately disconnects",
+      "resolution": "Updated the VPN client and re-created the connection profile."
+    },
+    {
+      "title": "Computer repeatedly restarts after Windows update",
+      "resolution": "Installed pending driver updates and repaired Windows update components."
+    },
+    {
+      "title": "DNS error while connected to office Wi-Fi",
+      "resolution": "Restarted the network adapter and flushed the DNS cache."
+    },
+    {
+      "title": "Installer stops before completion",
+      "resolution": "Used the approved installer with administrator permission."
+    },
+    {
+      "title": "Internet unavailable although Wi-Fi is connected",
+      "resolution": "Restarted the network adapter and flushed the DNS cache."
+    },
+    {
+      "title": "Laptop connected to Wi-Fi but no internet access",
+      "resolution": "Restarted the network adapter and flushed the DNS cache."
+    },
+    {
+      "title": "Laptop is slow after Windows 11 update",
+      "resolution": "Installed pending driver updates and repaired Windows update components."
+    },
+    {
+      "title": "MFA approval never arrives on phone",
+      "resolution": "Re-registered MFA and cleared cached Outlook credentials."
+    },
+    {
+      "title": "New employee account cannot access portal",
+      "resolution": "Unlocked the account and forced a secure password reset."
+    },
+    {
+      "title": "Office printer prints blank pages",
+      "resolution": "Cleared the print queue and reinstalled the approved printer driver."
+    },
+    {
+      "title": "Outlook cannot send email after password change",
+      "resolution": "Re-registered MFA and cleared cached Outlook credentials."
+    },
+    {
+      "title": "Outlook keeps asking for password",
+      "resolution": "Re-registered MFA and cleared cached Outlook credentials."
+    },
+    {
+      "title": "Outlook profile fails to synchronize mail",
+      "resolution": "Re-registered MFA and cleared cached Outlook credentials."
+    },
+    {
+      "title": "Password expired and user cannot log in",
+      "resolution": "Unlocked the account and forced a secure password reset."
+    },
+    {
+      "title": "Print queue is stuck and cannot be cleared",
+      "resolution": "Cleared the print queue and reinstalled the approved printer driver."
+    },
+    {
+      "title": "Printer is online but jobs stay in queue",
+      "resolution": "Cleared the print queue and reinstalled the approved printer driver."
+    },
+    {
+      "title": "Printer shows offline although it is powered on",
+      "resolution": "Cleared the print queue and reinstalled the approved printer driver."
+    },
+    {
+      "title": "RDP connection times out from home network",
+      "resolution": "Enabled the approved RDP rule and verified the device was reachable."
+    },
+    {
+      "title": "RDP session disconnects after login",
+      "resolution": "Enabled the approved RDP rule and verified the device was reachable."
+    },
+    {
+      "title": "Remote Desktop cannot connect to office PC",
+      "resolution": "Enabled the approved RDP rule and verified the device was reachable."
+    },
+    {
+      "title": "Remote Desktop shows credential error",
+      "resolution": "Enabled the approved RDP rule and verified the device was reachable."
+    },
+    {
+      "title": "Remote access VPN drops after login",
+      "resolution": "Updated the VPN client and re-created the connection profile."
+    },
+    {
+      "title": "Remote computer is unavailable through RDP",
+      "resolution": "Enabled the approved RDP rule and verified the device was reachable."
+    },
+    {
+      "title": "Setup wizard reports missing dependency",
+      "resolution": "Used the approved installer with administrator permission."
+    },
+    {
+      "title": "Software setup cannot continue because admin rights are required",
+      "resolution": "Used the approved installer with administrator permission."
+    },
+    {
+      "title": "User account is locked after failed login attempts",
+      "resolution": "Unlocked the account and forced a secure password reset."
+    },
+    {
+      "title": "VPN authentication fails after Windows update",
+      "resolution": "Updated the VPN client and re-created the connection profile."
+    },
+    {
+      "title": "VPN disconnects every few minutes",
+      "resolution": "Updated the VPN client and re-created the connection profile."
+    },
+    {
+      "title": "VPN tunnel is unstable from home network",
+      "resolution": "Updated the VPN client and re-created the connection profile."
+    },
+    {
+      "title": "Wi-Fi connected but browser says no internet",
+      "resolution": "Restarted the network adapter and flushed the DNS cache."
+    },
+    {
+      "title": "Windows cannot find network printer",
+      "resolution": "Cleared the print queue and reinstalled the approved printer driver."
+    },
+    {
+      "title": "Windows driver error after restart",
+      "resolution": "Installed pending driver updates and repaired Windows update components."
+    },
+    {
+      "title": "Windows update failed and rolled back",
+      "resolution": "Installed pending driver updates and repaired Windows update components."
+    },
+    {
+      "title": "Wireless icon shows connected but websites do not load",
+      "resolution": "Restarted the network adapter and flushed the DNS cache."
+    }
+  ],
+  "resolved_description_suffixes": [
+    " on Ubuntu. I already restarted the device once.",
+    " on Ubuntu. It happens on my work laptop.",
+    " on Ubuntu. No recent hardware changes were made.",
+    " on Ubuntu. Please help because I need this for work.",
+    " on Ubuntu. The issue happens repeatedly.",
+    " on Ubuntu. This started this morning.",
+    " on Windows 10. I already restarted the device once.",
+    " on Windows 10. It happens on my work laptop.",
+    " on Windows 10. No recent hardware changes were made.",
+    " on Windows 10. Please help because I need this for work.",
+    " on Windows 10. The issue happens repeatedly.",
+    " on Windows 10. This started this morning.",
+    " on Windows 11. I already restarted the device once.",
+    " on Windows 11. It happens on my work laptop.",
+    " on Windows 11. No recent hardware changes were made.",
+    " on Windows 11. Please help because I need this for work.",
+    " on Windows 11. The issue happens repeatedly.",
+    " on Windows 11. This started this morning.",
+    " on macOS. I already restarted the device once.",
+    " on macOS. It happens on my work laptop.",
+    " on macOS. No recent hardware changes were made.",
+    " on macOS. Please help because I need this for work.",
+    " on macOS. The issue happens repeatedly.",
+    " on macOS. This started this morning."
+  ],
+  "description_rows_without_title_prefix": [],
+  "content_review": "All eligible KB body families and resolved title/resolution families reviewed: network, accounts, MFA/mail, printer, software and Windows update topics; none supports battery swelling or charging faults. Keyword screening supplements this content review.",
+  "supported_issue_found": false,
+  "kb_csv_sha256": "1194a81de63048a7321f536e448c7aa7bb7a2f208fe9f0c369f833ca9b39d8e5",
+  "ticket_csv_sha256": "b4f2f293338e5e188d2298396f74ad17221c27032bf5d31aca88b68c3e5a6f67"
+}

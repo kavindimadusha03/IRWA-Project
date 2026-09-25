@@ -1,0 +1,67 @@
+[
+  {
+    "source_id": "SYN-0005",
+    "title": "Blue screen appears after installing an update",
+    "content": "Problem: Blue screen appears after installing an update on Windows 10. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved",
+    "bm25_score": 1.0,
+    "semantic_score": 0.6338170399188877,
+    "hybrid_score": 0.7985993719553883,
+    "exact_error_match": false
+  },
+  {
+    "source_id": "SYN-0054",
+    "title": "Windows driver error after restart",
+    "content": "Problem: Windows driver error after restart on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved",
+    "bm25_score": 0.3618785066564106,
+    "semantic_score": 0.3824662792761803,
+    "hybrid_score": 0.37320178159728395,
+    "exact_error_match": false
+  },
+  {
+    "source_id": "SYN-0135",
+    "title": "Application installation fails with permission error",
+    "content": "Problem: Application installation fails with permission error on Ubuntu. It happens on my work laptop.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+    "category": "Software Installation",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved",
+    "bm25_score": 0.33491102400364287,
+    "semantic_score": 0.22965223442756166,
+    "hybrid_score": 0.2770186897367982,
+    "exact_error_match": false
+  },
+  {
+    "source_id": "SYN-0072",
+    "title": "Remote Desktop shows credential error",
+    "content": "Problem: Remote Desktop shows credential error on macOS. The issue happens repeatedly.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+    "category": "Remote Desktop",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved",
+    "bm25_score": 0.33491102400364287,
+    "semantic_score": 0.176971047976188,
+    "hybrid_score": 0.2480440371885427,
+    "exact_error_match": false
+  },
+  {
+    "source_id": "SYN-0026",
+    "title": "Windows update failed and rolled back",
+    "content": "Problem: Windows update failed and rolled back on Windows 11. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "category": "Windows / Updates",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved",
+    "bm25_score": 0.03021002145096986,
+    "semantic_score": 0.39890759878243276,
+    "hybrid_score": 0.23299368898327447,
+    "exact_error_match": false
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "recorded_before_requests_at_utc": "2026-09-22T14:09:38.645564+00:00",
+  "case": "IR-09",
+  "title": "Audit reference lookup",
+  "cases": [
+    {
+      "name": "draft_probe",
+      "description": "quartzmeadow729",
+      "characters": 15
+    },
+    {
+      "name": "approved_control",
+      "description": "cobaltlantern463",
+      "characters": 16
+    }
+  ],
+  "draft_response_only_witness": "violetcompassstamp",
+  "approved_response_only_witness": "amberharborreceipt"
+}

@@ -1,0 +1,348 @@
+{
+  "id": "N15",
+  "kind": "natural_original_retrieval",
+  "query": "What colour is the notebook?",
+  "started_at_utc": "2026-09-22T19:08:51.183071+00:00",
+  "deduplicated_source_ids": [
+    "KB-001",
+    "KB-002",
+    "KB-003",
+    "KB-004",
+    "KB-005",
+    "KB-006",
+    "KB-007",
+    "KB-008",
+    "KB-009",
+    "KB-017",
+    "SYN-0001",
+    "SYN-0003",
+    "SYN-0004",
+    "SYN-0005",
+    "SYN-0006",
+    "SYN-0008",
+    "SYN-0009",
+    "SYN-0010",
+    "SYN-0011",
+    "SYN-0012",
+    "SYN-0013",
+    "SYN-0014",
+    "SYN-0015",
+    "SYN-0018",
+    "SYN-0026",
+    "SYN-0027",
+    "SYN-0028",
+    "SYN-0030",
+    "SYN-0032",
+    "SYN-0033",
+    "SYN-0037",
+    "SYN-0038",
+    "SYN-0039",
+    "SYN-0044",
+    "SYN-0045",
+    "SYN-0048",
+    "SYN-0051",
+    "SYN-0052",
+    "SYN-0053",
+    "SYN-0054",
+    "SYN-0056",
+    "SYN-0059",
+    "SYN-0070",
+    "SYN-0072",
+    "SYN-0080",
+    "SYN-0092",
+    "SYN-0096",
+    "SYN-0101",
+    "SYN-0135",
+    "SYN-0138"
+  ],
+  "query_preprocessing": {
+    "original": "What colour is the notebook?",
+    "normalized": "what colour notebook",
+    "tokens": [
+      "what",
+      "colour",
+      "notebook"
+    ]
+  },
+  "native_bm25": {
+    "tokens": [
+      "what",
+      "colour",
+      "notebook"
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "order": "deduplicated_source_ids"
+  },
+  "hybrid_before_trust": [
+    {
+      "source_id": "SYN-0056",
+      "title": "Office printer prints blank pages",
+      "content": "Problem: Office printer prints blank pages on Windows 11. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+      "category": "Printers",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.0,
+      "semantic_score": 0.1503566523304252,
+      "hybrid_score": 0.08269615878173386,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0005",
+      "title": "Blue screen appears after installing an update",
+      "content": "Problem: Blue screen appears after installing an update on Windows 10. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.0,
+      "semantic_score": 0.11904401664381109,
+      "hybrid_score": 0.0654742091540961,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0013",
+      "title": "Printer is online but jobs stay in queue",
+      "content": "Problem: Printer is online but jobs stay in queue on Ubuntu. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+      "category": "Printers",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.0,
+      "semantic_score": 0.09720992088150644,
+      "hybrid_score": 0.05346545648482855,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0045",
+      "title": "Printer shows offline although it is powered on",
+      "content": "Problem: Printer shows offline although it is powered on on macOS. No recent hardware changes were made.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+      "category": "Printers",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.0,
+      "semantic_score": 0.08995312197763926,
+      "hybrid_score": 0.0494742170877016,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0012",
+      "title": "Password expired and user cannot log in",
+      "content": "Problem: Password expired and user cannot log in on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+      "category": "Accounts / Passwords",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.0,
+      "semantic_score": 0.08400484449589352,
+      "hybrid_score": 0.04620266447274144,
+      "exact_error_match": false
+    }
+  ],
+  "metadata_calls": [
+    {
+      "source_id": "SYN-0056",
+      "query": "What colour is the notebook?",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0005",
+      "query": "What colour is the notebook?",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0013",
+      "query": "What colour is the notebook?",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0045",
+      "query": "What colour is the notebook?",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0012",
+      "query": "What colour is the notebook?",
+      "bonus": 0.08
+    }
+  ],
+  "trust_calls": [
+    {
+      "source_id": "SYN-0056",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0005",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0013",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0045",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0012",
+      "trust": 0.85
+    }
+  ],
+  "retrieval": {
+    "query": "What colour is the notebook?",
+    "items": [
+      {
+        "source_id": "SYN-0056",
+        "title": "Office printer prints blank pages",
+        "content": "Problem: Office printer prints blank pages on Windows 11. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+        "category": "Printers",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.0,
+        "semantic_score": 0.1503566523304252,
+        "hybrid_score": 0.1502917349644738,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.0,
+          "semantic_score": 0.1503566523304252,
+          "hybrid_score": 0.1502917349644738
+        },
+        "source": "SYN-0056"
+      },
+      {
+        "source_id": "SYN-0005",
+        "title": "Blue screen appears after installing an update",
+        "content": "Problem: Blue screen appears after installing an update on Windows 10. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+        "category": "Windows / Updates",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.0,
+        "semantic_score": 0.11904401664381109,
+        "hybrid_score": 0.13565307778098168,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.0,
+          "semantic_score": 0.11904401664381109,
+          "hybrid_score": 0.13565307778098168
+        },
+        "source": "SYN-0005"
+      },
+      {
+        "source_id": "SYN-0013",
+        "title": "Printer is online but jobs stay in queue",
+        "content": "Problem: Printer is online but jobs stay in queue on Ubuntu. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+        "category": "Printers",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.0,
+        "semantic_score": 0.09720992088150644,
+        "hybrid_score": 0.12544563801210426,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.0,
+          "semantic_score": 0.09720992088150644,
+          "hybrid_score": 0.12544563801210426
+        },
+        "source": "SYN-0013"
+      },
+      {
+        "source_id": "SYN-0045",
+        "title": "Printer shows offline although it is powered on",
+        "content": "Problem: Printer shows offline although it is powered on on macOS. No recent hardware changes were made.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+        "category": "Printers",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.0,
+        "semantic_score": 0.08995312197763926,
+        "hybrid_score": 0.12205308452454636,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.0,
+          "semantic_score": 0.08995312197763926,
+          "hybrid_score": 0.12205308452454636
+        },
+        "source": "SYN-0045"
+      },
+      {
+        "source_id": "SYN-0012",
+        "title": "Password expired and user cannot log in",
+        "content": "Problem: Password expired and user cannot log in on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+        "category": "Accounts / Passwords",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.0,
+        "semantic_score": 0.08400484449589352,
+        "hybrid_score": 0.11927226480183023,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.0,
+          "semantic_score": 0.08400484449589352,
+          "hybrid_score": 0.11927226480183023
+        },
+        "source": "SYN-0012"
+      }
+    ],
+    "best_score": 0.1502917349644738,
+    "decision": "LOW"
+  },
+  "expected_decision": "LOW",
+  "decision_matches": true,
+  "elapsed_seconds": 0.308
+}

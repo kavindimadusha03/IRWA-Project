@@ -1,0 +1,3 @@
+Test: IR-03 - Exact Technical Error Code
+Title: Windows blue screen error 0x00000124
+Description: Windows blue screen error 0x00000124

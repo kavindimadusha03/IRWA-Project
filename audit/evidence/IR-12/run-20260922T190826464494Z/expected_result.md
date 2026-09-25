@@ -1,0 +1,14 @@
+# IR-12 criteria fixed before execution
+
+- Scope: direct original search_knowledge(session,query,top_k=5) and recommend_solution(query,retrieval) component calls on isolated original synthetic corpus; no HTTP authentication, ticket persistence or support routing exercised.
+- Record effective settings actually used, without secret values. Preserve application files, thresholds and weights.
+- Submit exactly the 16 inputs.json natural queries to original retrieval. No adaptive wording additions. Capture native BM25, normalization, semantic/pretrust/final scores, actual trust/metadata, full text and decisions for each.
+- Choose closest score below and at/above each threshold; deterministic tie by ID. Save selection before selected solution calls. Near means distance <=0.025; if none lies near a side report a search-coverage limitation, never claim exact natural-boundary coverage.
+- Natural branch PASS when actual decisions match effective >= HIGH, else >= UNCERTAIN, else LOW. Selected solution eligibility must match HIGH plus nonempty items; unavailable prerequisites are Inconclusive, not fabricated PASS.
+- Six controlled cases supply only in-memory hybrid_rank output. Keep original database read, trust, metadata, adjustment, comparisons and solution behavior. Use approved internal_kb, category empty, OS Any: trust1 and status bonus0.08. Source is not a real DB article.
+- Inputs saved before controlled calls: adjacent floating-point values below/equal/above each threshold. Derive pretrust from exact target minus actual bonus, not rounded constants. Require actual final == target and save float.hex; if adjustment misses target, fixture is invalid rather than branch FAIL.
+- Expected ordered branches: LOW/UNCERTAIN/UNCERTAIN at lower boundary; UNCERTAIN/HIGH/HIGH at upper boundary. Only two HIGH controls recommend, cite control source and attempt generation; remaining four return no source/citations and do not call LLM.
+- Primary branch PASS requires all valid natural and six boundary classifications and selected/controlled recommendation gates to match. FAIL is a valid mismatch. A HIGH classification does not excuse irrelevant/unsupported advice: review selected natural answers separately with a distinct PASS/FAIL/inconclusive grounding result.
+- Capture original solution result/provider adoption. Disabled Groq limits answer coverage to fallback. Escalation wording in this component test does not establish a saved ticket or real support-queue entry.
+- Synthetic BM25/semantic fields are placeholders only; no actual retrieval accuracy or calibrated probability claimed for branch fixtures. No threshold tuning, score ablation, repair, source write, security exploit claim or IR-13/later test.
+- Verify original private backup, snapshot seeded DB before component calls, preserve earlier evidence and verify original/seeded databases and source hashes after execution.

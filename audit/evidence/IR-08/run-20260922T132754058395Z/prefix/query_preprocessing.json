@@ -1,0 +1,18 @@
+{
+  "original_query": "Windows blue screen error error: 0x00000124",
+  "normalized_query": "windows blue screen error 0x00000124",
+  "normalized_query_tokens": [
+    "windows",
+    "blue",
+    "screen",
+    "error",
+    "0x00000124"
+  ],
+  "original_query_error_codes": [
+    "0x00000124"
+  ],
+  "normalized_query_error_codes": [
+    "0x00000124"
+  ],
+  "capture": "original function return observed; no result or input changed"
+}

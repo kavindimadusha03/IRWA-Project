@@ -1,0 +1,29 @@
+{
+  "status": 422,
+  "location": null,
+  "content_type": "application/json",
+  "body_json": {
+    "detail": [
+      {
+        "type": "json_invalid",
+        "loc": [
+          "body",
+          14
+        ],
+        "msg": "JSON decode error",
+        "input": {},
+        "ctx": {
+          "error": "Expecting value"
+        }
+      }
+    ]
+  },
+  "body_text": "{\"detail\":[{\"type\":\"json_invalid\",\"loc\":[\"body\",14],\"msg\":\"JSON decode error\",\"input\":{},\"ctx\":{\"error\":\"Expecting value\"}}]}",
+  "body_bytes": 125,
+  "body_sha256": "c7ca3716fab60a42aef1262304bf905baaaf589104970bf09ae94ebb3fbb81fb",
+  "elapsed_seconds": 0.004,
+  "redirect_history": 0,
+  "set_cookie_present": false,
+  "runtime_mode": "selected",
+  "audit_boundary_503": false
+}

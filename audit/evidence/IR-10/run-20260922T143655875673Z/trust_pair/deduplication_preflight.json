@@ -1,0 +1,13 @@
+{
+  "recorded_before_request_at_utc": "2026-09-22T14:37:11.466385+00:00",
+  "scope": "Pure original deduplication on actual seeded records; no search/scores generated",
+  "eligible_source_ids": [
+    "AUDIT-IR10-KB-001",
+    "AUDIT-IR10-RESOLVED-001"
+  ],
+  "retained_source_ids": [
+    "AUDIT-IR10-KB-001",
+    "AUDIT-IR10-RESOLVED-001"
+  ],
+  "both_positive_controls_survive": true
+}

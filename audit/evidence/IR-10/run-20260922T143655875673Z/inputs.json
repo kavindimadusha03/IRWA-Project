@@ -1,0 +1,8 @@
+{
+  "recorded_before_requests_at_utc": "2026-09-22T14:36:55.896887+00:00",
+  "case": "IR-10",
+  "title": "Printer queue trust comparison",
+  "description": "My printer queue is stuck and print jobs will not clear.",
+  "characters": 56,
+  "ticket_requests_planned": 1
+}

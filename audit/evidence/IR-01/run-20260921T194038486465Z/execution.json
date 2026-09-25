@@ -1,0 +1,93 @@
+{
+  "started_at_utc": "2026-09-21T19:40:39.073677+00:00",
+  "stage": "execution completed",
+  "case": "IR-01",
+  "status": "Executed; awaiting source/answer review",
+  "outcome": "Unassessed",
+  "ticket_requests": 1,
+  "http": {
+    "health": 200,
+    "login": {
+      "status": 303,
+      "location": "/home",
+      "cookie_present": true
+    },
+    "home": 200,
+    "ticket_create": {
+      "status": 303,
+      "location": "/tickets/501"
+    },
+    "ticket_page": 200
+  },
+  "isolated_database": "C:\\Users\\PSB\\AppData\\Local\\Temp\\knowgap-ir01-n4e8eio1\\knowgap.db",
+  "dataset": "Unmodified project synthetic CSVs; no existing working-database rows copied",
+  "configuration": {
+    "bm25_weight": 0.45,
+    "semantic_weight": 0.55,
+    "high_threshold": 0.68,
+    "uncertain_threshold": 0.55,
+    "embedding_model": "all-MiniLM-L6-v2",
+    "llm_model": "llama-3.1-8b-instant",
+    "ticket_top_k": 5,
+    "thread_limit": 1,
+    "cached_model_only": true
+  },
+  "model_preflight": {
+    "loaded": true,
+    "elapsed_seconds": 44.626
+  },
+  "test_user": {
+    "role": "CUSTOMER",
+    "active": true,
+    "origin": "synthetic CSV seed account; credential values omitted"
+  },
+  "fixture_counts": {
+    "articles": 80,
+    "historical_tickets": 500
+  },
+  "approved_relevant_sources": [
+    "KB-001",
+    "KB-009",
+    "KB-017",
+    "KB-025",
+    "KB-033",
+    "KB-041",
+    "KB-049",
+    "KB-057",
+    "KB-065",
+    "KB-073"
+  ],
+  "llm": {
+    "configured_enabled": false,
+    "attempts": 2,
+    "successful_chat_returns": 0,
+    "error_types": [
+      "RuntimeError",
+      "RuntimeError"
+    ]
+  },
+  "base_url": "http://127.0.0.1:8001",
+  "page": "http://127.0.0.1:8001/home",
+  "endpoint": "POST http://127.0.0.1:8001/tickets/create",
+  "retrieval_elapsed_seconds": 2.747,
+  "ticket_url": "http://127.0.0.1:8001/tickets/501",
+  "ticket": {
+    "id": 501,
+    "category": "Wi-Fi / DNS",
+    "canonical_issue": "My laptop is connected to Wi-Fi but there is no internet.",
+    "status": "SOLUTION_PROPOSED",
+    "approval_status": "PENDING",
+    "retrieval_confidence": 0.9441488884601732,
+    "source_used": "SYN-0138"
+  },
+  "mechanical_checks": {
+    "single_ticket_request": true,
+    "ticket_page_200": true,
+    "retrieved_any_sources": true,
+    "top_in_pre_reviewed_relevant_KB_set": false,
+    "all_sources_approved_or_resolved": true
+  },
+  "review_note": "A matching source ID/category and HIGH score alone do not establish answer grounding. Assess each recommended action against retrieved evidence.",
+  "server_stopped": true,
+  "finished_at_utc": "2026-09-21T19:41:32.835415+00:00"
+}

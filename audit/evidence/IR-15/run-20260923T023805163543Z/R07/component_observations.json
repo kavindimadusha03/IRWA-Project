@@ -1,0 +1,14 @@
+{
+  "retrieval_boundary_calls": [
+    {
+      "request_id": "R07",
+      "query": "Printer issue: café — මුද්‍රණ යන්ත්‍රය — 印刷機",
+      "python_type": "str",
+      "character_length": 44,
+      "backend_executed": false
+    }
+  ],
+  "original_solution_calls": [],
+  "original_llm_attempts": [],
+  "retrieval_backend_executed": false
+}

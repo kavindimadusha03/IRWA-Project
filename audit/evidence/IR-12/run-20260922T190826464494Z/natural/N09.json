@@ -1,0 +1,352 @@
+{
+  "id": "N09",
+  "kind": "natural_original_retrieval",
+  "query": "My laptop battery is swollen after an update.",
+  "started_at_utc": "2026-09-22T19:08:49.420995+00:00",
+  "deduplicated_source_ids": [
+    "KB-001",
+    "KB-002",
+    "KB-003",
+    "KB-004",
+    "KB-005",
+    "KB-006",
+    "KB-007",
+    "KB-008",
+    "KB-009",
+    "KB-017",
+    "SYN-0001",
+    "SYN-0003",
+    "SYN-0004",
+    "SYN-0005",
+    "SYN-0006",
+    "SYN-0008",
+    "SYN-0009",
+    "SYN-0010",
+    "SYN-0011",
+    "SYN-0012",
+    "SYN-0013",
+    "SYN-0014",
+    "SYN-0015",
+    "SYN-0018",
+    "SYN-0026",
+    "SYN-0027",
+    "SYN-0028",
+    "SYN-0030",
+    "SYN-0032",
+    "SYN-0033",
+    "SYN-0037",
+    "SYN-0038",
+    "SYN-0039",
+    "SYN-0044",
+    "SYN-0045",
+    "SYN-0048",
+    "SYN-0051",
+    "SYN-0052",
+    "SYN-0053",
+    "SYN-0054",
+    "SYN-0056",
+    "SYN-0059",
+    "SYN-0070",
+    "SYN-0072",
+    "SYN-0080",
+    "SYN-0092",
+    "SYN-0096",
+    "SYN-0101",
+    "SYN-0135",
+    "SYN-0138"
+  ],
+  "query_preprocessing": {
+    "original": "My laptop battery is swollen after an update.",
+    "normalized": "laptop battery swollen after update",
+    "tokens": [
+      "laptop",
+      "battery",
+      "swollen",
+      "after",
+      "update"
+    ]
+  },
+  "native_bm25": {
+    "tokens": [
+      "laptop",
+      "battery",
+      "swollen",
+      "after",
+      "update"
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      1.382149358423704,
+      0.0,
+      2.871793566493387,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      4.570022725452927,
+      4.308618232310575,
+      6.112218640494449,
+      1.6621871309147718,
+      6.799776510297992,
+      0.0,
+      1.5027098030237314,
+      0.0,
+      1.7259416715111318,
+      0.0,
+      0.0,
+      2.9036638408610855,
+      0.0,
+      0.0,
+      2.272929808562455,
+      1.7596888201426473,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.7770621712267909,
+      0.0,
+      1.5627275017332973,
+      0.0,
+      1.7596888201426473,
+      0.0,
+      3.472521953876423,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.5027098030237314,
+      1.6054755869452961,
+      2.5617999071772237
+    ],
+    "order": "deduplicated_source_ids"
+  },
+  "hybrid_before_trust": [
+    {
+      "source_id": "SYN-0010",
+      "title": "Laptop is slow after Windows 11 update",
+      "content": "Problem: Laptop is slow after Windows 11 update on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 1.0,
+      "semantic_score": 0.4276976553004344,
+      "hybrid_score": 0.685233710415239,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0008",
+      "title": "Computer repeatedly restarts after Windows update",
+      "content": "Problem: Computer repeatedly restarts after Windows update on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.8988852253067048,
+      "semantic_score": 0.31227431373511266,
+      "hybrid_score": 0.5762492239423291,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0005",
+      "title": "Blue screen appears after installing an update",
+      "content": "Problem: Blue screen appears after installing an update on Windows 10. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.6720842543180365,
+      "semantic_score": 0.2942626192466221,
+      "hybrid_score": 0.46428235502875864,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0006",
+      "title": "VPN authentication fails after Windows update",
+      "content": "Problem: VPN authentication fails after Windows update on macOS. This started this morning.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+      "category": "VPN",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.633641153615173,
+      "semantic_score": 0.17475397819648045,
+      "hybrid_score": 0.3812532071348921,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0054",
+      "title": "Windows driver error after restart",
+      "content": "Problem: Windows driver error after restart on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.5106817773521566,
+      "semantic_score": 0.2516799774591797,
+      "hybrid_score": 0.36823078741101933,
+      "exact_error_match": false
+    }
+  ],
+  "metadata_calls": [
+    {
+      "source_id": "SYN-0010",
+      "query": "My laptop battery is swollen after an update.",
+      "bonus": 0.26
+    },
+    {
+      "source_id": "SYN-0008",
+      "query": "My laptop battery is swollen after an update.",
+      "bonus": 0.26
+    },
+    {
+      "source_id": "SYN-0005",
+      "query": "My laptop battery is swollen after an update.",
+      "bonus": 0.26
+    },
+    {
+      "source_id": "SYN-0006",
+      "query": "My laptop battery is swollen after an update.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0054",
+      "query": "My laptop battery is swollen after an update.",
+      "bonus": 0.26
+    }
+  ],
+  "trust_calls": [
+    {
+      "source_id": "SYN-0010",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0008",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0005",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0006",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0054",
+      "trust": 0.85
+    }
+  ],
+  "retrieval": {
+    "query": "My laptop battery is swollen after an update.",
+    "items": [
+      {
+        "source_id": "SYN-0010",
+        "title": "Laptop is slow after Windows 11 update",
+        "content": "Problem: Laptop is slow after Windows 11 update on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+        "category": "Windows / Updates",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 1.0,
+        "semantic_score": 0.4276976553004344,
+        "hybrid_score": 0.8424486538529531,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 1.0,
+          "semantic_score": 0.4276976553004344,
+          "hybrid_score": 0.8424486538529531
+        },
+        "source": "SYN-0010"
+      },
+      {
+        "source_id": "SYN-0008",
+        "title": "Computer repeatedly restarts after Windows update",
+        "content": "Problem: Computer repeatedly restarts after Windows update on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+        "category": "Windows / Updates",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.8988852253067048,
+        "semantic_score": 0.31227431373511266,
+        "hybrid_score": 0.7498118403509797,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.8988852253067048,
+          "semantic_score": 0.31227431373511266,
+          "hybrid_score": 0.7498118403509797
+        },
+        "source": "SYN-0008"
+      },
+      {
+        "source_id": "SYN-0005",
+        "title": "Blue screen appears after installing an update",
+        "content": "Problem: Blue screen appears after installing an update on Windows 10. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+        "category": "Windows / Updates",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.6720842543180365,
+        "semantic_score": 0.2942626192466221,
+        "hybrid_score": 0.6546400017744449,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.6720842543180365,
+          "semantic_score": 0.2942626192466221,
+          "hybrid_score": 0.6546400017744449
+        },
+        "source": "SYN-0005"
+      },
+      {
+        "source_id": "SYN-0054",
+        "title": "Windows driver error after restart",
+        "content": "Problem: Windows driver error after restart on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+        "category": "Windows / Updates",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.5106817773521566,
+        "semantic_score": 0.2516799774591797,
+        "hybrid_score": 0.5729961692993664,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.5106817773521566,
+          "semantic_score": 0.2516799774591797,
+          "hybrid_score": 0.5729961692993664
+        },
+        "source": "SYN-0054"
+      },
+      {
+        "source_id": "SYN-0006",
+        "title": "VPN authentication fails after Windows update",
+        "content": "Problem: VPN authentication fails after Windows update on macOS. This started this morning.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+        "category": "VPN",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.633641153615173,
+        "semantic_score": 0.17475397819648045,
+        "hybrid_score": 0.4040652260646583,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.633641153615173,
+          "semantic_score": 0.17475397819648045,
+          "hybrid_score": 0.4040652260646583
+        },
+        "source": "SYN-0006"
+      }
+    ],
+    "best_score": 0.8424486538529531,
+    "decision": "HIGH"
+  },
+  "expected_decision": "HIGH",
+  "decision_matches": true,
+  "elapsed_seconds": 0.281
+}

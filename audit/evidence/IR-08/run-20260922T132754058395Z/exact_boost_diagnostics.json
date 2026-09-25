@@ -1,0 +1,230 @@
+{
+  "method": "Arithmetic residual from actual hybrid returns; no alternate search or ablation",
+  "cases": [
+    {
+      "case": "lowercase",
+      "rows": [
+        {
+          "source_id": "AUDIT-IR08-EXACT-001",
+          "exact_error_match": true,
+          "raw_hybrid": 1.1839183083498948,
+          "observed_bonus_residual": 0.35000000000000003,
+          "expected_bonus": 0.35,
+          "check": "PASS"
+        },
+        {
+          "source_id": "SYN-0005",
+          "exact_error_match": false,
+          "raw_hybrid": 0.6667254289575094,
+          "observed_bonus_residual": 0.0,
+          "expected_bonus": 0.0,
+          "check": "PASS"
+        },
+        {
+          "source_id": "SYN-0054",
+          "exact_error_match": false,
+          "raw_hybrid": 0.3319966173820361,
+          "observed_bonus_residual": 0.0,
+          "expected_bonus": 0.0,
+          "check": "PASS"
+        },
+        {
+          "source_id": "SYN-0135",
+          "exact_error_match": false,
+          "raw_hybrid": 0.2407594873740938,
+          "observed_bonus_residual": 0.0,
+          "expected_bonus": 0.0,
+          "check": "PASS"
+        },
+        {
+          "source_id": "SYN-0026",
+          "exact_error_match": false,
+          "raw_hybrid": 0.2276926112802758,
+          "observed_bonus_residual": 0.0,
+          "expected_bonus": 0.0,
+          "check": "PASS"
+        }
+      ]
+    },
+    {
+      "case": "uppercase",
+      "rows": [
+        {
+          "source_id": "AUDIT-IR08-EXACT-001",
+          "exact_error_match": true,
+          "raw_hybrid": 1.1839183083498948,
+          "observed_bonus_residual": 0.35000000000000003,
+          "expected_bonus": 0.35,
+          "check": "PASS"
+        },
+        {
+          "source_id": "SYN-0005",
+          "exact_error_match": false,
+          "raw_hybrid": 0.6667254289575094,
+          "observed_bonus_residual": 0.0,
+          "expected_bonus": 0.0,
+          "check": "PASS"
+        },
+        {
+          "source_id": "SYN-0054",
+          "exact_error_match": false,
+          "raw_hybrid": 0.3319966173820361,
+          "observed_bonus_residual": 0.0,
+          "expected_bonus": 0.0,
+          "check": "PASS"
+        },
+        {
+          "source_id": "SYN-0135",
+          "exact_error_match": false,
+          "raw_hybrid": 0.2407594873740938,
+          "observed_bonus_residual": 0.0,
+          "expected_bonus": 0.0,
+          "check": "PASS"
+        },
+        {
+          "source_id": "SYN-0026",
+          "exact_error_match": false,
+          "raw_hybrid": 0.2276926112802758,
+          "observed_bonus_residual": 0.0,
+          "expected_bonus": 0.0,
+          "check": "PASS"
+        }
+      ]
+    },
+    {
+      "case": "prefix",
+      "rows": [
+        {
+          "source_id": "AUDIT-IR08-EXACT-001",
+          "exact_error_match": true,
+          "raw_hybrid": 1.1839183083498948,
+          "observed_bonus_residual": 0.35000000000000003,
+          "expected_bonus": 0.35,
+          "check": "PASS"
+        },
+        {
+          "source_id": "SYN-0005",
+          "exact_error_match": false,
+          "raw_hybrid": 0.6667254289575094,
+          "observed_bonus_residual": 0.0,
+          "expected_bonus": 0.0,
+          "check": "PASS"
+        },
+        {
+          "source_id": "SYN-0054",
+          "exact_error_match": false,
+          "raw_hybrid": 0.3319966173820361,
+          "observed_bonus_residual": 0.0,
+          "expected_bonus": 0.0,
+          "check": "PASS"
+        },
+        {
+          "source_id": "SYN-0135",
+          "exact_error_match": false,
+          "raw_hybrid": 0.2407594873740938,
+          "observed_bonus_residual": 0.0,
+          "expected_bonus": 0.0,
+          "check": "PASS"
+        },
+        {
+          "source_id": "SYN-0026",
+          "exact_error_match": false,
+          "raw_hybrid": 0.2276926112802758,
+          "observed_bonus_residual": 0.0,
+          "expected_bonus": 0.0,
+          "check": "PASS"
+        }
+      ]
+    },
+    {
+      "case": "punctuation",
+      "rows": [
+        {
+          "source_id": "AUDIT-IR08-EXACT-001",
+          "exact_error_match": true,
+          "raw_hybrid": 1.1839183083498948,
+          "observed_bonus_residual": 0.35000000000000003,
+          "expected_bonus": 0.35,
+          "check": "PASS"
+        },
+        {
+          "source_id": "SYN-0005",
+          "exact_error_match": false,
+          "raw_hybrid": 0.6667254289575094,
+          "observed_bonus_residual": 0.0,
+          "expected_bonus": 0.0,
+          "check": "PASS"
+        },
+        {
+          "source_id": "SYN-0054",
+          "exact_error_match": false,
+          "raw_hybrid": 0.3319966173820361,
+          "observed_bonus_residual": 0.0,
+          "expected_bonus": 0.0,
+          "check": "PASS"
+        },
+        {
+          "source_id": "SYN-0135",
+          "exact_error_match": false,
+          "raw_hybrid": 0.2407594873740938,
+          "observed_bonus_residual": 0.0,
+          "expected_bonus": 0.0,
+          "check": "PASS"
+        },
+        {
+          "source_id": "SYN-0026",
+          "exact_error_match": false,
+          "raw_hybrid": 0.2276926112802758,
+          "observed_bonus_residual": 0.0,
+          "expected_bonus": 0.0,
+          "check": "PASS"
+        }
+      ]
+    },
+    {
+      "case": "quoted",
+      "rows": [
+        {
+          "source_id": "AUDIT-IR08-EXACT-001",
+          "exact_error_match": true,
+          "raw_hybrid": 1.1839183083498948,
+          "observed_bonus_residual": 0.35000000000000003,
+          "expected_bonus": 0.35,
+          "check": "PASS"
+        },
+        {
+          "source_id": "SYN-0005",
+          "exact_error_match": false,
+          "raw_hybrid": 0.6667254289575094,
+          "observed_bonus_residual": 0.0,
+          "expected_bonus": 0.0,
+          "check": "PASS"
+        },
+        {
+          "source_id": "SYN-0054",
+          "exact_error_match": false,
+          "raw_hybrid": 0.3319966173820361,
+          "observed_bonus_residual": 0.0,
+          "expected_bonus": 0.0,
+          "check": "PASS"
+        },
+        {
+          "source_id": "SYN-0135",
+          "exact_error_match": false,
+          "raw_hybrid": 0.2407594873740938,
+          "observed_bonus_residual": 0.0,
+          "expected_bonus": 0.0,
+          "check": "PASS"
+        },
+        {
+          "source_id": "SYN-0026",
+          "exact_error_match": false,
+          "raw_hybrid": 0.2276926112802758,
+          "observed_bonus_residual": 0.0,
+          "expected_bonus": 0.0,
+          "check": "PASS"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "recorded_at_utc": "2026-09-22T14:10:18.823258+00:00",
+  "fixtures": [
+    {
+      "category": "Audit / Lookup",
+      "source_type": "internal_kb",
+      "author": "IR-09 synthetic audit fixture",
+      "authoritative": true,
+      "supported_os": "Any",
+      "security_class": "internal",
+      "doc_id": "AUDIT-IR09-DRAFT-001",
+      "title": "Draft lookup quartzmeadow729",
+      "content": "Unreviewed reference for quartzmeadow729. Response-only witness: violetcompassstamp. This synthetic record is not approved for recommendations.",
+      "status": "draft"
+    },
+    {
+      "category": "Audit / Lookup",
+      "source_type": "internal_kb",
+      "author": "IR-09 synthetic audit fixture",
+      "authoritative": true,
+      "supported_os": "Any",
+      "security_class": "internal",
+      "doc_id": "AUDIT-IR09-CONTROL-001",
+      "title": "Approved lookup cobaltlantern463",
+      "content": "Reviewed test reference for cobaltlantern463. Response-only witness: amberharborreceipt. This is harmless synthetic lookup text, not a device repair.",
+      "status": "approved"
+    }
+  ],
+  "fields_and_statuses_unchanged": true,
+  "private_snapshot_unchanged": true
+}

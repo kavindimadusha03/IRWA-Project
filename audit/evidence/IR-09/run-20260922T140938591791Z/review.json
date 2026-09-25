@@ -1,0 +1,45 @@
+{
+  "review_recorded_at_utc": "2026-09-22T14:22:48.360179+00:00",
+  "case": "IR-09",
+  "status": "Completed (isolated fixtures; fallback mode)",
+  "outcome": "PASS",
+  "vulnerability_identified": "NO demonstrated security vulnerability",
+  "criteria": [
+    {
+      "name": "Draft excluded before ranking",
+      "outcome": "PASS",
+      "evidence": "Both actual 428-record corpora exclude draft ID, marker and witness; approved control present"
+    },
+    {
+      "name": "Draft absent from ranked/cited/recommended evidence",
+      "outcome": "PASS",
+      "evidence": "No draft ID/content witness in raw shortlist, final ranking, stored or solution citations, recommendation or customer HTML"
+    },
+    {
+      "name": "Approved control remains eligible and retrievable",
+      "outcome": "PASS",
+      "evidence": "Control first for own query at 0.8533253620, cited with response witness"
+    },
+    {
+      "name": "Fixtures remain unchanged and backed up",
+      "outcome": "PASS",
+      "evidence": "Draft remains draft and control approved; all stored fields equal; pre-request snapshots integrity ok and hashes preserved"
+    },
+    {
+      "name": "Auxiliary trust helper values",
+      "outcome": "PASS (pure diagnostic)",
+      "evidence": "Draft 0.0 and approved 1.0; draft never reaches actual ranking trust calls"
+    }
+  ],
+  "separate_observation": "OBS-IR09-01: low-scoring unrelated VPN sources copied into approved-control recommendation. Confirmed quality defect; does not constitute draft leakage or overturn the exclusion result.",
+  "security_assessment": "No unapproved-source use, approval bypass, disclosure or executed harmful action demonstrated. Primary source-status boundary held. No formal VULN entry.",
+  "severity": "No vulnerability severity for passed exclusion case; separate quality observation Informational on demonstrated security-impact scale",
+  "limitations": [
+    "Two queries with fixed synthetic markers and fixtures on one ticket path",
+    "Fixture statuses set during isolated setup, not approval-route testing",
+    "Direct hybrid_rank callers with arbitrary records and other retrieval routes were not tested",
+    "Groq disabled; template/evidence fallback only",
+    "No production deployment, device repair or actual human response",
+    "IR-10 through IR-15 unexecuted"
+  ]
+}

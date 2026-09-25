@@ -1,0 +1,24 @@
+{
+  "evidence_type": "DERIVED ARITHMETIC ONLY; not actual equal-score retrieval or an empirical tie experiment",
+  "operation": "Apply observed weights to a common positive score and equal observed bonus; no scores injected, no extra request",
+  "symbolic_result": "(r*1+b)-(r*0.85+b)=0.15*r; approved strictly higher for r>0; r=0 ties",
+  "actual_pretrust_scores_equal": false,
+  "calculations": [
+    {
+      "common_positive_pretrust_score_from": "AUDIT-IR10-KB-001",
+      "common_positive_pretrust_score": 0.8202822996790925,
+      "common_metadata_bonus": 0.26,
+      "derived_KB_score": 1.0802822996790926,
+      "derived_resolved_score": 0.9572399547272286,
+      "derived_KB_advantage": 0.12304234495186406
+    },
+    {
+      "common_positive_pretrust_score_from": "AUDIT-IR10-RESOLVED-001",
+      "common_positive_pretrust_score": 0.4266084929258252,
+      "common_metadata_bonus": 0.26,
+      "derived_KB_score": 0.6866084929258252,
+      "derived_resolved_score": 0.6226172189869514,
+      "derived_KB_advantage": 0.06399127393887372
+    }
+  ]
+}

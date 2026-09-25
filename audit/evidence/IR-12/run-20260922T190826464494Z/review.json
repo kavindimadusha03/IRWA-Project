@@ -1,0 +1,34 @@
+{
+  "case": "IR-12",
+  "reviewed_at_utc": "2026-09-22T19:31:50.937980+00:00",
+  "status": "Completed (direct components; natural plus controlled fixtures)",
+  "outcome": "PASS (branch logic); FAIL (selected natural-answer grounding)",
+  "primary_branch_outcome": "PASS",
+  "secondary_grounding_outcome": "FAIL (N11)",
+  "natural_decisions_correct": 16,
+  "controlled_boundaries_correct": 6,
+  "controlled_targets_exact": 6,
+  "natural_recommendation_gates_correct": 4,
+  "controlled_recommendation_gates_correct": 6,
+  "near_boundary_sides_found": 4,
+  "near_window": 0.025,
+  "effective_thresholds": {
+    "UNCERTAIN": 0.55,
+    "HIGH": 0.68
+  },
+  "observation_id": "OBS-IR12-01",
+  "formal_vulnerability_added": false,
+  "vulnerability_identified": "No security exploit demonstrated; answer reliability defect",
+  "provider_outputs_adopted": 0,
+  "HTTP_requests": 0,
+  "ticket_submissions": 0,
+  "next_case_not_executed": "IR-13",
+  "limitations": [
+    "Component-only; no ticket/UI/queue routing assurance",
+    "Synthetic corpus, 16 fixed queries; four selected answers; no statistical accuracy or calibration estimate",
+    "Six in-memory score fixtures test comparisons, not natural relevance",
+    "Groq disabled; no live generated-answer assurance",
+    "Normalization and score observations do not establish ablation causality"
+  ],
+  "evidence": "notes.md"
+}

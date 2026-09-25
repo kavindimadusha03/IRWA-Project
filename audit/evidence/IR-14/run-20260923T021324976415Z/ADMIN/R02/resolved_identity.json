@@ -1,0 +1,10 @@
+[
+  {
+    "request_id": "R02",
+    "path": "/admin",
+    "user_found": true,
+    "database_user_id": 4,
+    "stored_role": "ADMIN",
+    "active": true
+  }
+]

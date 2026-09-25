@@ -1,0 +1,88 @@
+{
+  "recorded_at_utc": "2026-09-21T19:40:38.592472+00:00",
+  "corpus": "unmodified data/knowledge_base.csv plus data/tickets.csv in an isolated database",
+  "approved_known_issue_sources": [
+    {
+      "doc_id": "KB-001",
+      "title": "DNS Cache Recovery - Guide 1",
+      "body": "If Wi-Fi is connected but internet access is unavailable, open Command Prompt and run ipconfig /flushdns. Reconnect to Wi-Fi and test again.",
+      "category": "Wi-Fi / DNS",
+      "status": "approved",
+      "source_type": "Internal KB"
+    },
+    {
+      "doc_id": "KB-009",
+      "title": "Restart Network Adapter - Guide 2",
+      "body": "Disable and re-enable the Wi-Fi network adapter, then reconnect to the approved wireless network.",
+      "category": "Wi-Fi / DNS",
+      "status": "approved",
+      "source_type": "Internal KB"
+    },
+    {
+      "doc_id": "KB-017",
+      "title": "Renew Windows IP Address - Guide 3",
+      "body": "For Wi-Fi connected with no internet, run ipconfig /release followed by ipconfig /renew, then reconnect to the wireless network.",
+      "category": "Wi-Fi / DNS",
+      "status": "approved",
+      "source_type": "Internal KB"
+    },
+    {
+      "doc_id": "KB-025",
+      "title": "DNS Cache Recovery - Guide 4",
+      "body": "If Wi-Fi is connected but internet access is unavailable, open Command Prompt and run ipconfig /flushdns. Reconnect to Wi-Fi and test again.",
+      "category": "Wi-Fi / DNS",
+      "status": "approved",
+      "source_type": "Internal KB"
+    },
+    {
+      "doc_id": "KB-033",
+      "title": "Restart Network Adapter - Guide 5",
+      "body": "Disable and re-enable the Wi-Fi network adapter, then reconnect to the approved wireless network.",
+      "category": "Wi-Fi / DNS",
+      "status": "approved",
+      "source_type": "Internal KB"
+    },
+    {
+      "doc_id": "KB-041",
+      "title": "Renew Windows IP Address - Guide 6",
+      "body": "For Wi-Fi connected with no internet, run ipconfig /release followed by ipconfig /renew, then reconnect to the wireless network.",
+      "category": "Wi-Fi / DNS",
+      "status": "approved",
+      "source_type": "Internal KB"
+    },
+    {
+      "doc_id": "KB-049",
+      "title": "DNS Cache Recovery - Guide 7",
+      "body": "If Wi-Fi is connected but internet access is unavailable, open Command Prompt and run ipconfig /flushdns. Reconnect to Wi-Fi and test again.",
+      "category": "Wi-Fi / DNS",
+      "status": "approved",
+      "source_type": "Internal KB"
+    },
+    {
+      "doc_id": "KB-057",
+      "title": "Restart Network Adapter - Guide 8",
+      "body": "Disable and re-enable the Wi-Fi network adapter, then reconnect to the approved wireless network.",
+      "category": "Wi-Fi / DNS",
+      "status": "approved",
+      "source_type": "Internal KB"
+    },
+    {
+      "doc_id": "KB-065",
+      "title": "Renew Windows IP Address - Guide 9",
+      "body": "For Wi-Fi connected with no internet, run ipconfig /release followed by ipconfig /renew, then reconnect to the wireless network.",
+      "category": "Wi-Fi / DNS",
+      "status": "approved",
+      "source_type": "Internal KB"
+    },
+    {
+      "doc_id": "KB-073",
+      "title": "DNS Cache Recovery - Guide 10",
+      "body": "If Wi-Fi is connected but internet access is unavailable, open Command Prompt and run ipconfig /flushdns. Reconnect to Wi-Fi and test again.",
+      "category": "Wi-Fi / DNS",
+      "status": "approved",
+      "source_type": "Internal KB"
+    }
+  ],
+  "kb_csv_sha256": "1194a81de63048a7321f536e448c7aa7bb7a2f208fe9f0c369f833ca9b39d8e5",
+  "ticket_csv_sha256": "b4f2f293338e5e188d2298396f74ad17221c27032bf5d31aca88b68c3e5a6f67"
+}

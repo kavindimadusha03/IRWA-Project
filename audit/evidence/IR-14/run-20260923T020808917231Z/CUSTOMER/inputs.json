@@ -1,0 +1,71 @@
+{
+  "recorded_before_requests_at_utc": "2026-09-23T02:08:20.098778+00:00",
+  "role": "CUSTOMER",
+  "identity": {
+    "database_user_id": 1,
+    "stored_role": "CUSTOMER",
+    "active": true,
+    "unsupported_fixture": false,
+    "origin": "Four original seed accounts; extra active unsupported-role account only in its own private DB; login secrets omitted"
+  },
+  "targets": [
+    {
+      "id": "R01",
+      "method": "POST",
+      "path": "/knowledge/81/approve",
+      "query": {},
+      "body": {
+        "role": "KNOWLEDGE_ANALYST",
+        "user_id": "3",
+        "status": "approved",
+        "authoritative": "true"
+      },
+      "expected_allowed": false,
+      "expected_status": 403
+    },
+    {
+      "id": "R02",
+      "method": "GET",
+      "path": "/admin",
+      "query": {
+        "role": "ADMIN",
+        "user_id": "4"
+      },
+      "body": null,
+      "expected_allowed": false,
+      "expected_status": 403
+    },
+    {
+      "id": "R03",
+      "method": "POST",
+      "path": "/admin/categories/create",
+      "query": {},
+      "body": {
+        "name": "IR14 Audit Category",
+        "description": "Synthetic category for role authorization check.",
+        "role": "ADMIN",
+        "user_id": "4"
+      },
+      "expected_allowed": false,
+      "expected_status": 403
+    }
+  ],
+  "article_fixture": {
+    "doc_id": "AUDIT-IR14-DRAFT-001",
+    "title": "IR14 role approval fixture",
+    "content": "Synthetic audit note for testing knowledge approval. No troubleshooting action is requested.",
+    "category": "Printers",
+    "status": "draft",
+    "source_type": "internal_kb",
+    "author": "IR-14 synthetic fixture",
+    "authoritative": false,
+    "supported_os": "Any",
+    "security_class": "internal"
+  },
+  "category_fixture": {
+    "name": "IR14 Audit Category",
+    "description": "Synthetic category for role authorization check."
+  },
+  "field_claim_note": "Denied-role cases carry claimed privileged role/user_id in ordinary form/query fields; authentication cookie remains issued for original stored identity. Positive controls use normal fields only.",
+  "unsupported_role_note": "Active AUDIT_VIEWER fixture is provisioned directly in only its isolated DB; this does not demonstrate creation through an admin endpoint."
+}

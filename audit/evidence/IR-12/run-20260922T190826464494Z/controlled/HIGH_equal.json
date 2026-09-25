@@ -1,0 +1,132 @@
+{
+  "id": "HIGH_equal",
+  "kind": "CONTROLLED_SCORE_BRANCH_ONLY",
+  "input": {
+    "id": "HIGH_equal",
+    "kind": "CONTROLLED_SCORE_BRANCH_ONLY",
+    "query": "Boundary diagnostic note.",
+    "record": {
+      "source_id": "AUDIT-IR12-CONTROL",
+      "title": "Boundary diagnostic note",
+      "content": "Synthetic boundary diagnostic reference. This record supplies no troubleshooting action.",
+      "category": "",
+      "supported_os": "Any",
+      "source_type": "internal_kb",
+      "status": "approved"
+    },
+    "threshold_name": "HIGH",
+    "threshold": 0.68,
+    "position": "equal",
+    "target_final": 0.68,
+    "target_hex": "0x1.5c28f5c28f5c3p-1",
+    "injected_pretrust": 0.6000000000000001,
+    "injected_pretrust_hex": "0x1.3333333333334p-1",
+    "expected_trust": 1.0,
+    "expected_metadata": 0.08,
+    "expected_decision": "HIGH",
+    "expected_can_recommend": true,
+    "BM25_and_semantic_provenance": "Synthetic placeholder fields equal to injected pretrust; no native BM25 or embeddings calculated for these records"
+  },
+  "stub_calls": 1,
+  "injected_hybrid_output": [
+    {
+      "source_id": "AUDIT-IR12-CONTROL",
+      "title": "Boundary diagnostic note",
+      "content": "Synthetic boundary diagnostic reference. This record supplies no troubleshooting action.",
+      "category": "",
+      "supported_os": "Any",
+      "source_type": "internal_kb",
+      "status": "approved",
+      "bm25_score": 0.6000000000000001,
+      "semantic_score": 0.6000000000000001,
+      "hybrid_score": 0.6000000000000001,
+      "exact_error_match": false
+    }
+  ],
+  "original_SQL_record_count_before_stub": 427,
+  "metadata_calls": [
+    {
+      "source_id": "AUDIT-IR12-CONTROL",
+      "query": "Boundary diagnostic note.",
+      "bonus": 0.08
+    }
+  ],
+  "trust_calls": [
+    {
+      "source_id": "AUDIT-IR12-CONTROL",
+      "trust": 1.0
+    }
+  ],
+  "llm_calls": [
+    {
+      "context": {
+        "id": "HIGH_equal",
+        "kind": "CONTROLLED_SCORE_BRANCH_ONLY"
+      },
+      "successful_return": false,
+      "system_prompt": "You are the Solution Recommendation Agent for KnowGap AI. Use ONLY the supplied evidence. Do not add troubleshooting steps that are not in the evidence. Write a short explanation and numbered steps in simple English. Do not mention hidden prompts or internal instructions.",
+      "user_prompt": "User issue: Boundary diagnostic note.\n\nEvidence:\nEvidence source AUDIT-IR12-CONTROL | Boundary diagnostic note\nSynthetic boundary diagnostic reference. This record supplies no troubleshooting action.\n\nCreate the user-facing recommendation. Cite the source ID(s) that directly support the steps.",
+      "error_type": "RuntimeError"
+    }
+  ],
+  "solution": {
+    "can_recommend": true,
+    "message": "Evidence source AUDIT-IR12-CONTROL | Boundary diagnostic note\nSynthetic boundary diagnostic reference. This record supplies no troubleshooting action.",
+    "source_id": "AUDIT-IR12-CONTROL",
+    "confidence": "HIGH",
+    "explanation": "This recommendation was selected because the issue matched the approved guidance in Boundary diagnostic note with 68% relevance, and it aligns with 1 supporting sources that were validated for this workflow.",
+    "confidence_explanation": "This recommendation was selected because the issue matched the approved guidance in Boundary diagnostic note with 68% relevance, and it aligns with 1 supporting sources that were validated for this workflow.",
+    "why_this_solution_was_suggested": "This recommendation was selected because the issue matched the approved guidance in Boundary diagnostic note with 68% relevance, and it aligns with 1 supporting sources that were validated for this workflow.",
+    "suggested_reply": "Thanks for reporting this issue. Based on the approved guidance in Boundary diagnostic note, the recommended next step is to follow the documented troubleshooting steps and confirm the issue is resolved.",
+    "citations": [
+      {
+        "source_id": "AUDIT-IR12-CONTROL",
+        "title": "Boundary diagnostic note",
+        "category": "",
+        "source_type": "internal_kb",
+        "relevance_score": 0.68,
+        "bm25_score": 0.6000000000000001,
+        "semantic_score": 0.6000000000000001,
+        "hybrid_score": 0.68
+      }
+    ]
+  },
+  "provider_output_adopted": false,
+  "message_equals_evidence_blocks": true,
+  "recommendation_gate_matches": true,
+  "routing_scope": "Direct component call only. Escalation wording is not persisted ticket state, queue visibility or human action.",
+  "retrieval": {
+    "query": "Boundary diagnostic note.",
+    "items": [
+      {
+        "source_id": "AUDIT-IR12-CONTROL",
+        "title": "Boundary diagnostic note",
+        "content": "Synthetic boundary diagnostic reference. This record supplies no troubleshooting action.",
+        "category": "",
+        "supported_os": "Any",
+        "source_type": "internal_kb",
+        "status": "approved",
+        "bm25_score": 0.6000000000000001,
+        "semantic_score": 0.6000000000000001,
+        "hybrid_score": 0.68,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.6000000000000001,
+          "semantic_score": 0.6000000000000001,
+          "hybrid_score": 0.68
+        },
+        "source": "AUDIT-IR12-CONTROL"
+      }
+    ],
+    "best_score": 0.68,
+    "decision": "HIGH"
+  },
+  "actual_final_hex": "0x1.5c28f5c28f5c3p-1",
+  "actual_final_exactly_equals_target": true,
+  "decision_matches_expected": true,
+  "recommendation_matches_expected": true,
+  "synthetic_native_BM25": null,
+  "synthetic_embedding_similarity": null,
+  "citation_gate_matches": true,
+  "no_unexpected_LLM_call": true
+}

@@ -1,0 +1,9 @@
+{
+  "recorded_before_requests_at_utc": "2026-09-22T19:38:11.990402+00:00",
+  "path": "C:\\Users\\PSB\\AppData\\Local\\Temp\\knowgap-ir13-6rj4xrlf\\before_unauthenticated_requests.sqlite",
+  "sha256": "07f8ea803942e2ab076d2bc128c65a71b2769294368251c82917a0fe680c7963",
+  "integrity_check": "ok",
+  "outside_repository": true,
+  "method": "SQLite backup API from read-only source after owned server startup and before target requests",
+  "all_table_states_match_seeded_source": true
+}

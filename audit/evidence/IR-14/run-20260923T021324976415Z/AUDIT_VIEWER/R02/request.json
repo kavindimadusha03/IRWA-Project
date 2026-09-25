@@ -1,0 +1,21 @@
+{
+  "recorded_before_send_at_utc": "2026-09-23T02:13:52.920344+00:00",
+  "role": "AUDIT_VIEWER",
+  "id": "R02",
+  "method": "GET",
+  "url": "http://127.0.0.1:8001/admin?role=ADMIN&user_id=4",
+  "path": "/admin",
+  "query": {
+    "role": "ADMIN",
+    "user_id": "4"
+  },
+  "declared_form": null,
+  "serialized_body": "",
+  "content_type": null,
+  "cookie_present": true,
+  "authorization_header_present": false,
+  "cookie_value": "omitted",
+  "follow_redirects": false,
+  "expected_allowed": false,
+  "expected_status": 403
+}

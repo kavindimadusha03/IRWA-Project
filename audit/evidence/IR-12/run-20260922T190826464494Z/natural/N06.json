@@ -1,0 +1,354 @@
+{
+  "id": "N06",
+  "kind": "natural_original_retrieval",
+  "query": "The laptop battery no longer holds charge.",
+  "started_at_utc": "2026-09-22T19:08:48.349052+00:00",
+  "deduplicated_source_ids": [
+    "KB-001",
+    "KB-002",
+    "KB-003",
+    "KB-004",
+    "KB-005",
+    "KB-006",
+    "KB-007",
+    "KB-008",
+    "KB-009",
+    "KB-017",
+    "SYN-0001",
+    "SYN-0003",
+    "SYN-0004",
+    "SYN-0005",
+    "SYN-0006",
+    "SYN-0008",
+    "SYN-0009",
+    "SYN-0010",
+    "SYN-0011",
+    "SYN-0012",
+    "SYN-0013",
+    "SYN-0014",
+    "SYN-0015",
+    "SYN-0018",
+    "SYN-0026",
+    "SYN-0027",
+    "SYN-0028",
+    "SYN-0030",
+    "SYN-0032",
+    "SYN-0033",
+    "SYN-0037",
+    "SYN-0038",
+    "SYN-0039",
+    "SYN-0044",
+    "SYN-0045",
+    "SYN-0048",
+    "SYN-0051",
+    "SYN-0052",
+    "SYN-0053",
+    "SYN-0054",
+    "SYN-0056",
+    "SYN-0059",
+    "SYN-0070",
+    "SYN-0072",
+    "SYN-0080",
+    "SYN-0092",
+    "SYN-0096",
+    "SYN-0101",
+    "SYN-0135",
+    "SYN-0138"
+  ],
+  "query_preprocessing": {
+    "original": "The laptop battery no longer holds charge.",
+    "normalized": "laptop battery no longer old change",
+    "tokens": [
+      "laptop",
+      "battery",
+      "no",
+      "longer",
+      "old",
+      "change"
+    ]
+  },
+  "native_bm25": {
+    "tokens": [
+      "laptop",
+      "battery",
+      "no",
+      "longer",
+      "old",
+      "change"
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      3.799721140602295,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.602260238125948,
+      0.0,
+      1.412801420444418,
+      1.3422612812860049,
+      0.0,
+      0.0,
+      1.5421959150415223,
+      0.0,
+      2.2297537848450655,
+      0.0,
+      1.5027098030237314,
+      0.0,
+      1.4316103503340658,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      2.272929808562455,
+      4.986220781130587,
+      2.0045925330533674,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.3592275905632358,
+      1.5627275017332973,
+      0.0,
+      0.0,
+      0.0,
+      1.4509268523175243,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.3592275905632358,
+      1.5027098030237314,
+      1.6054755869452961,
+      4.547880534796988
+    ],
+    "order": "deduplicated_source_ids"
+  },
+  "hybrid_before_trust": [
+    {
+      "source_id": "SYN-0032",
+      "title": "Outlook cannot send email after password change",
+      "content": "Problem: Outlook cannot send email after password change on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+      "category": "Outlook / MFA",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 1.0,
+      "semantic_score": 0.16136972324421428,
+      "hybrid_score": 0.5387533477843178,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0138",
+      "title": "Laptop connected to Wi-Fi but no internet access",
+      "content": "Problem: Laptop connected to Wi-Fi but no internet access on macOS. It happens on my work laptop.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+      "category": "Wi-Fi / DNS",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.9120896836352664,
+      "semantic_score": 0.12735396890034315,
+      "hybrid_score": 0.4804850405310586,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "KB-003",
+      "title": "Re-register MFA - Guide 1",
+      "content": "If MFA approvals or codes fail, remove the old authenticator registration and complete the organization's approved MFA registration process again.",
+      "category": "Outlook / MFA",
+      "supported_os": "Any",
+      "source_type": "Internal KB",
+      "status": "approved",
+      "bm25_score": 0.7620443031687694,
+      "semantic_score": 0.14351433845171527,
+      "hybrid_score": 0.4218528225743896,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0010",
+      "title": "Laptop is slow after Windows 11 update",
+      "content": "Problem: Laptop is slow after Windows 11 update on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.4471831237965131,
+      "semantic_score": 0.18674877862316364,
+      "hybrid_score": 0.30394423395117093,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0030",
+      "title": "Approved software cannot be installed on laptop",
+      "content": "Problem: Approved software cannot be installed on laptop on Windows 10. This started this morning.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+      "category": "Software Installation",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.4558421915780243,
+      "semantic_score": 0.1732213425128375,
+      "hybrid_score": 0.3004007245921716,
+      "exact_error_match": false
+    }
+  ],
+  "metadata_calls": [
+    {
+      "source_id": "SYN-0032",
+      "query": "The laptop battery no longer holds charge.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0138",
+      "query": "The laptop battery no longer holds charge.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "KB-003",
+      "query": "The laptop battery no longer holds charge.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0010",
+      "query": "The laptop battery no longer holds charge.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0030",
+      "query": "The laptop battery no longer holds charge.",
+      "bonus": 0.08
+    }
+  ],
+  "trust_calls": [
+    {
+      "source_id": "SYN-0032",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0138",
+      "trust": 0.85
+    },
+    {
+      "source_id": "KB-003",
+      "trust": 1.0
+    },
+    {
+      "source_id": "SYN-0010",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0030",
+      "trust": 0.85
+    }
+  ],
+  "retrieval": {
+    "query": "The laptop battery no longer holds charge.",
+    "items": [
+      {
+        "source_id": "SYN-0032",
+        "title": "Outlook cannot send email after password change",
+        "content": "Problem: Outlook cannot send email after password change on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+        "category": "Outlook / MFA",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 1.0,
+        "semantic_score": 0.16136972324421428,
+        "hybrid_score": 0.5379403456166701,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 1.0,
+          "semantic_score": 0.16136972324421428,
+          "hybrid_score": 0.5379403456166701
+        },
+        "source": "SYN-0032"
+      },
+      {
+        "source_id": "KB-003",
+        "title": "Re-register MFA - Guide 1",
+        "content": "If MFA approvals or codes fail, remove the old authenticator registration and complete the organization's approved MFA registration process again.",
+        "category": "Outlook / MFA",
+        "supported_os": "Any",
+        "source_type": "Internal KB",
+        "status": "approved",
+        "bm25_score": 0.7620443031687694,
+        "semantic_score": 0.14351433845171527,
+        "hybrid_score": 0.5018528225743896,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.7620443031687694,
+          "semantic_score": 0.14351433845171527,
+          "hybrid_score": 0.5018528225743896
+        },
+        "source": "KB-003"
+      },
+      {
+        "source_id": "SYN-0138",
+        "title": "Laptop connected to Wi-Fi but no internet access",
+        "content": "Problem: Laptop connected to Wi-Fi but no internet access on macOS. It happens on my work laptop.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+        "category": "Wi-Fi / DNS",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.9120896836352664,
+        "semantic_score": 0.12735396890034315,
+        "hybrid_score": 0.48841228445139984,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.9120896836352664,
+          "semantic_score": 0.12735396890034315,
+          "hybrid_score": 0.48841228445139984
+        },
+        "source": "SYN-0138"
+      },
+      {
+        "source_id": "SYN-0010",
+        "title": "Laptop is slow after Windows 11 update",
+        "content": "Problem: Laptop is slow after Windows 11 update on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+        "category": "Windows / Updates",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.4471831237965131,
+        "semantic_score": 0.18674877862316364,
+        "hybrid_score": 0.3383525988584953,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.4471831237965131,
+          "semantic_score": 0.18674877862316364,
+          "hybrid_score": 0.3383525988584953
+        },
+        "source": "SYN-0010"
+      },
+      {
+        "source_id": "SYN-0030",
+        "title": "Approved software cannot be installed on laptop",
+        "content": "Problem: Approved software cannot be installed on laptop on Windows 10. This started this morning.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+        "category": "Software Installation",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.4558421915780243,
+        "semantic_score": 0.1732213425128375,
+        "hybrid_score": 0.33534061590334585,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.4558421915780243,
+          "semantic_score": 0.1732213425128375,
+          "hybrid_score": 0.33534061590334585
+        },
+        "source": "SYN-0030"
+      }
+    ],
+    "best_score": 0.5379403456166701,
+    "decision": "LOW"
+  },
+  "expected_decision": "LOW",
+  "decision_matches": true,
+  "elapsed_seconds": 0.469
+}

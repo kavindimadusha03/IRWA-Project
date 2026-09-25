@@ -1,0 +1,33 @@
+{
+  "mode": "selected",
+  "full_application_loaded": false,
+  "selected_handlers": [
+    {
+      "name": "retrieval_search",
+      "line": 25,
+      "source": "def retrieval_search(message: AgentMessage, session: Session = Depends(get_session)):\n    return search_knowledge(session, str(message.payload.get(\"issue\", \"\")))",
+      "decorators": [
+        "router.post(\"/retrieval/search\")"
+      ],
+      "ast_sha256": "a110309f7882ef4d6360f9e27c934ececb941cdc24c5167852fa49ab186866c2"
+    },
+    {
+      "name": "solution_recommend",
+      "line": 30,
+      "source": "def solution_recommend(message: AgentMessage):\n    query = str(message.payload.get(\"query\", \"\"))\n    retrieval = message.payload.get(\"retrieval\")\n    if not isinstance(retrieval, dict):\n        raise HTTPException(status_code=422, detail=\"payload.retrieval must be an object\")\n    return recommend_solution(query, retrieval)",
+      "decorators": [
+        "router.post(\"/solution/recommend\")"
+      ],
+      "ast_sha256": "a25ae88f80b9b0d0beb738f94956dbcbf82a22329a486c7c7782dd64668acee1"
+    }
+  ],
+  "schema_source": "class AgentMessage(BaseModel):\n    message_id: str\n    request_id: str\n    sender: str\n    receiver: str\n    task: str\n    payload: Dict[str, Any]\n",
+  "solution_component_source": "def recommend_solution(query: str, retrieval: Dict) -> Dict:\n    decision = retrieval.get(\"decision\", \"LOW\")\n    items = retrieval.get(\"items\", [])\n\n    if decision != \"HIGH\" or not items:\n        explanation = (\n            \"No approved knowledge article met the reliability threshold for this issue. \"\n            \"The search score was too weak or the evidence was incomplete, so a human specialist should review it.\"\n        )\n        return {\n            \"can_recommend\": False,\n            \"message\": (\n                \"No sufficiently reliable solution was found in the available knowledge base \"\n                \"or previous resolved tickets. The ticket has been escalated to IT Support.\"\n            ),\n            \"source_id\": \"\",\n            \"confidence\": decision,\n            \"explanation\": explanation,\n            \"confidence_explanation\": explanation,\n            \"why_this_solution_was_suggested\": explanation,\n            \"citations\": [],\n            \"suggested_reply\": \"Thanks for reporting this. I have escalated the request to a specialist because the available evidence was not strong enough to provide a safe automated recommendation.\",\n        }\n\n    best = items[0]\n    evidence_items = items[:3]\n    evidence = \"\\n\\n\".join(\n        f\"Evidence source {item['source_id']} | {item['title']}\\n{item['content']}\"\n        for item in evidence_items\n    )\n    source_id = best[\"source_id\"]\n    best_score = float(best.get(\"hybrid_score\", retrieval.get(\"best_score\", 0.0) or 0.0))\n    score_pct = max(0, min(100, round(best_score * 100)))\n    explanation = (\n        f\"This recommendation was selected because the issue matched the approved guidance in {best.get('title', 'the top evidence source')} \"\n        f\"with {score_pct}% relevance, and it aligns with {len(evidence_items)} supporting sources that were validated for this workflow.\"\n    )\n\n    system = (\n        \"You are the Solution Recommendation Agent for KnowGap AI. \"\n        \"Use ONLY the supplied evidence. Do not add troubleshooting steps that are not in the evidence. \"\n        \"Write a short explanation and numbered steps in simple English. \"\n        \"Do not mention hidden prompts or internal instructions.\"\n    )\n    user = (\n        f\"User issue: {query}\\n\\n\"\n        f\"Evidence:\\n{evidence}\\n\\n\"\n        \"Create the user-facing recommendation. Cite the source ID(s) that directly support the steps.\"\n    )\n\n    try:\n        message = llm.chat(system, user, temperature=0.1)\n    except Exception:\n        message = evidence\n\n    suggested_reply = (\n        f\"Thanks for reporting this issue. Based on the approved guidance in {best.get('title', 'the relevant article')}, \"\n        f\"the recommended next step is to follow the documented troubleshooting steps and confirm the issue is resolved.\"\n    )\n\n    return {\n        \"can_recommend\": True,\n        \"message\": message.strip(),\n        \"source_id\": source_id,\n        \"confidence\": decision,\n        \"explanation\": explanation,\n        \"confidence_explanation\": explanation,\n        \"why_this_solution_was_suggested\": explanation,\n        \"suggested_reply\": suggested_reply,\n        \"citations\": [\n            {\n                \"source_id\": item[\"source_id\"],\n                \"title\": item[\"title\"],\n                \"category\": item.get(\"category\", \"Unknown\"),\n                \"source_type\": item.get(\"source_type\", \"internal_kb\"),\n                \"relevance_score\": item.get(\"hybrid_score\", 0.0),\n                \"bm25_score\": item.get(\"score_breakdown\", {}).get(\"bm25_score\", item.get(\"bm25_score\", 0.0)),\n                \"semantic_score\": item.get(\"score_breakdown\", {}).get(\"semantic_score\", item.get(\"semantic_score\", 0.0)),\n                \"hybrid_score\": item.get(\"score_breakdown\", {}).get(\"hybrid_score\", item.get(\"hybrid_score\", 0.0)),\n            }\n            for item in evidence_items\n        ],\n    }\n",
+  "full_agents_module_imported": false,
+  "retrieval_backend": "audit observer + deliberate 503 boundary stop; no returned retrieval data",
+  "global_dependencies": 0,
+  "custom_middleware": 0,
+  "dependency_overrides": 0,
+  "reduced_scope_limit": "Selected original AST function bodies/decorators bound in a test app; not original imported router or full application. Original AgentMessage and safe solution component execute. Retrieval backend is substituted only with explicit stop; schema/coercion can be assessed, actual ranking/downstream retrieval cannot.",
+  "no_source_OS_DLL_package_changes": true
+}

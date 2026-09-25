@@ -1,0 +1,102 @@
+{
+  "query": "quartzmeadow729",
+  "items": [
+    {
+      "source_id": "AUDIT-IR09-CONTROL-001",
+      "title": "Approved lookup cobaltlantern463",
+      "content": "Reviewed test reference for cobaltlantern463. Response-only witness: amberharborreceipt. This is harmless synthetic lookup text, not a device repair.",
+      "category": "Audit / Lookup",
+      "supported_os": "Any",
+      "source_type": "internal_kb",
+      "status": "approved",
+      "bm25_score": 0.0,
+      "semantic_score": 0.3109565675500259,
+      "hybrid_score": 0.25102611215251425,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.0,
+        "semantic_score": 0.3109565675500259,
+        "hybrid_score": 0.25102611215251425
+      },
+      "source": "AUDIT-IR09-CONTROL-001"
+    },
+    {
+      "source_id": "SYN-0003",
+      "title": "New employee account cannot access portal",
+      "content": "Problem: New employee account cannot access portal on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+      "category": "Accounts / Passwords",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.0,
+      "semantic_score": 0.13117537828332365,
+      "hybrid_score": 0.1413244893474538,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.0,
+        "semantic_score": 0.13117537828332365,
+        "hybrid_score": 0.1413244893474538
+      },
+      "source": "SYN-0003"
+    },
+    {
+      "source_id": "KB-007",
+      "title": "Approved Software Installation - Guide 1",
+      "content": "Download the installer only from the approved internal source and install it with authorized administrator permission.",
+      "category": "Software Installation",
+      "supported_os": "Any",
+      "source_type": "Internal KB",
+      "status": "approved",
+      "bm25_score": 0.0,
+      "semantic_score": 0.10975442331710272,
+      "hybrid_score": 0.1403649328244065,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.0,
+        "semantic_score": 0.10975442331710272,
+        "hybrid_score": 0.1403649328244065
+      },
+      "source": "KB-007"
+    },
+    {
+      "source_id": "SYN-0059",
+      "title": "Installer stops before completion",
+      "content": "Problem: Installer stops before completion on Windows 10. Please help because I need this for work.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+      "category": "Software Installation",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.0,
+      "semantic_score": 0.11774440487349858,
+      "hybrid_score": 0.1350455092783606,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.0,
+        "semantic_score": 0.11774440487349858,
+        "hybrid_score": 0.1350455092783606
+      },
+      "source": "SYN-0059"
+    },
+    {
+      "source_id": "SYN-0011",
+      "title": "Outlook profile fails to synchronize mail",
+      "content": "Problem: Outlook profile fails to synchronize mail on Ubuntu. Please help because I need this for work.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+      "category": "Outlook / MFA",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.0,
+      "semantic_score": 0.10832279818873723,
+      "hybrid_score": 0.13064090815323465,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.0,
+        "semantic_score": 0.10832279818873723,
+        "hybrid_score": 0.13064090815323465
+      },
+      "source": "SYN-0011"
+    }
+  ],
+  "best_score": 0.25102611215251425,
+  "decision": "LOW"
+}

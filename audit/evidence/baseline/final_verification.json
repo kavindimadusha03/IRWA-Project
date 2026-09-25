@@ -1,0 +1,14 @@
+{
+  "verification_source": "Read-only final checks performed after Phase 1 documents were rendered",
+  "actual_secret_value_matches_in_audit": [],
+  "secret_values_printed": false,
+  "original_database_main_file_unchanged": true,
+  "application_data_evaluation_tests_unchanged": true,
+  "planned_audit_cases": 15,
+  "unexecuted_full_result_records": 15,
+  "reserved_IR_evidence_directories": 15,
+  "IR_case_evidence_files_other_than_placeholders": [],
+  "audit_script_syntax": "valid",
+  "git_status_short": "?? audit/",
+  "limitation": "Database main-file hashes do not cover possible concurrent WAL changes by another process. No live attack/security case ran."
+}

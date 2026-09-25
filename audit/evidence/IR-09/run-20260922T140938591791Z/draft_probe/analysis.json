@@ -1,0 +1,13 @@
+{
+  "category": "Unknown",
+  "canonical_issue": "quartzmeadow729",
+  "priority": "Medium",
+  "entities": {
+    "error_code": null,
+    "os": null,
+    "application": null,
+    "device": null
+  },
+  "masked_text": "quartzmeadow729",
+  "history_summary": "Customer reported: quartzmeadow729. The case was classified as Unknown with priority Medium. The issue was reviewed against approved knowledge and a structured support recommendation was generated."
+}

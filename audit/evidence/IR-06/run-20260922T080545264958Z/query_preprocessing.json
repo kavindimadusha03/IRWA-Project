@@ -1,0 +1,16 @@
+{
+  "original_query": "Wi-Fi VPN Outlook printer DNS remote desktop cannot connect",
+  "normalized_query": "wifi vpn outlook printer dns remote desktop cannot connect",
+  "normalized_query_tokens": [
+    "wifi",
+    "vpn",
+    "outlook",
+    "printer",
+    "dns",
+    "remote",
+    "desktop",
+    "cannot",
+    "connect"
+  ],
+  "capture": "original function return observed; no result or input changed"
+}

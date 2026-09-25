@@ -1,0 +1,14 @@
+{
+  "retrieval_boundary_calls": [
+    {
+      "request_id": "P01",
+      "query": "My laptop is connected to Wi-Fi but there is no internet.",
+      "python_type": "str",
+      "character_length": 57,
+      "backend_executed": false
+    }
+  ],
+  "original_solution_calls": [],
+  "original_llm_attempts": [],
+  "retrieval_backend_executed": false
+}

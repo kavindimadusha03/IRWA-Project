@@ -1,0 +1,23 @@
+{
+  "recorded_before_send_at_utc": "2026-09-23T02:13:37.989439+00:00",
+  "role": "IT_SUPPORT",
+  "id": "R01",
+  "method": "POST",
+  "url": "http://127.0.0.1:8001/knowledge/81/approve",
+  "path": "/knowledge/81/approve",
+  "query": {},
+  "declared_form": {
+    "role": "KNOWLEDGE_ANALYST",
+    "user_id": "3",
+    "status": "approved",
+    "authoritative": "true"
+  },
+  "serialized_body": "role=KNOWLEDGE_ANALYST&user_id=3&status=approved&authoritative=true",
+  "content_type": "application/x-www-form-urlencoded",
+  "cookie_present": true,
+  "authorization_header_present": false,
+  "cookie_value": "omitted",
+  "follow_redirects": false,
+  "expected_allowed": false,
+  "expected_status": 403
+}

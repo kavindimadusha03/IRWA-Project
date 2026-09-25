@@ -1,0 +1,34 @@
+{
+  "status": 422,
+  "location": null,
+  "content_type": "application/json",
+  "body_json": {
+    "detail": [
+      {
+        "type": "missing",
+        "loc": [
+          "body",
+          "sender"
+        ],
+        "msg": "Field required",
+        "input": {
+          "message_id": "ir15-local-001",
+          "request_id": "ir15-local-audit",
+          "receiver": "retrieval_agent",
+          "task": "retrieve_knowledge",
+          "payload": {
+            "issue": "My laptop is connected to Wi-Fi but there is no internet."
+          }
+        }
+      }
+    ]
+  },
+  "body_text": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"sender\"],\"msg\":\"Field required\",\"input\":{\"message_id\":\"ir15-local-001\",\"request_id\":\"ir15-local-audit\",\"receiver\":\"retrieval_agent\",\"task\":\"retrieve_knowledge\",\"payload\":{\"issue\":\"My laptop is connected to Wi-Fi but there is no internet.\"}}}]}",
+  "body_bytes": 287,
+  "body_sha256": "ebe5213aba1f7506822bd1156e4b93883fe6509e66abe859a9d0662c9ac6e39d",
+  "elapsed_seconds": 0.003,
+  "redirect_history": 0,
+  "set_cookie_present": false,
+  "runtime_mode": "selected",
+  "audit_boundary_503": false
+}

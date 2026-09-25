@@ -1,0 +1,7 @@
+{
+  "solution_attempts": 1,
+  "successful_solution_returns": 0,
+  "provider_output_adopted": false,
+  "message_equals_first_three_evidence_blocks": true,
+  "capture": "Actual solution message compared with unchanged original chat return and evidence; no fabricated provider response"
+}

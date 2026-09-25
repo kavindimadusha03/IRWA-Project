@@ -1,0 +1,22 @@
+{
+  "evidence_directory": "audit/evidence/IR-14/run-20260923T020808917231Z",
+  "outcome": "Blocked / Inconclusive; no authorization verdict",
+  "failure": {
+    "type": "OSError",
+    "message": "[WinError 4551] An Application Control policy has blocked this file. Error loading \"C:\\Users\\PSB\\Desktop\\KnowGap\\IRWA-Project\\.venv\\Lib\\site-packages\\torch\\lib\\torch_python.dll\" or one of its dependencies."
+  },
+  "HTTP_requests": 0,
+  "server_started": false,
+  "source_database_and_prior_evidence_unchanged": true,
+  "preserved_raw_sha256": {
+    "audit/evidence/IR-14/run-20260923T020808917231Z/expected_result.md": "22c191b25e52fdf0bc83a1d7c0f272e913a556561dd2301fd485c22d4da2e661",
+    "audit/evidence/IR-14/run-20260923T020808917231Z/inputs.json": "7426d391d280c4bc8947972b7f12e6f97609e0caa0119d8a13edca71fb512a4f",
+    "audit/evidence/IR-14/run-20260923T020808917231Z/preconditions.json": "d83aa85d67c2f202874ce131742fe2ee1133c1e574941379af49a2b59121c25e",
+    "audit/evidence/IR-14/run-20260923T020808917231Z/process_result.json": "4fdb1397bd953eab452bb1cf32a3ff7ce4dc7cbf2def4c61552c19b820381e02",
+    "audit/evidence/IR-14/run-20260923T020808917231Z/CUSTOMER/execution.json": "df9cfe761f049fb342313cbe9e2c41122cc464858220cbaadfc0142541532c9b",
+    "audit/evidence/IR-14/run-20260923T020808917231Z/CUSTOMER/inputs.json": "cacf99efc0a26c002857c04e702f2017facbf8c5b7c0998f89ddc4acb413073a",
+    "audit/evidence/IR-14/run-20260923T020808917231Z/CUSTOMER/process_result.json": "23674528adcff02a0926ed1edb4087e691e1b5afc76c6dd286e24d2da55f3bb3",
+    "audit/evidence/IR-14/run-20260923T020808917231Z/CUSTOMER/terminal_log.txt": "c155dbf11df6580e877657e8c2183ff85f8cac956e3805cacb7977c4d4ad6a10"
+  },
+  "followup": "Separately predeclared original-router HTTP harness; no OS/DLL/package/app changes"
+}

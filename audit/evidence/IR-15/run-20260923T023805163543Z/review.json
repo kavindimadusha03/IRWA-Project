@@ -1,0 +1,30 @@
+{
+  "test_id": "IR-15",
+  "test_name": "API Input Validation / Security",
+  "status": "Partially assessed",
+  "observed_outcome": "FAIL (component provenance and payload validation)",
+  "subcase_counts": {
+    "PASS": 9,
+    "FAIL": 5,
+    "OBSERVATION": 4,
+    "INCONCLUSIVE": 1
+  },
+  "full_application_and_actual_retrieval": "Blocked / Inconclusive: Application Control on SciPy _batched_linalg",
+  "runtime_scope": "AST-selected original HTTP handlers, original AgentMessage and original solution component; explicit retrieval observer stops with audit-generated 503",
+  "HTTP_requests": 23,
+  "target_requests": 19,
+  "target_response_counts": {
+    "audit_503": 10,
+    "real_422": 5,
+    "real_200": 3,
+    "real_500": 1
+  },
+  "new_finding": "VULN-IR15-01, Medium, confirmed component scope",
+  "existing_VULN_IR13_01": "Open; unchanged; no new full-app authentication retest",
+  "actual_retrieval_calls": 0,
+  "LLM_attempts_disabled": 2,
+  "successful_provider_calls": 0,
+  "all_database_tables_unchanged": true,
+  "reviewed_at_utc": "2026-09-23T02:59:12.910219+00:00",
+  "case_sequence": "IR-01 through IR-15 now have evidence; IR-03, IR-14 and IR-15 retain partial/inconclusive scope limits; no automatic remediation"
+}

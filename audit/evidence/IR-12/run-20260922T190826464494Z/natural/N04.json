@@ -1,0 +1,363 @@
+{
+  "id": "N04",
+  "kind": "natural_original_retrieval",
+  "query": "My laptop hinge is broken.",
+  "started_at_utc": "2026-09-22T19:08:47.740977+00:00",
+  "deduplicated_source_ids": [
+    "KB-001",
+    "KB-002",
+    "KB-003",
+    "KB-004",
+    "KB-005",
+    "KB-006",
+    "KB-007",
+    "KB-008",
+    "KB-009",
+    "KB-017",
+    "SYN-0001",
+    "SYN-0003",
+    "SYN-0004",
+    "SYN-0005",
+    "SYN-0006",
+    "SYN-0008",
+    "SYN-0009",
+    "SYN-0010",
+    "SYN-0011",
+    "SYN-0012",
+    "SYN-0013",
+    "SYN-0014",
+    "SYN-0015",
+    "SYN-0018",
+    "SYN-0026",
+    "SYN-0027",
+    "SYN-0028",
+    "SYN-0030",
+    "SYN-0032",
+    "SYN-0033",
+    "SYN-0037",
+    "SYN-0038",
+    "SYN-0039",
+    "SYN-0044",
+    "SYN-0045",
+    "SYN-0048",
+    "SYN-0051",
+    "SYN-0052",
+    "SYN-0053",
+    "SYN-0054",
+    "SYN-0056",
+    "SYN-0059",
+    "SYN-0070",
+    "SYN-0072",
+    "SYN-0080",
+    "SYN-0092",
+    "SYN-0096",
+    "SYN-0101",
+    "SYN-0135",
+    "SYN-0138"
+  ],
+  "query_preprocessing": {
+    "original": "My laptop hinge is broken.",
+    "normalized": "laptop change broken.",
+    "tokens": [
+      "laptop",
+      "change",
+      "broken"
+    ]
+  },
+  "native_bm25": {
+    "tokens": [
+      "laptop",
+      "change",
+      "broken"
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.5421959150415223,
+      0.0,
+      2.2297537848450655,
+      0.0,
+      1.5027098030237314,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      2.272929808562455,
+      4.986220781130587,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.5627275017332973,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.5027098030237314,
+      1.6054755869452961,
+      2.5617999071772237
+    ],
+    "order": "deduplicated_source_ids"
+  },
+  "hybrid_before_trust": [
+    {
+      "source_id": "SYN-0032",
+      "title": "Outlook cannot send email after password change",
+      "content": "Problem: Outlook cannot send email after password change on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+      "category": "Outlook / MFA",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 1.0,
+      "semantic_score": 0.16744685583526583,
+      "hybrid_score": 0.5420957707093962,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0010",
+      "title": "Laptop is slow after Windows 11 update",
+      "content": "Problem: Laptop is slow after Windows 11 update on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.4471831237965131,
+      "semantic_score": 0.3086852331573683,
+      "hybrid_score": 0.37100928394498345,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0030",
+      "title": "Approved software cannot be installed on laptop",
+      "content": "Problem: Approved software cannot be installed on laptop on Windows 10. This started this morning.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+      "category": "Software Installation",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.4558421915780243,
+      "semantic_score": 0.2794948987451541,
+      "hybrid_score": 0.3588511805199457,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0138",
+      "title": "Laptop connected to Wi-Fi but no internet access",
+      "content": "Problem: Laptop connected to Wi-Fi but no internet access on macOS. It happens on my work laptop.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+      "category": "Wi-Fi / DNS",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.5137758674609582,
+      "semantic_score": 0.2244991741156125,
+      "hybrid_score": 0.354673686121018,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0012",
+      "title": "Password expired and user cannot log in",
+      "content": "Problem: Password expired and user cannot log in on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+      "category": "Accounts / Passwords",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.301372496121803,
+      "semantic_score": 0.26859855328434923,
+      "hybrid_score": 0.28334682756120344,
+      "exact_error_match": false
+    }
+  ],
+  "metadata_calls": [
+    {
+      "source_id": "SYN-0032",
+      "query": "My laptop hinge is broken.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0010",
+      "query": "My laptop hinge is broken.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0030",
+      "query": "My laptop hinge is broken.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0138",
+      "query": "My laptop hinge is broken.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0012",
+      "query": "My laptop hinge is broken.",
+      "bonus": 0.08
+    }
+  ],
+  "trust_calls": [
+    {
+      "source_id": "SYN-0032",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0010",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0030",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0138",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0012",
+      "trust": 0.85
+    }
+  ],
+  "retrieval": {
+    "query": "My laptop hinge is broken.",
+    "items": [
+      {
+        "source_id": "SYN-0032",
+        "title": "Outlook cannot send email after password change",
+        "content": "Problem: Outlook cannot send email after password change on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Re-registered MFA and cleared cached Outlook credentials.",
+        "category": "Outlook / MFA",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 1.0,
+        "semantic_score": 0.16744685583526583,
+        "hybrid_score": 0.5407814051029868,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 1.0,
+          "semantic_score": 0.16744685583526583,
+          "hybrid_score": 0.5407814051029868
+        },
+        "source": "SYN-0032"
+      },
+      {
+        "source_id": "SYN-0010",
+        "title": "Laptop is slow after Windows 11 update",
+        "content": "Problem: Laptop is slow after Windows 11 update on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+        "category": "Windows / Updates",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.4471831237965131,
+        "semantic_score": 0.3086852331573683,
+        "hybrid_score": 0.39535789135323596,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.4471831237965131,
+          "semantic_score": 0.3086852331573683,
+          "hybrid_score": 0.39535789135323596
+        },
+        "source": "SYN-0010"
+      },
+      {
+        "source_id": "SYN-0030",
+        "title": "Approved software cannot be installed on laptop",
+        "content": "Problem: Approved software cannot be installed on laptop on Windows 10. This started this morning.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+        "category": "Software Installation",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.4558421915780243,
+        "semantic_score": 0.2794948987451541,
+        "hybrid_score": 0.38502350344195385,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.4558421915780243,
+          "semantic_score": 0.2794948987451541,
+          "hybrid_score": 0.38502350344195385
+        },
+        "source": "SYN-0030"
+      },
+      {
+        "source_id": "SYN-0138",
+        "title": "Laptop connected to Wi-Fi but no internet access",
+        "content": "Problem: Laptop connected to Wi-Fi but no internet access on macOS. It happens on my work laptop.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+        "category": "Wi-Fi / DNS",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.5137758674609582,
+        "semantic_score": 0.2244991741156125,
+        "hybrid_score": 0.38147263320286534,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.5137758674609582,
+          "semantic_score": 0.2244991741156125,
+          "hybrid_score": 0.38147263320286534
+        },
+        "source": "SYN-0138"
+      },
+      {
+        "source_id": "SYN-0012",
+        "title": "Password expired and user cannot log in",
+        "content": "Problem: Password expired and user cannot log in on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+        "category": "Accounts / Passwords",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.301372496121803,
+        "semantic_score": 0.26859855328434923,
+        "hybrid_score": 0.32084480342702293,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.301372496121803,
+          "semantic_score": 0.26859855328434923,
+          "hybrid_score": 0.32084480342702293
+        },
+        "source": "SYN-0012"
+      }
+    ],
+    "best_score": 0.5407814051029868,
+    "decision": "LOW"
+  },
+  "expected_decision": "LOW",
+  "decision_matches": true,
+  "elapsed_seconds": 0.322,
+  "solution": {
+    "can_recommend": false,
+    "message": "No sufficiently reliable solution was found in the available knowledge base or previous resolved tickets. The ticket has been escalated to IT Support.",
+    "source_id": "",
+    "confidence": "LOW",
+    "explanation": "No approved knowledge article met the reliability threshold for this issue. The search score was too weak or the evidence was incomplete, so a human specialist should review it.",
+    "confidence_explanation": "No approved knowledge article met the reliability threshold for this issue. The search score was too weak or the evidence was incomplete, so a human specialist should review it.",
+    "why_this_solution_was_suggested": "No approved knowledge article met the reliability threshold for this issue. The search score was too weak or the evidence was incomplete, so a human specialist should review it.",
+    "citations": [],
+    "suggested_reply": "Thanks for reporting this. I have escalated the request to a specialist because the available evidence was not strong enough to provide a safe automated recommendation."
+  },
+  "provider_output_adopted": false,
+  "message_equals_evidence_blocks": false,
+  "recommendation_gate_matches": true,
+  "routing_scope": "Direct component call only. Escalation wording is not persisted ticket state, queue visibility or human action."
+}

@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1d4ed8">
+  <meta name="description" content="KnowGap AI — intelligent IT support and organizational knowledge management.">
+  <title>TCK-00501 · KnowGap AI</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body class="app-body">
+
+<div class="app-shell">
+  <aside class="app-sidebar" id="appSidebar" aria-label="Primary navigation">
+    <a class="brand" href="/home" aria-label="KnowGap AI home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" role="img">
+          <path d="M13 14.5 24 8l11 6.5v13L24 34l-11-6.5z" fill="none" stroke="currentColor" stroke-width="3"/>
+          <circle cx="24" cy="21" r="4" fill="currentColor"/>
+          <path d="M24 25v9M13 20l7 2M35 20l-7 2" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span>
+        <strong>KnowGap <em>AI</em></strong>
+        <small>Intelligent IT operations</small>
+      </span>
+    </a>
+
+    <div class="sidebar-section-label">Workspace</div>
+    <nav class="sidebar-nav">
+      
+      <a class="sidebar-link " href="/home">
+        <i class="bi bi-grid-1x2-fill" aria-hidden="true"></i><span>Service desk</span>
+      </a>
+      
+      
+      
+      
+      
+    </nav>
+
+    <div class="sidebar-insight">
+      <span class="insight-icon"><i class="bi bi-stars" aria-hidden="true"></i></span>
+      <div>
+        <strong>6 agents online</strong>
+        <small>Coordinating every request</small>
+      </div>
+      <span class="live-dot" aria-label="System online"></span>
+    </div>
+
+    <div class="sidebar-user">
+      <a class="avatar" href="/profile" title="Open profile" aria-label="Open profile">D</a>
+      <span class="user-meta">
+        <strong>Demo Customer</strong>
+        <small>Customer</small>
+      </span>
+      <a class="icon-button icon-button-dark" href="/profile" title="Profile settings" aria-label="Profile settings">
+        <i class="bi bi-person-gear" aria-hidden="true"></i>
+      </a>
+      <a class="icon-button icon-button-dark" href="/logout" title="Sign out" aria-label="Sign out">
+        <i class="bi bi-box-arrow-right" aria-hidden="true"></i>
+      </a>
+    </div>
+  </aside>
+
+  <button class="sidebar-overlay" id="sidebarOverlay" type="button" aria-label="Close navigation"></button>
+
+  <div class="app-main">
+    <header class="topbar">
+      <div class="topbar-start">
+        <button class="mobile-menu-button" id="mobileMenuButton" type="button" aria-label="Open navigation" aria-controls="appSidebar" aria-expanded="false">
+          <i class="bi bi-list" aria-hidden="true"></i>
+        </button>
+        <div>
+          <span class="topbar-eyebrow">KnowGap workspace</span>
+          <h1 class="topbar-title">Ticket details</h1>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <div class="notification-wrapper">
+          <button class="icon-button icon-button-light notification-button" type="button" aria-label="Notifications">
+            <i class="bi bi-bell" aria-hidden="true"></i>
+            
+            
+          </button>
+          <div class="notification-panel" aria-live="polite">
+            <div class="notification-header">
+              <strong>Notifications</strong>
+              <span>0</span>
+            </div>
+            
+              <div class="notification-item empty-notification">
+                <div>
+                  <strong>No notifications</strong>
+                  <p>Resolved tickets will appear here.</p>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+        <span class="system-status"><span class="status-pulse"></span>All systems operational</span>
+        <span class="topbar-avatar">D</span>
+      </div>
+    </header>
+
+    <main class="page-content">
+
+      
+
+<div class="page-heading">
+  <div>
+    <a class="back-link" href="/home">
+      <i class="bi bi-arrow-left" aria-hidden="true"></i> Back to service desk
+    </a>
+    <div class="heading-row">
+      <div>
+        <div class="ticket-heading-meta">
+          <span class="ticket-id">TCK-00501</span>
+          <span class="status-pill status-solution-proposed"><span></span>Solution Proposed</span>
+        </div>
+        <h2>Windows blue screen report</h2>
+        <p>Windows blue screen error 0x00000124!!!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content-grid ticket-detail-grid">
+  <div class="ticket-main-column">
+    <section class="panel-card">
+      <div class="panel-heading panel-heading-inline">
+        <div>
+          <span class="section-eyebrow">Agent assessment</span>
+          <h3>AI analysis</h3>
+        </div>
+        <span class="panel-icon panel-icon-purple"><i class="bi bi-cpu" aria-hidden="true"></i></span>
+      </div>
+
+      <div class="analysis-grid">
+        <div class="analysis-item">
+          <span class="analysis-icon icon-blue"><i class="bi bi-tag" aria-hidden="true"></i></span>
+          <span><small>Category</small><strong>Windows / Updates</strong></span>
+        </div>
+        <div class="analysis-item">
+          <span class="analysis-icon icon-purple"><i class="bi bi-bullseye" aria-hidden="true"></i></span>
+          <span><small>Canonical issue</small><strong>Windows blue screen error 0x00000124!!!</strong></span>
+        </div>
+        <div class="analysis-item analysis-confidence">
+          <span class="analysis-icon icon-green"><i class="bi bi-shield-check" aria-hidden="true"></i></span>
+          <span class="confidence-content">
+            <span class="confidence-label"><small>Retrieval confidence</small><strong>144%</strong></span>
+            <span class="progress-track"><span style="width: 144%"></span></span>
+          </span>
+        </div>
+        <div class="analysis-item">
+          <span class="analysis-icon icon-amber"><i class="bi bi-file-earmark-check" aria-hidden="true"></i></span>
+          <span><small>Evidence source</small><strong>AUDIT-IR08-EXACT-001</strong></span>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="resolution-card resolution-success">
+      <div class="resolution-header">
+        <span class="resolution-icon"><i class="bi bi-check2-circle" aria-hidden="true"></i></span>
+        <div>
+          <span class="section-eyebrow">Evidence-backed recommendation</span>
+          <h3>A reliable solution was found</h3>
+        </div>
+        <button class="copy-button" id="copySolution" type="button"><i class="bi bi-copy" aria-hidden="true"></i> Copy</button>
+      </div>
+      <div class="solution-text" id="solutionText">Evidence source AUDIT-IR08-EXACT-001 | Synthetic lookup: Windows blue screen 0x00000124
+Synthetic IR-08 lookup fixture for error 0x00000124. This fixture does not establish a diagnosis or a verified repair. Record the displayed code and symptoms and ask IT Support to review them before applying changes.
+
+Evidence source SYN-0005 | Blue screen appears after installing an update
+Problem: Blue screen appears after installing an update on Windows 10. This started this morning.
+Root cause: 
+Resolution: Installed pending driver updates and repaired Windows update components.
+
+Evidence source SYN-0054 | Windows driver error after restart
+Problem: Windows driver error after restart on Windows 11. No recent hardware changes were made.
+Root cause: 
+Resolution: Installed pending driver updates and repaired Windows update components.</div>
+      <div class="explanation-box">
+        <strong>Why this solution was suggested</strong>
+        <p>This recommendation was selected because the issue matched the approved guidance in Synthetic lookup: Windows blue screen 0x00000124 with 100% relevance, and it aligns with 3 supporting sources that were validated for this workflow.</p>
+      </div>
+      
+      <div class="suggested-reply-box">
+        <strong>Suggested reply for support staff</strong>
+        <p>Thanks for reporting this issue. Based on the approved guidance in Synthetic lookup: Windows blue screen 0x00000124, the recommended next step is to follow the documented troubleshooting steps and confirm the issue is resolved.</p>
+      </div>
+      
+      <div class="source-callout">
+        <i class="bi bi-journal-check" aria-hidden="true"></i>
+        <span><small>Verified source</small><strong>AUDIT-IR08-EXACT-001</strong></span>
+      </div>
+      
+      <div class="citation-panel">
+        <div class="citation-heading"><span><i class="bi bi-link-45deg" aria-hidden="true"></i> Evidence supporting this answer</span><small>3 sources</small></div>
+        <div class="citation-list">
+          
+          <div class="citation-item">
+            <span class="citation-rank">1</span>
+            <div><strong>AUDIT-IR08-EXACT-001 · Synthetic lookup: Windows blue screen 0x00000124</strong><small>Windows / Updates · Internal Kb · 144% relevance</small></div>
+          </div>
+          
+          <div class="citation-item">
+            <span class="citation-rank">2</span>
+            <div><strong>SYN-0005 · Blue screen appears after installing an update</strong><small>Windows / Updates · Resolved Ticket · 83% relevance</small></div>
+          </div>
+          
+          <div class="citation-item">
+            <span class="citation-rank">3</span>
+            <div><strong>SYN-0054 · Windows driver error after restart</strong><small>Windows / Updates · Resolved Ticket · 54% relevance</small></div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="feedback-panel">
+        <div><strong>Did this solve your issue?</strong><span>Your feedback helps improve future recommendations.</span></div>
+        <div class="feedback-actions">
+          <form method="post" action="/tickets/501/solved">
+            <button class="btn-success-modern" type="submit"><i class="bi bi-hand-thumbs-up" aria-hidden="true"></i> Yes, solved</button>
+          </form>
+          <form method="post" action="/tickets/501/not-solved">
+            <button class="btn-secondary-modern btn-danger-soft" type="submit"><i class="bi bi-headset" aria-hidden="true"></i> I still need help</button>
+          </form>
+        </div>
+      </div>
+      
+    </section>
+    
+
+    
+  </div>
+
+  <aside class="panel-card trace-card">
+    <div class="panel-heading">
+      <div>
+        <span class="section-eyebrow">Explainable workflow</span>
+        <h3>Agent trace</h3>
+        <p>See how the agent team handled this request.</p>
+      </div>
+      <span class="panel-icon panel-icon-primary"><i class="bi bi-diagram-3" aria-hidden="true"></i></span>
+    </div>
+
+    
+    <div class="agent-timeline">
+      
+      <div class="timeline-item">
+        <span class="timeline-marker"><i class="bi bi-check-lg" aria-hidden="true"></i></span>
+        <div>
+          <span class="timeline-route">coordinator_agent <i class="bi bi-arrow-right" aria-hidden="true"></i> retrieval_agent</span>
+          <strong>Retrieve Knowledge</strong>
+          <small><span class="mini-status">OK</span> Step 1 of 3</small>
+        </div>
+      </div>
+      
+      <div class="timeline-item">
+        <span class="timeline-marker"><i class="bi bi-check-lg" aria-hidden="true"></i></span>
+        <div>
+          <span class="timeline-route">coordinator_agent <i class="bi bi-arrow-right" aria-hidden="true"></i> ticket_agent</span>
+          <strong>Analyze Ticket</strong>
+          <small><span class="mini-status">OK</span> Step 2 of 3</small>
+        </div>
+      </div>
+      
+      <div class="timeline-item">
+        <span class="timeline-marker"><i class="bi bi-check-lg" aria-hidden="true"></i></span>
+        <div>
+          <span class="timeline-route">coordinator_agent <i class="bi bi-arrow-right" aria-hidden="true"></i> security_agent</span>
+          <strong>Check Input</strong>
+          <small><span class="mini-status">OK</span> Step 3 of 3</small>
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <div class="responsible-ai-note">
+      <i class="bi bi-shield-check" aria-hidden="true"></i>
+      <div><strong>Responsible AI by design</strong><span>Low-confidence answers are escalated to a human specialist.</span></div>
+    </div>
+  </aside>
+</div>
+
+    </main>
+
+
+    <footer class="app-footer">
+      <span>KnowGap AI</span>
+      <span>Responsible, evidence-grounded IT support</span>
+    </footer>
+  </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<script>
+  (() => {
+    const sidebar = document.getElementById('appSidebar');
+    const trigger = document.getElementById('mobileMenuButton');
+    const overlay = document.getElementById('sidebarOverlay');
+    if (!sidebar || !trigger || !overlay) return;
+
+    const setOpen = (open) => {
+      sidebar.classList.toggle('is-open', open);
+      overlay.classList.toggle('is-visible', open);
+      document.body.classList.toggle('nav-open', open);
+      trigger.setAttribute('aria-expanded', String(open));
+    };
+
+    trigger.addEventListener('click', () => setOpen(!sidebar.classList.contains('is-open')));
+    overlay.addEventListener('click', () => setOpen(false));
+    sidebar.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => setOpen(false)));
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') setOpen(false);
+    });
+
+    const notificationButton = document.querySelector('.notification-button');
+    const notificationPanel = document.querySelector('.notification-panel');
+    if (notificationButton && notificationPanel) {
+      notificationButton.addEventListener('click', (event) => {
+        event.stopPropagation();
+        const isVisible = notificationPanel.classList.toggle('is-visible');
+        notificationButton.setAttribute('aria-expanded', String(isVisible));
+      });
+      document.addEventListener('click', (event) => {
+        if (!notificationButton.contains(event.target) && !notificationPanel.contains(event.target)) {
+          notificationPanel.classList.remove('is-visible');
+          notificationButton.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+  })();
+</script>
+
+<script>
+  (() => {
+    const button = document.getElementById('copySolution');
+    const solution = document.getElementById('solutionText');
+    if (!button || !solution || !navigator.clipboard) return;
+    button.addEventListener('click', async () => {
+      await navigator.clipboard.writeText(solution.innerText);
+      const original = button.innerHTML;
+      button.innerHTML = '<i class="bi bi-check2" aria-hidden="true"></i> Copied';
+      setTimeout(() => { button.innerHTML = original; }, 1600);
+    });
+  })();
+</script>
+
+</body>
+</html>

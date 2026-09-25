@@ -1,0 +1,112 @@
+{
+  "started_at_utc": "2026-09-22T14:09:39.030878+00:00",
+  "stage": "execution completed",
+  "case": "IR-09",
+  "subcase": "draft_probe",
+  "status": "Executed; awaiting source/answer review",
+  "outcome": "Unassessed",
+  "ticket_requests": 1,
+  "http": {
+    "health": 200,
+    "login": {
+      "status": 303,
+      "location": "/home",
+      "cookie_present": true
+    },
+    "home": 200,
+    "ticket_create": {
+      "status": 303,
+      "location": "/tickets/501"
+    },
+    "ticket_page": 200
+  },
+  "isolated_database": "C:\\Users\\PSB\\AppData\\Local\\Temp\\knowgap-ir09-draft_probe-4vj3cxlk\\knowgap.db",
+  "dataset": "Project synthetic CSVs plus identical draft/approved fixtures in a fresh backed-up temporary database; no working-database rows copied",
+  "configuration": {
+    "bm25_weight": 0.45,
+    "semantic_weight": 0.55,
+    "high_threshold": 0.68,
+    "uncertain_threshold": 0.55,
+    "embedding_model": "all-MiniLM-L6-v2",
+    "llm_model": "llama-3.1-8b-instant",
+    "ticket_top_k": 5,
+    "thread_limit": 1,
+    "cached_model_only": true
+  },
+  "comparison_to_IR01": {
+    "reference_run": "audit/evidence/IR-01/run-20260921T194038486465Z",
+    "same_configuration": true
+  },
+  "model_preflight": {
+    "loaded": true,
+    "elapsed_seconds": 14.123
+  },
+  "test_user": {
+    "role": "CUSTOMER",
+    "active": true,
+    "origin": "synthetic CSV seed account; credential values omitted"
+  },
+  "fixture_counts": {
+    "articles": 82,
+    "historical_tickets": 500
+  },
+  "support_test_user": {
+    "role": "IT_SUPPORT",
+    "active": true,
+    "credential_values": "omitted"
+  },
+  "llm": {
+    "configured_enabled": false,
+    "attempts": 1,
+    "successful_chat_returns": 0,
+    "error_types": [
+      "RuntimeError"
+    ]
+  },
+  "base_url": "http://127.0.0.1:8001",
+  "page": "http://127.0.0.1:8001/home",
+  "endpoint": "POST http://127.0.0.1:8001/tickets/create",
+  "retrieval_elapsed_seconds": 2.824,
+  "ticket_url": "http://127.0.0.1:8001/tickets/501",
+  "ticket": {
+    "id": 501,
+    "category": "Unknown",
+    "canonical_issue": "quartzmeadow729",
+    "status": "ESCALATED",
+    "approval_status": "PENDING",
+    "retrieval_confidence": 0.25102611215251425,
+    "source_used": ""
+  },
+  "support_queue_check": {
+    "verification": "Read-only GET /support after normal synthetic IT_SUPPORT login; no resolve/approve/reject request",
+    "role": "IT_SUPPORT",
+    "ticket_id": 501,
+    "stored_status": "ESCALATED",
+    "assigned_to": null,
+    "login_status": 303,
+    "login_location": "/home",
+    "cookie_present": true,
+    "page_status": 200,
+    "ticket_resolve_form_present": true,
+    "ticket_code_present": true,
+    "exact_description_present": true
+  },
+  "mechanical_checks": {
+    "single_ticket_request": true,
+    "ticket_page_200": true,
+    "retrieved_any_sources": true,
+    "all_returned_sources_approved_or_resolved": true,
+    "solution_can_recommend": false,
+    "stored_ticket_escalated": true,
+    "top_category": "Audit / Lookup",
+    "draft_in_top_k": false,
+    "approved_control_in_top_k": true,
+    "exact_match_source_ids": [],
+    "solution_citation_count": 0,
+    "stored_citation_count": 0,
+    "support_queue_shows_ticket": true
+  },
+  "review_note": "Review draft exclusion across the entire actual corpus, both ranking stages, answer/citations/HTML and unchanged statuses. Approved control must remain eligible and be retrievable on its own query. User-marker echo alone is not source leakage. Pure zero-trust diagnostic is not proof of runtime filtering.",
+  "server_stopped": true,
+  "finished_at_utc": "2026-09-22T14:10:01.510657+00:00"
+}

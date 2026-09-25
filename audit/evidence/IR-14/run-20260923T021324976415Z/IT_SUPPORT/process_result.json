@@ -1,0 +1,11 @@
+{
+  "role": "IT_SUPPORT",
+  "process_exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 5.463,
+  "status": "Executed; awaiting role and mutation review",
+  "login_requests": 1,
+  "profile_requests": 1,
+  "target_requests": 3,
+  "server_stopped": true
+}

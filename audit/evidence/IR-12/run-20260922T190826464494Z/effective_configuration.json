@@ -1,0 +1,13 @@
+{
+  "recorded_before_search_at_utc": "2026-09-22T19:08:27.508747+00:00",
+  "uncertain_threshold": 0.55,
+  "high_threshold": 0.68,
+  "bm25_weight": 0.45,
+  "semantic_weight": 0.55,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "llm_model": "llama-3.1-8b-instant",
+  "top_k": 5,
+  "thread_limit": 1,
+  "cached_model_only": true,
+  "source": "Actual get_settings() used by original agents; no settings overrides"
+}

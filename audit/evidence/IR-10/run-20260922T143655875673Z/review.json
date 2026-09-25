@@ -1,0 +1,26 @@
+{
+  "case": "IR-10",
+  "reviewed_at_utc": "2026-09-22T15:11:25.092051+00:00",
+  "outcome": "PASS (controlled trust/fallback)",
+  "scope": "One fixture-only normal ticket request; approved KB versus resolved historical ticket with draft/open controls; Groq disabled",
+  "checks": {
+    "both_positive_sources_eligible_and_survive_deduplication": true,
+    "observed_weights_approved_1_resolved_0_85": true,
+    "equal_observed_metadata_0_26": true,
+    "final_arithmetic_matches": true,
+    "negative_controls_excluded": true,
+    "fixtures_and_private_snapshot_unchanged": true
+  },
+  "equal_score_check": "Derived arithmetic only, not an actual equal-score retrieval result",
+  "no_rank_reversal": true,
+  "new_security_vulnerability_demonstrated": false,
+  "recurring_observation": "OBS-IR05-02: customer score 108%, explanation 100%; ranking scores are not calibrated probabilities",
+  "limitations": [
+    "Fixture-only corpus with two eligible records; no full-corpus top-k competition",
+    "Different actual relevance scores; KB was first before trust weighting",
+    "No successful Groq generation, actual repair, human response or alternate-route testing",
+    "Raw worker Unassessed status preserved; this separate record is the reviewed verdict"
+  ],
+  "evidence": "notes.md",
+  "next_case_not_executed": "IR-11"
+}

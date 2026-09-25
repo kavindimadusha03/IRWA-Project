@@ -1,0 +1,18 @@
+{
+  "id": "A04",
+  "recorded_before_send_at_utc": "2026-09-22T19:38:17.184079+00:00",
+  "method": "POST",
+  "url": "http://127.0.0.1:8001/agents/knowledge/analyze",
+  "path": "/agents/knowledge/analyze",
+  "encoding": "none",
+  "declared_body": null,
+  "serialized_body": "",
+  "content_type": null,
+  "cookie_header_present": false,
+  "authorization_header_present": false,
+  "proxy_authorization_header_present": false,
+  "client_cookie_count_before": 0,
+  "fresh_client": true,
+  "follow_redirects": false,
+  "trust_env": false
+}

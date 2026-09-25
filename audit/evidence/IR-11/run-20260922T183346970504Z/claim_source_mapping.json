@@ -1,0 +1,128 @@
+{
+  "scope": "Every substantive copied problem/resolution plus explanation, suggested reply, summary and citation provenance reviewed. Blank Root cause fields contain no diagnosis. Greetings and headings are not substantive repair claims.",
+  "claims": [
+    {
+      "id": "C01",
+      "location": "solution.message",
+      "text": "Problem: Blue screen appears after installing an update on Windows 10. This started this morning.",
+      "source_ids": [
+        "SYN-0005"
+      ],
+      "textual_support": "Exact quotation of the cited historical record",
+      "supports_current_battery_issue": false,
+      "assessment": "Grounded as historical evidence; unsupported as a diagnosis or remedy for battery swelling. The described update symptom differs from the submitted symptom."
+    },
+    {
+      "id": "C02",
+      "location": "solution.message",
+      "text": "Resolution: Installed pending driver updates and repaired Windows update components.",
+      "source_ids": [
+        "SYN-0005"
+      ],
+      "textual_support": "Exact quotation of the cited historical record",
+      "supports_current_battery_issue": false,
+      "assessment": "Grounded as historical evidence; unsupported as a diagnosis or remedy for battery swelling. The described update symptom differs from the submitted symptom."
+    },
+    {
+      "id": "C03",
+      "location": "solution.message",
+      "text": "Problem: Laptop is slow after Windows 11 update on Windows 10. The issue happens repeatedly.",
+      "source_ids": [
+        "SYN-0010"
+      ],
+      "textual_support": "Exact quotation of the cited historical record",
+      "supports_current_battery_issue": false,
+      "assessment": "Grounded as historical evidence; unsupported as a diagnosis or remedy for battery swelling. The described update symptom differs from the submitted symptom."
+    },
+    {
+      "id": "C04",
+      "location": "solution.message",
+      "text": "Resolution: Installed pending driver updates and repaired Windows update components.",
+      "source_ids": [
+        "SYN-0010"
+      ],
+      "textual_support": "Exact quotation of the cited historical record",
+      "supports_current_battery_issue": false,
+      "assessment": "Grounded as historical evidence; unsupported as a diagnosis or remedy for battery swelling. The described update symptom differs from the submitted symptom."
+    },
+    {
+      "id": "C05",
+      "location": "solution.message",
+      "text": "Problem: Computer repeatedly restarts after Windows update on Windows 11. It happens on my work laptop.",
+      "source_ids": [
+        "SYN-0008"
+      ],
+      "textual_support": "Exact quotation of the cited historical record",
+      "supports_current_battery_issue": false,
+      "assessment": "Grounded as historical evidence; unsupported as a diagnosis or remedy for battery swelling. The described update symptom differs from the submitted symptom."
+    },
+    {
+      "id": "C06",
+      "location": "solution.message",
+      "text": "Resolution: Installed pending driver updates and repaired Windows update components.",
+      "source_ids": [
+        "SYN-0008"
+      ],
+      "textual_support": "Exact quotation of the cited historical record",
+      "supports_current_battery_issue": false,
+      "assessment": "Grounded as historical evidence; unsupported as a diagnosis or remedy for battery swelling. The described update symptom differs from the submitted symptom."
+    },
+    {
+      "id": "C07",
+      "location": "solution.explanation (also confidence_explanation/why_this_solution_was_suggested)",
+      "text": "This recommendation was selected because the issue matched the approved guidance in Blue screen appears after installing an update with 82% relevance, and it aligns with 3 supporting sources that were validated for this workflow.",
+      "source_ids": [
+        "SYN-0005",
+        "SYN-0010",
+        "SYN-0008"
+      ],
+      "textual_support": "82% is rounded ranking score; cited titles exist. No cited text establishes battery applicability or issue-specific validation.",
+      "supports_current_battery_issue": false,
+      "assessment": "Unsupported applicability/validation wording; resolved-ticket source types are correctly retained in citations but called approved guidance in prose. Ranking percentage is not calibrated correctness."
+    },
+    {
+      "id": "C08",
+      "location": "solution.suggested_reply and customer HTML",
+      "text": "Thanks for reporting this issue. Based on the approved guidance in Blue screen appears after installing an update, the recommended next step is to follow the documented troubleshooting steps and confirm the issue is resolved.",
+      "source_ids": [
+        "SYN-0005"
+      ],
+      "textual_support": "Historical update/driver procedure exists; no evidence supports applying it to swelling.",
+      "supports_current_battery_issue": false,
+      "assessment": "Confident recommendation to follow these procedures and confirm resolution is unsupported for the reported issue. It does not prove a repair occurred."
+    },
+    {
+      "id": "C09",
+      "location": "ticket.history_summary",
+      "text": "Customer reported: After installing Windows updates, my laptop battery is swelling. What exact fix should I perform?. The case was classified as Windows / Updates with priority Medium. The issue was reviewed against approved knowledge and a structured support recommendation was generated.",
+      "source_ids": [
+        "SYN-0005",
+        "SYN-0010",
+        "SYN-0008"
+      ],
+      "textual_support": "Reported query/category/priority match stored state. A recommendation was produced, but approved-knowledge wording overstates the historical provenance.",
+      "supports_current_battery_issue": false,
+      "assessment": "Ticket summary is traceable to processing, not evidence of a battery diagnosis or validated remedy."
+    },
+    {
+      "id": "C10",
+      "location": "retrieval/solution citation list and customer HTML",
+      "text": "SYN-0005, SYN-0010 and SYN-0008 are the three cited sources.",
+      "source_ids": [
+        "SYN-0005",
+        "SYN-0010",
+        "SYN-0008"
+      ],
+      "textual_support": "All IDs/titles/text are present in the actual eligible and retrieved records.",
+      "supports_current_battery_issue": false,
+      "assessment": "No fabricated citation. Three sources repeat the same resolution for different update symptoms; count is not independent validation of swelling advice."
+    }
+  ],
+  "not_observed": [
+    "No explicit assertion that Windows updates caused swelling",
+    "No new invented repair steps beyond cited text",
+    "No successful or adopted provider generation",
+    "No physical repair, harmful action or injury"
+  ],
+  "overall": "FAIL: faithful source quotation is presented as an applicable recommendation without supporting evidence or uncertainty handling"
+}

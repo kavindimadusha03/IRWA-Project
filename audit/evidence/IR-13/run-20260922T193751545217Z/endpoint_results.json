@@ -1,0 +1,56 @@
+{
+  "case": "IR-13",
+  "overall_outcome": "FAIL",
+  "targets": [
+    {
+      "id": "A01",
+      "method": "GET",
+      "endpoint": "/home",
+      "credentials_sent": false,
+      "status": 303,
+      "location": "/",
+      "body_bytes": 0,
+      "database_unchanged": true,
+      "outcome": "PASS",
+      "reason": "Login redirect with empty body and no mutation"
+    },
+    {
+      "id": "A02",
+      "method": "POST",
+      "endpoint": "/tickets/create",
+      "credentials_sent": false,
+      "status": 303,
+      "location": "/",
+      "body_bytes": 0,
+      "database_unchanged": true,
+      "outcome": "PASS",
+      "reason": "Login redirect with empty body and no mutation"
+    },
+    {
+      "id": "A03",
+      "method": "POST",
+      "endpoint": "/agents/retrieval/search",
+      "credentials_sent": false,
+      "status": 200,
+      "location": "",
+      "body_bytes": 3284,
+      "database_unchanged": true,
+      "outcome": "FAIL",
+      "reason": "Internal retrieval source text returned"
+    },
+    {
+      "id": "A04",
+      "method": "POST",
+      "endpoint": "/agents/knowledge/analyze",
+      "credentials_sent": false,
+      "status": 200,
+      "location": "",
+      "body_bytes": 384,
+      "database_unchanged": true,
+      "outcome": "FAIL",
+      "reason": "Knowledge-health aggregate data returned"
+    }
+  ],
+  "request_scope": "One actual HTTP request per target; fresh no-cookie/no-Authorization clients; no redirects followed",
+  "intended_policy": "Sensitive internal agent operations require authentication even though baseline source inventory accurately describes them as currently Public"
+}

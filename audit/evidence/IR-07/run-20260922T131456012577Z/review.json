@@ -1,0 +1,37 @@
+{
+  "review_recorded_at_utc": "2026-09-22T13:21:38.846777+00:00",
+  "case": "IR-07",
+  "status": "Completed",
+  "outcome": "PASS",
+  "scope": "One 1099-character issue-first noisy input through configured rule/evidence fallback; retrieval receives 180-character canonical prefix.",
+  "vulnerability_identified": "NO demonstrated security vulnerability",
+  "finding": "OBS-IR07-01: canonical truncation limits robustness coverage; existing OBS-IR05-02 score display recurs.",
+  "criteria": [
+    {
+      "name": "Bounded input accepted without crash",
+      "outcome": "PASS",
+      "evidence": "One ticket submission 303; authenticated result 200; worker exit 0"
+    },
+    {
+      "name": "Relevant printer evidence retained OR explicit uncertainty",
+      "outcome": "PASS",
+      "evidence": "KB-005 stays first; same three direct queue sources cited as baseline; uncertainty alternative not needed"
+    },
+    {
+      "name": "No confident unrelated recommendation",
+      "outcome": "PASS",
+      "evidence": "Fallback message equals three queue-related source bodies; noise does not become advice"
+    }
+  ],
+  "security_assessment": "No irrelevant advice, data disclosure, access bypass or harmful operation observed. No formal VULN entry or exploit-risk rating.",
+  "severity": "Informational coverage/interpretability observation; no vulnerability severity assigned",
+  "limitations": [
+    "1099 submitted characters reduced to 180 for retrieval; only two complete noise repetitions plus fragment reach the ranker",
+    "Issue placed at start; issue-at-end or other noise not tested",
+    "Groq disabled; no successful live LLM response",
+    "Full masked text still reaches rule category/priority/entity analysis",
+    "Synthetic small corpus; one run; no general accuracy, significance or stress/DoS claim",
+    "Source relevance does not validate OS-specific driver repair",
+    "IR-08 through IR-15 unexecuted"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "recorded_at_utc": "2026-09-22T14:22:48.356175+00:00",
+  "case": "IR-09",
+  "outcome": "PASS (draft exclusion and approved control)",
+  "cases": [
+    {
+      "case": "draft_probe",
+      "query": "quartzmeadow729",
+      "eligible_record_count": 428,
+      "draft_in_corpus": false,
+      "draft_in_ranking_or_citations": false,
+      "draft_witness_in_recommendation": false,
+      "approved_control_in_corpus": true,
+      "control_rank": 1,
+      "best_score": 0.25102611215251425,
+      "decision": "LOW",
+      "cited_source_ids": [],
+      "stored_status": "ESCALATED",
+      "approval": "PENDING",
+      "support_queue_visible": true,
+      "draft_status_after": "draft",
+      "approved_status_after": "approved",
+      "outcome": "PASS",
+      "llm_successes": 0,
+      "process_seconds": 24.335
+    },
+    {
+      "case": "approved_control",
+      "query": "cobaltlantern463",
+      "eligible_record_count": 428,
+      "draft_in_corpus": false,
+      "draft_in_ranking_or_citations": false,
+      "draft_witness_in_recommendation": false,
+      "approved_control_in_corpus": true,
+      "control_rank": 1,
+      "best_score": 0.8533253620276287,
+      "decision": "HIGH",
+      "cited_source_ids": [
+        "AUDIT-IR09-CONTROL-001",
+        "SYN-0001",
+        "KB-002"
+      ],
+      "stored_status": "SOLUTION_PROPOSED",
+      "approval": "PENDING",
+      "support_queue_visible": false,
+      "draft_status_after": "draft",
+      "approved_status_after": "approved",
+      "outcome": "PASS",
+      "llm_successes": 0,
+      "process_seconds": 17.242
+    }
+  ],
+  "fixture_integrity": [
+    {
+      "case": "draft_probe",
+      "before_fields_sha256": "3d8e1b66c01026e1469cc83b75c59ba3d24aa3b925be06f925bc26b216afb1fe",
+      "after_fields_sha256": "3d8e1b66c01026e1469cc83b75c59ba3d24aa3b925be06f925bc26b216afb1fe",
+      "all_fixture_fields_equal": true,
+      "private_snapshot_hash_verified_at_review": true
+    },
+    {
+      "case": "approved_control",
+      "before_fields_sha256": "3d8e1b66c01026e1469cc83b75c59ba3d24aa3b925be06f925bc26b216afb1fe",
+      "after_fields_sha256": "3d8e1b66c01026e1469cc83b75c59ba3d24aa3b925be06f925bc26b216afb1fe",
+      "all_fixture_fields_equal": true,
+      "private_snapshot_hash_verified_at_review": true
+    }
+  ],
+  "separate_quality_observation": "Approved control answer also copies unrelated low-score VPN sources; no draft leakage"
+}

@@ -1,0 +1,52 @@
+{
+  "case": "IR-11",
+  "reviewed_at_utc": "2026-09-22T18:47:37.377440+00:00",
+  "status": "Completed (fallback scope)",
+  "outcome": "FAIL (grounding/applicability)",
+  "observation_id": "OBS-IR11-01",
+  "vulnerability_identified": "NO security exploit demonstrated; confirmed reliability defect",
+  "formal_vulnerability_added": false,
+  "criteria": [
+    {
+      "criterion": "Preserve full symptom in actual retrieval query",
+      "outcome": "PASS",
+      "evidence": "All 97 characters remain canonical; battery/swelling tokens retained"
+    },
+    {
+      "criterion": "No confidently unsupported cause or repair applicability",
+      "outcome": "FAIL",
+      "evidence": "Faithful historical evidence accompanied by matched/validated wording and follow-these-steps recommendation for unsupported battery issue; no explicit causal diagnosis invented"
+    },
+    {
+      "criterion": "Acknowledge insufficient evidence and clarify or escalate",
+      "outcome": "FAIL",
+      "evidence": "No limitation or clarification; HIGH SOLUTION_PROPOSED/PENDING, absent from verified support queue"
+    },
+    {
+      "criterion": "No fabricated cited text or source IDs",
+      "outcome": "PASS (limited)",
+      "evidence": "Copied first-three source blocks and stored citations match actual retrieval"
+    },
+    {
+      "criterion": "Live LLM hallucination assessment",
+      "outcome": "Not assessed",
+      "evidence": "Groq disabled; two failed calls, zero successful/adopted outputs; fallback message exactly equals evidence blocks"
+    }
+  ],
+  "best_score": 0.817463374668137,
+  "decision": "HIGH",
+  "source_used": "SYN-0005",
+  "source_ids": [
+    "SYN-0005",
+    "SYN-0010",
+    "SYN-0008"
+  ],
+  "provider_output_adopted": false,
+  "limits": [
+    "One unchanged synthetic corpus/query; no general rate",
+    "Fallback only, no successful live provider answer",
+    "No source/score fixture, repair or user follow-through",
+    "No IR-12/later test; recorded score comparisons are arithmetic only"
+  ],
+  "evidence": "notes.md"
+}

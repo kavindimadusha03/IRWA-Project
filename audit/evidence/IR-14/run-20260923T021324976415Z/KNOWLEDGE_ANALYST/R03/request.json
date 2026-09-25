@@ -1,0 +1,23 @@
+{
+  "recorded_before_send_at_utc": "2026-09-23T02:13:43.304024+00:00",
+  "role": "KNOWLEDGE_ANALYST",
+  "id": "R03",
+  "method": "POST",
+  "url": "http://127.0.0.1:8001/admin/categories/create",
+  "path": "/admin/categories/create",
+  "query": {},
+  "declared_form": {
+    "name": "IR14 Audit Category",
+    "description": "Synthetic category for role authorization check.",
+    "role": "ADMIN",
+    "user_id": "4"
+  },
+  "serialized_body": "name=IR14+Audit+Category&description=Synthetic+category+for+role+authorization+check.&role=ADMIN&user_id=4",
+  "content_type": "application/x-www-form-urlencoded",
+  "cookie_present": true,
+  "authorization_header_present": false,
+  "cookie_value": "omitted",
+  "follow_redirects": false,
+  "expected_allowed": false,
+  "expected_status": 403
+}

@@ -1,0 +1,12 @@
+{
+  "status": 403,
+  "location": null,
+  "content_type": "text/html; charset=utf-8",
+  "response_bytes": 21,
+  "body_sha256": "812fc837108361ba43606606235d2ce67d8d4dca7df4cc21cf90fd96ea583128",
+  "body_json": null,
+  "body_text": "Admin access required",
+  "redirect_history_count": 0,
+  "set_cookie_present": false,
+  "elapsed_seconds": 0.006
+}

@@ -1,0 +1,45 @@
+{
+  "id": 501,
+  "ticket_code": "TCK-00501",
+  "assigned_to": null,
+  "history_summary": "Customer reported: My printer's queue is stuck and print jobs will not clear. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is b. The case was classified as Printers with priority Medium. The issue was reviewed against approved knowledge and a structured support recommendation was generated.",
+  "title": "Printer queue problem",
+  "description": "My printer's queue is stuck and print jobs will not clear. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday.",
+  "masked_description": "My printer's queue is stuck and print jobs will not clear. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday.",
+  "category": "Printers",
+  "canonical_issue": "My printer's queue is stuck and print jobs will not clear. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is b",
+  "priority": "Medium",
+  "status": "SOLUTION_PROPOSED",
+  "approval_status": "PENDING",
+  "retrieval_confidence": 1.107292534830274,
+  "source_used": "KB-005",
+  "recommended_solution": "Evidence source KB-005 | Clear Print Queue - Guide 1\nStop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again.\n\nEvidence source SYN-0013 | Printer is online but jobs stay in queue\nProblem: Printer is online but jobs stay in queue on Ubuntu. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.\n\nEvidence source SYN-0028 | Print queue is stuck and cannot be cleared\nProblem: Print queue is stuck and cannot be cleared on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+  "decision_explanation": "This recommendation was selected because the issue matched the approved guidance in Clear Print Queue - Guide 1 with 100% relevance, and it aligns with 3 supporting sources that were validated for this workflow.",
+  "suggested_reply": "Thanks for reporting this issue. Based on the approved guidance in Clear Print Queue - Guide 1, the recommended next step is to follow the documented troubleshooting steps and confirm the issue is resolved.",
+  "citations": [
+    {
+      "source_id": "KB-005",
+      "title": "Clear Print Queue - Guide 1",
+      "source_type": "Internal KB",
+      "category": "Printers",
+      "relevance_score": 1.107292534830274,
+      "rank": 1
+    },
+    {
+      "source_id": "SYN-0013",
+      "title": "Printer is online but jobs stay in queue",
+      "source_type": "resolved_ticket",
+      "category": "Printers",
+      "relevance_score": 0.8326709681962136,
+      "rank": 2
+    },
+    {
+      "source_id": "SYN-0028",
+      "title": "Print queue is stuck and cannot be cleared",
+      "source_type": "resolved_ticket",
+      "category": "Printers",
+      "relevance_score": 0.8248410237224035,
+      "rank": 3
+    }
+  ]
+}

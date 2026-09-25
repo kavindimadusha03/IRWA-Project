@@ -1,0 +1,18 @@
+{
+  "recorded_before_requests_at_utc": "2026-09-22T19:38:11.467563+00:00",
+  "eligible_count": 427,
+  "matches_original_CSV_in_all_retrieval_fields": true,
+  "knowledge_article_security_classes": [
+    "internal"
+  ],
+  "seed_counts": {
+    "articles": 80,
+    "historical_tickets": 500,
+    "users": 4
+  },
+  "retrieval_issue": "My laptop is connected to Wi-Fi but there is no internet.",
+  "schema_valid": true,
+  "ticket_form_meets_length_rules": true,
+  "knowledge_analyze_body": "No body parameter declared; send none",
+  "working_database_rows_copied": false
+}

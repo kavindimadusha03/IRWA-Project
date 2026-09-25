@@ -1,0 +1,12 @@
+{
+  "title": "Printer queue problem",
+  "description": "My printer's queue is stuck and print jobs will not clear. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. ",
+  "character_count": 1099,
+  "utf8_bytes": 1099,
+  "noise_sentence": "The notebook is blue and the meeting is on Tuesday. ",
+  "noise_repetitions": 20,
+  "short_baseline_description": "My printer's queue is stuck and print jobs will not clear.",
+  "short_baseline_characters": 58,
+  "trailing_space_preserved_in_this_JSON": true,
+  "baseline_evidence": "audit/evidence/IR-05/run-20260922T035809651634Z/baseline"
+}

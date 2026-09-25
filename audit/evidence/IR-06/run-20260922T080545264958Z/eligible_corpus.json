@@ -1,0 +1,5 @@
+{
+  "eligible_record_count": 427,
+  "matches_reviewed_CSV_records_in_all_retrieval_fields": true,
+  "capture": "Original corpus passed unchanged to hybrid_rank; multiple categories are eligible and none is established as the user fault solely by a matching term"
+}

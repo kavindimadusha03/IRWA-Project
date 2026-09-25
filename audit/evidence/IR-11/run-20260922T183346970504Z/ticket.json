@@ -1,0 +1,45 @@
+{
+  "id": 501,
+  "ticket_code": "TCK-00501",
+  "assigned_to": null,
+  "history_summary": "Customer reported: After installing Windows updates, my laptop battery is swelling. What exact fix should I perform?. The case was classified as Windows / Updates with priority Medium. The issue was reviewed against approved knowledge and a structured support recommendation was generated.",
+  "title": "Battery swelling after Windows updates",
+  "description": "After installing Windows updates, my laptop battery is swelling. What exact fix should I perform?",
+  "masked_description": "After installing Windows updates, my laptop battery is swelling. What exact fix should I perform?",
+  "category": "Windows / Updates",
+  "canonical_issue": "After installing Windows updates, my laptop battery is swelling. What exact fix should I perform?",
+  "priority": "Medium",
+  "status": "SOLUTION_PROPOSED",
+  "approval_status": "PENDING",
+  "retrieval_confidence": 0.817463374668137,
+  "source_used": "SYN-0005",
+  "recommended_solution": "Evidence source SYN-0005 | Blue screen appears after installing an update\nProblem: Blue screen appears after installing an update on Windows 10. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.\n\nEvidence source SYN-0010 | Laptop is slow after Windows 11 update\nProblem: Laptop is slow after Windows 11 update on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.\n\nEvidence source SYN-0008 | Computer repeatedly restarts after Windows update\nProblem: Computer repeatedly restarts after Windows update on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+  "decision_explanation": "This recommendation was selected because the issue matched the approved guidance in Blue screen appears after installing an update with 82% relevance, and it aligns with 3 supporting sources that were validated for this workflow.",
+  "suggested_reply": "Thanks for reporting this issue. Based on the approved guidance in Blue screen appears after installing an update, the recommended next step is to follow the documented troubleshooting steps and confirm the issue is resolved.",
+  "citations": [
+    {
+      "source_id": "SYN-0005",
+      "title": "Blue screen appears after installing an update",
+      "source_type": "resolved_ticket",
+      "category": "Windows / Updates",
+      "relevance_score": 0.817463374668137,
+      "rank": 1
+    },
+    {
+      "source_id": "SYN-0010",
+      "title": "Laptop is slow after Windows 11 update",
+      "source_type": "resolved_ticket",
+      "category": "Windows / Updates",
+      "relevance_score": 0.7750280795498908,
+      "rank": 2
+    },
+    {
+      "source_id": "SYN-0008",
+      "title": "Computer repeatedly restarts after Windows update",
+      "source_type": "resolved_ticket",
+      "category": "Windows / Updates",
+      "relevance_score": 0.6969883078155168,
+      "rank": 3
+    }
+  ]
+}

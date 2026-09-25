@@ -1,0 +1,13 @@
+{
+  "articles": 80,
+  "tickets": 500,
+  "users": 4,
+  "synthetic_marker_source_absent": true,
+  "marker_text_absent": true,
+  "source_ID_checked_against_all_articles_and_tickets": true,
+  "synthetic_source_inserted": false,
+  "S00_source": "Saved original IR13 A03 response; not fresh ranking",
+  "S00_source_titles_and_contents_match_current_seed": true,
+  "logged_in_fixture_user_id": 1,
+  "role": "CUSTOMER"
+}

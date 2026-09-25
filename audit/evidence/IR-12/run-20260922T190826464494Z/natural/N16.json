@@ -1,0 +1,350 @@
+{
+  "id": "N16",
+  "kind": "natural_original_retrieval",
+  "query": "The device makes a clicking noise.",
+  "started_at_utc": "2026-09-22T19:08:51.494477+00:00",
+  "deduplicated_source_ids": [
+    "KB-001",
+    "KB-002",
+    "KB-003",
+    "KB-004",
+    "KB-005",
+    "KB-006",
+    "KB-007",
+    "KB-008",
+    "KB-009",
+    "KB-017",
+    "SYN-0001",
+    "SYN-0003",
+    "SYN-0004",
+    "SYN-0005",
+    "SYN-0006",
+    "SYN-0008",
+    "SYN-0009",
+    "SYN-0010",
+    "SYN-0011",
+    "SYN-0012",
+    "SYN-0013",
+    "SYN-0014",
+    "SYN-0015",
+    "SYN-0018",
+    "SYN-0026",
+    "SYN-0027",
+    "SYN-0028",
+    "SYN-0030",
+    "SYN-0032",
+    "SYN-0033",
+    "SYN-0037",
+    "SYN-0038",
+    "SYN-0039",
+    "SYN-0044",
+    "SYN-0045",
+    "SYN-0048",
+    "SYN-0051",
+    "SYN-0052",
+    "SYN-0053",
+    "SYN-0054",
+    "SYN-0056",
+    "SYN-0059",
+    "SYN-0070",
+    "SYN-0072",
+    "SYN-0080",
+    "SYN-0092",
+    "SYN-0096",
+    "SYN-0101",
+    "SYN-0135",
+    "SYN-0138"
+  ],
+  "query_preprocessing": {
+    "original": "The device makes a clicking noise.",
+    "normalized": "device makes clicking noise.",
+    "tokens": [
+      "device",
+      "makes",
+      "clicking",
+      "noise"
+    ]
+  },
+  "native_bm25": {
+    "tokens": [
+      "device",
+      "makes",
+      "clicking",
+      "noise"
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      2.0158967794705167,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.230915727521138,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.1375623817076193,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.1981408346253943,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.1375623817076193,
+      0.0,
+      0.0,
+      1.1521253549308115,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.6621871309147718,
+      1.230915727521138,
+      1.1670660312720944,
+      0.0,
+      1.1375623817076193,
+      1.1521253549308115,
+      0.0,
+      0.0
+    ],
+    "order": "deduplicated_source_ids"
+  },
+  "hybrid_before_trust": [
+    {
+      "source_id": "KB-006",
+      "title": "Update Device Drivers - Guide 1",
+      "content": "Install manufacturer-approved device drivers through the approved update channel and restart the computer.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "Internal KB",
+      "status": "approved",
+      "bm25_score": 1.0,
+      "semantic_score": 0.20074148127736713,
+      "hybrid_score": 0.560407814702552,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0070",
+      "title": "Remote Desktop cannot connect to office PC",
+      "content": "Problem: Remote Desktop cannot connect to office PC on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+      "category": "Remote Desktop",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.8245398017607587,
+      "semantic_score": 0.08409259826908919,
+      "hybrid_score": 0.41729383984034046,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0028",
+      "title": "Print queue is stuck and cannot be cleared",
+      "content": "Problem: Print queue is stuck and cannot be cleared on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+      "category": "Printers",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.5642959467430692,
+      "semantic_score": 0.20788437177454316,
+      "hybrid_score": 0.3682695805103799,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0001",
+      "title": "VPN disconnects every few minutes",
+      "content": "Problem: VPN disconnects every few minutes on Windows 11. I already restarted the device once.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+      "category": "VPN",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.6106045408954137,
+      "semantic_score": 0.13873823012952677,
+      "hybrid_score": 0.35107806997417595,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0096",
+      "title": "RDP connection times out from home network",
+      "content": "Problem: RDP connection times out from home network on Ubuntu. No recent hardware changes were made.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+      "category": "Remote Desktop",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.5642959467430692,
+      "semantic_score": 0.09311498662216798,
+      "hybrid_score": 0.30514641867657355,
+      "exact_error_match": false
+    }
+  ],
+  "metadata_calls": [
+    {
+      "source_id": "KB-006",
+      "query": "The device makes a clicking noise.",
+      "bonus": 0.26
+    },
+    {
+      "source_id": "SYN-0070",
+      "query": "The device makes a clicking noise.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0028",
+      "query": "The device makes a clicking noise.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0001",
+      "query": "The device makes a clicking noise.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0096",
+      "query": "The device makes a clicking noise.",
+      "bonus": 0.08
+    }
+  ],
+  "trust_calls": [
+    {
+      "source_id": "KB-006",
+      "trust": 1.0
+    },
+    {
+      "source_id": "SYN-0070",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0028",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0001",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0096",
+      "trust": 0.85
+    }
+  ],
+  "retrieval": {
+    "query": "The device makes a clicking noise.",
+    "items": [
+      {
+        "source_id": "KB-006",
+        "title": "Update Device Drivers - Guide 1",
+        "content": "Install manufacturer-approved device drivers through the approved update channel and restart the computer.",
+        "category": "Windows / Updates",
+        "supported_os": "Any",
+        "source_type": "Internal KB",
+        "status": "approved",
+        "bm25_score": 1.0,
+        "semantic_score": 0.20074148127736713,
+        "hybrid_score": 0.820407814702552,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 1.0,
+          "semantic_score": 0.20074148127736713,
+          "hybrid_score": 0.820407814702552
+        },
+        "source": "KB-006"
+      },
+      {
+        "source_id": "SYN-0070",
+        "title": "Remote Desktop cannot connect to office PC",
+        "content": "Problem: Remote Desktop cannot connect to office PC on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+        "category": "Remote Desktop",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.8245398017607587,
+        "semantic_score": 0.08409259826908919,
+        "hybrid_score": 0.4346997638642894,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.8245398017607587,
+          "semantic_score": 0.08409259826908919,
+          "hybrid_score": 0.4346997638642894
+        },
+        "source": "SYN-0070"
+      },
+      {
+        "source_id": "SYN-0028",
+        "title": "Print queue is stuck and cannot be cleared",
+        "content": "Problem: Print queue is stuck and cannot be cleared on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+        "category": "Printers",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.5642959467430692,
+        "semantic_score": 0.20788437177454316,
+        "hybrid_score": 0.3930291434338229,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.5642959467430692,
+          "semantic_score": 0.20788437177454316,
+          "hybrid_score": 0.3930291434338229
+        },
+        "source": "SYN-0028"
+      },
+      {
+        "source_id": "SYN-0001",
+        "title": "VPN disconnects every few minutes",
+        "content": "Problem: VPN disconnects every few minutes on Windows 11. I already restarted the device once.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+        "category": "VPN",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.6106045408954137,
+        "semantic_score": 0.13873823012952677,
+        "hybrid_score": 0.3784163594780496,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.6106045408954137,
+          "semantic_score": 0.13873823012952677,
+          "hybrid_score": 0.3784163594780496
+        },
+        "source": "SYN-0001"
+      },
+      {
+        "source_id": "SYN-0096",
+        "title": "RDP connection times out from home network",
+        "content": "Problem: RDP connection times out from home network on Ubuntu. No recent hardware changes were made.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+        "category": "Remote Desktop",
+        "supported_os": "Any",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.5642959467430692,
+        "semantic_score": 0.09311498662216798,
+        "hybrid_score": 0.3393744558750875,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.5642959467430692,
+          "semantic_score": 0.09311498662216798,
+          "hybrid_score": 0.3393744558750875
+        },
+        "source": "SYN-0096"
+      }
+    ],
+    "best_score": 0.820407814702552,
+    "decision": "HIGH"
+  },
+  "expected_decision": "HIGH",
+  "decision_matches": true,
+  "elapsed_seconds": 0.332
+}

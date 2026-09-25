@@ -1,0 +1,17 @@
+{
+  "mode": "original auth/knowledge/admin routers in audit FastAPI HTTP harness",
+  "full_application_loaded": false,
+  "mounted_router_modules": [
+    "app.routes.auth",
+    "app.routes.knowledge",
+    "app.routes.admin"
+  ],
+  "user_middleware_count": 0,
+  "global_dependencies": 0,
+  "startup": "Original create_db_and_tables registered directly in route harness; original main startup otherwise",
+  "static_mount": "Original app/static mounted under name static for original template URL generation",
+  "dependency_overrides_count": 0,
+  "original_identity_helpers_observed": true,
+  "guards_return_values_and_templates_unchanged": true,
+  "limit": "Route harness excludes main-page, ticket, agent, support and chat integration; redirect destinations are captured, not followed. No blocked DLL loaded and no OS policy changed."
+}

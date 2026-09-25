@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1d4ed8">
+  <meta name="description" content="KnowGap AI — intelligent IT support and organizational knowledge management.">
+  <title>Support Queue · KnowGap AI</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body class="app-body">
+
+<div class="app-shell">
+  <aside class="app-sidebar" id="appSidebar" aria-label="Primary navigation">
+    <a class="brand" href="/home" aria-label="KnowGap AI home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" role="img">
+          <path d="M13 14.5 24 8l11 6.5v13L24 34l-11-6.5z" fill="none" stroke="currentColor" stroke-width="3"/>
+          <circle cx="24" cy="21" r="4" fill="currentColor"/>
+          <path d="M24 25v9M13 20l7 2M35 20l-7 2" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span>
+        <strong>KnowGap <em>AI</em></strong>
+        <small>Intelligent IT operations</small>
+      </span>
+    </a>
+
+    <div class="sidebar-section-label">Workspace</div>
+    <nav class="sidebar-nav">
+      
+      
+      <a class="sidebar-link active" href="/support">
+        <i class="bi bi-headset" aria-hidden="true"></i><span>Support queue</span>
+      </a>
+      
+      
+      <a class="sidebar-link " href="/knowledge">
+        <i class="bi bi-journal-richtext" aria-hidden="true"></i><span>Knowledge base</span>
+      </a>
+      
+      
+      
+    </nav>
+
+    <div class="sidebar-insight">
+      <span class="insight-icon"><i class="bi bi-stars" aria-hidden="true"></i></span>
+      <div>
+        <strong>6 agents online</strong>
+        <small>Coordinating every request</small>
+      </div>
+      <span class="live-dot" aria-label="System online"></span>
+    </div>
+
+    <div class="sidebar-user">
+      <a class="avatar" href="/profile" title="Open profile" aria-label="Open profile">I</a>
+      <span class="user-meta">
+        <strong>IT Support Demo</strong>
+        <small>It Support</small>
+      </span>
+      <a class="icon-button icon-button-dark" href="/profile" title="Profile settings" aria-label="Profile settings">
+        <i class="bi bi-person-gear" aria-hidden="true"></i>
+      </a>
+      <a class="icon-button icon-button-dark" href="/logout" title="Sign out" aria-label="Sign out">
+        <i class="bi bi-box-arrow-right" aria-hidden="true"></i>
+      </a>
+    </div>
+  </aside>
+
+  <button class="sidebar-overlay" id="sidebarOverlay" type="button" aria-label="Close navigation"></button>
+
+  <div class="app-main">
+    <header class="topbar">
+      <div class="topbar-start">
+        <button class="mobile-menu-button" id="mobileMenuButton" type="button" aria-label="Open navigation" aria-controls="appSidebar" aria-expanded="false">
+          <i class="bi bi-list" aria-hidden="true"></i>
+        </button>
+        <div>
+          <span class="topbar-eyebrow">KnowGap workspace</span>
+          <h1 class="topbar-title">Support operations</h1>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <div class="notification-wrapper">
+          <button class="icon-button icon-button-light notification-button" type="button" aria-label="Notifications">
+            <i class="bi bi-bell" aria-hidden="true"></i>
+            
+            
+          </button>
+          <div class="notification-panel" aria-live="polite">
+            <div class="notification-header">
+              <strong>Notifications</strong>
+              <span>0</span>
+            </div>
+            
+              <div class="notification-item empty-notification">
+                <div>
+                  <strong>No notifications</strong>
+                  <p>Resolved tickets will appear here.</p>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+        <span class="system-status"><span class="status-pulse"></span>All systems operational</span>
+        <span class="topbar-avatar">I</span>
+      </div>
+    </header>
+
+    <main class="page-content">
+
+      
+<div class="page-heading heading-with-actions">
+  <div>
+    <span class="section-eyebrow">Human escalation desk</span>
+    <h2>IT Support Queue</h2>
+    <p>Investigate requests where the agent team could not find sufficiently reliable evidence.</p>
+  </div>
+  <div class="heading-actions">
+    <span class="queue-live"><span class="status-pulse"></span>Queue is live</span>
+  </div>
+</div>
+
+<div class="metric-grid metric-grid-three">
+  
+  <article class="metric-card">
+    <span class="metric-icon icon-amber"><i class="bi bi-inboxes-fill" aria-hidden="true"></i></span>
+    <div><small>Awaiting review</small><strong>0</strong><span>Escalated tickets</span></div>
+  </article>
+  
+  <article class="metric-card">
+    <span class="metric-icon icon-green"><i class="bi bi-check2-circle" aria-hidden="true"></i></span>
+    <div><small>Recently completed</small><strong>20</strong><span>Resolved tickets</span></div>
+  </article>
+  <article class="metric-card">
+    <span class="metric-icon icon-blue"><i class="bi bi-journal-plus" aria-hidden="true"></i></span>
+    <div><small>Knowledge capture</small><strong>Auto</strong><span>Draft after resolution</span></div>
+  </article>
+</div>
+
+
+<section class="section-block">
+  <div class="section-heading-row">
+    <div>
+      <span class="section-eyebrow">Priority workload</span>
+      <h3>Tickets requiring specialist review</h3>
+    </div>
+    <span class="count-badge">0 open</span>
+  </div>
+
+  <form method="get" action="/support" class="ticket-filter-form panel-card">
+    <div class="filter-form-heading"><span><i class="bi bi-funnel" aria-hidden="true"></i> Filter support work</span></div>
+    <div class="filter-form-grid">
+      <label>Category<select name="category"><option value="">All categories</option><option value="Wi-Fi / DNS" >Wi-Fi / DNS</option><option value="VPN" >VPN</option><option value="Outlook / MFA" >Outlook / MFA</option><option value="Accounts / Passwords" >Accounts / Passwords</option><option value="Printers" >Printers</option><option value="Windows / Updates" >Windows / Updates</option><option value="Software Installation" >Software Installation</option><option value="Remote Desktop" >Remote Desktop</option><option value="Unknown" >Unknown</option></select></label>
+      <label>Status<select name="status"><option value="">Queue and resolved</option><option value="ESCALATED" >Escalated</option><option value="RESOLVED" >Resolved</option><option value="CLOSED" >Closed</option></select></label>
+      <label>Minimum confidence<select name="min_confidence"><option value="">Any confidence</option><option value="0.55" >55%+</option><option value="0.68" >68%+</option><option value="0.80" >80%+</option></select></label>
+      <label>From date<input type="date" name="from_date" value=""></label>
+      <label>To date<input type="date" name="to_date" value=""></label>
+      <button class="btn-primary-modern btn-compact" type="submit"><i class="bi bi-funnel" aria-hidden="true"></i> Apply filters</button>
+    </div>
+  </form>
+
+  
+  <div class="panel-card empty-state empty-state-wide">
+    <span class="empty-state-icon success-empty"><i class="bi bi-check2-all" aria-hidden="true"></i></span>
+    <h4>The queue is clear</h4>
+    <p>No escalated tickets need specialist attention right now.</p>
+  </div>
+  
+</section>
+
+
+<section class="section-block">
+  <div class="section-heading-row">
+    <div>
+      <span class="section-eyebrow">Completed work</span>
+      <h3>Recently resolved</h3>
+    </div>
+  </div>
+  <div class="panel-card table-card">
+    
+    <div class="table-responsive">
+      <table class="modern-table">
+        <thead><tr><th>Ticket</th><th>Issue</th><th>Resolution</th><th>Status</th></tr></thead>
+        <tbody>
+          
+          <tr>
+            <td><span class="ticket-code">SYN-0500</span></td>
+            <td><strong>Software setup cannot continue because admin rights are required</strong><small>Software Installation</small></td>
+            <td><span class="table-clamp">Used the approved installer with administrator permission.</span></td>
+            <td><span class="status-pill status-resolved"><span></span>Resolved</span></td>
+          </tr>
+          
+          <tr>
+            <td><span class="ticket-code">SYN-0499</span></td>
+            <td><strong>Wi-Fi connected but browser says no internet</strong><small>Wi-Fi / DNS</small></td>
+            <td><span class="table-clamp">Restarted the network adapter and flushed the DNS cache.</span></td>
+            <td><span class="status-pill status-resolved"><span></span>Resolved</span></td>
+          </tr>
+          
+          <tr>
+            <td><span class="ticket-code">SYN-0498</span></td>
+            <td><strong>Remote access VPN drops after login</strong><small>VPN</small></td>
+            <td><span class="table-clamp">Updated the VPN client and re-created the connection profile.</span></td>
+            <td><span class="status-pill status-resolved"><span></span>Resolved</span></td>
+          </tr>
+          
+          <tr>
+            <td><span class="ticket-code">SYN-0497</span></td>
+            <td><strong>Print queue is stuck and cannot be cleared</strong><small>Printers</small></td>
+            <td><span class="table-clamp">Cleared the print queue and reinstalled the approved printer driver.</span></td>
+            <td><span class="status-pill status-resolved"><span></span>Resolved</span></td>
+          </tr>
+          
+          <tr>
+            <td><span class="ticket-code">SYN-0492</span></td>
+            <td><strong>VPN disconnects every few minutes</strong><small>VPN</small></td>
+            <td><span class="table-clamp">Updated the VPN client and re-created the connection profile.</span></td>
+            <td><span class="status-pill status-resolved"><span></span>Resolved</span></td>
+          </tr>
+          
+          <tr>
+            <td><span class="ticket-code">SYN-0489</span></td>
+            <td><strong>Software setup cannot continue because admin rights are required</strong><small>Software Installation</small></td>
+            <td><span class="table-clamp">Used the approved installer with administrator permission.</span></td>
+            <td><span class="status-pill status-resolved"><span></span>Resolved</span></td>
+          </tr>
+          
+          <tr>
+            <td><span class="ticket-code">SYN-0488</span></td>
+            <td><strong>MFA approval never arrives on phone</strong><small>Outlook / MFA</small></td>
+            <td><span class="table-clamp">Re-registered MFA and cleared cached Outlook credentials.</span></td>
+            <td><span class="status-pill status-resolved"><span></span>Resolved</span></td>
+          </tr>
+          
+          <tr>
+            <td><span class="ticket-code">SYN-0487</span></td>
+            <td><strong>Company VPN connects then immediately disconnects</strong><small>VPN</small></td>
+            <td><span class="table-clamp">Updated the VPN client and re-created the connection profile.</span></td>
+            <td><span class="status-pill status-resolved"><span></span>Resolved</span></td>
+          </tr>
+          
+          <tr>
+            <td><span class="ticket-code">SYN-0485</span></td>
+            <td><strong>Computer repeatedly restarts after Windows update</strong><small>Windows / Updates</small></td>
+            <td><span class="table-clamp">Installed pending driver updates and repaired Windows update components.</span></td>
+            <td><span class="status-pill status-resolved"><span></span>Resolved</span></td>
+          </tr>
+          
+          <tr>
+            <td><span class="ticket-code">SYN-0484</span></td>
+            <td><strong>Printer shows offline although it is powered on</strong><small>Printers</small></td>
+            <td><span class="table-clamp">Cleared the print queue and reinstalled the approved printer driver.</span></td>
+            <td><span class="status-pill status-resolved"><span></span>Resolved</span></td>
+          </tr>
+          
+          <tr>
+            <td><span class="ticket-code">SYN-0483</span></td>
+            <td><strong>Authenticator code is rejected</strong><small>Outlook / MFA</small></td>
+            <td><span class="table-clamp">Re-registered MFA and cleared cached Outlook credentials.</span></td>
+            <td><span class="status-pill status-resolved"><span></span>Resolved</span></td>
+          </tr>
+          
+          <tr>
+            <td><span class="ticket-code">SYN-0478</span></td>
+            <td><strong>Cannot sign in after password reset</strong><small>Accounts / Passwords</small></td>
+            <td><span class="table-clamp">Unlocked the account and forced a secure password reset.</span></td>
+            <td><span class="status-pill status-resolved"><span></span>Resolved</span></td>
+          </tr>
+          
+          <tr>
+            <td><span class="ticket-code">SYN-0476</span></td>
+            <td><strong>VPN tunnel is unstable from home network</strong><small>VPN</small></td>
+            <td><span class="table-clamp">Updated the VPN client and re-created the connection profile.</span></td>
+            <td><span class="status-pill status-resolved"><span></span>Resolved</span></td>
+          </tr>
+          
+          <tr>
+            <td><span class="ticket-code">SYN-0475</span></td>
+            <td><strong>Printer is online but jobs stay in queue</strong><small>Printers</small></td>
+            <td><span class="table-clamp">Cleared the print queue and reinstalled the approved printer driver.</span></td>
+            <td><span class="status-pill status-resolved"><span></span>Resolved</span></td>
+          </tr>
+          
+          <tr>
+            <td><span class="ticket-code">SYN-0474</span></td>
+            <td><strong>Cannot sign in after password reset</strong><small>Accounts / Passwords</small></td>
+            <td><span class="table-clamp">Unlocked the account and forced a secure password reset.</span></td>
+            <td><span class="status-pill status-resolved"><span></span>Resolved</span></td>
+          </tr>
+          
+          <tr>
+            <td><span class="ticket-code">SYN-0471</span></td>
+            <td><strong>Office printer prints blank pages</strong><small>Printers</small></td>
+            <td><span class="table-clamp">Cleared the print queue and reinstalled the approved printer driver.</span></td>
+            <td><span class="status-pill status-resolved"><span></span>Resolved</span></td>
+          </tr>
+          
+          <tr>
+            <td><span class="ticket-code">SYN-0470</span></td>
+            <td><strong>Laptop is slow after Windows 11 update</strong><small>Windows / Updates</small></td>
+            <td><span class="table-clamp">Installed pending driver updates and repaired Windows update components.</span></td>
+            <td><span class="status-pill status-resolved"><span></span>Resolved</span></td>
+          </tr>
+          
+          <tr>
+            <td><span class="ticket-code">SYN-0469</span></td>
+            <td><strong>Company VPN connects then immediately disconnects</strong><small>VPN</small></td>
+            <td><span class="table-clamp">Updated the VPN client and re-created the connection profile.</span></td>
+            <td><span class="status-pill status-resolved"><span></span>Resolved</span></td>
+          </tr>
+          
+          <tr>
+            <td><span class="ticket-code">SYN-0468</span></td>
+            <td><strong>Setup wizard reports missing dependency</strong><small>Software Installation</small></td>
+            <td><span class="table-clamp">Used the approved installer with administrator permission.</span></td>
+            <td><span class="status-pill status-resolved"><span></span>Resolved</span></td>
+          </tr>
+          
+          <tr>
+            <td><span class="ticket-code">SYN-0467</span></td>
+            <td><strong>Authenticator code is rejected</strong><small>Outlook / MFA</small></td>
+            <td><span class="table-clamp">Re-registered MFA and cleared cached Outlook credentials.</span></td>
+            <td><span class="status-pill status-resolved"><span></span>Resolved</span></td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    
+  </div>
+</section>
+
+    </main>
+
+
+    <footer class="app-footer">
+      <span>KnowGap AI</span>
+      <span>Responsible, evidence-grounded IT support</span>
+    </footer>
+  </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<script>
+  (() => {
+    const sidebar = document.getElementById('appSidebar');
+    const trigger = document.getElementById('mobileMenuButton');
+    const overlay = document.getElementById('sidebarOverlay');
+    if (!sidebar || !trigger || !overlay) return;
+
+    const setOpen = (open) => {
+      sidebar.classList.toggle('is-open', open);
+      overlay.classList.toggle('is-visible', open);
+      document.body.classList.toggle('nav-open', open);
+      trigger.setAttribute('aria-expanded', String(open));
+    };
+
+    trigger.addEventListener('click', () => setOpen(!sidebar.classList.contains('is-open')));
+    overlay.addEventListener('click', () => setOpen(false));
+    sidebar.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => setOpen(false)));
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') setOpen(false);
+    });
+
+    const notificationButton = document.querySelector('.notification-button');
+    const notificationPanel = document.querySelector('.notification-panel');
+    if (notificationButton && notificationPanel) {
+      notificationButton.addEventListener('click', (event) => {
+        event.stopPropagation();
+        const isVisible = notificationPanel.classList.toggle('is-visible');
+        notificationButton.setAttribute('aria-expanded', String(isVisible));
+      });
+      document.addEventListener('click', (event) => {
+        if (!notificationButton.contains(event.target) && !notificationPanel.contains(event.target)) {
+          notificationPanel.classList.remove('is-visible');
+          notificationButton.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+  })();
+</script>
+
+</body>
+</html>

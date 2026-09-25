@@ -1,0 +1,20 @@
+{
+  "recorded_at_utc": "2026-09-21T17:51:30.522224+00:00",
+  "elapsed_seconds": 9.457,
+  "exit_code": 1,
+  "error_type": "OSError",
+  "metrics_as_printed": [],
+  "command": "python evaluation/evaluate_ir.py (via runpy; original script unchanged)",
+  "corpus": "approved data/knowledge_base.csv articles; no database ticket sources",
+  "weights": {
+    "bm25": 0.45,
+    "semantic": 0.55
+  },
+  "weight_sweep_implemented": false,
+  "embedding_mode": "existing local cache; HF_HUB_OFFLINE=1 and TRANSFORMERS_OFFLINE=1",
+  "limitations": [
+    "simpler ranking path than live retrieval",
+    "duplicate relevant labels may be incomplete",
+    "no-answer row scores zero without evaluating abstention"
+  ]
+}
