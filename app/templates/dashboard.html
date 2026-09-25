@@ -135,10 +135,11 @@
 <div class="dashboard-grid dashboard-bottom-grid">
   <section class="panel-card table-card">
     <div class="panel-heading panel-heading-inline">
-      <div><span class="section-eyebrow">Multi-agent observability</span><h3>Latest agent messages</h3></div>
+      <div><span class="section-eyebrow">Multi-agent observability</span><h3>Latest Agent Workflow</h3><p>Agent interactions for the most recently processed request.</p></div>
       <span class="count-badge">{{ logs | length }} messages</span>
     </div>
     {% if logs %}
+    <div class="trace-request-label">Request: <strong>{{ trace_request_id }}</strong></div>
     <div class="table-responsive log-table-wrap">
       <table class="modern-table compact-table">
         <thead><tr><th>Request</th><th>Route</th><th>Task</th><th>Status</th></tr></thead>

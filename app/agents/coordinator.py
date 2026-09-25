@@ -54,8 +54,18 @@ def process_new_ticket(session: Session, ticket: Ticket) -> dict:
     retrieval = search_knowledge(session, ticket.canonical_issue, top_k=5)
     ticket.retrieval_confidence = retrieval["best_score"]
 
-    _log(session, request_id, "retrieval_agent", "solution_agent", "recommend_solution", str(retrieval["items"][:2]))
     solution = recommend_solution(ticket.canonical_issue, retrieval)
+
+    solution_succeeded = solution["can_recommend"]
+    _log(
+        session,
+        request_id,
+        "retrieval_agent",
+        "solution_agent",
+        "recommend_solution" if solution_succeeded else "evaluate_evidence",
+        str(retrieval["items"][:2]),
+        status="OK" if solution_succeeded else "ESCALATED",
+    )
 
     ticket.recommended_solution = solution["message"]
     ticket.decision_explanation = solution.get("explanation") or solution.get("confidence_explanation") or ""
@@ -71,7 +81,7 @@ def process_new_ticket(session: Session, ticket: Ticket) -> dict:
             relevance_score=float(citation.get("relevance_score", 0.0)),
             rank=rank,
         ))
-    if solution["can_recommend"]:
+    if solution_succeeded:
         ticket.status = "SOLUTION_PROPOSED"
         ticket.source_used = solution["source_id"]
     else:
@@ -83,7 +93,14 @@ def process_new_ticket(session: Session, ticket: Ticket) -> dict:
     session.commit()
     session.refresh(ticket)
 
-    _log(session, request_id, "coordinator_agent", "user", "final_response", solution["message"])
+    _log(
+        session,
+        request_id,
+        "coordinator_agent",
+        "user",
+        "final_response" if solution_succeeded else "escalation_response",
+        solution["message"],
+    )
 
     return {
         "request_id": request_id,
