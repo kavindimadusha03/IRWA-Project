@@ -36,6 +36,17 @@ def retrieval_decision(score: float, high_threshold: float, uncertain_threshold:
     return "LOW"
 
 
+def maximum_retrieval_ranking_score() -> float:
+    return (
+        settings.hybrid_bm25_weight
+        + settings.hybrid_semantic_weight
+        + 0.35
+        + 0.18
+        + 0.18
+        + 0.08
+    )
+
+
 def display_decision_explanation(explanation: str) -> str:
     return re.sub(
         r"\bwith\s+\d+(?:\.\d+)?%\s+relevance\b",
@@ -87,6 +98,7 @@ def home(request: Request, session: Session = Depends(get_session)):
                 "ticket_filters": ticket_filter_values(request),
                 "high_confidence_threshold": settings.high_confidence_threshold,
                 "uncertain_threshold": settings.uncertain_threshold,
+                "maximum_ranking_score": maximum_retrieval_ranking_score(),
                 "notifications": notifications,
             },
         )
@@ -153,6 +165,7 @@ def ticket_result(ticket_id: int, request: Request, session: Session = Depends(g
             "ticket": ticket,
             "high_confidence_threshold": settings.high_confidence_threshold,
             "uncertain_threshold": settings.uncertain_threshold,
+            "maximum_ranking_score": maximum_retrieval_ranking_score(),
             "display_decision_explanation": display_decision_explanation(ticket.decision_explanation or ""),
             "logs": matching_logs[:10],
             "trace_request_id": request_id,
@@ -186,6 +199,7 @@ def support_page(request: Request, session: Session = Depends(get_session)):
             "ticket_filters": ticket_filter_values(request),
             "high_confidence_threshold": settings.high_confidence_threshold,
             "uncertain_threshold": settings.uncertain_threshold,
+            "maximum_ranking_score": maximum_retrieval_ranking_score(),
             "notifications": notifications,
         },
     )

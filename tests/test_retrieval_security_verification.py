@@ -8,7 +8,12 @@ from app.agents import coordinator
 from app.agents import retrieval_agent
 from app.agents.retrieval_agent import search_knowledge
 from app.agents.solution_agent import recommend_solution
-from app.main import display_decision_explanation, retrieval_decision, templates
+from app.main import (
+    display_decision_explanation,
+    maximum_retrieval_ranking_score,
+    retrieval_decision,
+    templates,
+)
 from app.agents.ticket_agent import analyze_ticket, build_clarified_issue
 from app.models import KnowledgeArticle, Notification, Ticket, User
 from app.routes import agents, tickets as ticket_routes
@@ -273,6 +278,7 @@ def test_ranking_score_display_boundaries_and_legacy_explanation():
     displayed = display_decision_explanation(legacy)
     assert "100% relevance" not in displayed
     assert "based on the selected source" in displayed
+    assert maximum_retrieval_ranking_score() == 1.79
 
 
 def test_ticket_template_shows_adjusted_score_and_unmeasured_clarification():
@@ -298,6 +304,7 @@ def test_ticket_template_shows_adjusted_score_and_unmeasured_clarification():
         "clarification": {},
         "high_confidence_threshold": settings.high_confidence_threshold,
         "uncertain_threshold": settings.uncertain_threshold,
+        "maximum_ranking_score": maximum_retrieval_ranking_score(),
         "display_decision_explanation": "A ranking score is not a probability.",
     }
     ticket = SimpleNamespace(
@@ -321,6 +328,7 @@ def test_ticket_template_shows_adjusted_score_and_unmeasured_clarification():
     assert "<strong>1.14</strong>" in rendered
     assert "score-high\">HIGH</span>" in rendered
     assert "not a probability that the solution is correct" in rendered
+    assert "Theoretical maximum under current scoring: 1.79" in rendered
     assert "114%" not in rendered
 
     ticket.status = "CLARIFICATION_REQUIRED"

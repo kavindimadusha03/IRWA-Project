@@ -76,7 +76,7 @@
           <strong>{{ '%.2f' | format(t.retrieval_confidence or 0) }}</strong>
           <span>{{ retrieval_decision(t.retrieval_confidence or 0, high_confidence_threshold, uncertain_threshold) }}</span>
           {% endif %}
-          <small class="ranking-score-note">A ranking score measures how strongly a document matches your query after source and metadata adjustments. It is not a probability that the solution is correct.</small>
+          <small class="ranking-score-note">A ranking score measures how strongly a document matches your query after source and metadata adjustments. It is not a probability that the solution is correct. Theoretical maximum under current scoring: {{ '%.2f' | format(maximum_ranking_score) }}.</small>
         </div>
       </div>
 
