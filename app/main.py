@@ -11,6 +11,7 @@ from app.models import AgentLog, Category, KnowledgeArticle, Notification, Secur
 from app.notifications import get_user_notifications
 from app.routes import admin, auth, tickets, support, knowledge, agents, chat
 from app.routes.auth import current_user_from_request
+from app.agents.ticket_agent import clarification_state_from_explanation
 from app.agents.knowledge_intelligence_agent import (
     MAX_CLUSTER_TICKETS,
     MIN_CLUSTER_TICKETS,
@@ -101,6 +102,25 @@ def ticket_result(ticket_id: int, request: Request, session: Session = Depends(g
         .where(TicketCitation.ticket_id == ticket.id)
         .order_by(TicketCitation.rank)
     ).all()
+    citation_views = []
+    for citation in citations:
+        source_status = "resolved" if citation.source_type == "resolved_ticket" else "approved"
+        supported_os = "Any"
+        if citation.source_type == "internal_kb":
+            article = session.exec(select(KnowledgeArticle).where(KnowledgeArticle.doc_id == citation.source_id)).first()
+            if article:
+                source_status = article.status
+                supported_os = article.supported_os
+        citation_views.append({
+            "source_id": citation.source_id,
+            "title": citation.title,
+            "category": citation.category,
+            "source_type": citation.source_type,
+            "status": source_status,
+            "supported_os": supported_os,
+            "relevance_score": citation.relevance_score,
+            "rank": citation.rank,
+        })
     notifications = get_user_notifications(session, user.id)
     return templates.TemplateResponse(
         "ticket_result.html",
@@ -111,7 +131,8 @@ def ticket_result(ticket_id: int, request: Request, session: Session = Depends(g
             "logs": matching_logs[:10],
             "trace_request_id": request_id,
             "feedback": feedback,
-            "citations": citations,
+            "citations": citation_views,
+            "clarification": clarification_state_from_explanation(ticket.decision_explanation),
             "notifications": notifications,
         },
     )

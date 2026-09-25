@@ -2,20 +2,64 @@ from typing import Dict
 from app.services.llm import llm
 
 
+def _item_applicable(query: str, item: Dict) -> bool:
+    query_lower = query.lower()
+    item_text = f"{item.get('title', '')} {item.get('content', '')} {item.get('category', '')}".lower()
+    service_terms = {
+        "vpn": ("vpn", "tunnel", "remote access"),
+        "wifi": ("wifi", "wi-fi", "wireless", "dns", "internet"),
+        "outlook": ("outlook", "email", "mfa", "authenticator"),
+        "printer": ("printer", "printing", "print queue"),
+        "remote desktop": ("remote desktop", "rdp", "remote session"),
+    }
+    requested_services = [terms for key, terms in service_terms.items() if key in query_lower]
+    if requested_services and not any(term in item_text for terms in requested_services for term in terms):
+        return False
+
+    supported_os = str(item.get("supported_os", "Any")).lower()
+    if "windows" in query_lower and ("ubuntu" in supported_os or "ubuntu" in item_text):
+        return False
+    if "ubuntu" in query_lower and "windows" in supported_os:
+        return False
+    return True
+
+
+def clarification_response(analysis: Dict) -> Dict:
+    reasons = analysis.get("ambiguity_reasons", [])
+    questions = analysis.get("clarification_questions", [])[:3]
+    lines = ["A little more detail is needed before we recommend a repair."]
+    if reasons:
+        lines.append("Why: " + " ".join(reasons))
+    lines.extend(f"{index}. {question}" for index, question in enumerate(questions, start=1))
+    return {
+        "can_recommend": False,
+        "message": "Please answer the clarification questions so IT Support can search for the right procedure.",
+        "source_id": "",
+        "confidence": "CLARIFICATION_REQUIRED",
+        "explanation": "The retrieval score is only a ranking signal; it cannot resolve which problem should be fixed.",
+        "confidence_explanation": "Clarification is required before retrieval evidence can support a recommendation.",
+        "why_this_solution_was_suggested": "The request contains multiple possible problem scopes or missing technical details.",
+        "clarification_questions": questions,
+        "clarification_reasons": reasons,
+        "citations": [],
+        "suggested_reply": "Please provide the requested details. If the problem affects multiple services, IT Support will investigate the shared cause.",
+    }
+
+
 def recommend_solution(query: str, retrieval: Dict) -> Dict:
     decision = retrieval.get("decision", "LOW")
     items = retrieval.get("items", [])
 
     if decision != "HIGH" or not items:
         explanation = (
-            "No approved knowledge article met the reliability threshold for this issue. "
+            "No eligible authoritative source met the reliability threshold for this issue. "
             "The search score was too weak or the evidence was incomplete, so a human specialist should review it."
         )
         return {
             "can_recommend": False,
             "message": (
-                "No sufficiently reliable solution was found in the available knowledge base "
-                "or previous resolved tickets. The ticket has been escalated to IT Support."
+                "No sufficiently reliable solution was found in the available eligible evidence. "
+                "The ticket has been escalated to IT Support."
             ),
             "source_id": "",
             "confidence": decision,
@@ -26,8 +70,50 @@ def recommend_solution(query: str, retrieval: Dict) -> Dict:
             "suggested_reply": "Thanks for reporting this. I have escalated the request to a specialist because the available evidence was not strong enough to provide a safe automated recommendation.",
         }
 
-    best = items[0]
-    evidence_items = items[:3]
+    eligible_items = [
+        item for item in items
+        if item.get("status") in {"approved", "resolved"}
+        and item.get("source_type") in {"internal_kb", "resolved_ticket"}
+        and _item_applicable(query, item)
+        and item.get("applicability", {}).get("source_eligible", True)
+        and item.get("applicability", {}).get("symptom_applicable", True)
+        and item.get("applicability", {}).get("operating_system_applicable", True)
+        and item.get("applicability", {}).get("evidence_sufficient", True)
+    ]
+    if not eligible_items:
+        return clarification_response({"ambiguity_reasons": ["No eligible authoritative source was available."], "clarification_questions": []}) | {
+            "confidence": decision,
+            "message": "No eligible evidence was available for a safe automated recommendation. The ticket has been escalated to IT Support.",
+            "explanation": "The search score is a ranking signal, not a probability of correctness, and no eligible source passed validation.",
+            "confidence_explanation": "No eligible evidence passed source validation.",
+            "why_this_solution_was_suggested": "Escalation is safer than using an unapproved or unsupported reference.",
+            "clarification_questions": [],
+            "clarification_reasons": [],
+        }
+    unique_items = []
+    seen_sources = set()
+    for item in eligible_items:
+        source_id = str(item.get("source_id", "")).strip()
+        if not source_id or source_id in seen_sources:
+            continue
+        seen_sources.add(source_id)
+        unique_items.append(item)
+    if not unique_items:
+        return {
+            "can_recommend": False,
+            "message": "No applicable eligible evidence was available for a safe automated recommendation. The ticket has been escalated to IT Support.",
+            "source_id": "",
+            "confidence": decision,
+            "explanation": "Relevant ranking evidence did not pass symptom, operating-system, or source validation.",
+            "confidence_explanation": "The ranking signal alone was insufficient to establish an applicable repair.",
+            "why_this_solution_was_suggested": "Escalation is safer than using a related but inapplicable procedure.",
+            "clarification_questions": [],
+            "clarification_reasons": [],
+            "citations": [],
+            "suggested_reply": "The available evidence does not match the confirmed symptoms closely enough. The ticket has been escalated to IT Support.",
+        }
+    evidence_items = unique_items[:1]
+    best = evidence_items[0]
     evidence = "\n\n".join(
         f"Evidence source {item['source_id']} | {item['title']}\n{item['content']}"
         for item in evidence_items
@@ -36,8 +122,8 @@ def recommend_solution(query: str, retrieval: Dict) -> Dict:
     best_score = float(best.get("hybrid_score", retrieval.get("best_score", 0.0) or 0.0))
     score_pct = max(0, min(100, round(best_score * 100)))
     explanation = (
-        f"This recommendation was selected because the issue matched the approved guidance in {best.get('title', 'the top evidence source')} "
-        f"with {score_pct}% relevance, and it aligns with {len(evidence_items)} supporting sources that were validated for this workflow."
+        f"This recommendation was selected because the issue matched {best.get('source_type', 'eligible evidence').replace('_', ' ')} "
+        f"{best.get('title', 'the top evidence source')} with {score_pct}% relevance. Relevance is a ranking signal, not a probability of correctness."
     )
 
     system = (
@@ -57,8 +143,9 @@ def recommend_solution(query: str, retrieval: Dict) -> Dict:
     except Exception:
         message = evidence
 
+    source_label = "approved knowledge article" if best.get("source_type") == "internal_kb" else "resolved support record"
     suggested_reply = (
-        f"Thanks for reporting this issue. Based on the approved guidance in {best.get('title', 'the relevant article')}, "
+        f"Thanks for reporting this issue. Based on the {source_label} {best.get('title', 'the relevant source')}, "
         f"the recommended next step is to follow the documented troubleshooting steps and confirm the issue is resolved."
     )
 

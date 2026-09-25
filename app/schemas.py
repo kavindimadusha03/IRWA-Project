@@ -18,11 +18,11 @@ class TicketCreate(BaseModel):
 
 
 class AgentMessage(BaseModel):
-    message_id: str
-    request_id: str
-    sender: str
-    receiver: str
-    task: str
+    message_id: str = Field(min_length=1, max_length=100)
+    request_id: str = Field(min_length=1, max_length=100)
+    sender: str = Field(min_length=1, max_length=100)
+    receiver: str = Field(min_length=1, max_length=100)
+    task: str = Field(min_length=1, max_length=100)
     payload: Dict[str, Any]
 
 

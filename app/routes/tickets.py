@@ -53,6 +53,43 @@ def create_ticket(
     return RedirectResponse(url=f"/tickets/{ticket.id}", status_code=303)
 
 
+@router.post("/{ticket_id}/clarify")
+def submit_clarification(
+    ticket_id: int,
+    request: Request,
+    answers: str = Form(""),
+    answer_1: str = Form(""),
+    answer_2: str = Form(""),
+    answer_3: str = Form(""),
+    session: Session = Depends(get_session),
+):
+    user = current_user_from_request(request, session)
+    if not user:
+        return RedirectResponse(url="/", status_code=303)
+    ticket = session.get(Ticket, ticket_id)
+    if not ticket or ticket.user_id != user.id:
+        raise HTTPException(status_code=404, detail="Ticket not found")
+    answers = "\n".join(value.strip() for value in (answers, answer_1, answer_2, answer_3) if value.strip()).strip()
+    if ticket.status != "CLARIFICATION_REQUIRED":
+        raise HTTPException(status_code=409, detail="This ticket is not waiting for clarification")
+    if len(answers) < 10 or len(answers) > 3000:
+        raise HTTPException(status_code=422, detail="Please provide enough detail to reanalyze the ticket")
+    ticket.status = "REANALYZING"
+    ticket.updated_at = datetime.utcnow()
+    session.add(ticket)
+    session.commit()
+    try:
+        process_new_ticket(session, ticket, additional_context=answers)
+    except Exception:
+        ticket.status = "ESCALATED"
+        ticket.decision_explanation = "Reanalysis could not complete safely. The ticket has been escalated to IT Support."
+        ticket.updated_at = datetime.utcnow()
+        session.add(ticket)
+        session.commit()
+        return RedirectResponse(url=f"/tickets/{ticket.id}", status_code=303)
+    return RedirectResponse(url=f"/tickets/{ticket.id}", status_code=303)
+
+
 @router.post("/{ticket_id}/solved")
 def mark_solved(ticket_id: int, request: Request, session: Session = Depends(get_session)):
     user = current_user_from_request(request, session)

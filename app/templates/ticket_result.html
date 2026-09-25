@@ -44,7 +44,7 @@
         <div class="analysis-item analysis-confidence">
           <span class="analysis-icon icon-green"><i class="bi bi-shield-check" aria-hidden="true"></i></span>
           <span class="confidence-content">
-            <span class="confidence-label"><small>Retrieval confidence</small><strong>{{ confidence }}%</strong></span>
+            <span class="confidence-label"><small>Retrieval ranking signal</small><strong>{{ confidence }}%</strong></span>
             <span class="progress-track"><span style="width: {{ confidence }}%"></span></span>
           </span>
         </div>
@@ -53,9 +53,27 @@
           <span><small>Evidence source</small><strong>{{ ticket.source_used or 'No reliable source' }}</strong></span>
         </div>
       </div>
+      {% if clarification and clarification.get('affected_service') %}
+      <div class="understood-issue">
+        <strong>What the system understood</strong>
+        <span>Affected service: {{ clarification.get('affected_service') }}</span>
+        <span>Operating system: {{ clarification.get('operating_system') or 'Not provided' }}</span>
+        {% if clarification.get('resolved_or_negated_symptoms') %}
+        <span>Not currently affected: {{ clarification.get('resolved_or_negated_symptoms') | join(', ') }}</span>
+        {% endif %}
+      </div>
+      {% endif %}
     </section>
 
-    {% if ticket.status == 'SOLUTION_PROPOSED' %}
+    {% if ticket.status == 'REANALYZING' %}
+    <section class="resolution-card resolution-info">
+      <div class="resolution-header">
+        <span class="resolution-icon"><i class="bi bi-arrow-repeat" aria-hidden="true"></i></span>
+        <div><span class="section-eyebrow">Reanalyzing</span><h3>Checking the clarified issue</h3></div>
+      </div>
+      <p>Fresh retrieval evidence is being checked against the affected service and operating system.</p>
+    </section>
+    {% elif ticket.status == 'SOLUTION_PROPOSED' %}
     <section class="resolution-card resolution-success">
       <div class="resolution-header">
         <span class="resolution-icon"><i class="bi bi-check2-circle" aria-hidden="true"></i></span>
@@ -78,7 +96,7 @@
       {% endif %}
       <div class="source-callout">
         <i class="bi bi-journal-check" aria-hidden="true"></i>
-        <span><small>Verified source</small><strong>{{ ticket.source_used }}</strong></span>
+        <span><small>Evidence source</small><strong>{{ ticket.source_used }}</strong></span>
       </div>
       {% if citations %}
       <div class="citation-panel">
@@ -87,7 +105,7 @@
           {% for citation in citations %}
           <div class="citation-item">
             <span class="citation-rank">{{ citation.rank }}</span>
-            <div><strong>{{ citation.source_id }} · {{ citation.title }}</strong><small>{{ citation.category }} · {{ citation.source_type | replace('_', ' ') | title }} · {{ (citation.relevance_score * 100) | round | int }}% relevance</small></div>
+            <div><strong>{{ citation.source_id }} · {{ citation.title }}</strong><small>{{ citation.category }} · {{ citation.source_type | replace('_', ' ') | title }} · {{ citation.status | title }} · {{ citation.supported_os }} · {{ (citation.relevance_score * 100) | round | int }}% relevance</small></div>
           </div>
           {% endfor %}
         </div>
@@ -117,6 +135,35 @@
         </div>
       </div>
       {% endif %}
+    </section>
+    {% elif ticket.status == 'CLARIFICATION_REQUIRED' %}
+    <section class="resolution-card resolution-warning">
+      <div class="resolution-header">
+        <span class="resolution-icon"><i class="bi bi-chat-square-text" aria-hidden="true"></i></span>
+        <div>
+          <span class="section-eyebrow">Clarification required</span>
+          <h3>We need a little more detail</h3>
+        </div>
+      </div>
+      <p>Several possible problem areas were mentioned, so no repair has been recommended yet. Retrieval scores rank sources; they do not prove that a procedure is correct.</p>
+      <div class="explanation-box">
+        <strong>Questions from IT Support</strong>
+        <ol>
+          {% for question in clarification.get('clarification_questions', []) %}
+          <li>{{ question }}</li>
+          {% endfor %}
+        </ol>
+      </div>
+      <form method="post" action="/tickets/{{ ticket.id }}/clarify" class="clarification-form">
+        <label for="clarificationAnswers">Your answers</label>
+        {% for question in clarification.get('clarification_questions', []) %}
+        <label for="clarificationAnswer{{ loop.index }}">{{ question }}</label>
+        <textarea id="clarificationAnswer{{ loop.index }}" name="answer_{{ loop.index }}" minlength="2" maxlength="1000" {% if loop.first %}required{% endif %}></textarea>
+        {% endfor %}
+        <label for="clarificationAnswers">Additional context</label>
+        <textarea id="clarificationAnswers" name="answers" maxlength="3000" placeholder="Add any other relevant detail."></textarea>
+        <button class="btn-primary-modern" type="submit"><i class="bi bi-arrow-repeat" aria-hidden="true"></i> Reanalyze issue</button>
+      </form>
     </section>
     {% elif ticket.status == 'ESCALATED' %}
     <section class="resolution-card resolution-warning">
