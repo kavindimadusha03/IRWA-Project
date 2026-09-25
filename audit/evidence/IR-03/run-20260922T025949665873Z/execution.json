@@ -1,0 +1,101 @@
+{
+  "started_at_utc": "2026-09-22T02:59:49.886267+00:00",
+  "stage": "execution completed",
+  "case": "IR-03",
+  "status": "Executed; awaiting source/answer review",
+  "outcome": "Unassessed",
+  "ticket_requests": 1,
+  "http": {
+    "health": 200,
+    "login": {
+      "status": 303,
+      "location": "/home",
+      "cookie_present": true
+    },
+    "home": 200,
+    "ticket_create": {
+      "status": 303,
+      "location": "/tickets/501"
+    },
+    "ticket_page": 200
+  },
+  "isolated_database": "C:\\Users\\PSB\\AppData\\Local\\Temp\\knowgap-ir03-co_m7lz1\\knowgap.db",
+  "dataset": "Unmodified project synthetic CSVs; no existing working-database rows copied",
+  "configuration": {
+    "bm25_weight": 0.45,
+    "semantic_weight": 0.55,
+    "high_threshold": 0.68,
+    "uncertain_threshold": 0.55,
+    "embedding_model": "all-MiniLM-L6-v2",
+    "llm_model": "llama-3.1-8b-instant",
+    "ticket_top_k": 5,
+    "thread_limit": 1,
+    "cached_model_only": true
+  },
+  "comparison_to_IR01": {
+    "reference_run": "audit/evidence/IR-01/run-20260921T194038486465Z",
+    "same_configuration": true
+  },
+  "model_preflight": {
+    "loaded": true,
+    "elapsed_seconds": 10.299
+  },
+  "test_user": {
+    "role": "CUSTOMER",
+    "active": true,
+    "origin": "synthetic CSV seed account; credential values omitted"
+  },
+  "fixture_counts": {
+    "articles": 80,
+    "historical_tickets": 500
+  },
+  "approved_related_generic_sources": [
+    "KB-006",
+    "KB-014",
+    "KB-022",
+    "KB-030",
+    "KB-038",
+    "KB-046",
+    "KB-054",
+    "KB-062",
+    "KB-070",
+    "KB-078"
+  ],
+  "approved_exact_code_sources": [],
+  "matching_quality_subcase": "Not ready: no approved exact-code source",
+  "llm": {
+    "configured_enabled": false,
+    "attempts": 2,
+    "successful_chat_returns": 0,
+    "error_types": [
+      "RuntimeError",
+      "RuntimeError"
+    ]
+  },
+  "base_url": "http://127.0.0.1:8001",
+  "page": "http://127.0.0.1:8001/home",
+  "endpoint": "POST http://127.0.0.1:8001/tickets/create",
+  "retrieval_elapsed_seconds": 1.741,
+  "ticket_url": "http://127.0.0.1:8001/tickets/501",
+  "ticket": {
+    "id": 501,
+    "category": "Windows / Updates",
+    "canonical_issue": "Windows blue screen error 0x00000124",
+    "status": "SOLUTION_PROPOSED",
+    "approval_status": "PENDING",
+    "retrieval_confidence": 0.93880946616208,
+    "source_used": "SYN-0005"
+  },
+  "mechanical_checks": {
+    "single_ticket_request": true,
+    "ticket_page_200": true,
+    "retrieved_any_sources": true,
+    "top_in_related_generic_KB_set": false,
+    "any_exact_error_match": false,
+    "code_survives_canonical_issue": true,
+    "all_sources_approved_or_resolved": true
+  },
+  "review_note": "A matching source ID/category and HIGH score alone do not establish answer grounding. Assess each recommended action against retrieved evidence.",
+  "server_stopped": true,
+  "finished_at_utc": "2026-09-22T03:00:05.869506+00:00"
+}

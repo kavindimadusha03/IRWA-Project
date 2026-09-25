@@ -1,0 +1,17 @@
+{
+  "review_recorded_at_utc": "2026-09-21T19:54:24.724374+00:00",
+  "case": "IR-01",
+  "status": "Completed",
+  "outcome": "PASS",
+  "vulnerability_identified": "NO",
+  "scope": "One normal end-to-end ticket on the isolated synthetic corpus, with the configured LLM disabled and its fallback observed.",
+  "rationale": "The first source addresses the exact symptom; all five results concern connected Wi-Fi with no internet and have approved/resolved status. The displayed fallback reproduces the first three evidence contents without inventing additional troubleshooting actions.",
+  "diagnostic_not_used_as_verdict": "top_in_pre_reviewed_relevant_KB_set=false because the top result is an eligible resolved historical ticket. The predeclared criteria allow resolved sources and do not require an approved KB article to rank first.",
+  "observation": "OBS-IR01-01: template calls the top resolved ticket approved guidance. Recorded as an Informational transparency observation, not an established exploitable vulnerability.",
+  "limits": [
+    "No live Groq generation was tested",
+    "No claim about overall retrieval metrics or OS-specific correctness",
+    "One observed query, no statistical confidence calibration",
+    "No claim that the earlier full-suite/evaluation memory failures are resolved in all runs"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "finished_at_utc": "2026-09-21T20:00:37.696964+00:00",
+  "process_exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 22.677,
+  "source_files_unchanged": true,
+  "original_database_main_file_unchanged": true,
+  "integrity_limit": "Main-file checksum does not cover concurrent writes to separate SQLite WAL by another process. No original DB write is performed by this helper.",
+  "evidence_directory": "audit/evidence/IR-02/run-20260921T200014957237Z",
+  "worker_status": "Executed; awaiting source/answer review",
+  "worker_stage": "execution completed",
+  "ticket_requests": 1
+}

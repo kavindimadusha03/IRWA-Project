@@ -1,0 +1,44 @@
+{
+  "reference_case": "IR-01",
+  "reference_run": "audit/evidence/IR-01/run-20260921T194038486465Z",
+  "current_case": "IR-02",
+  "current_run": "audit/evidence/IR-02/run-20260921T200014957237Z",
+  "original_query": "My laptop is connected to Wi-Fi but there is no internet.",
+  "paraphrased_query": "My wireless connection shows connected but websites will not load.",
+  "actual_normalized_paraphrase": "wifi connection shows connected but websites will not load",
+  "same_configuration": true,
+  "corpus_and_source_hash_checks": {
+    "reference_run": "audit/evidence/IR-01/run-20260921T194038486465Z",
+    "source_files_same_as_IR01": true,
+    "kb_csv_same_as_IR01": true,
+    "ticket_csv_same_as_IR01": true,
+    "IR01_outcome": "PASS"
+  },
+  "IR01": {
+    "ranking": [
+      "SYN-0138",
+      "SYN-0033",
+      "KB-001",
+      "SYN-0037",
+      "SYN-0027"
+    ],
+    "top_score": 0.9441488884601732,
+    "decision": "HIGH",
+    "priority": "Critical"
+  },
+  "IR02": {
+    "ranking": [
+      "SYN-0027",
+      "KB-001",
+      "SYN-0033",
+      "SYN-0138",
+      "SYN-0037"
+    ],
+    "top_score": 0.8240901607668474,
+    "decision": "HIGH",
+    "priority": "Medium"
+  },
+  "same_top_five_set": true,
+  "relevance_review": "All five sources describe connected Wi-Fi with unavailable internet or websites failing to load; first-three evidence bodies support the displayed fallback actions.",
+  "claim_limit": "Hybrid handling of this paraphrase, not semantic-only attribution, probability calibration or successful LLM generation."
+}

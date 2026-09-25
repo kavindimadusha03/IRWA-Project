@@ -1,0 +1,42 @@
+{
+  "id": 501,
+  "title": "Wi-Fi connected but no internet",
+  "description": "My laptop is connected to Wi-Fi but there is no internet.",
+  "masked_description": "My laptop is connected to Wi-Fi but there is no internet.",
+  "category": "Wi-Fi / DNS",
+  "canonical_issue": "My laptop is connected to Wi-Fi but there is no internet.",
+  "priority": "Critical",
+  "status": "SOLUTION_PROPOSED",
+  "approval_status": "PENDING",
+  "retrieval_confidence": 0.9441488884601732,
+  "source_used": "SYN-0138",
+  "recommended_solution": "Evidence source SYN-0138 | Laptop connected to Wi-Fi but no internet access\nProblem: Laptop connected to Wi-Fi but no internet access on macOS. It happens on my work laptop.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.\n\nEvidence source SYN-0033 | Wi-Fi connected but browser says no internet\nProblem: Wi-Fi connected but browser says no internet on Windows 11. I already restarted the device once.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.\n\nEvidence source KB-001 | DNS Cache Recovery - Guide 1\nIf Wi-Fi is connected but internet access is unavailable, open Command Prompt and run ipconfig /flushdns. Reconnect to Wi-Fi and test again.",
+  "decision_explanation": "This recommendation was selected because the issue matched the approved guidance in Laptop connected to Wi-Fi but no internet access with 94% relevance, and it aligns with 3 supporting sources that were validated for this workflow.",
+  "suggested_reply": "Thanks for reporting this issue. Based on the approved guidance in Laptop connected to Wi-Fi but no internet access, the recommended next step is to follow the documented troubleshooting steps and confirm the issue is resolved.",
+  "citations": [
+    {
+      "source_id": "SYN-0138",
+      "title": "Laptop connected to Wi-Fi but no internet access",
+      "source_type": "resolved_ticket",
+      "category": "Wi-Fi / DNS",
+      "relevance_score": 0.9441488884601732,
+      "rank": 1
+    },
+    {
+      "source_id": "SYN-0033",
+      "title": "Wi-Fi connected but browser says no internet",
+      "source_type": "resolved_ticket",
+      "category": "Wi-Fi / DNS",
+      "relevance_score": 0.8157104250611372,
+      "rank": 2
+    },
+    {
+      "source_id": "KB-001",
+      "title": "DNS Cache Recovery - Guide 1",
+      "source_type": "Internal KB",
+      "category": "Wi-Fi / DNS",
+      "relevance_score": 0.7957807085793914,
+      "rank": 3
+    }
+  ]
+}

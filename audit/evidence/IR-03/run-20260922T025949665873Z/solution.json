@@ -1,0 +1,42 @@
+{
+  "can_recommend": true,
+  "message": "Evidence source SYN-0005 | Blue screen appears after installing an update\nProblem: Blue screen appears after installing an update on Windows 10. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.\n\nEvidence source SYN-0054 | Windows driver error after restart\nProblem: Windows driver error after restart on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.\n\nEvidence source SYN-0026 | Windows update failed and rolled back\nProblem: Windows update failed and rolled back on Windows 11. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+  "source_id": "SYN-0005",
+  "confidence": "HIGH",
+  "explanation": "This recommendation was selected because the issue matched the approved guidance in Blue screen appears after installing an update with 94% relevance, and it aligns with 3 supporting sources that were validated for this workflow.",
+  "confidence_explanation": "This recommendation was selected because the issue matched the approved guidance in Blue screen appears after installing an update with 94% relevance, and it aligns with 3 supporting sources that were validated for this workflow.",
+  "why_this_solution_was_suggested": "This recommendation was selected because the issue matched the approved guidance in Blue screen appears after installing an update with 94% relevance, and it aligns with 3 supporting sources that were validated for this workflow.",
+  "suggested_reply": "Thanks for reporting this issue. Based on the approved guidance in Blue screen appears after installing an update, the recommended next step is to follow the documented troubleshooting steps and confirm the issue is resolved.",
+  "citations": [
+    {
+      "source_id": "SYN-0005",
+      "title": "Blue screen appears after installing an update",
+      "category": "Windows / Updates",
+      "source_type": "resolved_ticket",
+      "relevance_score": 0.93880946616208,
+      "bm25_score": 1.0,
+      "semantic_score": 0.6338170399188877,
+      "hybrid_score": 0.93880946616208
+    },
+    {
+      "source_id": "SYN-0054",
+      "title": "Windows driver error after restart",
+      "category": "Windows / Updates",
+      "source_type": "resolved_ticket",
+      "relevance_score": 0.5772215143576913,
+      "bm25_score": 0.3618785066564106,
+      "semantic_score": 0.3824662792761803,
+      "hybrid_score": 0.5772215143576913
+    },
+    {
+      "source_id": "SYN-0026",
+      "title": "Windows update failed and rolled back",
+      "category": "Windows / Updates",
+      "source_type": "resolved_ticket",
+      "relevance_score": 0.4580446356357833,
+      "bm25_score": 0.03021002145096986,
+      "semantic_score": 0.39890759878243276,
+      "hybrid_score": 0.4580446356357833
+    }
+  ]
+}

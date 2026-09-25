@@ -1,0 +1,12 @@
+{
+  "original_query": "My laptop battery is swelling after charging.",
+  "normalized_query": "laptop battery swelling after charging.",
+  "normalized_query_tokens": [
+    "laptop",
+    "battery",
+    "swelling",
+    "after",
+    "charging"
+  ],
+  "capture": "original function return observed; no result or input changed"
+}

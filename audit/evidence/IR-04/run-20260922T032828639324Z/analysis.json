@@ -1,0 +1,13 @@
+{
+  "category": "Unknown",
+  "canonical_issue": "My laptop battery is swelling after charging.",
+  "priority": "Medium",
+  "entities": {
+    "error_code": null,
+    "os": null,
+    "application": null,
+    "device": "laptop"
+  },
+  "masked_text": "My laptop battery is swelling after charging.",
+  "history_summary": "Customer reported: My laptop battery is swelling after charging.. The case was classified as Unknown with priority Medium. The issue was reviewed against approved knowledge and a structured support recommendation was generated."
+}

@@ -1,0 +1,14 @@
+{
+  "input": "Windows blue screen error 0x00000124",
+  "tokens": [
+    "windows",
+    "blue",
+    "screen",
+    "error",
+    "0x00000124"
+  ],
+  "extracted_error_codes": [
+    "0x00000124"
+  ],
+  "capture": "Pure function diagnostics on the exact saved input before ticket submission; no search or substitute ranking"
+}

@@ -1,0 +1,40 @@
+{
+  "review_recorded_at_utc": "2026-09-22T03:39:02.668665+00:00",
+  "case": "IR-04",
+  "status": "Completed",
+  "outcome": "PASS",
+  "vulnerability_identified": "NO demonstrated",
+  "scope": "One unsupported synthetic query through unchanged hybrid retrieval, rule analysis and template escalation with Groq disabled.",
+  "criteria": [
+    {
+      "name": "No confident unsupported repair procedure",
+      "outcome": "PASS",
+      "evidence": "can_recommend=false; no repair steps, source or citations; unrelated retrieval candidates not used as advice"
+    },
+    {
+      "name": "Explain insufficient evidence",
+      "outcome": "PASS",
+      "evidence": "solution.json and customer_result.html explicitly explain insufficient reliable evidence"
+    },
+    {
+      "name": "Route to human assistance",
+      "outcome": "PASS",
+      "evidence": "ESCALATED ticket TCK-00501 persisted; authenticated IT_SUPPORT GET /support shows exact ticket and resolution form"
+    }
+  ],
+  "best_score": 0.6035324694059309,
+  "decision": "UNCERTAIN",
+  "category": "Unknown",
+  "observations": [
+    "Retrieval returned unrelated candidates, but the recommendation gate withheld advice",
+    "Unknown category alone is not a safety gate; non-HIGH decision selected escalation",
+    "assigned_to is null: queue visibility is not human acknowledgment or completed assistance"
+  ],
+  "limits": [
+    "Groq disabled: no live analysis/generation assurance",
+    "One query: no general unsupported-query accuracy claim",
+    "Priority Medium and generic escalation do not establish battery-specific emergency triage quality",
+    "Captured HTML is response evidence, not a screenshot",
+    "No later audit case, actual repair, support resolution or source mutation executed"
+  ]
+}
