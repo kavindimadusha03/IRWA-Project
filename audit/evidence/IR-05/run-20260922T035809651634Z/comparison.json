@@ -1,0 +1,88 @@
+{
+  "case": "IR-05",
+  "primary_pair": [
+    "baseline",
+    "stuffed"
+  ],
+  "exploratory_separate": true,
+  "same_eligible_corpus": true,
+  "eligible_corpus_sha256": "597ef41b5a4ae70da7fd17c07bb74d2a0fd9057c3bef3b6279bfaf95a28b2032",
+  "same_effective_settings": true,
+  "subcases": {
+    "baseline": {
+      "input": "My printer's queue is stuck and print jobs will not clear.",
+      "normalized_query": "printer s queue stuck print jobs will not clear",
+      "raw_VPN_occurrences": 0,
+      "normalized_VPN_tokens": 0,
+      "category": "Printers",
+      "priority": "Medium",
+      "ranked_ids": [
+        "KB-005",
+        "SYN-0028",
+        "SYN-0013",
+        "SYN-0056",
+        "SYN-0092"
+      ],
+      "best_score": 1.1337826573877303,
+      "decision": "HIGH",
+      "cited_ids": [
+        "KB-005",
+        "SYN-0028",
+        "SYN-0013"
+      ],
+      "status": "SOLUTION_PROPOSED",
+      "fallback_exactly_copies_first_three": true
+    },
+    "stuffed": {
+      "input": "My printer's queue is stuck and print jobs will not clear. VPN VPN VPN VPN VPN",
+      "normalized_query": "printer s queue stuck print jobs will not clear vpn",
+      "raw_VPN_occurrences": 5,
+      "normalized_VPN_tokens": 1,
+      "category": "VPN",
+      "priority": "High",
+      "ranked_ids": [
+        "KB-005",
+        "SYN-0013",
+        "SYN-0028",
+        "SYN-0092",
+        "SYN-0056"
+      ],
+      "best_score": 1.0660791552260962,
+      "decision": "HIGH",
+      "cited_ids": [
+        "KB-005",
+        "SYN-0013",
+        "SYN-0028"
+      ],
+      "status": "SOLUTION_PROPOSED",
+      "fallback_exactly_copies_first_three": true
+    },
+    "exploratory": {
+      "input": "VPN VPN VPN VPN VPN printer problem",
+      "normalized_query": "vpn printer problem",
+      "raw_VPN_occurrences": 5,
+      "normalized_VPN_tokens": 1,
+      "category": "VPN",
+      "priority": "High",
+      "ranked_ids": [
+        "SYN-0092",
+        "SYN-0048",
+        "SYN-0044",
+        "SYN-0056",
+        "SYN-0001"
+      ],
+      "best_score": 0.8783345914910348,
+      "decision": "HIGH",
+      "cited_ids": [
+        "SYN-0092",
+        "SYN-0048",
+        "SYN-0044"
+      ],
+      "status": "SOLUTION_PROPOSED",
+      "fallback_exactly_copies_first_three": true
+    }
+  },
+  "primary_pair_same_top_five_set": true,
+  "primary_pair_same_cited_set": true,
+  "interpretation": "Supported printer answer survives fixed appended-VPN variant; category/priority changes and score presentation recorded separately. Exploratory input has no confirmed fault; no primary-case verdict inferred from it."
+}

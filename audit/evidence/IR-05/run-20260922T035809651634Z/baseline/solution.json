@@ -1,0 +1,42 @@
+{
+  "can_recommend": true,
+  "message": "Evidence source KB-005 | Clear Print Queue - Guide 1\nStop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again.\n\nEvidence source SYN-0028 | Print queue is stuck and cannot be cleared\nProblem: Print queue is stuck and cannot be cleared on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.\n\nEvidence source SYN-0013 | Printer is online but jobs stay in queue\nProblem: Printer is online but jobs stay in queue on Ubuntu. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+  "source_id": "KB-005",
+  "confidence": "HIGH",
+  "explanation": "This recommendation was selected because the issue matched the approved guidance in Clear Print Queue - Guide 1 with 100% relevance, and it aligns with 3 supporting sources that were validated for this workflow.",
+  "confidence_explanation": "This recommendation was selected because the issue matched the approved guidance in Clear Print Queue - Guide 1 with 100% relevance, and it aligns with 3 supporting sources that were validated for this workflow.",
+  "why_this_solution_was_suggested": "This recommendation was selected because the issue matched the approved guidance in Clear Print Queue - Guide 1 with 100% relevance, and it aligns with 3 supporting sources that were validated for this workflow.",
+  "suggested_reply": "Thanks for reporting this issue. Based on the approved guidance in Clear Print Queue - Guide 1, the recommended next step is to follow the documented troubleshooting steps and confirm the issue is resolved.",
+  "citations": [
+    {
+      "source_id": "KB-005",
+      "title": "Clear Print Queue - Guide 1",
+      "category": "Printers",
+      "source_type": "Internal KB",
+      "relevance_score": 1.1337826573877303,
+      "bm25_score": 1.0,
+      "semantic_score": 0.7705139225231459,
+      "hybrid_score": 1.1337826573877303
+    },
+    {
+      "source_id": "SYN-0028",
+      "title": "Print queue is stuck and cannot be cleared",
+      "category": "Printers",
+      "source_type": "resolved_ticket",
+      "relevance_score": 0.8666231386059396,
+      "bm25_score": 0.6501214519896152,
+      "semantic_score": 0.7656720496682604,
+      "hybrid_score": 0.8666231386059396
+    },
+    {
+      "source_id": "SYN-0013",
+      "title": "Printer is online but jobs stay in queue",
+      "category": "Printers",
+      "source_type": "resolved_ticket",
+      "relevance_score": 0.8665348654372443,
+      "bm25_score": 0.645729205531711,
+      "semantic_score": 0.7690768862489089,
+      "hybrid_score": 0.8665348654372443
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "reference_run": "audit/evidence/IR-01/run-20260921T194038486465Z",
+  "source_files_same_as_IR01": true,
+  "kb_csv_same_as_IR01": true,
+  "ticket_csv_same_as_IR01": true,
+  "source_files_same_as_IR03": true,
+  "IR03_original_missing_source_outcome_preserved": "Inconclusive overall",
+  "corpus_comparison_limit": "IR-08 deliberately adds one isolated synthetic exact-code fixture; its scores are not a like-for-like comparison with original-corpus IR-03"
+}

@@ -1,0 +1,13 @@
+{
+  "finished_at_utc": "2026-09-22T13:29:13.215778+00:00",
+  "subcase": "quoted",
+  "process_exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 15.698,
+  "source_files_unchanged": true,
+  "original_database_main_file_unchanged": true,
+  "evidence_directory": "audit/evidence/IR-08/run-20260922T132754058395Z/quoted",
+  "worker_status": "Executed; awaiting source/answer review",
+  "worker_stage": "execution completed",
+  "ticket_requests": 1
+}

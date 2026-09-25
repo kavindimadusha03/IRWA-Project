@@ -1,0 +1,26 @@
+{
+  "recorded_before_requests_at_utc": "2026-09-22T13:27:54.079513+00:00",
+  "fixture": {
+    "doc_id": "AUDIT-IR08-EXACT-001",
+    "title": "Synthetic lookup: Windows blue screen 0x00000124",
+    "content": "Synthetic IR-08 lookup fixture for error 0x00000124. This fixture does not establish a diagnosis or a verified repair. Record the displayed code and symptoms and ask IT Support to review them before applying changes.",
+    "category": "Windows / Updates",
+    "status": "approved",
+    "source_type": "internal_kb",
+    "author": "IR-08 synthetic audit fixture",
+    "authoritative": false,
+    "supported_os": "Any",
+    "security_class": "internal"
+  },
+  "retrieval_record": {
+    "source_id": "AUDIT-IR08-EXACT-001",
+    "title": "Synthetic lookup: Windows blue screen 0x00000124",
+    "content": "Synthetic IR-08 lookup fixture for error 0x00000124. This fixture does not establish a diagnosis or a verified repair. Record the displayed code and symptoms and ask IT Support to review them before applying changes.",
+    "category": "Windows / Updates",
+    "status": "approved",
+    "source_type": "internal_kb",
+    "supported_os": "Any"
+  },
+  "scope": "Same synthetic approved-status fixture separately inserted in five fresh temporary databases; original DB and CSVs unchanged. Approval status is controlled test metadata, not independent validation.",
+  "why": "IR-03 had zero eligible exact-code sources; test_plan.md IR-08 permits a labelled isolated fixture. IR-03 result remains unchanged."
+}

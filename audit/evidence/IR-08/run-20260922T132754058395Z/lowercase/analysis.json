@@ -1,0 +1,13 @@
+{
+  "category": "Windows / Updates",
+  "canonical_issue": "Windows blue screen error 0x00000124",
+  "priority": "Medium",
+  "entities": {
+    "error_code": "0x00000124",
+    "os": null,
+    "application": null,
+    "device": null
+  },
+  "masked_text": "Windows blue screen error 0x00000124",
+  "history_summary": "Customer reported: Windows blue screen error 0x00000124. The case was classified as Windows / Updates with priority Medium. The issue was reviewed against approved knowledge and a structured support recommendation was generated."
+}

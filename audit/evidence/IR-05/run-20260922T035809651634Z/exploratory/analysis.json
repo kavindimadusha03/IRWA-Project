@@ -1,0 +1,13 @@
+{
+  "category": "VPN",
+  "canonical_issue": "VPN VPN VPN VPN VPN printer problem",
+  "priority": "High",
+  "entities": {
+    "error_code": null,
+    "os": null,
+    "application": "VPN",
+    "device": "printer"
+  },
+  "masked_text": "VPN VPN VPN VPN VPN printer problem",
+  "history_summary": "Customer reported: VPN VPN VPN VPN VPN printer problem. The case was classified as VPN with priority High. The issue was reviewed against approved knowledge and a structured support recommendation was generated."
+}

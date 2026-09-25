@@ -1,0 +1,102 @@
+{
+  "query": "Wi-Fi VPN Outlook printer DNS remote desktop cannot connect",
+  "items": [
+    {
+      "source_id": "SYN-0070",
+      "title": "Remote Desktop cannot connect to office PC",
+      "content": "Problem: Remote Desktop cannot connect to office PC on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+      "category": "Remote Desktop",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 1.0,
+      "semantic_score": 0.46619286997030207,
+      "hybrid_score": 0.8604451667111161,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 1.0,
+        "semantic_score": 0.46619286997030207,
+        "hybrid_score": 0.8604451667111161
+      },
+      "source": "SYN-0070"
+    },
+    {
+      "source_id": "SYN-0044",
+      "title": "Remote access VPN drops after login",
+      "content": "Problem: Remote access VPN drops after login on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+      "category": "VPN",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.4816105362929799,
+      "semantic_score": 0.4690498346070414,
+      "hybrid_score": 0.6634968278108566,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.4816105362929799,
+        "semantic_score": 0.4690498346070414,
+        "hybrid_score": 0.6634968278108566
+      },
+      "source": "SYN-0044"
+    },
+    {
+      "source_id": "KB-008",
+      "title": "RDP Credential Repair - Guide 1",
+      "content": "Remove saved Remote Desktop credentials and reconnect using the current organization account.",
+      "category": "Remote Desktop",
+      "supported_os": "Any",
+      "source_type": "Internal KB",
+      "status": "approved",
+      "bm25_score": 0.48443703911689207,
+      "semantic_score": 0.33664679600817393,
+      "hybrid_score": 0.6631524054070972,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.48443703911689207,
+        "semantic_score": 0.33664679600817393,
+        "hybrid_score": 0.6631524054070972
+      },
+      "source": "KB-008"
+    },
+    {
+      "source_id": "SYN-0092",
+      "title": "Windows cannot find network printer",
+      "content": "Problem: Windows cannot find network printer on macOS. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+      "category": "Printers",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.4401331086718233,
+      "semantic_score": 0.3919066148710889,
+      "hybrid_score": 0.6115672565192065,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.4401331086718233,
+        "semantic_score": 0.3919066148710889,
+        "hybrid_score": 0.6115672565192065
+      },
+      "source": "SYN-0092"
+    },
+    {
+      "source_id": "SYN-0048",
+      "title": "Company VPN connects then immediately disconnects",
+      "content": "Problem: Company VPN connects then immediately disconnects on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+      "category": "VPN",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.2748256103711209,
+      "semantic_score": 0.49851903199918013,
+      "hybrid_score": 0.5981784434265704,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.2748256103711209,
+        "semantic_score": 0.49851903199918013,
+        "hybrid_score": 0.5981784434265704
+      },
+      "source": "SYN-0048"
+    }
+  ],
+  "best_score": 0.8604451667111161,
+  "decision": "HIGH"
+}

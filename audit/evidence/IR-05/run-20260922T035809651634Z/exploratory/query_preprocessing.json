@@ -1,0 +1,12 @@
+{
+  "original_query": "VPN VPN VPN VPN VPN printer problem",
+  "normalized_query": "vpn printer problem",
+  "normalized_query_tokens": [
+    "vpn",
+    "printer",
+    "problem"
+  ],
+  "raw_VPN_occurrences": 5,
+  "normalized_VPN_token_count": 1,
+  "capture": "original function return observed; no result or input changed"
+}

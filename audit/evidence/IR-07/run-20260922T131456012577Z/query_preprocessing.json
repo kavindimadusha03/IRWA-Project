@@ -1,0 +1,21 @@
+{
+  "original_query": "My printer's queue is stuck and print jobs will not clear. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is b",
+  "normalized_query": "printer s queue stuck print jobs will not clear notebook blue meeting tuesday. b",
+  "normalized_query_tokens": [
+    "printer",
+    "s",
+    "queue",
+    "stuck",
+    "print",
+    "jobs",
+    "will",
+    "not",
+    "clear",
+    "notebook",
+    "blue",
+    "meeting",
+    "tuesday",
+    "b"
+  ],
+  "capture": "original function return observed; no result or input changed"
+}

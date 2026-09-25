@@ -1,0 +1,16 @@
+{
+  "input": "Windows blue screen error error: 0x00000124",
+  "variant": "error: 0x00000124",
+  "tokens": [
+    "windows",
+    "blue",
+    "screen",
+    "error",
+    "error",
+    "0x00000124"
+  ],
+  "extracted_error_codes": [
+    "0x00000124"
+  ],
+  "capture": "Pure original token/code functions before submission; not a separate retrieval request"
+}

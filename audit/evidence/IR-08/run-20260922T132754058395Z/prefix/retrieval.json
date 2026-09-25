@@ -1,0 +1,102 @@
+{
+  "query": "Windows blue screen error error: 0x00000124",
+  "items": [
+    {
+      "source_id": "AUDIT-IR08-EXACT-001",
+      "title": "Synthetic lookup: Windows blue screen 0x00000124",
+      "content": "Synthetic IR-08 lookup fixture for error 0x00000124. This fixture does not establish a diagnosis or a verified repair. Record the displayed code and symptoms and ask IT Support to review them before applying changes.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "internal_kb",
+      "status": "approved",
+      "bm25_score": 1.0,
+      "semantic_score": 0.6980332879088995,
+      "hybrid_score": 1.4439183083498948,
+      "exact_error_match": true,
+      "score_breakdown": {
+        "bm25_score": 1.0,
+        "semantic_score": 0.6980332879088995,
+        "hybrid_score": 1.4439183083498948
+      },
+      "source": "AUDIT-IR08-EXACT-001"
+    },
+    {
+      "source_id": "SYN-0005",
+      "title": "Blue screen appears after installing an update",
+      "content": "Problem: Blue screen appears after installing an update on Windows 10. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.706946793338047,
+      "semantic_score": 0.6338170399188877,
+      "hybrid_score": 0.826716614613883,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.706946793338047,
+        "semantic_score": 0.6338170399188877,
+        "hybrid_score": 0.826716614613883
+      },
+      "source": "SYN-0005"
+    },
+    {
+      "source_id": "SYN-0054",
+      "title": "Windows driver error after restart",
+      "content": "Problem: Windows driver error after restart on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.27031147506697095,
+      "semantic_score": 0.3824662792761803,
+      "hybrid_score": 0.5421971247747307,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.27031147506697095,
+        "semantic_score": 0.3824662792761803,
+        "hybrid_score": 0.5421971247747307
+      },
+      "source": "SYN-0054"
+    },
+    {
+      "source_id": "SYN-0026",
+      "title": "Windows update failed and rolled back",
+      "content": "Problem: Windows update failed and rolled back on Windows 11. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.01842984877763943,
+      "semantic_score": 0.39890759878243276,
+      "hybrid_score": 0.45353871958823444,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.01842984877763943,
+        "semantic_score": 0.39890759878243276,
+        "hybrid_score": 0.45353871958823444
+      },
+      "source": "SYN-0026"
+    },
+    {
+      "source_id": "SYN-0135",
+      "title": "Application installation fails with permission error",
+      "content": "Problem: Application installation fails with permission error on Ubuntu. It happens on my work laptop.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+      "category": "Software Installation",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.2543350187531886,
+      "semantic_score": 0.22965223442756166,
+      "hybrid_score": 0.2846455642679797,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.2543350187531886,
+        "semantic_score": 0.22965223442756166,
+        "hybrid_score": 0.2846455642679797
+      },
+      "source": "SYN-0135"
+    }
+  ],
+  "best_score": 1.4439183083498948,
+  "decision": "HIGH"
+}

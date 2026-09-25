@@ -1,0 +1,45 @@
+{
+  "id": 501,
+  "ticket_code": "TCK-00501",
+  "assigned_to": null,
+  "history_summary": "Customer reported: Windows blue screen error 0x00000124. The case was classified as Windows / Updates with priority Medium. The issue was reviewed against approved knowledge and a structured support recommendation was generated.",
+  "title": "Windows blue screen report",
+  "description": "Windows blue screen error 0x00000124",
+  "masked_description": "Windows blue screen error 0x00000124",
+  "category": "Windows / Updates",
+  "canonical_issue": "Windows blue screen error 0x00000124",
+  "priority": "Medium",
+  "status": "SOLUTION_PROPOSED",
+  "approval_status": "PENDING",
+  "retrieval_confidence": 1.4439183083498948,
+  "source_used": "AUDIT-IR08-EXACT-001",
+  "recommended_solution": "Evidence source AUDIT-IR08-EXACT-001 | Synthetic lookup: Windows blue screen 0x00000124\nSynthetic IR-08 lookup fixture for error 0x00000124. This fixture does not establish a diagnosis or a verified repair. Record the displayed code and symptoms and ask IT Support to review them before applying changes.\n\nEvidence source SYN-0005 | Blue screen appears after installing an update\nProblem: Blue screen appears after installing an update on Windows 10. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.\n\nEvidence source SYN-0054 | Windows driver error after restart\nProblem: Windows driver error after restart on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+  "decision_explanation": "This recommendation was selected because the issue matched the approved guidance in Synthetic lookup: Windows blue screen 0x00000124 with 100% relevance, and it aligns with 3 supporting sources that were validated for this workflow.",
+  "suggested_reply": "Thanks for reporting this issue. Based on the approved guidance in Synthetic lookup: Windows blue screen 0x00000124, the recommended next step is to follow the documented troubleshooting steps and confirm the issue is resolved.",
+  "citations": [
+    {
+      "source_id": "AUDIT-IR08-EXACT-001",
+      "title": "Synthetic lookup: Windows blue screen 0x00000124",
+      "source_type": "internal_kb",
+      "category": "Windows / Updates",
+      "relevance_score": 1.4439183083498948,
+      "rank": 1
+    },
+    {
+      "source_id": "SYN-0005",
+      "title": "Blue screen appears after installing an update",
+      "source_type": "resolved_ticket",
+      "category": "Windows / Updates",
+      "relevance_score": 0.826716614613883,
+      "rank": 2
+    },
+    {
+      "source_id": "SYN-0054",
+      "title": "Windows driver error after restart",
+      "source_type": "resolved_ticket",
+      "category": "Windows / Updates",
+      "relevance_score": 0.5421971247747307,
+      "rank": 3
+    }
+  ]
+}

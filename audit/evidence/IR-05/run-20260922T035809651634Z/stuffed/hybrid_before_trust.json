@@ -1,0 +1,67 @@
+[
+  {
+    "source_id": "KB-005",
+    "title": "Clear Print Queue - Guide 1",
+    "content": "Stop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved",
+    "bm25_score": 1.0,
+    "semantic_score": 0.6474166458656295,
+    "hybrid_score": 0.8060791552260963,
+    "exact_error_match": false
+  },
+  {
+    "source_id": "SYN-0013",
+    "title": "Printer is online but jobs stay in queue",
+    "content": "Problem: Printer is online but jobs stay in queue on Ubuntu. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved",
+    "bm25_score": 0.645729205531711,
+    "semantic_score": 0.6567479445353506,
+    "hybrid_score": 0.6517895119837127,
+    "exact_error_match": false
+  },
+  {
+    "source_id": "SYN-0028",
+    "title": "Print queue is stuck and cannot be cleared",
+    "content": "Problem: Print queue is stuck and cannot be cleared on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved",
+    "bm25_score": 0.6501214519896152,
+    "semantic_score": 0.6400562207810578,
+    "hybrid_score": 0.6445855748249087,
+    "exact_error_match": false
+  },
+  {
+    "source_id": "SYN-0092",
+    "title": "Windows cannot find network printer",
+    "content": "Problem: Windows cannot find network printer on macOS. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved",
+    "bm25_score": 0.38791990983714525,
+    "semantic_score": 0.49849556662505995,
+    "hybrid_score": 0.4487365210704984,
+    "exact_error_match": false
+  },
+  {
+    "source_id": "SYN-0056",
+    "title": "Office printer prints blank pages",
+    "content": "Problem: Office printer prints blank pages on Windows 11. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved",
+    "bm25_score": 0.38388737617498314,
+    "semantic_score": 0.4765203001415469,
+    "hybrid_score": 0.43483548435659325,
+    "exact_error_match": false
+  }
+]

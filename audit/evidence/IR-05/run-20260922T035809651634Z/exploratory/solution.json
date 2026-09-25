@@ -1,0 +1,42 @@
+{
+  "can_recommend": true,
+  "message": "Evidence source SYN-0092 | Windows cannot find network printer\nProblem: Windows cannot find network printer on macOS. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.\n\nEvidence source SYN-0048 | Company VPN connects then immediately disconnects\nProblem: Company VPN connects then immediately disconnects on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.\n\nEvidence source SYN-0044 | Remote access VPN drops after login\nProblem: Remote access VPN drops after login on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+  "source_id": "SYN-0092",
+  "confidence": "HIGH",
+  "explanation": "This recommendation was selected because the issue matched the approved guidance in Windows cannot find network printer with 88% relevance, and it aligns with 3 supporting sources that were validated for this workflow.",
+  "confidence_explanation": "This recommendation was selected because the issue matched the approved guidance in Windows cannot find network printer with 88% relevance, and it aligns with 3 supporting sources that were validated for this workflow.",
+  "why_this_solution_was_suggested": "This recommendation was selected because the issue matched the approved guidance in Windows cannot find network printer with 88% relevance, and it aligns with 3 supporting sources that were validated for this workflow.",
+  "suggested_reply": "Thanks for reporting this issue. Based on the approved guidance in Windows cannot find network printer, the recommended next step is to follow the documented troubleshooting steps and confirm the issue is resolved.",
+  "citations": [
+    {
+      "source_id": "SYN-0092",
+      "title": "Windows cannot find network printer",
+      "category": "Printers",
+      "source_type": "resolved_ticket",
+      "relevance_score": 0.8783345914910348,
+      "bm25_score": 0.9813482287041004,
+      "semantic_score": 0.5197195593833503,
+      "hybrid_score": 0.8783345914910348
+    },
+    {
+      "source_id": "SYN-0048",
+      "title": "Company VPN connects then immediately disconnects",
+      "category": "VPN",
+      "source_type": "resolved_ticket",
+      "relevance_score": 0.8678526427224375,
+      "bm25_score": 0.9781510381220362,
+      "semantic_score": 0.49991416179841414,
+      "hybrid_score": 0.8678526427224375
+    },
+    {
+      "source_id": "SYN-0044",
+      "title": "Remote access VPN drops after login",
+      "category": "VPN",
+      "source_type": "resolved_ticket",
+      "relevance_score": 0.8558583597269974,
+      "bm25_score": 1.0,
+      "semantic_score": 0.4563815181326147,
+      "hybrid_score": 0.8558583597269974
+    }
+  ]
+}

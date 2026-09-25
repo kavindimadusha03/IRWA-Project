@@ -1,0 +1,51 @@
+{
+  "review_recorded_at_utc": "2026-09-22T13:46:43.094953+00:00",
+  "case": "IR-08",
+  "status": "Completed (isolated fixture; fallback mode)",
+  "outcome": "PASS (primary retrieval formatting); FAIL (auxiliary uppercase entity check)",
+  "primary_retrieval_outcome": "PASS",
+  "auxiliary_entity_outcome": "FAIL",
+  "vulnerability_identified": "NO demonstrated security vulnerability",
+  "criteria": [
+    {
+      "name": "Five requests complete through same path",
+      "outcome": "PASS",
+      "evidence": "One ticket per variant; normal login; five result pages 200"
+    },
+    {
+      "name": "Code identity preserved in retrieval preprocessing",
+      "outcome": "PASS",
+      "evidence": "All five normalize to the same string; one intact code token and same extracted code"
+    },
+    {
+      "name": "Exact fixture retained with correct flags and bonus",
+      "outcome": "PASS",
+      "evidence": "Fixture first, exact=true, +0.35 residual; other returned records false/zero"
+    },
+    {
+      "name": "No formatting-induced unsupported/confident transition",
+      "outcome": "PASS",
+      "evidence": "Complete rankings and solution objects identical across five forms"
+    },
+    {
+      "name": "Auxiliary ticket entity extraction consistent",
+      "outcome": "FAIL",
+      "evidence": "Only uppercase analysis.entities.error_code is null"
+    }
+  ],
+  "observations": [
+    "OBS-IR08-01: uppercase entity correctness defect",
+    "OBS-IR03-01 applicability overstatement recurs; fixture caveat preserved",
+    "OBS-IR05-02 recurs: 144% UI / 100% explanation"
+  ],
+  "security_assessment": "No observed access/approval bypass, disclosure, executed repair or exploitation. Entity failure did not alter this retrieval path; no formal VULN entry.",
+  "severity": "Informational security observation; no vulnerability severity assigned",
+  "limitations": [
+    "Synthetic control approval is metadata, not real repair validation",
+    "IR-03 original-corpus result remains Inconclusive",
+    "Generic historical repairs remain unverified for the stated code",
+    "Groq disabled in all cases",
+    "Only five planned formats; no other codes/boundaries tested",
+    "IR-09 through IR-15 unexecuted"
+  ]
+}

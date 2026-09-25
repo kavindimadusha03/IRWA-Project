@@ -1,0 +1,13 @@
+{
+  "finished_at_utc": "2026-09-22T03:59:25.772705+00:00",
+  "subcase": "stuffed",
+  "process_exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 40.174,
+  "source_files_unchanged": true,
+  "original_database_main_file_unchanged": true,
+  "evidence_directory": "audit/evidence/IR-05/run-20260922T035809651634Z/stuffed",
+  "worker_status": "Executed; awaiting source/answer review",
+  "worker_stage": "execution completed",
+  "ticket_requests": 1
+}

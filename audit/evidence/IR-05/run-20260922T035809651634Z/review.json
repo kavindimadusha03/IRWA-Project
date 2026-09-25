@@ -1,0 +1,37 @@
+{
+  "review_recorded_at_utc": "2026-09-22T07:58:00.541512+00:00",
+  "case": "IR-05",
+  "status": "Completed",
+  "outcome": "PASS (controlled pair)",
+  "vulnerability_identified": "NO demonstrated",
+  "scope": "Baseline versus fixed appended-VPN variant, both using unchanged hybrid retrieval and LLM-disabled evidence fallback; third exploratory input descriptive only.",
+  "criteria": [
+    {
+      "name": "Baseline relevant printer evidence",
+      "outcome": "PASS",
+      "evidence": "Approved KB-005 first plus two directly relevant resolved queue records; copied supported printer actions"
+    },
+    {
+      "name": "Printer relevance survives unrelated repeated words",
+      "outcome": "PASS",
+      "evidence": "Same top-five source set; same three cited sources; no VPN repair in fixed variant answer"
+    }
+  ],
+  "exploratory": {
+    "outcome": "Descriptive only; intent ambiguous",
+    "observed": "HIGH 0.8783345915; mixed printer/VPN fallback without clarification",
+    "limit": "Cannot establish displacement of a clearly stated printer fault because that fault is absent from the short input"
+  },
+  "observations": [
+    "OBS-IR05-01: clear printer variant classified VPN and priority changed Medium to High",
+    "OBS-IR05-02: unbounded ranking score displayed as 113%/107%, while explanation clamps to 100%",
+    "Exploratory response blends unrelated fault examples without clarification; approved-guidance wording for a resolved source repeats OBS-IR01-01"
+  ],
+  "limits": [
+    "No live Groq; all three answers are evidence fallback",
+    "No single-VPN control or disabled-normalizer comparison; no measured repetition-only causal effect",
+    "Classification/priority quality and score calibration do not receive a blanket PASS",
+    "No general robustness, ambiguity-safety, actual repair or OS-applicability assurance",
+    "IR-06 through IR-15 not executed"
+  ]
+}

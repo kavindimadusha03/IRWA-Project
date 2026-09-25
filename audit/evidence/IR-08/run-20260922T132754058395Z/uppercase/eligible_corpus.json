@@ -1,0 +1,17 @@
+{
+  "eligible_record_count": 428,
+  "matches_CSV_plus_declared_fixture_in_all_retrieval_fields": true,
+  "eligible_corpus_sha256": "e48e58a54caa9e0a7033d1ed9659647dfbd1d04ef53d7e7c6b75c6129ae2cf8a",
+  "eligible_exact_code_records": [
+    {
+      "source_id": "AUDIT-IR08-EXACT-001",
+      "title": "Synthetic lookup: Windows blue screen 0x00000124",
+      "content": "Synthetic IR-08 lookup fixture for error 0x00000124. This fixture does not establish a diagnosis or a verified repair. Record the displayed code and symptoms and ask IT Support to review them before applying changes.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "internal_kb",
+      "status": "approved"
+    }
+  ],
+  "capture": "Original records passed unchanged to hybrid_rank; expected corpus is original 427 eligible CSV records plus exactly one declared fixture"
+}

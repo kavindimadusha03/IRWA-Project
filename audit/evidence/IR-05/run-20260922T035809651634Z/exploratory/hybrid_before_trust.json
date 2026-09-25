@@ -1,0 +1,67 @@
+[
+  {
+    "source_id": "SYN-0092",
+    "title": "Windows cannot find network printer",
+    "content": "Problem: Windows cannot find network printer on macOS. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved",
+    "bm25_score": 0.9813482287041004,
+    "semantic_score": 0.5197195593833503,
+    "hybrid_score": 0.727452460577688,
+    "exact_error_match": false
+  },
+  {
+    "source_id": "SYN-0048",
+    "title": "Company VPN connects then immediately disconnects",
+    "content": "Problem: Company VPN connects then immediately disconnects on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved",
+    "bm25_score": 0.9781510381220362,
+    "semantic_score": 0.49991416179841414,
+    "hybrid_score": 0.715120756144044,
+    "exact_error_match": false
+  },
+  {
+    "source_id": "SYN-0044",
+    "title": "Remote access VPN drops after login",
+    "content": "Problem: Remote access VPN drops after login on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved",
+    "bm25_score": 1.0,
+    "semantic_score": 0.4563815181326147,
+    "hybrid_score": 0.7010098349729381,
+    "exact_error_match": false
+  },
+  {
+    "source_id": "SYN-0056",
+    "title": "Office printer prints blank pages",
+    "content": "Problem: Office printer prints blank pages on Windows 11. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved",
+    "bm25_score": 0.9731832970670341,
+    "semantic_score": 0.4484268146210098,
+    "hybrid_score": 0.6845672317217207,
+    "exact_error_match": false
+  },
+  {
+    "source_id": "SYN-0001",
+    "title": "VPN disconnects every few minutes",
+    "content": "Problem: VPN disconnects every few minutes on Windows 11. I already restarted the device once.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved",
+    "bm25_score": 0.9925949225825581,
+    "semantic_score": 0.42314751312212345,
+    "hybrid_score": 0.6793988473793191,
+    "exact_error_match": false
+  }
+]

@@ -1,0 +1,77 @@
+{
+  "case": "IR-08",
+  "finished_at_utc": "2026-09-22T13:29:13.236182+00:00",
+  "outcome": "Unassessed; await reviewed comparison",
+  "subcases": [
+    {
+      "finished_at_utc": "2026-09-22T13:28:10.010871+00:00",
+      "subcase": "lowercase",
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 15.92,
+      "source_files_unchanged": true,
+      "original_database_main_file_unchanged": true,
+      "evidence_directory": "audit/evidence/IR-08/run-20260922T132754058395Z/lowercase",
+      "worker_status": "Executed; awaiting source/answer review",
+      "worker_stage": "execution completed",
+      "ticket_requests": 1
+    },
+    {
+      "finished_at_utc": "2026-09-22T13:28:25.953305+00:00",
+      "subcase": "uppercase",
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 15.93,
+      "source_files_unchanged": true,
+      "original_database_main_file_unchanged": true,
+      "evidence_directory": "audit/evidence/IR-08/run-20260922T132754058395Z/uppercase",
+      "worker_status": "Executed; awaiting source/answer review",
+      "worker_stage": "execution completed",
+      "ticket_requests": 1
+    },
+    {
+      "finished_at_utc": "2026-09-22T13:28:42.092050+00:00",
+      "subcase": "prefix",
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 16.12,
+      "source_files_unchanged": true,
+      "original_database_main_file_unchanged": true,
+      "evidence_directory": "audit/evidence/IR-08/run-20260922T132754058395Z/prefix",
+      "worker_status": "Executed; awaiting source/answer review",
+      "worker_stage": "execution completed",
+      "ticket_requests": 1
+    },
+    {
+      "finished_at_utc": "2026-09-22T13:28:57.504223+00:00",
+      "subcase": "punctuation",
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 15.398,
+      "source_files_unchanged": true,
+      "original_database_main_file_unchanged": true,
+      "evidence_directory": "audit/evidence/IR-08/run-20260922T132754058395Z/punctuation",
+      "worker_status": "Executed; awaiting source/answer review",
+      "worker_stage": "execution completed",
+      "ticket_requests": 1
+    },
+    {
+      "finished_at_utc": "2026-09-22T13:29:13.215778+00:00",
+      "subcase": "quoted",
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 15.698,
+      "source_files_unchanged": true,
+      "original_database_main_file_unchanged": true,
+      "evidence_directory": "audit/evidence/IR-08/run-20260922T132754058395Z/quoted",
+      "worker_status": "Executed; awaiting source/answer review",
+      "worker_stage": "execution completed",
+      "ticket_requests": 1
+    }
+  ],
+  "ticket_requests": 5,
+  "source_files_unchanged": true,
+  "original_database_main_file_unchanged": true,
+  "integrity_limit": "Original main-file checksum does not cover concurrent WAL writes by another process; helper never writes working database.",
+  "evidence_directory": "audit/evidence/IR-08/run-20260922T132754058395Z"
+}

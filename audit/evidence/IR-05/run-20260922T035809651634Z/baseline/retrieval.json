@@ -1,0 +1,102 @@
+{
+  "query": "My printer's queue is stuck and print jobs will not clear.",
+  "items": [
+    {
+      "source_id": "KB-005",
+      "title": "Clear Print Queue - Guide 1",
+      "content": "Stop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again.",
+      "category": "Printers",
+      "supported_os": "Any",
+      "source_type": "Internal KB",
+      "status": "approved",
+      "bm25_score": 1.0,
+      "semantic_score": 0.7705139225231459,
+      "hybrid_score": 1.1337826573877303,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 1.0,
+        "semantic_score": 0.7705139225231459,
+        "hybrid_score": 1.1337826573877303
+      },
+      "source": "KB-005"
+    },
+    {
+      "source_id": "SYN-0028",
+      "title": "Print queue is stuck and cannot be cleared",
+      "content": "Problem: Print queue is stuck and cannot be cleared on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+      "category": "Printers",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.6501214519896152,
+      "semantic_score": 0.7656720496682604,
+      "hybrid_score": 0.8666231386059396,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.6501214519896152,
+        "semantic_score": 0.7656720496682604,
+        "hybrid_score": 0.8666231386059396
+      },
+      "source": "SYN-0028"
+    },
+    {
+      "source_id": "SYN-0013",
+      "title": "Printer is online but jobs stay in queue",
+      "content": "Problem: Printer is online but jobs stay in queue on Ubuntu. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+      "category": "Printers",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.645729205531711,
+      "semantic_score": 0.7690768862489089,
+      "hybrid_score": 0.8665348654372443,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.645729205531711,
+        "semantic_score": 0.7690768862489089,
+        "hybrid_score": 0.8665348654372443
+      },
+      "source": "SYN-0013"
+    },
+    {
+      "source_id": "SYN-0056",
+      "title": "Office printer prints blank pages",
+      "content": "Problem: Office printer prints blank pages on Windows 11. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+      "category": "Printers",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.38388737617498314,
+      "semantic_score": 0.4970858359464513,
+      "hybrid_score": 0.6392245496918971,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.38388737617498314,
+        "semantic_score": 0.4970858359464513,
+        "hybrid_score": 0.6392245496918971
+      },
+      "source": "SYN-0056"
+    },
+    {
+      "source_id": "SYN-0092",
+      "title": "Windows cannot find network printer",
+      "content": "Problem: Windows cannot find network printer on macOS. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+      "category": "Printers",
+      "supported_os": "Any",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.38791990983714525,
+      "semantic_score": 0.44050341393585046,
+      "hybrid_score": 0.6143147115277181,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.38791990983714525,
+        "semantic_score": 0.44050341393585046,
+        "hybrid_score": 0.6143147115277181
+      },
+      "source": "SYN-0092"
+    }
+  ],
+  "best_score": 1.1337826573877303,
+  "decision": "HIGH"
+}

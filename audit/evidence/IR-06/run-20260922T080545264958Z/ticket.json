@@ -1,0 +1,45 @@
+{
+  "id": 501,
+  "ticket_code": "TCK-00501",
+  "assigned_to": null,
+  "history_summary": "Customer reported: Wi-Fi VPN Outlook printer DNS remote desktop cannot connect. The case was classified as Wi-Fi / DNS with priority High. The issue was reviewed against approved knowledge and a structured support recommendation was generated.",
+  "title": "Connection issue across services",
+  "description": "Wi-Fi VPN Outlook printer DNS remote desktop cannot connect",
+  "masked_description": "Wi-Fi VPN Outlook printer DNS remote desktop cannot connect",
+  "category": "Wi-Fi / DNS",
+  "canonical_issue": "Wi-Fi VPN Outlook printer DNS remote desktop cannot connect",
+  "priority": "High",
+  "status": "SOLUTION_PROPOSED",
+  "approval_status": "PENDING",
+  "retrieval_confidence": 0.8604451667111161,
+  "source_used": "SYN-0070",
+  "recommended_solution": "Evidence source SYN-0070 | Remote Desktop cannot connect to office PC\nProblem: Remote Desktop cannot connect to office PC on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.\n\nEvidence source SYN-0044 | Remote access VPN drops after login\nProblem: Remote access VPN drops after login on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.\n\nEvidence source KB-008 | RDP Credential Repair - Guide 1\nRemove saved Remote Desktop credentials and reconnect using the current organization account.",
+  "decision_explanation": "This recommendation was selected because the issue matched the approved guidance in Remote Desktop cannot connect to office PC with 86% relevance, and it aligns with 3 supporting sources that were validated for this workflow.",
+  "suggested_reply": "Thanks for reporting this issue. Based on the approved guidance in Remote Desktop cannot connect to office PC, the recommended next step is to follow the documented troubleshooting steps and confirm the issue is resolved.",
+  "citations": [
+    {
+      "source_id": "SYN-0070",
+      "title": "Remote Desktop cannot connect to office PC",
+      "source_type": "resolved_ticket",
+      "category": "Remote Desktop",
+      "relevance_score": 0.8604451667111161,
+      "rank": 1
+    },
+    {
+      "source_id": "SYN-0044",
+      "title": "Remote access VPN drops after login",
+      "source_type": "resolved_ticket",
+      "category": "VPN",
+      "relevance_score": 0.6634968278108566,
+      "rank": 2
+    },
+    {
+      "source_id": "KB-008",
+      "title": "RDP Credential Repair - Guide 1",
+      "source_type": "Internal KB",
+      "category": "Remote Desktop",
+      "relevance_score": 0.6631524054070972,
+      "rank": 3
+    }
+  ]
+}

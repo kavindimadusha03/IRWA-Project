@@ -1,0 +1,42 @@
+{
+  "can_recommend": true,
+  "message": "Evidence source AUDIT-IR08-EXACT-001 | Synthetic lookup: Windows blue screen 0x00000124\nSynthetic IR-08 lookup fixture for error 0x00000124. This fixture does not establish a diagnosis or a verified repair. Record the displayed code and symptoms and ask IT Support to review them before applying changes.\n\nEvidence source SYN-0005 | Blue screen appears after installing an update\nProblem: Blue screen appears after installing an update on Windows 10. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.\n\nEvidence source SYN-0054 | Windows driver error after restart\nProblem: Windows driver error after restart on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+  "source_id": "AUDIT-IR08-EXACT-001",
+  "confidence": "HIGH",
+  "explanation": "This recommendation was selected because the issue matched the approved guidance in Synthetic lookup: Windows blue screen 0x00000124 with 100% relevance, and it aligns with 3 supporting sources that were validated for this workflow.",
+  "confidence_explanation": "This recommendation was selected because the issue matched the approved guidance in Synthetic lookup: Windows blue screen 0x00000124 with 100% relevance, and it aligns with 3 supporting sources that were validated for this workflow.",
+  "why_this_solution_was_suggested": "This recommendation was selected because the issue matched the approved guidance in Synthetic lookup: Windows blue screen 0x00000124 with 100% relevance, and it aligns with 3 supporting sources that were validated for this workflow.",
+  "suggested_reply": "Thanks for reporting this issue. Based on the approved guidance in Synthetic lookup: Windows blue screen 0x00000124, the recommended next step is to follow the documented troubleshooting steps and confirm the issue is resolved.",
+  "citations": [
+    {
+      "source_id": "AUDIT-IR08-EXACT-001",
+      "title": "Synthetic lookup: Windows blue screen 0x00000124",
+      "category": "Windows / Updates",
+      "source_type": "internal_kb",
+      "relevance_score": 1.4439183083498948,
+      "bm25_score": 1.0,
+      "semantic_score": 0.6980332879088995,
+      "hybrid_score": 1.4439183083498948
+    },
+    {
+      "source_id": "SYN-0005",
+      "title": "Blue screen appears after installing an update",
+      "category": "Windows / Updates",
+      "source_type": "resolved_ticket",
+      "relevance_score": 0.826716614613883,
+      "bm25_score": 0.706946793338047,
+      "semantic_score": 0.6338170399188877,
+      "hybrid_score": 0.826716614613883
+    },
+    {
+      "source_id": "SYN-0054",
+      "title": "Windows driver error after restart",
+      "category": "Windows / Updates",
+      "source_type": "resolved_ticket",
+      "relevance_score": 0.5421971247747307,
+      "bm25_score": 0.27031147506697095,
+      "semantic_score": 0.3824662792761803,
+      "hybrid_score": 0.5421971247747307
+    }
+  ]
+}
