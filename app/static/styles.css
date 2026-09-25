@@ -2678,34 +2678,67 @@ a {
   text-overflow: ellipsis;
 }
 
-.confidence-content {
-  width: 100%;
+.analysis-confidence {
+  grid-column: 1 / -1;
+  align-items: flex-start;
 }
 
-.confidence-label {
+.ranking-score-content {
+  display: grid;
+  flex: 1 1 auto;
+  min-width: 0;
+  gap: 8px;
+}
+
+.ranking-score-heading {
   display: flex;
-  margin-bottom: 7px;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 16px;
 }
 
-.progress-track {
-  display: block;
-  width: 100%;
-  height: 7px;
-  overflow: hidden;
-  border-radius: 999px;
-  background: var(--slate-150);
+.ranking-score-heading strong {
+  overflow: visible;
+  font-size: 16px;
+  text-overflow: clip;
 }
 
-.progress-track > span {
-  display: block;
-  height: 100%;
-  min-width: 3px;
-  border-radius: inherit;
-  background: linear-gradient(90deg, var(--primary-500), var(--cyan-500));
-  animation: progressGrow .9s ease both;
-  transform-origin: left;
+.ranking-score-content p {
+  margin: 0;
+  color: var(--slate-600);
+  font-size: 12px;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+.ranking-score-content .ranking-score-maximum {
+  color: var(--slate-500);
+  font-size: 11px;
+}
+
+.score-decision {
+  padding: 4px 8px;
+  border-radius: 8px;
+  background: var(--slate-100);
+  color: var(--slate-700);
+  font-size: 11px;
+  font-weight: 750;
+}
+
+.score-high {
+  background: #e5f7ef;
+  color: #14764c;
+}
+
+.score-uncertain {
+  background: #fff3d8;
+  color: #8a5a00;
+}
+
+.score-low {
+  background: #fde8e7;
+  color: #a3342d;
 }
 
 .resolution-card {
@@ -3170,28 +3203,46 @@ a {
   letter-spacing: -.25px;
 }
 
-.confidence-chip {
-  min-width: 118px;
+.ranking-score-chip {
+  min-width: 154px;
+  max-width: 200px;
   padding: 9px 12px;
   border: 1px solid #f4dfad;
   border-radius: 11px;
   background: #fffaf0;
-  text-align: right;
+  text-align: left;
 }
 
-.confidence-chip small,
-.confidence-chip strong {
+.ranking-score-chip small,
+.ranking-score-chip strong,
+.ranking-score-chip span {
   display: block;
 }
 
-.confidence-chip small {
+.ranking-score-chip small {
   color: var(--slate-500);
-  font-size: 8px;
+  font-size: 10px;
 }
 
-.confidence-chip strong {
+.ranking-score-chip strong {
   color: var(--amber-600);
   font-size: 15px;
+}
+
+.ranking-score-chip span {
+  margin-top: 2px;
+  color: var(--slate-600);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.ranking-score-chip .ranking-score-note {
+  margin-top: 7px;
+  color: var(--slate-600);
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
 }
 
 .issue-description {
@@ -4181,8 +4232,9 @@ a {
     flex-direction: column;
   }
 
-  .confidence-chip {
+  .ranking-score-chip {
     width: max-content;
+    max-width: 100%;
     text-align: left;
   }
 }

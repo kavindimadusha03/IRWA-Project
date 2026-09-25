@@ -1,5 +1,6 @@
 from datetime import date
 from pathlib import Path
+import re
 from fastapi import FastAPI, Depends, Request, HTTPException
 from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
@@ -25,6 +26,37 @@ BASE_DIR = Path(__file__).resolve().parent
 app = FastAPI(title=settings.app_name, version="1.0.0")
 app.mount("/static", StaticFiles(directory=str(BASE_DIR / "static")), name="static")
 templates = Jinja2Templates(directory=str(BASE_DIR / "templates"))
+
+
+def retrieval_decision(score: float, high_threshold: float, uncertain_threshold: float) -> str:
+    if score >= high_threshold:
+        return "HIGH"
+    if score >= uncertain_threshold:
+        return "UNCERTAIN"
+    return "LOW"
+
+
+def maximum_retrieval_ranking_score() -> float:
+    return (
+        settings.hybrid_bm25_weight
+        + settings.hybrid_semantic_weight
+        + 0.35
+        + 0.18
+        + 0.18
+        + 0.08
+    )
+
+
+def display_decision_explanation(explanation: str) -> str:
+    return re.sub(
+        r"\bwith\s+\d+(?:\.\d+)?%\s+relevance\b",
+        "based on the selected source",
+        explanation,
+        flags=re.IGNORECASE,
+    )
+
+
+templates.env.globals["retrieval_decision"] = retrieval_decision
 
 app.include_router(auth.router)
 app.include_router(tickets.router)
@@ -64,6 +96,9 @@ def home(request: Request, session: Session = Depends(get_session)):
                 "user": user,
                 "tickets": tickets_list,
                 "ticket_filters": ticket_filter_values(request),
+                "high_confidence_threshold": settings.high_confidence_threshold,
+                "uncertain_threshold": settings.uncertain_threshold,
+                "maximum_ranking_score": maximum_retrieval_ranking_score(),
                 "notifications": notifications,
             },
         )
@@ -128,6 +163,10 @@ def ticket_result(ticket_id: int, request: Request, session: Session = Depends(g
             "request": request,
             "user": user,
             "ticket": ticket,
+            "high_confidence_threshold": settings.high_confidence_threshold,
+            "uncertain_threshold": settings.uncertain_threshold,
+            "maximum_ranking_score": maximum_retrieval_ranking_score(),
+            "display_decision_explanation": display_decision_explanation(ticket.decision_explanation or ""),
             "logs": matching_logs[:10],
             "trace_request_id": request_id,
             "feedback": feedback,
@@ -158,6 +197,9 @@ def support_page(request: Request, session: Session = Depends(get_session)):
             "queue": queue,
             "resolved": resolved[:20],
             "ticket_filters": ticket_filter_values(request),
+            "high_confidence_threshold": settings.high_confidence_threshold,
+            "uncertain_threshold": settings.uncertain_threshold,
+            "maximum_ranking_score": maximum_retrieval_ranking_score(),
             "notifications": notifications,
         },
     )

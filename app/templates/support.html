@@ -45,7 +45,7 @@
     <div class="filter-form-grid">
       <label>Category<select name="category"><option value="">All categories</option>{% for category in ['Wi-Fi / DNS', 'VPN', 'Outlook / MFA', 'Accounts / Passwords', 'Printers', 'Windows / Updates', 'Software Installation', 'Remote Desktop', 'Unknown'] %}<option value="{{ category }}" {% if ticket_filters.category == category %}selected{% endif %}>{{ category }}</option>{% endfor %}</select></label>
       <label>Status<select name="status"><option value="">Queue and resolved</option>{% for status in ['ESCALATED', 'RESOLVED', 'CLOSED'] %}<option value="{{ status }}" {% if ticket_filters.status == status %}selected{% endif %}>{{ status | replace('_', ' ') | title }}</option>{% endfor %}</select></label>
-      <label>Minimum confidence<select name="min_confidence"><option value="">Any confidence</option><option value="0.55" {% if ticket_filters.min_confidence == '0.55' %}selected{% endif %}>55%+</option><option value="0.68" {% if ticket_filters.min_confidence == '0.68' %}selected{% endif %}>68%+</option><option value="0.80" {% if ticket_filters.min_confidence == '0.80' %}selected{% endif %}>80%+</option></select></label>
+      <label>Minimum ranking score<select name="min_confidence"><option value="">Any ranking score</option><option value="{{ uncertain_threshold }}" {% if ticket_filters.min_confidence and ticket_filters.min_confidence | float == uncertain_threshold %}selected{% endif %}>UNCERTAIN+ ({{ '%.2f' | format(uncertain_threshold) }}+)</option><option value="{{ high_confidence_threshold }}" {% if ticket_filters.min_confidence and ticket_filters.min_confidence | float == high_confidence_threshold %}selected{% endif %}>HIGH ({{ '%.2f' | format(high_confidence_threshold) }}+)</option></select></label>
       <label>From date<input type="date" name="from_date" value="{{ ticket_filters.from_date or '' }}"></label>
       <label>To date<input type="date" name="to_date" value="{{ ticket_filters.to_date or '' }}"></label>
       <button class="btn-primary-modern btn-compact" type="submit"><i class="bi bi-funnel" aria-hidden="true"></i> Apply filters</button>
@@ -67,9 +67,16 @@
             <h4>{{ t.canonical_issue or t.title }}</h4>
           </div>
         </div>
-        <div class="confidence-chip">
-          <small>Retrieval confidence</small>
-          <strong>{{ ((t.retrieval_confidence or 0) * 100) | round | int }}%</strong>
+        <div class="ranking-score-chip">
+          <small>Retrieval ranking score</small>
+          {% if t.status == 'CLARIFICATION_REQUIRED' %}
+          <strong>Not evaluated</strong>
+          <span>Not evaluated</span>
+          {% else %}
+          <strong>{{ '%.2f' | format(t.retrieval_confidence or 0) }}</strong>
+          <span>{{ retrieval_decision(t.retrieval_confidence or 0, high_confidence_threshold, uncertain_threshold) }}</span>
+          {% endif %}
+          <small class="ranking-score-note">A ranking score measures how strongly a document matches your query after source and metadata adjustments. It is not a probability that the solution is correct. Theoretical maximum under current scoring: {{ '%.2f' | format(maximum_ranking_score) }}.</small>
         </div>
       </div>
 

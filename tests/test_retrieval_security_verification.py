@@ -1,3 +1,5 @@
+from types import SimpleNamespace
+
 from starlette.requests import Request
 from fastapi import HTTPException
 from sqlmodel import Session, SQLModel, create_engine, select
@@ -6,6 +8,12 @@ from app.agents import coordinator
 from app.agents import retrieval_agent
 from app.agents.retrieval_agent import search_knowledge
 from app.agents.solution_agent import recommend_solution
+from app.main import (
+    display_decision_explanation,
+    maximum_retrieval_ranking_score,
+    retrieval_decision,
+    templates,
+)
 from app.agents.ticket_agent import analyze_ticket, build_clarified_issue
 from app.models import KnowledgeArticle, Notification, Ticket, User
 from app.routes import agents, tickets as ticket_routes
@@ -243,6 +251,8 @@ def test_ir_12_threshold_and_grounding_use_one_eligible_citation(monkeypatch):
             "source_type": "internal_kb",
             "status": "approved",
             "hybrid_score": 0.91,
+            "bm25_score": 0.61,
+            "semantic_score": 0.91,
         }, {
             "source_id": "T-OLD",
             "title": "Resolved ticket",
@@ -255,7 +265,80 @@ def test_ir_12_threshold_and_grounding_use_one_eligible_citation(monkeypatch):
     })
     assert result["can_recommend"] is True
     assert [citation["source_id"] for citation in result["citations"]] == ["KB-1"]
-    assert "ranking signal" in result["explanation"]
+    assert "BM25 0.61, semantic 0.91" in result["explanation"]
+    assert "final adjusted retrieval ranking score is 0.91" in result["explanation"]
+    assert "is a probability" in result["explanation"]
+
+
+def test_ranking_score_display_boundaries_and_legacy_explanation():
+    assert [retrieval_decision(score, 0.68, 0.55) for score in (0.54, 0.55, 0.68, 1.00, 1.14)] == [
+        "LOW", "UNCERTAIN", "HIGH", "HIGH", "HIGH",
+    ]
+    legacy = "Selected SYN-1 with 100% relevance. Relevance is a ranking signal, not a probability of correctness."
+    displayed = display_decision_explanation(legacy)
+    assert "100% relevance" not in displayed
+    assert "based on the selected source" in displayed
+    assert maximum_retrieval_ranking_score() == 1.79
+
+
+def test_ticket_template_shows_adjusted_score_and_unmeasured_clarification():
+    settings = __import__("app.config", fromlist=["get_settings"]).get_settings()
+    request = Request({
+        "type": "http",
+        "method": "GET",
+        "path": "/tickets/1",
+        "headers": [],
+        "query_string": b"",
+        "server": ("testserver", 80),
+        "scheme": "http",
+        "client": ("127.0.0.1", 1234),
+        "root_path": "",
+    })
+    context = {
+        "request": request,
+        "user": SimpleNamespace(role="CUSTOMER", full_name="Test User", notifications=[]),
+        "logs": [],
+        "trace_request_id": None,
+        "feedback": None,
+        "citations": [],
+        "clarification": {},
+        "high_confidence_threshold": settings.high_confidence_threshold,
+        "uncertain_threshold": settings.uncertain_threshold,
+        "maximum_ranking_score": maximum_retrieval_ranking_score(),
+        "display_decision_explanation": "A ranking score is not a probability.",
+    }
+    ticket = SimpleNamespace(
+        id=1,
+        ticket_code="TCK-1",
+        status="SOLUTION_PROPOSED",
+        title="Test issue",
+        description="Test description",
+        category="Wi-Fi / DNS",
+        canonical_issue="wifi issue",
+        retrieval_confidence=1.14,
+        source_used="KB-1",
+        recommended_solution="See source.",
+        decision_explanation="A ranking score is not a probability.",
+        suggested_reply="",
+        root_cause="",
+        resolution_notes="",
+    )
+    template = templates.get_template("ticket_result.html")
+    rendered = template.render(**context, ticket=ticket)
+    assert "<strong>1.14</strong>" in rendered
+    assert "score-high\">HIGH</span>" in rendered
+    assert "not a probability that the solution is correct" in rendered
+    assert "Theoretical maximum under current scoring: 1.79" in rendered
+    assert "114%" not in rendered
+
+    ticket.status = "CLARIFICATION_REQUIRED"
+    ticket.retrieval_confidence = 0.0
+    rendered = template.render(**context, ticket=ticket)
+    score_block = rendered.split('class="analysis-item analysis-confidence"', 1)[1].split(
+        '<div class="analysis-item">', 1
+    )[0]
+    assert "<strong>Not evaluated</strong>" in score_block
+    assert "0%" not in score_block
 
 
 def test_ir_13_anonymous_sensitive_agent_access_is_rejected():
