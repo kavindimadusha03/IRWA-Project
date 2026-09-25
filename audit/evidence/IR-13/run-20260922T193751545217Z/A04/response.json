@@ -1,0 +1,52 @@
+{
+  "id": "A04",
+  "received_at_utc": "2026-09-22T19:38:17.219616+00:00",
+  "method": "POST",
+  "path": "/agents/knowledge/analyze",
+  "status_code": 200,
+  "location": null,
+  "content_type": "application/json",
+  "elapsed_seconds": 0.034,
+  "response_bytes": 384,
+  "response_text_sha256": "be6c061de6e8676177f6ffb6d9f9a510f57ac3fe85c792334b13abbc6bab5be7",
+  "redirect_history_count": 0,
+  "set_cookie_header_present": false,
+  "client_cookie_count_after": 0,
+  "body_json": {
+    "health": [
+      {
+        "category": "Software Installation",
+        "tickets": 68,
+        "coverage": 0.206,
+        "gap": "GAP"
+      },
+      {
+        "category": "Outlook / MFA",
+        "tickets": 67,
+        "coverage": 0.209,
+        "gap": "GAP"
+      },
+      {
+        "category": "Windows / Updates",
+        "tickets": 66,
+        "coverage": 0.212,
+        "gap": "GAP"
+      },
+      {
+        "category": "Remote Desktop",
+        "tickets": 65,
+        "coverage": 0.215,
+        "gap": "GAP"
+      },
+      {
+        "category": "VPN",
+        "tickets": 64,
+        "coverage": 0.219,
+        "gap": "GAP"
+      }
+    ],
+    "clusters": []
+  },
+  "body_text": "{\"health\":[{\"category\":\"Software Installation\",\"tickets\":68,\"coverage\":0.206,\"gap\":\"GAP\"},{\"category\":\"Outlook / MFA\",\"tickets\":67,\"coverage\":0.209,\"gap\":\"GAP\"},{\"category\":\"Windows / Updates\",\"tickets\":66,\"coverage\":0.212,\"gap\":\"GAP\"},{\"category\":\"Remote Desktop\",\"tickets\":65,\"coverage\":0.215,\"gap\":\"GAP\"},{\"category\":\"VPN\",\"tickets\":64,\"coverage\":0.219,\"gap\":\"GAP\"}],\"clusters\":[]}",
+  "no_authentication_sent": true
+}

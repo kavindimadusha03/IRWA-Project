@@ -1,0 +1,43 @@
+{
+  "elapsed_seconds": 0.026,
+  "cache_before": {
+    "cache_present": false,
+    "cache_time": 0
+  },
+  "cache_present_after": true,
+  "result": {
+    "health": [
+      {
+        "category": "Software Installation",
+        "tickets": 68,
+        "coverage": 0.206,
+        "gap": "GAP"
+      },
+      {
+        "category": "Outlook / MFA",
+        "tickets": 67,
+        "coverage": 0.209,
+        "gap": "GAP"
+      },
+      {
+        "category": "Windows / Updates",
+        "tickets": 66,
+        "coverage": 0.212,
+        "gap": "GAP"
+      },
+      {
+        "category": "Remote Desktop",
+        "tickets": 65,
+        "coverage": 0.215,
+        "gap": "GAP"
+      },
+      {
+        "category": "VPN",
+        "tickets": 64,
+        "coverage": 0.219,
+        "gap": "GAP"
+      }
+    ],
+    "clusters": []
+  }
+}

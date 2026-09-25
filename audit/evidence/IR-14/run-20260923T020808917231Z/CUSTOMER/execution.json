@@ -1,0 +1,39 @@
+{
+  "case": "IR-14",
+  "role": "CUSTOMER",
+  "started_at_utc": "2026-09-23T02:08:09.699276+00:00",
+  "stage": "setup",
+  "status": "Execution error; review required",
+  "outcome": "Unassessed",
+  "login_requests": 0,
+  "profile_requests": 0,
+  "target_requests": 0,
+  "redirect_followups": 0,
+  "isolated_database": "C:\\Users\\PSB\\AppData\\Local\\Temp\\knowgap-ir14-customer-b2q8sgj6\\knowgap.db",
+  "configuration": {
+    "high_threshold": 0.68,
+    "uncertain_threshold": 0.55,
+    "bm25_weight": 0.45,
+    "semantic_weight": 0.55,
+    "llm_model": "llama-3.1-8b-instant",
+    "thread_limit": 1,
+    "cached_model_only": true
+  },
+  "test_identity": {
+    "database_user_id": 1,
+    "stored_role": "CUSTOMER",
+    "active": true,
+    "unsupported_fixture": false,
+    "origin": "Four original seed accounts; extra active unsupported-role account only in its own private DB; login secrets omitted"
+  },
+  "llm": {
+    "configured_enabled": false,
+    "calls": 0
+  },
+  "error": {
+    "type": "OSError",
+    "message": "[WinError 4551] An Application Control policy has blocked this file. Error loading \"C:\\Users\\PSB\\Desktop\\KnowGap\\IRWA-Project\\.venv\\Lib\\site-packages\\torch\\lib\\torch_python.dll\" or one of its dependencies."
+  },
+  "server_stopped": true,
+  "finished_at_utc": "2026-09-23T02:08:55.783805+00:00"
+}

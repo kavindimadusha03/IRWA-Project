@@ -1,0 +1,14 @@
+{
+  "status": 403,
+  "location": null,
+  "content_type": "application/json",
+  "response_bytes": 44,
+  "body_sha256": "7f6912df4e99ad2b1aac6401d46fddddf31790fda728d7014d04d39dce6fe96a",
+  "body_json": {
+    "detail": "Knowledge Analyst role required"
+  },
+  "body_text": "{\"detail\":\"Knowledge Analyst role required\"}",
+  "redirect_history_count": 0,
+  "set_cookie_present": false,
+  "elapsed_seconds": 0.006
+}

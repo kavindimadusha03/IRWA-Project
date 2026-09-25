@@ -1,0 +1,37 @@
+{
+  "recorded_before_send_at_utc": "2026-09-23T02:38:55.818812+00:00",
+  "id": "S05",
+  "label": "one malformed nested item",
+  "path": "/agents/solution/recommend",
+  "method": "POST",
+  "body": {
+    "message_id": "ir15-local-001",
+    "request_id": "ir15-local-audit",
+    "sender": "retrieval_agent",
+    "receiver": "solution_agent",
+    "task": "recommend_solution",
+    "payload": {
+      "query": "My laptop is connected to Wi-Fi but there is no internet.",
+      "retrieval": {
+        "query": "My laptop is connected to Wi-Fi but there is no internet.",
+        "items": [
+          {}
+        ],
+        "best_score": 0.0,
+        "decision": "HIGH"
+      }
+    }
+  },
+  "raw_body": null,
+  "anonymous": false,
+  "comparison": "S02",
+  "changed_field": "payload.retrieval.items",
+  "url": "http://127.0.0.1:8001/agents/solution/recommend",
+  "serialized_body": "{\"message_id\":\"ir15-local-001\",\"request_id\":\"ir15-local-audit\",\"sender\":\"retrieval_agent\",\"receiver\":\"solution_agent\",\"task\":\"recommend_solution\",\"payload\":{\"query\":\"My laptop is connected to Wi-Fi but there is no internet.\",\"retrieval\":{\"query\":\"My laptop is connected to Wi-Fi but there is no internet.\",\"items\":[{}],\"best_score\":0.0,\"decision\":\"HIGH\"}}}",
+  "content_type": "application/json",
+  "cookie_present": true,
+  "cookie_value": "omitted",
+  "authorization_header_present": false,
+  "follow_redirects": false,
+  "runtime_mode": "selected"
+}

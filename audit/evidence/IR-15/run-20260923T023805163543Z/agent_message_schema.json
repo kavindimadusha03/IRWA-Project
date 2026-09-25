@@ -1,0 +1,39 @@
+{
+  "properties": {
+    "message_id": {
+      "title": "Message Id",
+      "type": "string"
+    },
+    "request_id": {
+      "title": "Request Id",
+      "type": "string"
+    },
+    "sender": {
+      "title": "Sender",
+      "type": "string"
+    },
+    "receiver": {
+      "title": "Receiver",
+      "type": "string"
+    },
+    "task": {
+      "title": "Task",
+      "type": "string"
+    },
+    "payload": {
+      "additionalProperties": true,
+      "title": "Payload",
+      "type": "object"
+    }
+  },
+  "required": [
+    "message_id",
+    "request_id",
+    "sender",
+    "receiver",
+    "task",
+    "payload"
+  ],
+  "title": "AgentMessage",
+  "type": "object"
+}

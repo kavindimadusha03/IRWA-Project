@@ -1,0 +1,12 @@
+{
+  "status": 303,
+  "location": "/admin?message=Category+created.",
+  "content_type": null,
+  "response_bytes": 0,
+  "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_json": null,
+  "body_text": "",
+  "redirect_history_count": 0,
+  "set_cookie_present": false,
+  "elapsed_seconds": 0.012
+}

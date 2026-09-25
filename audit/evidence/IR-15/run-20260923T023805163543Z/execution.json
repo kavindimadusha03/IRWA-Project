@@ -1,0 +1,28 @@
+{
+  "case": "IR-15",
+  "mode": "selected",
+  "started_at_utc": "2026-09-23T02:38:44.433704+00:00",
+  "status": "Executed; awaiting scoped validation and provenance review",
+  "outcome": "Unassessed",
+  "login_requests": 1,
+  "profile_requests": 1,
+  "documentation_requests": 2,
+  "target_requests": 19,
+  "retrieval_boundary_calls": 10,
+  "real_retrieval_calls": 0,
+  "solution_calls": 4,
+  "redirect_followups": 0,
+  "isolated_database": "C:\\Users\\PSB\\AppData\\Local\\Temp\\knowgap-ir15-i30oceqv\\knowgap.db",
+  "llm": {
+    "configured_enabled": false,
+    "attempts": 2,
+    "successful_returns": 0,
+    "failures": 2
+  },
+  "full_application_loaded": false,
+  "stage": "S05 one malformed nested item",
+  "base_url": "http://127.0.0.1:8001",
+  "server_started": true,
+  "server_stopped": true,
+  "finished_at_utc": "2026-09-23T02:38:56.107535+00:00"
+}

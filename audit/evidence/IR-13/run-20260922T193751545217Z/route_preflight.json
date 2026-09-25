@@ -1,0 +1,90 @@
+{
+  "recorded_before_requests_at_utc": "2026-09-22T19:38:11.608408+00:00",
+  "global_dependencies": 0,
+  "user_middleware_count": 0,
+  "targets": [
+    {
+      "id": "A01",
+      "method": "GET",
+      "path": "/home",
+      "handler": "home",
+      "source_file": "app/main.py",
+      "line": 46,
+      "handler_source": "@app.get(\"/home\", response_class=HTMLResponse)\ndef home(request: Request, session: Session = Depends(get_session)):\n    user = current_user_from_request(request, session)\n    if not user:\n        return RedirectResponse(url=\"/\", status_code=303)\n    if user.role == \"CUSTOMER\":\n        tickets_list = session.exec(select(Ticket).where(Ticket.user_id == user.id).order_by(Ticket.id.desc())).all()\n        tickets_list = filter_tickets(tickets_list, request)\n        notifications = get_user_notifications(session, user.id)\n        return templates.TemplateResponse(\n            \"customer.html\",\n            {\n                \"request\": request,\n                \"user\": user,\n                \"tickets\": tickets_list,\n                \"ticket_filters\": ticket_filter_values(request),\n                \"notifications\": notifications,\n            },\n        )\n    if user.role in {\"IT_SUPPORT\", \"ADMIN\"}:\n        return RedirectResponse(url=\"/support\", status_code=303)\n    return RedirectResponse(url=\"/dashboard\", status_code=303)\n",
+      "direct_dependencies": [
+        {
+          "name": "session",
+          "call": "get_session",
+          "nested_dependency_count": 0
+        }
+      ],
+      "body_parameters": []
+    },
+    {
+      "id": "A02",
+      "method": "POST",
+      "path": "/tickets/create",
+      "handler": "create_ticket",
+      "source_file": "app/routes/tickets.py",
+      "line": 29,
+      "handler_source": "@router.post(\"/create\")\ndef create_ticket(\n    request: Request,\n    title: str = Form(...),\n    description: str = Form(...),\n    session: Session = Depends(get_session),\n):\n    user = current_user_from_request(request, session)\n    if not user:\n        return RedirectResponse(url=\"/\", status_code=303)\n    if len(title.strip()) < 3 or len(description.strip()) < 10:\n        raise HTTPException(status_code=422, detail=\"Title or description is too short\")\n\n    next_number = (session.exec(select(Ticket)).all().__len__()) + 1\n    ticket = Ticket(\n        ticket_code=f\"TCK-{next_number:05d}\",\n        user_id=user.id,\n        title=title.strip(),\n        description=description.strip(),\n    )\n    session.add(ticket)\n    session.commit()\n    session.refresh(ticket)\n    process_new_ticket(session, ticket)\n    return RedirectResponse(url=f\"/tickets/{ticket.id}\", status_code=303)\n",
+      "direct_dependencies": [
+        {
+          "name": "session",
+          "call": "get_session",
+          "nested_dependency_count": 0
+        }
+      ],
+      "body_parameters": [
+        {
+          "name": "title",
+          "required": true
+        },
+        {
+          "name": "description",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "A03",
+      "method": "POST",
+      "path": "/agents/retrieval/search",
+      "handler": "retrieval_search",
+      "source_file": "app/routes/agents.py",
+      "line": 24,
+      "handler_source": "@router.post(\"/retrieval/search\")\ndef retrieval_search(message: AgentMessage, session: Session = Depends(get_session)):\n    return search_knowledge(session, str(message.payload.get(\"issue\", \"\")))\n",
+      "direct_dependencies": [
+        {
+          "name": "session",
+          "call": "get_session",
+          "nested_dependency_count": 0
+        }
+      ],
+      "body_parameters": [
+        {
+          "name": "message",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "A04",
+      "method": "POST",
+      "path": "/agents/knowledge/analyze",
+      "handler": "knowledge_analyze",
+      "source_file": "app/routes/agents.py",
+      "line": 38,
+      "handler_source": "@router.post(\"/knowledge/analyze\")\ndef knowledge_analyze(session: Session = Depends(get_session)):\n    return analyze_knowledge_health(session)\n",
+      "direct_dependencies": [
+        {
+          "name": "session",
+          "call": "get_session",
+          "nested_dependency_count": 0
+        }
+      ],
+      "body_parameters": []
+    }
+  ],
+  "source_note": "Dependency absence supplements explicit handler inspection; it alone is not a runtime denial/exposure result"
+}

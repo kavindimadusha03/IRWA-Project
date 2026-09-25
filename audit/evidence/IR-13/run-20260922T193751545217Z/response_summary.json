@@ -1,0 +1,42 @@
+[
+  {
+    "id": "A01",
+    "method": "GET",
+    "path": "/home",
+    "status_code": 303,
+    "location": "/",
+    "response_bytes": 0,
+    "no_authentication_sent": true,
+    "database_unchanged": true
+  },
+  {
+    "id": "A02",
+    "method": "POST",
+    "path": "/tickets/create",
+    "status_code": 303,
+    "location": "/",
+    "response_bytes": 0,
+    "no_authentication_sent": true,
+    "database_unchanged": true
+  },
+  {
+    "id": "A03",
+    "method": "POST",
+    "path": "/agents/retrieval/search",
+    "status_code": 200,
+    "location": null,
+    "response_bytes": 3284,
+    "no_authentication_sent": true,
+    "database_unchanged": true
+  },
+  {
+    "id": "A04",
+    "method": "POST",
+    "path": "/agents/knowledge/analyze",
+    "status_code": 200,
+    "location": null,
+    "response_bytes": 384,
+    "no_authentication_sent": true,
+    "database_unchanged": true
+  }
+]

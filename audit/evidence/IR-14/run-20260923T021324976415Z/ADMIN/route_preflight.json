@@ -1,0 +1,34 @@
+{
+  "handlers": [
+    {
+      "handler": "approve_article",
+      "file": "app/routes/knowledge.py",
+      "line": 71,
+      "source": "@router.post(\"/{article_id}/approve\")\ndef approve_article(article_id: int, request: Request, session: Session = Depends(get_session)):\n    user = current_user_from_request(request, session)\n    if not user or user.role != \"KNOWLEDGE_ANALYST\":\n        raise HTTPException(status_code=403, detail=\"Knowledge Analyst role required\")\n    article = session.get(KnowledgeArticle, article_id)\n    if not article:\n        raise HTTPException(status_code=404, detail=\"Article not found\")\n    article.status = \"approved\"\n    article.authoritative = True\n    article.updated_at = datetime.utcnow()\n    session.add(article)\n    session.commit()\n    return RedirectResponse(url=\"/knowledge\", status_code=303)\n"
+    },
+    {
+      "handler": "admin_page",
+      "file": "app/routes/admin.py",
+      "line": 76,
+      "source": "@router.get(\"\", response_class=HTMLResponse)\ndef admin_page(request: Request, session: Session = Depends(get_session)):\n    user = _admin_user(request, session)\n    if not user:\n        return HTMLResponse(\"Admin access required\", status_code=403)\n    _ensure_categories(session)\n    return templates.TemplateResponse(\n        \"admin.html\",\n        {\n            \"request\": request,\n            \"user\": user,\n            \"users\": session.exec(select(User).order_by(User.username)).all(),\n            \"articles\": session.exec(select(KnowledgeArticle).order_by(KnowledgeArticle.updated_at.desc())).all(),\n            \"categories\": session.exec(select(Category).order_by(Category.name)).all(),\n            \"next_article_doc_id\": _next_article_doc_id(session),\n            \"roles\": ROLES,\n            \"message\": request.query_params.get(\"message\"),\n            \"error\": request.query_params.get(\"error\"),\n        },\n    )\n"
+    },
+    {
+      "handler": "create_category",
+      "file": "app/routes/admin.py",
+      "line": 219,
+      "source": "@router.post(\"/categories/create\")\ndef create_category(\n    request: Request,\n    name: str = Form(...),\n    description: str = Form(\"\"),\n    session: Session = Depends(get_session),\n):\n    if not _admin_user(request, session):\n        return HTMLResponse(\"Admin access required\", status_code=403)\n    name = name.strip()\n    if len(name) < 2:\n        return _redirect(error=\"Category name must contain at least 2 characters.\")\n    if session.exec(select(Category).where(Category.name == name)).first():\n        return _redirect(error=\"That category already exists.\")\n    session.add(Category(name=name, description=description.strip()))\n    session.commit()\n    return _redirect(message=\"Category created.\")\n"
+    }
+  ],
+  "admin_default_categories": [
+    "Wi-Fi / DNS",
+    "VPN",
+    "Outlook / MFA",
+    "Accounts / Passwords",
+    "Printers",
+    "Windows / Updates",
+    "Software Installation",
+    "Remote Desktop"
+  ],
+  "GET_admin_side_effect": "Original _ensure_categories runs after ADMIN guard; with this seed it may add default/source categories. Record its actual mutation rather than treating GET as inherently read-only.",
+  "guards_unchanged": true
+}

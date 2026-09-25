@@ -1,0 +1,18 @@
+{
+  "id": "A02",
+  "received_at_utc": "2026-09-22T19:38:13.130194+00:00",
+  "method": "POST",
+  "path": "/tickets/create",
+  "status_code": 303,
+  "location": "/",
+  "content_type": null,
+  "elapsed_seconds": 0.008,
+  "response_bytes": 0,
+  "response_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "redirect_history_count": 0,
+  "set_cookie_header_present": false,
+  "client_cookie_count_after": 0,
+  "body_json": null,
+  "body_text": "",
+  "no_authentication_sent": true
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "id": "OBS-IR15-01",
+    "title": "Incomplete nested payload validation",
+    "subcases": [
+      "R01",
+      "R04",
+      "R05",
+      "S05"
+    ],
+    "outcome": "FAIL within schema/handler/component scope",
+    "actual": "Blank issue accepted; object/list converted with str; malformed HIGH item caused KeyError(source_id) and a 500 response. No HTTP traceback or persistent mutation.",
+    "security_classification": "Informational observation; no separate confirmed vulnerability or DoS claim",
+    "mitigation": "Typed operation-specific payloads; require nonblank text; validate nested source/item fields before component calls; return controlled 4xx."
+  },
+  {
+    "id": "OBS-IR15-02",
+    "title": "No finite issue-length contract in AgentMessage",
+    "subcases": [
+      "R06"
+    ],
+    "outcome": "Design observation, not threshold violation",
+    "actual": "Exactly 4000 characters reached the observer intact; actual processing/ranking stopped. No maxLength for issue/envelope strings in captured schema.",
+    "security_classification": "Informational; no load/DoS behavior tested",
+    "mitigation": "Define and enforce a finite issue/body limit suited to the endpoint; this probe does not establish an existing 4000-character limit."
+  },
+  {
+    "id": "OBS-IR15-03",
+    "title": "Agent labels are ignored rather than verified protocol identity",
+    "subcases": [
+      "P01",
+      "P02",
+      "P03"
+    ],
+    "outcome": "Protocol design observation",
+    "actual": "Changing sender, receiver or task independently still dispatched the same issue to the selected retrieval boundary. No alternate task, privileged identity or database action occurred.",
+    "security_classification": "Informational; not proof of authenticated impersonation or role escalation",
+    "mitigation": "Authenticate service/caller identity independently and bind permitted operations to routes; validate envelope labels for the intended protocol without treating strings as credentials."
+  }
+]

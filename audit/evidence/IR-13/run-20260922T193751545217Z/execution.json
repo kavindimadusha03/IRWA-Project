@@ -1,0 +1,47 @@
+{
+  "case": "IR-13",
+  "started_at_utc": "2026-09-22T19:37:52.404153+00:00",
+  "stage": "execution completed",
+  "status": "Executed; awaiting authentication and disclosure review",
+  "outcome": "Unassessed",
+  "target_requests": 4,
+  "login_requests": 0,
+  "redirect_followups": 0,
+  "endpoint_calls": {
+    "retrieval": 1,
+    "knowledge": 1
+  },
+  "isolated_database": "C:\\Users\\PSB\\AppData\\Local\\Temp\\knowgap-ir13-6rj4xrlf\\knowgap.db",
+  "configuration": {
+    "bm25_weight": 0.45,
+    "semantic_weight": 0.55,
+    "high_threshold": 0.68,
+    "uncertain_threshold": 0.55,
+    "embedding_model": "all-MiniLM-L6-v2",
+    "llm_model": "llama-3.1-8b-instant",
+    "thread_limit": 1,
+    "cached_model_only": true
+  },
+  "llm": {
+    "configured_enabled": false,
+    "chat_attempts": 0,
+    "successful_returns": 0
+  },
+  "model_load_call_seconds": 0.442,
+  "seed_counts": {
+    "articles": 80,
+    "historical_tickets": 500,
+    "users": 4
+  },
+  "roles_present": [
+    "ADMIN",
+    "CUSTOMER",
+    "IT_SUPPORT",
+    "KNOWLEDGE_ANALYST"
+  ],
+  "base_url": "http://127.0.0.1:8001",
+  "server_started": true,
+  "health_probe": "No extra HTTP health request; verified owned server.started before the four targets",
+  "server_stopped": true,
+  "finished_at_utc": "2026-09-22T19:38:17.447684+00:00"
+}

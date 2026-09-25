@@ -1,0 +1,65 @@
+{
+  "case": "IR-14",
+  "recorded_before_execution_at_utc": "2026-09-23T02:13:25.253341+00:00",
+  "runtime_mode": "original-router HTTP harness",
+  "roles": [
+    "CUSTOMER",
+    "IT_SUPPORT",
+    "KNOWLEDGE_ANALYST",
+    "ADMIN",
+    "AUDIT_VIEWER"
+  ],
+  "article_fixture": {
+    "doc_id": "AUDIT-IR14-DRAFT-001",
+    "title": "IR14 role approval fixture",
+    "content": "Synthetic audit note for testing knowledge approval. No troubleshooting action is requested.",
+    "category": "Printers",
+    "status": "draft",
+    "source_type": "internal_kb",
+    "author": "IR-14 synthetic fixture",
+    "authoritative": false,
+    "supported_os": "Any",
+    "security_class": "internal"
+  },
+  "category_fixture": {
+    "name": "IR14 Audit Category",
+    "description": "Synthetic category for role authorization check."
+  },
+  "expected_matrix": {
+    "CUSTOMER": {
+      "approve_article": false,
+      "admin_page": false,
+      "create_category": false
+    },
+    "IT_SUPPORT": {
+      "approve_article": false,
+      "admin_page": false,
+      "create_category": false
+    },
+    "KNOWLEDGE_ANALYST": {
+      "approve_article": true,
+      "admin_page": false,
+      "create_category": false
+    },
+    "ADMIN": {
+      "approve_article": false,
+      "admin_page": true,
+      "create_category": true
+    },
+    "AUDIT_VIEWER": {
+      "approve_article": false,
+      "admin_page": false,
+      "create_category": false
+    }
+  },
+  "per_role_requests": {
+    "login": 1,
+    "profile": 1,
+    "targets": 3
+  },
+  "total_HTTP_request_limit": 25,
+  "target_request_limit": 15,
+  "fixture_policy": "Separate private database/process/server per role; original seed corpus and four users plus one draft article. Only AUDIT_VIEWER worker adds one active unsupported-role account directly. Fixture timestamps fixed to 2026-09-22T00:00:00.",
+  "field_claim_policy": "Denied roles claim privileged role and user_id in form/query; actual issued cookie retains logged-in identity. No cookie/header token manipulation.",
+  "follow_redirects": false
+}

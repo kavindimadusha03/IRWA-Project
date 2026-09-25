@@ -1,0 +1,32 @@
+{
+  "vulnerability_id": "VULN-IR13-01",
+  "title": "Missing authentication exposes internal agent retrieval and knowledge analytics",
+  "related_test": "IR-13",
+  "affected_endpoints": [
+    "POST /agents/retrieval/search",
+    "POST /agents/knowledge/analyze"
+  ],
+  "affected_components": [
+    "app/routes/agents.py:24-26",
+    "app/routes/agents.py:38-40",
+    "app/main.py:20,28"
+  ],
+  "description": "Clean unauthenticated clients invoke both sensitive agent functions and receive seeded internal source text/analytics. A database dependency opens a session but does not verify identity. Protected UI redirects do not cover direct API routes.",
+  "evidence": "A03/request.json and response.json; A04/request.json and response.json; original function results; route_preflight.json; per-request DB hashes",
+  "impact": "Unauthorized read access to the demonstrated synthetic source content and internal aggregate analytics. If similarly deployed with sensitive data and reachable by untrusted callers, that data could be exposed. No real-data disclosure, persistence change or account takeover observed.",
+  "likelihood": "Straightforward for a caller with network access to this application: valid normal request, no login or user interaction needed. Each target tested once; no prevalence estimate or public network reachability established.",
+  "severity": "Medium",
+  "risk_level": "Medium (qualitative, tested application scope)",
+  "severity_justification": "A demonstrated authentication boundary failure with limited confidentiality impact and easy invocation for a reachable caller. Loopback-only synthetic setting and absence of writes/real-data harm limit claims; High/Critical or an invented CVSS score is not justified.",
+  "technical_explanation": "Agent router/handlers omit identity checks and app inclusion adds none. AgentMessage structural fields are not credentials; normal audit_client sender was accepted. Both original functions executed once and their exact results were serialized to anonymous HTTP responses.",
+  "recommended_mitigation": "Require a shared verified-current-user or authenticated service-identity dependency on sensitive agent routes; define route/role permissions, with knowledge analysis limited to intended analysts/services. Reject missing/invalid credentials before invoking agents. Add authentication regression tests; do not rely on payload sender strings, obscurity, CORS or an assumed gateway. Scope returned fields to authorized needs.",
+  "status": "Confirmed in local synthetic test; open; remediation not applied",
+  "limitations": [
+    "Only two agent APIs and two UI controls tested once each",
+    "No authenticated role matrix, malformed credential or schema-abuse probe",
+    "No public/production deployment or real user data",
+    "No denial-of-service, broad enumeration, write exploit or privilege escalation demonstrated",
+    "Knowledge endpoint returned aggregates only, no cluster examples",
+    "Groq disabled and not called; finding independent of generated answers"
+  ]
+}

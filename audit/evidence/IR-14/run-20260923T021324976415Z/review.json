@@ -1,0 +1,21 @@
+{
+  "test_id": "IR-14",
+  "test_name": "Unauthorized Role Access",
+  "status": "Partially assessed",
+  "route_HTTP_outcome": "PASS (15/15 checks across five roles)",
+  "full_application_outcome": "Blocked / Inconclusive (WinError 4551 during import, zero HTTP)",
+  "vulnerability_identified": "No new vulnerability demonstrated in the tested guards",
+  "severity": "Not applicable for passing route checks; environment blocker is not an authorization vulnerability",
+  "existing_VULN_IR13_01": "Confirmed Medium; open; unchanged",
+  "total_actual_HTTP_requests": 25,
+  "redirect_followups": 0,
+  "LLM_calls": 0,
+  "reviewed_at_utc": "2026-09-23T02:25:48.028056+00:00",
+  "limits": [
+    "Original-router HTTP harness only; full app startup/integration not verified",
+    "Synthetic data and active accounts; three privileged routes only",
+    "No crafted tokens, expired/inactive credentials, CSRF, ownership or other privileged endpoint coverage",
+    "Unsupported role is a direct private fixture, not account-creation API evidence"
+  ],
+  "next_case": "IR-15 not run"
+}

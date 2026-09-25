@@ -1,0 +1,76 @@
+{
+  "case": "IR-13",
+  "reviewed_at_utc": "2026-09-22T19:51:39.797632+00:00",
+  "status": "Completed (local HTTP; synthetic data)",
+  "outcome": "FAIL",
+  "target_results": [
+    {
+      "id": "A01",
+      "method": "GET",
+      "endpoint": "/home",
+      "credentials_sent": false,
+      "status": 303,
+      "location": "/",
+      "body_bytes": 0,
+      "database_unchanged": true,
+      "outcome": "PASS",
+      "reason": "Login redirect with empty body and no mutation"
+    },
+    {
+      "id": "A02",
+      "method": "POST",
+      "endpoint": "/tickets/create",
+      "credentials_sent": false,
+      "status": 303,
+      "location": "/",
+      "body_bytes": 0,
+      "database_unchanged": true,
+      "outcome": "PASS",
+      "reason": "Login redirect with empty body and no mutation"
+    },
+    {
+      "id": "A03",
+      "method": "POST",
+      "endpoint": "/agents/retrieval/search",
+      "credentials_sent": false,
+      "status": 200,
+      "location": "",
+      "body_bytes": 3284,
+      "database_unchanged": true,
+      "outcome": "FAIL",
+      "reason": "Internal retrieval source text returned"
+    },
+    {
+      "id": "A04",
+      "method": "POST",
+      "endpoint": "/agents/knowledge/analyze",
+      "credentials_sent": false,
+      "status": 200,
+      "location": "",
+      "body_bytes": 384,
+      "database_unchanged": true,
+      "outcome": "FAIL",
+      "reason": "Knowledge-health aggregate data returned"
+    }
+  ],
+  "vulnerability_identified": "YES - missing authentication under intended policy",
+  "vulnerability_id": "VULN-IR13-01",
+  "severity": "Medium",
+  "formal_vulnerability_added": true,
+  "total_target_requests": 4,
+  "login_requests": 0,
+  "redirect_followups": 0,
+  "provider_calls": 0,
+  "all_table_states_unchanged": true,
+  "server_stopped": true,
+  "scope_limits": [
+    "Only two agent APIs and two UI controls tested once each",
+    "No authenticated role matrix, malformed credential or schema-abuse probe",
+    "No public/production deployment or real user data",
+    "No denial-of-service, broad enumeration, write exploit or privilege escalation demonstrated",
+    "Knowledge endpoint returned aggregates only, no cluster examples",
+    "Groq disabled and not called; finding independent of generated answers"
+  ],
+  "next_case_not_executed": "IR-14",
+  "evidence": "notes.md"
+}

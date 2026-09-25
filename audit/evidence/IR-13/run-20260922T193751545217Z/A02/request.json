@@ -1,0 +1,21 @@
+{
+  "id": "A02",
+  "recorded_before_send_at_utc": "2026-09-22T19:38:13.121990+00:00",
+  "method": "POST",
+  "url": "http://127.0.0.1:8001/tickets/create",
+  "path": "/tickets/create",
+  "encoding": "form",
+  "declared_body": {
+    "title": "No-login ticket audit",
+    "description": "My laptop is connected to Wi-Fi but there is no internet."
+  },
+  "serialized_body": "title=No-login+ticket+audit&description=My+laptop+is+connected+to+Wi-Fi+but+there+is+no+internet.",
+  "content_type": "application/x-www-form-urlencoded",
+  "cookie_header_present": false,
+  "authorization_header_present": false,
+  "proxy_authorization_header_present": false,
+  "client_cookie_count_before": 0,
+  "fresh_client": true,
+  "follow_redirects": false,
+  "trust_env": false
+}

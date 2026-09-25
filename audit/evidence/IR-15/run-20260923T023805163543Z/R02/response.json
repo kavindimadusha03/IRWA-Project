@@ -1,0 +1,32 @@
+{
+  "status": 422,
+  "location": null,
+  "content_type": "application/json",
+  "body_json": {
+    "detail": [
+      {
+        "type": "missing",
+        "loc": [
+          "body",
+          "payload"
+        ],
+        "msg": "Field required",
+        "input": {
+          "message_id": "ir15-local-001",
+          "request_id": "ir15-local-audit",
+          "sender": "coordinator_agent",
+          "receiver": "retrieval_agent",
+          "task": "retrieve_knowledge"
+        }
+      }
+    ]
+  },
+  "body_text": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"payload\"],\"msg\":\"Field required\",\"input\":{\"message_id\":\"ir15-local-001\",\"request_id\":\"ir15-local-audit\",\"sender\":\"coordinator_agent\",\"receiver\":\"retrieval_agent\",\"task\":\"retrieve_knowledge\"}}]}",
+  "body_bytes": 237,
+  "body_sha256": "c20dc20f77a0e924d66b0ad76e090ceb826098e651b5240e8f916323e421d373",
+  "elapsed_seconds": 0.005,
+  "redirect_history": 0,
+  "set_cookie_present": false,
+  "runtime_mode": "selected",
+  "audit_boundary_503": false
+}

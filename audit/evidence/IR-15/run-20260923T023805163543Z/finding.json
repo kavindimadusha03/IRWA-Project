@@ -1,0 +1,29 @@
+{
+  "vulnerability_id": "VULN-IR15-01",
+  "title": "Caller-supplied retrieval decision and source text are treated as trusted evidence",
+  "related_test": "IR-15, S01/S02 controlled provenance pair",
+  "affected_components": [
+    "app/routes/agents.py: solution_recommend (exact handler AST in local audit HTTP composition)",
+    "app/agents/solution_agent.py: recommend_solution (original imported component)"
+  ],
+  "description": "With one nonexistent synthetic source, status draft and zero scores held constant, changing only payload.retrieval.decision from LOW to HIGH changes can_recommend from false to true. The original component returns the caller marker/citation and describes the source as approved and validated without a corpus/provenance check.",
+  "evidence": [
+    "evidence/IR-15/run-20260923T023805163543Z/S01/request.json",
+    "evidence/IR-15/run-20260923T023805163543Z/S01/response.json",
+    "evidence/IR-15/run-20260923T023805163543Z/S02/request.json",
+    "evidence/IR-15/run-20260923T023805163543Z/S02/response.json",
+    "evidence/IR-15/run-20260923T023805163543Z/S02/component_observations.json",
+    "evidence/IR-15/run-20260923T023805163543Z/provenance_review.json",
+    "evidence/IR-15/run-20260923T023805163543Z/corpus_preflight.json"
+  ],
+  "impact": "Recommendation integrity can be controlled by a caller able to supply retrieval metadata: untrusted text receives a fabricated trusted-evidence presentation. Only a harmless audit marker in a returned component/harness response was demonstrated. No persistent corpus poisoning, ticket creation/escalation, actual customer delivery, harmful system action or code execution was observed.",
+  "likelihood": "Low effort at the tested component input boundary: one decision field suffices. Source shows the API handler forwards the caller object, but current full-application/API reachability is unverified because import is blocked. Broader deployment exposure, user consumption and prevalence are unknown.",
+  "severity": "Medium",
+  "risk_level": "Medium (qualitative; confirmed component scope)",
+  "severity_justification": "Meaningful evidence-integrity/trust-boundary failure with a minimal controlled input change. Demonstrated impact is limited to returned advice/citation, so no High/Critical or CVSS score is assigned. Full-app exploitability and downstream effects remain unverified.",
+  "technical_explanation": "AgentMessage.payload is Dict[str, Any]. solution_recommend checks only that retrieval is a dict and forwards it to recommend_solution. The latter gates on decision == HIGH and truthy items, then trusts source_id/title/content and labels them approved/validated. It performs no trusted corpus lookup, status verification or server-derived threshold/provenance check. Disabled Groq raises locally; the original fallback copies supplied evidence.",
+  "recommended_mitigation": "Do not accept client declarations as retrieval proof. Obtain source content/status and confidence from a trusted server retrieval step bound to the request and verified caller/service. Resolve source identifiers against authorized approved/resolved records; reject nonexistent/ineligible sources; compute the decision server-side. Add typed nested payload validation and bounded input policy, plus verified API/service identity and operation permissions. Add LOW/HIGH forged-source regression controls during authorized remediation; schema validation alone does not establish provenance.",
+  "status": "Confirmed in original component and selected-handler HTTP harness; open; remediation not applied; full-application exposure not reverified",
+  "scope": "Owned localhost selected-handler harness, synthetic original corpus, existing disabled Groq configuration. Full app import blocked by Application Control on SciPy _batched_linalg. No real retrieval/embedding executed.",
+  "separate_existing_finding": "VULN-IR13-01 remains confirmed Medium/open; this is a distinct evidence-trust failure, not a duplicate anonymous-data finding."
+}

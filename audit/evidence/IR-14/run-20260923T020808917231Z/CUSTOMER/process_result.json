@@ -1,0 +1,11 @@
+{
+  "role": "CUSTOMER",
+  "process_exit_code": 1,
+  "timed_out": false,
+  "elapsed_seconds": 46.662,
+  "status": "Execution error; review required",
+  "login_requests": 0,
+  "profile_requests": 0,
+  "target_requests": 0,
+  "server_stopped": true
+}

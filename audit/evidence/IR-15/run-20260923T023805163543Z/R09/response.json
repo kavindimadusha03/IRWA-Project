@@ -1,0 +1,16 @@
+{
+  "status": 503,
+  "location": null,
+  "content_type": "application/json",
+  "body_json": {
+    "detail": "AUDIT_IR15_BOUNDARY_ONLY: retrieval backend unavailable; no ranking executed"
+  },
+  "body_text": "{\"detail\":\"AUDIT_IR15_BOUNDARY_ONLY: retrieval backend unavailable; no ranking executed\"}",
+  "body_bytes": 89,
+  "body_sha256": "979fc7107010051f557bf4cb803edb9a95b2cf1c7add8000ade421f44664d8d2",
+  "elapsed_seconds": 0.007,
+  "redirect_history": 0,
+  "set_cookie_present": false,
+  "runtime_mode": "selected",
+  "audit_boundary_503": true
+}

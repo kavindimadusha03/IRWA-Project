@@ -1,0 +1,20 @@
+id,input_case,endpoint,http_status,audit_boundary_status,authenticated_cookie_sent,retrieval_boundary_calls,actual_retrieval_calls,solution_calls,database_unchanged,outcome,scope_reason,evidence
+R00,valid benign retrieval control,/agents/retrieval/search,503,True,True,1,0,0,True,PASS,Valid envelope reaches selected handler boundary; actual retrieval blocked,R00/response.json
+R01,empty issue,/agents/retrieval/search,503,True,True,1,0,0,True,FAIL,Empty string reaches search boundary; no required nonblank validation,R01/response.json
+R02,missing required payload,/agents/retrieval/search,422,False,True,0,0,0,True,PASS,Missing required payload rejected with 422 before downstream component,R02/response.json
+R03,missing required envelope sender,/agents/retrieval/search,422,False,True,0,0,0,True,PASS,Missing required sender rejected with 422 before downstream component,R03/response.json
+R04,object issue,/agents/retrieval/search,503,True,True,1,0,0,True,FAIL,Object silently stringified and reaches search boundary,R04/response.json
+R05,list issue,/agents/retrieval/search,503,True,True,1,0,0,True,FAIL,List silently stringified and reaches search boundary,R05/response.json
+R06,bounded 4000-character issue,/agents/retrieval/search,503,True,True,1,0,0,True,OBSERVATION,All 4000 characters reach boundary; no declared finite AgentMessage issue limit; no load/DoS result,R06/response.json
+R07,benign Unicode,/agents/retrieval/search,503,True,True,1,0,0,True,PASS,Unicode text preserved at boundary; semantic retrieval untested,R07/response.json
+R08,malformed JSON,/agents/retrieval/search,422,False,True,0,0,0,True,PASS,Malformed JSON rejected with 422 before downstream component,R08/response.json
+R09,valid anonymous request,/agents/retrieval/search,503,True,False,1,0,0,True,INCONCLUSIVE,Anonymous dispatch reaches boundary; full retrieval/data exposure blocked; existing IR13 finding unchanged,R09/response.json
+P01,claimed sender,/agents/retrieval/search,503,True,True,1,0,0,True,OBSERVATION,"Sender claim ignored; same retrieval dispatch, no authenticated impersonation demonstrated",P01/response.json
+P02,claimed receiver,/agents/retrieval/search,503,True,True,1,0,0,True,OBSERVATION,Receiver claim ignored; no admin task or role change demonstrated,P02/response.json
+P03,claimed task,/agents/retrieval/search,503,True,True,1,0,0,True,OBSERVATION,Task claim ignored; no knowledge approval or role change demonstrated,P03/response.json
+S00,solution control using saved genuine IR13 retrieval,/agents/solution/recommend,200,False,True,0,0,1,True,PASS,Original solution component accepts saved genuine source control; not fresh retrieval,S00/response.json
+S01,synthetic provenance LOW control,/agents/solution/recommend,200,False,True,0,0,1,True,PASS,LOW synthetic control declines; escalation wording is not persistent escalation,S01/response.json
+S02,synthetic provenance HIGH attempt,/agents/solution/recommend,200,False,True,0,0,1,True,FAIL,Only decision HIGH causes nonexistent draft zero-score source to be recommended as approved/validated,S02/response.json
+S03,retrieval wrong container type,/agents/solution/recommend,422,False,True,0,0,0,True,PASS,List retrieval rejected with controlled 422,S03/response.json
+S04,missing retrieval object,/agents/solution/recommend,422,False,True,0,0,0,True,PASS,Missing retrieval rejected with controlled 422,S04/response.json
+S05,one malformed nested item,/agents/solution/recommend,500,False,True,0,0,1,True,FAIL,Malformed nested item triggers original component KeyError and 500; response hides traceback,S05/response.json

@@ -1,0 +1,13 @@
+{
+  "recorded_before_HTTP_at_utc": "2026-09-23T02:38:43.908669+00:00",
+  "mode": "selected",
+  "full_import_status": "Full app import blocked",
+  "error": {
+    "type": "ImportError",
+    "message": "DLL load failed while importing _batched_linalg: An Application Control policy has blocked this file."
+  },
+  "full_app_and_real_retrieval_scope": "Blocked; selected handler/schema/solution checks only",
+  "retrieval_fallback": "Explicit observer plus audit 503; no retrieval data or embedding/ranking replacement",
+  "HTTP_request_limit": 23,
+  "expected_result_file": "expected_result.md"
+}

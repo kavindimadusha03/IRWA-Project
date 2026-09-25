@@ -1,0 +1,142 @@
+{
+  "tables": {
+    "agentlog": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "category": {
+      "row_count": 8,
+      "rows_sha256": "4ddc74455a5623d0ef286eeb18214f2ab6f20ec60810ec6db45686c89b9b37e6"
+    },
+    "knowledgearticle": {
+      "row_count": 81,
+      "rows_sha256": "6c2490e483d0b3bf03b726dcc7f2025984e1fcad2b5925802a6a894dce108a4a"
+    },
+    "notification": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "passwordresettoken": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "securityevent": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "solutionfeedback": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "ticket": {
+      "row_count": 500,
+      "rows_sha256": "9e1be706eccf1fe8d01397215be75d876d8d3ce607045936ec15ce4ddd8c999b"
+    },
+    "ticketcitation": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "user": {
+      "row_count": 4,
+      "rows_sha256": "d5bf0a18364d641edbd0225cfb13d5b93ac3b30dc5963f2951971adcdb52fe06"
+    }
+  },
+  "fixtures": {
+    "article": {
+      "title": "IR14 role approval fixture",
+      "category": "Printers",
+      "doc_id": "AUDIT-IR14-DRAFT-001",
+      "source_type": "internal_kb",
+      "authoritative": false,
+      "updated_at": "2026-09-22T00:00:00",
+      "security_class": "internal",
+      "id": 81,
+      "content": "Synthetic audit note for testing knowledge approval. No troubleshooting action is requested.",
+      "status": "draft",
+      "author": "IR-14 synthetic fixture",
+      "created_at": "2026-09-22T00:00:00",
+      "supported_os": "Any"
+    },
+    "other_articles_sha256": "e8193c39b3da4b857671c83b50f88b17b6b792272967874b973158ddfaa6d7b7",
+    "categories": [
+      {
+        "id": 1,
+        "is_active": true,
+        "created_at": "2026-09-23T02:13:47.677274",
+        "name": "Accounts / Passwords",
+        "description": ""
+      },
+      {
+        "id": 2,
+        "is_active": true,
+        "created_at": "2026-09-23T02:13:47.677274",
+        "name": "Outlook / MFA",
+        "description": ""
+      },
+      {
+        "id": 3,
+        "is_active": true,
+        "created_at": "2026-09-23T02:13:47.677274",
+        "name": "Printers",
+        "description": ""
+      },
+      {
+        "id": 4,
+        "is_active": true,
+        "created_at": "2026-09-23T02:13:47.677274",
+        "name": "Remote Desktop",
+        "description": ""
+      },
+      {
+        "id": 5,
+        "is_active": true,
+        "created_at": "2026-09-23T02:13:47.677274",
+        "name": "Software Installation",
+        "description": ""
+      },
+      {
+        "id": 6,
+        "is_active": true,
+        "created_at": "2026-09-23T02:13:47.677274",
+        "name": "VPN",
+        "description": ""
+      },
+      {
+        "id": 7,
+        "is_active": true,
+        "created_at": "2026-09-23T02:13:47.677274",
+        "name": "Wi-Fi / DNS",
+        "description": ""
+      },
+      {
+        "id": 8,
+        "is_active": true,
+        "created_at": "2026-09-23T02:13:47.677274",
+        "name": "Windows / Updates",
+        "description": ""
+      }
+    ],
+    "users": [
+      {
+        "id": 1,
+        "role": "CUSTOMER",
+        "active": true
+      },
+      {
+        "id": 2,
+        "role": "IT_SUPPORT",
+        "active": true
+      },
+      {
+        "id": 3,
+        "role": "KNOWLEDGE_ANALYST",
+        "active": true
+      },
+      {
+        "id": 4,
+        "role": "ADMIN",
+        "active": true
+      }
+    ]
+  }
+}

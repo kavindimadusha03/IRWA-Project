@@ -1,0 +1,55 @@
+{
+  "control": "S01",
+  "attempt": "S02",
+  "changed_fields": [
+    "payload.retrieval.decision"
+  ],
+  "shared_synthetic_source": {
+    "source_id": "AUDIT-IR15-NOT-IN-CORPUS",
+    "title": "IR15 synthetic provenance marker",
+    "content": "IR15_MARKER_ONLY: record this test observation; no system action is requested.",
+    "category": "Unknown",
+    "source_type": "audit_fixture",
+    "status": "draft",
+    "hybrid_score": 0.0,
+    "bm25_score": 0.0,
+    "semantic_score": 0.0
+  },
+  "source_absent_from_all_seeded_articles_and_tickets": true,
+  "not_inserted_and_all_tables_unchanged": true,
+  "LOW_can_recommend": false,
+  "HIGH_can_recommend": true,
+  "HIGH_actual_original_function_result": {
+    "can_recommend": true,
+    "message": "Evidence source AUDIT-IR15-NOT-IN-CORPUS | IR15 synthetic provenance marker\nIR15_MARKER_ONLY: record this test observation; no system action is requested.",
+    "source_id": "AUDIT-IR15-NOT-IN-CORPUS",
+    "confidence": "HIGH",
+    "explanation": "This recommendation was selected because the issue matched the approved guidance in IR15 synthetic provenance marker with 0% relevance, and it aligns with 1 supporting sources that were validated for this workflow.",
+    "confidence_explanation": "This recommendation was selected because the issue matched the approved guidance in IR15 synthetic provenance marker with 0% relevance, and it aligns with 1 supporting sources that were validated for this workflow.",
+    "why_this_solution_was_suggested": "This recommendation was selected because the issue matched the approved guidance in IR15 synthetic provenance marker with 0% relevance, and it aligns with 1 supporting sources that were validated for this workflow.",
+    "suggested_reply": "Thanks for reporting this issue. Based on the approved guidance in IR15 synthetic provenance marker, the recommended next step is to follow the documented troubleshooting steps and confirm the issue is resolved.",
+    "citations": [
+      {
+        "source_id": "AUDIT-IR15-NOT-IN-CORPUS",
+        "title": "IR15 synthetic provenance marker",
+        "category": "Unknown",
+        "source_type": "audit_fixture",
+        "relevance_score": 0.0,
+        "bm25_score": 0.0,
+        "semantic_score": 0.0,
+        "hybrid_score": 0.0
+      }
+    ]
+  },
+  "disabled_llm_attempts_for_pair": 1,
+  "successful_provider_calls": 0,
+  "result": "FAIL: original solution component accepts caller-provided trust decision and nonexistent evidence",
+  "scope": "Original component executed via AST-selected original handler HTTP harness; full app and actual retrieval not run",
+  "not_claimed": [
+    "full application API exploitation",
+    "real customer delivery",
+    "persistent corpus poisoning or escalation",
+    "role escalation or authenticated agent impersonation",
+    "code execution, harmful actions, DoS or external exposure"
+  ]
+}

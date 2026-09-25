@@ -1,0 +1,5 @@
+id,method,endpoint,credentials_sent,status,location,body_bytes,database_unchanged,outcome,reason
+A01,GET,/home,False,303,/,0,True,PASS,Login redirect with empty body and no mutation
+A02,POST,/tickets/create,False,303,/,0,True,PASS,Login redirect with empty body and no mutation
+A03,POST,/agents/retrieval/search,False,200,,3284,True,FAIL,Internal retrieval source text returned
+A04,POST,/agents/knowledge/analyze,False,200,,384,True,FAIL,Knowledge-health aggregate data returned

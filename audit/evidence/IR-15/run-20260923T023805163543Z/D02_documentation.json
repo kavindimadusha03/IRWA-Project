@@ -1,0 +1,579 @@
+{
+  "method": "GET",
+  "path": "/openapi.json",
+  "status": 200,
+  "no_cookie_sent": true,
+  "body": {
+    "openapi": "3.1.0",
+    "info": {
+      "title": "KnowGap IR15 selected-handler audit",
+      "version": "1.0.0"
+    },
+    "paths": {
+      "/register": {
+        "get": {
+          "summary": "Register Page",
+          "operationId": "register_page_register_get",
+          "responses": {
+            "200": {
+              "description": "Successful Response",
+              "content": {
+                "text/html": {
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "post": {
+          "summary": "Register",
+          "operationId": "register_register_post",
+          "requestBody": {
+            "content": {
+              "application/x-www-form-urlencoded": {
+                "schema": {
+                  "$ref": "#/components/schemas/Body_register_register_post"
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "Successful Response",
+              "content": {
+                "application/json": {
+                  "schema": {}
+                }
+              }
+            },
+            "422": {
+              "description": "Validation Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/HTTPValidationError"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/forgot-password": {
+        "get": {
+          "summary": "Forgot Password Page",
+          "operationId": "forgot_password_page_forgot_password_get",
+          "responses": {
+            "200": {
+              "description": "Successful Response",
+              "content": {
+                "text/html": {
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "post": {
+          "summary": "Forgot Password",
+          "operationId": "forgot_password_forgot_password_post",
+          "requestBody": {
+            "content": {
+              "application/x-www-form-urlencoded": {
+                "schema": {
+                  "$ref": "#/components/schemas/Body_forgot_password_forgot_password_post"
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "Successful Response",
+              "content": {
+                "text/html": {
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "422": {
+              "description": "Validation Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/HTTPValidationError"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/reset-password": {
+        "get": {
+          "summary": "Reset Password Page",
+          "operationId": "reset_password_page_reset_password_get",
+          "parameters": [
+            {
+              "name": "token",
+              "in": "query",
+              "required": false,
+              "schema": {
+                "type": "string",
+                "default": "",
+                "title": "Token"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Successful Response",
+              "content": {
+                "text/html": {
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "422": {
+              "description": "Validation Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/HTTPValidationError"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "post": {
+          "summary": "Reset Password",
+          "operationId": "reset_password_reset_password_post",
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/x-www-form-urlencoded": {
+                "schema": {
+                  "$ref": "#/components/schemas/Body_reset_password_reset_password_post"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Successful Response",
+              "content": {
+                "application/json": {
+                  "schema": {}
+                }
+              }
+            },
+            "422": {
+              "description": "Validation Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/HTTPValidationError"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/profile": {
+        "get": {
+          "summary": "Profile Page",
+          "operationId": "profile_page_profile_get",
+          "responses": {
+            "200": {
+              "description": "Successful Response",
+              "content": {
+                "text/html": {
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "post": {
+          "summary": "Update Profile",
+          "operationId": "update_profile_profile_post",
+          "requestBody": {
+            "content": {
+              "application/x-www-form-urlencoded": {
+                "schema": {
+                  "$ref": "#/components/schemas/Body_update_profile_profile_post"
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "Successful Response",
+              "content": {
+                "application/json": {
+                  "schema": {}
+                }
+              }
+            },
+            "422": {
+              "description": "Validation Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/HTTPValidationError"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/login": {
+        "post": {
+          "summary": "Login",
+          "operationId": "login_login_post",
+          "requestBody": {
+            "content": {
+              "application/x-www-form-urlencoded": {
+                "schema": {
+                  "$ref": "#/components/schemas/Body_login_login_post"
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "Successful Response",
+              "content": {
+                "application/json": {
+                  "schema": {}
+                }
+              }
+            },
+            "422": {
+              "description": "Validation Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/HTTPValidationError"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/logout": {
+        "get": {
+          "summary": "Logout",
+          "operationId": "logout_logout_get",
+          "responses": {
+            "200": {
+              "description": "Successful Response",
+              "content": {
+                "application/json": {
+                  "schema": {}
+                }
+              }
+            }
+          }
+        }
+      },
+      "/agents/retrieval/search": {
+        "post": {
+          "tags": [
+            "agents"
+          ],
+          "summary": "Retrieval Search",
+          "operationId": "retrieval_search_agents_retrieval_search_post",
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AgentMessage"
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "Successful Response",
+              "content": {
+                "application/json": {
+                  "schema": {}
+                }
+              }
+            },
+            "422": {
+              "description": "Validation Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/HTTPValidationError"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/agents/solution/recommend": {
+        "post": {
+          "tags": [
+            "agents"
+          ],
+          "summary": "Solution Recommend",
+          "operationId": "solution_recommend_agents_solution_recommend_post",
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AgentMessage"
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "200": {
+              "description": "Successful Response",
+              "content": {
+                "application/json": {
+                  "schema": {}
+                }
+              }
+            },
+            "422": {
+              "description": "Validation Error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/HTTPValidationError"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "AgentMessage": {
+          "properties": {
+            "message_id": {
+              "type": "string",
+              "title": "Message Id"
+            },
+            "request_id": {
+              "type": "string",
+              "title": "Request Id"
+            },
+            "sender": {
+              "type": "string",
+              "title": "Sender"
+            },
+            "receiver": {
+              "type": "string",
+              "title": "Receiver"
+            },
+            "task": {
+              "type": "string",
+              "title": "Task"
+            },
+            "payload": {
+              "additionalProperties": true,
+              "type": "object",
+              "title": "Payload"
+            }
+          },
+          "type": "object",
+          "required": [
+            "message_id",
+            "request_id",
+            "sender",
+            "receiver",
+            "task",
+            "payload"
+          ],
+          "title": "AgentMessage"
+        },
+        "Body_forgot_password_forgot_password_post": {
+          "properties": {
+            "username": {
+              "type": "string",
+              "title": "Username"
+            }
+          },
+          "type": "object",
+          "required": [
+            "username"
+          ],
+          "title": "Body_forgot_password_forgot_password_post"
+        },
+        "Body_login_login_post": {
+          "properties": {
+            "username": {
+              "type": "string",
+              "title": "Username"
+            },
+            "password": {
+              "type": "string",
+              "title": "Password"
+            }
+          },
+          "type": "object",
+          "required": [
+            "username",
+            "password"
+          ],
+          "title": "Body_login_login_post"
+        },
+        "Body_register_register_post": {
+          "properties": {
+            "username": {
+              "type": "string",
+              "title": "Username"
+            },
+            "full_name": {
+              "type": "string",
+              "title": "Full Name"
+            },
+            "password": {
+              "type": "string",
+              "title": "Password"
+            },
+            "confirm_password": {
+              "type": "string",
+              "title": "Confirm Password"
+            }
+          },
+          "type": "object",
+          "required": [
+            "username",
+            "full_name",
+            "password",
+            "confirm_password"
+          ],
+          "title": "Body_register_register_post"
+        },
+        "Body_reset_password_reset_password_post": {
+          "properties": {
+            "token": {
+              "type": "string",
+              "title": "Token"
+            },
+            "password": {
+              "type": "string",
+              "title": "Password"
+            },
+            "confirm_password": {
+              "type": "string",
+              "title": "Confirm Password"
+            }
+          },
+          "type": "object",
+          "required": [
+            "token",
+            "password",
+            "confirm_password"
+          ],
+          "title": "Body_reset_password_reset_password_post"
+        },
+        "Body_update_profile_profile_post": {
+          "properties": {
+            "full_name": {
+              "type": "string",
+              "title": "Full Name"
+            },
+            "current_password": {
+              "type": "string",
+              "title": "Current Password",
+              "default": ""
+            },
+            "new_password": {
+              "type": "string",
+              "title": "New Password",
+              "default": ""
+            },
+            "confirm_password": {
+              "type": "string",
+              "title": "Confirm Password",
+              "default": ""
+            }
+          },
+          "type": "object",
+          "required": [
+            "full_name"
+          ],
+          "title": "Body_update_profile_profile_post"
+        },
+        "HTTPValidationError": {
+          "properties": {
+            "detail": {
+              "items": {
+                "$ref": "#/components/schemas/ValidationError"
+              },
+              "type": "array",
+              "title": "Detail"
+            }
+          },
+          "type": "object",
+          "title": "HTTPValidationError"
+        },
+        "ValidationError": {
+          "properties": {
+            "loc": {
+              "items": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "integer"
+                  }
+                ]
+              },
+              "type": "array",
+              "title": "Location"
+            },
+            "msg": {
+              "type": "string",
+              "title": "Message"
+            },
+            "type": {
+              "type": "string",
+              "title": "Error Type"
+            }
+          },
+          "type": "object",
+          "required": [
+            "loc",
+            "msg",
+            "type"
+          ],
+          "title": "ValidationError"
+        }
+      }
+    }
+  },
+  "content_type": "application/json",
+  "scope": "selected",
+  "note": "Actual audit-instance document; not a browser screenshot or proof of full-app routes"
+}

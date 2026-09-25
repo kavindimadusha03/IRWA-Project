@@ -1,0 +1,88 @@
+{
+  "scope": "Original-router HTTP integration; not full app.main runtime",
+  "target_checks": 15,
+  "passed": 15,
+  "denied_checks": 12,
+  "allowed_controls": 3,
+  "role_results": [
+    {
+      "role": "CUSTOMER",
+      "login_status": 303,
+      "profile_status": 200,
+      "targets": 3,
+      "stored_identity_confirmed": true,
+      "changed_tables": [],
+      "final_article_status": "draft",
+      "final_category_count": 0,
+      "other_80_articles_unchanged": true,
+      "all_accounts_and_500_tickets_unchanged": true,
+      "server_stopped": true
+    },
+    {
+      "role": "IT_SUPPORT",
+      "login_status": 303,
+      "profile_status": 200,
+      "targets": 3,
+      "stored_identity_confirmed": true,
+      "changed_tables": [],
+      "final_article_status": "draft",
+      "final_category_count": 0,
+      "other_80_articles_unchanged": true,
+      "all_accounts_and_500_tickets_unchanged": true,
+      "server_stopped": true
+    },
+    {
+      "role": "KNOWLEDGE_ANALYST",
+      "login_status": 303,
+      "profile_status": 200,
+      "targets": 3,
+      "stored_identity_confirmed": true,
+      "changed_tables": [
+        "knowledgearticle"
+      ],
+      "final_article_status": "approved",
+      "final_category_count": 0,
+      "other_80_articles_unchanged": true,
+      "all_accounts_and_500_tickets_unchanged": true,
+      "server_stopped": true
+    },
+    {
+      "role": "ADMIN",
+      "login_status": 303,
+      "profile_status": 200,
+      "targets": 3,
+      "stored_identity_confirmed": true,
+      "changed_tables": [
+        "category"
+      ],
+      "final_article_status": "draft",
+      "final_category_count": 9,
+      "other_80_articles_unchanged": true,
+      "all_accounts_and_500_tickets_unchanged": true,
+      "server_stopped": true
+    },
+    {
+      "role": "AUDIT_VIEWER",
+      "login_status": 303,
+      "profile_status": 200,
+      "targets": 3,
+      "stored_identity_confirmed": true,
+      "changed_tables": [],
+      "final_article_status": "draft",
+      "final_category_count": 0,
+      "other_80_articles_unchanged": true,
+      "all_accounts_and_500_tickets_unchanged": true,
+      "server_stopped": true
+    }
+  ],
+  "article_changed_fields_for_analyst_only": [
+    "authoritative",
+    "updated_at",
+    "status"
+  ],
+  "ordinary_field_claims_ignored": true,
+  "unsupported_fixture": "Active AUDIT_VIEWER account directly provisioned only in its own private DB, normally logged in, profile 200, all three privileged requests 403. No admin role-assignment API bypass inferred.",
+  "GET_admin_observation": "ADMIN page created eight expected categories after guard; no other role did. Captured expected behavior, not independently a vulnerability finding or CSRF test.",
+  "new_vulnerability_identified": false,
+  "existing_VULN_IR13_01": "Open; unchanged; not remediated or retested by this case"
+}

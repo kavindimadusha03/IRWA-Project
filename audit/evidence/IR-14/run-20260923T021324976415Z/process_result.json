@@ -1,0 +1,71 @@
+{
+  "case": "IR-14",
+  "finished_at_utc": "2026-09-23T02:13:53.536528+00:00",
+  "workers": [
+    {
+      "role": "CUSTOMER",
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 8.093,
+      "status": "Executed; awaiting role and mutation review",
+      "login_requests": 1,
+      "profile_requests": 1,
+      "target_requests": 3,
+      "server_stopped": true
+    },
+    {
+      "role": "IT_SUPPORT",
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 5.463,
+      "status": "Executed; awaiting role and mutation review",
+      "login_requests": 1,
+      "profile_requests": 1,
+      "target_requests": 3,
+      "server_stopped": true
+    },
+    {
+      "role": "KNOWLEDGE_ANALYST",
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 5.125,
+      "status": "Executed; awaiting role and mutation review",
+      "login_requests": 1,
+      "profile_requests": 1,
+      "target_requests": 3,
+      "server_stopped": true
+    },
+    {
+      "role": "ADMIN",
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 4.386,
+      "status": "Executed; awaiting role and mutation review",
+      "login_requests": 1,
+      "profile_requests": 1,
+      "target_requests": 3,
+      "server_stopped": true
+    },
+    {
+      "role": "AUDIT_VIEWER",
+      "process_exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 5.2,
+      "status": "Executed; awaiting role and mutation review",
+      "login_requests": 1,
+      "profile_requests": 1,
+      "target_requests": 3,
+      "server_stopped": true
+    }
+  ],
+  "completed_worker_count": 5,
+  "total_HTTP_requests": 25,
+  "target_requests": 15,
+  "elapsed_seconds": 28.276,
+  "source_files_unchanged": true,
+  "original_database_main_file_unchanged": true,
+  "prior_evidence_unchanged": true,
+  "evidence_directory": "audit/evidence/IR-14/run-20260923T021324976415Z",
+  "integrity_limit": "Main-file hash does not cover unrelated concurrent SQLite WAL writes",
+  "outcome": "Unassessed; awaiting review"
+}
