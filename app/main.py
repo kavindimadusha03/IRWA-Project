@@ -83,6 +83,13 @@ def ticket_result(ticket_id: int, request: Request, session: Session = Depends(g
         raise HTTPException(status_code=403, detail="Not allowed")
     logs = session.exec(select(AgentLog).order_by(AgentLog.id.desc())).all()
     matching_logs = [log for log in logs if ticket.canonical_issue and ticket.canonical_issue[:40] in log.payload_summary]
+    request_id = matching_logs[0].request_id if matching_logs else None
+    if request_id:
+        matching_logs = session.exec(
+            select(AgentLog)
+            .where(AgentLog.request_id == request_id)
+            .order_by(AgentLog.id.asc())
+        ).all()
     feedback = session.exec(
         select(SolutionFeedback).where(
             SolutionFeedback.ticket_id == ticket.id,
@@ -102,6 +109,7 @@ def ticket_result(ticket_id: int, request: Request, session: Session = Depends(g
             "user": user,
             "ticket": ticket,
             "logs": matching_logs[:10],
+            "trace_request_id": request_id,
             "feedback": feedback,
             "citations": citations,
             "notifications": notifications,
@@ -222,7 +230,15 @@ def dashboard_page(request: Request, session: Session = Depends(get_session)):
     if not user or user.role != "KNOWLEDGE_ANALYST":
         raise HTTPException(status_code=403, detail="Knowledge Analyst role required")
     intelligence = analyze_knowledge_health(session)
-    logs = session.exec(select(AgentLog).order_by(AgentLog.id.desc())).all()[:50]
+    latest_log = session.exec(select(AgentLog).order_by(AgentLog.id.desc())).first()
+    logs = []
+    trace_request_id = latest_log.request_id if latest_log else None
+    if trace_request_id:
+        logs = session.exec(
+            select(AgentLog)
+            .where(AgentLog.request_id == trace_request_id)
+            .order_by(AgentLog.id.asc())
+        ).all()
     security_events = session.exec(select(SecurityEvent).order_by(SecurityEvent.id.desc())).all()[:50]
     return templates.TemplateResponse(
         "dashboard.html",
@@ -234,6 +250,7 @@ def dashboard_page(request: Request, session: Session = Depends(get_session)):
             "min_cluster_tickets": MIN_CLUSTER_TICKETS,
             "max_cluster_sample": MAX_CLUSTER_TICKETS,
             "logs": logs,
+            "trace_request_id": trace_request_id,
             "security_events": security_events,
             "evaluation_metrics": build_evaluation_metrics(),
         },
