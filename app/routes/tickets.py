@@ -1,10 +1,11 @@
 from datetime import datetime
 from fastapi import APIRouter, Depends, Form, HTTPException, Request
 from fastapi.responses import RedirectResponse
+from sqlalchemy.exc import OperationalError
 from sqlmodel import Session, select
 from app.database import get_session
 from app.models import SolutionFeedback, Ticket
-from app.notifications import create_resolution_notification
+from app.notifications import create_escalation_notifications, create_resolution_notification
 from app.routes.auth import current_user_from_request
 from app.agents.coordinator import process_new_ticket
 
@@ -47,9 +48,18 @@ def create_ticket(
         description=description.strip(),
     )
     session.add(ticket)
-    session.commit()
-    session.refresh(ticket)
-    process_new_ticket(session, ticket)
+    try:
+        session.commit()
+        session.refresh(ticket)
+        process_new_ticket(session, ticket)
+    except OperationalError as error:
+        session.rollback()
+        if "database is locked" in str(error).lower():
+            raise HTTPException(
+                status_code=503,
+                detail="The ticket database is temporarily busy. Please wait a moment and submit the ticket again.",
+            ) from error
+        raise
     return RedirectResponse(url=f"/tickets/{ticket.id}", status_code=303)
 
 
@@ -77,16 +87,44 @@ def submit_clarification(
     ticket.status = "REANALYZING"
     ticket.updated_at = datetime.utcnow()
     session.add(ticket)
-    session.commit()
     try:
-        process_new_ticket(session, ticket, additional_context=answers)
+        session.commit()
+        result = process_new_ticket(session, ticket, additional_context=answers)
+    except OperationalError as error:
+        session.rollback()
+        if "database is locked" in str(error).lower():
+            raise HTTPException(
+                status_code=503,
+                detail="The ticket database is temporarily busy. Please wait a moment and submit the clarification again.",
+            ) from error
+        raise
     except Exception:
+        session.rollback()
         ticket.status = "ESCALATED"
         ticket.decision_explanation = "Reanalysis could not complete safely. The ticket has been escalated to IT Support."
         ticket.updated_at = datetime.utcnow()
         session.add(ticket)
         session.commit()
         return RedirectResponse(url=f"/tickets/{ticket.id}", status_code=303)
+    if not result or ticket.status in {"CLARIFICATION_REQUIRED", "REANALYZING"}:
+        ticket.status = "ESCALATED"
+        ticket.source_used = ""
+        ticket.recommended_solution = (
+            "The submitted clarification was recorded, but the available evidence is still not sufficient "
+            "for a safe automated recommendation. IT Support has been asked to review this ticket."
+        )
+        ticket.decision_explanation = (
+            f"{ticket.decision_explanation}\n\n"
+            "Clarification did not establish enough applicable evidence. The ticket was escalated to IT Support."
+        )
+        ticket.suggested_reply = (
+            "Thanks for the additional information. Your ticket has been escalated to IT Support for human review "
+            "because the available evidence was not sufficient for a safe automated recommendation."
+        )
+        ticket.updated_at = datetime.utcnow()
+        session.add(ticket)
+        session.commit()
+        create_escalation_notifications(session, ticket)
     return RedirectResponse(url=f"/tickets/{ticket.id}", status_code=303)
 
 

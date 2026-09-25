@@ -79,15 +79,220 @@ select {
   font: inherit;
 }
 
-.clarification-form {
+/* ===== KNOWGAP AI: CLARIFICATION FORM ===== */
+
+form.clarification-form {
   display: grid;
-  gap: 10px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 20px;
+  width: 100%;
+  margin-top: 24px;
 }
 
-.clarification-form textarea {
+.clarification-form,
+.clarification-form * {
+  box-sizing: border-box;
+}
+
+.clarification-form .clarification-field {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  gap: 12px;
+  min-width: 0;
+  padding: 20px 22px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.clarification-form .clarification-field:focus-within {
+  border-color: #93c5fd;
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.08);
+}
+
+.clarification-form .clarification-field > label {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
   width: 100%;
-  min-height: 96px;
+  margin: 0;
+  color: #1e293b;
+  font-size: 15px;
+  font-weight: 650;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.clarification-form .clarification-field > label > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.clarification-form .clarification-field label small {
+  align-self: center;
+  margin-left: 4px;
+  padding: 4px 9px;
+  border-radius: 20px;
+  background: #f1f5f9;
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.clarification-form .clarification-field textarea {
+  grid-column: 1;
+  grid-row: 2;
+  display: block;
+  width: 100% !important;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 108px;
+  margin: 0;
+  padding: 15px 17px;
+  border: 1.5px solid #dbe3ef;
+  border-radius: 12px;
+  outline: none;
+  background: #f8fafc;
+  color: #1e293b;
+  font: inherit;
+  font-size: 14px;
+  line-height: 1.7;
   resize: vertical;
+  transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.clarification-form .clarification-field textarea:hover {
+  border-color: #93c5fd;
+}
+
+.clarification-form .clarification-field textarea:focus {
+  border-color: #3b82f6;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.12);
+}
+
+.clarification-form .clarification-field-secondary {
+  background: #f8fafc;
+  border-style: dashed;
+}
+
+.clarification-form .clarification-field-secondary textarea {
+  min-height: 85px;
+  background: #ffffff;
+}
+
+.clarification-form .clarification-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 18px;
+  padding: 18px 20px;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 14px;
+}
+
+.clarification-form .clarification-actions > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1 1 240px;
+  color: #475569;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.clarification-form .clarification-actions > span i {
+  color: #16a34a;
+  font-size: 18px;
+}
+
+.clarification-form .btn-primary-modern {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 13px 24px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #2563eb, #397cf4);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.18);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.clarification-form .btn-primary-modern:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+.clarification-form .btn-primary-modern:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 3px;
+}
+
+.clarification-form .btn-primary-modern:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@media (max-width: 768px) {
+  form.clarification-form {
+    gap: 14px;
+  }
+
+  .clarification-form .clarification-field {
+    padding: 16px;
+  }
+
+  .clarification-form .clarification-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .clarification-form .clarification-actions > span {
+    flex: initial;
+  }
+
+  .clarification-form .btn-primary-modern {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .clarification-form .clarification-field {
+    padding: 14px;
+  }
+
+  .clarification-form .clarification-field > label {
+    font-size: 13px;
+  }
+
+  .clarification-form .clarification-field textarea {
+    min-height: 95px;
+    font-size: 14px;
+  }
 }
 
 .understood-issue {
@@ -106,6 +311,14 @@ select {
 
 .understood-issue span {
   color: var(--slate-600);
+}
+
+.trace-outcome span {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
 }
 
 a {

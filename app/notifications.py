@@ -4,7 +4,7 @@ from typing import List
 
 from sqlmodel import Session, select
 
-from app.models import Notification, Ticket
+from app.models import Notification, Ticket, User
 
 
 def get_user_notifications(session: Session, user_id: int, limit: int = 8) -> List[Notification]:
@@ -47,3 +47,35 @@ def create_resolution_notification(session: Session, ticket: Ticket) -> Notifica
     session.commit()
     session.refresh(notification)
     return notification
+
+
+def create_escalation_notifications(session: Session, ticket: Ticket) -> int:
+    """Notify active IT Support users when a clarification cannot be resolved safely."""
+    support_users = session.exec(
+        select(User).where(User.role == "IT_SUPPORT", User.is_active == True)
+    ).all()
+    created = 0
+    for user in support_users:
+        existing = session.exec(
+            select(Notification).where(
+                Notification.user_id == user.id,
+                Notification.ticket_id == ticket.id,
+                Notification.notification_type == "ticket_escalated",
+            )
+        ).first()
+        if existing:
+            continue
+        session.add(Notification(
+            user_id=user.id,
+            ticket_id=ticket.id,
+            title="Ticket escalated for review",
+            message=(
+                f"Ticket {ticket.ticket_code} requires IT Support review after clarification. "
+                "Review the customer's submitted answers and evidence history."
+            ),
+            notification_type="ticket_escalated",
+        ))
+        created += 1
+    if created:
+        session.commit()
+    return created
