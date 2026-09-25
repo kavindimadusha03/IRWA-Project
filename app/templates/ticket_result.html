@@ -166,6 +166,13 @@
         <span class="section-eyebrow">Explainable workflow</span>
         <h3>Agent trace</h3>
         <p>See how the agent team handled this request.</p>
+        {% if trace_request_id %}<small>Request: <strong>{{ trace_request_id }}</strong></small>{% endif %}
+        <div class="trace-outcome {% if ticket.status == 'ESCALATED' %}trace-outcome-escalated{% endif %}">
+          <strong>Final outcome: {{ ticket.status }}</strong>
+          {% if ticket.status == 'ESCALATED' %}
+          <span>{{ ticket.decision_explanation or 'The available evidence was not strong enough for a safe automated recommendation.' }}</span>
+          {% endif %}
+        </div>
       </div>
       <span class="panel-icon panel-icon-primary"><i class="bi bi-diagram-3" aria-hidden="true"></i></span>
     </div>
