@@ -46,6 +46,39 @@ def clarification_response(analysis: Dict) -> Dict:
     }
 
 
+def _suggest_reply(query: str, evidence_item: Dict, recommendation: str) -> str:
+    source_type = evidence_item.get("source_type", "eligible evidence").replace("_", " ")
+    source_id = evidence_item.get("source_id", "the cited source")
+    system = (
+        "You are an IT support communication assistant. "
+        "Write one concise, professional suggested reply to the user. "
+        "Use only the supplied issue, recommendation, and evidence. "
+        "Do not claim the issue is resolved, independently verified, or approved unless the evidence explicitly says so. "
+        "Do not add troubleshooting steps, diagnoses, source names, or promises that are not supplied. "
+        "Ask the user to confirm the result after following the documented recommendation. "
+        "Return only the reply text, with no heading or quotation marks."
+    )
+    user = (
+        f"User issue:\n{query}\n\n"
+        f"Recommendation:\n{recommendation}\n\n"
+        f"Evidence source type: {source_type}\n"
+        f"Evidence source ID: {source_id}\n"
+        f"Evidence title: {evidence_item.get('title', '')}\n"
+        f"Evidence content:\n{evidence_item.get('content', '')}"
+    )
+    try:
+        reply = llm.chat(system, user, temperature=0.2).strip()
+        if reply:
+            return reply
+    except Exception:
+        pass
+
+    return (
+        "Thanks for reporting this issue. Please follow the documented recommendation and let IT Support know "
+        "whether the reported problem continues."
+    )
+
+
 def recommend_solution(query: str, retrieval: Dict) -> Dict:
     decision = retrieval.get("decision", "LOW")
     items = retrieval.get("items", [])
@@ -143,11 +176,7 @@ def recommend_solution(query: str, retrieval: Dict) -> Dict:
     except Exception:
         message = evidence
 
-    source_label = "approved knowledge article" if best.get("source_type") == "internal_kb" else "resolved support record"
-    suggested_reply = (
-        f"Thanks for reporting this issue. Based on the {source_label} {best.get('title', 'the relevant source')}, "
-        f"the recommended next step is to follow the documented troubleshooting steps and confirm the issue is resolved."
-    )
+    suggested_reply = _suggest_reply(query, best, message.strip())
 
     return {
         "can_recommend": True,

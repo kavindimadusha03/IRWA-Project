@@ -1,14 +1,14 @@
 from starlette.requests import Request
 from fastapi import HTTPException
-from sqlmodel import Session, SQLModel, create_engine
+from sqlmodel import Session, SQLModel, create_engine, select
 
 from app.agents import coordinator
 from app.agents import retrieval_agent
 from app.agents.retrieval_agent import search_knowledge
 from app.agents.solution_agent import recommend_solution
 from app.agents.ticket_agent import analyze_ticket, build_clarified_issue
-from app.models import KnowledgeArticle, Ticket, User
-from app.routes import agents
+from app.models import KnowledgeArticle, Notification, Ticket, User
+from app.routes import agents, tickets as ticket_routes
 from app.schemas import AgentMessage
 from app.services.auth import create_access_token
 
@@ -267,6 +267,49 @@ def test_ir_13_anonymous_sensitive_agent_access_is_rejected():
             assert error.status_code == 401
         else:
             raise AssertionError("anonymous agent access was accepted")
+
+
+def test_submitted_clarification_escalates_and_notifies_it_support(monkeypatch):
+    engine = _engine()
+    with Session(engine) as session:
+        customer = User(username="clarification-customer", full_name="Customer", hashed_password="x", role="CUSTOMER")
+        support = User(username="clarification-support", full_name="Support", hashed_password="x", role="IT_SUPPORT")
+        session.add_all([customer, support])
+        session.commit()
+        session.refresh(customer)
+        ticket = Ticket(
+            ticket_code="TCK-ESCALATE-CLARIFICATION",
+            user_id=customer.id,
+            title="Windows blue screen error 0x00000124",
+            description="Windows blue screen error 0x00000124",
+            status="CLARIFICATION_REQUIRED",
+        )
+        session.add(ticket)
+        session.commit()
+        session.refresh(ticket)
+        monkeypatch.setattr(
+            ticket_routes,
+            "process_new_ticket",
+            lambda session, ticket, additional_context: None,
+        )
+        token = create_access_token(customer.id, customer.username, customer.role)
+        response = ticket_routes.submit_clarification(
+            ticket.id,
+            _request(token),
+            answers="",
+            answer_1="It happens during startup after a Windows update.",
+            answer_2="Windows 11 laptop.",
+            answer_3="No other services are affected.",
+            session=session,
+        )
+        session.refresh(ticket)
+        assert response.status_code == 303
+        assert ticket.status == "ESCALATED"
+        notification = session.exec(
+            select(Notification).where(Notification.ticket_id == ticket.id)
+        ).first()
+        assert notification is not None
+        assert notification.notification_type == "ticket_escalated"
 
 
 def test_ir_14_and_ir_15_roles_and_fabricated_evidence_are_rejected(monkeypatch):

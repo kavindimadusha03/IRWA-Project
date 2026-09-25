@@ -67,6 +67,34 @@ def test_recommend_solution_includes_explanation_and_reply():
     assert "suggested_reply" in result and result["suggested_reply"]
 
 
+def test_suggested_reply_is_generated_from_current_issue_and_evidence(monkeypatch):
+    prompts = []
+
+    def fake_chat(system, user, temperature=0.1):
+        prompts.append((system, user))
+        return "Please update the approved VPN client and tell IT Support whether the VPN remains connected."
+
+    monkeypatch.setattr("app.agents.solution_agent.llm.chat", fake_chat)
+    result = recommend_solution("VPN disconnects after login on Windows 11", {
+        "decision": "HIGH",
+        "items": [{
+            "source_id": "KB-VPN-WIN11",
+            "title": "Windows 11 VPN disconnects after login",
+            "content": "Update the approved VPN client and restart it.",
+            "category": "VPN",
+            "source_type": "internal_kb",
+            "status": "approved",
+            "supported_os": "Windows 11",
+            "hybrid_score": 0.9,
+        }],
+    })
+
+    assert result["suggested_reply"].startswith("Please update the approved VPN client")
+    assert len(prompts) == 2
+    assert all("KB-VPN-WIN11" in prompt[1] for prompt in prompts)
+    assert all("VPN disconnects after login" in prompt[1] for prompt in prompts)
+
+
 def test_normalize_query_for_search_handles_common_typo_query():
     corpus = [
         "Wi-Fi connected but no internet access",
