@@ -1,5 +1,12 @@
+import logging
 from typing import Dict
 from app.services.llm import llm
+
+logger = logging.getLogger(__name__)
+
+
+def _source_type(value: object) -> str:
+    return str(value or "").strip().lower().replace(" ", "_")
 
 
 def _item_applicable(query: str, item: Dict) -> bool:
@@ -71,7 +78,7 @@ def _suggest_reply(query: str, evidence_item: Dict, recommendation: str) -> str:
         if reply:
             return reply
     except Exception:
-        pass
+        logger.exception("[SOLUTION_AGENT] Suggested reply LLM error source=%s", source_id)
 
     return (
         "Thanks for reporting this issue. Please follow the documented recommendation and let IT Support know "
@@ -82,8 +89,19 @@ def _suggest_reply(query: str, evidence_item: Dict, recommendation: str) -> str:
 def recommend_solution(query: str, retrieval: Dict) -> Dict:
     decision = retrieval.get("decision", "LOW")
     items = retrieval.get("items", [])
+    logger.info(
+        "[SOLUTION_AGENT] Starting recommendation decision=%s items=%d best_score=%s",
+        decision,
+        len(items),
+        retrieval.get("best_score"),
+    )
 
     if decision != "HIGH" or not items:
+        logger.info(
+            "[SOLUTION_AGENT] Automatic recommendation gate closed decision=%s items=%d; LLM not called",
+            decision,
+            len(items),
+        )
         explanation = (
             "No eligible authoritative source met the reliability threshold for this issue. "
             "The search score was too weak or the evidence was incomplete, so a human specialist should review it."
@@ -106,13 +124,19 @@ def recommend_solution(query: str, retrieval: Dict) -> Dict:
     eligible_items = [
         item for item in items
         if item.get("status") in {"approved", "resolved"}
-        and item.get("source_type") in {"internal_kb", "resolved_ticket"}
+        and _source_type(item.get("source_type")) in {"internal_kb", "resolved_ticket"}
         and _item_applicable(query, item)
         and item.get("applicability", {}).get("source_eligible", True)
         and item.get("applicability", {}).get("symptom_applicable", True)
         and item.get("applicability", {}).get("operating_system_applicable", True)
         and item.get("applicability", {}).get("evidence_sufficient", True)
     ]
+    logger.info(
+        "[SOLUTION_AGENT] Evidence eligibility retrieved=%d eligible=%d sources=%s",
+        len(items),
+        len(eligible_items),
+        [item.get("source_id") for item in eligible_items],
+    )
     if not eligible_items:
         return clarification_response({"ambiguity_reasons": ["No eligible authoritative source was available."], "clarification_questions": []}) | {
             "confidence": decision,
@@ -175,8 +199,11 @@ def recommend_solution(query: str, retrieval: Dict) -> Dict:
     )
 
     try:
+        logger.info("[SOLUTION_AGENT] Calling LLM source=%s", source_id)
         message = llm.chat(system, user, temperature=0.1)
+        logger.info("[SOLUTION_AGENT] LLM returned response length=%d", len(message or ""))
     except Exception:
+        logger.exception("[SOLUTION_AGENT] LLM error source=%s", source_id)
         message = evidence
 
     suggested_reply = _suggest_reply(query, best, message.strip())

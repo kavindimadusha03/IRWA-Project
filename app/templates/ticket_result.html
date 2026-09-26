@@ -206,10 +206,16 @@
         </div>
         <button class="copy-button" id="copySolution" type="button"><i class="bi bi-copy" aria-hidden="true"></i> Copy</button>
       </div>
+      <div class="recommendation-meta" aria-label="Recommendation details">
+        <span><small>Decision</small><strong>{{ retrieval_decision(ticket.retrieval_confidence, high_confidence_threshold, uncertain_threshold) }}</strong></span>
+        <span><small>Ranking score</small><strong>{{ '%.2f' | format(ticket.retrieval_confidence) }}</strong></span>
+        <span><small>Source</small><strong>{{ ticket.source_used or 'No reliable source' }}</strong></span>
+      </div>
+      <div class="solution-heading"><i class="bi bi-list-check" aria-hidden="true"></i><strong>Recommended solution</strong><span>Follow the documented steps, then confirm whether they resolved the issue.</span></div>
       <div class="solution-text" id="solutionText">{{ ticket.recommended_solution }}</div>
       <div class="explanation-box">
         <strong>Why this solution was suggested</strong>
-        <p>{{ display_decision_explanation or 'The ranking score reflects document matching after source and metadata adjustments; it is not a probability that the solution is correct.' }}</p>
+        <p>{{ display_decision_explanation or 'The recommendation was generated from the selected evidence source.' }}</p>
       </div>
       {% if ticket.suggested_reply %}
       <div class="suggested-reply-box">
