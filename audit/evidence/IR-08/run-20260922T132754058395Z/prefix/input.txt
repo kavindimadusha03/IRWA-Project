@@ -1,3 +1,0 @@
-IR-08 / prefix
-Title: Windows blue screen report
-Description: Windows blue screen error error: 0x00000124

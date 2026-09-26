@@ -1,1 +1,0 @@
-{"detail":"AUDIT_IR15_BOUNDARY_ONLY: retrieval backend unavailable; no ranking executed"}

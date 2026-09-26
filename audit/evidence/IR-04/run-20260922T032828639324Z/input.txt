@@ -1,3 +1,0 @@
-Test: IR-04 - Unknown / Unsupported Query
-Title: Laptop battery swelling after charging
-Description: My laptop battery is swelling after charging.
