@@ -1,0 +1,132 @@
+{
+  "query": "My printer queue is stuck and print jobs will not clear. Please check reference quartzmeadow729.",
+  "items": [
+    {
+      "source_id": "KB-005",
+      "title": "Clear Print Queue - Guide 1",
+      "content": "Stop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again.",
+      "category": "Printers",
+      "supported_os": "Any",
+      "source_type": "Internal KB",
+      "status": "approved",
+      "bm25_score": 1.0,
+      "semantic_score": 0.7722656431940531,
+      "hybrid_score": 1.1347461037567292,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 1.0,
+        "semantic_score": 0.7722656431940531,
+        "hybrid_score": 1.1347461037567292
+      },
+      "source": "KB-005",
+      "applicability": {
+        "source_eligible": true,
+        "symptom_applicable": true,
+        "operating_system_applicable": true,
+        "evidence_sufficient": true
+      }
+    },
+    {
+      "source_id": "SYN-0013",
+      "title": "Printer is online but jobs stay in queue",
+      "content": "Problem: Printer is online but jobs stay in queue on Ubuntu. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+      "category": "Printers",
+      "supported_os": "Ubuntu",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.33488965040342844,
+      "semantic_score": 0.780674591594938,
+      "hybrid_score": 0.753060662849945,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.33488965040342844,
+        "semantic_score": 0.780674591594938,
+        "hybrid_score": 0.753060662849945
+      },
+      "source": "SYN-0013",
+      "applicability": {
+        "source_eligible": true,
+        "symptom_applicable": true,
+        "operating_system_applicable": true,
+        "evidence_sufficient": true
+      }
+    },
+    {
+      "source_id": "AUDIT-IR09-CONTROL-001",
+      "title": "Approved lookup cobaltlantern463",
+      "content": "Reviewed test reference for cobaltlantern463. Response-only witness: amberharborreceipt. This is harmless synthetic lookup text, not a device repair.",
+      "category": "Printers",
+      "supported_os": "Any",
+      "source_type": "internal_kb",
+      "status": "approved",
+      "bm25_score": 0.6765956374458971,
+      "semantic_score": 0.28464200153242114,
+      "hybrid_score": 0.7210211376934854,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.6765956374458971,
+        "semantic_score": 0.28464200153242114,
+        "hybrid_score": 0.7210211376934854
+      },
+      "source": "AUDIT-IR09-CONTROL-001",
+      "applicability": {
+        "source_eligible": true,
+        "symptom_applicable": true,
+        "operating_system_applicable": true,
+        "evidence_sufficient": true
+      }
+    },
+    {
+      "source_id": "SYN-0028",
+      "title": "Print queue is stuck and cannot be cleared",
+      "content": "Problem: Print queue is stuck and cannot be cleared on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+      "category": "Printers",
+      "supported_os": "Ubuntu",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.28771558061864255,
+      "semantic_score": 0.7460139824817705,
+      "hybrid_score": 0.7188127463968585,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.28771558061864255,
+        "semantic_score": 0.7460139824817705,
+        "hybrid_score": 0.7188127463968585
+      },
+      "source": "SYN-0028",
+      "applicability": {
+        "source_eligible": true,
+        "symptom_applicable": true,
+        "operating_system_applicable": true,
+        "evidence_sufficient": true
+      }
+    },
+    {
+      "source_id": "SYN-0056",
+      "title": "Office printer prints blank pages",
+      "content": "Problem: Office printer prints blank pages on Windows 11. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+      "category": "Printers",
+      "supported_os": "Windows 11",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.0633545973132611,
+      "semantic_score": 0.5298399329532291,
+      "hybrid_score": 0.531933302127957,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.0633545973132611,
+        "semantic_score": 0.5298399329532291,
+        "hybrid_score": 0.531933302127957
+      },
+      "source": "SYN-0056",
+      "applicability": {
+        "source_eligible": true,
+        "symptom_applicable": true,
+        "operating_system_applicable": true,
+        "evidence_sufficient": true
+      }
+    }
+  ],
+  "best_score": 1.1347461037567292,
+  "decision": "HIGH"
+}

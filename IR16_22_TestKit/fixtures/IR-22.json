@@ -1,0 +1,9 @@
+{
+  "id": "IR-22",
+  "title": "Agent-message tampering and citation integrity",
+  "objective": "Determine whether downstream solution generation validates retrieval evidence provenance.",
+  "input": "Copy a legitimate retrieval response in an isolated component test. Alter one source ID, source status or content in the copied message before passing it to the downstream solution component.",
+  "expected": "Manipulated evidence must not become trusted source attribution or an unsupported recommendation. Final citations should match verified source records.",
+  "procedure": "Inspect the real internal component interface before testing. Do not change the production database or claim that a direct component weakness is automatically exposed through HTTP.",
+  "evidence": "Original and altered messages, component inputs and outputs, source verification, citations and scope limitations."
+}

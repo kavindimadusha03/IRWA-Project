@@ -1,0 +1,58 @@
+.............................                                            [100%]
+============================== warnings summary ===============================
+.venv\Lib\site-packages\_pytest\config\__init__.py:1345
+  C:\Users\PSB\Desktop\KnowGap\IRWA-Project\.venv\Lib\site-packages\_pytest\config\__init__.py:1345: PytestAssertRewriteWarning: Module already imported so cannot be rewritten; anyio
+    self._mark_plugins_for_rewrite(hook, disable_autoload)
+
+app\main.py:70
+  C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\main.py:70: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    @app.on_event("startup")
+
+.venv\Lib\site-packages\fastapi\applications.py:4495
+  C:\Users\PSB\Desktop\KnowGap\IRWA-Project\.venv\Lib\site-packages\fastapi\applications.py:4495: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    return self.router.on_event(event_type)
+
+tests/test_ai_improvements.py: 4 warnings
+tests/test_knowledge_health_performance.py: 400 warnings
+tests/test_retrieval_security_verification.py: 26 warnings
+  C:\Users\PSB\Desktop\KnowGap\IRWA-Project\.venv\Lib\site-packages\pydantic\_internal\_fields.py:727: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    return fac()
+
+tests/test_knowledge_health_performance.py::test_analyze_knowledge_health_caps_large_cluster_work
+  C:\Users\PSB\Desktop\KnowGap\IRWA-Project\.venv\Lib\site-packages\sklearn\base.py:1389: ConvergenceWarning: Number of distinct clusters (1) found smaller than n_clusters (5). Possibly due to duplicate points in X.
+    return fit_method(estimator, *args, **kwargs)
+
+tests/test_retrieval_security_verification.py::test_clarification_is_persisted_and_retrieval_runs_after_answers
+tests/test_retrieval_security_verification.py::test_clarification_is_persisted_and_retrieval_runs_after_answers
+  C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\agents\coordinator.py:30: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    request_id = f"KG-{datetime.utcnow().strftime('%Y%m%d')}-{uuid4().hex[:6].upper()}"
+
+tests/test_retrieval_security_verification.py::test_clarification_is_persisted_and_retrieval_runs_after_answers
+  C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\agents\coordinator.py:93: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    ticket.updated_at = datetime.utcnow()
+
+tests/test_retrieval_security_verification.py::test_clarification_is_persisted_and_retrieval_runs_after_answers
+  C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\agents\coordinator.py:162: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    ticket.updated_at = datetime.utcnow()
+
+tests/test_retrieval_security_verification.py::test_submitted_clarification_escalates_and_notifies_it_support
+  C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\routes\tickets.py:88: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    ticket.updated_at = datetime.utcnow()
+
+tests/test_retrieval_security_verification.py::test_submitted_clarification_escalates_and_notifies_it_support
+  C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\routes\tickets.py:124: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    ticket.updated_at = datetime.utcnow()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+29 passed, 440 warnings in 8.06s
+

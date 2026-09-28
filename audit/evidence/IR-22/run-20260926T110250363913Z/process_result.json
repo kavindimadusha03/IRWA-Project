@@ -1,0 +1,58 @@
+{
+  "case": "IR-22",
+  "status": "EXECUTED",
+  "started_at_utc": "2026-09-26T11:02:50.373929+00:00",
+  "scope": "Original retrieval and solution components plus actual authenticated FastAPI endpoint; synthetic temporary database; external LLM blocked",
+  "observations": {
+    "authentic_top_source_id": "KB-005",
+    "authentic_source_exists": true,
+    "forged_source_id": "AUDIT-IR22-NONEXISTENT-SOURCE",
+    "forged_source_exists": false,
+    "legitimate_retrieval_decision": "HIGH",
+    "legitimate_source_ids": [
+      "KB-005",
+      "SYN-0028",
+      "SYN-0013",
+      "SYN-0056",
+      "SYN-0092"
+    ],
+    "baseline_can_recommend": true,
+    "baseline_citations": [
+      "KB-005"
+    ],
+    "forged_id_component": {
+      "can_recommend": true,
+      "citations": [
+        "AUDIT-IR22-NONEXISTENT-SOURCE"
+      ],
+      "forged_source_cited": true,
+      "forged_source_in_message": true
+    },
+    "forged_content_component": {
+      "can_recommend": true,
+      "citations": [
+        "KB-005"
+      ],
+      "unverified_content_repeated": true
+    },
+    "http_boundary": {
+      "authenticated": true,
+      "status": 200,
+      "forged_source_cited": false,
+      "unverified_content_repeated": false,
+      "citations_match_real_sources": true,
+      "citations": [
+        "KB-005"
+      ]
+    },
+    "ticket_count_unchanged": true,
+    "snapshot_unchanged": true,
+    "external_llm_calls_blocked": 8
+  },
+  "component_finding": "FORGED SOURCE ACCEPTED",
+  "http_finding": "TAMPERED RETRIEVAL IGNORED",
+  "finished_at_utc": "2026-09-26T11:03:02.798111+00:00",
+  "original_files_unchanged": true,
+  "limitations": "Internal component calls are not proof of HTTP exploitability. HTTP was tested against the original application with synthetic data and valid customer login. No external LLM was invoked.",
+  "evidence_directory": "audit\\evidence\\IR-22\\run-20260926T110250363913Z"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "IR-17",
+  "title": "Authenticated API rate limiting",
+  "objective": "Evaluate whether repeated retrieval requests are subject to an appropriate configured limit.",
+  "input": "Using an authorized synthetic account, send at most six sequential, identical, valid requests to /agents/retrieval/search with a one-second interval.",
+  "expected": "Any configured threshold is enforced consistently. If no threshold exists or is reached, record the observed control gap or coverage limitation without claiming a denial-of-service vulnerability.",
+  "procedure": "First inspect rate-limit configuration. Use the valid request envelope from IR-15. Run only against the isolated loopback server. Do not increase concurrency or perform load testing.",
+  "evidence": "Configuration, request payloads, timestamps, HTTP responses, rate-limit headers and server logs."
+}

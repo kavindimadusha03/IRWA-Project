@@ -1,0 +1,35 @@
+{
+  "status": 200,
+  "location": null,
+  "content_type": "application/json",
+  "body_json": {
+    "can_recommend": true,
+    "message": "Evidence source SYN-0138 | Laptop connected to Wi-Fi but no internet access\nProblem: Laptop connected to Wi-Fi but no internet access on macOS. It happens on my work laptop.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "source_id": "SYN-0138",
+    "confidence": "HIGH",
+    "explanation": "Selected-source relevance components before source and metadata adjustments: BM25 1.00, semantic 0.65. The final adjusted retrieval ranking score is 0.94 after source trust and metadata adjustments. Neither score is a probability that the solution is correct.",
+    "confidence_explanation": "Selected-source relevance components before source and metadata adjustments: BM25 1.00, semantic 0.65. The final adjusted retrieval ranking score is 0.94 after source trust and metadata adjustments. Neither score is a probability that the solution is correct.",
+    "why_this_solution_was_suggested": "Selected-source relevance components before source and metadata adjustments: BM25 1.00, semantic 0.65. The final adjusted retrieval ranking score is 0.94 after source trust and metadata adjustments. Neither score is a probability that the solution is correct.",
+    "suggested_reply": "Thanks for reporting this issue. Please follow the documented recommendation and let IT Support know whether the reported problem continues.",
+    "citations": [
+      {
+        "source_id": "SYN-0138",
+        "title": "Laptop connected to Wi-Fi but no internet access",
+        "category": "Wi-Fi / DNS",
+        "source_type": "resolved_ticket",
+        "relevance_score": 0.9441488884601732,
+        "bm25_score": 1.0,
+        "semantic_score": 0.6452382640859319,
+        "hybrid_score": 0.9441488884601732
+      }
+    ]
+  },
+  "body_text": "{\"can_recommend\":true,\"message\":\"Evidence source SYN-0138 | Laptop connected to Wi-Fi but no internet access\\nProblem: Laptop connected to Wi-Fi but no internet access on macOS. It happens on my work laptop.\\nRoot cause: \\nResolution: Restarted the network adapter and flushed the DNS cache.\",\"source_id\":\"SYN-0138\",\"confidence\":\"HIGH\",\"explanation\":\"Selected-source relevance components before source and metadata adjustments: BM25 1.00, semantic 0.65. The final adjusted retrieval ranking score is 0.94 after source trust and metadata adjustments. Neither score is a probability that the solution is correct.\",\"confidence_explanation\":\"Selected-source relevance components before source and metadata adjustments: BM25 1.00, semantic 0.65. The final adjusted retrieval ranking score is 0.94 after source trust and metadata adjustments. Neither score is a probability that the solution is correct.\",\"why_this_solution_was_suggested\":\"Selected-source relevance components before source and metadata adjustments: BM25 1.00, semantic 0.65. The final adjusted retrieval ranking score is 0.94 after source trust and metadata adjustments. Neither score is a probability that the solution is correct.\",\"suggested_reply\":\"Thanks for reporting this issue. Please follow the documented recommendation and let IT Support know whether the reported problem continues.\",\"citations\":[{\"source_id\":\"SYN-0138\",\"title\":\"Laptop connected to Wi-Fi but no internet access\",\"category\":\"Wi-Fi / DNS\",\"source_type\":\"resolved_ticket\",\"relevance_score\":0.9441488884601732,\"bm25_score\":1.0,\"semantic_score\":0.6452382640859319,\"hybrid_score\":0.9441488884601732}]}",
+  "body_bytes": 1635,
+  "body_sha256": "cde9303ce14fa1bd313a355d51a10cf19b5ee872bdf7b8449c691dbbee9f48e6",
+  "elapsed_seconds": 0.205,
+  "redirect_history": 0,
+  "set_cookie_present": false,
+  "runtime_mode": "full",
+  "audit_boundary_503": false
+}

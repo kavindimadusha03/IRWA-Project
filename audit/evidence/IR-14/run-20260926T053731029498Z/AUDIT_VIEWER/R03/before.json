@@ -1,0 +1,90 @@
+{
+  "tables": {
+    "agentlog": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "category": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "knowledgearticle": {
+      "row_count": 81,
+      "rows_sha256": "562b8661ba88ac45cd66cc0d23f7232e066bdb78220855b8ee9d6dff9dbf4de6"
+    },
+    "notification": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "passwordresettoken": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "securityevent": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "solutionfeedback": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "ticket": {
+      "row_count": 500,
+      "rows_sha256": "9e1be706eccf1fe8d01397215be75d876d8d3ce607045936ec15ce4ddd8c999b"
+    },
+    "ticketcitation": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "user": {
+      "row_count": 5,
+      "rows_sha256": "21e862b2c9d32e5f45964e9c3c078eff93c327dd53b0bb73efdbc8fdba5ef71b"
+    }
+  },
+  "fixtures": {
+    "article": {
+      "id": 81,
+      "content": "Synthetic audit note for testing knowledge approval. No troubleshooting action is requested.",
+      "status": "draft",
+      "author": "IR-14 synthetic fixture",
+      "created_at": "2026-09-22T00:00:00",
+      "supported_os": "Any",
+      "category": "Printers",
+      "doc_id": "AUDIT-IR14-DRAFT-001",
+      "title": "IR14 role approval fixture",
+      "source_type": "internal_kb",
+      "authoritative": false,
+      "updated_at": "2026-09-22T00:00:00",
+      "security_class": "internal"
+    },
+    "other_articles_sha256": "8e7e2855b3a9f10e84b28da9708defdfbb2e9b195a996b8ce1f2c2d64f3cd298",
+    "categories": [],
+    "users": [
+      {
+        "id": 1,
+        "role": "CUSTOMER",
+        "active": true
+      },
+      {
+        "id": 2,
+        "role": "IT_SUPPORT",
+        "active": true
+      },
+      {
+        "id": 3,
+        "role": "KNOWLEDGE_ANALYST",
+        "active": true
+      },
+      {
+        "id": 4,
+        "role": "ADMIN",
+        "active": true
+      },
+      {
+        "id": 5,
+        "role": "AUDIT_VIEWER",
+        "active": true
+      }
+    ]
+  }
+}

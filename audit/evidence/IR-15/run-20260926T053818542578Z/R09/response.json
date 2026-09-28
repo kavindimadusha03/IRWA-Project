@@ -1,0 +1,16 @@
+{
+  "status": 401,
+  "location": null,
+  "content_type": "application/json",
+  "body_json": {
+    "detail": "Verified login required"
+  },
+  "body_text": "{\"detail\":\"Verified login required\"}",
+  "body_bytes": 36,
+  "body_sha256": "c2da9d5e7aa361b31b33e7c3c3820662d7852034a5119929a15903013e57bd8c",
+  "elapsed_seconds": 0.002,
+  "redirect_history": 0,
+  "set_cookie_present": false,
+  "runtime_mode": "full",
+  "audit_boundary_503": false
+}

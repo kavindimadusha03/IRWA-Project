@@ -1,0 +1,22 @@
+{
+  "can_recommend": true,
+  "message": "Evidence source KB-002 | Re-create VPN Profile - Guide 1\nRemove the damaged VPN connection profile and create a new profile using the approved organization settings.",
+  "source_id": "KB-002",
+  "confidence": "HIGH",
+  "explanation": "Selected-source relevance components before source and metadata adjustments: BM25 0.72, semantic 0.42. The final adjusted retrieval ranking score is 0.82 after source trust and metadata adjustments. Neither score is a probability that the solution is correct.",
+  "confidence_explanation": "Selected-source relevance components before source and metadata adjustments: BM25 0.72, semantic 0.42. The final adjusted retrieval ranking score is 0.82 after source trust and metadata adjustments. Neither score is a probability that the solution is correct.",
+  "why_this_solution_was_suggested": "Selected-source relevance components before source and metadata adjustments: BM25 0.72, semantic 0.42. The final adjusted retrieval ranking score is 0.82 after source trust and metadata adjustments. Neither score is a probability that the solution is correct.",
+  "suggested_reply": "Thanks for reporting this issue. Please follow the documented recommendation and let IT Support know whether the reported problem continues.",
+  "citations": [
+    {
+      "source_id": "KB-002",
+      "title": "Re-create VPN Profile - Guide 1",
+      "category": "VPN",
+      "source_type": "Internal KB",
+      "relevance_score": 0.815457788753515,
+      "bm25_score": 0.7245577314223514,
+      "semantic_score": 0.41710329020628534,
+      "hybrid_score": 0.815457788753515
+    }
+  ]
+}

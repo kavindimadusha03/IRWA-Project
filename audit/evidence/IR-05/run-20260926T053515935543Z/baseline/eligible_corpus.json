@@ -1,0 +1,18 @@
+{
+  "eligible_record_count": 56,
+  "matches_reviewed_CSV_records_in_all_retrieval_fields": false,
+  "eligible_corpus_sha256": "9d9abe4f2776e9c1979f16ebbc41bcf167f8af2022d782bf8a7f880625c8483c",
+  "approved_printer_sources": [
+    "KB-005",
+    "KB-013",
+    "KB-021",
+    "KB-029",
+    "KB-037",
+    "KB-045",
+    "KB-053",
+    "KB-061",
+    "KB-069",
+    "KB-077"
+  ],
+  "capture": "Original records passed unchanged to hybrid_rank; corpus parity includes all seven retrieval fields"
+}

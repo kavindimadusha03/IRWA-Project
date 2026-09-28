@@ -1,0 +1,28 @@
+{
+  "case": "IR-15",
+  "mode": "full",
+  "started_at_utc": "2026-09-26T05:38:26.242692+00:00",
+  "status": "Executed; awaiting scoped validation and provenance review",
+  "outcome": "Unassessed",
+  "login_requests": 1,
+  "profile_requests": 1,
+  "documentation_requests": 2,
+  "target_requests": 19,
+  "retrieval_boundary_calls": 12,
+  "real_retrieval_calls": 12,
+  "solution_calls": 6,
+  "redirect_followups": 0,
+  "isolated_database": "C:\\Users\\PSB\\AppData\\Local\\Temp\\knowgap-ir15-m3k4lp6i\\knowgap.db",
+  "llm": {
+    "configured_enabled": false,
+    "attempts": 12,
+    "successful_returns": 0,
+    "failures": 12
+  },
+  "full_application_loaded": true,
+  "stage": "S05 one malformed nested item",
+  "base_url": "http://127.0.0.1:8001",
+  "server_started": true,
+  "server_stopped": true,
+  "finished_at_utc": "2026-09-26T05:38:38.801695+00:00"
+}

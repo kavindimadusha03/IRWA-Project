@@ -1,0 +1,25 @@
+{
+  "eligible_record_count": 192,
+  "reference_record_count": 428,
+  "expected_source_id_count": 428,
+  "reference_ids_match_csv": true,
+  "reference_fixture_matches": true,
+  "candidate_subset_matches_reference": true,
+  "duplicate_ids": [],
+  "unexpected_ids": [],
+  "mismatched_ids": [],
+  "fixture_present_once": true,
+  "eligible_corpus_sha256": "8cd15b5cfcb6ed1950224e681ca293fc2199d793a5398b27d70792c3e26a3b9b",
+  "eligible_exact_code_records": [
+    {
+      "source_id": "AUDIT-IR08-EXACT-001",
+      "title": "Synthetic lookup: Windows blue screen 0x00000124",
+      "content": "Synthetic IR-08 lookup fixture for error 0x00000124. This fixture does not establish a diagnosis or a verified repair. Record the displayed code and symptoms and ask IT Support to review them before applying changes.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "internal_kb",
+      "status": "approved"
+    }
+  ],
+  "capture": "Original candidate subset passed unchanged to hybrid_rank. Reference source IDs checked independently against the CSVs and declared fixture. Reference record fields obtained from the original application function using the isolated test database."
+}

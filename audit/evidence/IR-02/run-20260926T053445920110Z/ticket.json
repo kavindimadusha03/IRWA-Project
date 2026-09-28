@@ -1,0 +1,26 @@
+{
+  "id": 501,
+  "title": "Wireless connected but websites will not load",
+  "description": "My wireless connection shows connected but websites will not load.",
+  "masked_description": "My wireless connection shows connected but websites will not load.",
+  "category": "Wi-Fi / DNS",
+  "canonical_issue": "My wireless connection shows connected but websites will not load.",
+  "priority": "Medium",
+  "status": "SOLUTION_PROPOSED",
+  "approval_status": "PENDING",
+  "retrieval_confidence": 0.8240901607668474,
+  "source_used": "SYN-0027",
+  "recommended_solution": "Evidence source SYN-0027 | Wireless icon shows connected but websites do not load\nProblem: Wireless icon shows connected but websites do not load on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+  "decision_explanation": "Selected-source relevance components before source and metadata adjustments: BM25 1.00, semantic 0.77. The final adjusted retrieval ranking score is 0.82 after source trust and metadata adjustments. Neither score is a probability that the solution is correct.",
+  "suggested_reply": "Thanks for reporting this issue. Please follow the documented recommendation and let IT Support know whether the reported problem continues.",
+  "citations": [
+    {
+      "source_id": "SYN-0027",
+      "title": "Wireless icon shows connected but websites do not load",
+      "source_type": "resolved_ticket",
+      "category": "Wi-Fi / DNS",
+      "relevance_score": 0.8240901607668474,
+      "rank": 1
+    }
+  ]
+}

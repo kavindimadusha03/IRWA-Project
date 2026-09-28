@@ -1,0 +1,22 @@
+{
+  "can_recommend": true,
+  "message": "Evidence source SYN-0044 | Remote access VPN drops after login\nProblem: Remote access VPN drops after login on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+  "source_id": "SYN-0044",
+  "confidence": "HIGH",
+  "explanation": "Selected-source relevance components before source and metadata adjustments: BM25 1.00, semantic 0.46. The final adjusted retrieval ranking score is 0.86 after source trust and metadata adjustments. Neither score is a probability that the solution is correct.",
+  "confidence_explanation": "Selected-source relevance components before source and metadata adjustments: BM25 1.00, semantic 0.46. The final adjusted retrieval ranking score is 0.86 after source trust and metadata adjustments. Neither score is a probability that the solution is correct.",
+  "why_this_solution_was_suggested": "Selected-source relevance components before source and metadata adjustments: BM25 1.00, semantic 0.46. The final adjusted retrieval ranking score is 0.86 after source trust and metadata adjustments. Neither score is a probability that the solution is correct.",
+  "suggested_reply": "Thanks for reporting this issue. Please follow the documented recommendation and let IT Support know whether the reported problem continues.",
+  "citations": [
+    {
+      "source_id": "SYN-0044",
+      "title": "Remote access VPN drops after login",
+      "category": "VPN",
+      "source_type": "resolved_ticket",
+      "relevance_score": 0.8558583706282711,
+      "bm25_score": 1.0,
+      "semantic_score": 0.45638154145084736,
+      "hybrid_score": 0.8558583706282711
+    }
+  ]
+}

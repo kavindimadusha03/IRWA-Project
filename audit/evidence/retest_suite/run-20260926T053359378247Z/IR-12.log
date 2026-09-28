@@ -1,0 +1,3 @@
+IR-12 evidence: C:\Users\PSB\Desktop\KnowGap\IRWA-Project\audit\evidence\IR-12\run-20260926T053713795334Z
+{"case": "IR-12", "finished_at_utc": "2026-09-26T05:37:22.061058+00:00", "process_exit_code": 1, "timed_out": false, "elapsed_seconds": 8.214, "source_files_unchanged": true, "original_database_main_file_unchanged": true, "prior_evidence_unchanged": true, "evidence_directory": "audit/evidence/IR-12/run-20260926T053713795334Z", "integrity_limit": "Main-file hash does not cover unrelated concurrent SQLite WAL writes", "outcome": "Unassessed; awaiting review"}
+

@@ -1,0 +1,10 @@
+{
+  "eligible_records": 427,
+  "approved_KB_rows": 80,
+  "resolved_histories": 347,
+  "source_ids_match_original_CSV": true,
+  "approved_kb_field_mismatches": [],
+  "resolved_ticket_mismatches": [],
+  "source_files_unchanged": true,
+  "scope": "Original synthetic corpus. Canonical database records validated against original CSV identity, eligibility and source content. No inserted source fixture."
+}

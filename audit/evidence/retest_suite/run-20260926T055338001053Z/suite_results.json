@@ -1,0 +1,17 @@
+{
+  "generated_at_utc": "2026-09-26T05:53:49.847406+00:00",
+  "mode": "provider disabled for deterministic retest",
+  "qualification": "Exit 0 means collection completed, not that security/retrieval assertions PASS. Review evidence/expected_result.md and actual responses.",
+  "results": [
+    {
+      "step": "IR-07",
+      "command": [
+        "-B",
+        "C:\\Users\\PSB\\Desktop\\KnowGap\\IRWA-Project\\irwa_retest\\scripts\\run_ir07.py"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 11.84
+    }
+  ]
+}

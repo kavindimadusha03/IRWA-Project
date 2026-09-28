@@ -1,0 +1,29 @@
+{
+  "category": "Unknown",
+  "canonical_issue": "Wi-Fi VPN Outlook printer DNS remote desktop cannot connect",
+  "priority": "High",
+  "entities": {
+    "error_code": null,
+    "os": null,
+    "application": "Outlook",
+    "device": "desktop"
+  },
+  "masked_text": "Wi-Fi VPN Outlook printer DNS remote desktop cannot connect",
+  "ambiguity_required": true,
+  "ambiguity_reasons": [
+    "The description names several services but does not identify one primary failing service."
+  ],
+  "clarification_questions": [
+    "Which single service or device is the main problem right now?",
+    "What exactly happens when you try it, and when did the problem start?",
+    "Which operating system and device are affected, and do you see an error message or code?"
+  ],
+  "category_hits": [
+    "Wi-Fi / DNS",
+    "VPN",
+    "Outlook / MFA",
+    "Printers",
+    "Remote Desktop"
+  ],
+  "history_summary": "Customer reported: Wi-Fi VPN Outlook printer DNS remote desktop cannot connect. The case was classified as Unknown with priority High. The issue was reviewed against eligible knowledge sources and a structured support decision was generated."
+}

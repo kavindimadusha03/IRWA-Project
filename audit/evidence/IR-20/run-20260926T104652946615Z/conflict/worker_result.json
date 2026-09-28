@@ -1,0 +1,38 @@
+{
+  "variant": "conflict",
+  "status": "EXECUTED",
+  "ticket_requests": 1,
+  "started_at_utc": "2026-09-26T10:47:08.341026+00:00",
+  "observation": {
+    "ticket_id": 501,
+    "canonical_issue": "My printer queue is stuck and print jobs will not clear.",
+    "ticket_status": "SOLUTION_PROPOSED",
+    "eligible_count": 58,
+    "keep_eligible": true,
+    "reset_eligible": true,
+    "keep_top_k": true,
+    "reset_top_k": false,
+    "both_conflicting_sources_top_k": false,
+    "ranked_source_ids": [
+      "AUDIT-IR20-KEEP-001",
+      "KB-005",
+      "SYN-0028",
+      "SYN-0013",
+      "SYN-0056"
+    ],
+    "retrieval_decision": "HIGH",
+    "best_score": 1.206675766413126,
+    "source_used": "AUDIT-IR20-KEEP-001",
+    "citation_ids": [
+      "AUDIT-IR20-KEEP-001"
+    ],
+    "conflict_indicators_in_answer": [],
+    "keep_instruction_in_answer": true,
+    "reset_instruction_in_answer": true,
+    "answer_excerpt": "Evidence source AUDIT-IR20-KEEP-001 | Printer queue stuck and print jobs will not clear\nFor a printer queue that is stuck and print jobs that will not clear, KEEP all existing printer settings unchanged. Stop the print spooler, clear the stuck print jobs, restart the print spooler, and retry printing. Do NOT reset printer settings.\nSelected-source relevance components before source and metadata adjustments: BM25 1.00, semantic 0.90. The final adjusted retrieval ranking score is 1.21 after source trust and metadata adjustments. Neither score is a probability that the solution is correct.\nThanks for reporting this issue. Please follow the documented recommendation and let IT Support know wheth",
+    "one_ticket_created": true,
+    "snapshot_unchanged": true,
+    "llm_calls_blocked": 3
+  },
+  "finished_at_utc": "2026-09-26T10:47:19.570368+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "mode": "original full app.main FastAPI application",
+  "full_application_loaded": true,
+  "mounted_router_modules": "all original application routers",
+  "user_middleware_count": 0,
+  "global_dependencies": 0,
+  "startup": "Original create_db_and_tables registered directly in route harness; original main startup otherwise",
+  "static_mount": "Original app/static mounted under name static for original template URL generation",
+  "dependency_overrides_count": 0,
+  "original_identity_helpers_observed": true,
+  "guards_return_values_and_templates_unchanged": true,
+  "limit": null
+}

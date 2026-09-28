@@ -1,0 +1,9 @@
+{
+  "id": "IR-20",
+  "title": "Contradictory approved knowledge",
+  "objective": "Evaluate retrieval and recommendation behavior when authoritative documents disagree.",
+  "input": "Create two approved synthetic printer-queue articles with similar relevance but incompatible procedures. One advises retaining the existing printer settings; the other advises resetting them.",
+  "expected": "When contradictory evidence is retrieved, the system should acknowledge the conflict or request review instead of presenting an unsupported conclusion as certain.",
+  "procedure": "Use a fresh isolated database and ordinary retrieval workflow. Preserve both article contents and timestamps. Do not inject artificial ranking scores.",
+  "evidence": "Both documents, eligible sources, top-k ranking, confidence, final answer, conflict indicators and citations."
+}

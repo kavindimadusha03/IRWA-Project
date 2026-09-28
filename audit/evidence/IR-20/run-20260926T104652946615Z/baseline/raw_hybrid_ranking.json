@@ -1,0 +1,93 @@
+[
+  {
+    "source_id": "AUDIT-IR20-KEEP-001",
+    "title": "Printer queue stuck and print jobs will not clear",
+    "content": "For a printer queue that is stuck and print jobs that will not clear, KEEP all existing printer settings unchanged. Stop the print spooler, clear the stuck print jobs, restart the print spooler, and retry printing. Do NOT reset printer settings.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "internal_kb",
+    "status": "approved",
+    "bm25_score": 1.0,
+    "semantic_score": 0.9030468480238651,
+    "hybrid_score": 0.9466757664131259,
+    "exact_error_match": false
+  },
+  {
+    "source_id": "KB-005",
+    "title": "Clear Print Queue - Guide 1",
+    "content": "Stop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved",
+    "bm25_score": 0.2950917555902189,
+    "semantic_score": 0.7855430758112556,
+    "hybrid_score": 0.5648399817117891,
+    "exact_error_match": false
+  },
+  {
+    "source_id": "SYN-0028",
+    "title": "Print queue is stuck and cannot be cleared",
+    "content": "Problem: Print queue is stuck and cannot be cleared on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Ubuntu",
+    "source_type": "resolved_ticket",
+    "status": "resolved",
+    "bm25_score": 0.07325352597479345,
+    "semantic_score": 0.787957216575035,
+    "hybrid_score": 0.4663405558049264,
+    "exact_error_match": false
+  },
+  {
+    "source_id": "SYN-0013",
+    "title": "Printer is online but jobs stay in queue",
+    "content": "Problem: Printer is online but jobs stay in queue on Ubuntu. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Ubuntu",
+    "source_type": "resolved_ticket",
+    "status": "resolved",
+    "bm25_score": 0.07066543342063664,
+    "semantic_score": 0.785422080229129,
+    "hybrid_score": 0.4637815891653075,
+    "exact_error_match": false
+  },
+  {
+    "source_id": "SYN-0056",
+    "title": "Office printer prints blank pages",
+    "content": "Problem: Office printer prints blank pages on Windows 11. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Windows 11",
+    "source_type": "resolved_ticket",
+    "status": "resolved",
+    "bm25_score": 0.0026489474832911567,
+    "semantic_score": 0.5332283065246732,
+    "hybrid_score": 0.2944675949560513,
+    "exact_error_match": false
+  },
+  {
+    "source_id": "SYN-0045",
+    "title": "Printer shows offline although it is powered on",
+    "content": "Problem: Printer shows offline although it is powered on on macOS. No recent hardware changes were made.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "macOS",
+    "source_type": "resolved_ticket",
+    "status": "resolved",
+    "bm25_score": 0.0,
+    "semantic_score": 0.448882348485011,
+    "hybrid_score": 0.24688529166675607,
+    "exact_error_match": false
+  },
+  {
+    "source_id": "SYN-0092",
+    "title": "Windows cannot find network printer",
+    "content": "Problem: Windows cannot find network printer on macOS. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "macOS",
+    "source_type": "resolved_ticket",
+    "status": "resolved",
+    "bm25_score": 0.003569335359202418,
+    "semantic_score": 0.44161553408196025,
+    "hybrid_score": 0.24449474465671925,
+    "exact_error_match": false
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "recorded_before_request_at_utc": "2026-09-26T05:37:11.176611+00:00",
+  "method": "SQLite backup API from read-only source after synthetic CSV setup",
+  "path": "C:\\Users\\PSB\\AppData\\Local\\Temp\\knowgap-ir11-xo9uinkj\\before_requests.sqlite",
+  "sha256": "a318d42b3f624f73b9a77562168086ce0c56ea942fa37ac45d8145d709ca4364",
+  "integrity_check": "ok",
+  "counts": {
+    "knowledgearticle": 80,
+    "ticket": 500,
+    "user": 4
+  },
+  "outside_repository": true
+}

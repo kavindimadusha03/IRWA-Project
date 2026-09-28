@@ -1,0 +1,21 @@
+{
+  "original_query": "My printer queue is stuck and print jobs will not clear. Please check reference cobaltlantern463.",
+  "normalized_query": "printer queue stuck print jobs will not clear please check reference cobaltlantern463",
+  "normalized_query_tokens": [
+    "printer",
+    "queue",
+    "stuck",
+    "print",
+    "jobs",
+    "will",
+    "not",
+    "clear",
+    "please",
+    "check",
+    "reference",
+    "cobaltlantern463"
+  ],
+  "submitted_marker": "cobaltlantern463",
+  "marker_preserved_in_normalized_query": true,
+  "capture": "original function return observed; no result or input changed"
+}

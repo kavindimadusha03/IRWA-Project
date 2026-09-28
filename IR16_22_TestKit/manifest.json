@@ -1,0 +1,15 @@
+{
+  "project": "KnowGap AI",
+  "scope": "Student 4 ? Information Retrieval and Security",
+  "cases": [
+    "IR-16",
+    "IR-17",
+    "IR-18",
+    "IR-19",
+    "IR-20",
+    "IR-21",
+    "IR-22"
+  ],
+  "status": "PLANNED ? NOT EXECUTED",
+  "original_application_modified": false
+}

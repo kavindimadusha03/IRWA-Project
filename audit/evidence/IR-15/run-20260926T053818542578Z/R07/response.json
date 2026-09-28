@@ -1,0 +1,145 @@
+{
+  "status": 200,
+  "location": null,
+  "content_type": "application/json",
+  "body_json": {
+    "query": "Printer issue: café — මුද්‍රණ යන්ත්‍රය — 印刷機",
+    "items": [
+      {
+        "source_id": "SYN-0056",
+        "title": "Office printer prints blank pages",
+        "content": "Problem: Office printer prints blank pages on Windows 11. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+        "category": "Printers",
+        "supported_os": "Windows 11",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.9925628439684664,
+        "semantic_score": 0.5729118275320397,
+        "hybrid_score": 0.907491567189167,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.9925628439684664,
+          "semantic_score": 0.5729118275320397,
+          "hybrid_score": 0.907491567189167
+        },
+        "source": "SYN-0056",
+        "applicability": {
+          "source_eligible": true,
+          "symptom_applicable": true,
+          "operating_system_applicable": true,
+          "evidence_sufficient": true
+        }
+      },
+      {
+        "source_id": "SYN-0092",
+        "title": "Windows cannot find network printer",
+        "content": "Problem: Windows cannot find network printer on macOS. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+        "category": "Printers",
+        "supported_os": "macOS",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 1.0,
+        "semantic_score": 0.5430713388137696,
+        "hybrid_score": 0.8963858508954372,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 1.0,
+          "semantic_score": 0.5430713388137696,
+          "hybrid_score": 0.8963858508954372
+        },
+        "source": "SYN-0092",
+        "applicability": {
+          "source_eligible": true,
+          "symptom_applicable": true,
+          "operating_system_applicable": true,
+          "evidence_sufficient": true
+        }
+      },
+      {
+        "source_id": "SYN-0013",
+        "title": "Printer is online but jobs stay in queue",
+        "content": "Problem: Printer is online but jobs stay in queue on Ubuntu. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+        "category": "Printers",
+        "supported_os": "Ubuntu",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.9569769109422056,
+        "semantic_score": 0.5749087345965747,
+        "hybrid_score": 0.8948135018592923,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.9569769109422056,
+          "semantic_score": 0.5749087345965747,
+          "hybrid_score": 0.8948135018592923
+        },
+        "source": "SYN-0013",
+        "applicability": {
+          "source_eligible": true,
+          "symptom_applicable": true,
+          "operating_system_applicable": true,
+          "evidence_sufficient": true
+        }
+      },
+      {
+        "source_id": "SYN-0045",
+        "title": "Printer shows offline although it is powered on",
+        "content": "Problem: Printer shows offline although it is powered on on macOS. No recent hardware changes were made.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+        "category": "Printers",
+        "supported_os": "macOS",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.9709006256365487,
+        "semantic_score": 0.5250300080243883,
+        "hybrid_score": 0.8768210180573814,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.9709006256365487,
+          "semantic_score": 0.5250300080243883,
+          "hybrid_score": 0.8768210180573814
+        },
+        "source": "SYN-0045",
+        "applicability": {
+          "source_eligible": true,
+          "symptom_applicable": true,
+          "operating_system_applicable": true,
+          "evidence_sufficient": true
+        }
+      },
+      {
+        "source_id": "SYN-0028",
+        "title": "Print queue is stuck and cannot be cleared",
+        "content": "Problem: Print queue is stuck and cannot be cleared on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+        "category": "Printers",
+        "supported_os": "Ubuntu",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.5623156652903007,
+        "semantic_score": 0.5594784578292269,
+        "hybrid_score": 0.7366419210087036,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.5623156652903007,
+          "semantic_score": 0.5594784578292269,
+          "hybrid_score": 0.7366419210087036
+        },
+        "source": "SYN-0028",
+        "applicability": {
+          "source_eligible": true,
+          "symptom_applicable": true,
+          "operating_system_applicable": true,
+          "evidence_sufficient": true
+        }
+      }
+    ],
+    "best_score": 0.907491567189167,
+    "decision": "HIGH"
+  },
+  "body_text": "{\"query\":\"Printer issue: café — මුද්‍රණ යන්ත්‍රය — 印刷機\",\"items\":[{\"source_id\":\"SYN-0056\",\"title\":\"Office printer prints blank pages\",\"content\":\"Problem: Office printer prints blank pages on Windows 11. Please help because I need this for work.\\nRoot cause: \\nResolution: Cleared the print queue and reinstalled the approved printer driver.\",\"category\":\"Printers\",\"supported_os\":\"Windows 11\",\"source_type\":\"resolved_ticket\",\"status\":\"resolved\",\"bm25_score\":0.9925628439684664,\"semantic_score\":0.5729118275320397,\"hybrid_score\":0.907491567189167,\"exact_error_match\":false,\"score_breakdown\":{\"bm25_score\":0.9925628439684664,\"semantic_score\":0.5729118275320397,\"hybrid_score\":0.907491567189167},\"source\":\"SYN-0056\",\"applicability\":{\"source_eligible\":true,\"symptom_applicable\":true,\"operating_system_applicable\":true,\"evidence_sufficient\":true}},{\"source_id\":\"SYN-0092\",\"title\":\"Windows cannot find network printer\",\"content\":\"Problem: Windows cannot find network printer on macOS. Please help because I need this for work.\\nRoot cause: \\nResolution: Cleared the print queue and reinstalled the approved printer driver.\",\"category\":\"Printers\",\"supported_os\":\"macOS\",\"source_type\":\"resolved_ticket\",\"status\":\"resolved\",\"bm25_score\":1.0,\"semantic_score\":0.5430713388137696,\"hybrid_score\":0.8963858508954372,\"exact_error_match\":false,\"score_breakdown\":{\"bm25_score\":1.0,\"semantic_score\":0.5430713388137696,\"hybrid_score\":0.8963858508954372},\"source\":\"SYN-0092\",\"applicability\":{\"source_eligible\":true,\"symptom_applicable\":true,\"operating_system_applicable\":true,\"evidence_sufficient\":true}},{\"source_id\":\"SYN-0013\",\"title\":\"Printer is online but jobs stay in queue\",\"content\":\"Problem: Printer is online but jobs stay in queue on Ubuntu. Please help because I need this for work.\\nRoot cause: \\nResolution: Cleared the print queue and reinstalled the approved printer driver.\",\"category\":\"Printers\",\"supported_os\":\"Ubuntu\",\"source_type\":\"resolved_ticket\",\"status\":\"resolved\",\"bm25_score\":0.9569769109422056,\"semantic_score\":0.5749087345965747,\"hybrid_score\":0.8948135018592923,\"exact_error_match\":false,\"score_breakdown\":{\"bm25_score\":0.9569769109422056,\"semantic_score\":0.5749087345965747,\"hybrid_score\":0.8948135018592923},\"source\":\"SYN-0013\",\"applicability\":{\"source_eligible\":true,\"symptom_applicable\":true,\"operating_system_applicable\":true,\"evidence_sufficient\":true}},{\"source_id\":\"SYN-0045\",\"title\":\"Printer shows offline although it is powered on\",\"content\":\"Problem: Printer shows offline although it is powered on on macOS. No recent hardware changes were made.\\nRoot cause: \\nResolution: Cleared the print queue and reinstalled the approved printer driver.\",\"category\":\"Printers\",\"supported_os\":\"macOS\",\"source_type\":\"resolved_ticket\",\"status\":\"resolved\",\"bm25_score\":0.9709006256365487,\"semantic_score\":0.5250300080243883,\"hybrid_score\":0.8768210180573814,\"exact_error_match\":false,\"score_breakdown\":{\"bm25_score\":0.9709006256365487,\"semantic_score\":0.5250300080243883,\"hybrid_score\":0.8768210180573814},\"source\":\"SYN-0045\",\"applicability\":{\"source_eligible\":true,\"symptom_applicable\":true,\"operating_system_applicable\":true,\"evidence_sufficient\":true}},{\"source_id\":\"SYN-0028\",\"title\":\"Print queue is stuck and cannot be cleared\",\"content\":\"Problem: Print queue is stuck and cannot be cleared on Ubuntu. I already restarted the device once.\\nRoot cause: \\nResolution: Cleared the print queue and reinstalled the approved printer driver.\",\"category\":\"Printers\",\"supported_os\":\"Ubuntu\",\"source_type\":\"resolved_ticket\",\"status\":\"resolved\",\"bm25_score\":0.5623156652903007,\"semantic_score\":0.5594784578292269,\"hybrid_score\":0.7366419210087036,\"exact_error_match\":false,\"score_breakdown\":{\"bm25_score\":0.5623156652903007,\"semantic_score\":0.5594784578292269,\"hybrid_score\":0.7366419210087036},\"source\":\"SYN-0028\",\"applicability\":{\"source_eligible\":true,\"symptom_applicable\":true,\"operating_system_applicable\":true,\"evidence_sufficient\":true}}],\"best_score\":0.907491567189167,\"decision\":\"HIGH\"}",
+  "body_bytes": 4033,
+  "body_sha256": "9c94dd330ad20c79be2b2bb487a8287be6f91e4be10383f6d87074f60a0d73c9",
+  "elapsed_seconds": 0.206,
+  "redirect_history": 0,
+  "set_cookie_present": false,
+  "runtime_mode": "full",
+  "audit_boundary_503": false
+}

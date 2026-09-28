@@ -1,0 +1,9 @@
+{
+  "recorded_before_requests_at_utc": "2026-09-26T05:38:16.733780+00:00",
+  "path": "C:\\Users\\PSB\\AppData\\Local\\Temp\\knowgap-ir14-audit_viewer-aj4jwanb\\before_role_requests.sqlite",
+  "sha256": "02cf7185633dd3af74d04c6ad583076526e53c7cf6bf8285e84e9f41a647ae92",
+  "integrity_check": "ok",
+  "outside_repository": true,
+  "all_table_states_match_seeded_source": true,
+  "method": "SQLite backup API after fixture/server setup, before login or target requests"
+}

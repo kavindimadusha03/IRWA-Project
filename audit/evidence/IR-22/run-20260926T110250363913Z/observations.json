@@ -1,0 +1,46 @@
+{
+  "authentic_top_source_id": "KB-005",
+  "authentic_source_exists": true,
+  "forged_source_id": "AUDIT-IR22-NONEXISTENT-SOURCE",
+  "forged_source_exists": false,
+  "legitimate_retrieval_decision": "HIGH",
+  "legitimate_source_ids": [
+    "KB-005",
+    "SYN-0028",
+    "SYN-0013",
+    "SYN-0056",
+    "SYN-0092"
+  ],
+  "baseline_can_recommend": true,
+  "baseline_citations": [
+    "KB-005"
+  ],
+  "forged_id_component": {
+    "can_recommend": true,
+    "citations": [
+      "AUDIT-IR22-NONEXISTENT-SOURCE"
+    ],
+    "forged_source_cited": true,
+    "forged_source_in_message": true
+  },
+  "forged_content_component": {
+    "can_recommend": true,
+    "citations": [
+      "KB-005"
+    ],
+    "unverified_content_repeated": true
+  },
+  "http_boundary": {
+    "authenticated": true,
+    "status": 200,
+    "forged_source_cited": false,
+    "unverified_content_repeated": false,
+    "citations_match_real_sources": true,
+    "citations": [
+      "KB-005"
+    ]
+  },
+  "ticket_count_unchanged": true,
+  "snapshot_unchanged": true,
+  "external_llm_calls_blocked": 8
+}

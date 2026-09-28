@@ -1,0 +1,14 @@
+{
+  "id": 501,
+  "ticket_code": "TCK-00501",
+  "category": "Printers",
+  "canonical_issue": "My printer queue is stuck and print jobs will not clear.",
+  "status": "SOLUTION_PROPOSED",
+  "source_used": "KB-005",
+  "recommended_solution": "Evidence source KB-005 | Clear Print Queue - Guide 1\nStop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again.",
+  "decision_explanation": "Selected-source relevance components before source and metadata adjustments: BM25 1.00, semantic 0.79. The final adjusted retrieval ranking score is 1.14 after source trust and metadata adjustments. Neither score is a probability that the solution is correct.",
+  "suggested_reply": "Thanks for reporting this issue. Please follow the documented recommendation and let IT Support know whether the reported problem continues.",
+  "citation_ids": [
+    "KB-005"
+  ]
+}

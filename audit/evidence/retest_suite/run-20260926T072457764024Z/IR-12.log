@@ -1,0 +1,4 @@
+
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\irwa_retest\scripts\run_ir12.py", line 293
+    current['stub_calls']+=1; current['injected_hybrid_output']=[dict(item)]; current['original_SQL_record_count_before_stub']=len(supplied); return [dict(item)]
+IndentationError: unexpected indent

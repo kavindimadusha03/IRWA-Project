@@ -1,0 +1,132 @@
+{
+  "query": "My printer queue is stuck and print jobs will not clear.",
+  "items": [
+    {
+      "source_id": "KB-005",
+      "title": "Clear Print Queue - Guide 1",
+      "content": "Stop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again.",
+      "category": "Printers",
+      "supported_os": "Any",
+      "source_type": "Internal KB",
+      "status": "approved",
+      "bm25_score": 1.0,
+      "semantic_score": 0.7855430758112556,
+      "hybrid_score": 1.1420486916961905,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 1.0,
+        "semantic_score": 0.7855430758112556,
+        "hybrid_score": 1.1420486916961905
+      },
+      "source": "KB-005",
+      "applicability": {
+        "source_eligible": true,
+        "symptom_applicable": true,
+        "operating_system_applicable": true,
+        "evidence_sufficient": true
+      }
+    },
+    {
+      "source_id": "SYN-0028",
+      "title": "Print queue is stuck and cannot be cleared",
+      "content": "Problem: Print queue is stuck and cannot be cleared on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+      "category": "Printers",
+      "supported_os": "Ubuntu",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.6501214519896152,
+      "semantic_score": 0.787957216575035,
+      "hybrid_score": 0.8770414541348568,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.6501214519896152,
+        "semantic_score": 0.787957216575035,
+        "hybrid_score": 0.8770414541348568
+      },
+      "source": "SYN-0028",
+      "applicability": {
+        "source_eligible": true,
+        "symptom_applicable": true,
+        "operating_system_applicable": true,
+        "evidence_sufficient": true
+      }
+    },
+    {
+      "source_id": "SYN-0013",
+      "title": "Printer is online but jobs stay in queue",
+      "content": "Problem: Printer is online but jobs stay in queue on Ubuntu. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+      "category": "Printers",
+      "supported_os": "Ubuntu",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.645729205531711,
+      "semantic_score": 0.785422080229129,
+      "hybrid_score": 0.8741762436229973,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.645729205531711,
+        "semantic_score": 0.785422080229129,
+        "hybrid_score": 0.8741762436229973
+      },
+      "source": "SYN-0013",
+      "applicability": {
+        "source_eligible": true,
+        "symptom_applicable": true,
+        "operating_system_applicable": true,
+        "evidence_sufficient": true
+      }
+    },
+    {
+      "source_id": "SYN-0056",
+      "title": "Office printer prints blank pages",
+      "content": "Problem: Office printer prints blank pages on Windows 11. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+      "category": "Printers",
+      "supported_os": "Windows 11",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.38388737617498314,
+      "semantic_score": 0.533228306524673,
+      "hybrid_score": 0.6561211546872157,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.38388737617498314,
+        "semantic_score": 0.533228306524673,
+        "hybrid_score": 0.6561211546872157
+      },
+      "source": "SYN-0056",
+      "applicability": {
+        "source_eligible": true,
+        "symptom_applicable": true,
+        "operating_system_applicable": true,
+        "evidence_sufficient": true
+      }
+    },
+    {
+      "source_id": "SYN-0092",
+      "title": "Windows cannot find network printer",
+      "content": "Problem: Windows cannot find network printer on macOS. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+      "category": "Printers",
+      "supported_os": "macOS",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.38791990983714525,
+      "semantic_score": 0.4416155340819602,
+      "hybrid_score": 0.6148346276960245,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.38791990983714525,
+        "semantic_score": 0.4416155340819602,
+        "hybrid_score": 0.6148346276960245
+      },
+      "source": "SYN-0092",
+      "applicability": {
+        "source_eligible": true,
+        "symptom_applicable": true,
+        "operating_system_applicable": true,
+        "evidence_sufficient": true
+      }
+    }
+  ],
+  "best_score": 1.1420486916961905,
+  "decision": "HIGH"
+}

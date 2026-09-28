@@ -1,9 +1,31 @@
 {
-  "recorded_at_utc": "2026-09-21T17:51:30.522224+00:00",
-  "elapsed_seconds": 9.457,
-  "exit_code": 1,
-  "error_type": "OSError",
-  "metrics_as_printed": [],
+  "recorded_at_utc": "2026-09-26T05:34:23.790347+00:00",
+  "elapsed_seconds": 8.21,
+  "exit_code": 0,
+  "error_type": null,
+  "metrics_as_printed": [
+    {
+      "method": "BM25",
+      "P@1": 0.0,
+      "P@5": 0.21,
+      "Recall@5": 0.365,
+      "MRR": 0.229
+    },
+    {
+      "method": "Semantic",
+      "P@1": 0.619,
+      "P@5": 0.314,
+      "Recall@5": 0.532,
+      "MRR": 0.722
+    },
+    {
+      "method": "Hybrid",
+      "P@1": 0.571,
+      "P@5": 0.267,
+      "Recall@5": 0.452,
+      "MRR": 0.65
+    }
+  ],
   "command": "python evaluation/evaluate_ir.py (via runpy; original script unchanged)",
   "corpus": "approved data/knowledge_base.csv articles; no database ticket sources",
   "weights": {

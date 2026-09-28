@@ -1,0 +1,80 @@
+[
+  {
+    "source_id": "SYN-0044",
+    "title": "Remote access VPN drops after login",
+    "content": "Problem: Remote access VPN drops after login on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Ubuntu",
+    "source_type": "resolved_ticket",
+    "status": "resolved",
+    "bm25_score": 1.0,
+    "semantic_score": 0.45638154145084736,
+    "hybrid_score": 0.701009847797966,
+    "exact_error_match": false
+  },
+  {
+    "source_id": "SYN-0048",
+    "title": "Company VPN connects then immediately disconnects",
+    "content": "Problem: Company VPN connects then immediately disconnects on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Windows 10",
+    "source_type": "resolved_ticket",
+    "status": "resolved",
+    "bm25_score": 0.9248379577363673,
+    "semantic_score": 0.4999141689643539,
+    "hybrid_score": 0.69112987391176,
+    "exact_error_match": false
+  },
+  {
+    "source_id": "SYN-0001",
+    "title": "VPN disconnects every few minutes",
+    "content": "Problem: VPN disconnects every few minutes on Windows 11. I already restarted the device once.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "Windows 11",
+    "source_type": "resolved_ticket",
+    "status": "resolved",
+    "bm25_score": 0.9744178589648903,
+    "semantic_score": 0.42314751353682045,
+    "hybrid_score": 0.6712191689794519,
+    "exact_error_match": false
+  },
+  {
+    "source_id": "SYN-0006",
+    "title": "VPN authentication fails after Windows update",
+    "content": "Problem: VPN authentication fails after Windows update on macOS. This started this morning.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "macOS",
+    "source_type": "resolved_ticket",
+    "status": "resolved",
+    "bm25_score": 1.0,
+    "semantic_score": 0.3986782597089882,
+    "hybrid_score": 0.6692730428399435,
+    "exact_error_match": false
+  },
+  {
+    "source_id": "SYN-0018",
+    "title": "VPN tunnel is unstable from home network",
+    "content": "Problem: VPN tunnel is unstable from home network on macOS. This started this morning.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+    "category": "VPN",
+    "supported_os": "macOS",
+    "source_type": "resolved_ticket",
+    "status": "resolved",
+    "bm25_score": 0.9493700445626208,
+    "semantic_score": 0.39733946022600464,
+    "hybrid_score": 0.6457532231774818,
+    "exact_error_match": false
+  },
+  {
+    "source_id": "KB-002",
+    "title": "Re-create VPN Profile - Guide 1",
+    "content": "Remove the damaged VPN connection profile and create a new profile using the approved organization settings.",
+    "category": "VPN",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved",
+    "bm25_score": 0.0,
+    "semantic_score": 0.49627197947107693,
+    "hybrid_score": 0.2729495887090923,
+    "exact_error_match": false
+  }
+]

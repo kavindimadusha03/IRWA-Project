@@ -1,0 +1,29 @@
+{
+  "id": 3,
+  "ticket_code": "TCK-00003",
+  "assigned_to": null,
+  "history_summary": "Customer reported: My printer queue is stuck and print jobs will not clear.. The case was classified as Printers with priority Medium. The issue was reviewed against eligible knowledge sources and a structured support decision was generated.",
+  "title": "Printer queue trust comparison",
+  "description": "My printer queue is stuck and print jobs will not clear.",
+  "masked_description": "My printer queue is stuck and print jobs will not clear.",
+  "category": "Printers",
+  "canonical_issue": "My printer queue is stuck and print jobs will not clear.",
+  "priority": "Medium",
+  "status": "SOLUTION_PROPOSED",
+  "approval_status": "PENDING",
+  "retrieval_confidence": 1.0802822996790926,
+  "source_used": "AUDIT-IR10-KB-001",
+  "recommended_solution": "Evidence source AUDIT-IR10-KB-001 | Printer queue review procedure\nFor a stuck printer queue, record the waiting print jobs and ask IT Support to review the queue before making changes. Synthetic approved reference for this audit.",
+  "decision_explanation": "Selected-source relevance components before source and metadata adjustments: BM25 1.00, semantic 0.67. The final adjusted retrieval ranking score is 1.08 after source trust and metadata adjustments. Neither score is a probability that the solution is correct.",
+  "suggested_reply": "Thanks for reporting this issue. Please follow the documented recommendation and let IT Support know whether the reported problem continues.",
+  "citations": [
+    {
+      "source_id": "AUDIT-IR10-KB-001",
+      "title": "Printer queue review procedure",
+      "source_type": "internal_kb",
+      "category": "Printers",
+      "relevance_score": 1.0802822996790926,
+      "rank": 1
+    }
+  ]
+}

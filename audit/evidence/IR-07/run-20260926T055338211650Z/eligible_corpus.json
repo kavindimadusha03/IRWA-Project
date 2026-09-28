@@ -1,0 +1,6 @@
+{
+  "eligible_record_count": 56,
+  "matches_reviewed_CSV_records_in_all_retrieval_fields": false,
+  "eligible_corpus_sha256": "9d9abe4f2776e9c1979f16ebbc41bcf167f8af2022d782bf8a7f880625c8483c",
+  "capture": "Original corpus passed unchanged to hybrid_rank; all seven retrieval fields compared with IR-05 baseline"
+}

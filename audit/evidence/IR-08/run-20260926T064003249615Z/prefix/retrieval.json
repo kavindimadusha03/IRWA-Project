@@ -1,0 +1,132 @@
+{
+  "query": "Windows blue screen error error: 0x00000124",
+  "items": [
+    {
+      "source_id": "AUDIT-IR08-EXACT-001",
+      "title": "Synthetic lookup: Windows blue screen 0x00000124",
+      "content": "Synthetic IR-08 lookup fixture for error 0x00000124. This fixture does not establish a diagnosis or a verified repair. Record the displayed code and symptoms and ask IT Support to review them before applying changes.",
+      "category": "Windows / Updates",
+      "supported_os": "Any",
+      "source_type": "internal_kb",
+      "status": "approved",
+      "bm25_score": 1.0,
+      "semantic_score": 0.6980332879088995,
+      "hybrid_score": 1.4439183083498948,
+      "exact_error_match": true,
+      "score_breakdown": {
+        "bm25_score": 1.0,
+        "semantic_score": 0.6980332879088995,
+        "hybrid_score": 1.4439183083498948
+      },
+      "source": "AUDIT-IR08-EXACT-001",
+      "applicability": {
+        "source_eligible": true,
+        "symptom_applicable": true,
+        "operating_system_applicable": true,
+        "evidence_sufficient": true
+      }
+    },
+    {
+      "source_id": "SYN-0005",
+      "title": "Blue screen appears after installing an update",
+      "content": "Problem: Blue screen appears after installing an update on Windows 10. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Windows 10",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.7180651046205475,
+      "semantic_score": 0.6338170399188877,
+      "hybrid_score": 0.8309693686794395,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.7180651046205475,
+        "semantic_score": 0.6338170399188877,
+        "hybrid_score": 0.8309693686794395
+      },
+      "source": "SYN-0005",
+      "applicability": {
+        "source_eligible": true,
+        "symptom_applicable": true,
+        "operating_system_applicable": true,
+        "evidence_sufficient": true
+      }
+    },
+    {
+      "source_id": "SYN-0054",
+      "title": "Windows driver error after restart",
+      "content": "Problem: Windows driver error after restart on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Windows 11",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.29281157503720556,
+      "semantic_score": 0.3824662792761803,
+      "hybrid_score": 0.5508034130133455,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.29281157503720556,
+        "semantic_score": 0.3824662792761803,
+        "hybrid_score": 0.5508034130133455
+      },
+      "source": "SYN-0054",
+      "applicability": {
+        "source_eligible": true,
+        "symptom_applicable": true,
+        "operating_system_applicable": true,
+        "evidence_sufficient": true
+      }
+    },
+    {
+      "source_id": "SYN-0026",
+      "title": "Windows update failed and rolled back",
+      "content": "Problem: Windows update failed and rolled back on Windows 11. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Windows 11",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.05320773380694665,
+      "semantic_score": 0.39890759878243276,
+      "hybrid_score": 0.4668412606119444,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.05320773380694665,
+        "semantic_score": 0.39890759878243276,
+        "hybrid_score": 0.4668412606119444
+      },
+      "source": "SYN-0026",
+      "applicability": {
+        "source_eligible": true,
+        "symptom_applicable": true,
+        "operating_system_applicable": true,
+        "evidence_sufficient": true
+      }
+    },
+    {
+      "source_id": "SYN-0008",
+      "title": "Computer repeatedly restarts after Windows update",
+      "content": "Problem: Computer repeatedly restarts after Windows update on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Windows 11",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.05221781009214785,
+      "semantic_score": 0.36400607313436206,
+      "hybrid_score": 0.4501461515505608,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.05221781009214785,
+        "semantic_score": 0.36400607313436206,
+        "hybrid_score": 0.4501461515505608
+      },
+      "source": "SYN-0008",
+      "applicability": {
+        "source_eligible": true,
+        "symptom_applicable": true,
+        "operating_system_applicable": true,
+        "evidence_sufficient": true
+      }
+    }
+  ],
+  "best_score": 1.4439183083498948,
+  "decision": "HIGH"
+}

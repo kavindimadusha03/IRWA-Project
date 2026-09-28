@@ -1,0 +1,163 @@
+IR-15 start owned loopback server
+IR-15 normal synthetic CUSTOMER login/profile control
+IR-15 R00 valid benign retrieval control
+IR-15 R01 empty issue
+IR-15 R02 missing required payload
+IR-15 R03 missing required envelope sender
+IR-15 R04 object issue
+IR-15 R05 list issue
+IR-15 R06 bounded 4000-character issue
+IR-15 R07 benign Unicode
+IR-15 R08 malformed JSON
+IR-15 R09 valid anonymous request
+IR-15 P01 claimed sender
+IR-15 P02 claimed receiver
+IR-15 P03 claimed task
+IR-15 S00 solution control using an authentic approved CSV article (synthetic score; not real retrieval)
+IR-15 S01 synthetic provenance LOW control
+IR-15 S02 synthetic provenance HIGH attempt
+IR-15 S03 retrieval wrong container type
+IR-15 S04 missing retrieval object
+IR-15 S05 one malformed nested item
+{"case": "IR-15", "mode": "full", "started_at_utc": "2026-09-26T05:38:26.242692+00:00", "status": "Executed; awaiting scoped validation and provenance review", "outcome": "Unassessed", "login_requests": 1, "profile_requests": 1, "documentation_requests": 2, "target_requests": 19, "retrieval_boundary_calls": 12, "real_retrieval_calls": 12, "solution_calls": 6, "redirect_followups": 0, "isolated_database": "C:\\Users\\PSB\\AppData\\Local\\Temp\\knowgap-ir15-m3k4lp6i\\knowgap.db", "llm": {"configured_enabled": false, "attempts": 12, "successful_returns": 0, "failures": 12}, "full_application_loaded": true, "stage": "S05 one malformed nested item", "base_url": "http://127.0.0.1:8001", "server_started": true, "server_stopped": true, "finished_at_utc": "2026-09-26T05:38:38.801695+00:00"}
+
+INFO:     Started server process [13876]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+[SOLUTION_AGENT] LLM error source=SYN-0138
+Traceback (most recent call last):
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\agents\solution_agent.py", line 203, in recommend_solution
+    message = llm.chat(system, user, temperature=0.1)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\irwa_retest\scripts\run_ir15.py", line 105, in observed_chat
+    result=original_chat(*args,**kwargs); state['llm']['successful_returns']+=1; item['result']='returned'; return result
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\services\llm.py", line 16, in chat
+    raise RuntimeError("Groq API key is not configured in .env")
+RuntimeError: Groq API key is not configured in .env
+[SOLUTION_AGENT] Suggested reply LLM error source=SYN-0138
+Traceback (most recent call last):
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\agents\solution_agent.py", line 77, in _suggest_reply
+    reply = llm.chat(system, user, temperature=0.2).strip()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\irwa_retest\scripts\run_ir15.py", line 105, in observed_chat
+    result=original_chat(*args,**kwargs); state['llm']['successful_returns']+=1; item['result']='returned'; return result
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\services\llm.py", line 16, in chat
+    raise RuntimeError("Groq API key is not configured in .env")
+RuntimeError: Groq API key is not configured in .env
+[SOLUTION_AGENT] LLM error source=SYN-0138
+Traceback (most recent call last):
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\agents\solution_agent.py", line 203, in recommend_solution
+    message = llm.chat(system, user, temperature=0.1)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\irwa_retest\scripts\run_ir15.py", line 105, in observed_chat
+    result=original_chat(*args,**kwargs); state['llm']['successful_returns']+=1; item['result']='returned'; return result
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\services\llm.py", line 16, in chat
+    raise RuntimeError("Groq API key is not configured in .env")
+RuntimeError: Groq API key is not configured in .env
+[SOLUTION_AGENT] Suggested reply LLM error source=SYN-0138
+Traceback (most recent call last):
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\agents\solution_agent.py", line 77, in _suggest_reply
+    reply = llm.chat(system, user, temperature=0.2).strip()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\irwa_retest\scripts\run_ir15.py", line 105, in observed_chat
+    result=original_chat(*args,**kwargs); state['llm']['successful_returns']+=1; item['result']='returned'; return result
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\services\llm.py", line 16, in chat
+    raise RuntimeError("Groq API key is not configured in .env")
+RuntimeError: Groq API key is not configured in .env
+[SOLUTION_AGENT] LLM error source=SYN-0138
+Traceback (most recent call last):
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\agents\solution_agent.py", line 203, in recommend_solution
+    message = llm.chat(system, user, temperature=0.1)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\irwa_retest\scripts\run_ir15.py", line 105, in observed_chat
+    result=original_chat(*args,**kwargs); state['llm']['successful_returns']+=1; item['result']='returned'; return result
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\services\llm.py", line 16, in chat
+    raise RuntimeError("Groq API key is not configured in .env")
+RuntimeError: Groq API key is not configured in .env
+[SOLUTION_AGENT] Suggested reply LLM error source=SYN-0138
+Traceback (most recent call last):
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\agents\solution_agent.py", line 77, in _suggest_reply
+    reply = llm.chat(system, user, temperature=0.2).strip()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\irwa_retest\scripts\run_ir15.py", line 105, in observed_chat
+    result=original_chat(*args,**kwargs); state['llm']['successful_returns']+=1; item['result']='returned'; return result
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\services\llm.py", line 16, in chat
+    raise RuntimeError("Groq API key is not configured in .env")
+RuntimeError: Groq API key is not configured in .env
+[SOLUTION_AGENT] LLM error source=SYN-0138
+Traceback (most recent call last):
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\agents\solution_agent.py", line 203, in recommend_solution
+    message = llm.chat(system, user, temperature=0.1)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\irwa_retest\scripts\run_ir15.py", line 105, in observed_chat
+    result=original_chat(*args,**kwargs); state['llm']['successful_returns']+=1; item['result']='returned'; return result
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\services\llm.py", line 16, in chat
+    raise RuntimeError("Groq API key is not configured in .env")
+RuntimeError: Groq API key is not configured in .env
+[SOLUTION_AGENT] Suggested reply LLM error source=SYN-0138
+Traceback (most recent call last):
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\agents\solution_agent.py", line 77, in _suggest_reply
+    reply = llm.chat(system, user, temperature=0.2).strip()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\irwa_retest\scripts\run_ir15.py", line 105, in observed_chat
+    result=original_chat(*args,**kwargs); state['llm']['successful_returns']+=1; item['result']='returned'; return result
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\services\llm.py", line 16, in chat
+    raise RuntimeError("Groq API key is not configured in .env")
+RuntimeError: Groq API key is not configured in .env
+[SOLUTION_AGENT] LLM error source=SYN-0138
+Traceback (most recent call last):
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\agents\solution_agent.py", line 203, in recommend_solution
+    message = llm.chat(system, user, temperature=0.1)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\irwa_retest\scripts\run_ir15.py", line 105, in observed_chat
+    result=original_chat(*args,**kwargs); state['llm']['successful_returns']+=1; item['result']='returned'; return result
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\services\llm.py", line 16, in chat
+    raise RuntimeError("Groq API key is not configured in .env")
+RuntimeError: Groq API key is not configured in .env
+[SOLUTION_AGENT] Suggested reply LLM error source=SYN-0138
+Traceback (most recent call last):
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\agents\solution_agent.py", line 77, in _suggest_reply
+    reply = llm.chat(system, user, temperature=0.2).strip()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\irwa_retest\scripts\run_ir15.py", line 105, in observed_chat
+    result=original_chat(*args,**kwargs); state['llm']['successful_returns']+=1; item['result']='returned'; return result
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\services\llm.py", line 16, in chat
+    raise RuntimeError("Groq API key is not configured in .env")
+RuntimeError: Groq API key is not configured in .env
+[SOLUTION_AGENT] LLM error source=SYN-0138
+Traceback (most recent call last):
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\agents\solution_agent.py", line 203, in recommend_solution
+    message = llm.chat(system, user, temperature=0.1)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\irwa_retest\scripts\run_ir15.py", line 105, in observed_chat
+    result=original_chat(*args,**kwargs); state['llm']['successful_returns']+=1; item['result']='returned'; return result
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\services\llm.py", line 16, in chat
+    raise RuntimeError("Groq API key is not configured in .env")
+RuntimeError: Groq API key is not configured in .env
+[SOLUTION_AGENT] Suggested reply LLM error source=SYN-0138
+Traceback (most recent call last):
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\agents\solution_agent.py", line 77, in _suggest_reply
+    reply = llm.chat(system, user, temperature=0.2).strip()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\irwa_retest\scripts\run_ir15.py", line 105, in observed_chat
+    result=original_chat(*args,**kwargs); state['llm']['successful_returns']+=1; item['result']='returned'; return result
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\services\llm.py", line 16, in chat
+    raise RuntimeError("Groq API key is not configured in .env")
+RuntimeError: Groq API key is not configured in .env
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [13876]
+

@@ -1,0 +1,23 @@
+{
+  "eligible_record_count": 191,
+  "reference_record_count": 427,
+  "expected_source_id_count": 427,
+  "reference_ids_match_csv": true,
+  "candidate_subset_matches_reference": true,
+  "duplicate_ids": [],
+  "unexpected_ids": [],
+  "mismatched_ids": [],
+  "issue_terms": [
+    "battery",
+    "batteries",
+    "swell",
+    "swollen",
+    "charging",
+    "charger",
+    "bulg",
+    "overheat"
+  ],
+  "full_reference_issue_term_matches": [],
+  "issue_term_matches": [],
+  "capture": "Original candidates passed unchanged to hybrid_rank. Complete source IDs checked against the original CSVs. Candidate fields checked against the isolated database's canonical records. Full-corpus and candidate keyword screens recorded separately."
+}

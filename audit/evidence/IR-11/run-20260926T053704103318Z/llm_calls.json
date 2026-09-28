@@ -1,0 +1,10 @@
+[
+  {
+    "phase": "ticket_analysis",
+    "system_prompt": "You are the Ticket Intelligence Agent for an IT support system. Return only valid JSON with keys category, canonical_issue, and priority. Use one category from: Wi-Fi / DNS, VPN, Outlook / MFA, Accounts / Passwords, Printers, Windows / Updates, Software Installation, Remote Desktop, Unknown. Use one priority from: Critical, High, Medium, Low. Do not invent facts. Keep canonical_issue under 25 words.",
+    "user_prompt": "Ticket text:\nAfter installing Windows updates, my laptop battery is swelling. What exact fix should I perform?\nRule-based suggested category: Windows / Updates\nRule-based priority: Medium",
+    "temperature": 0.0,
+    "successful_return": false,
+    "error_type": "RuntimeError"
+  }
+]

@@ -1,7 +1,7 @@
 {
-  "recorded_at_utc": "2026-09-21T17:52:42.251136+00:00",
+  "recorded_at_utc": "2026-09-26T05:34:24.774997+00:00",
   "scope": "Normal positive checks on isolated database seeded solely from project synthetic CSVs. No original user/ticket data copied.",
-  "database_path": "C:\\Users\\PSB\\AppData\\Local\\Temp\\knowgap-audit-smoke-_c11gdfl\\knowgap.db",
+  "database_path": "C:\\Users\\PSB\\AppData\\Local\\Temp\\knowgap-audit-smoke-3fnteowq\\knowgap.db",
   "expected_before_execution": {
     "startup": "GET /health returns 200 and status ok",
     "login": "synthetic user registration succeeds; valid login returns 303 /home; cookie authenticates profile",
@@ -17,13 +17,451 @@
       "passed": true
     },
     "registration": {
-      "http_status": 500,
-      "passed": false
+      "http_status": 303,
+      "passed": true
+    },
+    "login": {
+      "http_status": 303,
+      "redirect": "/home",
+      "cookie_present": true,
+      "authenticated_profile_status": 200,
+      "passed": true
+    },
+    "known_retrieval": {
+      "http_status": 200,
+      "decision": "HIGH",
+      "best_score": 0.9618989501020565,
+      "items": [
+        {
+          "source_id": "SYN-0027",
+          "title": "Wireless icon shows connected but websites do not load",
+          "category": "Wi-Fi / DNS",
+          "source_type": "resolved_ticket",
+          "status": "resolved",
+          "bm25_score": 1.0,
+          "semantic_score": 0.6832063103787305,
+          "hybrid_score": 0.9618989501020565,
+          "exact_error_match": false
+        },
+        {
+          "source_id": "SYN-0138",
+          "title": "Laptop connected to Wi-Fi but no internet access",
+          "category": "Wi-Fi / DNS",
+          "source_type": "resolved_ticket",
+          "status": "resolved",
+          "bm25_score": 0.44567790917742056,
+          "semantic_score": 0.6925733896210842,
+          "hybrid_score": 0.7542498599082204,
+          "exact_error_match": false
+        },
+        {
+          "source_id": "SYN-0033",
+          "title": "Wi-Fi connected but browser says no internet",
+          "category": "Wi-Fi / DNS",
+          "source_type": "resolved_ticket",
+          "status": "resolved",
+          "bm25_score": 0.3413442567358532,
+          "semantic_score": 0.6591098827615909,
+          "hybrid_score": 0.6986980483925076,
+          "exact_error_match": false
+        },
+        {
+          "source_id": "KB-001",
+          "title": "DNS Cache Recovery - Guide 1",
+          "category": "Wi-Fi / DNS",
+          "source_type": "Internal KB",
+          "status": "approved",
+          "bm25_score": 0.2649393809033513,
+          "semantic_score": 0.569203442661147,
+          "hybrid_score": 0.6922846148701389,
+          "exact_error_match": false
+        },
+        {
+          "source_id": "SYN-0037",
+          "title": "Internet unavailable although Wi-Fi is connected",
+          "category": "Wi-Fi / DNS",
+          "source_type": "resolved_ticket",
+          "status": "resolved",
+          "bm25_score": 0.2316042170292761,
+          "semantic_score": 0.6025871825602179,
+          "hybrid_score": 0.6302981208606,
+          "exact_error_match": false
+        }
+      ],
+      "passed": false,
+      "criterion": "top source is one of the reviewed approved Wi-Fi CSV guides KB-001/009/017/025/033/041/049/057/065/073; answer factual safety is not assessed here"
+    },
+    "ticket_workflow": {
+      "http_status": 303,
+      "detail_status": 200,
+      "passed": true
     }
   },
   "localhost_url": "http://127.0.0.1:8001",
-  "error_type": "ReadError",
-  "error_message": "[WinError 10053] An established connection was aborted by the software in your host machine",
-  "elapsed_seconds": 16.287,
+  "known_query": "My laptop is connected to Wi-Fi, but websites do not load and there is no internet access.",
+  "ticket": {
+    "id": 501,
+    "status": "SOLUTION_PROPOSED",
+    "category": "Wi-Fi / DNS",
+    "canonical_issue": "My laptop is connected to Wi-Fi, but websites do not load and there is no internet access.",
+    "confidence": 0.9618989501020565,
+    "source_used": "SYN-0027",
+    "approval_status": "PENDING",
+    "explanation": "Selected-source relevance components before source and metadata adjustments: BM25 1.00, semantic 0.68. The final adjusted retrieval ranking score is 0.96 after source trust and metadata adjustments. Neither score is a probability that the solution is correct.",
+    "recommendation": "Evidence source SYN-0027 | Wireless icon shows connected but websites do not load\nProblem: Wireless icon shows connected but websites do not load on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+    "citations": [
+      {
+        "source_id": "SYN-0027",
+        "source_type": "resolved_ticket",
+        "relevance_score": 0.9618989501020565
+      }
+    ]
+  },
+  "llm": {
+    "configured_enabled": false,
+    "attempts": 3,
+    "successes": 0,
+    "error_types": [
+      "RuntimeError",
+      "RuntimeError",
+      "RuntimeError"
+    ]
+  },
+  "runtime_routes": [
+    {
+      "path": "/openapi.json",
+      "methods": [
+        "GET",
+        "HEAD"
+      ],
+      "name": "openapi"
+    },
+    {
+      "path": "/docs",
+      "methods": [
+        "GET",
+        "HEAD"
+      ],
+      "name": "swagger_ui_html"
+    },
+    {
+      "path": "/docs/oauth2-redirect",
+      "methods": [
+        "GET",
+        "HEAD"
+      ],
+      "name": "swagger_ui_redirect"
+    },
+    {
+      "path": "/redoc",
+      "methods": [
+        "GET",
+        "HEAD"
+      ],
+      "name": "redoc_html"
+    },
+    {
+      "path": "/register",
+      "methods": [
+        "GET"
+      ],
+      "name": "register_page"
+    },
+    {
+      "path": "/register",
+      "methods": [
+        "POST"
+      ],
+      "name": "register"
+    },
+    {
+      "path": "/forgot-password",
+      "methods": [
+        "GET"
+      ],
+      "name": "forgot_password_page"
+    },
+    {
+      "path": "/forgot-password",
+      "methods": [
+        "POST"
+      ],
+      "name": "forgot_password"
+    },
+    {
+      "path": "/reset-password",
+      "methods": [
+        "GET"
+      ],
+      "name": "reset_password_page"
+    },
+    {
+      "path": "/reset-password",
+      "methods": [
+        "POST"
+      ],
+      "name": "reset_password"
+    },
+    {
+      "path": "/profile",
+      "methods": [
+        "GET"
+      ],
+      "name": "profile_page"
+    },
+    {
+      "path": "/profile",
+      "methods": [
+        "POST"
+      ],
+      "name": "update_profile"
+    },
+    {
+      "path": "/login",
+      "methods": [
+        "POST"
+      ],
+      "name": "login"
+    },
+    {
+      "path": "/logout",
+      "methods": [
+        "GET"
+      ],
+      "name": "logout"
+    },
+    {
+      "path": "/tickets/create",
+      "methods": [
+        "POST"
+      ],
+      "name": "create_ticket"
+    },
+    {
+      "path": "/tickets/{ticket_id}/clarify",
+      "methods": [
+        "POST"
+      ],
+      "name": "submit_clarification"
+    },
+    {
+      "path": "/tickets/{ticket_id}/solved",
+      "methods": [
+        "POST"
+      ],
+      "name": "mark_solved"
+    },
+    {
+      "path": "/tickets/{ticket_id}/not-solved",
+      "methods": [
+        "POST"
+      ],
+      "name": "mark_not_solved"
+    },
+    {
+      "path": "/tickets/{ticket_id}/approve",
+      "methods": [
+        "POST"
+      ],
+      "name": "approve_ai_response"
+    },
+    {
+      "path": "/tickets/{ticket_id}/reject",
+      "methods": [
+        "POST"
+      ],
+      "name": "reject_ai_response"
+    },
+    {
+      "path": "/tickets/{ticket_id}/feedback",
+      "methods": [
+        "POST"
+      ],
+      "name": "submit_feedback"
+    },
+    {
+      "path": "/support/tickets/{ticket_id}/resolve",
+      "methods": [
+        "POST"
+      ],
+      "name": "resolve_ticket"
+    },
+    {
+      "path": "/knowledge/articles/{article_id}",
+      "methods": [
+        "POST"
+      ],
+      "name": "update_article"
+    },
+    {
+      "path": "/knowledge/{article_id}/approve",
+      "methods": [
+        "POST"
+      ],
+      "name": "approve_article"
+    },
+    {
+      "path": "/agents/security/check",
+      "methods": [
+        "POST"
+      ],
+      "name": "security_check"
+    },
+    {
+      "path": "/agents/ticket/analyze",
+      "methods": [
+        "POST"
+      ],
+      "name": "ticket_analyze"
+    },
+    {
+      "path": "/agents/retrieval/search",
+      "methods": [
+        "POST"
+      ],
+      "name": "retrieval_search"
+    },
+    {
+      "path": "/agents/solution/recommend",
+      "methods": [
+        "POST"
+      ],
+      "name": "solution_recommend"
+    },
+    {
+      "path": "/agents/knowledge/analyze",
+      "methods": [
+        "POST"
+      ],
+      "name": "knowledge_analyze"
+    },
+    {
+      "path": "/admin",
+      "methods": [
+        "GET"
+      ],
+      "name": "admin_page"
+    },
+    {
+      "path": "/admin/users/create",
+      "methods": [
+        "POST"
+      ],
+      "name": "create_user"
+    },
+    {
+      "path": "/admin/users/{user_id}",
+      "methods": [
+        "POST"
+      ],
+      "name": "update_user"
+    },
+    {
+      "path": "/admin/users/{user_id}/delete",
+      "methods": [
+        "POST"
+      ],
+      "name": "delete_user"
+    },
+    {
+      "path": "/admin/articles/create",
+      "methods": [
+        "POST"
+      ],
+      "name": "create_article"
+    },
+    {
+      "path": "/admin/articles/{article_id}",
+      "methods": [
+        "POST"
+      ],
+      "name": "update_article"
+    },
+    {
+      "path": "/admin/articles/{article_id}/delete",
+      "methods": [
+        "POST"
+      ],
+      "name": "delete_article"
+    },
+    {
+      "path": "/admin/categories/create",
+      "methods": [
+        "POST"
+      ],
+      "name": "create_category"
+    },
+    {
+      "path": "/admin/categories/{category_id}",
+      "methods": [
+        "POST"
+      ],
+      "name": "update_category"
+    },
+    {
+      "path": "/admin/categories/{category_id}/delete",
+      "methods": [
+        "POST"
+      ],
+      "name": "delete_category"
+    },
+    {
+      "path": "/chat/message",
+      "methods": [
+        "POST"
+      ],
+      "name": "chat_message"
+    },
+    {
+      "path": "/",
+      "methods": [
+        "GET"
+      ],
+      "name": "login_page"
+    },
+    {
+      "path": "/home",
+      "methods": [
+        "GET"
+      ],
+      "name": "home"
+    },
+    {
+      "path": "/tickets/{ticket_id}",
+      "methods": [
+        "GET"
+      ],
+      "name": "ticket_result"
+    },
+    {
+      "path": "/support",
+      "methods": [
+        "GET"
+      ],
+      "name": "support_page"
+    },
+    {
+      "path": "/knowledge",
+      "methods": [
+        "GET"
+      ],
+      "name": "knowledge_page"
+    },
+    {
+      "path": "/dashboard",
+      "methods": [
+        "GET"
+      ],
+      "name": "dashboard_page"
+    },
+    {
+      "path": "/health",
+      "methods": [
+        "GET"
+      ],
+      "name": "health"
+    }
+  ],
+  "elapsed_seconds": 9.966,
   "server_stopped": true
 }

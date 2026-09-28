@@ -1,0 +1,16 @@
+{
+  "original_file_hashes": {
+    "app/main.py": "a62103516f4927fb184bb52178efc52f8a45b92a6a03288124071f9a8623fe0c",
+    "app/config.py": "b693c09e18256edea11410726d138b965e6c117ce1e761ac6169fb9191da2565",
+    "app/routes/auth.py": "e04fba13b6859219f333f11b390f385f2b7caa300f48a57ac16de95bb957b57f",
+    "app/database.py": "fa9d20a3658b6e3b09a1699759c873d0b6fa757f26bd6f4edbc98a552f13a675",
+    "knowgap.db": "e0ffec98bcbbe0b2353ef796a48d9233da672f47ec88e527d461de369ce28844",
+    "knowgap.db-wal": null,
+    "knowgap.db-shm": null,
+    "data/knowledge_base.csv": "1194a81de63048a7321f536e448c7aa7bb7a2f208fe9f0c369f833ca9b39d8e5",
+    "data/tickets.csv": "b4f2f293338e5e188d2298396f74ad17221c27032bf5d31aca88b68c3e5a6f67"
+  },
+  "synthetic_accounts_only": true,
+  "external_network_requests": false,
+  "production_deployment_assessed": false
+}

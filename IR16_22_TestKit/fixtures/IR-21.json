@@ -1,0 +1,9 @@
+{
+  "id": "IR-21",
+  "title": "Outdated versus current knowledge",
+  "objective": "Test whether superseded information can produce outdated recommendations.",
+  "input": "Create an older, lexically exact synthetic KB article and a newer approved replacement for the same issue. Include supersession or freshness metadata only where supported by the actual schema.",
+  "expected": "The application considers available freshness and supersession evidence. If those capabilities are absent, report the resulting design limitation accurately.",
+  "procedure": "Use an isolated synthetic database. Confirm both source versions before making one normal query. Compare the actual retrieved sources and recommendation.",
+  "evidence": "Source timestamps, status and metadata, actual ranking, selected source, answer, citations and integrity checks."
+}
