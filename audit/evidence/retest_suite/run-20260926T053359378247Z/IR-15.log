@@ -1,0 +1,4 @@
+IR-15 evidence: C:\Users\PSB\Desktop\KnowGap\IRWA-Project\audit\evidence\IR-15\run-20260926T053818542578Z
+IR-15 chosen scope: full
+{"exit_code": 0, "timed_out": false, "elapsed_seconds": 13.701, "case": "IR-15", "mode": "full", "finished_at_utc": "2026-09-26T05:38:39.704490+00:00", "source_files_unchanged": true, "original_database_main_file_unchanged": true, "prior_evidence_unchanged": true, "evidence_directory": "audit/evidence/IR-15/run-20260926T053818542578Z", "integrity_limit": "Working DB main-file hash does not cover unrelated concurrent WAL writes", "outcome": "Unassessed; review saved evidence"}
+

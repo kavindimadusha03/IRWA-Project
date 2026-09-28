@@ -1,0 +1,6 @@
+{
+  "scope": "app/**/*.py only",
+  "matching_lines": [],
+  "external_proxy_or_gateway": "NOT ASSESSED",
+  "interpretation": "A keyword scan cannot establish the absence of all application or deployment rate limits."
+}

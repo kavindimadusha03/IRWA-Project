@@ -1,0 +1,18 @@
+[
+  {
+    "query": "My printer queue is stuck and print jobs will not clear.",
+    "source_id": "AUDIT-IR10-KB-001",
+    "category": "Printers",
+    "status": "approved",
+    "supported_os": "Any",
+    "metadata_bonus": 0.26
+  },
+  {
+    "query": "My printer queue is stuck and print jobs will not clear.",
+    "source_id": "AUDIT-IR10-RESOLVED-001",
+    "category": "Printers",
+    "status": "resolved",
+    "supported_os": "Any",
+    "metadata_bonus": 0.26
+  }
+]

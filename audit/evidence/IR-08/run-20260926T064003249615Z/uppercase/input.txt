@@ -1,0 +1,3 @@
+IR-08 / uppercase
+Title: Windows blue screen report
+Description: Windows blue screen error 0X00000124

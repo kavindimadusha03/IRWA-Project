@@ -1,0 +1,16 @@
+{
+  "original_query": "My printer queue is stuck and print jobs will not clear.",
+  "normalized_query": "printer queue stuck print jobs will not clear",
+  "normalized_query_tokens": [
+    "printer",
+    "queue",
+    "stuck",
+    "print",
+    "jobs",
+    "will",
+    "not",
+    "clear"
+  ],
+  "submitted_issue": "My printer queue is stuck and print jobs will not clear.",
+  "capture": "original function return observed; no result or input changed"
+}

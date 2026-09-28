@@ -1,0 +1,18 @@
+...................                                                      [100%]
+============================== warnings summary ===============================
+irwa_retest/quick_tests/test_ir_01_to_15.py: 18 warnings
+  C:\Users\PSB\Desktop\KnowGap\IRWA-Project\.venv\Lib\site-packages\pydantic\_internal\_fields.py:727: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    return fac()
+
+irwa_retest/quick_tests/test_ir_01_to_15.py::test_ir_13_anonymous_agent_endpoints_deny_access
+  C:\Users\PSB\Desktop\KnowGap\IRWA-Project\.venv\Lib\site-packages\starlette\testclient.py:40: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = typing.Callable[[], typing.ContextManager[anyio.abc.BlockingPortal]]
+
+irwa_retest/quick_tests/test_ir_01_to_15.py::test_ir_14_role_permissions_follow_verified_cookie
+  C:\Users\PSB\Desktop\KnowGap\IRWA-Project\.venv\Lib\site-packages\starlette\templating.py:161: DeprecationWarning: The `name` is not the first parameter anymore. The first parameter should be the `Request` instance.
+  Replace `TemplateResponse(name, {"request": request})` by `TemplateResponse(request, name)`.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+19 passed, 20 warnings in 7.44s
+

@@ -1,0 +1,16 @@
+{
+  "status": 200,
+  "location": null,
+  "redirect_history_count": 0,
+  "identity": {
+    "request_id": "PROFILE",
+    "path": "/profile",
+    "user_found": true,
+    "database_user_id": 5,
+    "stored_role": "AUDIT_VIEWER",
+    "active": true
+  },
+  "profile_form_present": true,
+  "login_proven_by_original_helper": true,
+  "database_unchanged": true
+}

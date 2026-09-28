@@ -1,0 +1,20 @@
+Evaluating 21 queries against 80 KB articles
+
+Method            P@1      P@5   Recall@5      MRR
+----------------------------------------------------------
+BM25            0.000    0.210      0.365    0.229
+Semantic        0.619    0.314      0.532    0.722
+Hybrid          0.571    0.267      0.452    0.650
+
+Per-query examples:
+
+
+Query: VPN disconnects every few minutes
+Relevant: KB-002, KB-010, KB-018
+BM25 top result: KB-074
+BM25 top 5: KB-074, KB-066, KB-002, KB-018, KB-042
+Semantic top result: KB-018
+Semantic top 5: KB-018, KB-026, KB-002, KB-066, KB-074
+Hybrid top result: KB-018
+Hybrid top 5: KB-018, KB-026, KB-002, KB-066, KB-074
+

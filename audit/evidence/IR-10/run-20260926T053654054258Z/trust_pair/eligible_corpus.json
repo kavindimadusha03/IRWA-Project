@@ -1,0 +1,12 @@
+{
+  "eligible_record_count": 2,
+  "matches_declared_approved_and_resolved_records": true,
+  "eligible_corpus_sha256": "cc4c5e8253abd64698cd72cf1aaeca90ed861d4c14da76106fe5e53cc3e357a2",
+  "eligible_source_ids": [
+    "AUDIT-IR10-KB-001",
+    "AUDIT-IR10-RESOLVED-001"
+  ],
+  "draft_id_present": false,
+  "open_id_present": false,
+  "capture": "Full actual records passed unchanged from fixture-only DB; no pre-trust scores replaced"
+}

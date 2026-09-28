@@ -1,0 +1,7 @@
+{
+  "variant": "baseline",
+  "poison_id": "AUDIT-IR19-POISON-001",
+  "poison_present": false,
+  "poison_resolution": null,
+  "approved_printer_control": "KB-005"
+}

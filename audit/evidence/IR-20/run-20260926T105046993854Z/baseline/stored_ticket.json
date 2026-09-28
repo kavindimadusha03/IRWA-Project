@@ -1,0 +1,19 @@
+{
+  "id": 501,
+  "ticket_code": "TCK-00501",
+  "canonical_issue": "My printer queue is stuck and print jobs will not clear.",
+  "category": "Printers",
+  "status": "SOLUTION_PROPOSED",
+  "source_used": "AUDIT-IR20-KEEP-001",
+  "retrieval_confidence": 1.1681201389323432,
+  "recommended_solution": "Evidence source AUDIT-IR20-KEEP-001 | Printer queue recovery: preserve existing settings\nFor a printer queue that is stuck and print jobs that will not clear, KEEP all existing printer settings unchanged. Stop the print spooler, clear the stuck print jobs, restart the print spooler, and retry printing. Do NOT reset printer settings.",
+  "decision_explanation": "Selected-source relevance components before source and metadata adjustments: BM25 1.00, semantic 0.83. The final adjusted retrieval ranking score is 1.17 after source trust and metadata adjustments. Neither score is a probability that the solution is correct.",
+  "suggested_reply": "Thanks for reporting this issue. Please follow the documented recommendation and let IT Support know whether the reported problem continues.",
+  "citations": [
+    {
+      "source_id": "AUDIT-IR20-KEEP-001",
+      "title": "Printer queue recovery: preserve existing settings",
+      "rank": 1
+    }
+  ]
+}

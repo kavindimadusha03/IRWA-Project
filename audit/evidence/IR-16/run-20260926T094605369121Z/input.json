@@ -1,0 +1,10 @@
+{
+  "title": "IR16 synthetic private ticket",
+  "description": "My printer queue is stuck and print jobs will not clear. IR16-PRIVATE-CUSTOMER-A",
+  "creator_role": "CUSTOMER",
+  "test_requests": [
+    "Owner GET /tickets/{id}",
+    "Other customer GET /tickets/{id}",
+    "Anonymous GET /tickets/{id}"
+  ]
+}

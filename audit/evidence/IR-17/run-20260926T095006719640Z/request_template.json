@@ -1,0 +1,10 @@
+{
+  "message_id": "ir17-local-001",
+  "request_id": "ir17-bounded-test",
+  "sender": "coordinator",
+  "receiver": "retrieval_agent",
+  "task": "search_knowledge",
+  "payload": {
+    "issue": "My laptop is connected to Wi-Fi but there is no internet."
+  }
+}

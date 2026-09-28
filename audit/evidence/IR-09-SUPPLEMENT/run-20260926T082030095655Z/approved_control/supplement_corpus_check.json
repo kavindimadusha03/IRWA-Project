@@ -1,0 +1,9 @@
+{
+  "full_eligible_count": 428,
+  "ranking_candidate_count": 57,
+  "full_canonical_corpus_valid": true,
+  "draft_in_full_corpus": false,
+  "approved_control_in_full_corpus": true,
+  "draft_in_ranking_candidates": false,
+  "approved_control_in_ranking_candidates": true
+}

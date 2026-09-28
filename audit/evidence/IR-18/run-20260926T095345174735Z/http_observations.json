@@ -1,0 +1,42 @@
+{
+  "login": {
+    "http_status": 303,
+    "redirect": "/home",
+    "session_cookie_present": true,
+    "cookie_attributes": {
+      "httponly": true,
+      "path": "/",
+      "samesite": "lax"
+    },
+    "httponly": true,
+    "secure": false,
+    "samesite": "lax",
+    "security_headers": {
+      "strict-transport-security": null,
+      "content-security-policy": null,
+      "x-content-type-options": null,
+      "referrer-policy": null,
+      "x-frame-options": null
+    }
+  },
+  "authenticated_home": {
+    "http_status": 200,
+    "security_headers": {
+      "strict-transport-security": null,
+      "content-security-policy": null,
+      "x-content-type-options": null,
+      "referrer-policy": null,
+      "x-frame-options": null
+    }
+  },
+  "health": {
+    "http_status": 200,
+    "security_headers": {
+      "strict-transport-security": null,
+      "content-security-policy": null,
+      "x-content-type-options": null,
+      "referrer-policy": null,
+      "x-frame-options": null
+    }
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "query": "After installing Windows updates, my laptop battery is swelling. What exact fix should I perform?",
+  "items": [
+    {
+      "source_id": "SYN-0005",
+      "title": "Blue screen appears after installing an update",
+      "content": "Problem: Blue screen appears after installing an update on Windows 10. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Windows 10",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 1.0,
+      "semantic_score": 0.37425320784628235,
+      "hybrid_score": 0.817463374668137,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 1.0,
+        "semantic_score": 0.37425320784628235,
+        "hybrid_score": 0.817463374668137
+      },
+      "source": "SYN-0005",
+      "applicability": {
+        "source_eligible": true,
+        "symptom_applicable": true,
+        "operating_system_applicable": true,
+        "evidence_sufficient": true
+      }
+    },
+    {
+      "source_id": "SYN-0010",
+      "title": "Laptop is slow after Windows 11 update",
+      "content": "Problem: Laptop is slow after Windows 11 update on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Windows 11",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.6488872807045943,
+      "semantic_score": 0.5056641656888294,
+      "hybrid_score": 0.744597382329035,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.6488872807045943,
+        "semantic_score": 0.5056641656888294,
+        "hybrid_score": 0.744597382329035
+      },
+      "source": "SYN-0010",
+      "applicability": {
+        "source_eligible": true,
+        "symptom_applicable": true,
+        "operating_system_applicable": true,
+        "evidence_sufficient": true
+      }
+    },
+    {
+      "source_id": "SYN-0008",
+      "title": "Computer repeatedly restarts after Windows update",
+      "content": "Problem: Computer repeatedly restarts after Windows update on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Windows 11",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.6081475563040847,
+      "semantic_score": 0.39810845412782486,
+      "hybrid_score": 0.6787321425910705,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.6081475563040847,
+        "semantic_score": 0.39810845412782486,
+        "hybrid_score": 0.6787321425910705
+      },
+      "source": "SYN-0008",
+      "applicability": {
+        "source_eligible": true,
+        "symptom_applicable": true,
+        "operating_system_applicable": true,
+        "evidence_sufficient": true
+      }
+    },
+    {
+      "source_id": "SYN-0054",
+      "title": "Windows driver error after restart",
+      "content": "Problem: Windows driver error after restart on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Windows 11",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.5234044974047487,
+      "semantic_score": 0.32125602304024736,
+      "hybrid_score": 0.6103894110286321,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.5234044974047487,
+        "semantic_score": 0.32125602304024736,
+        "hybrid_score": 0.6103894110286321
+      },
+      "source": "SYN-0054",
+      "applicability": {
+        "source_eligible": true,
+        "symptom_applicable": true,
+        "operating_system_applicable": true,
+        "evidence_sufficient": true
+      }
+    },
+    {
+      "source_id": "SYN-0026",
+      "title": "Windows update failed and rolled back",
+      "content": "Problem: Windows update failed and rolled back on Windows 11. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Windows 11",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.3291361151054169,
+      "semantic_score": 0.3871624936831616,
+      "hybrid_score": 0.5668930298247,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.3291361151054169,
+        "semantic_score": 0.3871624936831616,
+        "hybrid_score": 0.5668930298247
+      },
+      "source": "SYN-0026",
+      "applicability": {
+        "source_eligible": true,
+        "symptom_applicable": true,
+        "operating_system_applicable": true,
+        "evidence_sufficient": true
+      }
+    }
+  ],
+  "best_score": 0.817463374668137,
+  "decision": "HIGH"
+}

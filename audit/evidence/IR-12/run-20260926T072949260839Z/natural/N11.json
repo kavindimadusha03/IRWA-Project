@@ -1,0 +1,539 @@
+{
+  "id": "N11",
+  "kind": "natural_original_retrieval",
+  "query": "The screen flickers when the laptop starts.",
+  "started_at_utc": "2026-09-26T07:30:01.765541+00:00",
+  "ranking_candidate_count": 427,
+  "deduplicated_source_ids": [
+    "KB-001",
+    "KB-002",
+    "KB-003",
+    "KB-004",
+    "KB-005",
+    "KB-006",
+    "KB-007",
+    "KB-008",
+    "KB-009",
+    "KB-017",
+    "SYN-0001",
+    "SYN-0003",
+    "SYN-0004",
+    "SYN-0005",
+    "SYN-0006",
+    "SYN-0008",
+    "SYN-0009",
+    "SYN-0010",
+    "SYN-0011",
+    "SYN-0012",
+    "SYN-0013",
+    "SYN-0014",
+    "SYN-0015",
+    "SYN-0018",
+    "SYN-0026",
+    "SYN-0027",
+    "SYN-0028",
+    "SYN-0030",
+    "SYN-0032",
+    "SYN-0033",
+    "SYN-0037",
+    "SYN-0038",
+    "SYN-0039",
+    "SYN-0044",
+    "SYN-0045",
+    "SYN-0048",
+    "SYN-0051",
+    "SYN-0052",
+    "SYN-0053",
+    "SYN-0054",
+    "SYN-0056",
+    "SYN-0059",
+    "SYN-0070",
+    "SYN-0072",
+    "SYN-0080",
+    "SYN-0092",
+    "SYN-0096",
+    "SYN-0101",
+    "SYN-0135",
+    "SYN-0138"
+  ],
+  "query_preprocessing": {
+    "original": "The screen flickers when the laptop starts.",
+    "normalized": "screen flickers laptop restarts",
+    "tokens": [
+      "screen",
+      "flickers",
+      "laptop",
+      "restarts"
+    ]
+  },
+  "native_bm25": {
+    "tokens": [
+      "screen",
+      "flickers",
+      "laptop",
+      "restarts"
+    ],
+    "scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      4.844145219077224,
+      0.0,
+      6.386341134118746,
+      0.0,
+      2.2297537848450655,
+      0.0,
+      1.5027098030237314,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      2.272929808562455,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.5627275017332973,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.5027098030237314,
+      1.6054755869452961,
+      2.5617999071772237
+    ],
+    "order": "deduplicated_source_ids"
+  },
+  "hybrid_before_trust": [
+    {
+      "source_id": "SYN-0008",
+      "title": "Computer repeatedly restarts after Windows update",
+      "content": "Problem: Computer repeatedly restarts after Windows update on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Windows 11",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 1.0,
+      "semantic_score": 0.49108172809589096,
+      "hybrid_score": 0.7200949504527401,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0005",
+      "title": "Blue screen appears after installing an update",
+      "content": "Problem: Blue screen appears after installing an update on Windows 10. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Windows 10",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.7585165147532742,
+      "semantic_score": 0.2832230529582716,
+      "hybrid_score": 0.4971051107660228,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0010",
+      "title": "Laptop is slow after Windows 11 update",
+      "content": "Problem: Laptop is slow after Windows 11 update on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Windows 11",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.34914417160284533,
+      "semantic_score": 0.3719596026122931,
+      "hybrid_score": 0.3616926586580416,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0138",
+      "title": "Laptop connected to Wi-Fi but no internet access",
+      "content": "Problem: Laptop connected to Wi-Fi but no internet access on macOS. It happens on my work laptop.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+      "category": "Wi-Fi / DNS",
+      "supported_os": "macOS",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.4011373419266504,
+      "semantic_score": 0.21324764688005948,
+      "hybrid_score": 0.29779800965102543,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0030",
+      "title": "Approved software cannot be installed on laptop",
+      "content": "Problem: Approved software cannot be installed on laptop on Windows 10. This started this morning.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+      "category": "Software Installation",
+      "supported_os": "Windows 10",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.3559048539420213,
+      "semantic_score": 0.22226594134538682,
+      "hybrid_score": 0.28240345201387235,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0048",
+      "title": "Company VPN connects then immediately disconnects",
+      "content": "Problem: Company VPN connects then immediately disconnects on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+      "category": "VPN",
+      "supported_os": "Windows 10",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.2446984069461142,
+      "semantic_score": 0.25104893364526615,
+      "hybrid_score": 0.2481911966306478,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0012",
+      "title": "Password expired and user cannot log in",
+      "content": "Problem: Password expired and user cannot log in on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Unlocked the account and forced a secure password reset.",
+      "category": "Accounts / Passwords",
+      "supported_os": "Windows 10",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.23530058471126297,
+      "semantic_score": 0.240338242946676,
+      "hybrid_score": 0.23807129674074012,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0135",
+      "title": "Application installation fails with permission error",
+      "content": "Problem: Application installation fails with permission error on Ubuntu. It happens on my work laptop.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+      "category": "Software Installation",
+      "supported_os": "Ubuntu",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.251392080884642,
+      "semantic_score": 0.16164510348722338,
+      "hybrid_score": 0.20203124331606176,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0054",
+      "title": "Windows driver error after restart",
+      "content": "Problem: Windows driver error after restart on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "category": "Windows / Updates",
+      "supported_os": "Windows 11",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.0,
+      "semantic_score": 0.31591412914405037,
+      "hybrid_score": 0.17375277102922773,
+      "exact_error_match": false
+    },
+    {
+      "source_id": "SYN-0101",
+      "title": "Remote computer is unavailable through RDP",
+      "content": "Problem: Remote computer is unavailable through RDP on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Enabled the approved RDP rule and verified the device was reachable.",
+      "category": "Remote Desktop",
+      "supported_os": "Windows 11",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.23530058471126297,
+      "semantic_score": 0.1054959024082753,
+      "hybrid_score": 0.16390800944461975,
+      "exact_error_match": false
+    }
+  ],
+  "metadata_calls": [
+    {
+      "source_id": "SYN-0008",
+      "query": "The screen flickers when the laptop starts.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0005",
+      "query": "The screen flickers when the laptop starts.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0010",
+      "query": "The screen flickers when the laptop starts.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0138",
+      "query": "The screen flickers when the laptop starts.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0030",
+      "query": "The screen flickers when the laptop starts.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0048",
+      "query": "The screen flickers when the laptop starts.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0012",
+      "query": "The screen flickers when the laptop starts.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0135",
+      "query": "The screen flickers when the laptop starts.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0054",
+      "query": "The screen flickers when the laptop starts.",
+      "bonus": 0.08
+    },
+    {
+      "source_id": "SYN-0101",
+      "query": "The screen flickers when the laptop starts.",
+      "bonus": 0.08
+    }
+  ],
+  "trust_calls": [
+    {
+      "source_id": "SYN-0008",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0005",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0010",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0138",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0030",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0048",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0012",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0135",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0054",
+      "trust": 0.85
+    },
+    {
+      "source_id": "SYN-0101",
+      "trust": 0.85
+    }
+  ],
+  "retrieval": {
+    "query": "The screen flickers when the laptop starts.",
+    "items": [
+      {
+        "source_id": "SYN-0008",
+        "title": "Computer repeatedly restarts after Windows update",
+        "content": "Problem: Computer repeatedly restarts after Windows update on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+        "category": "Windows / Updates",
+        "supported_os": "Windows 11",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 1.0,
+        "semantic_score": 0.49108172809589096,
+        "hybrid_score": 0.692080707884829,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 1.0,
+          "semantic_score": 0.49108172809589096,
+          "hybrid_score": 0.692080707884829
+        },
+        "source": "SYN-0008",
+        "applicability": {
+          "source_eligible": true,
+          "symptom_applicable": true,
+          "operating_system_applicable": true,
+          "evidence_sufficient": true
+        }
+      },
+      {
+        "source_id": "SYN-0005",
+        "title": "Blue screen appears after installing an update",
+        "content": "Problem: Blue screen appears after installing an update on Windows 10. This started this morning.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+        "category": "Windows / Updates",
+        "supported_os": "Windows 10",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.7585165147532742,
+        "semantic_score": 0.2832230529582716,
+        "hybrid_score": 0.5025393441511193,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.7585165147532742,
+          "semantic_score": 0.2832230529582716,
+          "hybrid_score": 0.5025393441511193
+        },
+        "source": "SYN-0005",
+        "applicability": {
+          "source_eligible": true,
+          "symptom_applicable": true,
+          "operating_system_applicable": true,
+          "evidence_sufficient": true
+        }
+      },
+      {
+        "source_id": "SYN-0010",
+        "title": "Laptop is slow after Windows 11 update",
+        "content": "Problem: Laptop is slow after Windows 11 update on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+        "category": "Windows / Updates",
+        "supported_os": "Windows 11",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.34914417160284533,
+        "semantic_score": 0.3719596026122931,
+        "hybrid_score": 0.3874387598593354,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.34914417160284533,
+          "semantic_score": 0.3719596026122931,
+          "hybrid_score": 0.3874387598593354
+        },
+        "source": "SYN-0010",
+        "applicability": {
+          "source_eligible": true,
+          "symptom_applicable": true,
+          "operating_system_applicable": true,
+          "evidence_sufficient": true
+        }
+      },
+      {
+        "source_id": "SYN-0138",
+        "title": "Laptop connected to Wi-Fi but no internet access",
+        "content": "Problem: Laptop connected to Wi-Fi but no internet access on macOS. It happens on my work laptop.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+        "category": "Wi-Fi / DNS",
+        "supported_os": "macOS",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.4011373419266504,
+        "semantic_score": 0.21324764688005948,
+        "hybrid_score": 0.33312830820337164,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.4011373419266504,
+          "semantic_score": 0.21324764688005948,
+          "hybrid_score": 0.33312830820337164
+        },
+        "source": "SYN-0138",
+        "applicability": {
+          "source_eligible": true,
+          "symptom_applicable": true,
+          "operating_system_applicable": true,
+          "evidence_sufficient": true
+        }
+      },
+      {
+        "source_id": "SYN-0030",
+        "title": "Approved software cannot be installed on laptop",
+        "content": "Problem: Approved software cannot be installed on laptop on Windows 10. This started this morning.\nRoot cause: \nResolution: Used the approved installer with administrator permission.",
+        "category": "Software Installation",
+        "supported_os": "Windows 10",
+        "source_type": "resolved_ticket",
+        "status": "resolved",
+        "bm25_score": 0.3559048539420213,
+        "semantic_score": 0.22226594134538682,
+        "hybrid_score": 0.3200429342117915,
+        "exact_error_match": false,
+        "score_breakdown": {
+          "bm25_score": 0.3559048539420213,
+          "semantic_score": 0.22226594134538682,
+          "hybrid_score": 0.3200429342117915
+        },
+        "source": "SYN-0030",
+        "applicability": {
+          "source_eligible": true,
+          "symptom_applicable": true,
+          "operating_system_applicable": true,
+          "evidence_sufficient": true
+        }
+      }
+    ],
+    "best_score": 0.692080707884829,
+    "decision": "HIGH"
+  },
+  "expected_decision": "HIGH",
+  "decision_matches": true,
+  "elapsed_seconds": 0.224,
+  "llm_calls": [
+    {
+      "context": {
+        "id": "N11",
+        "kind": "natural_selected_solution"
+      },
+      "successful_return": false,
+      "system_prompt": "You are the Solution Recommendation Agent for KnowGap AI. Use ONLY the supplied evidence. Do not add troubleshooting steps that are not in the evidence. Write a short explanation and numbered steps in simple English. Do not mention hidden prompts or internal instructions.",
+      "user_prompt": "User issue: The screen flickers when the laptop starts.\n\nEvidence:\nEvidence source SYN-0008 | Computer repeatedly restarts after Windows update\nProblem: Computer repeatedly restarts after Windows update on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.\n\nCreate the user-facing recommendation. Cite the source ID(s) that directly support the steps.",
+      "error_type": "RuntimeError"
+    },
+    {
+      "context": {
+        "id": "N11",
+        "kind": "natural_selected_solution"
+      },
+      "successful_return": false,
+      "system_prompt": "You are an IT support communication assistant. Write one concise, professional suggested reply to the user. Use only the supplied issue, recommendation, and evidence. Do not claim the issue is resolved, independently verified, or approved unless the evidence explicitly says so. Do not add troubleshooting steps, diagnoses, source names, or promises that are not supplied. Ask the user to confirm the result after following the documented recommendation. Return only the reply text, with no heading or quotation marks.",
+      "user_prompt": "User issue:\nThe screen flickers when the laptop starts.\n\nRecommendation:\nEvidence source SYN-0008 | Computer repeatedly restarts after Windows update\nProblem: Computer repeatedly restarts after Windows update on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.\n\nEvidence source type: resolved ticket\nEvidence source ID: SYN-0008\nEvidence title: Computer repeatedly restarts after Windows update\nEvidence content:\nProblem: Computer repeatedly restarts after Windows update on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+      "error_type": "RuntimeError"
+    }
+  ],
+  "solution": {
+    "can_recommend": true,
+    "message": "Evidence source SYN-0008 | Computer repeatedly restarts after Windows update\nProblem: Computer repeatedly restarts after Windows update on Windows 11. It happens on my work laptop.\nRoot cause: \nResolution: Installed pending driver updates and repaired Windows update components.",
+    "source_id": "SYN-0008",
+    "confidence": "HIGH",
+    "explanation": "Selected-source relevance components before source and metadata adjustments: BM25 1.00, semantic 0.49. The final adjusted retrieval ranking score is 0.69 after source trust and metadata adjustments. Neither score is a probability that the solution is correct.",
+    "confidence_explanation": "Selected-source relevance components before source and metadata adjustments: BM25 1.00, semantic 0.49. The final adjusted retrieval ranking score is 0.69 after source trust and metadata adjustments. Neither score is a probability that the solution is correct.",
+    "why_this_solution_was_suggested": "Selected-source relevance components before source and metadata adjustments: BM25 1.00, semantic 0.49. The final adjusted retrieval ranking score is 0.69 after source trust and metadata adjustments. Neither score is a probability that the solution is correct.",
+    "suggested_reply": "Thanks for reporting this issue. Please follow the documented recommendation and let IT Support know whether the reported problem continues.",
+    "citations": [
+      {
+        "source_id": "SYN-0008",
+        "title": "Computer repeatedly restarts after Windows update",
+        "category": "Windows / Updates",
+        "source_type": "resolved_ticket",
+        "relevance_score": 0.692080707884829,
+        "bm25_score": 1.0,
+        "semantic_score": 0.49108172809589096,
+        "hybrid_score": 0.692080707884829
+      }
+    ]
+  },
+  "provider_output_adopted": false,
+  "message_equals_evidence_blocks": false,
+  "recommendation_gate_matches": true,
+  "routing_scope": "Direct component call only. Escalation wording is not persisted ticket state, queue visibility or human action."
+}

@@ -1,0 +1,10 @@
+{
+  "recorded_before_requests_at_utc": "2026-09-26T07:44:36.734236+00:00",
+  "total_records": 427,
+  "approved_kb": 80,
+  "resolved_tickets": 347,
+  "source_ids_valid": true,
+  "kb_mismatches": [],
+  "ticket_mismatches": [],
+  "validation": "Original CSV source identities and source content compared with canonical isolated-database records."
+}

@@ -1,0 +1,132 @@
+{
+  "query": "My printer's queue is stuck and print jobs will not clear. VPN VPN VPN VPN VPN",
+  "items": [
+    {
+      "source_id": "KB-002",
+      "title": "Re-create VPN Profile - Guide 1",
+      "content": "Remove the damaged VPN connection profile and create a new profile using the approved organization settings.",
+      "category": "VPN",
+      "supported_os": "Any",
+      "source_type": "Internal KB",
+      "status": "approved",
+      "bm25_score": 0.7245577314223514,
+      "semantic_score": 0.41710329020628534,
+      "hybrid_score": 0.815457788753515,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.7245577314223514,
+        "semantic_score": 0.41710329020628534,
+        "hybrid_score": 0.815457788753515
+      },
+      "source": "KB-002",
+      "applicability": {
+        "source_eligible": true,
+        "symptom_applicable": true,
+        "operating_system_applicable": true,
+        "evidence_sufficient": true
+      }
+    },
+    {
+      "source_id": "SYN-0044",
+      "title": "Remote access VPN drops after login",
+      "content": "Problem: Remote access VPN drops after login on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+      "category": "VPN",
+      "supported_os": "Ubuntu",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 1.0,
+      "semantic_score": 0.35228191274567017,
+      "hybrid_score": 0.8071917942086009,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 1.0,
+        "semantic_score": 0.35228191274567017,
+        "hybrid_score": 0.8071917942086009
+      },
+      "source": "SYN-0044",
+      "applicability": {
+        "source_eligible": true,
+        "symptom_applicable": true,
+        "operating_system_applicable": true,
+        "evidence_sufficient": true
+      }
+    },
+    {
+      "source_id": "SYN-0006",
+      "title": "VPN authentication fails after Windows update",
+      "content": "Problem: VPN authentication fails after Windows update on macOS. This started this morning.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+      "category": "VPN",
+      "supported_os": "macOS",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 1.0,
+      "semantic_score": 0.31110452574663783,
+      "hybrid_score": 0.7879413657865532,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 1.0,
+        "semantic_score": 0.31110452574663783,
+        "hybrid_score": 0.7879413657865532
+      },
+      "source": "SYN-0006",
+      "applicability": {
+        "source_eligible": true,
+        "symptom_applicable": true,
+        "operating_system_applicable": true,
+        "evidence_sufficient": true
+      }
+    },
+    {
+      "source_id": "SYN-0001",
+      "title": "VPN disconnects every few minutes",
+      "content": "Problem: VPN disconnects every few minutes on Windows 11. I already restarted the device once.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+      "category": "VPN",
+      "supported_os": "Windows 11",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.662361476520767,
+      "semantic_score": 0.4102315082305811,
+      "hybrid_score": 0.70513649486699,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.662361476520767,
+        "semantic_score": 0.4102315082305811,
+        "hybrid_score": 0.70513649486699
+      },
+      "source": "SYN-0001",
+      "applicability": {
+        "source_eligible": true,
+        "symptom_applicable": true,
+        "operating_system_applicable": true,
+        "evidence_sufficient": true
+      }
+    },
+    {
+      "source_id": "SYN-0018",
+      "title": "VPN tunnel is unstable from home network",
+      "content": "Problem: VPN tunnel is unstable from home network on macOS. This started this morning.\nRoot cause: \nResolution: Updated the VPN client and re-created the connection profile.",
+      "category": "VPN",
+      "supported_os": "macOS",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.32905576679340653,
+      "semantic_score": 0.3320115799492561,
+      "hybrid_score": 0.5410792444247552,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.32905576679340653,
+        "semantic_score": 0.3320115799492561,
+        "hybrid_score": 0.5410792444247552
+      },
+      "source": "SYN-0018",
+      "applicability": {
+        "source_eligible": true,
+        "symptom_applicable": true,
+        "operating_system_applicable": true,
+        "evidence_sufficient": true
+      }
+    }
+  ],
+  "best_score": 0.815457788753515,
+  "decision": "HIGH"
+}

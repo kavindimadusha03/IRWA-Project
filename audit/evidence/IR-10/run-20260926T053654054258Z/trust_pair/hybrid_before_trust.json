@@ -1,0 +1,28 @@
+[
+  {
+    "source_id": "AUDIT-IR10-KB-001",
+    "title": "Printer queue review procedure",
+    "content": "For a stuck printer queue, record the waiting print jobs and ask IT Support to review the queue before making changes. Synthetic approved reference for this audit.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "internal_kb",
+    "status": "approved",
+    "bm25_score": 1.0,
+    "semantic_score": 0.6732405448710772,
+    "hybrid_score": 0.8202822996790925,
+    "exact_error_match": false
+  },
+  {
+    "source_id": "AUDIT-IR10-RESOLVED-001",
+    "title": "Stalled print jobs reviewed by support",
+    "content": "Problem: Printer queue was stuck and print jobs would not clear.\nRoot cause: Synthetic support case; no verified device diagnosis.\nResolution: Recorded waiting jobs and referred the printer queue to IT Support for review. No device settings were changed.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "resolved_ticket",
+    "status": "resolved",
+    "bm25_score": 0.0,
+    "semantic_score": 0.7756518053196821,
+    "hybrid_score": 0.4266084929258252,
+    "exact_error_match": false
+  }
+]

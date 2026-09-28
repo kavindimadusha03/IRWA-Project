@@ -42,7 +42,9 @@ def web_client(isolated_session):
     from app.routes import agents, admin, knowledge
     import app
     web = FastAPI()
-    web.mount('/static',StaticFiles(directory=str(Path(app.__file__).parent/'static')), name='static')
+    project_root = Path(__file__).resolve().parents[2]
+    static_dir = project_root / "app" / "static"
+    web.mount("/static", StaticFiles(directory=str(static_dir)), name="static")
     web.include_router(agents.router)
     web.include_router(admin.router)
     web.include_router(knowledge.router)

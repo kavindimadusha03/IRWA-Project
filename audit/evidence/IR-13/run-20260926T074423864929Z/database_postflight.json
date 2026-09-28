@@ -1,0 +1,51 @@
+{
+  "tables": {
+    "agentlog": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "category": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "knowledgearticle": {
+      "row_count": 80,
+      "rows_sha256": "26ad0c288c92e0a28bec9e76288ee55306dda13bac646a458c143693073543c3"
+    },
+    "notification": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "passwordresettoken": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "securityevent": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "solutionfeedback": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "ticket": {
+      "row_count": 500,
+      "rows_sha256": "9e1be706eccf1fe8d01397215be75d876d8d3ce607045936ec15ce4ddd8c999b"
+    },
+    "ticketcitation": {
+      "row_count": 0,
+      "rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "user": {
+      "row_count": 4,
+      "rows_sha256": "cc737818d335a7beee2de23d53c952180fdff860ebd87a70d8a14c9b2cf30d68"
+    }
+  },
+  "all_tables_unchanged": true,
+  "seeded_database_main_file_unchanged": true,
+  "private_snapshot_unchanged": true,
+  "ticket_count_unchanged": true,
+  "target_requests": 4,
+  "knowledge_cache_populated": false,
+  "cache_side_effect": "Process-local knowledge-health cache; no persistent write attributed unless table hashes change"
+}

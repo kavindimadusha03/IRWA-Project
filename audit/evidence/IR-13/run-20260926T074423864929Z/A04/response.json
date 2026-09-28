@@ -1,0 +1,20 @@
+{
+  "id": "A04",
+  "received_at_utc": "2026-09-26T07:44:39.080196+00:00",
+  "method": "POST",
+  "path": "/agents/knowledge/analyze",
+  "status_code": 401,
+  "location": null,
+  "content_type": "application/json",
+  "elapsed_seconds": 0.009,
+  "response_bytes": 36,
+  "response_text_sha256": "c2da9d5e7aa361b31b33e7c3c3820662d7852034a5119929a15903013e57bd8c",
+  "redirect_history_count": 0,
+  "set_cookie_header_present": false,
+  "client_cookie_count_after": 0,
+  "body_json": {
+    "detail": "Verified login required"
+  },
+  "body_text": "{\"detail\":\"Verified login required\"}",
+  "no_authentication_sent": true
+}

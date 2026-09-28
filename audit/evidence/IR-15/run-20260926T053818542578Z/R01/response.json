@@ -1,0 +1,16 @@
+{
+  "status": 422,
+  "location": null,
+  "content_type": "application/json",
+  "body_json": {
+    "detail": "payload.issue must be a non-empty string"
+  },
+  "body_text": "{\"detail\":\"payload.issue must be a non-empty string\"}",
+  "body_bytes": 53,
+  "body_sha256": "3f2797911fd8e1965aff82b44ea39d71d33a24639ecc966b115fa01d1027394b",
+  "elapsed_seconds": 0.004,
+  "redirect_history": 0,
+  "set_cookie_present": false,
+  "runtime_mode": "full",
+  "audit_boundary_503": false
+}

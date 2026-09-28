@@ -1,0 +1,29 @@
+{
+  "reference_run": "audit/evidence/IR-01/run-20260926T053436063351Z",
+  "source_files_same_as_IR01": true,
+  "kb_csv_same_as_IR01": true,
+  "ticket_csv_same_as_IR01": true,
+  "IR01_outcome": null,
+  "printer_reference_run": "audit/evidence/IR-05/run-20260926T053515935543Z/baseline",
+  "source_files_same_as_IR05": true,
+  "kb_csv_same_as_IR05": true,
+  "ticket_csv_same_as_IR05": true,
+  "baseline_title_and_description_match": true,
+  "IR05_baseline_artifact_sha256": {
+    "analysis.json": "50f50b60b518ff0e806c61a7ee553079de32150c82d1eefeca1945fb8ef8d324",
+    "customer_result.html": "6bd57da4cdc98f73fb091a22526703a15c2ab8b8597745097ce43921baba6379",
+    "eligible_corpus.json": "21b0a96a276291f2abb26dffb83707db2eb1a7bda40647a011ffa09feab6e912",
+    "execution.json": "f607ce5832fdc4ee8681f2db89a911e56f1952f10d8cfc7354ed4142c72230f4",
+    "hybrid_before_trust.json": "037f3e12bd19fbe2dd23ba81a531cf092ddad3494efe29a7d3d72ee24a829265",
+    "input.txt": "022b0ad56430a835caaf3c8a33b00149c668dcd2d44b66d2903d7264535ed826",
+    "process_result.json": "a5ef4914c8e453a94a3984306f1201dd7527c0186229a12057f62abb28747130",
+    "query_preprocessing.json": "c63f6c40e6d6e942bedcf0fdbaad992534e6229ebb6c6231e64154336a4a2da0",
+    "retrieval.json": "1a66366f2c1209dd51417400c78b14a9fe4ba9e80a5fd9066adaf2348adfd685",
+    "solution.json": "2d466df5890be17ee67277a0697a9992325739455f7126e9ecdc889f61efe19a",
+    "support_queue.html": "6736e968764ea9b83b76b6df24ce452a9f5e259f13bb145c4f1de3b48db3c146",
+    "support_queue_check.json": "c7bccd791f5b83fac0f7df01198fcba7219e72e6ce5bfeb802de1747e97aed07",
+    "terminal_log.txt": "9851f8315b97bca74ba79771d281c30a90fe83eb635128c9b7be48ea5659cf77",
+    "ticket.json": "c982776160eff9e10ed67da6ecb2f649e63c7a65ce05b6495ef296c673519a69"
+  },
+  "baseline_not_resubmitted": true
+}

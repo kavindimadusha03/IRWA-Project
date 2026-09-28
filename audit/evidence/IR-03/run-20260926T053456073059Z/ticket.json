@@ -1,0 +1,17 @@
+{
+  "id": 501,
+  "title": "Windows blue screen error 0x00000124",
+  "description": "Windows blue screen error 0x00000124",
+  "masked_description": "Windows blue screen error 0x00000124",
+  "category": "Unknown",
+  "canonical_issue": "Windows blue screen error 0x00000124",
+  "priority": "Medium",
+  "status": "CLARIFICATION_REQUIRED",
+  "approval_status": "PENDING",
+  "retrieval_confidence": 0.0,
+  "source_used": "",
+  "recommended_solution": "Please answer the clarification questions so IT Support can search for the right procedure.",
+  "decision_explanation": "CLARIFICATION_STATE:{\"affected_service\":\"\",\"clarification_questions\":[\"Is Windows / Updates the only service or device affected, or are other services also failing?\",\"What exactly happens when you try it, and when did the problem start?\",\"Which operating system and device are affected, and do you see an error message or code?\"],\"confirmed_active_symptoms\":[],\"effective_query\":\"\",\"operating_system\":null,\"original_context\":\"Windows blue screen error 0x00000124\",\"remaining_uncertainties\":[\"The description does not contain enough technical detail to select a safe procedure.\"],\"resolved_or_negated_symptoms\":[]}\nClarification required before retrieval:\n1. Is Windows / Updates the only service or device affected, or are other services also failing?\n2. What exactly happens when you try it, and when did the problem start?\n3. Which operating system and device are affected, and do you see an error message or code?",
+  "suggested_reply": "Please provide the requested details. If the problem affects multiple services, IT Support will investigate the shared cause.",
+  "citations": []
+}

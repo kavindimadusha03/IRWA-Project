@@ -1,0 +1,16 @@
+[SOLUTION_AGENT] LLM error source=AUDIT-IR20-KEEP-001
+Traceback (most recent call last):
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\agents\solution_agent.py", line 203, in recommend_solution
+    message = llm.chat(system, user, temperature=0.1)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\IR16_22_TestKit\run_ir20_distinct_titles.py", line 300, in offline_chat
+    raise RuntimeError(
+RuntimeError: IR-20: external LLM disabled
+[SOLUTION_AGENT] Suggested reply LLM error source=AUDIT-IR20-KEEP-001
+Traceback (most recent call last):
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\app\agents\solution_agent.py", line 77, in _suggest_reply
+    reply = llm.chat(system, user, temperature=0.2).strip()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\IR16_22_TestKit\run_ir20_distinct_titles.py", line 300, in offline_chat
+    raise RuntimeError(
+RuntimeError: IR-20: external LLM disabled

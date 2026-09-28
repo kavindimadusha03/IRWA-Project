@@ -1,0 +1,24 @@
+{
+  "category": "Unknown",
+  "canonical_issue": "cobaltlantern463",
+  "priority": "Medium",
+  "entities": {
+    "error_code": null,
+    "os": null,
+    "application": null,
+    "device": null
+  },
+  "masked_text": "cobaltlantern463",
+  "ambiguity_required": true,
+  "ambiguity_reasons": [
+    "The description does not contain enough technical detail to select a safe procedure.",
+    "The affected system or service is not clear from the description."
+  ],
+  "clarification_questions": [
+    "Which single service or device is the main problem right now?",
+    "What exactly happens when you try it, and when did the problem start?",
+    "Which operating system and device are affected, and do you see an error message or code?"
+  ],
+  "category_hits": [],
+  "history_summary": "Customer reported: cobaltlantern463. The case was classified as Unknown with priority Medium. The issue was reviewed against eligible knowledge sources and a structured support decision was generated."
+}

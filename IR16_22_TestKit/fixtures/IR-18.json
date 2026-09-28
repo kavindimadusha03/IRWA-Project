@@ -1,0 +1,9 @@
+{
+  "id": "IR-18",
+  "title": "Communication protocol security",
+  "objective": "Assess protection of client-to-server communication and authentication cookies.",
+  "input": "Inspect server deployment settings, HTTPS/TLS configuration, session-cookie attributes and relevant response headers.",
+  "expected": "The intended deployed environment protects credentials and sensitive data in transit and applies suitable session-cookie settings.",
+  "procedure": "Inspect local configuration and permitted test responses. Assess a real HTTPS deployment only if an authorized instance is available. Do not treat loopback development HTTP alone as a public vulnerability.",
+  "evidence": "Configuration excerpts, permitted HTTP/HTTPS captures, cookie attributes, security headers and deployment-scope notes."
+}

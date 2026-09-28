@@ -1,0 +1,19 @@
+{
+  "recorded_before_requests_at_utc": "2026-09-26T08:20:30.114666+00:00",
+  "case": "IR-09",
+  "title": "Audit reference lookup",
+  "cases": [
+    {
+      "name": "draft_probe",
+      "description": "My printer queue is stuck and print jobs will not clear. Please check reference quartzmeadow729.",
+      "characters": 96
+    },
+    {
+      "name": "approved_control",
+      "description": "My printer queue is stuck and print jobs will not clear. Please check reference cobaltlantern463.",
+      "characters": 97
+    }
+  ],
+  "draft_response_only_witness": "violetcompassstamp",
+  "approved_response_only_witness": "amberharborreceipt"
+}

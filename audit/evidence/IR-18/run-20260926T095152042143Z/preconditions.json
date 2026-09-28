@@ -1,0 +1,13 @@
+{
+  "case": "IR-18",
+  "recorded_at_utc": "2026-09-26T09:51:52.052990+00:00",
+  "status": "NOT EXECUTED",
+  "source_sha256": {
+    "app/main.py": "a62103516f4927fb184bb52178efc52f8a45b92a6a03288124071f9a8623fe0c",
+    "app/config.py": "b693c09e18256edea11410726d138b965e6c117ce1e761ac6169fb9191da2565",
+    "app/models.py": "a8072426b1c6c4deb0bf654670310df8c6c67bcb3aa135659a3bbc0250cc8ff7",
+    "app/agents/retrieval_agent.py": "503fed0fbebe56d6d26c0f9e5bad3063aaff2577477ffc34cc200fffaff65f09",
+    "app/agents/solution_agent.py": "5be14199eaa88084bd1f713aa8f13acf13f15fa6582759aaf25078ee70938f8d"
+  },
+  "purpose": "Read-only baseline before manual or separately implemented testing."
+}

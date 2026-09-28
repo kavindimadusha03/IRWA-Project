@@ -1,0 +1,6 @@
+{
+  "case": "IR-10",
+  "title": "Printer queue trust comparison",
+  "description": "My printer queue is stuck and print jobs will not clear.",
+  "characters": 56
+}

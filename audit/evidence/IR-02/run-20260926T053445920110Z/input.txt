@@ -1,0 +1,3 @@
+Test: IR-02 - Paraphrased Query Retrieval
+Title: Wireless connected but websites will not load
+Description: My wireless connection shows connected but websites will not load.

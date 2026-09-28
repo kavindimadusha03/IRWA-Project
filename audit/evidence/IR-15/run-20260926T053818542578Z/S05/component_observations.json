@@ -1,0 +1,188 @@
+{
+  "retrieval_boundary_calls": [
+    {
+      "request_id": "S05",
+      "query": "My laptop is connected to Wi-Fi but there is no internet.",
+      "python_type": "str",
+      "character_length": 57,
+      "backend_executed": true
+    }
+  ],
+  "original_solution_calls": [
+    {
+      "request_id": "S05",
+      "query": "My laptop is connected to Wi-Fi but there is no internet.",
+      "retrieval_received": {
+        "query": "My laptop is connected to Wi-Fi but there is no internet.",
+        "items": [
+          {
+            "source_id": "SYN-0138",
+            "title": "Laptop connected to Wi-Fi but no internet access",
+            "content": "Problem: Laptop connected to Wi-Fi but no internet access on macOS. It happens on my work laptop.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+            "category": "Wi-Fi / DNS",
+            "supported_os": "macOS",
+            "source_type": "resolved_ticket",
+            "status": "resolved",
+            "bm25_score": 1.0,
+            "semantic_score": 0.6452382640859319,
+            "hybrid_score": 0.9441488884601732,
+            "exact_error_match": false,
+            "score_breakdown": {
+              "bm25_score": 1.0,
+              "semantic_score": 0.6452382640859319,
+              "hybrid_score": 0.9441488884601732
+            },
+            "source": "SYN-0138",
+            "applicability": {
+              "source_eligible": true,
+              "symptom_applicable": true,
+              "operating_system_applicable": true,
+              "evidence_sufficient": true
+            }
+          },
+          {
+            "source_id": "SYN-0033",
+            "title": "Wi-Fi connected but browser says no internet",
+            "content": "Problem: Wi-Fi connected but browser says no internet on Windows 11. I already restarted the device once.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+            "category": "Wi-Fi / DNS",
+            "supported_os": "Windows 11",
+            "source_type": "resolved_ticket",
+            "status": "resolved",
+            "bm25_score": 0.7658989815444656,
+            "semantic_score": 0.5620407799366398,
+            "hybrid_score": 0.8157104250611372,
+            "exact_error_match": false,
+            "score_breakdown": {
+              "bm25_score": 0.7658989815444656,
+              "semantic_score": 0.5620407799366398,
+              "hybrid_score": 0.8157104250611372
+            },
+            "source": "SYN-0033",
+            "applicability": {
+              "source_eligible": true,
+              "symptom_applicable": true,
+              "operating_system_applicable": true,
+              "evidence_sufficient": true
+            }
+          },
+          {
+            "source_id": "KB-001",
+            "title": "DNS Cache Recovery - Guide 1",
+            "content": "If Wi-Fi is connected but internet access is unavailable, open Command Prompt and run ipconfig /flushdns. Reconnect to Wi-Fi and test again.",
+            "category": "Wi-Fi / DNS",
+            "supported_os": "Any",
+            "source_type": "Internal KB",
+            "status": "approved",
+            "bm25_score": 0.5944637942507516,
+            "semantic_score": 0.4877672748482785,
+            "hybrid_score": 0.7957807085793914,
+            "exact_error_match": false,
+            "score_breakdown": {
+              "bm25_score": 0.5944637942507516,
+              "semantic_score": 0.4877672748482785,
+              "hybrid_score": 0.7957807085793914
+            },
+            "source": "KB-001",
+            "applicability": {
+              "source_eligible": true,
+              "symptom_applicable": true,
+              "operating_system_applicable": true,
+              "evidence_sufficient": true
+            }
+          },
+          {
+            "source_id": "SYN-0037",
+            "title": "Internet unavailable although Wi-Fi is connected",
+            "content": "Problem: Internet unavailable although Wi-Fi is connected on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+            "category": "Wi-Fi / DNS",
+            "supported_os": "Ubuntu",
+            "source_type": "resolved_ticket",
+            "status": "resolved",
+            "bm25_score": 0.5196672580356153,
+            "semantic_score": 0.5710602006321172,
+            "hybrid_score": 0.7257433699941376,
+            "exact_error_match": false,
+            "score_breakdown": {
+              "bm25_score": 0.5196672580356153,
+              "semantic_score": 0.5710602006321172,
+              "hybrid_score": 0.7257433699941376
+            },
+            "source": "SYN-0037",
+            "applicability": {
+              "source_eligible": true,
+              "symptom_applicable": true,
+              "operating_system_applicable": true,
+              "evidence_sufficient": true
+            }
+          },
+          {
+            "source_id": "KB-017",
+            "title": "Renew Windows IP Address - Guide 3",
+            "content": "For Wi-Fi connected with no internet, run ipconfig /release followed by ipconfig /renew, then reconnect to the wireless network.",
+            "category": "Wi-Fi / DNS",
+            "supported_os": "Any",
+            "source_type": "Internal KB",
+            "status": "approved",
+            "bm25_score": 0.3960094735293755,
+            "semantic_score": 0.5143053318427124,
+            "hybrid_score": 0.7210721956017108,
+            "exact_error_match": false,
+            "score_breakdown": {
+              "bm25_score": 0.3960094735293755,
+              "semantic_score": 0.5143053318427124,
+              "hybrid_score": 0.7210721956017108
+            },
+            "source": "KB-017",
+            "applicability": {
+              "source_eligible": true,
+              "symptom_applicable": true,
+              "operating_system_applicable": true,
+              "evidence_sufficient": true
+            }
+          }
+        ],
+        "best_score": 0.9441488884601732,
+        "decision": "HIGH"
+      },
+      "result": {
+        "can_recommend": true,
+        "message": "Evidence source SYN-0138 | Laptop connected to Wi-Fi but no internet access\nProblem: Laptop connected to Wi-Fi but no internet access on macOS. It happens on my work laptop.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+        "source_id": "SYN-0138",
+        "confidence": "HIGH",
+        "explanation": "Selected-source relevance components before source and metadata adjustments: BM25 1.00, semantic 0.65. The final adjusted retrieval ranking score is 0.94 after source trust and metadata adjustments. Neither score is a probability that the solution is correct.",
+        "confidence_explanation": "Selected-source relevance components before source and metadata adjustments: BM25 1.00, semantic 0.65. The final adjusted retrieval ranking score is 0.94 after source trust and metadata adjustments. Neither score is a probability that the solution is correct.",
+        "why_this_solution_was_suggested": "Selected-source relevance components before source and metadata adjustments: BM25 1.00, semantic 0.65. The final adjusted retrieval ranking score is 0.94 after source trust and metadata adjustments. Neither score is a probability that the solution is correct.",
+        "suggested_reply": "Thanks for reporting this issue. Please follow the documented recommendation and let IT Support know whether the reported problem continues.",
+        "citations": [
+          {
+            "source_id": "SYN-0138",
+            "title": "Laptop connected to Wi-Fi but no internet access",
+            "category": "Wi-Fi / DNS",
+            "source_type": "resolved_ticket",
+            "relevance_score": 0.9441488884601732,
+            "bm25_score": 1.0,
+            "semantic_score": 0.6452382640859319,
+            "hybrid_score": 0.9441488884601732
+          }
+        ]
+      }
+    }
+  ],
+  "original_llm_attempts": [
+    {
+      "request_id": "S05",
+      "configured_enabled": false,
+      "result": "exception",
+      "type": "RuntimeError",
+      "message": "Groq API key is not configured in .env"
+    },
+    {
+      "request_id": "S05",
+      "configured_enabled": false,
+      "result": "exception",
+      "type": "RuntimeError",
+      "message": "Groq API key is not configured in .env"
+    }
+  ],
+  "retrieval_backend_executed": true
+}

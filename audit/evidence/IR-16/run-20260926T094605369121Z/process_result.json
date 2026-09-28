@@ -1,0 +1,64 @@
+{
+  "case": "IR-16",
+  "started_at_utc": "2026-09-26T09:46:05.369121+00:00",
+  "status": "EXECUTED",
+  "outcome": "PASS",
+  "scope": "Original FastAPI application, isolated synthetic database",
+  "http": {
+    "customer_a_login": {
+      "status": 303,
+      "cookie_present": true
+    },
+    "customer_b_login": {
+      "status": 303,
+      "cookie_present": true
+    },
+    "create_ticket": {
+      "status": 303,
+      "location": "/tickets/501"
+    },
+    "owner": {
+      "status": 200,
+      "location": null,
+      "private_marker_present": true
+    },
+    "other_customer": {
+      "status": 403,
+      "location": null,
+      "private_marker_present": false
+    },
+    "anonymous": {
+      "status": 303,
+      "location": "/",
+      "private_marker_present": false
+    }
+  },
+  "checks": {
+    "owner_can_view": true,
+    "owner_marker_visible": true,
+    "other_customer_denied": true,
+    "other_customer_marker_absent": true,
+    "anonymous_denied": true,
+    "anonymous_marker_absent": true,
+    "ticket_unchanged_by_get_requests": true
+  },
+  "synthetic_users": {
+    "customer_a_id": 1,
+    "customer_b_id": 5,
+    "roles": [
+      "CUSTOMER",
+      "CUSTOMER"
+    ],
+    "credentials_recorded": false
+  },
+  "llm_scope": "Disabled; local fallback only",
+  "server": {
+    "interface": "127.0.0.1",
+    "health": 200,
+    "temporary_database": true
+  },
+  "ticket_id": 501,
+  "finished_at_utc": "2026-09-26T09:46:17.334780+00:00",
+  "source_files_unchanged": true,
+  "working_database_files_unchanged": true
+}

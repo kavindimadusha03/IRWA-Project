@@ -1,0 +1,20 @@
+{
+  "original_query": "After installing Windows updates, my laptop battery is swelling. What exact fix should I perform?",
+  "normalized_query": "after installing windows updates laptop battery swelling. what exact fix should i perform",
+  "normalized_query_tokens": [
+    "after",
+    "installing",
+    "windows",
+    "updates",
+    "laptop",
+    "battery",
+    "swelling",
+    "what",
+    "exact",
+    "fix",
+    "should",
+    "i",
+    "perform"
+  ],
+  "capture": "original function return observed; no result or input changed"
+}

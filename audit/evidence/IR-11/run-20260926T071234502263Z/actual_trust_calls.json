@@ -1,0 +1,42 @@
+[
+  {
+    "source_id": "SYN-0005",
+    "trust_weight": 0.85
+  },
+  {
+    "source_id": "SYN-0010",
+    "trust_weight": 0.85
+  },
+  {
+    "source_id": "SYN-0008",
+    "trust_weight": 0.85
+  },
+  {
+    "source_id": "SYN-0054",
+    "trust_weight": 0.85
+  },
+  {
+    "source_id": "SYN-0026",
+    "trust_weight": 0.85
+  },
+  {
+    "source_id": "KB-006",
+    "trust_weight": 1.0
+  },
+  {
+    "source_id": "SYN-0030",
+    "trust_weight": 0.85
+  },
+  {
+    "source_id": "SYN-0086",
+    "trust_weight": 0.85
+  },
+  {
+    "source_id": "SYN-0061",
+    "trust_weight": 0.85
+  },
+  {
+    "source_id": "KB-010",
+    "trust_weight": 1.0
+  }
+]

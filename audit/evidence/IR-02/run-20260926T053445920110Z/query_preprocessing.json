@@ -1,0 +1,5 @@
+{
+  "original_query": "My wireless connection shows connected but websites will not load.",
+  "normalized_query": "wifi connection shows connected but websites will not load",
+  "capture": "original function return observed; no result or input changed"
+}

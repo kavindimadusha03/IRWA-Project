@@ -1,0 +1,22 @@
+{
+  "constructed_input": "My printer's queue is stuck and print jobs will not clear. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. ",
+  "constructed_characters": 1099,
+  "constructed_utf8_bytes": 1099,
+  "constructed_noise_repetitions": 20,
+  "submitted_form_description_equals_constructed_input": true,
+  "trailing_space_in_constructed_input": true,
+  "stored_description_characters": 1098,
+  "stored_description_equals_stripped_input": true,
+  "masked_description_characters": 1098,
+  "masking_changed_description": false,
+  "canonical_query": "My printer's queue is stuck and print jobs will not clear. The notebook is blue and the meeting is on Tuesday. The notebook is blue and the meeting is on Tuesday. The notebook is b",
+  "canonical_characters": 180,
+  "canonical_equals_first_180_masked_characters": true,
+  "complete_noise_sentences_in_canonical": 2,
+  "stored_characters_not_in_canonical": 918,
+  "retrieval_query_equals_canonical": true,
+  "normalized_query": "printer s queue stuck print jobs will not clear notebook blue meeting tuesday. b",
+  "normalized_characters": 80,
+  "normalized_token_count": 14,
+  "scope": "Observed ticket pipeline; retrieval did not receive the full submitted description if analysis truncated it."
+}

@@ -1,0 +1,22 @@
+{
+  "can_recommend": true,
+  "message": "Evidence source AUDIT-IR10-KB-001 | Printer queue review procedure\nFor a stuck printer queue, record the waiting print jobs and ask IT Support to review the queue before making changes. Synthetic approved reference for this audit.",
+  "source_id": "AUDIT-IR10-KB-001",
+  "confidence": "HIGH",
+  "explanation": "Selected-source relevance components before source and metadata adjustments: BM25 1.00, semantic 0.67. The final adjusted retrieval ranking score is 1.08 after source trust and metadata adjustments. Neither score is a probability that the solution is correct.",
+  "confidence_explanation": "Selected-source relevance components before source and metadata adjustments: BM25 1.00, semantic 0.67. The final adjusted retrieval ranking score is 1.08 after source trust and metadata adjustments. Neither score is a probability that the solution is correct.",
+  "why_this_solution_was_suggested": "Selected-source relevance components before source and metadata adjustments: BM25 1.00, semantic 0.67. The final adjusted retrieval ranking score is 1.08 after source trust and metadata adjustments. Neither score is a probability that the solution is correct.",
+  "suggested_reply": "Thanks for reporting this issue. Please follow the documented recommendation and let IT Support know whether the reported problem continues.",
+  "citations": [
+    {
+      "source_id": "AUDIT-IR10-KB-001",
+      "title": "Printer queue review procedure",
+      "category": "Printers",
+      "source_type": "internal_kb",
+      "relevance_score": 1.0802822996790926,
+      "bm25_score": 1.0,
+      "semantic_score": 0.6732405448710772,
+      "hybrid_score": 1.0802822996790926
+    }
+  ]
+}

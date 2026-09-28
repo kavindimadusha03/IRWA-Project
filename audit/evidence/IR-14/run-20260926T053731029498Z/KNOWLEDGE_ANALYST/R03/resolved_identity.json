@@ -1,0 +1,10 @@
+[
+  {
+    "request_id": "R03",
+    "path": "/admin/categories/create",
+    "user_found": true,
+    "database_user_id": 3,
+    "stored_role": "KNOWLEDGE_ANALYST",
+    "active": true
+  }
+]

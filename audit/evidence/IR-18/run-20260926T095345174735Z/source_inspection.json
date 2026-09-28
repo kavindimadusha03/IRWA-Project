@@ -1,0 +1,11 @@
+{
+  "application_python_matches": [
+    {
+      "file": "app/routes/auth.py",
+      "line": 198,
+      "text": "response.set_cookie(\"access_token\", token, httponly=True, samesite=\"lax\")"
+    }
+  ],
+  "root_deployment_files_found": [],
+  "inspection_limit": "Only application Python files and selected root deployment filenames were inspected. External hosting configuration was not assessed."
+}

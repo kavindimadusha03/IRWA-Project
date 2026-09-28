@@ -1,0 +1,8 @@
+Test: IR-05 - Keyword Stuffing
+Same title for every subcase: Printer queue problem
+
+baseline: My printer's queue is stuck and print jobs will not clear.
+
+stuffed: My printer's queue is stuck and print jobs will not clear. VPN VPN VPN VPN VPN
+
+exploratory: VPN VPN VPN VPN VPN printer problem

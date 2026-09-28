@@ -1,0 +1,2 @@
+{"saved": "environment.json", "roles": [{"role": "ADMIN", "active": true, "count": 1}, {"role": "CUSTOMER", "active": true, "count": 47}, {"role": "IT_SUPPORT", "active": true, "count": 1}, {"role": "KNOWLEDGE_ANALYST", "active": true, "count": 1}], "counts": {"user": 50, "ticket": 598, "knowledgearticle": 83}}
+

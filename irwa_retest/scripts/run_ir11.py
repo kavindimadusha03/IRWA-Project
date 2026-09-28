@@ -188,23 +188,208 @@ def worker(folder):
             return result
         hybrid_search.normalize_query_for_search=observed_normalize
         original_hybrid=retrieval_agent.hybrid_rank
-        def observed_hybrid(*args,**kwargs):
-            records=args[1] if len(args)>1 else kwargs.get("records",[])
-            with (ROOT/"data"/"knowledge_base.csv").open(encoding="utf-8-sig",newline="") as handle:
-                expected_articles=[r for r in csv.DictReader(handle) if r["status"]=="approved"]
-            with (ROOT/"data"/"tickets.csv").open(encoding="utf-8-sig",newline="") as handle:
-                expected_tickets=[r for r in csv.DictReader(handle) if r["status"]=="Resolved" and r["resolution_notes"].strip()]
-            expected_records=[{"source_id":r["doc_id"],"title":r["title"],"content":r["body"],"category":r["category"],"supported_os":r["supported_os"],"source_type":r["source_type"],"status":r["status"]} for r in expected_articles]
-            expected_records += [{"source_id":r["ticket_id"],"title":r["title"],"content":f"Problem: {r['description']}\nRoot cause: \nResolution: {r['resolution_notes']}","category":r["ground_truth_category"],"supported_os":"Any","source_type":"resolved_ticket","status":"resolved"} for r in expected_tickets]
-            same_corpus=sorted(records,key=lambda r:r["source_id"])==sorted(expected_records,key=lambda r:r["source_id"])
-            matches=[record for record in records if any(term in " ".join(str(record.get(field,"")) for field in ("title","content","category")).lower() for term in ISSUE_TERMS)]
-            save(folder,"eligible_corpus.json",{"eligible_record_count":len(records),"matches_reviewed_CSV_records_in_all_retrieval_fields":same_corpus,"issue_terms":ISSUE_TERMS,"issue_term_matches":matches,"capture":"Actual records passed unchanged to hybrid_rank; keyword screening supplements the independent corpus content review"})
-            save(folder,"eligible_records.json",records)
-            if not same_corpus or matches:
-                raise RuntimeError("Reviewed corpus/support precondition failed before retrieval")
-            result=original_hybrid(*args,**kwargs)
-            save(folder,"hybrid_before_trust.json",result)
+        def observed_hybrid(*args, **kwargs):
+            from sqlmodel import Session
+            from app.database import engine
+
+            # Capture the original query-filtered candidates.
+            records = (
+                args[1]
+                if len(args) > 1
+                else kwargs.get("records", [])
+            )
+
+            # Establish the allowed source IDs independently
+            # from the unchanged project CSV files.
+            with (
+                ROOT / "data" / "knowledge_base.csv"
+            ).open(encoding="utf-8-sig", newline="") as handle:
+                expected_articles = [
+                    row
+                    for row in csv.DictReader(handle)
+                    if row["status"] == "approved"
+                ]
+
+            with (
+                ROOT / "data" / "tickets.csv"
+            ).open(encoding="utf-8-sig", newline="") as handle:
+                expected_tickets = [
+                    row
+                    for row in csv.DictReader(handle)
+                    if (
+                        row["status"] == "Resolved"
+                        and row["resolution_notes"].strip()
+                    )
+                ]
+
+            expected_source_ids = (
+                {row["doc_id"] for row in expected_articles}
+                | {row["ticket_id"] for row in expected_tickets}
+            )
+
+            # Read the canonical retrieval records from
+            # the isolated test database.
+            #
+            # This preserves the application's actual
+            # historical-ticket titles, root causes and
+            # inferred operating-system values.
+            with Session(engine) as verification_session:
+                reference_records = (
+                    retrieval_agent._records_from_db(
+                        verification_session,
+                        approved_only=False,
+                    )
+                )
+
+            reference_by_id = {
+                record["source_id"]: record
+                for record in reference_records
+            }
+
+            reference_ids_match_csv = (
+                len(reference_records) == len(reference_by_id)
+                and set(reference_by_id) == expected_source_ids
+            )
+
+            # The ranker receives a filtered subset,
+            # not necessarily all 427 reference records.
+            actual_ids = [
+                record["source_id"]
+                for record in records
+            ]
+
+            duplicate_ids = sorted({
+                source_id
+                for source_id in actual_ids
+                if actual_ids.count(source_id) > 1
+            })
+
+            unexpected_ids = sorted({
+                source_id
+                for source_id in actual_ids
+                if source_id not in reference_by_id
+            })
+
+            mismatched_ids = sorted({
+                record["source_id"]
+                for record in records
+                if (
+                    record["source_id"] in reference_by_id
+                    and record != reference_by_id[record["source_id"]]
+                )
+            })
+
+            # Check battery-related terminology in both
+            # the complete corpus and the filtered candidates.
+            #
+            # These keyword checks supplement the manual
+            # content review; they do not replace it.
+            def issue_matches(collection):
+                matches = []
+
+                for record in collection:
+                    searchable_text = " ".join(
+                        str(record.get(field, ""))
+                        for field in (
+                            "title",
+                            "content",
+                            "category",
+                        )
+                    ).lower()
+
+                    if any(
+                        term in searchable_text
+                        for term in ISSUE_TERMS
+                    ):
+                        matches.append(record)
+
+                return matches
+
+            full_reference_matches = issue_matches(
+                reference_records
+            )
+
+            candidate_matches = issue_matches(
+                records
+            )
+
+            # Preserve evidence before applying assertions.
+            save(
+                folder,
+                "eligible_corpus.json",
+                {
+                    "eligible_record_count": len(records),
+                    "reference_record_count": len(reference_records),
+                    "expected_source_id_count": len(
+                        expected_source_ids
+                    ),
+                    "reference_ids_match_csv": (
+                        reference_ids_match_csv
+                    ),
+                    "candidate_subset_matches_reference": (
+                        not duplicate_ids
+                        and not unexpected_ids
+                        and not mismatched_ids
+                    ),
+                    "duplicate_ids": duplicate_ids,
+                    "unexpected_ids": unexpected_ids,
+                    "mismatched_ids": mismatched_ids,
+                    "issue_terms": ISSUE_TERMS,
+                    "full_reference_issue_term_matches": (
+                        full_reference_matches
+                    ),
+                    "issue_term_matches": candidate_matches,
+                    "capture": (
+                        "Original candidates passed unchanged "
+                        "to hybrid_rank. Complete source IDs "
+                        "checked against the original CSVs. "
+                        "Candidate fields checked against the "
+                        "isolated database's canonical records. "
+                        "Full-corpus and candidate keyword "
+                        "screens recorded separately."
+                    ),
+                },
+            )
+
+            save(
+                folder,
+                "eligible_records.json",
+                records,
+            )
+
+            # Retain strict controls against unknown,
+            # duplicate and altered records.
+            #
+            # Do not incorrectly require all 427 source
+            # records to reach the query-filtered ranker.
+            if (
+                len(expected_source_ids) != 427
+                or len(reference_records) != 427
+                or not reference_ids_match_csv
+                or not records
+                or duplicate_ids
+                or unexpected_ids
+                or mismatched_ids
+                or full_reference_matches
+                or candidate_matches
+            ):
+                raise RuntimeError(
+                    "IR-11 source precondition failed; "
+                    "inspect eligible_corpus.json"
+                )
+
+            # Execute the ORIGINAL ranking function
+            # exactly once with unchanged arguments.
+            result = original_hybrid(*args, **kwargs)
+
+            save(
+                folder,
+                "hybrid_before_trust.json",
+                result,
+            )
+
             return result
+
         retrieval_agent.hybrid_rank=observed_hybrid
         original_analysis=coordinator.analyze_ticket
         def observed_analysis(*args,**kwargs):

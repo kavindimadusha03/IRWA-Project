@@ -1,0 +1,25 @@
+Traceback (most recent call last):
+  File "C:\Users\PSB\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 633, in _rmtree_unsafe
+    os.unlink(fullname)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\PSB\\AppData\\Local\\Temp\\knowgap-ir19-poisoned-xw0mtjns\\ir19.db'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PSB\Desktop\KnowGap\IRWA-Project\IR16_22_TestKit\run_ir19.py", line 103, in worker
+    with tempfile.TemporaryDirectory(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 950, in __exit__
+    self.cleanup()
+  File "C:\Users\PSB\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 954, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "C:\Users\PSB\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 934, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "C:\Users\PSB\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PSB\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 635, in _rmtree_unsafe
+    onexc(os.unlink, fullname, err)
+  File "C:\Users\PSB\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 909, in onexc
+    _os.unlink(path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\PSB\\AppData\\Local\\Temp\\knowgap-ir19-poisoned-xw0mtjns\\ir19.db'

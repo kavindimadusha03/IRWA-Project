@@ -1,0 +1,1 @@
+{"detail":[{"type":"missing","loc":["body","sender"],"msg":"Field required","input":{"message_id":"ir15-local-001","request_id":"ir15-local-audit","receiver":"retrieval_agent","task":"retrieve_knowledge","payload":{"issue":"My laptop is connected to Wi-Fi but there is no internet."}}}]}

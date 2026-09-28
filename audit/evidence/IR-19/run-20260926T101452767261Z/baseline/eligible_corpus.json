@@ -1,0 +1,506 @@
+[
+  {
+    "source_id": "KB-005",
+    "title": "Clear Print Queue - Guide 1",
+    "content": "Stop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-013",
+    "title": "Clear Print Queue - Guide 2",
+    "content": "Stop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-021",
+    "title": "Clear Print Queue - Guide 3",
+    "content": "Stop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again. This is a near-duplicate article retained for evaluation of duplicate knowledge.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-029",
+    "title": "Clear Print Queue - Guide 4",
+    "content": "Stop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-037",
+    "title": "Clear Print Queue - Guide 5",
+    "content": "Stop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-045",
+    "title": "Clear Print Queue - Guide 6",
+    "content": "Stop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-053",
+    "title": "Clear Print Queue - Guide 7",
+    "content": "Stop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-061",
+    "title": "Clear Print Queue - Guide 8",
+    "content": "Stop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-069",
+    "title": "Clear Print Queue - Guide 9",
+    "content": "Stop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "KB-077",
+    "title": "Clear Print Queue - Guide 10",
+    "content": "Stop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again.",
+    "category": "Printers",
+    "supported_os": "Any",
+    "source_type": "Internal KB",
+    "status": "approved"
+  },
+  {
+    "source_id": "SYN-0013",
+    "title": "Printer is online but jobs stay in queue",
+    "content": "Problem: Printer is online but jobs stay in queue on Ubuntu. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Ubuntu",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0028",
+    "title": "Print queue is stuck and cannot be cleared",
+    "content": "Problem: Print queue is stuck and cannot be cleared on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Ubuntu",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0042",
+    "title": "Print queue is stuck and cannot be cleared",
+    "content": "Problem: Print queue is stuck and cannot be cleared on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Ubuntu",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0045",
+    "title": "Printer shows offline although it is powered on",
+    "content": "Problem: Printer shows offline although it is powered on on macOS. No recent hardware changes were made.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "macOS",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0056",
+    "title": "Office printer prints blank pages",
+    "content": "Problem: Office printer prints blank pages on Windows 11. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Windows 11",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0057",
+    "title": "Printer is online but jobs stay in queue",
+    "content": "Problem: Printer is online but jobs stay in queue on Ubuntu. No recent hardware changes were made.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Ubuntu",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0064",
+    "title": "Print queue is stuck and cannot be cleared",
+    "content": "Problem: Print queue is stuck and cannot be cleared on macOS. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "macOS",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0088",
+    "title": "Printer shows offline although it is powered on",
+    "content": "Problem: Printer shows offline although it is powered on on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Windows 10",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0092",
+    "title": "Windows cannot find network printer",
+    "content": "Problem: Windows cannot find network printer on macOS. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "macOS",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0095",
+    "title": "Printer shows offline although it is powered on",
+    "content": "Problem: Printer shows offline although it is powered on on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Windows 11",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0108",
+    "title": "Printer shows offline although it is powered on",
+    "content": "Problem: Printer shows offline although it is powered on on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Windows 10",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0114",
+    "title": "Printer shows offline although it is powered on",
+    "content": "Problem: Printer shows offline although it is powered on on Windows 10. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Windows 10",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0143",
+    "title": "Print queue is stuck and cannot be cleared",
+    "content": "Problem: Print queue is stuck and cannot be cleared on macOS. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "macOS",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0168",
+    "title": "Print queue is stuck and cannot be cleared",
+    "content": "Problem: Print queue is stuck and cannot be cleared on Ubuntu. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Ubuntu",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0177",
+    "title": "Windows cannot find network printer",
+    "content": "Problem: Windows cannot find network printer on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Ubuntu",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0180",
+    "title": "Windows cannot find network printer",
+    "content": "Problem: Windows cannot find network printer on Windows 11. The issue happens repeatedly.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Windows 11",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0198",
+    "title": "Windows cannot find network printer",
+    "content": "Problem: Windows cannot find network printer on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Windows 10",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0209",
+    "title": "Office printer prints blank pages",
+    "content": "Problem: Office printer prints blank pages on Windows 11. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Windows 11",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0213",
+    "title": "Print queue is stuck and cannot be cleared",
+    "content": "Problem: Print queue is stuck and cannot be cleared on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Ubuntu",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0232",
+    "title": "Printer is online but jobs stay in queue",
+    "content": "Problem: Printer is online but jobs stay in queue on macOS. This started this morning.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "macOS",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0236",
+    "title": "Windows cannot find network printer",
+    "content": "Problem: Windows cannot find network printer on macOS. It happens on my work laptop.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "macOS",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0254",
+    "title": "Office printer prints blank pages",
+    "content": "Problem: Office printer prints blank pages on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Windows 10",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0275",
+    "title": "Printer shows offline although it is powered on",
+    "content": "Problem: Printer shows offline although it is powered on on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Windows 10",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0289",
+    "title": "Printer is online but jobs stay in queue",
+    "content": "Problem: Printer is online but jobs stay in queue on Windows 11. The issue happens repeatedly.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Windows 11",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0291",
+    "title": "Printer is online but jobs stay in queue",
+    "content": "Problem: Printer is online but jobs stay in queue on Windows 10. It happens on my work laptop.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Windows 10",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0300",
+    "title": "Windows cannot find network printer",
+    "content": "Problem: Windows cannot find network printer on Windows 11. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Windows 11",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0317",
+    "title": "Office printer prints blank pages",
+    "content": "Problem: Office printer prints blank pages on macOS. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "macOS",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0323",
+    "title": "Office printer prints blank pages",
+    "content": "Problem: Office printer prints blank pages on macOS. This started this morning.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "macOS",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0337",
+    "title": "Printer shows offline although it is powered on",
+    "content": "Problem: Printer shows offline although it is powered on on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Ubuntu",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0340",
+    "title": "Printer is online but jobs stay in queue",
+    "content": "Problem: Printer is online but jobs stay in queue on Ubuntu. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Ubuntu",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0352",
+    "title": "Printer is online but jobs stay in queue",
+    "content": "Problem: Printer is online but jobs stay in queue on Ubuntu. Please help because I need this for work.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Ubuntu",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0362",
+    "title": "Print queue is stuck and cannot be cleared",
+    "content": "Problem: Print queue is stuck and cannot be cleared on Windows 11. The issue happens repeatedly.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Windows 11",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0373",
+    "title": "Printer is online but jobs stay in queue",
+    "content": "Problem: Printer is online but jobs stay in queue on macOS. No recent hardware changes were made.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "macOS",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0389",
+    "title": "Printer shows offline although it is powered on",
+    "content": "Problem: Printer shows offline although it is powered on on Windows 10. No recent hardware changes were made.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Windows 10",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0394",
+    "title": "Windows cannot find network printer",
+    "content": "Problem: Windows cannot find network printer on Windows 10. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Windows 10",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0405",
+    "title": "Office printer prints blank pages",
+    "content": "Problem: Office printer prints blank pages on Windows 10. This started this morning.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Windows 10",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0414",
+    "title": "Office printer prints blank pages",
+    "content": "Problem: Office printer prints blank pages on Ubuntu. It happens on my work laptop.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Ubuntu",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0441",
+    "title": "Office printer prints blank pages",
+    "content": "Problem: Office printer prints blank pages on Windows 10. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Windows 10",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0444",
+    "title": "Printer shows offline although it is powered on",
+    "content": "Problem: Printer shows offline although it is powered on on Windows 11. This started this morning.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Windows 11",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0452",
+    "title": "Windows cannot find network printer",
+    "content": "Problem: Windows cannot find network printer on Windows 11. No recent hardware changes were made.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Windows 11",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0458",
+    "title": "Printer shows offline although it is powered on",
+    "content": "Problem: Printer shows offline although it is powered on on Ubuntu. It happens on my work laptop.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Ubuntu",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0461",
+    "title": "Office printer prints blank pages",
+    "content": "Problem: Office printer prints blank pages on Windows 10. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Windows 10",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0471",
+    "title": "Office printer prints blank pages",
+    "content": "Problem: Office printer prints blank pages on macOS. This started this morning.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "macOS",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0475",
+    "title": "Printer is online but jobs stay in queue",
+    "content": "Problem: Printer is online but jobs stay in queue on Ubuntu. I already restarted the device once.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Ubuntu",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0484",
+    "title": "Printer shows offline although it is powered on",
+    "content": "Problem: Printer shows offline although it is powered on on Windows 10. This started this morning.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Windows 10",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  },
+  {
+    "source_id": "SYN-0497",
+    "title": "Print queue is stuck and cannot be cleared",
+    "content": "Problem: Print queue is stuck and cannot be cleared on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Cleared the print queue and reinstalled the approved printer driver.",
+    "category": "Printers",
+    "supported_os": "Ubuntu",
+    "source_type": "resolved_ticket",
+    "status": "resolved"
+  }
+]

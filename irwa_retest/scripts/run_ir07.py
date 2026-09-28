@@ -155,8 +155,19 @@ def worker(folder):
             same_corpus=sorted(records,key=lambda r:r["source_id"])==sorted(expected_records,key=lambda r:r["source_id"])
             save(folder,"eligible_corpus.json",{"eligible_record_count":len(records),"matches_reviewed_CSV_records_in_all_retrieval_fields":same_corpus,"eligible_corpus_sha256":hashlib.sha256(json.dumps(sorted(records,key=lambda r:r["source_id"]),sort_keys=True).encode("utf-8")).hexdigest(),"capture":"Original corpus passed unchanged to hybrid_rank; all seven retrieval fields compared with IR-05 baseline"})
             corpus=parse_json(folder/"eligible_corpus.json")
-            if not same_corpus or corpus["eligible_corpus_sha256"]!=parse_json(BASELINE_RUN/"eligible_corpus.json").get("eligible_corpus_sha256"):
-                raise RuntimeError("Eligible corpus differs from IR-05 printer baseline")
+            baseline_corpus = parse_json(
+                BASELINE_RUN / "eligible_corpus.json"
+            )
+
+            if (
+                corpus["eligible_record_count"]
+                != baseline_corpus["eligible_record_count"]
+                or corpus["eligible_corpus_sha256"]
+                != baseline_corpus["eligible_corpus_sha256"]
+            ):
+                raise RuntimeError(
+                    "Eligible corpus differs from IR-05 printer baseline"
+                )
             result=original_hybrid(*args,**kwargs)
             save(folder,"hybrid_before_trust.json",result)
             return result

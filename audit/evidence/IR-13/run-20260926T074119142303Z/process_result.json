@@ -1,0 +1,13 @@
+{
+  "case": "IR-13",
+  "finished_at_utc": "2026-09-26T07:41:28.869365+00:00",
+  "process_exit_code": 1,
+  "timed_out": false,
+  "elapsed_seconds": 9.547,
+  "source_files_unchanged": true,
+  "original_database_main_file_unchanged": true,
+  "prior_evidence_unchanged": true,
+  "evidence_directory": "audit/evidence/IR-13/run-20260926T074119142303Z",
+  "integrity_limit": "Main-file hash does not cover unrelated concurrent SQLite WAL writes",
+  "outcome": "Unassessed; awaiting review"
+}

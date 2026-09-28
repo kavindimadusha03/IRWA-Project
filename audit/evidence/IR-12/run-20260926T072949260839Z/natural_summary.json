@@ -1,0 +1,146 @@
+[
+  {
+    "id": "N01",
+    "query": "My laptop battery is swelling after charging.",
+    "best_score": 0.6035324694059309,
+    "decision": "UNCERTAIN",
+    "decision_matches": true,
+    "top_source": "SYN-0010",
+    "selected_for_answer": false
+  },
+  {
+    "id": "N02",
+    "query": "The laptop casing is cracked.",
+    "best_score": 0.5305861476321316,
+    "decision": "LOW",
+    "decision_matches": true,
+    "top_source": "SYN-0038",
+    "selected_for_answer": false
+  },
+  {
+    "id": "N03",
+    "query": "My laptop screen has a dark patch.",
+    "best_score": 0.79670731770297,
+    "decision": "HIGH",
+    "decision_matches": true,
+    "top_source": "SYN-0005",
+    "selected_for_answer": false
+  },
+  {
+    "id": "N04",
+    "query": "My laptop hinge is broken.",
+    "best_score": 0.5407814051029868,
+    "decision": "LOW",
+    "decision_matches": true,
+    "top_source": "SYN-0032",
+    "selected_for_answer": true
+  },
+  {
+    "id": "N05",
+    "query": "My laptop keyboard has a loose key.",
+    "best_score": 0.6674615510493547,
+    "decision": "UNCERTAIN",
+    "decision_matches": true,
+    "top_source": "SYN-0030",
+    "selected_for_answer": true
+  },
+  {
+    "id": "N06",
+    "query": "The laptop battery no longer holds charge.",
+    "best_score": 0.5379403456166701,
+    "decision": "LOW",
+    "decision_matches": true,
+    "top_source": "SYN-0032",
+    "selected_for_answer": false
+  },
+  {
+    "id": "N07",
+    "query": "My laptop is hot after charging.",
+    "best_score": 0.5600731633811961,
+    "decision": "UNCERTAIN",
+    "decision_matches": true,
+    "top_source": "SYN-0010",
+    "selected_for_answer": true
+  },
+  {
+    "id": "N08",
+    "query": "The computer makes a rattling sound.",
+    "best_score": 0.7691738580026951,
+    "decision": "HIGH",
+    "decision_matches": true,
+    "top_source": "SYN-0008",
+    "selected_for_answer": false
+  },
+  {
+    "id": "N09",
+    "query": "My laptop battery is swollen after an update.",
+    "best_score": 0.8424486538529531,
+    "decision": "HIGH",
+    "decision_matches": true,
+    "top_source": "SYN-0010",
+    "selected_for_answer": false
+  },
+  {
+    "id": "N10",
+    "query": "After an update my laptop case is bulging.",
+    "best_score": 0.8534228254554105,
+    "decision": "HIGH",
+    "decision_matches": true,
+    "top_source": "SYN-0010",
+    "selected_for_answer": false
+  },
+  {
+    "id": "N11",
+    "query": "The screen flickers when the laptop starts.",
+    "best_score": 0.692080707884829,
+    "decision": "HIGH",
+    "decision_matches": true,
+    "top_source": "SYN-0008",
+    "selected_for_answer": true
+  },
+  {
+    "id": "N12",
+    "query": "My computer restarts unexpectedly.",
+    "best_score": 0.722240276464139,
+    "decision": "HIGH",
+    "decision_matches": true,
+    "top_source": "SYN-0008",
+    "selected_for_answer": false
+  },
+  {
+    "id": "N13",
+    "query": "My laptop is slow.",
+    "best_score": 0.7294402516634513,
+    "decision": "HIGH",
+    "decision_matches": true,
+    "top_source": "SYN-0010",
+    "selected_for_answer": false
+  },
+  {
+    "id": "N14",
+    "query": "My printer queue is stuck.",
+    "best_score": 1.0011252260098003,
+    "decision": "HIGH",
+    "decision_matches": true,
+    "top_source": "SYN-0028",
+    "selected_for_answer": false
+  },
+  {
+    "id": "N15",
+    "query": "What colour is the notebook?",
+    "best_score": 0.1502917349644738,
+    "decision": "LOW",
+    "decision_matches": true,
+    "top_source": "SYN-0056",
+    "selected_for_answer": false
+  },
+  {
+    "id": "N16",
+    "query": "The device makes a clicking noise.",
+    "best_score": 0.820407814702552,
+    "decision": "HIGH",
+    "decision_matches": true,
+    "top_source": "KB-006",
+    "selected_for_answer": false
+  }
+]

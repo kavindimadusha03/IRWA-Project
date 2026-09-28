@@ -1,0 +1,18 @@
+{
+  "original_query": "My printer's queue is stuck and print jobs will not clear.",
+  "normalized_query": "printer s queue stuck print jobs will not clear",
+  "normalized_query_tokens": [
+    "printer",
+    "s",
+    "queue",
+    "stuck",
+    "print",
+    "jobs",
+    "will",
+    "not",
+    "clear"
+  ],
+  "raw_VPN_occurrences": 0,
+  "normalized_VPN_token_count": 0,
+  "capture": "original function return observed; no result or input changed"
+}

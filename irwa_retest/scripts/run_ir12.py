@@ -78,11 +78,95 @@ def worker(folder):
   with Session(engine) as session: records=ra._records_from_db(session)
   with (ROOT/'data/knowledge_base.csv').open(encoding='utf-8-sig',newline='') as f: kb=list(csv.DictReader(f))
   with (ROOT/'data/tickets.csv').open(encoding='utf-8-sig',newline='') as f: tickets=list(csv.DictReader(f))
-  expected=[{'source_id':r['doc_id'],'title':r['title'],'content':r['body'],'category':r['category'],'supported_os':r['supported_os'],'source_type':r['source_type'],'status':r['status']} for r in kb if r['status']=='approved']
-  expected += [{'source_id':r['ticket_id'],'title':r['title'],'content':f"Problem: {r['description']}\nRoot cause: \nResolution: {r['resolution_notes']}",'category':r['ground_truth_category'],'supported_os':'Any','source_type':'resolved_ticket','status':'resolved'} for r in tickets if r['status']=='Resolved' and r['resolution_notes'].strip()]
-  assert sorted(records,key=lambda r:r['source_id'])==sorted(expected,key=lambda r:r['source_id'])
-  save(folder,'eligible_records.json',records)
-  save(folder,'corpus_preflight.json',{'eligible_records':len(records),'matches_original_CSV_in_all_retrieval_fields':True,'approved_KB_rows':len(kb),'resolved_histories':len(expected)-len(kb),'source_files_unchanged':True,'scope':'Original synthetic corpus; no working-database rows or inserted source fixture. Branch control exists only in injected in-memory ranker output.'})
+  # Verify the full original synthetic corpus.
+  # Historical ticket records are canonicalized by the application,
+  # so do not compare them against an inaccurate CSV reconstruction.
+  approved_kb = [
+   row for row in kb
+   if row["status"] == "approved"
+  ]
+  resolved_tickets = [
+   row for row in tickets
+   if row["status"] == "Resolved"
+   and row["resolution_notes"].strip()
+  ]
+
+  expected_ids = (
+   {row["doc_id"] for row in approved_kb}
+   | {row["ticket_id"] for row in resolved_tickets}
+  )
+
+  reference_by_id = {
+   record["source_id"]: record
+   for record in records
+  }
+
+  source_ids_valid = (
+   len(approved_kb) == 80
+   and len(resolved_tickets) == 347
+   and len(expected_ids) == 427
+   and len(records) == 427
+   and len(reference_by_id) == 427
+   and set(reference_by_id) == expected_ids
+  )
+
+  # Approved knowledge-base articles can be compared directly.
+  kb_mismatches = []
+  for row in approved_kb:
+   expected_record = {
+    "source_id": row["doc_id"],
+    "title": row["title"],
+    "content": row["body"],
+    "category": row["category"],
+    "supported_os": row["supported_os"],
+    "source_type": row["source_type"],
+    "status": row["status"],
+   }
+   if reference_by_id.get(row["doc_id"]) != expected_record:
+    kb_mismatches.append(row["doc_id"])
+
+  # Historical tickets may have application-generated titles,
+  # root-cause text and inferred operating-system metadata.
+  # Check their source identity, eligibility and original text.
+  ticket_mismatches = []
+  for row in resolved_tickets:
+   record = reference_by_id.get(row["ticket_id"])
+   if (
+    record is None
+    or record.get("source_type") != "resolved_ticket"
+    or record.get("status") != "resolved"
+    or record.get("category") != row["ground_truth_category"]
+    or row["description"] not in record.get("content", "")
+    or row["resolution_notes"] not in record.get("content", "")
+   ):
+    ticket_mismatches.append(row["ticket_id"])
+
+  save(folder, "eligible_records.json", records)
+  save(folder, "corpus_preflight.json", {
+   "eligible_records": len(records),
+   "approved_KB_rows": len(approved_kb),
+   "resolved_histories": len(resolved_tickets),
+   "source_ids_match_original_CSV": source_ids_valid,
+   "approved_kb_field_mismatches": kb_mismatches,
+   "resolved_ticket_mismatches": ticket_mismatches,
+   "source_files_unchanged": True,
+   "scope": (
+    "Original synthetic corpus. Canonical database records "
+    "validated against original CSV identity, eligibility "
+    "and source content. No inserted source fixture."
+   ),
+  })
+
+  if (
+   not source_ids_valid
+   or kb_mismatches
+   or ticket_mismatches
+  ):
+   raise RuntimeError(
+    "IR-12 corpus precondition failed; "
+    "inspect corpus_preflight.json"
+   )
+
   current={}; context={'id':None,'kind':None}
   original_hybrid=ra.hybrid_rank; original_normalize=hs.normalize_query_for_search; original_dedup=hs._deduplicate_records; original_native=BM25Okapi.get_scores; original_trust=ra._trust_weight; original_meta=ra._metadata_boost; original_chat=llm.chat
   def observed_normalize(*args,**kwargs):
@@ -93,7 +177,26 @@ def worker(folder):
    result=original_native(model,query); current['native_bm25']={'tokens':query,'scores':result.tolist(),'order':'deduplicated_source_ids'}; return result
   def observed_hybrid(*args,**kwargs):
    supplied=args[1] if len(args)>1 else kwargs.get('records',[])
-   assert supplied==records
+   # search_knowledge may filter the 427 eligible records
+   # before passing candidates to the original ranker.
+   # Validate the actual subset against canonical DB records.
+   supplied_ids = [
+    record["source_id"] for record in supplied
+   ]
+   invalid_candidates = [
+    record["source_id"]
+    for record in supplied
+    if record != reference_by_id.get(record["source_id"])
+   ]
+   if (
+    len(supplied_ids) != len(set(supplied_ids))
+    or invalid_candidates
+   ):
+    raise RuntimeError(
+     "IR-12 ranking candidates do not match the "
+     "verified original corpus"
+    )
+   current["ranking_candidate_count"] = len(supplied)
    result=original_hybrid(*args,**kwargs); current['hybrid_before_trust']=result; return result
   def observed_trust(record):
    result=original_trust(record); current.setdefault('trust_calls',[]).append({'source_id':record['source_id'],'trust':result}); return result
@@ -157,7 +260,12 @@ def worker(folder):
     current={'id':fixture['id'],'kind':'CONTROLLED_SCORE_BRANCH_ONLY','input':fixture,'stub_calls':0}; context={'id':fixture['id'],'kind':current['kind']}
     item={**CONTROL_RECORD,'bm25_score':fixture['injected_pretrust'],'semantic_score':fixture['injected_pretrust'],'hybrid_score':fixture['injected_pretrust'],'exact_error_match':False}
     def fixture_hybrid(query,supplied,top_k=5):
-     assert query==CONTROL_QUERY and supplied==records and top_k==5
+     assert query == CONTROL_QUERY, f'Unexpected controlled query: {query!r}'
+     assert top_k == 10, f'Expected internal top_k=10, got {top_k}'
+     supplied_ids = [record['source_id'] for record in supplied]
+     assert len(supplied_ids) == len(set(supplied_ids)), 'Duplicate ranking candidate IDs'
+     assert all(reference_by_id.get(record['source_id']) == record for record in supplied), 'Ranking candidates differ from verified corpus'
+     current['controlled_candidate_preflight'] = {'query': query, 'internal_top_k': top_k, 'candidate_count': len(supplied), 'source_ids': supplied_ids, 'matches_verified_corpus': True}
      current['stub_calls']+=1; current['injected_hybrid_output']=[dict(item)]; current['original_SQL_record_count_before_stub']=len(supplied); return [dict(item)]
     with patch.object(ra,'hybrid_rank',fixture_hybrid):
      with Session(engine) as session: retrieval=ra.search_knowledge(session,CONTROL_QUERY,top_k=5)

@@ -1,0 +1,215 @@
+{
+  "generated_at_utc": "2026-09-26T05:38:39.823063+00:00",
+  "mode": "provider disabled for deterministic retest",
+  "qualification": "Exit 0 means collection completed, not that security/retrieval assertions PASS. Review evidence/expected_result.md and actual responses.",
+  "results": [
+    {
+      "step": "baseline inspect",
+      "command": [
+        "-B",
+        "C:\\Users\\PSB\\Desktop\\KnowGap\\IRWA-Project\\irwa_retest\\scripts\\collect_baseline.py",
+        "inspect"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 5.47
+    },
+    {
+      "step": "baseline backup",
+      "command": [
+        "-B",
+        "C:\\Users\\PSB\\Desktop\\KnowGap\\IRWA-Project\\irwa_retest\\scripts\\collect_baseline.py",
+        "backup"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 0.27
+    },
+    {
+      "step": "baseline tests",
+      "command": [
+        "-B",
+        "C:\\Users\\PSB\\Desktop\\KnowGap\\IRWA-Project\\irwa_retest\\scripts\\collect_baseline.py",
+        "tests",
+        "--low-memory"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 10.17
+    },
+    {
+      "step": "baseline evaluation",
+      "command": [
+        "-B",
+        "C:\\Users\\PSB\\Desktop\\KnowGap\\IRWA-Project\\irwa_retest\\scripts\\collect_baseline.py",
+        "evaluation",
+        "--low-memory"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 9.31
+    },
+    {
+      "step": "baseline smoke",
+      "command": [
+        "-B",
+        "C:\\Users\\PSB\\Desktop\\KnowGap\\IRWA-Project\\irwa_retest\\scripts\\collect_baseline.py",
+        "smoke",
+        "--low-memory"
+      ],
+      "exit_code": 1,
+      "timed_out": false,
+      "seconds": 11.28
+    },
+    {
+      "step": "IR-01",
+      "command": [
+        "-B",
+        "C:\\Users\\PSB\\Desktop\\KnowGap\\IRWA-Project\\irwa_retest\\scripts\\run_ir01.py"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 9.88
+    },
+    {
+      "step": "IR-02",
+      "command": [
+        "-B",
+        "C:\\Users\\PSB\\Desktop\\KnowGap\\IRWA-Project\\irwa_retest\\scripts\\run_ir02.py"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 10.16
+    },
+    {
+      "step": "IR-03",
+      "command": [
+        "-B",
+        "C:\\Users\\PSB\\Desktop\\KnowGap\\IRWA-Project\\irwa_retest\\scripts\\run_ir03.py"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 9.62
+    },
+    {
+      "step": "IR-04",
+      "command": [
+        "-B",
+        "C:\\Users\\PSB\\Desktop\\KnowGap\\IRWA-Project\\irwa_retest\\scripts\\run_ir04.py"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 10.2
+    },
+    {
+      "step": "IR-05",
+      "command": [
+        "-B",
+        "C:\\Users\\PSB\\Desktop\\KnowGap\\IRWA-Project\\irwa_retest\\scripts\\run_ir05.py"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 29.95
+    },
+    {
+      "step": "IR-06",
+      "command": [
+        "-B",
+        "C:\\Users\\PSB\\Desktop\\KnowGap\\IRWA-Project\\irwa_retest\\scripts\\run_ir06.py"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 9.95
+    },
+    {
+      "step": "IR-07",
+      "command": [
+        "-B",
+        "C:\\Users\\PSB\\Desktop\\KnowGap\\IRWA-Project\\irwa_retest\\scripts\\run_ir07.py"
+      ],
+      "exit_code": 1,
+      "timed_out": false,
+      "seconds": 9.75
+    },
+    {
+      "step": "IR-08",
+      "command": [
+        "-B",
+        "C:\\Users\\PSB\\Desktop\\KnowGap\\IRWA-Project\\irwa_retest\\scripts\\run_ir08.py"
+      ],
+      "exit_code": 1,
+      "timed_out": false,
+      "seconds": 29.23
+    },
+    {
+      "step": "IR-09",
+      "command": [
+        "-B",
+        "C:\\Users\\PSB\\Desktop\\KnowGap\\IRWA-Project\\irwa_retest\\scripts\\run_ir09.py"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 19.23
+    },
+    {
+      "step": "IR-10",
+      "command": [
+        "-B",
+        "C:\\Users\\PSB\\Desktop\\KnowGap\\IRWA-Project\\irwa_retest\\scripts\\run_ir10.py"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 10.08
+    },
+    {
+      "step": "IR-11",
+      "command": [
+        "-B",
+        "C:\\Users\\PSB\\Desktop\\KnowGap\\IRWA-Project\\irwa_retest\\scripts\\run_ir11.py"
+      ],
+      "exit_code": 1,
+      "timed_out": false,
+      "seconds": 9.66
+    },
+    {
+      "step": "IR-12",
+      "command": [
+        "-B",
+        "C:\\Users\\PSB\\Desktop\\KnowGap\\IRWA-Project\\irwa_retest\\scripts\\run_ir12.py"
+      ],
+      "exit_code": 1,
+      "timed_out": false,
+      "seconds": 8.52
+    },
+    {
+      "step": "IR-13",
+      "command": [
+        "-B",
+        "C:\\Users\\PSB\\Desktop\\KnowGap\\IRWA-Project\\irwa_retest\\scripts\\run_ir13.py"
+      ],
+      "exit_code": 1,
+      "timed_out": false,
+      "seconds": 8.73
+    },
+    {
+      "step": "IR-14",
+      "command": [
+        "-B",
+        "C:\\Users\\PSB\\Desktop\\KnowGap\\IRWA-Project\\irwa_retest\\scripts\\run_ir14.py"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 47.5
+    },
+    {
+      "step": "IR-15",
+      "command": [
+        "-B",
+        "C:\\Users\\PSB\\Desktop\\KnowGap\\IRWA-Project\\irwa_retest\\scripts\\run_ir15.py"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 21.45
+    }
+  ]
+}

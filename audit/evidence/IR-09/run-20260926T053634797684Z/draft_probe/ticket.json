@@ -1,0 +1,20 @@
+{
+  "id": 501,
+  "ticket_code": "TCK-00501",
+  "assigned_to": null,
+  "history_summary": "Customer reported: quartzmeadow729. The case was classified as Unknown with priority Medium. The issue was reviewed against eligible knowledge sources and a structured support decision was generated.",
+  "title": "Audit reference lookup",
+  "description": "quartzmeadow729",
+  "masked_description": "quartzmeadow729",
+  "category": "Unknown",
+  "canonical_issue": "quartzmeadow729",
+  "priority": "Medium",
+  "status": "CLARIFICATION_REQUIRED",
+  "approval_status": "PENDING",
+  "retrieval_confidence": 0.0,
+  "source_used": "",
+  "recommended_solution": "Please answer the clarification questions so IT Support can search for the right procedure.",
+  "decision_explanation": "CLARIFICATION_STATE:{\"affected_service\":\"\",\"clarification_questions\":[\"Which single service or device is the main problem right now?\",\"What exactly happens when you try it, and when did the problem start?\",\"Which operating system and device are affected, and do you see an error message or code?\"],\"confirmed_active_symptoms\":[],\"effective_query\":\"\",\"operating_system\":null,\"original_context\":\"quartzmeadow729\",\"remaining_uncertainties\":[\"The description does not contain enough technical detail to select a safe procedure.\",\"The affected system or service is not clear from the description.\"],\"resolved_or_negated_symptoms\":[]}\nClarification required before retrieval:\n1. Which single service or device is the main problem right now?\n2. What exactly happens when you try it, and when did the problem start?\n3. Which operating system and device are affected, and do you see an error message or code?",
+  "suggested_reply": "Please provide the requested details. If the problem affects multiple services, IT Support will investigate the shared cause.",
+  "citations": []
+}

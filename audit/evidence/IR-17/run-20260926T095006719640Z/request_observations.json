@@ -1,0 +1,116 @@
+[
+  {
+    "request_number": 1,
+    "sent_at_utc": "2026-09-26T09:50:17.168798+00:00",
+    "http_status": 200,
+    "elapsed_ms": 1803.92,
+    "rate_limit_headers": {},
+    "retrieval": {
+      "item_count": 5,
+      "decision": "HIGH",
+      "best_score": 0.9441488884601732,
+      "source_ids": [
+        "SYN-0138",
+        "SYN-0033",
+        "KB-001",
+        "SYN-0037",
+        "KB-017"
+      ]
+    }
+  },
+  {
+    "request_number": 2,
+    "sent_at_utc": "2026-09-26T09:50:19.978771+00:00",
+    "http_status": 200,
+    "elapsed_ms": 305.1,
+    "rate_limit_headers": {},
+    "retrieval": {
+      "item_count": 5,
+      "decision": "HIGH",
+      "best_score": 0.9441488884601732,
+      "source_ids": [
+        "SYN-0138",
+        "SYN-0033",
+        "KB-001",
+        "SYN-0037",
+        "KB-017"
+      ]
+    }
+  },
+  {
+    "request_number": 3,
+    "sent_at_utc": "2026-09-26T09:50:21.286115+00:00",
+    "http_status": 200,
+    "elapsed_ms": 306.9,
+    "rate_limit_headers": {},
+    "retrieval": {
+      "item_count": 5,
+      "decision": "HIGH",
+      "best_score": 0.9441488884601732,
+      "source_ids": [
+        "SYN-0138",
+        "SYN-0033",
+        "KB-001",
+        "SYN-0037",
+        "KB-017"
+      ]
+    }
+  },
+  {
+    "request_number": 4,
+    "sent_at_utc": "2026-09-26T09:50:22.595333+00:00",
+    "http_status": 200,
+    "elapsed_ms": 273.94,
+    "rate_limit_headers": {},
+    "retrieval": {
+      "item_count": 5,
+      "decision": "HIGH",
+      "best_score": 0.9441488884601732,
+      "source_ids": [
+        "SYN-0138",
+        "SYN-0033",
+        "KB-001",
+        "SYN-0037",
+        "KB-017"
+      ]
+    }
+  },
+  {
+    "request_number": 5,
+    "sent_at_utc": "2026-09-26T09:50:23.870980+00:00",
+    "http_status": 200,
+    "elapsed_ms": 365.3,
+    "rate_limit_headers": {},
+    "retrieval": {
+      "item_count": 5,
+      "decision": "HIGH",
+      "best_score": 0.9441488884601732,
+      "source_ids": [
+        "SYN-0138",
+        "SYN-0033",
+        "KB-001",
+        "SYN-0037",
+        "KB-017"
+      ]
+    }
+  },
+  {
+    "request_number": 6,
+    "sent_at_utc": "2026-09-26T09:50:25.238914+00:00",
+    "http_status": 200,
+    "elapsed_ms": 455.52,
+    "rate_limit_headers": {},
+    "retrieval": {
+      "item_count": 5,
+      "decision": "HIGH",
+      "best_score": 0.9441488884601732,
+      "source_ids": [
+        "SYN-0138",
+        "SYN-0033",
+        "KB-001",
+        "SYN-0037",
+        "KB-017"
+      ]
+    }
+  }
+]

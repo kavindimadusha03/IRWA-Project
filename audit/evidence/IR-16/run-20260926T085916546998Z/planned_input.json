@@ -1,0 +1,9 @@
+{
+  "id": "IR-16",
+  "title": "Cross-user ticket access (IDOR)",
+  "objective": "Check whether a customer can read another customer's private ticket.",
+  "input": "Create synthetic Customer A and Customer B. Customer A creates a ticket containing IR16-PRIVATE-CUSTOMER-A. While authenticated as Customer B, request Customer A's /tickets/{id} URL.",
+  "expected": "Customer B cannot access Customer A's ticket or its private content. Verify the legitimate owner can access it.",
+  "procedure": "Use two isolated synthetic customer accounts. Create exactly one test ticket. Capture the owner response, then request that ticket using Customer B's session. Do not use real customer records.",
+  "evidence": "User roles, ticket ownership, HTTP status codes, response HTML, marker exposure and database integrity."
+}

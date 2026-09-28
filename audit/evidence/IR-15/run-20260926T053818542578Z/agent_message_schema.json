@@ -1,0 +1,49 @@
+{
+  "properties": {
+    "message_id": {
+      "maxLength": 100,
+      "minLength": 1,
+      "title": "Message Id",
+      "type": "string"
+    },
+    "request_id": {
+      "maxLength": 100,
+      "minLength": 1,
+      "title": "Request Id",
+      "type": "string"
+    },
+    "sender": {
+      "maxLength": 100,
+      "minLength": 1,
+      "title": "Sender",
+      "type": "string"
+    },
+    "receiver": {
+      "maxLength": 100,
+      "minLength": 1,
+      "title": "Receiver",
+      "type": "string"
+    },
+    "task": {
+      "maxLength": 100,
+      "minLength": 1,
+      "title": "Task",
+      "type": "string"
+    },
+    "payload": {
+      "additionalProperties": true,
+      "title": "Payload",
+      "type": "object"
+    }
+  },
+  "required": [
+    "message_id",
+    "request_id",
+    "sender",
+    "receiver",
+    "task",
+    "payload"
+  ],
+  "title": "AgentMessage",
+  "type": "object"
+}

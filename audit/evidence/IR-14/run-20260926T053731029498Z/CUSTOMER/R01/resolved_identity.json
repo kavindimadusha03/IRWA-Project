@@ -1,0 +1,10 @@
+[
+  {
+    "request_id": "R01",
+    "path": "/knowledge/81/approve",
+    "user_found": true,
+    "database_user_id": 1,
+    "stored_role": "CUSTOMER",
+    "active": true
+  }
+]

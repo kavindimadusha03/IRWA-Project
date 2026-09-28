@@ -1,0 +1,17 @@
+{
+  "existing_approved_printer": {
+    "id": "KB-005",
+    "title": "Clear Print Queue - Guide 1",
+    "content": "Stop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again.",
+    "status": "approved"
+  },
+  "retain_article": {
+    "id": "AUDIT-IR21-OLD-001",
+    "title": "Printer queue stuck and print jobs will not clear",
+    "content": "Printer queue stuck and print jobs will not clear. Reset printer settings to factory defaults, then clear the pending print jobs and retry printing. Recreate saved printer preferences afterward.",
+    "status": "approved",
+    "created_at": "2025-01-15 00:00:00",
+    "updated_at": "2025-01-15 00:00:00"
+  },
+  "reset_article": null
+}

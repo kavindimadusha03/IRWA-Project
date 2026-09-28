@@ -1,0 +1,132 @@
+{
+  "query": "My wireless connection shows connected but websites will not load.",
+  "items": [
+    {
+      "source_id": "SYN-0027",
+      "title": "Wireless icon shows connected but websites do not load",
+      "content": "Problem: Wireless icon shows connected but websites do not load on Windows 10. The issue happens repeatedly.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+      "category": "Wi-Fi / DNS",
+      "supported_os": "Windows 10",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 1.0,
+      "semantic_score": 0.7734548893408499,
+      "hybrid_score": 0.8240901607668474,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 1.0,
+        "semantic_score": 0.7734548893408499,
+        "hybrid_score": 0.8240901607668474
+      },
+      "source": "SYN-0027",
+      "applicability": {
+        "source_eligible": true,
+        "symptom_applicable": true,
+        "operating_system_applicable": true,
+        "evidence_sufficient": true
+      }
+    },
+    {
+      "source_id": "KB-001",
+      "title": "DNS Cache Recovery - Guide 1",
+      "content": "If Wi-Fi is connected but internet access is unavailable, open Command Prompt and run ipconfig /flushdns. Reconnect to Wi-Fi and test again.",
+      "category": "Wi-Fi / DNS",
+      "supported_os": "Any",
+      "source_type": "Internal KB",
+      "status": "approved",
+      "bm25_score": 0.024358055211615007,
+      "semantic_score": 0.5662197451649649,
+      "hybrid_score": 0.4023819846859575,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.024358055211615007,
+        "semantic_score": 0.5662197451649649,
+        "hybrid_score": 0.4023819846859575
+      },
+      "source": "KB-001",
+      "applicability": {
+        "source_eligible": true,
+        "symptom_applicable": true,
+        "operating_system_applicable": true,
+        "evidence_sufficient": true
+      }
+    },
+    {
+      "source_id": "SYN-0033",
+      "title": "Wi-Fi connected but browser says no internet",
+      "content": "Problem: Wi-Fi connected but browser says no internet on Windows 11. I already restarted the device once.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+      "category": "Wi-Fi / DNS",
+      "supported_os": "Windows 11",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.031371365226104765,
+      "semantic_score": 0.6249052014660634,
+      "hybrid_score": 0.38414272888436973,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.031371365226104765,
+        "semantic_score": 0.6249052014660634,
+        "hybrid_score": 0.38414272888436973
+      },
+      "source": "SYN-0033",
+      "applicability": {
+        "source_eligible": true,
+        "symptom_applicable": true,
+        "operating_system_applicable": true,
+        "evidence_sufficient": true
+      }
+    },
+    {
+      "source_id": "SYN-0138",
+      "title": "Laptop connected to Wi-Fi but no internet access",
+      "content": "Problem: Laptop connected to Wi-Fi but no internet access on macOS. It happens on my work laptop.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+      "category": "Wi-Fi / DNS",
+      "supported_os": "macOS",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.031082671681079272,
+      "semantic_score": 0.6081908721060763,
+      "hybrid_score": 0.3762183546276035,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.031082671681079272,
+        "semantic_score": 0.6081908721060763,
+        "hybrid_score": 0.3762183546276035
+      },
+      "source": "SYN-0138",
+      "applicability": {
+        "source_eligible": true,
+        "symptom_applicable": true,
+        "operating_system_applicable": true,
+        "evidence_sufficient": true
+      }
+    },
+    {
+      "source_id": "SYN-0037",
+      "title": "Internet unavailable although Wi-Fi is connected",
+      "content": "Problem: Internet unavailable although Wi-Fi is connected on Ubuntu. The issue happens repeatedly.\nRoot cause: \nResolution: Restarted the network adapter and flushed the DNS cache.",
+      "category": "Wi-Fi / DNS",
+      "supported_os": "Ubuntu",
+      "source_type": "resolved_ticket",
+      "status": "resolved",
+      "bm25_score": 0.032899191454648834,
+      "semantic_score": 0.5715159284886042,
+      "hybrid_score": 0.3597676372998257,
+      "exact_error_match": false,
+      "score_breakdown": {
+        "bm25_score": 0.032899191454648834,
+        "semantic_score": 0.5715159284886042,
+        "hybrid_score": 0.3597676372998257
+      },
+      "source": "SYN-0037",
+      "applicability": {
+        "source_eligible": true,
+        "symptom_applicable": true,
+        "operating_system_applicable": true,
+        "evidence_sufficient": true
+      }
+    }
+  ],
+  "best_score": 0.8240901607668474,
+  "decision": "HIGH"
+}

@@ -1,0 +1,8 @@
+{
+  "case": "IR-08",
+  "subcase": "punctuation",
+  "title": "Windows blue screen report",
+  "variant": "0x00000124!!!",
+  "description": "Windows blue screen error 0x00000124!!!",
+  "characters": 39
+}

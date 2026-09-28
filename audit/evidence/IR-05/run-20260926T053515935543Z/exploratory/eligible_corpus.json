@@ -1,0 +1,7 @@
+{
+  "eligible_record_count": 57,
+  "matches_reviewed_CSV_records_in_all_retrieval_fields": false,
+  "eligible_corpus_sha256": "d0512002468e66697f951e535d6d551b61cd481a0b9396b2b58d3a442b049f85",
+  "approved_printer_sources": [],
+  "capture": "Original records passed unchanged to hybrid_rank; corpus parity includes all seven retrieval fields"
+}

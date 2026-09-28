@@ -69,9 +69,94 @@ def worker(folder):
   with (ROOT/'data/tickets.csv').open(encoding='utf-8-sig',newline='') as f: tickets=list(csv.DictReader(f))
   expected=[{'source_id':r['doc_id'],'title':r['title'],'content':r['body'],'category':r['category'],'supported_os':r['supported_os'],'source_type':r['source_type'],'status':r['status']} for r in kb if r['status']=='approved']
   expected += [{'source_id':r['ticket_id'],'title':r['title'],'content':f"Problem: {r['description']}\nRoot cause: \nResolution: {r['resolution_notes']}",'category':r['ground_truth_category'],'supported_os':'Any','source_type':'resolved_ticket','status':'resolved'} for r in tickets if r['status']=='Resolved' and r['resolution_notes'].strip()]
-  assert sorted(records,key=lambda x:x['source_id'])==sorted(expected,key=lambda x:x['source_id']) and len(records)==427
+  approved = [
+      row for row in kb
+      if row["status"] == "approved"
+  ]
+  resolved = [
+      row for row in tickets
+      if row["status"] == "Resolved"
+      and row["resolution_notes"].strip()
+  ]
+
+  expected_ids = (
+      {row["doc_id"] for row in approved}
+      | {row["ticket_id"] for row in resolved}
+  )
+
+  actual_by_id = {
+      record["source_id"]: record
+      for record in records
+  }
+
+  source_ids_valid = (
+      len(approved) == 80
+      and len(resolved) == 347
+      and len(expected_ids) == 427
+      and len(records) == 427
+      and len(actual_by_id) == 427
+      and set(actual_by_id) == expected_ids
+  )
+
+  kb_mismatches = []
+  for row in approved:
+      expected_article = {
+          "source_id": row["doc_id"],
+          "title": row["title"],
+          "content": row["body"],
+          "category": row["category"],
+          "supported_os": row["supported_os"],
+          "source_type": row["source_type"],
+          "status": row["status"],
+      }
+      if actual_by_id.get(row["doc_id"]) != expected_article:
+          kb_mismatches.append(row["doc_id"])
+
+  ticket_mismatches = []
+  for row in resolved:
+      record = actual_by_id.get(row["ticket_id"])
+
+      if record is None:
+          ticket_mismatches.append(row["ticket_id"])
+          continue
+
+      content = record.get("content", "")
+
+      if (
+          record.get("source_type") != "resolved_ticket"
+          or record.get("status") != "resolved"
+          or record.get("category") != row["ground_truth_category"]
+          or not record.get("title")
+          or row["description"] not in content
+          or row["resolution_notes"] not in content
+      ):
+          ticket_mismatches.append(row["ticket_id"])
+
+  save(folder, "corpus_validation.json", {
+      "recorded_before_requests_at_utc": now(),
+      "total_records": len(records),
+      "approved_kb": len(approved),
+      "resolved_tickets": len(resolved),
+      "source_ids_valid": source_ids_valid,
+      "kb_mismatches": kb_mismatches,
+      "ticket_mismatches": ticket_mismatches,
+      "validation": (
+          "Original CSV source identities and source content "
+          "compared with canonical isolated-database records."
+      ),
+  })
+
+  if (
+      not source_ids_valid
+      or kb_mismatches
+      or ticket_mismatches
+  ):
+      raise RuntimeError(
+          "IR-13 corpus validation failed. "
+          "Inspect corpus_validation.json."
+      )
   save(folder,'eligible_records.json',records)
-  save(folder,'corpus_preflight.json',{'recorded_before_requests_at_utc':now(),'eligible_count':len(records),'matches_original_CSV_in_all_retrieval_fields':True,'knowledge_article_security_classes':sorted({a.security_class for a in articles}),'seed_counts':state['seed_counts'],'retrieval_issue':ISSUE,'schema_valid':True,'ticket_form_meets_length_rules':True,'knowledge_analyze_body':'No body parameter declared; send none','working_database_rows_copied':False})
+  save(folder,'corpus_preflight.json',{'recorded_before_requests_at_utc':now(),'eligible_count':len(records),'validated_CSV_source_ids_and_source_content':True,'knowledge_article_security_classes':sorted({a.security_class for a in articles}),'seed_counts':state['seed_counts'],'retrieval_issue':ISSUE,'schema_valid':True,'ticket_form_meets_length_rules':True,'knowledge_analyze_body':'No body parameter declared; send none','working_database_rows_copied':False})
   # Observation wrappers call originals once and return unchanged; no authentication or scoring substitute.
   original_search=routes.search_knowledge; original_health=routes.analyze_knowledge_health; original_chat=llm.chat
   def observed_search(*args,**kwargs):

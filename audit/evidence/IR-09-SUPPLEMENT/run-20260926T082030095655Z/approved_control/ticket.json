@@ -1,0 +1,29 @@
+{
+  "id": 501,
+  "ticket_code": "TCK-00501",
+  "assigned_to": null,
+  "history_summary": "Customer reported: My printer queue is stuck and print jobs will not clear. Please check reference cobaltlantern463.. The case was classified as Printers with priority Medium. The issue was reviewed against eligible knowledge sources and a structured support decision was generated.",
+  "title": "Audit reference lookup",
+  "description": "My printer queue is stuck and print jobs will not clear. Please check reference cobaltlantern463.",
+  "masked_description": "My printer queue is stuck and print jobs will not clear. Please check reference cobaltlantern463.",
+  "category": "Printers",
+  "canonical_issue": "My printer queue is stuck and print jobs will not clear. Please check reference cobaltlantern463.",
+  "priority": "Medium",
+  "status": "SOLUTION_PROPOSED",
+  "approval_status": "PENDING",
+  "retrieval_confidence": 1.0108832532712522,
+  "source_used": "KB-005",
+  "recommended_solution": "Evidence source KB-005 | Clear Print Queue - Guide 1\nStop the print spooler, clear stuck print jobs, restart the print spooler, and try printing again.",
+  "decision_explanation": "Selected-source relevance components before source and metadata adjustments: BM25 0.80, semantic 0.71. The final adjusted retrieval ranking score is 1.01 after source trust and metadata adjustments. Neither score is a probability that the solution is correct.",
+  "suggested_reply": "Thanks for reporting this issue. Please follow the documented recommendation and let IT Support know whether the reported problem continues.",
+  "citations": [
+    {
+      "source_id": "KB-005",
+      "title": "Clear Print Queue - Guide 1",
+      "source_type": "Internal KB",
+      "category": "Printers",
+      "relevance_score": 1.0108832532712522,
+      "rank": 1
+    }
+  ]
+}
